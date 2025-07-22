@@ -1,0 +1,36 @@
+{
+  "name": "hotelier-tools-web",
+  "version": "1.0.0",
+  "description": "Herramientas para optimizar la gestión de hoteles que utilizan Little Hotelier de Siteminder",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "start": "node .output/server/index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanmanDev/hotelier-tools-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanmanDev/hotelier-tools-web/issues"
+  },
+  "homepage": "https://github.com/JuanmanDev/hotelier-tools-web#readme",
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
+    "@iconify-json/heroicons": "^1.2.2",
+    "@iconify-json/simple-icons": "^1.2.44",
+    "@nuxt/fonts": "^0.11.4",
+    "@nuxt/ui": "^3.2.0",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/i18n": "^10.0.1",
+    "nuxt": "^4.0.1",
+    "zod": "^3.24.0"
+  }
+}

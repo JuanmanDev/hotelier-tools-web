@@ -1,0 +1,307 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "tools": "Herramientas",
+    "documentation": "Documentación",
+    "contact": "Contacto"
+  },
+  "home": {
+    "hero": {
+      "title": "Optimiza tu {span} con Little Hotelier",
+      "span": "gestión hotelera",
+      "subtitle": "Herramientas especializadas para hoteles que utilizan la plataforma Little Hotelier de Siteminder. Automatiza procesos, mejora la interfaz y aumenta tu tasa de conversión.",
+      "cta_tools": "Ver Herramientas",
+      "cta_docs": "Documentación",
+      "trust": {
+        "secure": "Seguro y confiable",
+        "support": "Soporte 24/7",
+        "easy": "Fácil de usar"
+      }
+    },
+    "animation": {
+      "title": "¿Cómo funciona Hotelier Tools?",
+      "subtitle": "Mira cómo nuestras herramientas mejoran tu gestión hotelera paso a paso",
+      "progress": "Progreso",
+      "steps": {
+        "detection": {
+          "title": "Reserva Detectada",
+          "description": "Se detecta una reserva no confirmada por el banco"
+        },
+        "notification": {
+          "title": "Email Enviado",
+          "description": "Se envía automáticamente un email de notificación"
+        },
+        "resolution": {
+          "title": "Problema Resuelto",
+          "description": "Recepción contacta al cliente y confirma la reserva"
+        }
+      },
+      "status": {
+        "pending": "Pendiente",
+        "in_progress": "En progreso",
+        "completed": "Completado",
+        "error": "Error"
+      },
+      "controls": {
+        "restart": "Reiniciar",
+        "play": "Reproducir",
+        "pause": "Pausar"
+      },
+      "benefits": {
+        "conversion": {
+          "title": "Aumento de Conversión",
+          "description": "Evita la pérdida de reservas por problemas de pago"
+        },
+        "automation": {
+          "title": "Automatización Total",
+          "description": "Proceso completamente automatizado sin intervención manual"
+        },
+        "response": {
+          "title": "Respuesta Rápida",
+          "description": "Notificación inmediata para resolver problemas a tiempo"
+        }
+      }
+    },
+    "features": {
+      "title": "¿Por qué elegir Hotelier Tools?",
+      "subtitle": "Características que hacen la diferencia en tu gestión hotelera",
+      "chrome": {
+        "title": "Extensiones Chrome",
+        "description": "Mejora la interfaz de Little Hotelier directamente en tu navegador",
+        "benefits": [
+          "Tablas a ancho completo",
+          "Calculadora de comisiones",
+          "Mejor visualización de datos",
+          "Interfaz optimizada"
+        ]
+      },
+      "automation": {
+        "title": "Automatizaciones",
+        "description": "Tareas automáticas que ahorran tiempo y reducen errores",
+        "benefits": [
+          "Check-out automático",
+          "Validación de pagos",
+          "Gestión de facturas",
+          "Monitoreo de reservas"
+        ]
+      },
+      "notifications": {
+        "title": "Notificaciones",
+        "description": "Mantente informado de todo lo que sucede en tu hotel",
+        "benefits": [
+          "Alertas en tiempo real",
+          "Emails automáticos",
+          "Dashboard centralizado",
+          "Reportes detallados"
+        ]
+      }
+    },
+    "stats": {
+      "title": "Resultados que hablan por sí solos",
+      "subtitle": "Descubre el impacto de nuestras herramientas",
+      "error_reduction": "Reducción de errores",
+      "time_saved": "Tiempo ahorrado diario",
+      "conversion_increase": "Aumento en conversión",
+      "monitoring": "Monitoreo continuo"
+    },
+    "cta": {
+      "title": "¿Listo para optimizar tu hotel?",
+      "subtitle": "Únete a los hoteles que ya están mejorando su gestión con nuestras herramientas",
+      "start_now": "Comenzar Ahora",
+      "talk_sales": "Hablar con Ventas"
+    }
+  },
+  "tools": {
+    "hero": {
+      "title": "Herramientas para {span}",
+      "span": "Little Hotelier",
+      "subtitle": "Descubre nuestra colección completa de herramientas diseñadas específicamente para optimizar tu gestión hotelera con Little Hotelier de Siteminder."
+    },
+    "categories": {
+      "all": "Todas",
+      "chrome_extensions": "Extensiones Chrome",
+      "automations": "Automatizaciones"
+    },
+    "status": {
+      "available": "Disponible",
+      "beta": "Beta",
+      "coming_soon": "Próximamente"
+    },
+    "actions": {
+      "use_now": "Usar Ahora",
+      "beta_access": "Beta",
+      "coming_soon": "Próximamente",
+      "download_extensions": "Descargar Extensiones",
+      "request_setup": "Solicitar Configuración"
+    },
+    "features": "Características principales:",
+    "more_features": "características más",
+    "custom_tool": {
+      "title": "¿Necesitas una herramienta personalizada?",
+      "description": "Contacta con nosotros para desarrollar soluciones específicas para tu hotel",
+      "contact": "Contactar"
+    },
+    "install": {
+      "title": "Cómo instalar las herramientas",
+      "subtitle": "Sigue estos sencillos pasos para comenzar a usar nuestras herramientas",
+      "chrome_steps": [
+        {
+          "title": "Descarga la extensión",
+          "description": "Descarga el archivo .crx de la extensión desde nuestra página"
+        },
+        {
+          "title": "Abre Chrome Extensions",
+          "description": "Ve a chrome://extensions/ en tu navegador Chrome"
+        },
+        {
+          "title": "Activa el modo desarrollador",
+          "description": "Habilita el \"Modo de desarrollador\" en la esquina superior derecha"
+        },
+        {
+          "title": "Instala la extensión",
+          "description": "Arrastra el archivo .crx al navegador o usa \"Cargar extensión sin empaquetar\""
+        },
+        {
+          "title": "Configura la extensión",
+          "description": "Sigue las instrucciones de configuración específicas de cada extensión"
+        }
+      ],
+      "automation_steps": [
+        {
+          "title": "Contacta con nosotros",
+          "description": "Envíanos un mensaje para solicitar la configuración de automatizaciones"
+        },
+        {
+          "title": "Proporciona credenciales",
+          "description": "Comparte las credenciales de acceso limitado a tu cuenta de Little Hotelier"
+        },
+        {
+          "title": "Configuramos el sistema",
+          "description": "Nuestro equipo configurará las automatizaciones según tus necesidades"
+        },
+        {
+          "title": "Pruebas y validación",
+          "description": "Realizamos pruebas para asegurar que todo funciona correctamente"
+        },
+        {
+          "title": "Monitoreo continuo",
+          "description": "Las automatizaciones funcionan 24/7 con monitoreo y soporte continuo"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contacta con {span}",
+      "span": "nuestro equipo",
+      "subtitle": "¿Tienes preguntas sobre nuestras herramientas? ¿Necesitas una solución personalizada? Estamos aquí para ayudarte a optimizar la gestión de tu hotel."
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "name": "Nombre completo",
+      "email": "Email",
+      "hotel_name": "Nombre del hotel",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "privacy": "Acepto la política de privacidad y el tratamiento de mis datos",
+      "send": "Enviar Mensaje",
+      "placeholders": {
+        "name": "Tu nombre completo",
+        "email": "tu.email&hotel.com",
+        "hotel": "Hotel Paradise",
+        "subject": "Selecciona un asunto",
+        "message": "Cuéntanos cómo podemos ayudarte..."
+      },
+      "subjects": {
+        "general": "Consulta general",
+        "technical": "Soporte técnico",
+        "custom": "Herramienta personalizada",
+        "automation": "Configuración de automatizaciones",
+        "extension": "Ayuda con extensiones Chrome",
+        "billing": "Facturación y precios",
+        "partnership": "Colaboración/Partnership"
+      }
+    },
+    "info": {
+      "title": "Información de contacto",
+      "email": "Email",
+      "schedule": "Horario de atención",
+      "schedule_text": "24/7 - Soporte disponible siempre",
+      "response": "Respuesta promedio",
+      "response_text": "Menos de 2 horas"
+    },
+    "support": {
+      "title": "Opciones de soporte",
+      "email": {
+        "title": "Soporte por Email",
+        "description": "Perfecto para consultas detalladas y problemas complejos",
+        "response": "Respuesta en menos de 2 horas"
+      },
+      "urgent": {
+        "title": "Soporte Urgente",
+        "description": "Para problemas críticos que afectan tu operación hotelera",
+        "response": "Respuesta inmediata"
+      },
+      "consulting": {
+        "title": "Consultoría Técnica",
+        "description": "Asesoramiento personalizado para optimizar tu flujo de trabajo",
+        "response": "Sesión programada en 24h"
+      }
+    },
+    "faq_link": {
+      "title": "¿Tienes una pregunta rápida?",
+      "description": "Revisa nuestras preguntas frecuentes, tal vez ya tenemos la respuesta que buscas.",
+      "view_faq": "Ver FAQ"
+    }
+  },
+  "documentation": {
+    "hero": {
+      "title": "Documentación de {span}",
+      "span": "Hotelier Tools",
+      "subtitle": "Guías completas, tutoriales y referencias técnicas para aprovechar al máximo nuestras herramientas de gestión hotelera."
+    },
+    "nav": {
+      "getting_started": "Comenzando",
+      "chrome_extensions": "Extensiones Chrome",
+      "automations": "Automatizaciones",
+      "api": "API Reference",
+      "faq": "FAQ"
+    }
+  },
+  "footer": {
+    "description": "Optimiza la gestión de tu hotel con herramientas diseñadas específicamente para Little Hotelier de Siteminder.",
+    "links": "Enlaces",
+    "support": "Soporte",
+    "email": "Email",
+    "faq": "FAQ",
+    "rights": "Todos los derechos reservados.",
+    "made_with": "Hecho con ❤️ para la comunidad hotelera"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "warning": "Advertencia",
+    "info": "Información",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "view": "Ver",
+    "download": "Descargar",
+    "upload": "Subir",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "back": "Volver",
+    "continue": "Continuar",
+    "finish": "Finalizar",
+    "yes": "Sí",
+    "no": "No",
+    "ok": "OK",
+    "confirm": "Confirmar"
+  }
+}

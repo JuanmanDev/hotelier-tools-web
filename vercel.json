@@ -1,0 +1,16 @@
+{
+  "name": "hotelier-tools-workspace",
+  "version": "3",
+  "build": {
+    "env": {
+      "NUXT_API_SECRET": "@nuxt_api_secret",
+      "NUXT_PUBLIC_API_BASE": "/api"
+    }
+  },
+  "functions": {
+    "app/server/index.mjs": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "regions": ["iad1"]
+}
