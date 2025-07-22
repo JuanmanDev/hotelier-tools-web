@@ -207,7 +207,7 @@
       "send": "Enviar Mensaje",
       "placeholders": {
         "name": "Tu nombre completo",
-        "email": "tu.email@hotel.com",
+        "email": "tu.email&hotel.com",
         "hotel": "Hotel Paradise",
         "subject": "Selecciona un asunto",
         "message": "Cuéntanos cómo podemos ayudarte..."
