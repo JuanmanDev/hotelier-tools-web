@@ -1,6 +1,6 @@
 {
   "name": "hotelier-tools-workspace",
-  "version": 3,
+  "version": 2,
   "build": {
     "env": {
       "NUXT_API_SECRET": "@nuxt_api_secret",
