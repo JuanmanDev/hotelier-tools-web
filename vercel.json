@@ -1,15 +1,3 @@
 {
-  "name": "hotelier-tools-workspace",
-  "version": 2,
-  "build": {
-    "env": {
-      "NUXT_PUBLIC_API_BASE": "/api"
-    }
-  },
-  "functions": {
-    "app/server/index.mjs": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "regions": ["iad1"]
+  "version": 2
 }
