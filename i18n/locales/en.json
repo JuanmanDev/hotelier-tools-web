@@ -207,7 +207,7 @@
       "send": "Send Message",
       "placeholders": {
         "name": "Your full name",
-        "email": "your.email@hotel.com",
+        "email": "your.email_hotel.com",
         "hotel": "Paradise Hotel",
         "subject": "Select a subject",
         "message": "Tell us how we can help you..."
