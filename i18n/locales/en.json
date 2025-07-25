@@ -62,6 +62,83 @@
         }
       }
     },
+    "process_animation": {
+      "title": "How does Hotelier Tools work?",
+      "subtitle": "See how our tools improve your hotel management step by step",
+      "progress": "Progress",
+      "steps": {
+        "detection": {
+          "title": "Auto Check all data",
+          "description": "analyze reservation on Front Desk and Direct Booking with all fields"
+        },
+        "notification": {
+          "title": "Email send",
+          "description": "Send a email when there is a problem to fix as soon as possible or informa about the last tasks auto applied"
+        },
+        "resolution": {
+          "title": "Using API",
+          "description": "Usin the data directly the data is very fast to get and monitor."
+        }
+      },
+      "status": {
+        "pending": "Pending",
+        "in_progress": "In progress",
+        "completed": "Completed",
+        "error": "Error"
+      },
+      "controls": {
+        "restart": "Restart",
+        "play": "Play",
+        "pause": "Pause"
+      },
+      "benefits": {
+        "conversion": {
+          "title": "Increased Conversion",
+          "description": "Prevents loss of bookings due to payment issues"
+        },
+        "automation": {
+          "title": "Total Automation",
+          "description": "Fully automated process without manual intervention"
+        },
+        "response": {
+          "title": "Quick Response",
+          "description": "Immediate notification to resolve issues on time"
+        }
+      }
+    },
+    "process_showcase": {
+      "scenarios": {
+        "payment_issue": "Payment Issue",
+        "missing_data": "Missing Data Check",
+        "all_complete": "All Complete"
+      },
+      "steps": {
+        "1": {
+          "title": "Nightly check-in verification",
+          "subtitle": "All check-ins made during the day are checked every night"
+        },
+        "2": {
+          "title": "Guest data analysis",
+          "subtitle": "It is verified that the system has all the client's data and that the reservation is fully paid"
+        },
+        "3": {
+          "title": "Missing data notification",
+          "subtitle": "A notice is sent about the missing data to request it during the next day before check-out"
+        },
+        "4": {
+          "title": "Review of pending payments",
+          "subtitle": "Daily verification of reservations with pending or incomplete payments"
+        },
+        "5": {
+          "title": "Payment issue detected",
+          "subtitle": "A payment transaction error is detected that requires immediate attention"
+        },
+        "6": {
+          "title": "Payment issue resolution",
+          "subtitle": "Contact the client to request an alternative payment method before arrival"
+        }
+      }
+    },
     "features": {
       "title": "Why choose Hotelier Tools?",
       "subtitle": "Features that make the difference in your hotel management",
@@ -116,6 +193,97 @@
       "title": "Tools for {span}",
       "span": "Little Hotelier",
       "subtitle": "Discover our complete collection of tools designed specifically to optimize your hotel management with Little Hotelier by Siteminder."
+    },
+    "showcase": {
+      "title": "Our Tools",
+      "subtitle": "Discover the tools that will revolutionize your hotel management",
+      "categories": {
+        "all": "All",
+        "chrome_extension": "Chrome Extensions",
+        "automation": "Automations"
+      },
+      "card": {
+        "features": "Main features:",
+        "more_features": "+{count} more features",
+        "actions": {
+          "use_now": "Use Now",
+          "beta": "Beta",
+          "coming_soon": "Coming Soon"
+        }
+      },
+      "cta": {
+        "title": "Need a custom tool?",
+        "description": "Contact us to develop specific solutions for your hotel",
+        "button": "Contact"
+      },
+      "status": {
+        "available": "Available",
+        "beta": "Beta",
+        "coming_soon": "Coming Soon",
+        "unknown": "Unknown"
+      },
+      "tools": {
+        "ui_enhancer": {
+          "name": "UI Enhancer",
+          "description": "Improves the Little Hotelier interface with full-width tables and better visualization.",
+          "features": [
+            "Full-width tables",
+            "Horizontal scroll removal",
+            "Visible prices in calendar",
+            "Cleaner and more functional interface"
+          ]
+        },
+        "commission_calculator": {
+          "name": "Commission Calculator",
+          "description": "Automatically calculates Booking.com commissions on each reservation.",
+          "features": [
+            "Automatic commission calculation",
+            "Real-time information",
+            "Profitability analysis",
+            "Commission history"
+          ]
+        },
+        "auto_checkout": {
+          "name": "Automatic Check-out",
+          "description": "Automatically marks reservations as checked-out at the end of the date.",
+          "features": [
+            "Automatic check-out",
+            "Task scheduling",
+            "Status notifications",
+            "Activity logs"
+          ]
+        },
+        "payment_validator": {
+          "name": "Payment Validator",
+          "description": "Checks that all reservations are fully paid.",
+          "features": [
+            "Automatic payment verification",
+            "Pending payment alerts",
+            "Financial status reports",
+            "Accounting integration"
+          ]
+        },
+        "reservation_monitor": {
+          "name": "Reservation Monitor",
+          "description": "Monitors incomplete web reservations and notifies of payment issues.",
+          "features": [
+            "Incomplete reservation detection",
+            "Email notifications",
+            "Tracking dashboard",
+            "Lost reservation recovery"
+          ]
+        },
+        "invoice_manager": {
+          "name": "Invoice Manager",
+          "description": "Manages invoices automatically and verifies mandatory fields.",
+          "features": [
+            "Bulk invoice download",
+            "Mandatory field validation",
+            "Automatic summaries",
+            "Missing field notifications"
+          ]
+        }
+      }
     },
     "categories": {
       "all": "All",

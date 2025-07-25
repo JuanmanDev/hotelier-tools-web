@@ -3,68 +3,64 @@
     <!-- Hero Section -->
     <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-900 dark:to-blue-900">
       <div class="absolute inset-0 bg-grid-slate-100 dark:bg-grid-slate-700/25 bg-[size:20px_20px] [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]"></div>
-      
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-        <div class="text-center">
-          <!-- Main Heading -->
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 animate-fade-in-up">
-            {{ t('home.hero.title') }}
-            <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              {{ t('home.hero.span') }}
-            </span>
-          </h1>
-          
-          <!-- Subtitle -->
-          <p class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto animate-fade-in-up delay-100">
-            {{ t('home.hero.subtitle') }}
-          </p>
-          
-          <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-up delay-200">
-            <UButton
-              color="primary"
-              size="xl"
-              :to="localePath('/tools')"
-              class="w-full sm:w-auto"
-            >
-              <UIcon name="i-heroicons-rocket-launch" class="w-5 h-5 mr-2" />
-              {{ t('home.hero.cta_tools') }}
-            </UButton>
+      <HeroSection >
+        <slot name="hero-content">
+          <div class="text-center backdrop-blur-sm">
+            <!-- Main Heading -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 animate-fade-in-up">
+                {{ t('home.hero.title') }}
+                <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                {{ t('home.hero.span') }}
+                </span>
+            </h1>
             
-            <UButton
-              color="gray"
-              variant="outline"
-              size="xl"
-              :to="localePath('/documentation')"
-              class="w-full sm:w-auto"
-            >
-              <UIcon name="i-heroicons-document-text" class="w-5 h-5 mr-2" />
-              {{ t('home.hero.cta_docs') }}
-            </UButton>
-          </div>
+            <!-- Subtitle -->
+            <p class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto animate-fade-in-up delay-100">
+                {{ t('home.hero.subtitle') }}
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-up delay-200">
+                <UButton
+                color="primary"
+                size="xl"
+                :to="localePath('/tools')"
+                class="w-full sm:w-auto"
+                >
+                <UIcon name="i-heroicons-rocket-launch" class="w-5 h-5 mr-2" />
+                {{ t('home.hero.cta_tools') }}
+                </UButton>
+                
+                <UButton
+                color="gray"
+                variant="outline"
+                size="xl"
+                :to="localePath('/documentation')"
+                class="w-full sm:w-auto"
+                >
+                <UIcon name="i-heroicons-document-text" class="w-5 h-5 mr-2" />
+                {{ t('home.hero.cta_docs') }}
+                </UButton>
+            </div>
 
-          <!-- Trust Indicators -->
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-500 dark:text-gray-400 animate-fade-in-up delay-300">
-            <div class="flex items-center">
-              <UIcon name="i-heroicons-shield-check" class="w-5 h-5 mr-2 text-green-500" />
-              {{ t('home.hero.trust.secure') }}
+            <!-- Trust Indicators -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-500 dark:text-gray-400 animate-fade-in-up delay-300">
+                <div class="flex items-center">
+                <UIcon name="i-heroicons-shield-check" class="w-5 h-5 mr-2 text-green-500" />
+                {{ t('home.hero.trust.secure') }}
+                </div>
+                <div class="flex items-center">
+                <UIcon name="i-heroicons-clock" class="w-5 h-5 mr-2 text-blue-500" />
+                {{ t('home.hero.trust.support') }}
+                </div>
+                <div class="flex items-center">
+                <UIcon name="i-heroicons-star" class="w-5 h-5 mr-2 text-yellow-500" />
+                {{ t('home.hero.trust.easy') }}
+                </div>
             </div>
-            <div class="flex items-center">
-              <UIcon name="i-heroicons-clock" class="w-5 h-5 mr-2 text-blue-500" />
-              {{ t('home.hero.trust.support') }}
             </div>
-            <div class="flex items-center">
-              <UIcon name="i-heroicons-star" class="w-5 h-5 mr-2 text-yellow-500" />
-              {{ t('home.hero.trust.easy') }}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Floating Elements -->
-      <div class="absolute top-20 left-10 w-20 h-20 bg-blue-200 dark:bg-blue-800 rounded-full opacity-50 animate-pulse delay-1000"></div>
-      <div class="absolute bottom-20 right-10 w-16 h-16 bg-indigo-200 dark:bg-indigo-800 rounded-full opacity-50 animate-pulse delay-2000"></div>
-      <div class="absolute top-1/2 right-20 w-12 h-12 bg-purple-200 dark:bg-purple-800 rounded-full opacity-50 animate-pulse delay-1500"></div>
+        </slot>
+      </HeroSection>
     </section>
 
     <!-- Process Animation Section -->
@@ -244,3 +240,9 @@ const stats = [
   { value: '24/7', label: 'home.stats.monitoring' }
 ]
 </script>
+
+<style>
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+</style>

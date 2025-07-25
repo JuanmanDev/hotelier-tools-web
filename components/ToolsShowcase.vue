@@ -3,10 +3,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Nuestras Herramientas
+          {{ t('tools.showcase.title') }}
         </h2>
         <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Descubre las herramientas que van a revolucionar la gestión de tu hotel
+          {{ t('tools.showcase.subtitle') }}
         </p>
       </div>
 
@@ -65,9 +65,9 @@
 
             <!-- Features List -->
             <div class="space-y-2">
-              <h4 class="text-sm font-medium text-gray-900 dark:text-white">
-                Características principales:
-              </h4>
+              <!-- <h4 class="text-sm font-medium text-gray-900 dark:text-white">
+                {{ t('tools.showcase.card.features') }}
+              </h4> -->
               <ul class="space-y-1">
                 <li 
                   v-for="feature in tool.features.slice(0, 3)"
@@ -75,15 +75,16 @@
                   class="flex items-center text-sm text-gray-600 dark:text-gray-300"
                 >
                   <UIcon name="i-heroicons-check" class="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                  {{ feature }}
+                  {{ feature.body.static }}
                 </li>
                 <li 
                   v-if="tool.features.length > 3"
                   class="text-sm text-gray-500 dark:text-gray-400"
                 >
-                  +{{ tool.features.length - 3 }} características más
+                  {{ t('tools.showcase.card.more_features', { count: tool.features.length - 3 }) }}
                 </li>
               </ul>
+              
             </div>
           </div>
 
@@ -97,7 +98,7 @@
                 @click="openTool(tool)"
               >
                 <UIcon name="i-heroicons-rocket-launch" class="w-4 h-4 mr-2" />
-                Usar Ahora
+                {{ t('tools.showcase.card.actions.use_now') }}
               </UButton>
               
               <UButton
@@ -107,7 +108,7 @@
                 @click="requestBetaAccess(tool)"
               >
                 <UIcon name="i-heroicons-flask" class="w-4 h-4 mr-2" />
-                Beta
+                {{ t('tools.showcase.card.actions.beta') }}
               </UButton>
               
               <UButton
@@ -118,7 +119,7 @@
                 disabled
               >
                 <UIcon name="i-heroicons-clock" class="w-4 h-4 mr-2" />
-                Próximamente
+                {{ t('tools.showcase.card.actions.coming_soon') }}
               </UButton>
 
               <UButton
@@ -139,10 +140,10 @@
       <div class="mt-16 text-center">
         <div class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-800 rounded-2xl p-8">
           <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            ¿Necesitas una herramienta personalizada?
+            {{ t('tools.showcase.cta.title') }}
           </h3>
           <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            Contacta con nosotros para desarrollar soluciones específicas para tu hotel
+            {{ t('tools.showcase.cta.description') }}
           </p>
           <UButton
             color="primary"
@@ -150,7 +151,7 @@
             to="/contact"
           >
             <UIcon name="i-heroicons-chat-bubble-left-ellipsis" class="w-5 h-5 mr-2" />
-            Contactar
+            {{ t('tools.showcase.cta.button') }}
           </UButton>
         </div>
       </div>
@@ -160,97 +161,75 @@
 
 <script setup lang="ts">
 import type { Tool } from '~/types'
+import { useI18n } from 'vue-i18n'
 
+const { t, tm } = useI18n()
 const selectedCategory = ref('all')
 
-const categories = [
-  { id: 'all', name: 'Todas' },
-  { id: 'chrome-extension', name: 'Extensiones Chrome' },
-  { id: 'automation', name: 'Automatizaciones' }
-]
+const categories = computed(() => [
+  { id: 'all', name: t('tools.showcase.categories.all') },
+  { id: 'chrome-extension', name: t('tools.showcase.categories.chrome_extension') },
+  { id: 'automation', name: t('tools.showcase.categories.automation') }
+])
 
 const tools: Tool[] = [
   {
     id: 'chrome-ui-enhancer',
-    name: 'UI Enhancer',
-    description: 'Mejora la interfaz de Little Hotelier con tablas a ancho completo y mejor visualización.',
+    name: t('tools.showcase.tools.ui_enhancer.name'),
+    description: t('tools.showcase.tools.ui_enhancer.description'),
     category: 'chrome-extension',
-    features: [
-      'Tablas a ancho completo',
-      'Eliminación del scroll horizontal',
-      'Precios visibles en calendario',
-      'Interfaz más limpia y funcional'
-    ],
+    // features: t('tools.showcase.tools.ui_enhancer.features', (list: string[]) => list) as any,
+    features: tm('tools.showcase.tools.ui_enhancer.features') || [],
     icon: 'i-heroicons-computer-desktop',
     status: 'available'
   },
   {
     id: 'booking-commission-calculator',
-    name: 'Calculadora de Comisiones',
-    description: 'Calcula automáticamente las comisiones de Booking.com en cada reserva.',
+    name: t('tools.showcase.tools.commission_calculator.name'),
+    description: t('tools.showcase.tools.commission_calculator.description'),
     category: 'chrome-extension',
-    features: [
-      'Cálculo automático de comisiones',
-      'Información en tiempo real',
-      'Análisis de rentabilidad',
-      'Historial de comisiones'
-    ],
+    // features: t('tools.showcase.tools.commission_calculator.features', (list: string[]) => list) as any,
+    features: tm('tools.showcase.tools.commission_calculator.features') || [],
     icon: 'i-heroicons-calculator',
     status: 'available'
   },
   {
     id: 'auto-checkout',
-    name: 'Check-out Automático',
-    description: 'Marca automáticamente las reservas como check-out al finalizar la fecha.',
+    name: t('tools.showcase.tools.auto_checkout.name'),
+    description: t('tools.showcase.tools.auto_checkout.description'),
     category: 'automation',
-    features: [
-      'Check-out automático',
-      'Programación de tareas',
-      'Notificaciones de estado',
-      'Logs de actividad'
-    ],
+    // features: t('tools.showcase.tools.auto_checkout.features', (list: string[]) => list) as any,
+    features: tm('tools.showcase.tools.commission_calculator.features') || [],
     icon: 'i-heroicons-calendar-days',
     status: 'beta'
   },
   {
     id: 'payment-validator',
-    name: 'Validador de Pagos',
-    description: 'Revisa que todas las reservas estén completamente pagadas.',
+    name: t('tools.showcase.tools.payment_validator.name'),
+    description: t('tools.showcase.tools.payment_validator.description'),
     category: 'automation',
-    features: [
-      'Verificación automática de pagos',
-      'Alertas de pagos pendientes',
-      'Reportes de estado financiero',
-      'Integración con contabilidad'
-    ],
+    // features: t('tools.showcase.tools.payment_validator.features', (list: string[]) => list) as any,
+    features: tm('tools.showcase.tools.commission_calculator.features') || [],
     icon: 'i-heroicons-credit-card',
     status: 'beta'
   },
   {
     id: 'reservation-monitor',
-    name: 'Monitor de Reservas',
-    description: 'Monitorea reservas web incompletas y notifica problemas de pago.',
+    name: t('tools.showcase.tools.reservation_monitor.name'),
+    description: t('tools.showcase.tools.reservation_monitor.description'),
     category: 'automation',
-    features: [
-      'Detección de reservas incompletas',
-      'Notificaciones por email',
-      'Dashboard de seguimiento',
-      'Recuperación de reservas perdidas'
-    ],
+    // features: t('tools.showcase.tools.reservation_monitor.features', (list: string[]) => list) as any,
+    features: tm('tools.showcase.tools.commission_calculator.features') || [],
     icon: 'i-heroicons-shield-check',
     status: 'available'
   },
   {
     id: 'invoice-manager',
-    name: 'Gestor de Facturas',
-    description: 'Gestiona facturas automáticamente y verifica campos obligatorios.',
+    name: t('tools.showcase.tools.invoice_manager.name'),
+    description: t('tools.showcase.tools.invoice_manager.description'),
     category: 'automation',
-    features: [
-      'Descarga masiva de facturas',
-      'Validación de campos obligatorios',
-      'Resúmenes automáticos',
-      'Notificaciones de campos faltantes'
-    ],
+    // features: t('tools.showcase.tools.invoice_manager.features', (list: string[]) => list) as any,
+    features: tm('tools.showcase.tools.commission_calculator.features') || [],
     icon: 'i-heroicons-document-text',
     status: 'coming-soon'
   }
@@ -274,10 +253,10 @@ function getStatusColor(status: string) {
 
 function getStatusText(status: string) {
   switch (status) {
-    case 'available': return 'Disponible'
-    case 'beta': return 'Beta'
-    case 'coming-soon': return 'Próximamente'
-    default: return 'Desconocido'
+    case 'available': return t('tools.showcase.status.available')
+    case 'beta': return t('tools.showcase.status.beta')
+    case 'coming-soon': return t('tools.showcase.status.coming_soon')
+    default: return t('tools.showcase.status.unknown')
   }
 }
 

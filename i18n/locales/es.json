@@ -62,6 +62,83 @@
         }
       }
     },
+    "process_animation": {
+      "title": "¿Cómo funciona Hotelier Tools?",
+      "subtitle": "Mira cómo nuestras herramientas mejoran tu gestión hotelera paso a paso",
+      "progress": "Progreso",
+      "steps": {
+        "detection": {
+          "title": "Auto Check all data",
+          "description": "analyze reservation on Front Desk and Direct Booking with all fields"
+        },
+        "notification": {
+          "title": "Email send",
+          "description": "Send a email when there is a problem to fix as soon as possible or informa about the last tasks auto applied"
+        },
+        "resolution": {
+          "title": "Using API",
+          "description": "Usin the data directly the data is very fast to get and monitor."
+        }
+      },
+      "status": {
+        "pending": "Pendiente",
+        "in_progress": "En progreso",
+        "completed": "Completado",
+        "error": "Error"
+      },
+      "controls": {
+        "restart": "Reiniciar",
+        "play": "Reproducir",
+        "pause": "Pausar"
+      },
+      "benefits": {
+        "conversion": {
+          "title": "Aumento de Conversión",
+          "description": "Evita la pérdida de reservas por problemas de pago"
+        },
+        "automation": {
+          "title": "Automatización Total",
+          "description": "Proceso completamente automatizado sin intervención manual"
+        },
+        "response": {
+          "title": "Respuesta Rápida",
+          "description": "Notificación inmediata para resolver problemas a tiempo"
+        }
+      }
+    },
+    "process_showcase": {
+      "scenarios": {
+        "payment_issue": "Problema de Pago",
+        "missing_data": "Falta de Datos",
+        "all_complete": "Todo Completo"
+      },
+      "steps": {
+        "1": {
+          "title": "Verificación nocturna de check-ins",
+          "subtitle": "Cada noche se comprueban todos los check-ins realizados durante el día"
+        },
+        "2": {
+          "title": "Análisis de datos del huésped",
+          "subtitle": "Se verifica que el sistema tenga todos los datos del cliente y que la reserva esté completamente pagada"
+        },
+        "3": {
+          "title": "Notificación de datos faltantes",
+          "subtitle": "Se envía un aviso sobre los datos faltantes para solicitarlos durante el día siguiente antes del check-out"
+        },
+        "4": {
+          "title": "Revisión de pagos pendientes",
+          "subtitle": "Verificación diaria de las reservas con pagos pendientes o incompletos"
+        },
+        "5": {
+          "title": "Problema de pago detectado",
+          "subtitle": "Se detecta un error en la transacción de pago que requiere atención inmediata"
+        },
+        "6": {
+          "title": "Resolución de incidencia de pago",
+          "subtitle": "Contacto con el cliente para solicitar un método de pago alternativo antes de la llegada"
+        }
+      }
+    },
     "features": {
       "title": "¿Por qué elegir Hotelier Tools?",
       "subtitle": "Características que hacen la diferencia en tu gestión hotelera",
@@ -116,6 +193,97 @@
       "title": "Herramientas para {span}",
       "span": "Little Hotelier",
       "subtitle": "Descubre nuestra colección completa de herramientas diseñadas específicamente para optimizar tu gestión hotelera con Little Hotelier de Siteminder."
+    },
+    "showcase": {
+      "title": "Nuestras Herramientas",
+      "subtitle": "Descubre las herramientas que van a revolucionar la gestión de tu hotel",
+      "categories": {
+        "all": "Todas",
+        "chrome_extension": "Extensiones Chrome",
+        "automation": "Automatizaciones"
+      },
+      "card": {
+        "features": "Características principales:",
+        "more_features": "+{count} características más",
+        "actions": {
+          "use_now": "Usar Ahora",
+          "beta": "Beta",
+          "coming_soon": "Próximamente"
+        }
+      },
+      "cta": {
+        "title": "¿Necesitas una herramienta personalizada?",
+        "description": "Contacta con nosotros para desarrollar soluciones específicas para tu hotel",
+        "button": "Contactar"
+      },
+      "status": {
+        "available": "Disponible",
+        "beta": "Beta",
+        "coming_soon": "Próximamente",
+        "unknown": "Desconocido"
+      },
+      "tools": {
+        "ui_enhancer": {
+          "name": "UI Enhancer",
+          "description": "Mejora la interfaz de Little Hotelier con tablas a ancho completo y mejor visualización.",
+          "features": [
+            "Tablas a ancho completo",
+            "Eliminación del scroll horizontal",
+            "Precios visibles en calendario",
+            "Interfaz más limpia y funcional"
+          ]
+        },
+        "commission_calculator": {
+          "name": "Calculadora de Comisiones",
+          "description": "Calcula automáticamente las comisiones de Booking.com en cada reserva.",
+          "features": [
+            "Cálculo automático de comisiones",
+            "Información en tiempo real",
+            "Análisis de rentabilidad",
+            "Historial de comisiones"
+          ]
+        },
+        "auto_checkout": {
+          "name": "Check-out Automático",
+          "description": "Marca automáticamente las reservas como check-out al finalizar la fecha.",
+          "features": [
+            "Check-out automático",
+            "Programación de tareas",
+            "Notificaciones de estado",
+            "Logs de actividad"
+          ]
+        },
+        "payment_validator": {
+          "name": "Validador de Pagos",
+          "description": "Revisa que todas las reservas estén completamente pagadas.",
+          "features": [
+            "Verificación automática de pagos",
+            "Alertas de pagos pendientes",
+            "Reportes de estado financiero",
+            "Integración con contabilidad"
+          ]
+        },
+        "reservation_monitor": {
+          "name": "Monitor de Reservas",
+          "description": "Monitorea reservas web incompletas y notifica problemas de pago.",
+          "features": [
+            "Detección de reservas incompletas",
+            "Notificaciones por email",
+            "Dashboard de seguimiento",
+            "Recuperación de reservas perdidas"
+          ]
+        },
+        "invoice_manager": {
+          "name": "Gestor de Facturas",
+          "description": "Gestiona facturas automáticamente y verifica campos obligatorios.",
+          "features": [
+            "Descarga masiva de facturas",
+            "Validación de campos obligatorios",
+            "Resúmenes automáticos",
+            "Notificaciones de campos faltantes"
+          ]
+        }
+      }
     },
     "categories": {
       "all": "Todas",
