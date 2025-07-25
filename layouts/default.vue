@@ -37,23 +37,23 @@
               {{ $t('nav.contact') }}
             </NuxtLink>
           </div>
-
           <!-- Theme Toggle, Language Selector & Mobile Menu -->
           <div class="flex items-center space-x-4">
             <!-- Language Selector -->
-            <USelectMenu 
-              v-model="currentLocale" 
-              :options="localeOptions"
-              size="sm"
-              color="gray"
-              variant="ghost"
-              @update:modelValue="changeLocale"
+            <UDropdownMenu
+              @change="changeLocale"
+              :items="localeOptions"
             >
-              <template #label>
+              <UButton
+                color="gray"
+                variant="ghost"
+                size="sm"
+              >
                 <span class="fi" :class="currentLocale === 'es' ? 'fi-es' : 'fi-us'"></span>
                 <span class="ml-2 hidden sm:inline">{{ currentLocaleName }}</span>
-              </template>
-            </USelectMenu>
+                <UIcon name="i-heroicons-chevron-down-20-solid" class="ml-1" />
+              </UButton>
+            </UDropdownMenu>
             <ClientOnly>
               <UButton
                 :icon="isDark ? 'i-heroicons-sun' : 'i-heroicons-moon'"
@@ -220,7 +220,8 @@ const localeOptions = computed(() =>
   locales.value.map((l: any) => ({
     label: l.name,
     value: l.code,
-    icon: l.code === 'es' ? 'i-twemoji-flag-spain' : 'i-twemoji-flag-united-states'
+    icon: l.code === 'es' ? 'i-twemoji-flag-spain' : 'i-twemoji-flag-united-states',
+    onSelect: () => changeLocale(l.code)
   }))
 )
 
