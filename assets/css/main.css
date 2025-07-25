@@ -85,3 +85,8 @@
 .delay-300 { animation-delay: 0.3s; }
 .delay-400 { animation-delay: 0.4s; }
 .delay-500 { animation-delay: 0.5s; }
+.delay-2000 { animation-delay: 2s; }
+
+.animation-fill-backwards {
+  animation-fill-mode: backwards;
+}

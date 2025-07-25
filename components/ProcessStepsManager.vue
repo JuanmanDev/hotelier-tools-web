@@ -13,7 +13,7 @@
     </TransitionGroup>
     
     <!-- Navigation Buttons -->
-    <div class="mt-8 flex flex-wrap justify-center gap-4">
+    <div class="mt-8 flex flex-wrap justify-center gap-4  animate-fade-in-up  delay-2000 animation-fill-backwards">
       <UButton
         v-for="scenario in scenarios" 
         :key="scenario.id"

@@ -162,6 +162,7 @@
 <script setup lang="ts">
 import type { Tool } from '~/types'
 import { useI18n } from 'vue-i18n'
+import { navigateTo } from 'nuxt/app'
 
 const { t, tm } = useI18n()
 const selectedCategory = ref('all')
@@ -267,9 +268,8 @@ function openTool(tool: Tool) {
 }
 
 function requestBetaAccess(tool: Tool) {
-  // TODO: Implement beta access request
-  console.log('Requesting beta access for:', tool.name)
-  // This would open a modal or redirect to a form
+  // go to contact page
+  navigateTo('/contact');
 }
 
 function openDocumentation(tool: Tool) {

@@ -7,8 +7,10 @@
   },
   "home": {
     "hero": {
-      "title": "Optimize your {span} with Little Hotelier",
+      "title": "Optimize your",
       "span": "hotel management",
+      "span2": "on Little Hotelier",
+
       "subtitle": "Specialized tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate.",
       "cta_tools": "View Tools",
       "cta_docs": "Documentation",
@@ -69,15 +71,15 @@
       "steps": {
         "detection": {
           "title": "Auto Check all data",
-          "description": "analyze reservation on Front Desk and Direct Booking with all fields"
+          "description": "Analyze reservations on Front Desk and Direct Booking with all fields"
         },
         "notification": {
-          "title": "Email send",
-          "description": "Send a email when there is a problem to fix as soon as possible or informa about the last tasks auto applied"
+          "title": "Email sent",
+          "description": "Send an email when there is a problem to fix as soon as possible or inform about the last tasks auto applied"
         },
         "resolution": {
           "title": "Using API",
-          "description": "Usin the data directly the data is very fast to get and monitor."
+          "description": "Using the data directly makes it very fast to get and monitor"
         }
       },
       "status": {

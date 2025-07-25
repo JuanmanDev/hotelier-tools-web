@@ -7,20 +7,23 @@
         <slot name="hero-content">
           <div class="text-center backdrop-blur-sm">
             <!-- Main Heading -->
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 animate-fade-in-up">
-                {{ t('home.hero.title') }}
-                <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                {{ t('home.hero.span') }}
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 animation-title">
+                <span class="animate-fade-in-up  delay-100 animation-fill-backwards">
+                  {{ t('home.hero.title').replaceAll(" ", "&nbsp;") }}
+                </span> <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent animate-fade-in-up  delay-200 animation-fill-backwards">
+                  {{ t('home.hero.span').replaceAll(" ", "&nbsp;") }}
+                </span> <span class="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent animate-fade-in-up  delay-300 animation-fill-backwards">
+                  {{ t('home.hero.span2').replaceAll(" ", "&nbsp;") }}
                 </span>
             </h1>
             
             <!-- Subtitle -->
-            <p class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto animate-fade-in-up delay-100">
+            <p class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto animate-fade-in-up delay-500 animation-fill-backwards">
                 {{ t('home.hero.subtitle') }}
             </p>
             
             <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-up delay-200">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-up delay-400 animation-fill-backwards">
                 <UButton
                 color="primary"
                 size="xl"
@@ -44,7 +47,7 @@
             </div>
 
             <!-- Trust Indicators -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-500 dark:text-gray-400 animate-fade-in-up delay-300">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-500 dark:text-gray-400 animate-fade-in-up delay-500 animation-fill-backwards">
                 <div class="flex items-center">
                 <UIcon name="i-heroicons-shield-check" class="w-5 h-5 mr-2 text-green-500" />
                 {{ t('home.hero.trust.secure') }}
@@ -234,9 +237,9 @@ const features = [
 ]
 
 const stats = [
-  { value: '95%', label: 'home.stats.errors' },
+  { value: '95%', label: 'home.stats.error_reduction' },
   { value: '3h', label: 'home.stats.time_saved' },
-  { value: '15%', label: 'home.stats.conversion' },
+  { value: '15%', label: 'home.stats.conversion_increase' },
   { value: '24/7', label: 'home.stats.monitoring' }
 ]
 </script>
@@ -245,4 +248,12 @@ const stats = [
 .backdrop-blur-sm {
   backdrop-filter: blur(4px);
 }
+
+.animation-title-1,
+.animation-title-2,
+.animation-title-3 {
+  animation: fadeInUp 1s ease-in-out;
+  animation-fill-mode: backwards;
+}
+
 </style>
