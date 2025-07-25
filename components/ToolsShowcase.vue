@@ -75,7 +75,9 @@
                   class="flex items-center text-sm text-gray-600 dark:text-gray-300"
                 >
                   <UIcon name="i-heroicons-check" class="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                  {{ feature.body.static }}
+                  {{ typeof feature === 'string' 
+                    ? feature 
+                    : feature?.body?.static || (feature?.body || feature || '') }}
                 </li>
                 <li 
                   v-if="tool.features.length > 3"
