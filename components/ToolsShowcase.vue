@@ -26,7 +26,7 @@
             >
               {{ category.name }}
             </button>
-          </div>
+          </div> 
         </div>
       </div>
 
@@ -168,6 +168,7 @@ import { navigateTo } from 'nuxt/app'
 
 const { t, tm } = useI18n()
 const selectedCategory = ref('all')
+const localePath = useLocalePath()
 
 const categories = computed(() => [
   { id: 'all', name: t('tools.showcase.categories.all') },
@@ -264,6 +265,28 @@ function getStatusText(status: string) {
 }
 
 function openTool(tool: Tool) {
+  switch (tool.id) {
+    case 'chrome-ui-enhancer':
+      navigateTo(localePath('/tools/ui/'));
+      break;
+    // case 'booking-commission-calculator':
+    //   navigateTo('/tools/commission-calculator');
+    //   break;
+    // case 'auto-checkout':
+    //   navigateTo('/tools/auto-checkout');
+    //   break;
+    // case 'payment-validator':
+    //   navigateTo('/tools/payment-validator');
+    //   break;
+    // case 'reservation-monitor':
+    //   navigateTo('/tools/reservation-monitor');
+    //   break;
+    // case 'invoice-manager':
+    //   navigateTo('/tools/invoice-manager');
+    //   break;
+    default:
+      console.warn('Unknown tool:', tool);
+  }
   // TODO: Implement tool opening logic
   console.log('Opening tool:', tool.name)
   // This would redirect to the tool's specific page or download link

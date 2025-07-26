@@ -1,12 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    '@nuxt/ui',
-    '@nuxt/fonts',
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/i18n'
-  ],
+  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@nuxt/content', 'vue3-carousel-nuxt'],
+
+  // Nuxt Content configuration
+  content: {
+    // Content directory
+    contentHead: false,
+    documentDriven: false
+  },
 
   // Internationalization configuration
   i18n: {

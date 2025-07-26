@@ -357,6 +357,48 @@
           "description": "Las automatizaciones funcionan 24/7 con monitoreo y soporte continuo"
         }
       ]
+    },
+    "ui": {
+      "title": "Scripts de Tampermonkey",
+      "subtitle": "Colección de scripts de Tampermonkey para mejorar la experiencia en Little Hotelier.",
+      "view_details": "Ver detalles",
+      "view_code": "Ver código del script en GitHub para copiarlo",
+      "view_instructions": "Ver instrucciones",
+      "back_to_list": "Volver al listado",
+      "before": "Antes",
+      "after": "Después",
+      "gallery": "Galería",
+      "install_instructions": "Ver instrucciones para instalar script"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Resolvemos las dudas más comunes sobre nuestras herramientas",
+      "items": [
+        {
+          "label": "¿Son seguras las herramientas?",
+          "content": "Sí, todas nuestras herramientas están diseñadas con los más altos estándares de seguridad. Las extensiones solo modifican la interfaz visual y las automatizaciones utilizan credenciales de acceso limitado."
+        },
+        {
+          "label": "¿Necesito conocimientos técnicos para usar las herramientas?",
+          "content": "No, nuestras herramientas están diseñadas para ser fáciles de usar. Las extensiones se instalan con unos pocos clics y las automatizaciones las configuramos nosotros por ti."
+        },
+        {
+          "label": "¿Qué sucede si Little Hotelier actualiza su plataforma?",
+          "content": "Monitoreamos constantemente los cambios en Little Hotelier y actualizamos nuestras herramientas para mantener la compatibilidad. Las actualizaciones son automáticas."
+        },
+        {
+          "label": "¿Puedo solicitar herramientas personalizadas?",
+          "content": "Por supuesto. Ofrecemos desarrollo de herramientas personalizadas según las necesidades específicas de tu hotel. Contacta con nosotros para más información."
+        },
+        {
+          "label": "¿Hay soporte técnico disponible?",
+          "content": "Sí, ofrecemos soporte técnico 24/7 para todas nuestras herramientas. Puedes contactarnos por email, chat o teléfono."
+        },
+        {
+          "label": "¿Las herramientas afectan el rendimiento de Little Hotelier?",
+          "content": "No, nuestras herramientas están optimizadas para no afectar el rendimiento de la plataforma. Las extensiones solo modifican la presentación visual y las automatizaciones funcionan de forma independiente."
+        }
+      ]
     }
   },
   "contact": {
