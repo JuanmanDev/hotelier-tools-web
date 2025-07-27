@@ -150,7 +150,7 @@
           <UButton
             color="primary"
             size="lg"
-            to="/contact"
+            :to="localePath('/contact')"
           >
             <UIcon name="i-heroicons-chat-bubble-left-ellipsis" class="w-5 h-5 mr-2" />
             {{ t('tools.showcase.cta.button') }}
@@ -294,7 +294,7 @@ function openTool(tool: Tool) {
 
 function requestBetaAccess(tool: Tool) {
   // go to contact page
-  navigateTo('/contact');
+  navigateTo(localePath('/contact'));
 }
 
 function openDocumentation(tool: Tool) {

@@ -300,8 +300,13 @@
                 <UIcon name="i-heroicons-chat-bubble-left-right" class="w-12 h-12 text-blue-600 mb-3" />
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Chat en Vivo</h3>
                 <p class="text-sm text-gray-600 dark:text-gray-300 text-center mb-4">Respuesta inmediata en horario laboral</p>
-                <UButton color="primary" variant="soft" size="sm">
-                  Iniciar Chat
+                <UButton
+                color="primary"
+                variant="soft"
+                size="sm"
+                :to="localePath('/contact')"
+                >
+                Iniciar Chat
                 </UButton>
               </div>
               
@@ -318,7 +323,7 @@
                 <UIcon name="i-heroicons-document-text" class="w-12 h-12 text-blue-600 mb-3" />
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Documentación</h3>
                 <p class="text-sm text-gray-600 dark:text-gray-300 text-center mb-4">Guías detalladas y FAQs</p>
-                <UButton color="primary" variant="soft" size="sm" to="/docs">
+                <UButton color="primary" variant="soft" size="sm" :to="localePath('/documentation')">
                   Ver Documentación
                 </UButton>
               </div>

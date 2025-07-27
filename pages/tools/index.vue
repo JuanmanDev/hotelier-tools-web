@@ -61,7 +61,7 @@
               </div>
             </div>
 
-            <UButton color="primary" to="/chrome-extensions" class="w-full">
+            <UButton color="primary" :to="localePath('/chrome-extensions')" class="w-full">
               <UIcon name="i-heroicons-arrow-down-tray" class="w-4 h-4 mr-2" />
               {{ $t('tools.actions.download_extensions') }}
             </UButton>
@@ -92,7 +92,7 @@
               </div>
             </div>
 
-            <UButton color="indigo" to="/contact" class="w-full">
+            <UButton color="indigo" :to="localePath('/contact')" class="w-full">
               <UIcon name="i-heroicons-chat-bubble-left-ellipsis" class="w-4 h-4 mr-2" />
               {{ $t('tools.actions.request_setup') }}
             </UButton>
@@ -152,6 +152,7 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
+const localePath = useLocalePath()
 
 // SEO
 useHead({

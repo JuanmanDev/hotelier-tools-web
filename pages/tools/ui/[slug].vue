@@ -64,7 +64,7 @@
       </Carousel>
     </section>
 
-    <UButton color="gray" to="/tools/ui" class="mt-4">
+    <UButton color="gray" :to="localePath('/tools/ui')" class="mt-4">
       <UIcon name="i-heroicons-arrow-left" class="w-4 h-4 mr-2" />
       {{ $t('tools.ui.back_to_list') }}
     </UButton>
@@ -77,6 +77,7 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 const route = useRoute()
 const { locale } = useI18n()
+const localePath = useLocalePath()
 const newLocal = `/scripts/${locale.value}/${route.params.slug}`
 const { data: doc } = await useAsyncData(() => queryCollection('content').path(newLocal).first())
 

@@ -337,6 +337,7 @@ useHead({
 })
 
 const activeSection = ref('getting-started')
+const localePath = useLocalePath()
 
 const sections = [
   { id: 'getting-started', title: 'Comenzando' },
@@ -501,5 +502,10 @@ function getMethodColor(method: string) {
     case 'DELETE': return 'red'
     default: return 'gray'
   }
+}
+
+function requestBetaAccess(tool: Tool) {
+  // go to contact page
+  navigateTo(localePath('/contact'));
 }
 </script>
