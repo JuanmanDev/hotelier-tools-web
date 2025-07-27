@@ -347,66 +347,101 @@ useHead({
 // Tampermonkey scripts data
 const calendarScripts = [
   {
-    id: 'show-prices',
+    id: 'prices-display',
     name: 'Mostrar Precios',
-    description: 'Visualiza los precios directamente en la vista de calendario sin necesidad de hacer clic en cada habitación.',
+    description: 'Muestra los precios de las habitaciones directamente en la vista de calendario obteniendo los datos de precios desde la página de inventario.',
     icon: 'i-heroicons-currency-dollar',
-    infoUrl: '/docs/scripts/show-prices'
+    infoUrl: localePath('/scripts/es/prices-display')
   },
   {
-    id: 'auto-refresh',
-    name: 'Actualización Automática',
-    description: 'Evita la caducidad del token actualizando automáticamente la página cuando no haya interacción durante varios minutos.',
+    id: 'auto-refresh-inactivity',
+    name: 'Actualización Automática por Inactividad',
+    description: 'Actualiza automáticamente la página después de un período específico de inactividad del usuario para evitar problemas de sesión expirada.',
     icon: 'i-heroicons-arrow-path',
-    infoUrl: '/docs/scripts/auto-refresh'
-  },
-  {
-    id: 'inventory-to-prices',
-    name: 'Cambiar "Inventario" por "Precios"',
-    description: 'Modifica el nombre del menú para que sea más intuitivo y refleje mejor su contenido.',
-    icon: 'i-heroicons-tag',
-    infoUrl: '/docs/scripts/inventory-to-prices'
-  },
-  {
-    id: 'compact-table',
-    name: 'Diseño Compacto de Tabla',
-    description: 'Optimiza el diseño de la tabla de fechas y habitaciones para ver más información en pantallas pequeñas.',
-    icon: 'i-heroicons-table-cells',
-    infoUrl: '/docs/scripts/compact-table'
+    infoUrl: localePath('/scripts/es/auto-refresh-inactividad')
   }
 ]
 
 const reservationsScripts = [
   {
-    id: 'full-width-tables',
-    name: 'Tablas de Ancho Completo',
-    description: 'Aprovecha todo el espacio disponible en pantalla mostrando las tablas a ancho completo en la página de Reservas.',
+    id: 'full-width-reservation-table',
+    name: 'Tabla de Reservas a Todo Ancho',
+    description: 'Amplía la tabla de reservas en Little Hotelier para que ocupe todo el ancho de la pantalla, permitiendo ver más información sin necesidad de hacer scroll horizontal.',
     icon: 'i-heroicons-arrows-pointing-out',
-    infoUrl: '/docs/scripts/full-width-tables'
+    infoUrl: localePath('/scripts/es/full-width-reservation-table')
+  },
+  {
+    id: 'tables-full-width',
+    name: 'Tablas a Todo Ancho (Direct Booking)',
+    description: 'Hace que todas las tablas en Direct Booking sean más anchas para mostrar más información.',
+    icon: 'i-heroicons-table-cells',
+    infoUrl: localePath('/scripts/es/tables-full-width')
+  },
+  {
+    id: 'change-inventory-name',
+    name: 'Cambiar Nombre de Inventario',
+    description: 'Cambia el nombre del menú "Inventario" para incluir información de precios, haciéndolo más intuitivo y descriptivo.',
+    icon: 'i-heroicons-tag',
+    infoUrl: localePath('/scripts/es/change-inventory-name')
+  },
+  {
+    id: 'add-button-check-front-desk',
+    name: 'Agregar Botón de Verificación en Front Desk',
+    description: 'Agrega un botón para verificar los detalles de la reserva en Front Desk y revisar reembolsos.',
+    icon: 'i-heroicons-check-circle',
+    infoUrl: localePath('/scripts/es/add-button-check-front-desk')
   }
 ]
 
 const reservationDetailsScripts = [
   {
-    id: 'print-invoice',
-    name: 'Botón de Factura',
-    description: 'Añade un botón de acceso rápido para imprimir facturas desde la página de detalles de reserva.',
+    id: 'update-number-adults',
+    name: 'Actualizar Número de Adultos',
+    description: 'Establece automáticamente el número de adultos a 2 por defecto en los formularios de reserva para prevenir errores cuando el valor es 0.',
+    icon: 'i-heroicons-user-group',
+    infoUrl: localePath('/scripts/es/update-number-adults')
+  },
+  {
+    id: 'update-payment-link-button',
+    name: 'Mejorar Botón de Enlace de Pago',
+    description: 'Mejora el botón de enlace de pago con un texto más claro y agrega automáticamente el número de teléfono desde el campo de entrada.',
+    icon: 'i-heroicons-credit-card',
+    infoUrl: localePath('/scripts/es/update-payment-link-button')
+  },
+  {
+    id: 'extra-invoice-print-button',
+    name: 'Botón Extra de Imprimir Factura',
+    description: 'Agrega un botón adicional para imprimir la factura directamente sin necesidad de abrir menús.',
     icon: 'i-heroicons-printer',
-    infoUrl: '/docs/scripts/print-invoice'
+    infoUrl: localePath('/scripts/es/extra-invoice-print-button')
   },
   {
-    id: 'larger-email-buttons',
-    name: 'Botones de Email Grandes',
-    description: 'Aumenta el tamaño de los botones del menú de correo electrónico para facilitar su uso.',
+    id: 'bank-transfer-email-button',
+    name: 'Botón de Email de Transferencia Bancaria',
+    description: 'Agrega un botón para enviar los detalles de transferencia bancaria por email con contenido pre-rellenado.',
     icon: 'i-heroicons-envelope',
-    infoUrl: '/docs/scripts/larger-email-buttons'
+    infoUrl: localePath('/scripts/es/bank-transfer-email-button')
   },
   {
-    id: 'booking-commission',
-    name: 'Info de Comisiones Booking',
-    description: 'Muestra detalles adicionales sobre posibles comisiones de Booking en las reservas.',
+    id: 'show-booking-commissions',
+    name: 'Mostrar Comisiones de Booking.com',
+    description: 'Muestra una estimación del desglose de comisiones para las reservas de Booking.com.',
     icon: 'i-heroicons-banknotes',
-    infoUrl: '/docs/scripts/booking-commission'
+    infoUrl: localePath('/scripts/es/show-booking-commissions')
+  },
+  {
+    id: 'improve-style-touch-screens',
+    name: 'Mejorar Estilo para Pantallas Táctiles',
+    description: 'Mejora los elementos de la interfaz para pantallas táctiles, haciendo los botones más accesibles y los menús más grandes.',
+    icon: 'i-heroicons-device-tablet',
+    infoUrl: localePath('/scripts/es/improve-style-touch-screens')
+  },
+  {
+    id: 'compact-ui-reservation-details',
+    name: 'UI Compacta para Detalles de Reserva',
+    description: 'Compacta la interfaz de usuario para los detalles de reserva y hace la sección de comentarios más alta.',
+    icon: 'i-heroicons-squares-2x2',
+    infoUrl: localePath('/scripts/es/compact-ui-reservation-details')
   }
 ]
 </script>

@@ -1,17 +1,17 @@
 <template>
   <div class="mx-auto py-12 px-4">
     <!-- Before/After Images Section -->
-    <section v-if="doc.meta.images?.before || doc.meta.images?.after" class="mb-8 w-full">
+    <section v-if="doc.meta.images?.before || doc.meta.images?.after" class="max-w-7xl mx-auto mb-8 w-full">
       <div class="flex items-center justify-center gap-0 w-full">
         <div v-if="doc.meta.images?.before" class="flex-1 text-center">
-          <img :src="doc.meta.images.before" alt="before" class="object-cover w-full h-80 rounded shadow-lg border border-gray-200 dark:border-gray-700" />
+          <img :src="doc.meta.images.before" alt="before" class="object-cover w-full h-96 rounded shadow-lg border border-gray-200 dark:border-gray-700" />
           <div class="text-sm text-gray-500 mt-2 font-medium">{{ $t('tools.ui.before') }}</div>
         </div>
         <div v-if="doc.meta.images?.before && doc.meta.images?.after" class="flex-shrink-0">
           <UIcon name="i-heroicons-chevron-right" class="w-16 h-16 text-gray-400" />
         </div>
         <div v-if="doc.meta.images?.after" class="flex-1 text-center">
-          <img :src="doc.meta.images.after" alt="after" class="object-cover w-full h-80 rounded shadow-lg border border-gray-200 dark:border-gray-700" />
+          <img :src="doc.meta.images.after" alt="after" class="object-cover w-full h-96 rounded shadow-lg border border-gray-200 dark:border-gray-700" />
           <div class="text-sm text-gray-500 mt-2 font-medium">{{ $t('tools.ui.after') }}</div>
         </div>
       </div>
@@ -96,6 +96,9 @@ const carouselConfig = {
     },
     1024: {
       itemsToShow: 1.2,
+    },
+    300: {
+      itemsToShow: 1.4,
     }
   }
 }
