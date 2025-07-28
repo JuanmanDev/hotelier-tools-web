@@ -1,5 +1,5 @@
 ---
-title: "Agregar Botón de Verificación en Front Desk"
+title: "Agregar Botón de Verificación en Front Desk desde Direct Booking"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/directBooking/addButtonCheckOnFrontDesk.user.js"
 category: "Direct Booking"
 images:
