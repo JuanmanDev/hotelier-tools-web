@@ -5,7 +5,7 @@
       <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <!-- Logo -->
-          <NuxtLink to="/" class="flex items-center space-x-2">
+          <NuxtLink :to="localePath('/')" class="flex items-center space-x-2">
             <UIcon name="i-heroicons-building-office-2" class="h-8 w-8 text-primary-500" />
             <span class="text-xl font-bold text-gray-900 dark:text-white">Hotelier Tools</span>
           </NuxtLink>

@@ -17,6 +17,18 @@
         "secure": "Seguro y confiable",
         "support": "Soporte 24/7",
         "easy": "Fácil de usar"
+      },
+      "cards": {
+        "extensions": {
+          "title": "Extensiones Chrome",
+          "description": "Mejora la interfaz de Little Hotelier directamente en tu navegador. Hace mucho más fácil el uso de la web sin grandes modificaciones y completamente gratis.",
+          "button": "Ver Mejoras"
+        },
+        "automations": {
+          "title": "Automatizaciones Avanzadas",
+          "description": "Un bot realizará tareas avanzadas que ahorran tiempo de revisión y previenen errores, evitando insatisfacciones de clientes y posibles reclamaciones.",
+          "button": "Ver Automatizaciones"
+        }
       }
     },
     "animation": {
@@ -146,6 +158,7 @@
       "chrome": {
         "title": "Extensiones Chrome",
         "description": "Mejora la interfaz de Little Hotelier directamente en tu navegador",
+        "view_extensions": "Ver Extensiones",
         "benefits": [
           "Tablas a ancho completo",
           "Calculadora de comisiones",
@@ -513,6 +526,40 @@
     "yes": "Sí",
     "no": "No",
     "ok": "OK",
-    "confirm": "Confirmar"
+    "confirm": "Confirmar",
+    "free": "Gratis"
+  },
+  "bot": {
+    "hero": {
+      "title": "Deja que tu {span} se revise solo",
+      "span": "Hostal",
+      "subtitle": "Nuestro bot inteligente trabaja 24/7 automatizando tareas críticas para tu hotel"
+    },
+    "tasks": {
+      "checkout": {
+        "title": "Check-out Automático",
+        "description": "Procesamiento automático de salidas"
+      },
+      "payments": {
+        "title": "Revisión de Pagos",
+        "description": "Verificación de reservas pagadas"
+      },
+      "guests": {
+        "title": "Datos de Huéspedes",
+        "description": "Confirmación de información completa"
+      },
+      "unconfirmed": {
+        "title": "Reservas sin Confirmar",
+        "description": "Detección de pagos pendientes"
+      },
+      "prices": {
+        "title": "Rectificación de Precios",
+        "description": "Corrección automática de céntimos"
+      },
+      "invoices": {
+        "title": "Generación de Facturas",
+        "description": "Facturas mensuales automatizadas"
+      }
+    }
   }
 }

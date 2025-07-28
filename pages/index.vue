@@ -88,8 +88,13 @@
             class="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
             :class="`animate-fade-in-up delay-${(index + 1) * 100}`"
           >
-            <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4">
-              <UIcon :name="feature.icon" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
+                <UIcon :name="feature.icon" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
+              </div>
+              <UBadge v-if="feature.showFreeBadge" size="sm">
+                {{ t('common.free') }}
+              </UBadge>
             </div>
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">
               {{ t(feature.title) }}
@@ -97,7 +102,7 @@
             <p class="text-gray-600 dark:text-gray-300 mb-4">
               {{ t(feature.description) }}
             </p>
-            <ul class="space-y-2">
+            <ul class="space-y-2 mb-6">
               <li 
                 v-for="benefit in feature.benefits"
                 :key="benefit"
@@ -107,6 +112,17 @@
                 {{ t(benefit) }}
               </li>
             </ul>
+            <UButton
+              v-if="feature.buttonText && feature.buttonLink"
+              :to="localePath(feature.buttonLink)"
+              color="primary"
+              variant="outline"
+              size="sm"
+              class="w-full"
+            >
+              {{ t(feature.buttonText) }}
+              <UIcon name="i-heroicons-arrow-right" class="w-4 h-4 ml-2" />
+            </UButton>
           </div>
         </div>
       </div>
@@ -205,6 +221,9 @@ const features = [
     title: 'home.features.chrome.title',
     description: 'home.features.chrome.description',
     icon: 'i-heroicons-puzzle-piece',
+    showFreeBadge: true,
+    buttonText: 'home.features.chrome.view_extensions',
+    buttonLink: '/tools/ui',
     benefits: [
       'home.features.chrome.benefits.0',
       'home.features.chrome.benefits.1',

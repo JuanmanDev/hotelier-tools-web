@@ -18,6 +18,18 @@
         "secure": "Secure and reliable",
         "support": "Quick Support",
         "easy": "Easy to use"
+      },
+      "cards": {
+        "extensions": {
+          "title": "Chrome Extensions",
+          "description": "Improve Little Hotelier interface directly in your browser. Makes using the web much easier without major modifications and completely free.",
+          "button": "View Improvements"
+        },
+        "automations": {
+          "title": "Advanced Automations",
+          "description": "A bot will perform advanced tasks that save review time and prevent errors, avoiding customer dissatisfaction and possible complaints.",
+          "button": "View Automations"
+        }
       }
     },
     "animation": {
@@ -147,6 +159,7 @@
       "chrome": {
         "title": "Chrome Extensions",
         "description": "Improve Little Hotelier interface directly in your browser",
+        "view_extensions": "View Extensions",
         "benefits": [
           "Full-width tables",
           "Commission calculator",
@@ -514,6 +527,40 @@
     "yes": "Yes",
     "no": "No",
     "ok": "OK",
-    "confirm": "Confirm"
+    "confirm": "Confirm",
+    "free": "Free"
+  },
+  "bot": {
+    "hero": {
+      "title": "Let your {span} review itself",
+      "span": "Hotel",
+      "subtitle": "Our intelligent bot works 24/7 automating critical tasks for your hotel"
+    },
+    "tasks": {
+      "checkout": {
+        "title": "Automatic Check-out",
+        "description": "Automatic checkout processing"
+      },
+      "payments": {
+        "title": "Payment Review",
+        "description": "Verification of paid reservations"
+      },
+      "guests": {
+        "title": "Guest Data",
+        "description": "Complete information confirmation"
+      },
+      "unconfirmed": {
+        "title": "Unconfirmed Reservations",
+        "description": "Detection of pending payments"
+      },
+      "prices": {
+        "title": "Price Rectification",
+        "description": "Automatic cent correction"
+      },
+      "invoices": {
+        "title": "Invoice Generation",
+        "description": "Automated monthly invoices"
+      }
+    }
   }
 }
