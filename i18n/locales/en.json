@@ -170,6 +170,7 @@
       "automation": {
         "title": "Automations",
         "description": "Automatic tasks that save time and reduce errors",
+        "see_more": "See more automations",
         "benefits": [
           "Automatic check-out",
           "Payment validation",
@@ -180,6 +181,7 @@
       "notifications": {
         "title": "Notifications",
         "description": "Stay informed about everything happening in your hotel",
+        "check_available": "Check notifications available",
         "benefits": [
           "Real-time alerts",
           "Automatic emails",

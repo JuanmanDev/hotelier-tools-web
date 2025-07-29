@@ -235,6 +235,8 @@ const features = [
     title: 'home.features.automation.title',
     description: 'home.features.automation.description',
     icon: 'i-heroicons-cog-6-tooth',
+    buttonText: 'home.features.automation.see_more',
+    buttonLink: '/tools/bot',
     benefits: [
       'home.features.automation.benefits.0',
       'home.features.automation.benefits.1',
@@ -246,6 +248,8 @@ const features = [
     title: 'home.features.notifications.title',
     description: 'home.features.notifications.description',
     icon: 'i-heroicons-bell',
+    buttonText: 'home.features.notifications.check_available',
+    buttonLink: '/tools/bot',
     benefits: [
       'home.features.notifications.benefits.0',
       'home.features.notifications.benefits.1',

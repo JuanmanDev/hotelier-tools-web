@@ -73,7 +73,7 @@
             <!-- Row 1: No-usar, bloque1, bloque1, bloque2, bloque2, No-usar -->
             <div class="hidden lg:block"></div>
             <div class="col-span-2 flex justify-center">
-              <div class="task-block" :class="{ 'task-blur': blurStates[0] }" @mouseenter="hoveredTask = 0" @mouseleave="hoveredTask = null">
+              <div class="task-block" :class="{ 'task-blur': blurStates[0] }" >
                 <div class="task-header">
                   <div class="task-icon">
                     <UIcon name="i-heroicons-arrow-right-start-on-rectangle" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -88,7 +88,7 @@
               </div>
             </div>
             <div class="col-span-2 flex justify-center">
-              <div class="task-block" :class="{ 'task-blur': blurStates[1] }" @mouseenter="hoveredTask = 1" @mouseleave="hoveredTask = null">
+              <div class="task-block" :class="{ 'task-blur': blurStates[1] }" >
                 <div class="task-header">
                   <div class="task-icon">
                     <UIcon name="i-heroicons-credit-card" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -106,7 +106,7 @@
 
             <!-- Row 2: bloque3, bloque3, No-usar, No-usar, bloque4, bloque4 -->
             <div class="col-span-2 flex justify-center">
-              <div class="task-block" :class="{ 'task-blur': blurStates[2] }" @mouseenter="hoveredTask = 2" @mouseleave="hoveredTask = null">
+              <div class="task-block" :class="{ 'task-blur': blurStates[2] }" >
                 <div class="task-header">
                   <div class="task-icon">
                     <UIcon name="i-heroicons-user-group" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -123,7 +123,7 @@
             <div class="hidden lg:block"></div>
             <div class="hidden lg:block"></div>
             <div class="col-span-2 flex justify-center">
-              <div class="task-block" :class="{ 'task-blur': blurStates[3] }" @mouseenter="hoveredTask = 3" @mouseleave="hoveredTask = null">
+              <div class="task-block" :class="{ 'task-blur': blurStates[3] }" >
                 <div class="task-header">
                   <div class="task-icon">
                     <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -141,7 +141,7 @@
             <!-- Row 3: No-usar, bloque5, bloque5, bloque6, bloque6, No-usar -->
             <div class="hidden lg:block"></div>
             <div class="col-span-2 flex justify-center">
-              <div class="task-block" :class="{ 'task-blur': blurStates[4] }" @mouseenter="hoveredTask = 4" @mouseleave="hoveredTask = null">
+              <div class="task-block" :class="{ 'task-blur': blurStates[4] }" >
                 <div class="task-header">
                   <div class="task-icon">
                     <UIcon name="i-heroicons-calculator" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -156,7 +156,7 @@
               </div>
             </div>
             <div class="col-span-2 flex justify-center">
-              <div class="task-block" :class="{ 'task-blur': blurStates[5] }" @mouseenter="hoveredTask = 5" @mouseleave="hoveredTask = null">
+              <div class="task-block" :class="{ 'task-blur': blurStates[5] }" >
                 <div class="task-header">
                   <div class="task-icon">
                     <UIcon name="i-heroicons-document-text" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -180,7 +180,7 @@
 
 <script setup lang="ts">
 const hoveredTask = ref<number | null>(null)
-const blurStates = ref<boolean[]>([true, true, false, false, true, true])
+const blurStates = ref<boolean[]>([true, true, true, true, true, true])
 const containerRef = ref<HTMLElement>()
 
 const fixedTraces = ref<Array<{ path: string }>>([])
@@ -228,12 +228,13 @@ const generateFixedTraces = () => {
   const containerRect = containerRef.value.getBoundingClientRect()
   const centerX = containerRect.width / 2
   const centerY = containerRect.height / 2
+  const quarterW = containerRect.width / 6
   
   const taskPositions = [
-    { x: centerX - 120, y: centerY - 150 }, // task 1
-    { x: centerX + 120, y: centerY - 150 }, // task 2
-    { x: centerX - 360, y: centerY },       // task 3
-    { x: centerX + 360, y: centerY },       // task 4
+    { x: centerX - 120, y: centerY - 220 }, // task 1
+    { x: centerX + 120, y: centerY - 220 }, // task 2
+    { x: quarterW, y: centerY },  // task 3
+    { x: 5 * quarterW, y: centerY },  // task 4
     { x: centerX - 120, y: centerY + 150 }, // task 5
     { x: centerX + 120, y: centerY + 150 }  // task 6
   ]
@@ -241,8 +242,10 @@ const generateFixedTraces = () => {
   fixedTraces.value = taskPositions.map((pos, index) => {
     // Alternate between horizontal and vertical paths for variety
     if (index !== 2 && index != 3) {
+
+      let movement = index % 2 === 0 ? -15 : 15
       // Horizontal path
-      const path = `${pos.x} ${pos.y} ${centerX} ${pos.y} ${centerX} ${centerY}`
+      const path = `${pos.x} ${pos.y} ${centerX + movement} ${pos.y} ${centerX + movement} ${centerY} ${centerX} ${centerY}`
       return { path }
     } else {
       // Vertical path
@@ -255,8 +258,19 @@ const generateFixedTraces = () => {
 onMounted(() => {
   generateFixedTraces()
   
+  // First laod animation
+  const map = [0, 1, 3, 5, 4, 2]
+  for (let i = 0; i < blurStates.value.length; i++) {
+    setTimeout(() => {
+      blurStates.value[map[i]] = false // Ensure at least 2 tasks are active initially
+    }, i * 120) // Stagger the activation
+    setTimeout(() => {
+      blurStates.value[map[i]] = Math.random() < 0.4 // Ensure at least 2 tasks are active initially
+    }, i * 120 + 700) // Stagger the activation
+  }
+
   // Random toggle interval
-  const toggleInterval = setInterval(toggleRandomBlur, 4500)
+  const toggleInterval = setInterval(toggleRandomBlur, 2500)
   
   // Handle window resize
   if (process.client) {
