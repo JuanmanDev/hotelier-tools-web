@@ -77,7 +77,7 @@
                 </ul>
               </div>
               
-              <div class="flex justify-end">
+              <div class="flex justify-end col-span-1 md:col-span-2 lg:col-span-1">
                 <UButton
                   :to="`/tools/bot/${feature.key}`"
                   color="blue"
