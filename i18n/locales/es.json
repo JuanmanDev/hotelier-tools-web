@@ -13,6 +13,7 @@
       "subtitle": "Herramientas especializadas para hoteles que utilizan la plataforma Little Hotelier de Siteminder. Automatiza procesos, mejora la interfaz y aumenta tu tasa de conversión.",
       "cta_tools": "Ver Herramientas",
       "cta_docs": "Documentación",
+      "bot_button": "Ver Todas las Automatizaciones",
       "trust": {
         "secure": "Seguro y confiable",
         "support": "Soporte 24/7",
@@ -561,6 +562,47 @@
       "invoices": {
         "title": "Generación de Facturas",
         "description": "Facturas mensuales automatizadas"
+      }
+    },
+    "details": {
+      "title": "Características de Automatización Inteligente",
+      "subtitle": "Descubre cómo nuestro bot piensa en lugar de ti, ahorrando dinero, tiempo y previniendo problemas antes de que ocurran",
+      "learnMore": "Saber Más",
+      "checkout": {
+        "longDescription": "Nuestro bot procesa automáticamente el checkout de todas las reservas al finalizar su fecha de estancia, eliminando la necesidad de intervención manual y asegurando registros precisos.",
+        "feature1": "Checkout automático al final de la fecha de estancia",
+        "feature2": "Actualizaciones de estado y notificaciones en tiempo real",
+        "feature3": "Integración con sistema de gestión de propiedades"
+      },
+      "payments": {
+        "longDescription": "Monitorea continuamente el estado de pagos en todos los canales de reserva, detectando pagos incompletos o fallidos antes de que se conviertan en problemas mayores para tu hotel.",
+        "feature1": "Monitoreo de estado de pagos 24/7",
+        "feature2": "Alertas instantáneas por fallas de pago",
+        "feature3": "Verificación de pagos multicanal"
+      },
+      "guests": {
+        "longDescription": "Valida que toda la información requerida de huéspedes esté completa y sea precisa, asegurando el cumplimiento de regulaciones locales y procesos de check-in fluidos.",
+        "feature1": "Validación de campos obligatorios",
+        "feature2": "Alertas de información faltante",
+        "feature3": "Cumplimiento de regulaciones locales"
+      },
+      "unconfirmed": {
+        "longDescription": "Identifica proactivamente reservas con confirmaciones bancarias pendientes o problemas de pago, permitiendo a tu equipo resolver problemas antes de la llegada del huésped.",
+        "feature1": "Detección temprana de problemas de pago",
+        "feature2": "Sistema de notificación automática",
+        "feature3": "Protección de ingresos y prevención de pérdidas"
+      },
+      "prices": {
+        "longDescription": "Corrige automáticamente discrepancias de precios y errores de redondeo de céntimos que pueden ocurrir durante la sincronización de tarifas entre diferentes plataformas de reserva.",
+        "feature1": "Corrección automática de precios",
+        "feature2": "Sincronización de tarifas multiplataforma",
+        "feature3": "Optimización de ingresos"
+      },
+      "invoices": {
+        "longDescription": "Genera y gestiona facturas automáticamente con toda la información fiscal requerida, asegurando el cumplimiento y reduciendo la carga administrativa.",
+        "feature1": "Generación automática de facturas mensuales",
+        "feature2": "Cumplimiento fiscal y requisitos tributarios",
+        "feature3": "Procesamiento masivo y organización"
       }
     }
   }

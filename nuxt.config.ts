@@ -101,5 +101,9 @@ export default defineNuxtConfig({
     public: {
       apiBase: '/api'
     }
+  },
+  
+  experimental: {
+    viewTransition: true
   }
 })

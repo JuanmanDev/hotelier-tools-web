@@ -61,9 +61,20 @@
                 {{ t('home.hero.trust.easy') }}
                 </div>
             </div>
-            </div>
+          </div>
         </slot>
       </HeroSection>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <BotAnimation />
+      <NuxtLink to="/tools/bot" class="flex items-center justify-center mt-8">
+        <UButton>
+          <UIcon name="i-heroicons-arrow-right" class="w-5 h-5 mr-2 mx-auto" />
+          {{ t('home.hero.bot_button') }}
+        </UButton>
+      </NuxtLink>
+      
     </section>
 
     <!-- Process Animation Section -->
@@ -194,6 +205,8 @@
 </template>
 
 <script setup lang="ts">
+import BotAnimation from '../components/BotAnimation.vue'
+
 const { t } = useI18n()
 const localePath = useLocalePath()
 

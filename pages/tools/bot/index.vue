@@ -19,158 +19,76 @@
         </div>
 
         <!-- Bot Animation Container -->
-        <div class="relative w-full mx-auto max-w-6xl min-h-[600px]" ref="containerRef">
-          <!-- Background Bot Icon -->
-          <div class="absolute inset-0 flex items-center justify-center z-0">
-            <UIcon name="i-heroicons-cpu-chip" class="w-80 h-80 text-blue-200/20 dark:text-blue-400/10" />
-          </div>
+        <BotAnimation />
+      </div>
+    </section>
 
-          <!-- Data Beam Traces -->
-          <div class="absolute inset-0 pointer-events-none z-10">
-            <svg class="absolute inset-0 w-full h-full pointer-events-none">
-              <defs>
-                <linearGradient id="beamGradient" x1="0%" y1="100%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:0.3" />
-                  <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:0.3" />
-                </linearGradient>
-                <linearGradient id="flowGradient" x1="0%" y1="100%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:white;stop-opacity:0" />
-                  <stop offset="30%" style="stop-color:white;stop-opacity:0.8" />
-                  <stop offset="70%" style="stop-color:#1D4ED8;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#60A5FA;stop-opacity:0" />
-                </linearGradient>
-              </defs>
+    <!-- Detailed Features Section -->
+    <section class="py-20 bg-white dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            {{ $t('bot.details.title') }}
+          </h2>
+          <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            {{ $t('bot.details.subtitle') }}
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          <div
+            v-for="feature in features"
+            :key="feature.key"
+            class="relative bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 overflow-hidden"
+          >
+            <!-- Large background icon -->
+            <div class="absolute top-4 right-4 opacity-10 dark:opacity-5">
+              <UIcon :name="feature.icon" class="w-52 h-52 text-blue-600" />
+            </div>
+            
+            <div class="relative z-10 grid md:grid-cols-2 lg:grid-cols-6 gap-8 items-center">
+              <div class="lg:col-span-3">
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-xl flex items-center justify-center">
+                    <UIcon :name="feature.icon" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                    {{ $t(`bot.tasks.${feature.key}.title`) }}
+                  </h3>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  {{ $t(`bot.tasks.${feature.key}.description`) }}
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+                  {{ $t(`bot.details.${feature.key}.longDescription`) }}
+                </p>
+              </div>
               
-              <!-- Fixed traces for each active task -->
-              <g v-for="(trace, index) in fixedTraces" :key="index">
-                <!-- Base trace line -->
-                <polyline
-                  :points="trace.path"
-                  stroke="url(#beamGradient)"
-                  stroke-width="7"
-                  fill="none"
-                  :style="{ opacity: blurStates[index] ? 0.1 : 0.4 }"
-                  class="base-trace"
+              <div class="lg:col-span-2">
+                <ul class="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                  <li
+                    v-for="featureIndex in 3"
+                    :key="featureIndex"
+                    class="flex items-center gap-3"
+                  >
+                    <UIcon name="i-heroicons-check" class="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span>{{ $t(`bot.details.${feature.key}.feature${featureIndex}`) }}</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="flex justify-end">
+                <UButton
+                  :to="`/tools/bot/${feature.key}`"
+                  color="blue"
+                  variant="solid"
+                  size="lg"
+                  :label="$t('bot.details.learnMore')"
+                  trailing-icon="i-heroicons-arrow-right"
+                  class="w-full md:w-auto"
                 />
-                
-                <!-- Animated data flow -->
-                <polyline
-                  v-if="!blurStates[index]"
-                  :points="trace.path"
-                  stroke="url(#flowGradient)"
-                  stroke-width="6"
-                  fill="none"
-                  stroke-dasharray="20 80"
-                  :class="`data-flow flow-${index}`"
-                  stroke-linecap="round"
-                />
-              </g>
-            </svg>
-          </div>
-
-          <!-- Grid Layout -->
-          <div class="relative z-20 grid grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-6 h-full">
-            <!-- Row 1: No-usar, bloque1, bloque1, bloque2, bloque2, No-usar -->
-            <div class="hidden lg:block"></div>
-            <div class="col-span-2 flex justify-center">
-              <div class="task-block" :class="{ 'task-blur': blurStates[0] }" >
-                <div class="task-header">
-                  <div class="task-icon">
-                    <UIcon name="i-heroicons-arrow-right-start-on-rectangle" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                  </div>
-                  <h3 class="task-title">
-                    {{ $t('bot.tasks.checkout.title') }}
-                  </h3>
-                </div>
-                <p class="task-description">
-                  {{ $t('bot.tasks.checkout.description') }}
-                </p>
               </div>
             </div>
-            <div class="col-span-2 flex justify-center">
-              <div class="task-block" :class="{ 'task-blur': blurStates[1] }" >
-                <div class="task-header">
-                  <div class="task-icon">
-                    <UIcon name="i-heroicons-credit-card" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                  </div>
-                  <h3 class="task-title">
-                    {{ $t('bot.tasks.payments.title') }}
-                  </h3>
-                </div>
-                <p class="task-description">
-                  {{ $t('bot.tasks.payments.description') }}
-                </p>
-              </div>
-            </div>
-            <div class="hidden lg:block"></div>
-
-            <!-- Row 2: bloque3, bloque3, No-usar, No-usar, bloque4, bloque4 -->
-            <div class="col-span-2 flex justify-center">
-              <div class="task-block" :class="{ 'task-blur': blurStates[2] }" >
-                <div class="task-header">
-                  <div class="task-icon">
-                    <UIcon name="i-heroicons-user-group" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                  </div>
-                  <h3 class="task-title">
-                    {{ $t('bot.tasks.guests.title') }}
-                  </h3>
-                </div>
-                <p class="task-description">
-                  {{ $t('bot.tasks.guests.description') }}
-                </p>
-              </div>
-            </div>
-            <div class="hidden lg:block"></div>
-            <div class="hidden lg:block"></div>
-            <div class="col-span-2 flex justify-center">
-              <div class="task-block" :class="{ 'task-blur': blurStates[3] }" >
-                <div class="task-header">
-                  <div class="task-icon">
-                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                  </div>
-                  <h3 class="task-title">
-                    {{ $t('bot.tasks.unconfirmed.title') }}
-                  </h3>
-                </div>
-                <p class="task-description">
-                  {{ $t('bot.tasks.unconfirmed.description') }}
-                </p>
-              </div>
-            </div>
-
-            <!-- Row 3: No-usar, bloque5, bloque5, bloque6, bloque6, No-usar -->
-            <div class="hidden lg:block"></div>
-            <div class="col-span-2 flex justify-center">
-              <div class="task-block" :class="{ 'task-blur': blurStates[4] }" >
-                <div class="task-header">
-                  <div class="task-icon">
-                    <UIcon name="i-heroicons-calculator" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                  </div>
-                  <h3 class="task-title">
-                    {{ $t('bot.tasks.prices.title') }}
-                  </h3>
-                </div>
-                <p class="task-description">
-                  {{ $t('bot.tasks.prices.description') }}
-                </p>
-              </div>
-            </div>
-            <div class="col-span-2 flex justify-center">
-              <div class="task-block" :class="{ 'task-blur': blurStates[5] }" >
-                <div class="task-header">
-                  <div class="task-icon">
-                    <UIcon name="i-heroicons-document-text" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
-                  </div>
-                  <h3 class="task-title">
-                    {{ $t('bot.tasks.invoices.title') }}
-                  </h3>
-                </div>
-                <p class="task-description">
-                  {{ $t('bot.tasks.invoices.description') }}
-                </p>
-              </div>
-            </div>
-            <div class="hidden lg:block"></div>
           </div>
         </div>
       </div>
@@ -179,12 +97,6 @@
 </template>
 
 <script setup lang="ts">
-const hoveredTask = ref<number | null>(null)
-const blurStates = ref<boolean[]>([true, true, true, true, true, true])
-const containerRef = ref<HTMLElement>()
-
-const fixedTraces = ref<Array<{ path: string }>>([])
-
 // SEO
 useHead({
   title: computed(() => `${$t('bot.tasks.checkout.title')} - Hotelier Tools`),
@@ -196,95 +108,36 @@ useHead({
   ]
 })
 
-// Random blur state toggle
-const toggleRandomBlur = () => {
-  const activeCount = blurStates.value.filter(state => !state).length
-  
-  // Ensure at least 2 elements are always active (not blurred)
-  if (activeCount <= 2) {
-    // Find a blurred element to activate
-    const blurredIndices = blurStates.value.map((state, index) => state ? index : -1).filter(index => index !== -1)
-    if (blurredIndices.length > 0) {
-      const randomIndex = blurredIndices[Math.floor(Math.random() * blurredIndices.length)]
-      blurStates.value[randomIndex] = false
-    }
-  } else {
-    // Randomly toggle any element
-    const randomIndex = Math.floor(Math.random() * blurStates.value.length)
-    blurStates.value[randomIndex] = !blurStates.value[randomIndex]
-    
-    // Check if we still have at least 2 active after toggle
-    const newActiveCount = blurStates.value.filter(state => !state).length
-    if (newActiveCount < 2) {
-      blurStates.value[randomIndex] = false // Revert the change
-    }
+// Features data
+const features = [
+  {
+    key: 'checkout',
+    icon: 'i-heroicons-arrow-right-start-on-rectangle'
+  },
+  {
+    key: 'payments',
+    icon: 'i-heroicons-credit-card'
+  },
+  {
+    key: 'guests',
+    icon: 'i-heroicons-user-group'
+  },
+  {
+    key: 'unconfirmed',
+    icon: 'i-heroicons-exclamation-triangle'
+  },
+  {
+    key: 'prices',
+    icon: 'i-heroicons-calculator'
+  },
+  {
+    key: 'invoices',
+    icon: 'i-heroicons-document-text'
   }
-}
-
-// Generate fixed traces
-const generateFixedTraces = () => {
-  if (!containerRef.value) return
-  
-  const containerRect = containerRef.value.getBoundingClientRect()
-  const centerX = containerRect.width / 2
-  const centerY = containerRect.height / 2
-  const quarterW = containerRect.width / 6
-  
-  const taskPositions = [
-    { x: centerX - 120, y: centerY - 220 }, // task 1
-    { x: centerX + 120, y: centerY - 220 }, // task 2
-    { x: quarterW, y: centerY },  // task 3
-    { x: 5 * quarterW, y: centerY },  // task 4
-    { x: centerX - 120, y: centerY + 150 }, // task 5
-    { x: centerX + 120, y: centerY + 150 }  // task 6
-  ]
-  
-  fixedTraces.value = taskPositions.map((pos, index) => {
-    // Alternate between horizontal and vertical paths for variety
-    if (index !== 2 && index != 3) {
-
-      let movement = index % 2 === 0 ? -15 : 15
-      // Horizontal path
-      const path = `${pos.x} ${pos.y} ${centerX + movement} ${pos.y} ${centerX + movement} ${centerY} ${centerX} ${centerY}`
-      return { path }
-    } else {
-      // Vertical path
-      const path = `${pos.x + 15} ${pos.y + 15} ${pos.x} ${pos.y} ${centerX} ${centerY}`
-      return { path }
-    }
-  })
-}
-
-onMounted(() => {
-  generateFixedTraces()
-  
-  // First laod animation
-  const map = [0, 1, 3, 5, 4, 2]
-  for (let i = 0; i < blurStates.value.length; i++) {
-    setTimeout(() => {
-      blurStates.value[map[i]] = false // Ensure at least 2 tasks are active initially
-    }, i * 120) // Stagger the activation
-    setTimeout(() => {
-      blurStates.value[map[i]] = Math.random() < 0.4 // Ensure at least 2 tasks are active initially
-    }, i * 120 + 700) // Stagger the activation
-  }
-
-  // Random toggle interval
-  const toggleInterval = setInterval(toggleRandomBlur, 2500)
-  
-  // Handle window resize
-  if (process.client) {
-    window.addEventListener('resize', generateFixedTraces)
-  }
-  
-  onUnmounted(() => {
-    clearInterval(toggleInterval)
-    if (process.client) {
-      window.removeEventListener('resize', generateFixedTraces)
-    }
-  })
-})
+]
 </script>
+
+
 
 <style scoped>
 @reference "tailwindcss";

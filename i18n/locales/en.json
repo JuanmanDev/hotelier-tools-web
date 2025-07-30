@@ -14,6 +14,7 @@
       "subtitle": "Specialized tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate.",
       "cta_tools": "View Tools",
       "cta_docs": "Documentation",
+      "bot_button": "See All Automations",
       "trust": {
         "secure": "Secure and reliable",
         "support": "Quick Support",
@@ -562,6 +563,47 @@
       "invoices": {
         "title": "Invoice Generation",
         "description": "Automated monthly invoices"
+      }
+    },
+    "details": {
+      "title": "Intelligent Automation Features",
+      "subtitle": "Discover how our bot thinks instead of you, saving money, time and preventing problems before they occur",
+      "learnMore": "Learn More",
+      "checkout": {
+        "longDescription": "Our bot automatically processes checkout for all reservations at the end of their stay date, eliminating the need for manual intervention and ensuring accurate records.",
+        "feature1": "Automatic checkout at end of stay date",
+        "feature2": "Real-time status updates and notifications",
+        "feature3": "Integration with property management system"
+      },
+      "payments": {
+        "longDescription": "Continuously monitors payment status across all booking channels, detecting incomplete or failed payments before they become major issues for your hotel.",
+        "feature1": "24/7 payment status monitoring",
+        "feature2": "Instant alerts for payment failures",
+        "feature3": "Multi-channel payment verification"
+      },
+      "guests": {
+        "longDescription": "Validates that all required guest information is complete and accurate, ensuring compliance with local regulations and smooth check-in processes.",
+        "feature1": "Mandatory field validation",
+        "feature2": "Missing information alerts",
+        "feature3": "Compliance with local regulations"
+      },
+      "unconfirmed": {
+        "longDescription": "Proactively identifies reservations with pending bank confirmations or payment issues, allowing your team to resolve problems before guest arrival.",
+        "feature1": "Early detection of payment issues",
+        "feature2": "Automatic notification system",
+        "feature3": "Revenue protection and loss prevention"
+      },
+      "prices": {
+        "longDescription": "Automatically corrects pricing discrepancies and cent rounding errors that can occur during rate synchronization across different booking platforms.",
+        "feature1": "Automatic price correction",
+        "feature2": "Multi-platform rate synchronization",
+        "feature3": "Revenue optimization"
+      },
+      "invoices": {
+        "longDescription": "Generates and manages invoices automatically with all required fiscal information, ensuring compliance and reducing administrative workload.",
+        "feature1": "Automated monthly invoice generation",
+        "feature2": "Tax compliance and fiscal requirements",
+        "feature3": "Bulk processing and organization"
       }
     }
   }
