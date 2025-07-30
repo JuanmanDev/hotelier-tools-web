@@ -530,7 +530,8 @@
     "no": "No",
     "ok": "OK",
     "confirm": "Confirmar",
-    "free": "Gratis"
+    "free": "Gratis",
+    "backToOverview": "Volver al Resumen"
   },
   "bot": {
     "hero": {
@@ -568,6 +569,8 @@
       "title": "Características de Automatización Inteligente",
       "subtitle": "Descubre cómo nuestro bot piensa en lugar de ti, ahorrando dinero, tiempo y previniendo problemas antes de que ocurran",
       "learnMore": "Saber Más",
+      "overview": "Descripción General",
+      "keyFeatures": "Características Principales",
       "checkout": {
         "longDescription": "Nuestro bot procesa automáticamente el checkout de todas las reservas al finalizar su fecha de estancia, eliminando la necesidad de intervención manual y asegurando registros precisos.",
         "feature1": "Checkout automático al final de la fecha de estancia",

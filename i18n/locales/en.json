@@ -531,7 +531,8 @@
     "no": "No",
     "ok": "OK",
     "confirm": "Confirm",
-    "free": "Free"
+    "free": "Free",
+    "backToOverview": "Back to Overview"
   },
   "bot": {
     "hero": {
@@ -569,6 +570,8 @@
       "title": "Intelligent Automation Features",
       "subtitle": "Discover how our bot thinks instead of you, saving money, time and preventing problems before they occur",
       "learnMore": "Learn More",
+      "overview": "Overview",
+      "keyFeatures": "Key Features",
       "checkout": {
         "longDescription": "Our bot automatically processes checkout for all reservations at the end of their stay date, eliminating the need for manual intervention and ensuring accurate records.",
         "feature1": "Automatic checkout at end of stay date",
