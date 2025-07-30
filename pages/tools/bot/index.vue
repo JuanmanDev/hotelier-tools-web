@@ -42,7 +42,7 @@
             class="relative bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 overflow-hidden"
           >
             <!-- Large background icon -->
-            <div class="absolute top-4 right-4 opacity-10 dark:opacity-5">
+            <div class="absolute bottom-4 right-4 opacity-10 dark:opacity-5">
               <UIcon :name="feature.icon" class="w-52 h-52 text-blue-600" />
             </div>
             
