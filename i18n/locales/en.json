@@ -606,7 +606,7 @@
         "longDescription": "Generates and manages invoices automatically with all required fiscal information, ensuring compliance and reducing administrative workload. We would create a folder and we would save all invoices in a folder with the month and year of the invoice, so you can easily find it later. We can also upload to OneDrive or Google Drive to have a backup of all invoices.",
         "feature1": "Automated monthly invoice generation",
         "feature2": "Tax compliance and fiscal requirements",
-        "feature3": "Generates all invoices without checking one by one manually",
+        "feature3": "Generates all invoices without checking one by one manually"
       }
     }
   }
