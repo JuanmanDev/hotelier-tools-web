@@ -91,7 +91,7 @@
               
               <div class="flex justify-end col-span-1 md:col-span-2 lg:col-span-1">
                 <UButton
-                  :to="`/tools/bot/${feature.key}`"
+                  :to="localePath(`/tools/bot/${feature.key}`)"
                   color="blue"
                   variant="solid"
                   size="lg"
@@ -109,6 +109,9 @@
 </template>
 
 <script setup lang="ts">
+
+const localePath = useLocalePath();
+
 // SEO
 useHead({
   title: computed(() => `${$t('bot.tasks.checkout.title')} - Hotelier Tools`),
