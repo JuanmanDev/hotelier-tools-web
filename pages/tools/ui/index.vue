@@ -21,10 +21,15 @@
             :src="script.meta.images.after"
             alt="after"
             class="max-h-44 w-full sm:w-1/2 rounded object-cover border border-gray-200 dark:border-gray-700 flex-shrink-0"
+            :style="'view-transition-name: ui-features-after-'+ script.path.split('/').pop()"
           />
           <div class="w-full sm:w-1/2 min-w-0">
-            <h2 class="text-xl sm:text-lg font-bold text-gray-900 dark:text-white mb-2">{{ script.title }}</h2>
-            <div class="text-gray-600 dark:text-gray-300 text-sm line-clamp-3">
+            <h2 class="text-xl sm:text-lg font-bold text-gray-900 dark:text-white mb-2" 
+              :style="'view-transition-name: ui-features-title-'+ script.path.split('/').pop()"
+            >{{ script.title }}</h2>
+            <div class="text-gray-600 dark:text-gray-300 text-sm line-clamp-3" 
+              :style="'view-transition-name: ui-features-content-'+ script.path.split('/').pop()"
+            >
               <ContentRenderer :value="script" :excerpt="true" />
             </div>
             <UButton color="primary" class="mt-2 w-full md:mt-10">

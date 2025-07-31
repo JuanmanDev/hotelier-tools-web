@@ -11,14 +11,18 @@
           <UIcon name="i-heroicons-chevron-right" class="w-16 h-16 text-gray-400" />
         </div>
         <div v-if="doc.meta.images?.after" class="flex-1 text-center">
-          <img :src="doc.meta.images.after" alt="after" class="object-cover w-full h-96 rounded shadow-lg border border-gray-200 dark:border-gray-700" />
+          <img :src="doc.meta.images.after" alt="after" class="object-cover w-full h-96 rounded shadow-lg border border-gray-200 dark:border-gray-700" 
+            :style="'view-transition-name: ui-features-after-'+ route.params.slug"
+          />
           <div class="text-sm text-gray-500 mt-2 font-medium">{{ $t('tools.ui.after') }}</div>
         </div>
       </div>
     </section>
 
     <section class="max-w-5xl mb-8 mx-auto">
-      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">{{ doc?.title }}</h1>
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4" 
+        :style="'view-transition-name: ui-features-title-'+ route.params.slug"
+      >{{ doc?.title }}</h1>
       <div class="flex gap-3 mb-6 sm:flex-row flex-col">
         <UButton
           color="primary"
@@ -38,7 +42,9 @@
       </div>
     </section>
 
-    <section class="max-w-5xl mb-8 mx-auto prose dark:prose-invert">
+    <section class="max-w-5xl mb-8 mx-auto prose dark:prose-invert" 
+      :style="'view-transition-name: ui-features-content-'+ route.params.slug"
+    >
       <ContentRenderer :value="doc" />
     </section>
 

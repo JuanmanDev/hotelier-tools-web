@@ -50,16 +50,24 @@
               <div class="lg:col-span-3">
                 <div class="flex items-center gap-4 mb-4">
                   <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-xl flex items-center justify-center">
-                    <UIcon :name="feature.icon" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  <UIcon :name="feature.icon" class="w-6 h-6 text-blue-600 dark:text-blue-400" 
+                    :style="'view-transition-name: bot-features-icon-'+ feature.key"
+                  />
                   </div>
-                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white"
+                    :style="'view-transition-name: bot-features-h1-'+ feature.key"
+                  >
                     {{ $t(`bot.tasks.${feature.key}.title`) }}
                   </h3>
                 </div>
-                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                <p class="text-gray-600 dark:text-gray-300 mb-4"
+                  :style="'view-transition-name: bot-features-description-'+ feature.key"
+                >
                   {{ $t(`bot.tasks.${feature.key}.description`) }}
                 </p>
-                <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-6"
+                  :style="'view-transition-name: bot-features-long-description-'+ feature.key"
+                >
                   {{ $t(`bot.details.${feature.key}.longDescription`) }}
                 </p>
               </div>
@@ -72,7 +80,11 @@
                     class="flex items-center gap-3"
                   >
                     <UIcon name="i-heroicons-check" class="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span>{{ $t(`bot.details.${feature.key}.feature${featureIndex}`) }}</span>
+                    <span
+                      :style="'view-transition-name: bot-features-list-'+ feature.key + '-' + featureIndex"
+                    >
+                      {{ $t(`bot.details.${feature.key}.feature${featureIndex}`) }}
+                    </span>
                   </li>
                 </ul>
               </div>
