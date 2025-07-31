@@ -138,7 +138,7 @@
               color="primary"
               variant="outline"
               size="sm"
-              class="w-full"
+              class="w-full text-center flex items-center justify-center"
             >
               {{ t(feature.buttonText) }}
               <UIcon name="i-heroicons-arrow-right" class="w-4 h-4 ml-2" />

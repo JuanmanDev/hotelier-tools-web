@@ -10,38 +10,19 @@
         </p>
       </div>
 
-      <!-- Tool Categories -->
-      <div class="mb-8">
-        <div class="flex justify-center">
-          <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-1">
-            <button
-              v-for="category in categories"
-              :key="category.id"
-              @click="selectedCategory = category.id"
-              class="px-4 py-2 rounded-md text-sm font-medium transition-all duration-200"
-              :class="{
-                'bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm': selectedCategory === category.id,
-                'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white': selectedCategory !== category.id
-              }"
-            >
-              {{ category.name }}
-            </button>
-          </div> 
-        </div>
-      </div>
-
       <!-- Tools Carousel -->
       <UCarousel
         ref="carouselRef"
         v-slot="{ item: tool }"
-        :items="filteredTools"
+        :items="tools"
         :ui="{ 
-          item: 'basis-100 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/4 3xl:basis-1/5 4xl:basis-1/6',
+          item: 'basis-100 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/4 3xl:basis-1/5 4xl:basis-1/6 5xl:basis-1/7 6xl:basis-1/8',
           container: 'gap-0'
         }"
         loop
         arrows
-        class="w-full relative"
+        infinite
+        class="w-full relative max-w-[170rem] mx-auto"
         @mouseenter="pauseAutoScroll"
         @mouseleave="resumeAutoScroll"
         :prev="{className:'font-medium inline-flex items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 transition-colors text-sm gap-1.5 ring ring-inset ring-accented text-default bg-default hover:bg-elevated disabled:bg-default aria-disabled:bg-default focus:outline-none focus-visible:ring-2 focus-visible:ring-inverted p-1.5 transform z-10 absolute rounded-full left-2 top-1/2 -translate-y-1/2'}"
@@ -147,7 +128,7 @@
       </UCarousel>
 
       <!-- Call to Action -->
-      <div class="mt-16 text-center mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mt-16 text-center mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-800 rounded-2xl p-8">
           <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             {{ t('tools.showcase.cta.title') }}
@@ -175,7 +156,6 @@ import { useI18n } from 'vue-i18n'
 import { navigateTo } from 'nuxt/app'
 
 const { t, tm } = useI18n()
-const selectedCategory = ref('all')
 const localePath = useLocalePath()
 
 const activeIndex = ref(0)
@@ -185,12 +165,6 @@ let isHovered = ref(false)
 
 // Auto-scroll configuration
 const AUTO_SCROLL_DELAY = 7000 // 10 seconds
-
-const categories = computed(() => [
-  { id: 'all', name: t('tools.showcase.categories.all') },
-  { id: 'chrome-extension', name: t('tools.showcase.categories.chrome_extension') },
-  { id: 'automation', name: t('tools.showcase.categories.automation') }
-])
 
 const tools: Tool[] = [
   {
@@ -255,13 +229,6 @@ const tools: Tool[] = [
   }
 ]
 
-const filteredTools = computed(() => {
-  if (selectedCategory.value === 'all') {
-    return tools
-  }
-  return tools.filter(tool => tool.category === selectedCategory.value)
-})
-
 // Auto-scroll functions
 function startAutoScroll() {
   if (autoScrollInterval) {
@@ -310,15 +277,6 @@ onMounted(() => {
 
 onUnmounted(() => {
   stopAutoScroll()
-})
-
-// Watch for filtered tools changes to restart auto-scroll
-watch(filteredTools, () => {
-  nextTick(() => {
-    if (!isHovered.value) {
-      startAutoScroll()
-    }
-  })
 })
 
 function getStatusColor(status: string) {
