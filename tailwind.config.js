@@ -17,7 +17,7 @@ export default {
       animation: {
         'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
         'slide-in-right': 'slideInRight 0.6s ease-out forwards',
-        'pulse-subtle': 'pulse-subtle 2s infinite'
+        'pulse-subtle': 'pulse-subtle 2s infinite',
       },
       keyframes: {
         fadeInUp: {

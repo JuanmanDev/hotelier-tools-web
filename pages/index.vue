@@ -77,7 +77,7 @@
       </div>
       
       <BotAnimation />
-      <NuxtLink to="/tools/bot" class="flex items-center justify-center mt-8">
+      <NuxtLink :to="localePath('/tools/bot#list-features')" class="flex items-center justify-center mt-8">
         <UButton>
           <UIcon name="i-heroicons-arrow-right" class="w-5 h-5 mr-2 mx-auto" />
           {{ t('home.hero.bot_button') }}
@@ -152,33 +152,7 @@
     <ToolsShowcase />
 
     <!-- Stats Section -->
-    <section class="bg-gradient-to-r from-blue-600 to-indigo-600 py-16 lg:py-24">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
-            {{ t('home.stats.title') }}
-          </h2>
-          <p class="text-xl text-blue-100">
-            {{ t('home.stats.subtitle') }}
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div 
-            v-for="stat in stats"
-            :key="stat.label"
-            class="text-center"
-          >
-            <div class="text-4xl lg:text-5xl font-bold text-white mb-2">
-              {{ stat.value }}
-            </div>
-            <div class="text-blue-100">
-              {{ t(stat.label) }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <StatsSection />
 
     <!-- CTA Section -->
     <section class="bg-white dark:bg-gray-900 py-16 lg:py-24">
@@ -279,13 +253,6 @@ const features = [
       'home.features.notifications.benefits.3'
     ]
   }
-]
-
-const stats = [
-  { value: '95%', label: 'home.stats.error_reduction' },
-  { value: '3h', label: 'home.stats.time_saved' },
-  { value: '15%', label: 'home.stats.conversion_increase' },
-  { value: '24/7', label: 'home.stats.monitoring' }
 ]
 </script>
 

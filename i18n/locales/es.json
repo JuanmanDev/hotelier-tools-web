@@ -579,7 +579,7 @@
       },
       "payments": {
         "longDescription": "Monitorea continuamente el estado de pagos en todos los canales de reserva, detectando pagos incompletos o fallidos antes de que se conviertan en problemas mayores para tu hotel.",
-        "feature1": "Monitoreo de estado de pagos 24/7",
+        "feature1": "Monitoreo de estado de pagos de manera continua",
         "feature2": "Alertas instantáneas por fallas de pago",
         "feature3": "Verificación de pagos multicanal"
       },
