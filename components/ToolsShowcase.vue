@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white dark:bg-gray-900 py-16 lg:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="">
       <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {{ t('tools.showcase.title') }}
@@ -30,13 +30,24 @@
         </div>
       </div>
 
-      <!-- Tools Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div
-          v-for="tool in filteredTools"
-          :key="tool.id"
-          class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover:-translate-y-1"
-        >
+      <!-- Tools Carousel -->
+      <UCarousel
+        ref="carouselRef"
+        v-slot="{ item: tool }"
+        :items="filteredTools"
+        :ui="{ 
+          item: 'basis-100 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/4 3xl:basis-1/5 4xl:basis-1/6',
+          container: 'gap-0'
+        }"
+        loop
+        arrows
+        class="w-full relative"
+        @mouseenter="pauseAutoScroll"
+        @mouseleave="resumeAutoScroll"
+        :prev="{className:'font-medium inline-flex items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 transition-colors text-sm gap-1.5 ring ring-inset ring-accented text-default bg-default hover:bg-elevated disabled:bg-default aria-disabled:bg-default focus:outline-none focus-visible:ring-2 focus-visible:ring-inverted p-1.5 transform z-10 absolute rounded-full left-2 top-1/2 -translate-y-1/2'}"
+        :next="{className:'font-medium inline-flex items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 transition-colors text-sm gap-1.5 ring ring-inset ring-accented text-default bg-default hover:bg-elevated disabled:bg-default aria-disabled:bg-default focus:outline-none focus-visible:ring-2 focus-visible:ring-inverted p-1.5 transform z-10 absolute rounded-full right-2 top-1/2 -translate-y-1/2'}"
+      >
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover:-translate-y-1 h-full w-2lg">
           <!-- Tool Header -->
           <div class="p-6 pb-4">
             <div class="flex items-start justify-between mb-4">
@@ -65,9 +76,6 @@
 
             <!-- Features List -->
             <div class="space-y-2">
-              <!-- <h4 class="text-sm font-medium text-gray-900 dark:text-white">
-                {{ t('tools.showcase.card.features') }}
-              </h4> -->
               <ul class="space-y-1">
                 <li 
                   v-for="feature in tool.features.slice(0, 3)"
@@ -136,10 +144,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </UCarousel>
 
       <!-- Call to Action -->
-      <div class="mt-16 text-center">
+      <div class="mt-16 text-center mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-800 rounded-2xl p-8">
           <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             {{ t('tools.showcase.cta.title') }}
@@ -169,6 +177,14 @@ import { navigateTo } from 'nuxt/app'
 const { t, tm } = useI18n()
 const selectedCategory = ref('all')
 const localePath = useLocalePath()
+
+const activeIndex = ref(0)
+const carouselRef = ref()
+let autoScrollInterval: NodeJS.Timeout | null = null
+let isHovered = ref(false)
+
+// Auto-scroll configuration
+const AUTO_SCROLL_DELAY = 7000 // 10 seconds
 
 const categories = computed(() => [
   { id: 'all', name: t('tools.showcase.categories.all') },
@@ -244,6 +260,65 @@ const filteredTools = computed(() => {
     return tools
   }
   return tools.filter(tool => tool.category === selectedCategory.value)
+})
+
+// Auto-scroll functions
+function startAutoScroll() {
+  if (autoScrollInterval) {
+    clearInterval(autoScrollInterval)
+  }
+  
+  autoScrollInterval = setInterval(() => {
+    if (!isHovered.value && carouselRef.value?.emblaApi) {
+      carouselRef.value.emblaApi.scrollNext()
+    }
+  }, AUTO_SCROLL_DELAY)
+}
+
+function stopAutoScroll() {
+  if (autoScrollInterval) {
+    clearInterval(autoScrollInterval)
+    autoScrollInterval = null
+  }
+}
+
+function pauseAutoScroll() {
+  isHovered.value = true
+}
+
+function resumeAutoScroll() {
+  isHovered.value = false
+}
+
+// Lifecycle hooks
+onMounted(() => {
+  nextTick(() => {
+    if (carouselRef.value?.emblaApi) {
+      // Listen for scroll events to reset the auto-scroll timer
+      carouselRef.value.emblaApi.on('select', () => {
+        // Reset the auto-scroll interval when scroll changes
+        if (!isHovered.value) {
+          startAutoScroll()
+        }
+      })
+      
+      // Start auto-scroll initially
+      startAutoScroll()
+    }
+  })
+})
+
+onUnmounted(() => {
+  stopAutoScroll()
+})
+
+// Watch for filtered tools changes to restart auto-scroll
+watch(filteredTools, () => {
+  nextTick(() => {
+    if (!isHovered.value) {
+      startAutoScroll()
+    }
+  })
 })
 
 function getStatusColor(status: string) {

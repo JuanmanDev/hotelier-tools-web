@@ -15,8 +15,8 @@ export default {
         display: ['Space Grotesk', 'system-ui', 'sans-serif']
       },
       animation: {
-        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
-        'slide-in-right': 'slideInRight 0.6s ease-out forwards',
+        'fade-in-up': 'fadeInUp 0.6s ease-out both',
+        'slide-in-right': 'slideInRight 0.6s ease-out both',
         'pulse-subtle': 'pulse-subtle 2s infinite',
       },
       keyframes: {
