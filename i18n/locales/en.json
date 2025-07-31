@@ -573,19 +573,19 @@
       "overview": "Overview",
       "keyFeatures": "Key Features",
       "checkout": {
-        "longDescription": "Our bot automatically processes checkout for all reservations at the end of their stay date, eliminating the need for manual intervention and ensuring accurate records.",
+        "longDescription": "Our bot automatically processes checkout for all reservations at the end of their stay date, eliminating the need for manual intervention and ensuring accurate records. The task would check the reservation is completed paid and the system has all the data required to check-out the guest.",
         "feature1": "Automatic checkout at end of stay date",
         "feature2": "Real-time status updates and notifications",
-        "feature3": "Integration with property management system"
+        "feature3": "Email in case of errors or issues "
       },
       "payments": {
-        "longDescription": "Continuously monitors payment status across all booking channels, detecting incomplete or failed payments before they become major issues for your hotel.",
-        "feature1": "24/7 payment status monitoring",
+        "longDescription": "Continuously monitors payment status across all booking channels, detecting incomplete or failed payments before they become major issues for your hotel. usually happen when the client do not confirm the payment with the bank but have leave all information about the reservation.",
+        "feature1": "Continuous payment status monitoring",
         "feature2": "Instant alerts for payment failures",
-        "feature3": "Multi-channel payment verification"
+        "feature3": "Check payments not verified and not completed"
       },
       "guests": {
-        "longDescription": "Validates that all required guest information is complete and accurate, ensuring compliance with local regulations and smooth check-in processes.",
+        "longDescription": "Validates that all required guest information is complete and accurate, ensuring compliance with local regulations and smooth check-in processes. Some hotels requires to have a ID card or Passport number to be able to check-in the guest.",
         "feature1": "Mandatory field validation",
         "feature2": "Missing information alerts",
         "feature3": "Compliance with local regulations"
@@ -597,16 +597,16 @@
         "feature3": "Revenue protection and loss prevention"
       },
       "prices": {
-        "longDescription": "Automatically corrects pricing discrepancies and cent rounding errors that can occur during rate synchronization across different booking platforms.",
+        "longDescription": "Automatically corrects pricing discrepancies for little misalignments and cent rounding errors that can occur during rate synchronization across different booking platforms. This usually happens when applying a discount on Direct Booking for multiples days that does not match a price per night equals on all nights. The error appears between the money paid and the total price for the reservation.",
         "feature1": "Automatic price correction",
         "feature2": "Multi-platform rate synchronization",
         "feature3": "Revenue optimization"
       },
       "invoices": {
-        "longDescription": "Generates and manages invoices automatically with all required fiscal information, ensuring compliance and reducing administrative workload.",
+        "longDescription": "Generates and manages invoices automatically with all required fiscal information, ensuring compliance and reducing administrative workload. We would create a folder and we would save all invoices in a folder with the month and year of the invoice, so you can easily find it later. We can also upload to OneDrive or Google Drive to have a backup of all invoices.",
         "feature1": "Automated monthly invoice generation",
         "feature2": "Tax compliance and fiscal requirements",
-        "feature3": "Bulk processing and organization"
+        "feature3": "Generates all invoices without checking one by one manually",
       }
     }
   }
