@@ -9,6 +9,7 @@ export interface Tool {
   icon: string
   status: 'available' | 'coming-soon' | 'beta'
   documentation?: string
+  linkTo?: string
 }
 
 export interface Feature {
