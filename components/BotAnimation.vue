@@ -2,7 +2,7 @@
   <div class="relative w-full mx-auto max-w-6xl min-h-[600px]" ref="containerRef" id="bot-animation">
     <!-- Background Bot Icon -->
     <div class="absolute inset-0 flex items-center justify-center z-0">
-      <UIcon name="i-heroicons-cpu-chip" class="w-80 h-80 text-blue-200/20 dark:text-blue-400/10" />
+      <UIcon name="i-heroicons-cpu-chip" class="w-80 h-80 text-blue-300/30 dark:text-blue-400/10" />
     </div>
 
     <!-- Data Beam Traces -->
@@ -53,7 +53,9 @@
       <!-- Row 1: No-usar, bloque1, bloque1, bloque2, bloque2, No-usar -->
       <div class="hidden lg:block"></div>
       <div class="col-span-2 flex justify-center">
-        <div class="task-block" :class="{ 'task-blur': blurStates[0] }" >
+        <div class="task-block"
+          :class="{ 'task-blur': blurStates[0] }" 
+          >
           <div class="task-header">
             <div class="task-icon">
               <UIcon name="i-heroicons-arrow-right-start-on-rectangle" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -68,7 +70,9 @@
         </div>
       </div>
       <div class="col-span-2 flex justify-center">
-        <div class="task-block" :class="{ 'task-blur': blurStates[1] }" >
+        <div class="task-block"
+          :class="{ 'task-blur': blurStates[1] }" 
+          >
           <div class="task-header">
             <div class="task-icon">
               <UIcon name="i-heroicons-credit-card" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -86,7 +90,9 @@
 
       <!-- Row 2: bloque3, bloque3, No-usar, No-usar, bloque4, bloque4 -->
       <div class="col-span-2 flex justify-center">
-        <div class="task-block" :class="{ 'task-blur': blurStates[2] }" >
+        <div class="task-block"
+          :class="{ 'task-blur': blurStates[2] }" 
+          >
           <div class="task-header">
             <div class="task-icon">
               <UIcon name="i-heroicons-user-group" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -103,7 +109,9 @@
       <div class="hidden lg:block"></div>
       <div class="hidden lg:block"></div>
       <div class="col-span-2 flex justify-center">
-        <div class="task-block" :class="{ 'task-blur': blurStates[3] }" >
+        <div class="task-block"
+          :class="{ 'task-blur': blurStates[3] }" 
+          >
           <div class="task-header">
             <div class="task-icon">
               <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -121,7 +129,9 @@
       <!-- Row 3: No-usar, bloque5, bloque5, bloque6, bloque6, No-usar -->
       <div class="hidden lg:block"></div>
       <div class="col-span-2 flex justify-center">
-        <div class="task-block" :class="{ 'task-blur': blurStates[4] }" >
+        <div class="task-block"
+          :class="{ 'task-blur': blurStates[4] }" 
+          >
           <div class="task-header">
             <div class="task-icon">
               <UIcon name="i-heroicons-calculator" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -136,7 +146,9 @@
         </div>
       </div>
       <div class="col-span-2 flex justify-center">
-        <div class="task-block" :class="{ 'task-blur': blurStates[5] }" >
+        <div class="task-block"
+          :class="{ 'task-blur': blurStates[5] }" 
+          >
           <div class="task-header">
             <div class="task-icon">
               <UIcon name="i-heroicons-document-text" class="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -250,19 +262,29 @@ onMounted(() => {
 </script>
 
 <style scoped>
-@reference "tailwindcss";
-
 .task-block {
-  @apply bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-2 border-gray-200 dark:border-gray-700 cursor-pointer w-52 text-center;
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  width: 13rem;
+  text-align: center;
   transition: transform 0.4s ease, filter 0.4s ease, opacity 0.4s ease, box-shadow 0.4s ease;
   filter: blur(0px);
   opacity: 1;
   transform: scale(1.05);
 }
 
+:root.dark .task-block {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
 .task-block.task-blur {
   filter: blur(2px);
-  opacity: 0.7;
+  opacity: 0.5;
   transform: scale(0.95);
 }
 
@@ -274,19 +296,48 @@ onMounted(() => {
 }
 
 .task-header {
-  @apply flex items-center gap-3 mb-4 text-left;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
 .task-icon {
-  @apply flex items-center justify-center w-10 h-10 bg-gradient-to-r from-blue-100 to-indigo-100 dark:from-blue-900 dark:to-indigo-900 rounded-lg flex-shrink-0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(to right, #dbeafe, #e0e7ff);
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+:root.dark .task-icon {
+  background: linear-gradient(to right, #1e3a8a, #312e81);
 }
 
 .task-title {
-  @apply font-semibold text-gray-900 dark:text-white text-base flex-1;
+  font-weight: 600;
+  color: #111827;
+  font-size: 1rem;
+  flex: 1;
+}
+
+:root.dark .task-title {
+  color: white;
 }
 
 .task-description {
-  @apply text-sm text-gray-600 dark:text-gray-300 leading-relaxed text-center;
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.625;
+  text-align: center;
+}
+
+:root.dark .task-description {
+  color: #d1d5db;
 }
 
 .base-trace {
