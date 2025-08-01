@@ -495,6 +495,76 @@
       "faq": "FAQ"
     }
   },
+  "marketing": {
+    "detect_incomplete_reservation": {
+      "header": {
+        "badge": "Sistema de Detección Avanzada",
+        "title": "El Problema de las Reservas Incompletas",
+        "subtitle": "Descubre cómo nuestro software ayuda a los hoteles a identificar y resolver reservas que no se completaron correctamente"
+      },
+      "problem_flow": {
+        "title": "¿Qué está pasando?",
+        "steps": {
+          "interested_client": {
+            "title": "Cliente Interesado",
+            "description": "El cliente encuentra tu hotel y decide hacer una reserva"
+          },
+          "complete_form": {
+            "title": "Completa Formulario",
+            "description": "Rellena todos los campos: fechas, huéspedes, datos personales"
+          },
+          "enter_card": {
+            "title": "Introduce Tarjeta",
+            "description": "Proporciona datos bancarios y ve dinero retenido"
+          },
+          "problem": {
+            "badge": "¡PROBLEMA!",
+            "title": "Crisis de Comunicación",
+            "description": "No confirma el pago final pero sale de la web"
+          }
+        }
+      },
+      "disconnect": {
+        "title": "La Desconexión",
+        "client_side": {
+          "title": "Lo que cree el cliente",
+          "quote": "¡Perfecto! Mi reserva está confirmada",
+          "points": {
+            "money_withheld": "Veo dinero retenido en mi banco",
+            "completed_process": "Completé todo el proceso",
+            "hotel_has_reservation": "El hotel tiene mi reserva"
+          }
+        },
+        "hotel_side": {
+          "title": "La realidad del hotel",
+          "quote": "No hay ninguna reserva confirmada",
+          "points": {
+            "no_payment_confirmation": "No recibimos confirmación de pago",
+            "room_available": "La habitación sigue disponible",
+            "no_system_record": "No hay registro en el sistema"
+          }
+        }
+      },
+      "solution": {
+        "title": "Nuestra Solución",
+        "features": {
+          "monitoring": {
+            "title": "Monitoreo Automático",
+            "description": "Revisamos constantemente las reservas incompletas"
+          },
+          "notifications": {
+            "title": "Notificaciones Inteligentes",
+            "description": "Te alertamos cuando detectamos casos problemáticos"
+          },
+          "resolution": {
+            "title": "Resolución Proactiva",
+            "description": "Contacta al cliente antes de que se convierta en problema"
+          }
+        },
+        "button": "Conoce Más Sobre Nuestra Solución"
+      }
+    }
+  },
   "footer": {
     "description": "Optimiza la gestión de tu hotel con herramientas diseñadas específicamente para Little Hotelier de Siteminder.",
     "links": "Enlaces",

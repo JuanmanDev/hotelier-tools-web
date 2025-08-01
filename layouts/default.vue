@@ -49,8 +49,7 @@
                 variant="ghost"
                 size="sm"
               >
-                <span class="fi" :class="currentLocale === 'es' ? 'fi-es' : 'fi-us'"></span>
-                <span class="ml-2 hidden sm:inline">{{ currentLocaleName }}</span>
+                <UIcon name="i-heroicons-globe-alt" class="h-4 w-4" />
                 <UIcon name="i-heroicons-chevron-down-20-solid" class="ml-1" />
               </UButton>
             </UDropdownMenu>
