@@ -76,8 +76,10 @@
         </p>
       </div>
       
-      <BotAnimation />
-      <NuxtLink :to="localePath('/tools/bot#list-features')" class="flex items-center justify-center mt-8">
+      <BotAnimation
+        class="animate-bot-scale-reveal"
+      />
+      <NuxtLink :to="localePath('/tools/bot')" class="flex items-center justify-center mt-8">
         <UButton>
           <UIcon name="i-heroicons-arrow-right" class="w-5 h-5 mr-2 mx-auto" />
           {{ t('home.hero.bot_button') }}
