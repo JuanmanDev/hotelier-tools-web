@@ -7,7 +7,6 @@ Página web oficial de Hotelier Tools - Herramientas especializadas para hoteles
 - **Extensiones Chrome**: Mejora la interfaz de Little Hotelier
 - **Automatizaciones**: Procesos automáticos para optimizar la gestión hotelera
 - **Interfaz moderna**: Diseño responsivo y fácil de usar
-- **Soporte 24/7**: Asistencia técnica completa
 
 ## 🛠️ Tecnologías
 
@@ -140,10 +139,6 @@ Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
 
 ## 📞 Contacto
 
-- **Email**: support@hoteliertools.com
 - **Website**: [hoteliertools.com](https://hoteliertools.com)
 - **GitHub**: [JuanmanDev/hotelier-tools-web](https://github.com/JuanmanDev/hotelier-tools-web)
 
----
-
-Hecho con ❤️ para la comunidad hotelera
