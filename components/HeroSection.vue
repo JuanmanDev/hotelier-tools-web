@@ -19,7 +19,8 @@
     <div class="relative z-10 flex flex-col items-center w-full min-h-[90vh] p-4 justify-evenly">
       <div class="order-2 md:order-1">
         <!-- Process Steps -->
-        <ProcessStepsManager />
+        <!-- <ProcessStepsManager /> -->
+         <ErrorDetectionShowcase />
       </div>
       <div class="order-1 md:order-2">
         <!-- Slot for additional content -->
@@ -32,6 +33,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import ProcessStepsManager from '~/components/ProcessStepsManager.vue';
+import ErrorDetectionShowcase from './animation/ErrorDetectionShowcase/index.vue';
 
 // --- Types ---
 interface FloatingIcon {
