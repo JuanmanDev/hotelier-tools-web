@@ -34,7 +34,7 @@
         </UButton>
         <UButton
           color="secondary"
-          :to="doc.instructions || '#'"
+          :to="doc.instructions || localePath('/tools/ui/instructions')"
         >
           <UIcon name="i-heroicons-document-text" class="w-5 h-5 mr-2" />
           {{ $t('tools.ui.install_instructions') }}
