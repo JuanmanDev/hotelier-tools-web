@@ -81,32 +81,32 @@
         <div v-show="isMenuOpen" class="md:hidden py-4 border-t border-gray-200 dark:border-gray-800">
           <div class="space-y-2">
             <NuxtLink 
-              to="/"
+              :to="localePath('/')"
               class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
               @click="isMenuOpen = false"
             >
-              Inicio
+              {{ $t('nav.home') }}
             </NuxtLink>
             <NuxtLink 
-              to="/tools"
+              :to="localePath('/tools')"
               class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
               @click="isMenuOpen = false"
             >
-              Herramientas
+              {{ $t('nav.tools') }}
             </NuxtLink>
             <NuxtLink 
-              to="/documentation"
+              :to="localePath('/documentation')"
               class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
               @click="isMenuOpen = false"
             >
-              Documentación
+              {{ $t('nav.documentation') }}
             </NuxtLink>
             <NuxtLink 
-              to="/contact"
+              :to="localePath('/contact')"
               class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
               @click="isMenuOpen = false"
             >
-              Contacto
+              {{ $t('nav.contact') }}
             </NuxtLink>
           </div>
         </div>
@@ -147,22 +147,22 @@
           <!-- Quick Links -->
           <div>
             <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
-              Enlaces
+              {{ $t('footer.links') }}
             </h3>
             <ul class="space-y-2">
               <li>
-                <NuxtLink to="/tools" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                  Herramientas
+                <NuxtLink :to="localePath('/tools')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                  {{ $t('nav.tools') }}
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/documentation" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                  Documentación
+                <NuxtLink :to="localePath('/documentation')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                  {{ $t('nav.documentation') }}
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/contact" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                  Contacto
+                <NuxtLink :to="localePath('/contact')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                  {{ $t('nav.contact') }}
                 </NuxtLink>
               </li>
             </ul>
@@ -171,17 +171,17 @@
           <!-- Support -->
           <div>
             <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
-              Soporte
+              {{ $t('footer.support') }}
             </h3>
             <ul class="space-y-2">
               <li>
                 <a href="mailto:support@hoteliertools.com" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                  Email
+                  {{ $t('footer.email') }}
                 </a>
               </li>
               <li>
-                <NuxtLink to="/faq" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                  FAQ
+                <NuxtLink :to="localePath('/faq')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                  {{ $t('footer.faq') }}
                 </NuxtLink>
               </li>
             </ul>
@@ -190,7 +190,7 @@
 
         <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
           <p class="text-center text-gray-500 dark:text-gray-400">
-            &copy; {{ new Date().getFullYear() }} Hotelier Tools. Todos los derechos reservados.
+            &copy; {{ new Date().getFullYear() }} Hotelier Tools. {{ $t('footer.rights') }}
           </p>
         </div>
       </div>
