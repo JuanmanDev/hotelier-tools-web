@@ -497,6 +497,56 @@
     }
   },
   "marketing": {
+    "error_detection_showcase": {
+      "controls": {
+        "speed_up": "Speed Up Animation",
+        "show_all_cards": "Show All Cards"
+      },
+      "cards": {
+        "customer": {
+          "title": "Customer",
+          "step1": "Selected dates & room preferences.",
+          "step2": "Fill personal details in the booking form.",
+          "step3": "Believes reservation is complete as the money is held."
+        },
+        "payment": {
+          "title": "Payment",
+          "step1": "Bank card details received.",
+          "step2": "Money held.",
+          "step3": "Waiting for confirmation from the bank"
+        },
+        "hostel": {
+          "title": "Hotel",
+          "step1": "Reservation not received",
+          "error_message": "Room not reserved, if the customer comes to the hotel won't have a place to stay.",
+          "success_message": "Reservation and room confirmed."
+        },
+        "bot": {
+          "title": "Bot",
+          "button": "Enable Automatic Review",
+          "progress_text": "Reviewing last reservations from direct booking...",
+          "completed": "Review completed",
+          "detected": "Detected 1 incomplete reservation."
+        },
+        "automated_alert": {
+          "title": "Automated Alert",
+          "description": "Our system automatically sends an alert to the front desk team about the incomplete reservation that needs attention."
+        },
+        "staff_review": {
+          "title": "Staff Review",
+          "description": "Front desk staff receives the notification and reviews the flagged reservation to identify and resolve the issue quickly."
+        },
+        "contact_customer": {
+          "title": "Contact with customer",
+          "description": "Reception staff contact the customer to confirm or cancel the reservation."
+        },
+        "resolution": {
+          "title": "Resolution Complete",
+          "step1": "Staff contacts the customer, resolves the issue, and completes the reservation process successfully.",
+          "success_message": "Customer contacted and confirmed. Reservation not lost and problem solved!"
+        }
+      }
+    },
     "detect_incomplete_reservation": {
       "header": {
         "badge": "Advanced Detection System",

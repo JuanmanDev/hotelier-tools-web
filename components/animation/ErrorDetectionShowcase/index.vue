@@ -19,7 +19,7 @@
         class="transition-opacity duration-500 ease-in-out"
         :class="animationStarted ? 'opacity-100' : 'opacity-0'"
       >
-        SpeedUp Animation
+        {{ t('marketing.error_detection_showcase.controls.speed_up') }}
       </UButton>
       <UButton 
         v-if="finnishedAnimation && !showAllCards"
@@ -30,7 +30,7 @@
         class="transition-opacity duration-500 ease-in-out"
         :class="finnishedAnimation ? 'opacity-100' : 'opacity-0'"
       >
-        Show All Cards
+        {{ t('marketing.error_detection_showcase.controls.show_all_cards') }}
       </UButton>
     </div>
 
@@ -63,7 +63,7 @@
                     <UIcon name="i-heroicons-user" class="text-2xl text-blue-900 dark:text-white transition-all " />
                   </div>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">Customer</h3>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">{{ t('marketing.error_detection_showcase.cards.customer.title') }}</h3>
               </div>
               <div class="card-body space-y-2">
                 <p 
@@ -72,7 +72,7 @@
                     animationCard1Content1 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                   ]"
                 >
-                  Selected dates & room preferences.
+                  {{ t('marketing.error_detection_showcase.cards.customer.step1') }}
                 </p>
                 <p 
                   class="text-sm text-gray-600 dark:text-gray-300 transition-all  animate-height"
@@ -80,7 +80,7 @@
                     animationCard1Content2 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                   ]"
                 >
-                  Fill personal details in the booking form.
+                  {{ t('marketing.error_detection_showcase.cards.customer.step2') }}
                 </p>
                 <p 
                   class="text-sm text-gray-600 dark:text-gray-300 transition-all  animate-height"
@@ -88,7 +88,7 @@
                     animationCard1Content3 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                   ]"
                 >
-                  Belives reservation is complete as the money is holded.
+                  {{ t('marketing.error_detection_showcase.cards.customer.step3') }}
                 </p>
               </div>
             </div>
@@ -123,7 +123,7 @@
                     <UIcon name="i-heroicons-credit-card" class="text-2xl text-blue-900 dark:text-white transition-all " />
                   </div>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">Payment</h3>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">{{ t('marketing.error_detection_showcase.cards.payment.title') }}</h3>
               </div>
               <div class="space-y-2 card-body">
                 <p 
@@ -132,7 +132,7 @@
                     animationCard2Content1 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                   ]"
                 >
-                  Bank card details received.
+                  {{ t('marketing.error_detection_showcase.cards.payment.step1') }}
                 </p>
                 <p 
                   class="text-sm text-gray-600 dark:text-gray-300 transition-all  animate-height"
@@ -140,7 +140,7 @@
                     animationCard2Content2 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                   ]"
                 >
-                  Money held.
+                  {{ t('marketing.error_detection_showcase.cards.payment.step2') }}
                 </p>
                 <p 
                   class="text-sm text-gray-600 dark:text-gray-300 transition-all  animate-height"
@@ -148,7 +148,7 @@
                     animationCard2Content3 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                   ]"
                 >
-                  Waiting for confirmation from the bank.{{ pointsWaiting }}
+                  {{ t('marketing.error_detection_showcase.cards.payment.step3') }}{{ pointsWaiting }}
                 </p>
               </div>
             </div>
@@ -192,7 +192,7 @@
                     <UIcon name="i-heroicons-building-office-2" class="text-2xl text-white transition-all " />
                   </div>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">Hostel</h3>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">{{ t('marketing.error_detection_showcase.cards.hostel.title') }}</h3>
               </div>
               <div class="card-body space-y-3 transition-all ">
                 <p 
@@ -201,7 +201,7 @@
                     animationCard3Content1 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                   ]"
                 >
-                  Reservation not received
+                  {{ t('marketing.error_detection_showcase.cards.hostel.step1') }}
                 </p>
                 <div 
                   class="transition-all  transform  animate-height"
@@ -217,7 +217,7 @@
                       animationCard3Content2 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                     ]"
                   >
-                    Room not reserved, if the customer come to the hostel won't have a place to stay.
+                    {{ t('marketing.error_detection_showcase.cards.hostel.error_message') }}
                   </p>
                 </div>
                 <p 
@@ -226,7 +226,7 @@
                     animationCard3Content3 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                   ]"
                 >
-                  Reservation and room confirmed.
+                  {{ t('marketing.error_detection_showcase.cards.hostel.success_message') }}
                 </p>
               </div>
             </div>
@@ -258,7 +258,7 @@
                   <UIcon name="i-heroicons-check-circle" class="text-2xl text-white transition-all " />
                 </div>
               </div>
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">Resolution Complete</h3>
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">{{ t('marketing.error_detection_showcase.cards.resolution.title') }}</h3>
             </div>
             <div class="card-body space-y-3 transition-all ">
               <p 
@@ -267,7 +267,7 @@
                   animationCard6Content1 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                 ]"
               >
-                Staff contacts the customer, resolves the issue, and completes the reservation process successfully.
+                {{ t('marketing.error_detection_showcase.cards.resolution.step1') }}
               </p>
               <div 
                 class="transition-all  transform  animate-height"
@@ -286,7 +286,7 @@
                     animationCard6Content2 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                   ]"
                 >
-                  Customer contacted and confirmed. Reservation not lost and problem solved!
+                  {{ t('marketing.error_detection_showcase.cards.resolution.success_message') }}
                 </p>
               </div>
             </div>
@@ -320,7 +320,7 @@
                     <UIcon name="i-heroicons-cpu-chip" class="text-2xl text-purple-900 dark:text-white transition-all " />
                   </div>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">Bot</h3>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">{{ t('marketing.error_detection_showcase.cards.bot.title') }}</h3>
               </div>
               <div class="card-body transition-all ">
                 
@@ -333,7 +333,7 @@
                     @click="handleBotButtonClick"
                     class="relative px-6 py-3 bg-purple-100 dark:bg-purple-900 text-black dark:text-white font-medium rounded-lg transition-all   animate-border-pulse border-blue"
                   >
-                    <span class="relative z-10">Enable Automatic Review</span>
+                    <span class="relative z-10">{{ t('marketing.error_detection_showcase.cards.bot.button') }}</span>
                     <div class="absolute inset-0  rounded-lg overflow-visible"></div>
                   </button>
                 </div>
@@ -341,7 +341,7 @@
                   class="overflow-hidden transition-all  m-0 animate-height"
                   :class="showProgress ? 'max-h-20 pb-4' : 'max-h-0 pb-0'"
                 >
-                  <p class="mb-2 text-gray-700 dark:text-gray-300">Reviewing last reservations from direct booking...</p>
+                  <p class="mb-2 text-gray-700 dark:text-gray-300">{{ t('marketing.error_detection_showcase.cards.bot.progress_text') }}</p>
                   <UProgress v-model="progressValue" 
                     
                   />
@@ -355,10 +355,10 @@
                   ]"
                 >
                   <p class="text-sm font-medium text-purple-600 dark:text-purple-200 transition-all ">
-                    Review completed
+                    {{ t('marketing.error_detection_showcase.cards.bot.completed') }}
                   </p>
                   <p class="text-sm font-medium text-purple-600 dark:text-purple-200 transition-all ">
-                    Detected 1 incomplete reservation.
+                    {{ t('marketing.error_detection_showcase.cards.bot.detected') }}
                   </p>
                 </div>
               </div>
@@ -394,7 +394,7 @@
                     <UIcon name="i-heroicons-user-group" class="text-2xl text-blue-900 dark:text-white transition-all " />
                   </div>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">Staff Review</h3>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">{{ t('marketing.error_detection_showcase.cards.staff_review.title') }}</h3>
               </div>
               <p 
                 class="card-body text-sm text-gray-600 dark:text-gray-300 transition-all  animate-height"
@@ -402,7 +402,7 @@
                   animationCard5Content1 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                 ]"
               >
-                Front desk staff receives the notification and reviews the flagged reservation to identify and resolve the issue quickly.
+                {{ t('marketing.error_detection_showcase.cards.staff_review.description') }}
               </p>
             </div>
           </div>
@@ -435,7 +435,7 @@
                     <UIcon name="i-heroicons-envelope" class="text-2xl text-blue-900 dark:text-white transition-all " />
                   </div>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">Automated Alert</h3>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">{{ t('marketing.error_detection_showcase.cards.automated_alert.title') }}</h3>
               </div>
               <p 
                 class="card-body text-sm text-gray-600 dark:text-gray-300 transition-all  animate-height"
@@ -443,7 +443,7 @@
                   animationCard4Content1 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                 ]"
               >
-                Our system automatically sends an alert to the front desk team about the incomplete reservation that needs attention.
+                {{ t('marketing.error_detection_showcase.cards.automated_alert.description') }}
               </p>
             </div>
           </div>
@@ -476,7 +476,7 @@
                     <UIcon name="i-heroicons-chat-bubble-oval-left-ellipsis" class="text-2xl text-blue-900 dark:text-white transition-all " />
                   </div>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">Contact with customer</h3>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-all ">{{ t('marketing.error_detection_showcase.cards.contact_customer.title') }}</h3>
               </div>
               <p 
                 class="card-body text-sm text-gray-600 dark:text-gray-300 transition-all  animate-height"
@@ -484,7 +484,7 @@
                   animationCard7Content1 ? 'opacity-100 translate-y-0 max-h-20' : 'opacity-0 translate-y-2 max-h-0'
                 ]"
               >
-                Reception staff contact the customer to confirm or cancel the reservation.
+                {{ t('marketing.error_detection_showcase.cards.contact_customer.description') }}
               </p>
             </div>
           </div>
@@ -498,10 +498,10 @@
 </template>
 
 <script setup lang="ts">
-import { clear } from 'console'
 import { ref, onMounted } from 'vue'
-import { tr } from 'zod/v4/locales'
+import { useI18n } from 'vue-i18n'
 
+const { t } = useI18n()
 
 const animationSpeed = ref(100)
 
