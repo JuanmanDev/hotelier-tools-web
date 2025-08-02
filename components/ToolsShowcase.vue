@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white dark:bg-gray-900 py-16 lg:py-24">
-    <div class="">
+    <div class="max-w-[100vw] overflow-hidden">
       <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {{ t('tools.showcase.title') }}
@@ -25,8 +25,8 @@
         class="w-full relative max-w-[170rem] mx-auto"
         @mouseenter="pauseAutoScroll"
         @mouseleave="resumeAutoScroll"
-        :prev="{className:'font-medium inline-flex items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 transition-colors text-sm gap-1.5 ring ring-inset ring-accented text-default bg-default hover:bg-elevated disabled:bg-default aria-disabled:bg-default focus:outline-none focus-visible:ring-2 focus-visible:ring-inverted p-1.5 transform z-10 absolute rounded-full left-2 top-1/2 -translate-y-1/2'}"
-        :next="{className:'font-medium inline-flex items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 transition-colors text-sm gap-1.5 ring ring-inset ring-accented text-default bg-default hover:bg-elevated disabled:bg-default aria-disabled:bg-default focus:outline-none focus-visible:ring-2 focus-visible:ring-inverted p-1.5 transform z-10 absolute rounded-full right-2 top-1/2 -translate-y-1/2'}"
+        :prev="{className:'font-medium inline-flex items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 transition-colors text-sm gap-1.5 ring ring-inset ring-accented text-default bg-default hover:bg-elevated disabled:bg-default aria-disabled:bg-default focus:outline-none focus-visible:ring-2 focus-visible:ring-inverted p-1.5 transform z-10 absolute rounded-full left-2 top-1/2 '}"
+        :next="{className:'font-medium inline-flex items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 transition-colors text-sm gap-1.5 ring ring-inset ring-accented text-default bg-default hover:bg-elevated disabled:bg-default aria-disabled:bg-default focus:outline-none focus-visible:ring-2 focus-visible:ring-inverted p-1.5 transform z-10 absolute rounded-full right-2 top-1/2 '}"
       >
         <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover:-translate-y-1 h-full w-2lg">
           <!-- Tool Header -->

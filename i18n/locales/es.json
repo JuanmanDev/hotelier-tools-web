@@ -326,54 +326,6 @@
       "description": "Contacta con nosotros para desarrollar soluciones específicas para tu hotel",
       "contact": "Contactar"
     },
-    "install": {
-      "title": "Cómo instalar las herramientas",
-      "subtitle": "Sigue estos sencillos pasos para comenzar a usar nuestras herramientas",
-      "chrome_steps": [
-        {
-          "title": "Descarga la extensión",
-          "description": "Descarga el archivo .crx de la extensión desde nuestra página"
-        },
-        {
-          "title": "Abre Chrome Extensions",
-          "description": "Ve a chrome://extensions/ en tu navegador Chrome"
-        },
-        {
-          "title": "Activa el modo desarrollador",
-          "description": "Habilita el \"Modo de desarrollador\" en la esquina superior derecha"
-        },
-        {
-          "title": "Instala la extensión",
-          "description": "Arrastra el archivo .crx al navegador o usa \"Cargar extensión sin empaquetar\""
-        },
-        {
-          "title": "Configura la extensión",
-          "description": "Sigue las instrucciones de configuración específicas de cada extensión"
-        }
-      ],
-      "automation_steps": [
-        {
-          "title": "Contacta con nosotros",
-          "description": "Envíanos un mensaje para solicitar la configuración de automatizaciones"
-        },
-        {
-          "title": "Proporciona credenciales",
-          "description": "Comparte las credenciales de acceso limitado a tu cuenta de Little Hotelier"
-        },
-        {
-          "title": "Configuramos el sistema",
-          "description": "Nuestro equipo configurará las automatizaciones según tus necesidades"
-        },
-        {
-          "title": "Pruebas y validación",
-          "description": "Realizamos pruebas para asegurar que todo funciona correctamente"
-        },
-        {
-          "title": "Monitoreo continuo",
-          "description": "Las automatizaciones funcionan 24/7 con monitoreo y soporte continuo"
-        }
-      ]
-    },
     "ui": {
       "title": "Scripts de Tampermonkey",
       "subtitle": "Colección de scripts de Tampermonkey para mejorar la experiencia en Little Hotelier.",
@@ -427,6 +379,7 @@
       "title": "Envíanos un mensaje",
       "name": "Nombre completo",
       "email": "Email",
+      "phone": "Teléfono",
       "hotel_name": "Nombre del hotel",
       "subject": "Asunto",
       "message": "Mensaje",
@@ -434,7 +387,8 @@
       "send": "Enviar Mensaje",
       "placeholders": {
         "name": "Tu nombre completo",
-        "email": "tu.email&hotel.com",
+        "email": "Correo electrónico",
+        "phone": "+34 600 000 000",
         "hotel": "Hotel Paradise",
         "subject": "Selecciona un asunto",
         "message": "Cuéntanos cómo podemos ayudarte..."
