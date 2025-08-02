@@ -175,7 +175,7 @@
             </h3>
             <ul class="space-y-2">
               <li>
-                <a href="mailto:support@hoteliertools.com" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <a href="mailto:JuanmaDeveloper+hotelierTools@outlook.com" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('footer.email') }}
                 </a>
               </li>

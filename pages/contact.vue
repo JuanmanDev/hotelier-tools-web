@@ -40,8 +40,8 @@
                   <UIcon name="i-heroicons-envelope" class="w-6 h-6 text-blue-600 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <p class="font-medium text-gray-900 dark:text-white">Email</p>
-                    <a href="mailto:support@hoteliertools.com" class="text-blue-600 hover:text-blue-800 transition-colors">
-                      support@hoteliertools.com
+                    <a href="mailto:JuanmaDeveloper+hotelierTools@outlook.com" class="text-blue-600 hover:text-blue-800 transition-colors">
+                      JuanmaDeveloper+hotelierTools@outlook.com
                     </a>
                   </div>
                 </div>
@@ -50,7 +50,7 @@
                   <UIcon name="i-heroicons-clock" class="w-6 h-6 text-blue-600 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <p class="font-medium text-gray-900 dark:text-white">Horario de atención</p>
-                    <p class="text-gray-600 dark:text-gray-300">24/7 - Soporte disponible siempre</p>
+                    <p class="text-gray-600 dark:text-gray-300">Lunes a Sábado, de 17:00 a 21:00 CET</p>
                   </div>
                 </div>
 
@@ -132,19 +132,19 @@ const supportOptions = [
     title: 'Soporte por Email',
     description: 'Perfecto para consultas detalladas y problemas complejos',
     icon: 'i-heroicons-envelope',
-    responseTime: 'Respuesta en menos de 2 horas'
+    responseTime: 'Respuesta en menos de 3 días'
   },
   {
     title: 'Soporte Urgente',
     description: 'Para problemas críticos que afectan tu operación hotelera',
     icon: 'i-heroicons-exclamation-triangle',
-    responseTime: 'Respuesta inmediata'
+    responseTime: 'Respuesta en menos de 24 horas'
   },
   {
     title: 'Consultoría Técnica',
     description: 'Asesoramiento personalizado para optimizar tu flujo de trabajo',
     icon: 'i-heroicons-academic-cap',
-    responseTime: 'Sesión programada en 24h'
+    responseTime: 'Sesión programada en una semana'
   }
 ]
 </script>

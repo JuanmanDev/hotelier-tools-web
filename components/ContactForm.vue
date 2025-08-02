@@ -4,7 +4,7 @@
       Envíanos un mensaje
     </h2>
 
-    <UForm :schema="contactSchema" :state="contactForm" @submit="onSubmit" class="space-y-8">
+    <form @submit.prevent="onSubmit" class="space-y-8">
       <!-- Name -->
       <UFormGroup label="Nombre completo" name="name" required class="space-y-3">
         <UInput
@@ -55,7 +55,7 @@
       <UFormGroup label="Asunto" name="subject" required class="space-y-3">
         <USelect
           v-model="contactForm.subject"
-          :options="subjectOptions"
+          :items="subjectOptions"
           placeholder="Selecciona un asunto"
           size="lg"
           class="w-full mb-4"
@@ -90,10 +90,9 @@
       <!-- Submit Button -->
       <div class="pt-6">
         <UButton
-          type="submit"
+          @click="onSubmit"
           color="primary"
           size="lg"
-          :loading="isSubmitting"
           :disabled="!contactForm.acceptPrivacy"
           class="w-full justify-center bg-green-600 hover:bg-green-700 focus:ring-green-500 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
         >
@@ -101,24 +100,11 @@
           Enviar Mensaje
         </UButton>
       </div>
-    </UForm>
+    </form>
   </div>
 </template>
 
 <script setup lang="ts">
-import { z } from 'zod'
-
-// Form validation schema
-const contactSchema = z.object({
-  name: z.string().min(2, 'El nombre debe tener al menos 2 caracteres'),
-  email: z.string().email('Ingresa un email válido'),
-  phone: z.string().optional(),
-  hotelName: z.string().optional(),
-  subject: z.string().min(1, 'Selecciona un asunto'),
-  message: z.string().min(10, 'El mensaje debe tener al menos 10 caracteres'),
-  acceptPrivacy: z.boolean().refine(val => val === true, 'Debes aceptar la política de privacidad')
-})
-
 // Form state
 const contactForm = reactive({
   name: '',
@@ -129,8 +115,6 @@ const contactForm = reactive({
   message: '',
   acceptPrivacy: false
 })
-
-const isSubmitting = ref(false)
 
 // Subject options
 const subjectOptions = [
@@ -144,43 +128,27 @@ const subjectOptions = [
 ]
 
 // Form submission
-async function onSubmit() {
-  isSubmitting.value = true
+function onSubmit() {
+  // Get the selected subject label
+  const selectedSubject = subjectOptions.find(option => option.value === contactForm.subject)
+  const subjectLabel = selectedSubject ? selectedSubject.label : contactForm.subject
   
-  try {
-    // TODO: Implement actual form submission to API
-    await new Promise(resolve => setTimeout(resolve, 2000)) // Simulate API call
-    
-    // Show success notification
-    const toast = useToast()
-    toast.add({
-      title: 'Mensaje enviado',
-      description: 'Hemos recibido tu mensaje. Te responderemos pronto.',
-      icon: 'i-heroicons-check-circle',
-      color: 'green'
-    })
-    
-    // Reset form
-    Object.assign(contactForm, {
-      name: '',
-      email: '',
-      phone: '',
-      hotelName: '',
-      subject: '',
-      message: '',
-      acceptPrivacy: false
-    })
-    
-  } catch (error) {
-    const toast = useToast()
-    toast.add({
-      title: 'Error al enviar',
-      description: 'Hubo un problema al enviar tu mensaje. Inténtalo de nuevo.',
-      icon: 'i-heroicons-x-circle',
-      color: 'red'
-    })
-  } finally {
-    isSubmitting.value = false
-  }
+  // Create email body with all form information
+  const emailBody = `
+Nombre: ${contactForm.name}
+Email: ${contactForm.email}
+${contactForm.phone ? `Teléfono: ${contactForm.phone}` : ''}
+${contactForm.hotelName ? `Hotel: ${contactForm.hotelName}` : ''}
+Asunto: ${subjectLabel}
+
+Mensaje:
+${contactForm.message}
+  `.trim()
+  
+  // Create mailto URL
+  const mailtoUrl = `mailto:JuanmaDeveloper+hotelierTools@outlook.com?subject=${encodeURIComponent(`Hotelier Tools - ${subjectLabel}`)}&body=${encodeURIComponent(emailBody)}`
+  
+  // Open email client
+  window.location.href = mailtoUrl
 }
 </script>
