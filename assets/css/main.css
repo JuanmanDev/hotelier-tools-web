@@ -1,0 +1,118 @@
+/* Global styles for Hotelier Tools */
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes botScaleReveal {
+  0% {
+    transform: scale(1);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  100% {
+    transform: scale(0.75);
+    margin-top: -8%;
+    margin-bottom: -10%;
+  }
+}
+
+/* Animation classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.6s ease-out both;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s infinite;
+}
+
+.animate-bot-scale-reveal {
+  animation: botScaleReveal 1s ease-in-out 5s both;
+}
+
+/* Custom gradient backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.bg-gradient-warning {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+/* Smooth transitions */
+.transition-all-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom shadows */
+.shadow-hotel {
+  box-shadow: 0 10px 25px -5px rgba(102, 126, 234, 0.25), 0 4px 6px -2px rgba(102, 126, 234, 0.05);
+}
+
+/* Responsive typography */
+.text-responsive-lg {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.text-responsive-md {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+/* Animation delays for staggered effects */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-2000 { animation-delay: 2s; }
+
+.animation-fill-backwards {
+  animation-fill-mode: backwards;
+}
+
+@theme {
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+  --breakpoint-4xl: 140rem;
+  --breakpoint-5xl: 160rem;
+  --breakpoint-6xl: 180rem;
+}

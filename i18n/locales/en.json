@@ -1,0 +1,1227 @@
+{
+  "nav": {
+    "home": "Home",
+    "tools": "Tools",
+    "documentation": "Documentation",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Optimize your",
+      "span": "hotel management",
+      "span2": "on Little Hotelier",
+
+      "subtitle": "Specialized tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate preventing errors.",
+      "cta_tools": "View Tools",
+      "cta_docs": "Documentation",
+      "bot_button": "See All Automations",
+      "trust": {
+        "secure": "Secure and reliable",
+        "support": "Quick Support",
+        "easy": "Easy to use"
+      },
+      "cards": {
+        "extensions": {
+          "title": "Web Browser Scripts",
+          "description": "Improve Little Hotelier interface directly in your browser. Makes using the web much easier without major modifications and completely free.",
+          "button": "View Improvements"
+        },
+        "automations": {
+          "title": "Advanced Automations",
+          "description": "A bot will perform advanced tasks that save review time and prevent errors, avoiding customer dissatisfaction and possible complaints.",
+          "button": "View Automations"
+        }
+      }
+    },
+    "animation": {
+      "title": "How does Hotelier Tools work?",
+      "subtitle": "See how our tools improve your hotel management step by step",
+      "progress": "Progress",
+      "steps": {
+        "detection": {
+          "title": "Booking Detected",
+          "description": "An unconfirmed booking by the bank is detected"
+        },
+        "notification": {
+          "title": "Email Sent",
+          "description": "A notification email is automatically sent"
+        },
+        "resolution": {
+          "title": "Problem Solved",
+          "description": "Reception contacts the guest and confirms the booking"
+        }
+      },
+      "status": {
+        "pending": "Pending",
+        "in_progress": "In progress",
+        "completed": "Completed",
+        "error": "Error"
+      },
+      "controls": {
+        "restart": "Restart",
+        "play": "Play",
+        "pause": "Pause"
+      },
+      "benefits": {
+        "conversion": {
+          "title": "Increased Conversion",
+          "description": "Prevents loss of bookings due to payment issues"
+        },
+        "automation": {
+          "title": "Total Automation",
+          "description": "Fully automated process without manual intervention"
+        },
+        "response": {
+          "title": "Quick Response",
+          "description": "Immediate notification to resolve issues on time"
+        }
+      }
+    },
+    "process_animation": {
+      "title": "How does Hotelier Tools work?",
+      "subtitle": "See how our tools improve your hotel management step by step",
+      "progress": "Progress",
+      "steps": {
+        "detection": {
+          "title": "Auto Check all data",
+          "description": "Analyze reservations on Front Desk and Direct Booking with all fields"
+        },
+        "notification": {
+          "title": "Email sent",
+          "description": "Send an email when there is a problem to fix as soon as possible or inform about the last tasks auto applied"
+        },
+        "resolution": {
+          "title": "Using API",
+          "description": "Using the data directly makes it very fast to get and monitor"
+        }
+      },
+      "status": {
+        "pending": "Pending",
+        "in_progress": "In progress",
+        "completed": "Completed",
+        "error": "Error"
+      },
+      "controls": {
+        "restart": "Restart",
+        "play": "Play",
+        "pause": "Pause"
+      },
+      "benefits": {
+        "conversion": {
+          "title": "Increased Conversion",
+          "description": "Prevents loss of bookings due to payment issues"
+        },
+        "automation": {
+          "title": "Total Automation",
+          "description": "Fully automated process without manual intervention"
+        },
+        "response": {
+          "title": "Quick Response",
+          "description": "Immediate notification to resolve issues on time"
+        }
+      }
+    },
+    "process_showcase": {
+      "scenarios": {
+        "payment_issue": "Payment Issue",
+        "missing_data": "Missing Data Check",
+        "all_complete": "All Complete"
+      },
+      "steps": {
+        "1": {
+          "title": "Nightly check-in verification",
+          "subtitle": "All check-ins made during the day are checked every night"
+        },
+        "2": {
+          "title": "Guest data analysis",
+          "subtitle": "It is verified that the system has all the client's data and that the reservation is fully paid"
+        },
+        "3": {
+          "title": "Missing data notification",
+          "subtitle": "A notice is sent about the missing data to request it during the next day before check-out"
+        },
+        "4": {
+          "title": "Review of pending payments",
+          "subtitle": "Daily verification of reservations with pending or incomplete payments"
+        },
+        "5": {
+          "title": "Payment issue detected",
+          "subtitle": "A payment transaction error is detected that requires immediate attention"
+        },
+        "6": {
+          "title": "Payment issue resolution",
+          "subtitle": "Contact the client to request an alternative payment method before arrival"
+        }
+      }
+    },
+    "features": {
+      "title": "Why choose Hotelier Tools?",
+      "subtitle": "Features that make the difference in your hotel management",
+      "chrome": {
+        "title": "Web Scripts for Browsers",
+        "description": "Improve Little Hotelier interface directly in your browser",
+        "view_extensions": "View Extensions",
+        "benefits": [
+          "Full-width tables",
+          "Commission calculator",
+          "Better data visualization",
+          "Optimized interface"
+        ]
+      },
+      "automation": {
+        "title": "Automations",
+        "description": "Automatic tasks that save time and reduce errors",
+        "see_more": "See more automations",
+        "benefits": [
+          "Automatic check-out",
+          "Payment validation",
+          "Invoice management",
+          "Booking monitoring"
+        ]
+      },
+      "notifications": {
+        "title": "Notifications",
+        "description": "Stay informed about everything happening in your hotel",
+        "check_available": "Check notifications available",
+        "benefits": [
+          "Real-time alerts",
+          "Automatic emails",
+          "Centralized dashboard",
+          "Detailed reports"
+        ]
+      }
+    },
+    "testimonials": {
+      "title": "What our clients say",
+      "subtitle": "Real opinions from hotels that use our tools",
+      "reviews": [
+        {
+          "quote": "These tools save us a lot of time every quarter to present all invoices. The automation is incredible.",
+          "author": "Hostal Sol",
+          "location": "Zamora, Spain",
+          "website": "hostalsolzamora.com",
+          "rating": 5
+        },
+        {
+          "quote": "The extension makes using the app on our touchscreen effortless. 10 out of 10!",
+          "author": "Hotel Management Team",
+          "location": "Spain",
+          "rating": 5
+        },
+        {
+          "quote": "We were able to detect unconfirmed payments to prevent issues when guests arrive at the hotel - problems we had encountered before.",
+          "author": "Hotel Reception Staff",
+          "location": "Spain",
+          "rating": 5
+        }
+      ]
+    },
+    "stats": {
+      "title": "Results speak for themselves",
+      "subtitle": "Discover the impact of our tools",
+      "error_reduction": "Error reduction",
+      "time_saved": "Daily time saved",
+      "conversion_increase": "Conversion increase",
+      "monitoring": "Continuous monitoring"
+    },
+    "cta": {
+      "title": "Ready to optimize your hotel?",
+      "subtitle": "Join the hotels that are already improving their management with our tools",
+      "start_now": "Start Now",
+      "talk_sales": "Talk to Sales"
+    }
+  },
+  "tools": {
+    "hero": {
+      "title": "Tools for {span}",
+      "span": "Little Hotelier",
+      "subtitle": "Discover our complete collection of tools designed specifically to optimize your hotel management with Little Hotelier by Siteminder."
+    },
+    "showcase": {
+      "title": "Our Tools",
+      "subtitle": "Discover the tools that will revolutionize your hotel management",
+      "categories": {
+        "all": "All",
+        "chrome_extension": "Web Scripts for Browsers",
+        "automation": "Automations"
+      },
+      "card": {
+        "features": "Main features:",
+        "more_features": "+{count} more features",
+        "actions": {
+          "use_now": "Use Now",
+          "beta": "Beta",
+          "coming_soon": "Coming Soon"
+        }
+      },
+      "cta": {
+        "title": "Need a custom tool?",
+        "description": "Contact us to develop specific solutions for your hotel",
+        "button": "Contact"
+      },
+      "status": {
+        "available": "Available",
+        "beta": "Beta",
+        "coming_soon": "Coming Soon",
+        "unknown": "Unknown"
+      },
+      "tools": {
+        "ui_enhancer": {
+          "name": "UI Enhancer",
+          "description": "Improves the Little Hotelier interface with full-width tables and better visualization.",
+          "features": [
+            "Full-width tables",
+            "Horizontal scroll removal",
+            "Visible prices in calendar",
+            "Cleaner and more functional interface"
+          ]
+        },
+        "commission_calculator": {
+          "name": "Commission Calculator",
+          "description": "Automatically calculates Booking.com commissions on each reservation.",
+          "features": [
+            "Automatic commission calculation",
+            "Real-time information",
+            "Profitability analysis",
+            "Commission history"
+          ]
+        },
+        "auto_checkout": {
+          "name": "Automatic Check-out",
+          "description": "Automatically marks reservations as checked-out at the end of the date.",
+          "features": [
+            "Automatic check-out",
+            "Task scheduling",
+            "Status notifications",
+            "Activity logs"
+          ]
+        },
+        "payment_validator": {
+          "name": "Payment Validator",
+          "description": "Checks that all reservations are fully paid.",
+          "features": [
+            "Automatic payment verification",
+            "Pending payment alerts",
+            "Financial status reports",
+            "Accounting integration"
+          ]
+        },
+        "reservation_monitor": {
+          "name": "Reservation Monitor",
+          "description": "Monitors incomplete web reservations and notifies of payment issues.",
+          "features": [
+            "Incomplete reservation detection",
+            "Email notifications",
+            "Tracking dashboard",
+            "Lost reservation recovery"
+          ]
+        },
+        "invoice_manager": {
+          "name": "Invoice Manager",
+          "description": "Manages invoices automatically and verifies mandatory fields.",
+          "features": [
+            "Bulk invoice download",
+            "Mandatory field validation",
+            "Automatic summaries",
+            "Missing field notifications"
+          ]
+        },
+        "bot_automations_collection": {
+          "name": "Hotel Bot Automations",
+          "description": "Advanced automation suite for hotel management tasks including checkout, payments, and reservations.",
+          "features": [
+            "Automatic guest checkout processing",
+            "Payment validation and monitoring", 
+            "Unconfirmed reservation tracking",
+            "Guest communication automation",
+            "Price optimization assistance",
+            "Invoice management and validation"
+          ]
+        },
+        "tables_full_width": {
+          "name": "Full Width Tables",
+          "description": "Expands tables to use the full screen width for better data visibility.",
+          "features": [
+            "Full-width table display",
+            "Better data visibility",
+            "Reduced horizontal scrolling",
+            "Improved screen space utilization"
+          ]
+        },
+        "compact_calendar_ui": {
+          "name": "Compact Calendar",
+          "description": "Optimizes calendar layout by reducing unnecessary spacing and improving date visibility.",
+          "features": [
+            "Single-row date display",
+            "Reduced room type height",
+            "More information on screen",
+            "Cleaner calendar layout"
+          ]
+        },
+        "prices_display": {
+          "name": "Calendar Price Display",
+          "description": "Shows pricing information directly in the calendar view for better visibility.",
+          "features": [
+            "Visible prices in calendar",
+            "Better pricing overview",
+            "Quick rate comparison",
+            "Improved pricing workflow"
+          ]
+        },
+        "touch_screen_optimization": {
+          "name": "Touch Screen Optimization",
+          "description": "Optimizes the interface for touch screen devices and tablets.",
+          "features": [
+            "Touch-friendly controls",
+            "Improved button sizes",
+            "Better mobile experience",
+            "Tablet optimization"
+          ]
+        },
+        "guest_management_bot": {
+          "name": "Guest Management Bot",
+          "description": "Automates guest-related tasks and communications.",
+          "features": [
+            "Guest information processing",
+            "Automated check-in assistance",
+            "Guest communication templates",
+            "Preference tracking"
+          ]
+        },
+        "pricing_optimization_bot": {
+          "name": "Pricing Assistant Bot",
+          "description": "Helps optimize room pricing and revenue management.",
+          "features": [
+            "Rate optimization suggestions",
+            "Demand-based pricing",
+            "Competitor analysis",
+            "Revenue forecasting"
+          ]
+        },
+        "ui_scripts_collection": {
+          "name": "UI Enhancement Scripts",
+          "description": "Collection of browser scripts to improve Little Hotelier interface with full-width tables and better visualization.",
+          "features": [
+            "Full-width tables",
+            "Horizontal scroll removal",
+            "Visible prices in calendar",
+            "Cleaner and more functional interface"
+          ]
+        },
+        "booking_commission_calculator": {
+          "name": "Commission Calculator",
+          "description": "Automatically calculates Booking.com commissions on each reservation.",
+          "features": [
+            "Automatic commission calculation",
+            "Real-time information",
+            "Profitability analysis",
+            "Commission history"
+          ]
+        },
+        "auto_checkout_bot": {
+          "name": "Auto Checkout Bot",
+          "description": "Automatically processes guest checkouts at the end of their stay date.",
+          "features": [
+            "Automatic check-out",
+            "Task scheduling",
+            "Status notifications",
+            "Activity logs"
+          ]
+        },
+        "payment_validator_bot": {
+          "name": "Payment Validator Bot",
+          "description": "Monitors and validates guest payments to prevent booking issues.",
+          "features": [
+            "Automatic payment verification",
+            "Pending payment alerts",
+            "Financial status reports",
+            "Accounting integration"
+          ]
+        },
+        "unconfirmed_reservations_bot": {
+          "name": "Unconfirmed Reservations Monitor",
+          "description": "Tracks and manages unconfirmed reservations to prevent lost bookings.",
+          "features": [
+            "Incomplete reservation detection",
+            "Email notifications",
+            "Tracking dashboard",
+            "Lost reservation recovery"
+          ]
+        },
+        "invoice_management_bot": {
+          "name": "Invoice Management Bot",
+          "description": "Automates invoice generation and management processes.",
+          "features": [
+            "Bulk invoice download",
+            "Mandatory field validation",
+            "Automatic summaries",
+            "Missing field notifications"
+          ]
+        }
+      }
+    },
+    "categories": {
+      "all": "All",
+      "chrome_extensions": "Web Scripts for Browsers",
+      "automations": "Automations"
+    },
+    "status": {
+      "available": "Available",
+      "beta": "Beta",
+      "coming_soon": "Coming Soon"
+    },
+    "actions": {
+      "use_now": "Use Now",
+      "beta_access": "Beta",
+      "coming_soon": "Coming Soon",
+      "download_extensions": "Download Extensions",
+      "request_setup": "Request Setup"
+    },
+    "features": "Main features:",
+    "more_features": "more features",
+    "custom_tool": {
+      "title": "Need a custom tool?",
+      "description": "Contact us to develop specific solutions for your hotel",
+      "contact": "Contact"
+    },
+    "ui": {
+      "title": "Tampermonkey Scripts",
+      "subtitle": "Collection of Tampermonkey scripts to enhance your Little Hotelier experience.",
+      "view_details": "View details",
+      "view_code": "View script code on GitHub to copy it",
+      "view_instructions": "View instructions",
+      "back_to_list": "Back to list",
+      "before": "Before",
+      "after": "After",
+      "gallery": "Gallery",
+      "install_instructions": "View instructions to install script"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "We resolve the most common questions about our tools",
+      "items": [
+        {
+          "label": "Are the tools safe?",
+          "content": "Yes, all our tools are designed with the highest security standards. Extensions only modify the visual interface and automations use limited access credentials."
+        },
+        {
+          "label": "Do I need technical knowledge to use the tools?",
+          "content": "No, our tools are designed to be easy to use. Extensions install with just a few clicks and we configure automations for you."
+        },
+        {
+          "label": "What happens if Little Hotelier updates their platform?",
+          "content": "We constantly monitor changes in Little Hotelier and update our tools to maintain compatibility. Updates are automatic."
+        },
+        {
+          "label": "Can I request custom tools?",
+          "content": "Of course. We offer custom tool development according to your hotel's specific needs. Contact us for more information."
+        },
+        {
+          "label": "Is technical support available?",
+          "content": "Yes, we offer 24/7 technical support for all our tools. You can contact us by email, chat or phone."
+        },
+        {
+          "label": "Do the tools affect Little Hotelier's performance?",
+          "content": "No, our tools are optimized to not affect the platform's performance. Extensions only modify the visual presentation and automations work independently."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact {span}",
+      "span": "our team",
+      "subtitle": "Have questions about our tools? Need a custom solution? We're here to help you optimize your hotel management."
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "hotel_name": "Hotel name",
+      "subject": "Subject",
+      "message": "Message",
+      "privacy": "I accept the privacy policy and data processing",
+      "send": "Send Message",
+      "placeholders": {
+        "name": "Your full name",
+        "email": "Your email address",
+        "phone": "+34 600 000 000",
+        "hotel": "Paradise Hotel",
+        "subject": "Select a subject",
+        "message": "Tell us how we can help you..."
+      },
+      "subjects": {
+        "general": "General inquiry",
+        "technical": "Technical support",
+        "custom": "Custom tool",
+        "automation": "Automation setup",
+        "extension": "Web Scripts for Browsers help",
+        "billing": "Billing and pricing",
+        "partnership": "Collaboration/Partnership"
+      }
+    },
+    "info": {
+      "title": "Contact information",
+      "email": "Email",
+      "schedule": "Support hours",
+      "schedule_text": "Monday to Saturday from 5:00 PM to 9:00 PM",
+      "response": "Average response",
+      "response_text": "Less than 2 hours"
+    },
+    "support": {
+      "title": "Support options",
+      "email": {
+        "title": "Email Support",
+        "description": "Perfect for detailed inquiries and complex problems",
+        "response": "Response in less than 2 hours"
+      },
+      "urgent": {
+        "title": "Urgent Support",
+        "description": "For critical issues affecting your hotel operation",
+        "response": "Immediate response"
+      },
+      "consulting": {
+        "title": "Technical Consulting",
+        "description": "Personalized advice to optimize your workflow",
+        "response": "Session scheduled within 24h"
+      }
+    },
+    "faq_link": {
+      "title": "Have a quick question?",
+      "description": "Check our frequently asked questions, we might already have the answer you're looking for.",
+      "view_faq": "View FAQ"
+    }
+  },
+  "documentation": {
+    "hero": {
+      "title": "Documentation for",
+      "span": "Hotelier Tools",
+      "subtitle": "Complete guides, tutorials and technical references to get the most out of our hotel management tools."
+    },
+    "nav": {
+      "getting_started": "Getting Started",
+      "chrome_extensions": "Web Scripts for Browsers",
+      "automations": "Automations",
+      "api": "API Reference",
+      "faq": "FAQ",
+      "content": "Content"
+    },
+    "getting_started": {
+      "title": "Getting Started with Hotelier Tools",
+      "welcome": {
+        "title": "Welcome!",
+        "description": "Welcome to the complete documentation of Hotelier Tools. Here you will find all the information needed to get started."
+      },
+      "intro": "Hotelier Tools is a set of tools designed specifically to optimize hotel management using Little Hotelier by Siteminder.",
+      "what_includes": {
+        "title": "What does Hotelier Tools include?",
+        "web_scripts": {
+          "title": "Web enhancement scripts",
+          "features": [
+            "User interface improvement",
+            "Commission calculator",
+            "Optimized data visualization",
+            "Additional functionalities"
+          ]
+        },
+        "automations": {
+          "title": "Automations",
+          "features": [
+            "Automatic check-out",
+            "Payment validation",
+            "Invoice management",
+            "Reservation monitoring"
+          ]
+        }
+      },
+      "system_requirements": {
+        "title": "System requirements",
+        "scripts": "For improvement scripts: Browser compatible with Tampermonkey (Chrome, Edge, Firefox, Safari and similar)",
+        "automations": "For automations: Active Little Hotelier account with access to FrontDesk and Direct Booking reservations",
+        "user_access": "User access: Email and password"
+      },
+      "mobile_compatibility": {
+        "title": "Mobile device compatibility",
+        "description": "Improvement scripts do not work in standard mobile browsers like Chrome for Android or Safari for iOS.",
+        "android_alternative": "Alternative for Android: Kiwi Browser is compatible with Tampermonkey, although its configuration is more complex."
+      },
+      "first_time": {
+        "title": "First time using our tools?",
+        "description": "We recommend starting with web improvement scripts, as they are easier to install and provide immediate benefits."
+      }
+    },
+    "web_scripts": {
+      "title": "Web enhancement scripts",
+      "intro": "Web enhancement scripts directly optimize Little Hotelier's interface in your browser, providing an improved user experience and additional functionalities.",
+      "browser_compatibility": {
+        "title": "Browser compatibility",
+        "desktop": {
+          "title": "Desktop browsers",
+          "browsers": [
+            "Chrome (recommended)",
+            "Microsoft Edge",
+            "Mozilla Firefox",
+            "Safari",
+            "Opera"
+          ]
+        },
+        "mobile": {
+          "title": "Mobile browsers",
+          "standard": "Chrome/Safari standard mobile",
+          "kiwi": "Kiwi Browser (Android)",
+          "complex_config": "*More complex configuration"
+        }
+      },
+      "tampermonkey_requirement": {
+        "title": "Requirement: Tampermonkey",
+        "description": "All scripts require the Tampermonkey extension installed in your browser to work correctly."
+      },
+      "view_all_scripts": "View all available scripts",
+      "installation_guide": "Complete installation guide"
+    },
+    "automations": {
+      "title": "Automations",
+      "intro": "Automations perform repetitive tasks in your hotel automatically, saving time and reducing human errors.",
+      "credentials_warning": {
+        "title": "Important: Access credentials",
+        "description": "For automations we need limited access credentials to your Little Hotelier account. These credentials will only have the minimum permissions necessary to perform automated tasks."
+      },
+      "access_credentials": {
+        "title": "Access credentials",
+        "intro": "To use automations, we need you to provide access credentials to your Little Hotelier account. These credentials must have limited permissions to ensure the security of your information.",
+        "create_user": "Create a user from the Little Hotelier administration panel with the following permissions:",
+        "direct_booking": {
+          "title": "Direct Booking",
+          "access": "Access: Yes",
+          "user_type": "User Type: General"
+        },
+        "frontdesk": {
+          "title": "FrontDesk", 
+          "access": "Access: Yes",
+          "user_type": "User Type: General",
+          "permissions": "Permissions: Reservations"
+        },
+        "verify_user": "Once the user is created, make sure it works by accessing Little Hotelier with the newly created username and password.",
+        "email_trick": {
+          "title": "Email trick",
+          "description": "If you don't want to create a new email address you can use an existing address and add a suffix with +. If your email is: juanma{'@'}hotelier-tools.com You can use it as: juanma+bot-1{'@'}hotelier-tools.com"
+        },
+        "contact_us": "Once you have the user created, please contact us through the contact form so we can configure the automations indicating the username and password created, telling us which automations you are interested in."
+      },
+      "available_automations": {
+        "title": "Available automations",
+        "view_all": "View all available automations"
+      }
+    },
+    "api_reference": {
+      "title": "API Reference",
+      "intro": "We currently use the APIs available on the Little Hotelier website.",
+      "current_state": {
+        "title": "Current API state",
+        "description": "This may cause some inconsistency that we will try to fix as soon as possible."
+      },
+      "future": "In the future we will try to connect with the SiteMinder API directly to have more robustness and stability.",
+      "collaborate": {
+        "title": "Want to collaborate?",
+        "description": "If you are interested in collaborating with us on this aspect, please contact through our contact form and we will try to give you access to the code."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "search_placeholder": "Search in frequently asked questions...",
+      "no_results": "No questions found matching your search.",
+      "items": {
+        "security": {
+          "label": "Are Hotelier Tools secure?",
+          "content": "Yes, all our tools are designed with the highest security standards. Extensions only modify the visual interface and automations use limited access credentials with minimal permissions.",
+          "links": [
+            {
+              "text": "View technical documentation",
+              "url": "/documentation"
+            },
+            {
+              "text": "Contact technical support",
+              "url": "/contact"
+            }
+          ]
+        },
+        "easy_use": {
+          "label": "Do I need technical knowledge to use the tools?",
+          "content": "No, our tools are designed to be easy to use. Extensions install with just a few clicks and we configure automations for you. We provide step-by-step guides for everything.",
+          "links": [
+            {
+              "text": "Installation guide",
+              "url": "/tools/ui/instructions"
+            },
+            {
+              "text": "View all tools",
+              "url": "/tools"
+            }
+          ]
+        },
+        "compatibility": {
+          "label": "What happens if Little Hotelier updates their platform?",
+          "content": "We constantly monitor changes in Little Hotelier and update our tools to maintain compatibility. Updates are automatic and transparent to the user.",
+          "links": [
+            {
+              "text": "View documentation",
+              "url": "/documentation"
+            },
+            {
+              "text": "Report issue",
+              "url": "/contact"
+            }
+          ]
+        },
+        "custom_tools": {
+          "label": "Can I request custom tools?",
+          "content": "Absolutely. We offer custom tool development according to your hotel's specific needs. Our technical team will work with you to create tailored solutions.",
+          "links": [
+            {
+              "text": "Request custom development",
+              "url": "/contact"
+            },
+            {
+              "text": "View available tools",
+              "url": "/tools"
+            }
+          ]
+        },
+        "support": {
+          "label": "Is technical support available?",
+          "content": "Yes, we offer technical support during specific hours. You can contact us via email and we will respond as quickly as possible. We also have complete documentation available.",
+          "links": [
+            {
+              "text": "Contact support",
+              "url": "/contact"
+            },
+            {
+              "text": "View documentation",
+              "url": "/documentation"
+            }
+          ]
+        },
+        "performance": {
+          "label": "Do the tools affect Little Hotelier's performance?",
+          "content": "No, our tools are optimized to not affect platform performance. Extensions only modify the visual presentation and automations work independently.",
+          "links": [
+            {
+              "text": "View technical documentation",
+              "url": "/documentation"
+            },
+            {
+              "text": "Report performance issue",
+              "url": "/contact"
+            }
+          ]
+        },
+        "script_updates": {
+          "label": "How do I update the web enhancement scripts?",
+          "content": "Within the Tampermonkey administration panel you will get a notification to update the scripts, although you can always copy and paste the latest version from the repository.",
+          "links": [
+            {
+              "text": "Update guide",
+              "url": "/tools/ui/instructions"
+            },
+            {
+              "text": "View latest scripts",
+              "url": "/tools/ui"
+            }
+          ]
+        },
+        "mobile_support": {
+          "label": "Do the scripts work on mobile devices?",
+          "content": "The scripts do not work in standard mobile browsers like Chrome for Android or Safari for iOS. However, on Android you can use Kiwi Browser which is compatible with Tampermonkey, although the configuration is more complex.",
+          "links": [
+            {
+              "text": "Mobile compatibility guide",
+              "url": "/documentation"
+            },
+            {
+              "text": "Request information",
+              "url": "/contact"
+            }
+          ]
+        },
+        "automation_permissions": {
+          "label": "What permissions do automations need?",
+          "content": "Automations only require limited read and write permissions on your Little Hotelier account. We never request full administrative permissions and only access the minimum data necessary.",
+          "links": [
+            {
+              "text": "View documentation",
+              "url": "/documentation"
+            },
+            {
+              "text": "Contact for details",
+              "url": "/contact"
+            }
+          ]
+        },
+        "disable_automation": {
+          "label": "Can I temporarily disable an automation?",
+          "content": "Yes, you can pause any automation by contacting our support. We are working on a control panel where you can manage all your automations. You can also disable the provided user and the automations will stop working.",
+          "links": [
+            {
+              "text": "Contact support",
+              "url": "/contact"
+            },
+            {
+              "text": "Automation management",
+              "url": "/tools/bot"
+            }
+          ]
+        },
+        "pricing": {
+          "label": "What is the pricing for the tools?",
+          "content": "We offer different options according to your needs. Browser extensions are free, while automations may require custom configuration.",
+          "links": [
+            {
+              "text": "View free tools",
+              "url": "/tools/ui"
+            },
+            {
+              "text": "Consult pricing",
+              "url": "/contact"
+            }
+          ]
+        },
+        "data_privacy": {
+          "label": "What data do you access and how do you protect it?",
+          "content": "We only access the minimum data necessary for each function. We do not store sensitive guest or financial information. All data is processed securely.",
+          "links": [
+            {
+              "text": "View documentation",
+              "url": "/documentation"
+            },
+            {
+              "text": "Contact for more information",
+              "url": "/contact"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "footer": {
+    "description": "Optimize your hotel management with tools specifically designed for Little Hotelier by Siteminder.",
+    "links": "Links",
+    "support": "Support",
+    "email": "Email",
+    "faq": "FAQ",
+    "rights": "All rights reserved.",
+    "made_with": "Made with ❤️ for the hotel community"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Information",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "next": "Next",
+    "previous": "Previous",
+    "back": "Back",
+    "continue": "Continue",
+    "finish": "Finish",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "confirm": "Confirm",
+    "free": "Free",
+    "backToOverview": "Back to Overview"
+  },
+  "bot": {
+    "hero": {
+      "title": "Let your {span} review itself",
+      "span": "Hotel",
+      "subtitle": "Our intelligent bot works 24/7 automating critical tasks for your hotel"
+    },
+    "tasks": {
+      "checkout": {
+        "title": "Automatic Check-out",
+        "description": "Automatic checkout processing"
+      },
+      "payments": {
+        "title": "Payment Review",
+        "description": "Verification of paid reservations"
+      },
+      "guests": {
+        "title": "Guest Data",
+        "description": "Complete information confirmation"
+      },
+      "unconfirmed": {
+        "title": "Unconfirmed Reservations",
+        "description": "Detection of pending payments"
+      },
+      "prices": {
+        "title": "Price Rectification",
+        "description": "Automatic cent correction"
+      },
+      "invoices": {
+        "title": "Invoice Generation",
+        "description": "Automated monthly invoices"
+      }
+    },
+    "details": {
+      "title": "Intelligent Automation Features",
+      "subtitle": "Discover how our bot thinks instead of you, saving money, time and preventing problems before they occur",
+      "learnMore": "Learn More",
+      "overview": "Overview",
+      "keyFeatures": "Key Features",
+      "checkout": {
+        "longDescription": "Our bot automatically processes checkout for all reservations at the end of their stay date, eliminating the need for manual intervention and ensuring accurate records. The task would check the reservation is completed paid and the system has all the data required to check-out the guest.",
+        "feature1": "Automatic checkout at end of stay date",
+        "feature2": "Real-time status updates and notifications",
+        "feature3": "Email in case of errors or issues "
+      },
+      "payments": {
+        "longDescription": "Continuously monitors payment status across all booking channels, detecting incomplete or failed payments before they become major issues for your hotel. usually happen when the client do not confirm the payment with the bank but have leave all information about the reservation.",
+        "feature1": "Continuous payment status monitoring",
+        "feature2": "Instant alerts for payment failures",
+        "feature3": "Check payments not verified and not completed"
+      },
+      "guests": {
+        "longDescription": "Validates that all required guest information is complete and accurate, ensuring compliance with local regulations and smooth check-in processes. Some hotels requires to have a ID card or Passport number to be able to check-in the guest.",
+        "feature1": "Mandatory field validation",
+        "feature2": "Missing information alerts",
+        "feature3": "Compliance with local regulations"
+      },
+      "unconfirmed": {
+        "longDescription": "Proactively identifies reservations with pending bank confirmations or payment issues, allowing your team to resolve problems before guest arrival.",
+        "feature1": "Early detection of payment issues",
+        "feature2": "Automatic notification system",
+        "feature3": "Revenue protection and loss prevention"
+      },
+      "prices": {
+        "longDescription": "Automatically corrects pricing discrepancies for little misalignments and cent rounding errors that can occur during rate synchronization across different booking platforms. This usually happens when applying a discount on Direct Booking for multiples days that does not match a price per night equals on all nights. The error appears between the money paid and the total price for the reservation.",
+        "feature1": "Automatic price correction",
+        "feature2": "Multi-platform rate synchronization",
+        "feature3": "Revenue optimization"
+      },
+      "invoices": {
+        "longDescription": "Generates and manages invoices automatically with all required fiscal information, ensuring compliance and reducing administrative workload. We would create a folder and we would save all invoices in a folder with the month and year of the invoice, so you can easily find it later. We can also upload to OneDrive or Google Drive to have a backup of all invoices.",
+        "feature1": "Automated monthly invoice generation",
+        "feature2": "Tax compliance and fiscal requirements",
+        "feature3": "Generates all invoices without checking one by one manually"
+      }
+    }
+  },
+  "seo": {
+    "site": {
+      "name": "Hotelier Tools",
+      "description": "Specialized tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate preventing errors.",
+      "keywords": "hotel management, Little Hotelier, Siteminder, hotel automation, booking management, hotel software, chrome extensions, hotel tools"
+    },
+    "pages": {
+      "home": {
+        "title": "Hotelier Tools - Optimize your hotel management with Little Hotelier",
+        "description": "Specialized tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate preventing errors.",
+        "ogTitle": "Hotelier Tools - Hotel Management Automation",
+        "ogDescription": "Transform your hotel operations with specialized tools for Little Hotelier. Automate bookings, prevent errors, and boost efficiency."
+      },
+      "tools": {
+        "title": "Hotel Management Tools - Browser Scripts & Automations",
+        "description": "Discover our comprehensive suite of hotel management tools including browser extensions and automated solutions for Little Hotelier platform.",
+        "ogTitle": "Hotel Management Tools & Automations",
+        "ogDescription": "Comprehensive suite of tools to optimize your hotel operations with Little Hotelier platform."
+      },
+      "chromeExtensions": {
+        "title": "Chrome Extensions for Little Hotelier - Interface Improvements",
+        "description": "Free Chrome extensions that enhance Little Hotelier interface, making daily hotel management tasks easier and more efficient.",
+        "ogTitle": "Chrome Extensions for Hotel Management",
+        "ogDescription": "Free Chrome extensions to improve Little Hotelier interface and streamline hotel operations."
+      },
+      "documentation": {
+        "title": "Documentation - How to Use Hotelier Tools",
+        "description": "Complete documentation and guides on how to install and use our hotel management tools for Little Hotelier platform.",
+        "ogTitle": "Hotelier Tools Documentation",
+        "ogDescription": "Learn how to install and use our hotel management tools with step-by-step guides and documentation."
+      },
+      "contact": {
+        "title": "Contact Us - Hotelier Tools Support",
+        "description": "Get in touch with our support team for help with hotel management tools, technical support, or business inquiries.",
+        "ogTitle": "Contact Hotelier Tools Support",
+        "ogDescription": "Contact our support team for help with hotel management tools and technical assistance."
+      },
+      "faq": {
+        "title": "Frequently Asked Questions - Hotelier Tools",
+        "description": "Find answers to common questions about our hotel management tools, installation, pricing, and technical support.",
+        "ogTitle": "FAQ - Hotelier Tools",
+        "ogDescription": "Get answers to frequently asked questions about our hotel management tools and services."
+      },
+      "marketing": {
+        "title": "Hotel Marketing Tools - Boost Your Direct Bookings | Hotelier Tools",
+        "description": "Discover marketing strategies and tools to increase direct bookings for your hotel. Reduce OTA commissions and improve profitability with our specialized solutions.",
+        "ogTitle": "Hotel Marketing Tools - Boost Direct Bookings",
+        "ogDescription": "Reduce OTA commissions and increase direct bookings with our specialized hotel marketing tools and strategies."
+      }
+    }
+  },
+  "marketing": {
+    "hero": {
+      "title": "Maximize Your Hotel's",
+      "span": "Revenue Potential",
+      "subtitle": "Discover proven strategies and tools to increase direct bookings, reduce OTA commissions, and optimize your hotel's revenue stream.",
+      "cta_start": "Start Optimizing",
+      "cta_contact": "Get Consultation"
+    },
+    "features": {
+      "title": "Revenue Optimization Features",
+      "subtitle": "Everything you need to boost your hotel's profitability and reduce dependency on third-party platforms.",
+      "direct_bookings": {
+        "title": "Increase Direct Bookings",
+        "description": "Tools and strategies to drive more guests to book directly through your website, reducing commission costs."
+      },
+      "ota_reduction": {
+        "title": "Reduce OTA Dependency",
+        "description": "Minimize reliance on Online Travel Agencies and keep more revenue in your pocket."
+      },
+      "revenue_optimization": {
+        "title": "Revenue Management",
+        "description": "Advanced pricing strategies and tools to maximize revenue per available room."
+      },
+      "customer_loyalty": {
+        "title": "Guest Loyalty Programs",
+        "description": "Build lasting relationships with guests through personalized experiences and loyalty rewards."
+      },
+      "analytics": {
+        "title": "Performance Analytics",
+        "description": "Detailed insights into booking patterns, revenue sources, and optimization opportunities."
+      },
+      "automation": {
+        "title": "Marketing Automation",
+        "description": "Automated email campaigns, social media management, and guest communication workflows."
+      }
+    },
+    
+    "error_detection_showcase": {
+      "controls": {
+        "speed_up": "Speed Up Animation",
+        "show_all_cards": "Show All Cards"
+      },
+      "cards": {
+        "customer": {
+          "title": "Customer",
+          "step1": "Selected dates & room preferences.",
+          "step2": "Fill personal details in the booking form.",
+          "step3": "Believes reservation is complete as the money is held."
+        },
+        "payment": {
+          "title": "Payment",
+          "step1": "Bank card details received.",
+          "step2": "Money held.",
+          "step3": "Waiting for confirmation from the bank"
+        },
+        "hostel": {
+          "title": "Hotel",
+          "step1": "Reservation not received",
+          "error_message": "Room not reserved, if the customer comes to the hotel won't have a place to stay.",
+          "success_message": "Reservation and room confirmed."
+        },
+        "bot": {
+          "title": "Bot",
+          "button": "Enable Automatic Review",
+          "progress_text": "Reviewing last reservations from direct booking...",
+          "completed": "Review completed",
+          "detected": "Detected 1 incomplete reservation."
+        },
+        "automated_alert": {
+          "title": "Automated Alert",
+          "description": "Our system automatically sends an alert to the front desk team about the incomplete reservation that needs attention."
+        },
+        "staff_review": {
+          "title": "Staff Review",
+          "description": "Front desk staff receives the notification and reviews the flagged reservation to identify and resolve the issue quickly."
+        },
+        "contact_customer": {
+          "title": "Contact with customer",
+          "description": "Reception staff contact the customer to confirm or cancel the reservation."
+        },
+        "resolution": {
+          "title": "Resolution Complete",
+          "step1": "Staff contacts the customer, resolves the issue, and completes the reservation process successfully.",
+          "success_message": "Customer contacted and confirmed. Reservation not lost and problem solved!"
+        }
+      }
+    },
+    "detect_incomplete_reservation": {
+      "header": {
+        "badge": "Advanced Detection System",
+        "title": "The Problem of Incomplete Reservations",
+        "subtitle": "Discover how our software helps hotels identify and resolve reservations that were not completed correctly"
+      },
+      "problem_flow": {
+        "title": "What's happening?",
+        "steps": {
+          "interested_client": {
+            "title": "Interested Client",
+            "description": "The client finds your hotel and decides to make a reservation"
+          },
+          "complete_form": {
+            "title": "Complete Form",
+            "description": "Fill in all fields: dates, guests, personal data"
+          },
+          "enter_card": {
+            "title": "Enter Card",
+            "description": "Provide banking details and see money withheld"
+          },
+          "problem": {
+            "badge": "PROBLEM!",
+            "title": "Communication Crisis",
+            "description": "Does not confirm final payment but leaves the website"
+          }
+        }
+      },
+      "disconnect": {
+        "title": "The Disconnect",
+        "client_side": {
+          "title": "What the client believes",
+          "quote": "Perfect! My reservation is confirmed",
+          "points": {
+            "money_withheld": "I see money withheld in my bank",
+            "completed_process": "I completed the entire process",
+            "hotel_has_reservation": "The hotel has my reservation"
+          }
+        },
+        "hotel_side": {
+          "title": "The hotel's reality",
+          "quote": "There is no confirmed reservation",
+          "points": {
+            "no_payment_confirmation": "We did not receive payment confirmation",
+            "room_available": "The room is still available",
+            "no_system_record": "There is no record in the system"
+          }
+        }
+      },
+      "solution": {
+        "title": "Our Solution",
+        "features": {
+          "monitoring": {
+            "title": "Automatic Monitoring",
+            "description": "We constantly review incomplete reservations"
+          },
+          "notifications": {
+            "title": "Smart Notifications",
+            "description": "We alert you when we detect problematic cases"
+          },
+          "resolution": {
+            "title": "Proactive Resolution",
+            "description": "Contact the client before it becomes a problem"
+          }
+        },
+        "button": "Learn More About Our Solution"
+      }
+    }
+  }
+}
