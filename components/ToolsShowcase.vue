@@ -150,194 +150,35 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import type { Tool } from '~/types'
+<script setup lang="js">
+import { toolsData } from '~/data/tools'
 
 const { t, tm } = useI18n()
 const localePath = useLocalePath()
 
 const activeIndex = ref(0)
 const carouselRef = ref()
-let autoScrollInterval: NodeJS.Timeout | null = null
+let autoScrollInterval = null
 let isHovered = ref(false)
 
 // Auto-scroll configuration
 const AUTO_SCROLL_DELAY = 7000 // 7 seconds
 
-const tools: Tool[] = [
-  // Main tool categories that link to existing pages
-  {
-    id: 'ui-scripts-collection',
-    name: t('tools.showcase.tools.ui_enhancer.name'),
-    description: t('tools.showcase.tools.ui_enhancer.description'),
-    category: 'chrome-extension',
-    features: tm('tools.showcase.tools.ui_enhancer.features') || [],
-    icon: 'i-heroicons-computer-desktop',
-    status: 'available',
-    linkTo: '/tools/ui'
-  },
-  {
-    id: 'bot-automations-collection',
-    name: 'Hotel Bot Automations',
-    description: 'Advanced automation suite for hotel management tasks including checkout, payments, and reservations.',
-    category: 'automation',
-    features: [
-      'Automatic guest checkout processing',
-      'Payment validation and monitoring', 
-      'Unconfirmed reservation tracking',
-      'Guest communication automation',
-      'Price optimization assistance',
-      'Invoice management and validation'
-    ],
-    icon: 'i-heroicons-cpu-chip',
-    status: 'available',
-    linkTo: '/tools/bot'
-  },
+// Build tools array using i18n and static data
+const tools = toolsData.map(toolData => {
+  const translationKey = `tools.showcase.tools.${toolData.id.replace(/-/g, '_')}`
   
-  // Individual UI script cards
-  {
-    id: 'booking-commission-calculator',
-    name: t('tools.showcase.tools.commission_calculator.name'),
-    description: t('tools.showcase.tools.commission_calculator.description'),
-    category: 'chrome-extension',
-    features: tm('tools.showcase.tools.commission_calculator.features') || [],
-    icon: 'i-heroicons-calculator',
-    status: 'available',
-    linkTo: '/tools/ui/show-booking-commissions'
-  },
-  {
-    id: 'tables-full-width',
-    name: 'Full Width Tables',
-    description: 'Expands tables to use the full screen width for better data visibility.',
-    category: 'chrome-extension',
-    features: [
-      'Full-width table display',
-      'Better data visibility',
-      'Reduced horizontal scrolling',
-      'Improved screen space utilization'
-    ],
-    icon: 'i-heroicons-table-cells',
-    status: 'available',
-    linkTo: '/tools/ui/tables-full-width'
-  },
-  {
-    id: 'compact-calendar-ui',
-    name: 'Compact Calendar',
-    description: 'Optimizes calendar layout by reducing unnecessary spacing and improving date visibility.',
-    category: 'chrome-extension',
-    features: [
-      'Single-row date display',
-      'Reduced room type height',
-      'More information on screen',
-      'Cleaner calendar layout'
-    ],
-    icon: 'i-heroicons-calendar-days',
-    status: 'available',
-    linkTo: '/tools/ui/compact-calendar-ui'
-  },
-  {
-    id: 'prices-display',
-    name: 'Calendar Price Display',
-    description: 'Shows pricing information directly in the calendar view for better visibility.',
-    category: 'chrome-extension',
-    features: [
-      'Visible prices in calendar',
-      'Better pricing overview',
-      'Quick rate comparison',
-      'Improved pricing workflow'
-    ],
-    icon: 'i-heroicons-currency-dollar',
-    status: 'available',
-    linkTo: '/tools/ui/prices-display'
-  },
-  {
-    id: 'touch-screen-optimization',
-    name: 'Touch Screen Optimization',
-    description: 'Optimizes the interface for touch screen devices and tablets.',
-    category: 'chrome-extension',
-    features: [
-      'Touch-friendly controls',
-      'Improved button sizes',
-      'Better mobile experience',
-      'Tablet optimization'
-    ],
-    icon: 'i-heroicons-device-tablet',
-    status: 'available',
-    linkTo: '/tools/ui/improve-style-touch-screens'
-  },
-  
-  // Individual Bot automation cards
-  {
-    id: 'auto-checkout-bot',
-    name: 'Auto Checkout Bot',
-    description: 'Automatically processes guest checkouts at the end of their stay date.',
-    category: 'automation',
-    features: tm('tools.showcase.tools.auto_checkout.features') || [],
-    icon: 'i-heroicons-arrow-right-start-on-rectangle',
-    status: 'beta',
-    linkTo: '/tools/bot/checkout'
-  },
-  {
-    id: 'payment-validator-bot',
-    name: 'Payment Validator Bot',
-    description: 'Monitors and validates guest payments to prevent booking issues.',
-    category: 'automation',
-    features: tm('tools.showcase.tools.payment_validator.features') || [],
-    icon: 'i-heroicons-credit-card',
-    status: 'beta',
-    linkTo: '/tools/bot/payments'
-  },
-  {
-    id: 'unconfirmed-reservations-bot',
-    name: 'Unconfirmed Reservations Monitor',
-    description: 'Tracks and manages unconfirmed reservations to prevent lost bookings.',
-    category: 'automation',
-    features: tm('tools.showcase.tools.reservation_monitor.features') || [],
-    icon: 'i-heroicons-exclamation-triangle',
-    status: 'available',
-    linkTo: '/tools/bot/unconfirmed'
-  },
-  {
-    id: 'guest-management-bot',
-    name: 'Guest Management Bot',
-    description: 'Automates guest-related tasks and communications.',
-    category: 'automation',
-    features: [
-      'Guest information processing',
-      'Automated check-in assistance',
-      'Guest communication templates',
-      'Preference tracking'
-    ],
-    icon: 'i-heroicons-user-group',
-    status: 'beta',
-    linkTo: '/tools/bot/guests'
-  },
-  {
-    id: 'pricing-optimization-bot',
-    name: 'Pricing Assistant Bot',
-    description: 'Helps optimize room pricing and revenue management.',
-    category: 'automation',
-    features: [
-      'Rate optimization suggestions',
-      'Demand-based pricing',
-      'Competitor analysis',
-      'Revenue forecasting'
-    ],
-    icon: 'i-heroicons-chart-bar-square',
-    status: 'beta',
-    linkTo: '/tools/bot/prices'
-  },
-  {
-    id: 'invoice-management-bot',
-    name: 'Invoice Management Bot',
-    description: 'Automates invoice generation and management processes.',
-    category: 'automation',
-    features: tm('tools.showcase.tools.invoice_manager.features') || [],
-    icon: 'i-heroicons-document-text',
-    status: 'coming-soon',
-    linkTo: '/tools/bot/invoices'
+  return {
+    id: toolData.id,
+    name: t(`${translationKey}.name`),
+    description: t(`${translationKey}.description`),
+    category: toolData.category,
+    features: tm(`${translationKey}.features`) || [],
+    icon: toolData.icon,
+    status: toolData.status,
+    linkTo: toolData.linkTo
   }
-]
+})
 
 // Auto-scroll functions
 function startAutoScroll() {
@@ -389,7 +230,7 @@ onUnmounted(() => {
   stopAutoScroll()
 })
 
-function getStatusColor(status: string) {
+function getStatusColor(status) {
   switch (status) {
     case 'available': return 'green'
     case 'beta': return 'orange'
@@ -398,7 +239,7 @@ function getStatusColor(status: string) {
   }
 }
 
-function getStatusText(status: string) {
+function getStatusText(status) {
   switch (status) {
     case 'available': return t('tools.showcase.status.available')
     case 'beta': return t('tools.showcase.status.beta')
@@ -407,7 +248,7 @@ function getStatusText(status: string) {
   }
 }
 
-function openTool(tool: Tool) {
+function openTool(tool) {
   // Use linkTo path if available, otherwise use legacy switch
   if (tool.linkTo) {
     navigateTo(localePath(tool.linkTo));
@@ -431,12 +272,12 @@ function openTool(tool: Tool) {
   console.log('Opening tool:', tool.name)
 }
 
-function requestBetaAccess(tool: Tool) {
+function requestBetaAccess(tool) {
   // go to contact page
   navigateTo(localePath('/contact'));
 }
 
-function openDocumentation(tool: Tool) {
+function openDocumentation(tool) {
   // TODO: Implement documentation opening
   console.log('Opening documentation for:', tool.name)
   // This would open the documentation page

@@ -299,6 +299,138 @@
             "Resúmenes automáticos",
             "Notificaciones de campos faltantes"
           ]
+        },
+        "bot_automations_collection": {
+          "name": "Automatizaciones del Bot Hotelero",
+          "description": "Suite avanzada de automatización para tareas de gestión hotelera incluyendo checkout, pagos y reservas.",
+          "features": [
+            "Procesamiento automático de checkout de huéspedes",
+            "Validación y monitoreo de pagos", 
+            "Seguimiento de reservas no confirmadas",
+            "Automatización de comunicación con huéspedes",
+            "Asistencia en optimización de precios",
+            "Gestión y validación de facturas"
+          ]
+        },
+        "tables_full_width": {
+          "name": "Tablas a Ancho Completo",
+          "description": "Expande las tablas para usar todo el ancho de la pantalla para mejor visibilidad de datos.",
+          "features": [
+            "Visualización de tablas a ancho completo",
+            "Mejor visibilidad de datos",
+            "Reducción del scroll horizontal",
+            "Mejor utilización del espacio de pantalla"
+          ]
+        },
+        "compact_calendar_ui": {
+          "name": "Calendario Compacto",
+          "description": "Optimiza el diseño del calendario reduciendo espacios innecesarios y mejorando la visibilidad de fechas.",
+          "features": [
+            "Visualización de fechas en una sola fila",
+            "Altura reducida de tipos de habitación",
+            "Más información en pantalla",
+            "Diseño de calendario más limpio"
+          ]
+        },
+        "prices_display": {
+          "name": "Visualización de Precios en Calendario",
+          "description": "Muestra información de precios directamente en la vista del calendario para mejor visibilidad.",
+          "features": [
+            "Precios visibles en calendario",
+            "Mejor vista general de precios",
+            "Comparación rápida de tarifas",
+            "Flujo de trabajo de precios mejorado"
+          ]
+        },
+        "touch_screen_optimization": {
+          "name": "Optimización para Pantalla Táctil",
+          "description": "Optimiza la interfaz para dispositivos de pantalla táctil y tablets.",
+          "features": [
+            "Controles amigables al tacto",
+            "Tamaños de botón mejorados",
+            "Mejor experiencia móvil",
+            "Optimización para tablets"
+          ]
+        },
+        "guest_management_bot": {
+          "name": "Bot de Gestión de Huéspedes",
+          "description": "Automatiza tareas relacionadas con huéspedes y comunicaciones.",
+          "features": [
+            "Procesamiento de información de huéspedes",
+            "Asistencia automatizada de check-in",
+            "Plantillas de comunicación con huéspedes",
+            "Seguimiento de preferencias"
+          ]
+        },
+        "pricing_optimization_bot": {
+          "name": "Bot Asistente de Precios",
+          "description": "Ayuda a optimizar precios de habitaciones y gestión de ingresos.",
+          "features": [
+            "Sugerencias de optimización de tarifas",
+            "Precios basados en demanda",
+            "Análisis de competencia",
+            "Pronóstico de ingresos"
+          ]
+        },
+        "ui_scripts_collection": {
+          "name": "Scripts de Mejora de UI",
+          "description": "Colección de scripts de navegador para mejorar la interfaz de Little Hotelier con tablas a ancho completo y mejor visualización.",
+          "features": [
+            "Tablas a ancho completo",
+            "Eliminación del scroll horizontal",
+            "Precios visibles en calendario",
+            "Interfaz más limpia y funcional"
+          ]
+        },
+        "booking_commission_calculator": {
+          "name": "Calculadora de Comisiones",
+          "description": "Calcula automáticamente las comisiones de Booking.com en cada reserva.",
+          "features": [
+            "Cálculo automático de comisiones",
+            "Información en tiempo real",
+            "Análisis de rentabilidad",
+            "Historial de comisiones"
+          ]
+        },
+        "auto_checkout_bot": {
+          "name": "Bot de Check-out Automático",
+          "description": "Procesa automáticamente los check-outs de huéspedes al final de su fecha de estadía.",
+          "features": [
+            "Check-out automático",
+            "Programación de tareas",
+            "Notificaciones de estado",
+            "Logs de actividad"
+          ]
+        },
+        "payment_validator_bot": {
+          "name": "Bot Validador de Pagos",
+          "description": "Monitorea y valida pagos de huéspedes para prevenir problemas de reserva.",
+          "features": [
+            "Verificación automática de pagos",
+            "Alertas de pagos pendientes",
+            "Reportes de estado financiero",
+            "Integración con contabilidad"
+          ]
+        },
+        "unconfirmed_reservations_bot": {
+          "name": "Monitor de Reservas No Confirmadas",
+          "description": "Rastrea y gestiona reservas no confirmadas para prevenir pérdida de reservas.",
+          "features": [
+            "Detección de reservas incompletas",
+            "Notificaciones por email",
+            "Dashboard de seguimiento",
+            "Recuperación de reservas perdidas"
+          ]
+        },
+        "invoice_management_bot": {
+          "name": "Bot de Gestión de Facturas",
+          "description": "Automatiza la generación y procesos de gestión de facturas.",
+          "features": [
+            "Descarga masiva de facturas",
+            "Validación de campos obligatorios",
+            "Resúmenes automáticos",
+            "Notificaciones de campos faltantes"
+          ]
         }
       }
     },
