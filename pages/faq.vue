@@ -46,9 +46,32 @@
 </template>
 
 <script setup>
-// SEO metadata
-definePageMeta({
-  title: 'Preguntas Frecuentes - Hotelier Tools',
-  description: 'Encuentra respuestas a las preguntas más comunes sobre Hotelier Tools, instalación y uso de nuestras herramientas de gestión hotelera.'
+const { t } = useI18n()
+const { setSEO, setStructuredData, setBreadcrumbs, setFAQStructuredData } = useSEO()
+
+// Set SEO metadata for FAQ page
+setSEO('faq')
+
+// Set structured data and breadcrumbs
+onMounted(() => {
+  // Set FAQ structured data - you would need to define the FAQ items
+  const faqItems = [
+    {
+      question: t('faq.items.0.question'),
+      answer: t('faq.items.0.answer')
+    },
+    {
+      question: t('faq.items.1.question'),
+      answer: t('faq.items.1.answer')
+    }
+    // Add more FAQ items as needed
+  ]
+  
+  setFAQStructuredData(faqItems)
+  
+  setBreadcrumbs([
+    { name: t('nav.home'), url: '/' },
+    { name: 'FAQ', url: '/faq' }
+  ])
 })
 </script>

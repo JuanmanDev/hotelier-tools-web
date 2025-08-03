@@ -7,10 +7,13 @@
 </template>
 
 <script setup>
-// Global head configuration
+const { locale } = useI18n()
+const { setStructuredData } = useSEO()
+
+// Global head configuration with proper language handling
 useHead({
   htmlAttrs: {
-    lang: 'es'
+    lang: computed(() => locale.value === 'es' ? 'es' : 'en')
   },
   link: [
     {
@@ -19,5 +22,11 @@ useHead({
       href: '/favicon.svg'
     }
   ]
+})
+
+// Set organization structured data globally
+onMounted(() => {
+  setStructuredData('Organization')
+  setStructuredData('WebSite')
 })
 </script>
