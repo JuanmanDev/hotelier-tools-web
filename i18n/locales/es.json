@@ -341,32 +341,178 @@
     "faq": {
       "title": "Preguntas Frecuentes",
       "subtitle": "Resolvemos las dudas más comunes sobre nuestras herramientas",
-      "items": [
-        {
+      "search_placeholder": "Buscar en las preguntas frecuentes...",
+      "no_results": "No se encontraron preguntas que coincidan con tu búsqueda.",
+      "items": {
+        "security": {
           "label": "¿Son seguras las herramientas?",
-          "content": "Sí, todas nuestras herramientas están diseñadas con los más altos estándares de seguridad. Las extensiones solo modifican la interfaz visual y las automatizaciones utilizan credenciales de acceso limitado."
+          "content": "Sí, todas nuestras herramientas están diseñadas con los más altos estándares de seguridad. Las extensiones solo modifican la interfaz visual y las automatizaciones utilizan credenciales de acceso limitado con permisos mínimos.",
+          "links": [
+            {
+              "text": "Ver documentación técnica",
+              "url": "/documentation"
+            },
+            {
+              "text": "Contactar soporte técnico",
+              "url": "/contact"
+            }
+          ]
         },
-        {
+        "easy_use": {
           "label": "¿Necesito conocimientos técnicos para usar las herramientas?",
-          "content": "No, nuestras herramientas están diseñadas para ser fáciles de usar. Las extensiones se instalan con unos pocos clics y las automatizaciones las configuramos nosotros por ti."
+          "content": "No, nuestras herramientas están diseñadas para ser fáciles de usar. Las extensiones se instalan con unos pocos clics y las automatizaciones las configuramos nosotros por ti. Proporcionamos guías paso a paso para todo.",
+          "links": [
+            {
+              "text": "Guía de instalación",
+              "url": "/tools/ui/instructions"
+            },
+            {
+              "text": "Ver todas las herramientas",
+              "url": "/tools"
+            }
+          ]
         },
-        {
+        "compatibility": {
           "label": "¿Qué sucede si Little Hotelier actualiza su plataforma?",
-          "content": "Monitoreamos constantemente los cambios en Little Hotelier y actualizamos nuestras herramientas para mantener la compatibilidad. Las actualizaciones son automáticas."
+          "content": "Monitoreamos constantemente los cambios en Little Hotelier y actualizamos nuestras herramientas para mantener la compatibilidad. Las actualizaciones son automáticas y transparentes para el usuario.",
+          "links": [
+            {
+              "text": "Ver documentación",
+              "url": "/documentation"
+            },
+            {
+              "text": "Reportar problema",
+              "url": "/contact"
+            }
+          ]
         },
-        {
+        "custom_tools": {
           "label": "¿Puedo solicitar herramientas personalizadas?",
-          "content": "Por supuesto. Ofrecemos desarrollo de herramientas personalizadas según las necesidades específicas de tu hotel. Contacta con nosotros para más información."
+          "content": "Por supuesto. Ofrecemos desarrollo de herramientas personalizadas según las necesidades específicas de tu hotel. Nuestro equipo técnico trabajará contigo para crear soluciones a medida.",
+          "links": [
+            {
+              "text": "Solicitar desarrollo personalizado",
+              "url": "/contact"
+            },
+            {
+              "text": "Ver herramientas disponibles",
+              "url": "/tools"
+            }
+          ]
         },
-        {
+        "support": {
           "label": "¿Hay soporte técnico disponible?",
-          "content": "Sí, ofrecemos soporte técnico 24/7 para todas nuestras herramientas. Puedes contactarnos por email, chat o teléfono."
+          "content": "Sí, ofrecemos soporte técnico durante horarios específicos. Puedes contactarnos por email y te responderemos en el menor tiempo posible. También tenemos documentación completa disponible.",
+          "links": [
+            {
+              "text": "Contactar soporte",
+              "url": "/contact"
+            },
+            {
+              "text": "Ver documentación",
+              "url": "/documentation"
+            }
+          ]
         },
-        {
+        "performance": {
           "label": "¿Las herramientas afectan el rendimiento de Little Hotelier?",
-          "content": "No, nuestras herramientas están optimizadas para no afectar el rendimiento de la plataforma. Las extensiones solo modifican la presentación visual y las automatizaciones funcionan de forma independiente."
+          "content": "No, nuestras herramientas están optimizadas para no afectar el rendimiento de la plataforma. Las extensiones solo modifican la presentación visual y las automatizaciones funcionan de forma independiente.",
+          "links": [
+            {
+              "text": "Ver documentación técnica",
+              "url": "/documentation"
+            },
+            {
+              "text": "Reportar problema de rendimiento",
+              "url": "/contact"
+            }
+          ]
+        },
+        "pricing": {
+          "label": "¿Cuál es el precio de las herramientas?",
+          "content": "Ofrecemos diferentes opciones según tus necesidades. Las extensiones de navegador son gratuitas, mientras que las automatizaciones pueden requerir configuración personalizada.",
+          "links": [
+            {
+              "text": "Ver herramientas gratuitas",
+              "url": "/tools/ui"
+            },
+            {
+              "text": "Consultar precios",
+              "url": "/contact"
+            }
+          ]
+        },
+        "installation": {
+          "label": "¿Cómo instalo las extensiones de navegador?",
+          "content": "La instalación es muy sencilla: instala Tampermonkey en tu navegador, visita nuestro repositorio de scripts, copia el código del script que necesites y pégalo en Tampermonkey. Te guiamos paso a paso.",
+          "links": [
+            {
+              "text": "Guía de instalación completa",
+              "url": "/tools/ui/instructions"
+            },
+            {
+              "text": "Ver todos los scripts",
+              "url": "/tools/ui"
+            }
+          ]
+        },
+        "automation_setup": {
+          "label": "¿Cómo configuro las automatizaciones?",
+          "content": "Para las automatizaciones, necesitas crear un usuario limitado en Little Hotelier y proporcionarnos las credenciales. Nosotros configuramos todo por ti y te mantenemos informado del proceso.",
+          "links": [
+            {
+              "text": "Solicitar configuración",
+              "url": "/contact"
+            },
+            {
+              "text": "Ver automatizaciones disponibles",
+              "url": "/tools/bot"
+            }
+          ]
+        },
+        "data_privacy": {
+          "label": "¿Qué datos acceden y cómo los protegen?",
+          "content": "Solo accedemos a los datos mínimos necesarios para cada función. No almacenamos información sensible de huéspedes ni financiera. Todos los datos se procesan de forma segura.",
+          "links": [
+            {
+              "text": "Ver documentación",
+              "url": "/documentation"
+            },
+            {
+              "text": "Contactar para más información",
+              "url": "/contact"
+            }
+          ]
+        },
+        "troubleshooting": {
+          "label": "¿Qué hago si una herramienta no funciona correctamente?",
+          "content": "Si experimentas problemas, primero verifica que tengas la última versión del script. Si el problema persiste, contacta nuestro soporte técnico con detalles específicos del error.",
+          "links": [
+            {
+              "text": "Ver documentación",
+              "url": "/documentation"
+            },
+            {
+              "text": "Contactar soporte técnico",
+              "url": "/contact"
+            }
+          ]
+        },
+        "mobile_support": {
+          "label": "¿Las herramientas funcionan en dispositivos móviles?",
+          "content": "Las extensiones están diseñadas principalmente para navegadores de escritorio. Sin embargo, las automatizaciones funcionan independientemente del dispositivo ya que operan en nuestros servidores.",
+          "links": [
+            {
+              "text": "Ver compatibilidad",
+              "url": "/documentation"
+            },
+            {
+              "text": "Solicitar información",
+              "url": "/contact"
+            }
+          ]
         }
-      ]
+      }
     }
   },
   "contact": {
@@ -437,16 +583,312 @@
   },
   "documentation": {
     "hero": {
-      "title": "Documentación de {span}",
+      "title": "Documentación de",
       "span": "Hotelier Tools",
       "subtitle": "Guías completas, tutoriales y referencias técnicas para aprovechar al máximo nuestras herramientas de gestión hotelera."
     },
     "nav": {
       "getting_started": "Comenzando",
-      "chrome_extensions": "Extensiones Chrome",
+      "chrome_extensions": "Scripts de mejora web",
       "automations": "Automatizaciones",
       "api": "API Reference",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "content": "Contenido"
+    },
+    "getting_started": {
+      "title": "Comenzando con Hotelier Tools",
+      "welcome": {
+        "title": "¡Bienvenido!",
+        "description": "Bienvenido a la documentación completa de Hotelier Tools. Aquí encontrarás toda la información necesaria para comenzar."
+      },
+      "intro": "Hotelier Tools es un conjunto de herramientas diseñadas específicamente para optimizar la gestión de hoteles que utilizan Little Hotelier de Siteminder.",
+      "what_includes": {
+        "title": "¿Qué incluye Hotelier Tools?",
+        "web_scripts": {
+          "title": "Scripts de mejora web",
+          "features": [
+            "Mejora de la interfaz de usuario",
+            "Calculadora de comisiones",
+            "Visualización optimizada de datos",
+            "Funcionalidades adicionales"
+          ]
+        },
+        "automations": {
+          "title": "Automatizaciones",
+          "features": [
+            "Check-out automático",
+            "Validación de pagos",
+            "Gestión de facturas",
+            "Monitoreo de reservas"
+          ]
+        }
+      },
+      "system_requirements": {
+        "title": "Requisitos del sistema",
+        "scripts": "Para scripts de mejora: Navegador compatible con Tampermonkey (Chrome, Edge, Firefox, Safari y similares)",
+        "automations": "Para automatizaciones: Cuenta activa de Little Hotelier con acceso a reservas de FrontDesk y Direct Booking",
+        "user_access": "Acceso de usuario: Correo electrónico y contraseña"
+      },
+      "mobile_compatibility": {
+        "title": "Compatibilidad con dispositivos móviles",
+        "description": "Los scripts de mejora no funcionan en navegadores móviles estándar como Chrome para Android o Safari para iOS.",
+        "android_alternative": "Alternativa para Android: Kiwi Browser es compatible con Tampermonkey, aunque su configuración es más compleja."
+      },
+      "first_time": {
+        "title": "¿Primera vez usando nuestras herramientas?",
+        "description": "Te recomendamos comenzar con los scripts de mejora web, ya que son más fáciles de instalar y proporcionan beneficios inmediatos."
+      }
+    },
+    "web_scripts": {
+      "title": "Scripts de mejora web",
+      "intro": "Los scripts de mejora web optimizan directamente la interfaz de Little Hotelier en tu navegador, proporcionando una experiencia de usuario mejorada y funcionalidades adicionales.",
+      "browser_compatibility": {
+        "title": "Compatibilidad de navegadores",
+        "desktop": {
+          "title": "Navegadores de escritorio",
+          "browsers": [
+            "Chrome (recomendado)",
+            "Microsoft Edge",
+            "Mozilla Firefox",
+            "Safari",
+            "Opera"
+          ]
+        },
+        "mobile": {
+          "title": "Navegadores móviles",
+          "standard": "Chrome/Safari móvil estándar",
+          "kiwi": "Kiwi Browser (Android)",
+          "complex_config": "*Configuración más compleja"
+        }
+      },
+      "tampermonkey_requirement": {
+        "title": "Requisito: Tampermonkey",
+        "description": "Todos los scripts requieren la extensión Tampermonkey instalada en tu navegador para funcionar correctamente."
+      },
+      "view_all_scripts": "Ver todos los scripts disponibles",
+      "installation_guide": "Guía de instalación completa"
+    },
+    "automations": {
+      "title": "Automatizaciones",
+      "intro": "Las automatizaciones realizan tareas repetitivas en tu hotel de forma automática, ahorrando tiempo y reduciendo errores humanos.",
+      "credentials_warning": {
+        "title": "Importante: Credenciales de acceso",
+        "description": "Para las automatizaciones necesitamos credenciales de acceso limitado a tu cuenta de Little Hotelier. Estas credenciales solo tendrán los permisos mínimos necesarios para realizar las tareas automatizadas."
+      },
+      "access_credentials": {
+        "title": "Credenciales de acceso",
+        "intro": "Para utilizar las automatizaciones, necesitamos que nos proporciones las credenciales de acceso a tu cuenta de Little Hotelier. Estas credenciales deben tener permisos limitados para garantizar la seguridad de tu información.",
+        "create_user": "Crea un usuario desde el panel de administración de Little Hotelier con los siguientes permisos:",
+        "direct_booking": {
+          "title": "Direct Booking",
+          "access": "Acceso: Sí",
+          "user_type": "Tipo de Usuario: General"
+        },
+        "frontdesk": {
+          "title": "FrontDesk",
+          "access": "Acceso: Sí",
+          "user_type": "Tipo de Usuario: General",
+          "permissions": "Permisos: Reservations"
+        },
+        "verify_user": "Una vez creado el usuario, asegúrate de que funciona accediendo a Little Hotelier con el usuario y contraseña recién creados.",
+        "email_trick": {
+          "title": "Truco para el correo electrónico",
+          "description": "Si no quieres crear un correo electrónico nuevo puedes usar una dirección existente y agregar un sufijo con +. Si tu correo electronico es: juanma{'@'}hotelier-tools.com Puedes utilizarlo como: juanma+bot-1{'@'}hotelier-tools.com"
+        },
+        "contact_us": "Una vez que tengas el usuario creado, por favor contacta con nosotros a través del formulario de contacto para que podamos configurar las automatizaciones indicándolos el usuario y contraseña creados, indicándonos en qué automatizaciones estás interesado."
+      },
+      "available_automations": {
+        "title": "Automatizaciones disponibles",
+        "view_all": "Ver todas las automatizaciones disponibles"
+      }
+    },
+    "api_reference": {
+      "title": "Referencia API",
+      "intro": "Actualmente usamos las APIs disponibles en la web de Little Hotelier.",
+      "current_state": {
+        "title": "Estado actual de la API",
+        "description": "Esto puede provocar alguna inconsistencia que intentaremos arreglar lo antes posible."
+      },
+      "future": "En el futuro intentaremos conectar con la API de SiteMinder directamente para tener más robustez y estabilidad.",
+      "collaborate": {
+        "title": "¿Quieres colaborar?",
+        "description": "Si te interesa colaborar con nosotros en este aspecto, por favor contacta a través de nuestro formulario de contacto e intentaremos darte acceso al código."
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "search_placeholder": "Buscar en las preguntas frecuentes...",
+      "no_results": "No se encontraron preguntas que coincidan con tu búsqueda.",
+      "items": {
+        "security": {
+          "label": "¿Son seguras las herramientas?",
+          "content": "Sí, todas nuestras herramientas están diseñadas con los más altos estándares de seguridad. Las extensiones solo modifican la interfaz visual y las automatizaciones utilizan credenciales de acceso limitado con permisos mínimos.",
+          "links": [
+            {
+              "text": "Ver documentación técnica",
+              "url": "/documentation"
+            },
+            {
+              "text": "Contactar soporte técnico",
+              "url": "/contact"
+            }
+          ]
+        },
+        "easy_use": {
+          "label": "¿Necesito conocimientos técnicos para usar las herramientas?",
+          "content": "No, nuestras herramientas están diseñadas para ser fáciles de usar. Las extensiones se instalan con unos pocos clics y las automatizaciones las configuramos nosotros por ti. Proporcionamos guías paso a paso para todo.",
+          "links": [
+            {
+              "text": "Guía de instalación",
+              "url": "/tools/ui/instructions"
+            },
+            {
+              "text": "Ver todas las herramientas",
+              "url": "/tools"
+            }
+          ]
+        },
+        "compatibility": {
+          "label": "¿Qué sucede si Little Hotelier actualiza su plataforma?",
+          "content": "Monitoreamos constantemente los cambios en Little Hotelier y actualizamos nuestras herramientas para mantener la compatibilidad. Las actualizaciones son automáticas y transparentes para el usuario.",
+          "links": [
+            {
+              "text": "Ver documentación",
+              "url": "/documentation"
+            },
+            {
+              "text": "Reportar problema",
+              "url": "/contact"
+            }
+          ]
+        },
+        "custom_tools": {
+          "label": "¿Puedo solicitar herramientas personalizadas?",
+          "content": "Por supuesto. Ofrecemos desarrollo de herramientas personalizadas según las necesidades específicas de tu hotel. Nuestro equipo técnico trabajará contigo para crear soluciones a medida.",
+          "links": [
+            {
+              "text": "Solicitar desarrollo personalizado",
+              "url": "/contact"
+            },
+            {
+              "text": "Ver herramientas disponibles",
+              "url": "/tools"
+            }
+          ]
+        },
+        "support": {
+          "label": "¿Hay soporte técnico disponible?",
+          "content": "Sí, ofrecemos soporte técnico durante horarios específicos. Puedes contactarnos por email y te responderemos en el menor tiempo posible. También tenemos documentación completa disponible.",
+          "links": [
+            {
+              "text": "Contactar soporte",
+              "url": "/contact"
+            },
+            {
+              "text": "Ver documentación",
+              "url": "/documentation"
+            }
+          ]
+        },
+        "performance": {
+          "label": "¿Las herramientas afectan el rendimiento de Little Hotelier?",
+          "content": "No, nuestras herramientas están optimizadas para no afectar el rendimiento de la plataforma. Las extensiones solo modifican la presentación visual y las automatizaciones funcionan de forma independiente.",
+          "links": [
+            {
+              "text": "Ver documentación técnica",
+              "url": "/documentation"
+            },
+            {
+              "text": "Reportar problema de rendimiento",
+              "url": "/contact"
+            }
+          ]
+        },
+        "pricing": {
+          "label": "¿Cuál es el precio de las herramientas?",
+          "content": "Ofrecemos diferentes opciones según tus necesidades. Las extensiones de navegador son gratuitas, mientras que las automatizaciones pueden requerir configuración personalizada.",
+          "links": [
+            {
+              "text": "Ver herramientas gratuitas",
+              "url": "/tools/ui"
+            },
+            {
+              "text": "Consultar precios",
+              "url": "/contact"
+            }
+          ]
+        },
+        "installation": {
+          "label": "¿Cómo instalo las extensiones de navegador?",
+          "content": "La instalación es muy sencilla: instala Tampermonkey en tu navegador, visita nuestro repositorio de scripts, copia el código del script que necesites y pégalo en Tampermonkey. Te guiamos paso a paso.",
+          "links": [
+            {
+              "text": "Guía de instalación completa",
+              "url": "/tools/ui/instructions"
+            },
+            {
+              "text": "Ver todos los scripts",
+              "url": "/tools/ui"
+            }
+          ]
+        },
+        "automation_setup": {
+          "label": "¿Cómo configuro las automatizaciones?",
+          "content": "Para las automatizaciones, necesitas crear un usuario limitado en Little Hotelier y proporcionarnos las credenciales. Nosotros configuramos todo por ti y te mantenemos informado del proceso.",
+          "links": [
+            {
+              "text": "Solicitar configuración",
+              "url": "/contact"
+            },
+            {
+              "text": "Ver automatizaciones disponibles",
+              "url": "/tools/bot"
+            }
+          ]
+        },
+        "data_privacy": {
+          "label": "¿Qué datos acceden y cómo los protegen?",
+          "content": "Solo accedemos a los datos mínimos necesarios para cada función. No almacenamos información sensible de huéspedes ni financiera. Todos los datos se procesan de forma segura.",
+          "links": [
+            {
+              "text": "Ver documentación",
+              "url": "/documentation"
+            },
+            {
+              "text": "Contactar para más información",
+              "url": "/contact"
+            }
+          ]
+        },
+        "troubleshooting": {
+          "label": "¿Qué hago si una herramienta no funciona correctamente?",
+          "content": "Si experimentas problemas, primero verifica que tengas la última versión del script. Si el problema persiste, contacta nuestro soporte técnico con detalles específicos del error.",
+          "links": [
+            {
+              "text": "Ver documentación",
+              "url": "/documentation"
+            },
+            {
+              "text": "Contactar soporte técnico",
+              "url": "/contact"
+            }
+          ]
+        },
+        "mobile_support": {
+          "label": "¿Las herramientas funcionan en dispositivos móviles?",
+          "content": "Las extensiones están diseñadas principalmente para navegadores de escritorio. Sin embargo, las automatizaciones funcionan independientemente del dispositivo ya que operan en nuestros servidores.",
+          "links": [
+            {
+              "text": "Ver compatibilidad",
+              "url": "/documentation"
+            },
+            {
+              "text": "Solicitar información",
+              "url": "/contact"
+            }
+          ]
+        }
+      }
     }
   },
   "marketing": {

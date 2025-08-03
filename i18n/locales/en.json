@@ -438,7 +438,7 @@
   },
   "documentation": {
     "hero": {
-      "title": "Documentation for {span}",
+      "title": "Documentation for",
       "span": "Hotelier Tools",
       "subtitle": "Complete guides, tutorials and technical references to get the most out of our hotel management tools."
     },
@@ -447,7 +447,303 @@
       "chrome_extensions": "Web Scripts for Browsers",
       "automations": "Automations",
       "api": "API Reference",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "content": "Content"
+    },
+    "getting_started": {
+      "title": "Getting Started with Hotelier Tools",
+      "welcome": {
+        "title": "Welcome!",
+        "description": "Welcome to the complete documentation of Hotelier Tools. Here you will find all the information needed to get started."
+      },
+      "intro": "Hotelier Tools is a set of tools designed specifically to optimize hotel management using Little Hotelier by Siteminder.",
+      "what_includes": {
+        "title": "What does Hotelier Tools include?",
+        "web_scripts": {
+          "title": "Web enhancement scripts",
+          "features": [
+            "User interface improvement",
+            "Commission calculator",
+            "Optimized data visualization",
+            "Additional functionalities"
+          ]
+        },
+        "automations": {
+          "title": "Automations",
+          "features": [
+            "Automatic check-out",
+            "Payment validation",
+            "Invoice management",
+            "Reservation monitoring"
+          ]
+        }
+      },
+      "system_requirements": {
+        "title": "System requirements",
+        "scripts": "For improvement scripts: Browser compatible with Tampermonkey (Chrome, Edge, Firefox, Safari and similar)",
+        "automations": "For automations: Active Little Hotelier account with access to FrontDesk and Direct Booking reservations",
+        "user_access": "User access: Email and password"
+      },
+      "mobile_compatibility": {
+        "title": "Mobile device compatibility",
+        "description": "Improvement scripts do not work in standard mobile browsers like Chrome for Android or Safari for iOS.",
+        "android_alternative": "Alternative for Android: Kiwi Browser is compatible with Tampermonkey, although its configuration is more complex."
+      },
+      "first_time": {
+        "title": "First time using our tools?",
+        "description": "We recommend starting with web improvement scripts, as they are easier to install and provide immediate benefits."
+      }
+    },
+    "web_scripts": {
+      "title": "Web enhancement scripts",
+      "intro": "Web enhancement scripts directly optimize Little Hotelier's interface in your browser, providing an improved user experience and additional functionalities.",
+      "browser_compatibility": {
+        "title": "Browser compatibility",
+        "desktop": {
+          "title": "Desktop browsers",
+          "browsers": [
+            "Chrome (recommended)",
+            "Microsoft Edge",
+            "Mozilla Firefox",
+            "Safari",
+            "Opera"
+          ]
+        },
+        "mobile": {
+          "title": "Mobile browsers",
+          "standard": "Chrome/Safari standard mobile",
+          "kiwi": "Kiwi Browser (Android)",
+          "complex_config": "*More complex configuration"
+        }
+      },
+      "tampermonkey_requirement": {
+        "title": "Requirement: Tampermonkey",
+        "description": "All scripts require the Tampermonkey extension installed in your browser to work correctly."
+      },
+      "view_all_scripts": "View all available scripts",
+      "installation_guide": "Complete installation guide"
+    },
+    "automations": {
+      "title": "Automations",
+      "intro": "Automations perform repetitive tasks in your hotel automatically, saving time and reducing human errors.",
+      "credentials_warning": {
+        "title": "Important: Access credentials",
+        "description": "For automations we need limited access credentials to your Little Hotelier account. These credentials will only have the minimum permissions necessary to perform automated tasks."
+      },
+      "access_credentials": {
+        "title": "Access credentials",
+        "intro": "To use automations, we need you to provide access credentials to your Little Hotelier account. These credentials must have limited permissions to ensure the security of your information.",
+        "create_user": "Create a user from the Little Hotelier administration panel with the following permissions:",
+        "direct_booking": {
+          "title": "Direct Booking",
+          "access": "Access: Yes",
+          "user_type": "User Type: General"
+        },
+        "frontdesk": {
+          "title": "FrontDesk", 
+          "access": "Access: Yes",
+          "user_type": "User Type: General",
+          "permissions": "Permissions: Reservations"
+        },
+        "verify_user": "Once the user is created, make sure it works by accessing Little Hotelier with the newly created username and password.",
+        "email_trick": {
+          "title": "Email trick",
+          "description": "If you don't want to create a new email address you can use an existing address and add a suffix with +. If your email is: juanma{'@'}hotelier-tools.com You can use it as: juanma+bot-1{'@'}hotelier-tools.com"
+        },
+        "contact_us": "Once you have the user created, please contact us through the contact form so we can configure the automations indicating the username and password created, telling us which automations you are interested in."
+      },
+      "available_automations": {
+        "title": "Available automations",
+        "view_all": "View all available automations"
+      }
+    },
+    "api_reference": {
+      "title": "API Reference",
+      "intro": "We currently use the APIs available on the Little Hotelier website.",
+      "current_state": {
+        "title": "Current API state",
+        "description": "This may cause some inconsistency that we will try to fix as soon as possible."
+      },
+      "future": "In the future we will try to connect with the SiteMinder API directly to have more robustness and stability.",
+      "collaborate": {
+        "title": "Want to collaborate?",
+        "description": "If you are interested in collaborating with us on this aspect, please contact through our contact form and we will try to give you access to the code."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "search_placeholder": "Search in frequently asked questions...",
+      "no_results": "No questions found matching your search.",
+      "items": {
+        "security": {
+          "label": "Are Hotelier Tools secure?",
+          "content": "Yes, all our tools are designed with the highest security standards. Extensions only modify the visual interface and automations use limited access credentials with minimal permissions.",
+          "links": [
+            {
+              "text": "View technical documentation",
+              "url": "/documentation"
+            },
+            {
+              "text": "Contact technical support",
+              "url": "/contact"
+            }
+          ]
+        },
+        "easy_use": {
+          "label": "Do I need technical knowledge to use the tools?",
+          "content": "No, our tools are designed to be easy to use. Extensions install with just a few clicks and we configure automations for you. We provide step-by-step guides for everything.",
+          "links": [
+            {
+              "text": "Installation guide",
+              "url": "/tools/ui/instructions"
+            },
+            {
+              "text": "View all tools",
+              "url": "/tools"
+            }
+          ]
+        },
+        "compatibility": {
+          "label": "What happens if Little Hotelier updates their platform?",
+          "content": "We constantly monitor changes in Little Hotelier and update our tools to maintain compatibility. Updates are automatic and transparent to the user.",
+          "links": [
+            {
+              "text": "View documentation",
+              "url": "/documentation"
+            },
+            {
+              "text": "Report issue",
+              "url": "/contact"
+            }
+          ]
+        },
+        "custom_tools": {
+          "label": "Can I request custom tools?",
+          "content": "Absolutely. We offer custom tool development according to your hotel's specific needs. Our technical team will work with you to create tailored solutions.",
+          "links": [
+            {
+              "text": "Request custom development",
+              "url": "/contact"
+            },
+            {
+              "text": "View available tools",
+              "url": "/tools"
+            }
+          ]
+        },
+        "support": {
+          "label": "Is technical support available?",
+          "content": "Yes, we offer technical support during specific hours. You can contact us via email and we will respond as quickly as possible. We also have complete documentation available.",
+          "links": [
+            {
+              "text": "Contact support",
+              "url": "/contact"
+            },
+            {
+              "text": "View documentation",
+              "url": "/documentation"
+            }
+          ]
+        },
+        "performance": {
+          "label": "Do the tools affect Little Hotelier's performance?",
+          "content": "No, our tools are optimized to not affect platform performance. Extensions only modify the visual presentation and automations work independently.",
+          "links": [
+            {
+              "text": "View technical documentation",
+              "url": "/documentation"
+            },
+            {
+              "text": "Report performance issue",
+              "url": "/contact"
+            }
+          ]
+        },
+        "script_updates": {
+          "label": "How do I update the web enhancement scripts?",
+          "content": "Within the Tampermonkey administration panel you will get a notification to update the scripts, although you can always copy and paste the latest version from the repository.",
+          "links": [
+            {
+              "text": "Update guide",
+              "url": "/tools/ui/instructions"
+            },
+            {
+              "text": "View latest scripts",
+              "url": "/tools/ui"
+            }
+          ]
+        },
+        "mobile_support": {
+          "label": "Do the scripts work on mobile devices?",
+          "content": "The scripts do not work in standard mobile browsers like Chrome for Android or Safari for iOS. However, on Android you can use Kiwi Browser which is compatible with Tampermonkey, although the configuration is more complex.",
+          "links": [
+            {
+              "text": "Mobile compatibility guide",
+              "url": "/documentation"
+            },
+            {
+              "text": "Request information",
+              "url": "/contact"
+            }
+          ]
+        },
+        "automation_permissions": {
+          "label": "What permissions do automations need?",
+          "content": "Automations only require limited read and write permissions on your Little Hotelier account. We never request full administrative permissions and only access the minimum data necessary.",
+          "links": [
+            {
+              "text": "View documentation",
+              "url": "/documentation"
+            },
+            {
+              "text": "Contact for details",
+              "url": "/contact"
+            }
+          ]
+        },
+        "disable_automation": {
+          "label": "Can I temporarily disable an automation?",
+          "content": "Yes, you can pause any automation by contacting our support. We are working on a control panel where you can manage all your automations. You can also disable the provided user and the automations will stop working.",
+          "links": [
+            {
+              "text": "Contact support",
+              "url": "/contact"
+            },
+            {
+              "text": "Automation management",
+              "url": "/tools/bot"
+            }
+          ]
+        },
+        "pricing": {
+          "label": "What is the pricing for the tools?",
+          "content": "We offer different options according to your needs. Browser extensions are free, while automations may require custom configuration.",
+          "links": [
+            {
+              "text": "View free tools",
+              "url": "/tools/ui"
+            },
+            {
+              "text": "Consult pricing",
+              "url": "/contact"
+            }
+          ]
+        },
+        "data_privacy": {
+          "label": "What data do you access and how do you protect it?",
+          "content": "We only access the minimum data necessary for each function. We do not store sensitive guest or financial information. All data is processed securely.",
+          "links": [
+            {
+              "text": "View documentation",
+              "url": "/documentation"
+            },
+            {
+              "text": "Contact for more information",
+              "url": "/contact"
+            }
+          ]
+        }
+      }
     }
   },
   "marketing": {
