@@ -1,0 +1,31 @@
+{
+  "seo": {
+    "siteName": "Hotelier Tools",
+    "siteDescription": "Professional tools for the hospitality industry",
+    "homeTitle": "Welcome to Hotelier Tools",
+    "homeDescription": "Discover professional tools designed specifically for hotels, restaurants, and hospitality businesses to streamline operations and enhance guest experiences.",
+    "aboutTitle": "About Us - Professional Hospitality Solutions",
+    "aboutDescription": "Learn about our mission to provide cutting-edge tools for the hospitality industry, helping businesses optimize operations and deliver exceptional guest experiences.",
+    "servicesTitle": "Our Services - Hospitality Management Tools",
+    "servicesDescription": "Explore our comprehensive suite of hospitality management tools including booking systems, guest management, inventory control, and analytics solutions."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "welcome": "Welcome to Hotelier Tools",
+    "subtitle": "Professional solutions for the hospitality industry",
+    "cta": "Get Started"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We provide cutting-edge tools for hotels and restaurants."
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Comprehensive hospitality management solutions."
+  }
+}

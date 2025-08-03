@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /en/
+Allow: /es/
+Allow: /fr/
+
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_nuxt/
+Disallow: /.nuxt/
+
+Sitemap: https://hotelier-tools.com/sitemap.xml

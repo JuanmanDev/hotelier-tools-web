@@ -1,0 +1,31 @@
+{
+  "seo": {
+    "siteName": "Outils Hôteliers",
+    "siteDescription": "Outils professionnels pour l'industrie hôtelière",
+    "homeTitle": "Bienvenue chez Outils Hôteliers",
+    "homeDescription": "Découvrez des outils professionnels conçus spécifiquement pour les hôtels, restaurants et entreprises d'hôtellerie pour rationaliser les opérations et améliorer les expériences clients.",
+    "aboutTitle": "À Propos de Nous - Solutions Professionnelles d'Hôtellerie",
+    "aboutDescription": "Découvrez notre mission de fournir des outils de pointe pour l'industrie hôtelière, aidant les entreprises à optimiser leurs opérations et offrir des expériences exceptionnelles aux clients.",
+    "servicesTitle": "Nos Services - Outils de Gestion Hôtelière",
+    "servicesDescription": "Explorez notre suite complète d'outils de gestion hôtelière incluant systèmes de réservation, gestion des clients, contrôle d'inventaire et solutions d'analyse."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "welcome": "Bienvenue chez Outils Hôteliers",
+    "subtitle": "Solutions professionnelles pour l'industrie hôtelière",
+    "cta": "Commencer"
+  },
+  "about": {
+    "title": "À Propos de Nous",
+    "description": "Nous fournissons des outils de pointe pour les hôtels et restaurants."
+  },
+  "services": {
+    "title": "Nos Services",
+    "description": "Solutions complètes de gestion hôtelière."
+  }
+}

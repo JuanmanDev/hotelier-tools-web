@@ -1,0 +1,31 @@
+{
+  "seo": {
+    "siteName": "Herramientas Hoteleras",
+    "siteDescription": "Herramientas profesionales para la industria hotelera",
+    "homeTitle": "Bienvenido a Herramientas Hoteleras",
+    "homeDescription": "Descubre herramientas profesionales diseñadas específicamente para hoteles, restaurantes y empresas de hostelería para optimizar operaciones y mejorar las experiencias de los huéspedes.",
+    "aboutTitle": "Acerca de Nosotros - Soluciones Profesionales de Hostelería",
+    "aboutDescription": "Conoce nuestra misión de proporcionar herramientas de vanguardia para la industria hotelera, ayudando a las empresas a optimizar operaciones y ofrecer experiencias excepcionales a los huéspedes.",
+    "servicesTitle": "Nuestros Servicios - Herramientas de Gestión Hotelera",
+    "servicesDescription": "Explora nuestra suite completa de herramientas de gestión hotelera incluyendo sistemas de reservas, gestión de huéspedes, control de inventario y soluciones de análisis."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "home": {
+    "welcome": "Bienvenido a Herramientas Hoteleras",
+    "subtitle": "Soluciones profesionales para la industria hotelera",
+    "cta": "Comenzar"
+  },
+  "about": {
+    "title": "Acerca de Nosotros",
+    "description": "Proporcionamos herramientas de vanguardia para hoteles y restaurantes."
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "description": "Soluciones integrales de gestión hotelera."
+  }
+}
