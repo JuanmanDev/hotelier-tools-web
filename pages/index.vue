@@ -88,6 +88,9 @@
       
     </section>
 
+    <!-- Testimonials Section -->
+    <TestimonialsSection />
+
     <!-- Process Animation Section -->
     <ProcessAnimation />
 

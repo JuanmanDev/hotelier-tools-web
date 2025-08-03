@@ -190,6 +190,31 @@
         ]
       }
     },
+    "testimonials": {
+      "title": "Lo que dicen nuestros clientes",
+      "subtitle": "Opiniones reales de hoteles que usan nuestras herramientas",
+      "reviews": [
+        {
+          "quote": "Estas herramientas nos ahorran mucho tiempo cada trimestre para presentar todas las facturas. La automatización es increíble.",
+          "author": "Hostal Sol",
+          "location": "Zamora, España",
+          "website": "hostalsolzamora.com",
+          "rating": 5
+        },
+        {
+          "quote": "La extensión hace que usar la aplicación en nuestra pantalla táctil sea sin esfuerzo. ¡10 de 10!",
+          "author": "Equipo de Gestión Hotelera",
+          "location": "España",
+          "rating": 5
+        },
+        {
+          "quote": "Pudimos detectar pagos no confirmados para prevenir problemas cuando los huéspedes llegan al hotel - problemas que habíamos tenido antes.",
+          "author": "Personal de Recepción",
+          "location": "España",
+          "rating": 5
+        }
+      ]
+    },
     "stats": {
       "title": "Resultados que hablan por sí solos",
       "subtitle": "Descubre el impacto de nuestras herramientas",

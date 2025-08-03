@@ -191,6 +191,31 @@
         ]
       }
     },
+    "testimonials": {
+      "title": "What our clients say",
+      "subtitle": "Real opinions from hotels that use our tools",
+      "reviews": [
+        {
+          "quote": "These tools save us a lot of time every quarter to present all invoices. The automation is incredible.",
+          "author": "Hostal Sol",
+          "location": "Zamora, Spain",
+          "website": "hostalsolzamora.com",
+          "rating": 5
+        },
+        {
+          "quote": "The extension makes using the app on our touchscreen effortless. 10 out of 10!",
+          "author": "Hotel Management Team",
+          "location": "Spain",
+          "rating": 5
+        },
+        {
+          "quote": "We were able to detect unconfirmed payments to prevent issues when guests arrive at the hotel - problems we had encountered before.",
+          "author": "Hotel Reception Staff",
+          "location": "Spain",
+          "rating": 5
+        }
+      ]
+    },
     "stats": {
       "title": "Results speak for themselves",
       "subtitle": "Discover the impact of our tools",
