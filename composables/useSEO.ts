@@ -199,7 +199,7 @@ export const useSEO = () => {
     }
 
     // Apply structured data
-    useJsonld(structuredData)
+    useSchemaOrg(structuredData)
   }
 
   /**
@@ -215,7 +215,7 @@ export const useSEO = () => {
       item: `${baseUrl}${item.url}`
     }))
 
-    useJsonld({
+    useSchemaOrg({
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: breadcrumbItems
@@ -235,7 +235,7 @@ export const useSEO = () => {
       }
     }))
 
-    useJsonld({
+    useSchemaOrg({
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
       mainEntity: faqData
