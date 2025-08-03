@@ -77,7 +77,7 @@ export default defineNuxtConfig({
 
   // Site Configuration
   site: {
-    url: 'https://hotelier-tools.vercel.app',
+    url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000',
     name: 'Hotelier Tools',
     description: 'Herramientas para optimizar la gestión de hoteles que utilizan Little Hotelier de Siteminder',
     defaultLocale: 'en',
@@ -117,8 +117,8 @@ export default defineNuxtConfig({
     identity: {
       type: 'Organization',
       name: 'Hotelier Tools',
-      url: 'https://hotelier-tools.vercel.app',
-      logo: 'https://hotelier-tools.vercel.app/logo.png'
+      url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000',
+      logo: (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000') + '/logo.png'
     }
   },
 
@@ -162,7 +162,8 @@ export default defineNuxtConfig({
     
     // Public keys (exposed to client-side)
     public: {
-      apiBase: '/api'
+      apiBase: '/api',
+      baseUrl: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'
     }
   },
   

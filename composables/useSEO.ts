@@ -8,6 +8,14 @@ export const useSEO = () => {
   const runtimeConfig = useRuntimeConfig()
 
   /**
+   * Get the base URL dynamically from environment variables
+   */
+  const getBaseUrl = () => {
+    // Use runtime config for client-side compatibility
+    return runtimeConfig.public.baseUrl || 'http://localhost:3000'
+  }
+
+  /**
    * Set page SEO metadata with i18n support
    */
   const setSEO = (pageKey: string, customData?: Partial<{
@@ -33,7 +41,7 @@ export const useSEO = () => {
     const keywords = customData?.keywords || defaultKeywords
 
     // Generate canonical URL with proper locale handling
-    const baseUrl = 'https://hotelier-tools.vercel.app'
+    const baseUrl = getBaseUrl()
     let canonicalPath = route.path
     
     // Remove locale prefix for canonical URL generation
@@ -109,7 +117,7 @@ export const useSEO = () => {
    * Generate structured data for the current page
    */
   const setStructuredData = (type: 'Organization' | 'WebSite' | 'Article' | 'Product', data?: any) => {
-    const baseUrl = 'https://hotelier-tools.vercel.app'
+    const baseUrl = getBaseUrl()
     
     let structuredData: any = {
       '@context': 'https://schema.org'
@@ -206,7 +214,7 @@ export const useSEO = () => {
    * Generate breadcrumb structured data
    */
   const setBreadcrumbs = (items: Array<{ name: string, url: string }>) => {
-    const baseUrl = 'https://hotelier-tools.vercel.app'
+    const baseUrl = getBaseUrl()
     
     const breadcrumbItems = items.map((item, index) => ({
       '@type': 'ListItem',
