@@ -65,16 +65,22 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const localePath = useLocalePath()
+const { setSEO, setStructuredData, setBreadcrumbs } = useSEO()
 
-// SEO
-useHead({
-  title: 'Herramientas - Hotelier Tools',
-  meta: [
-    {
-      name: 'description',
-      content: 'Descubre todas las herramientas disponibles para optimizar tu gestión hotelera con Little Hotelier. Extensiones Chrome y automatizaciones especializadas.'
-    }
-  ]
+// Set SEO metadata for tools page
+setSEO('tools')
+
+// Set structured data and breadcrumbs
+onMounted(() => {
+  setStructuredData('Product', {
+    name: t('seo.site.name'),
+    description: t('seo.pages.tools.description')
+  })
+  
+  setBreadcrumbs([
+    { name: t('nav.home'), url: '/' },
+    { name: t('nav.tools'), url: '/tools' }
+  ])
 })
 
 const faqItems = computed(() => t('tools.faq.items'))

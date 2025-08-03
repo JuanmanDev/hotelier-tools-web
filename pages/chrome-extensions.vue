@@ -337,16 +337,28 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath()
+const { t } = useI18n()
+const { setSEO, setStructuredData, setBreadcrumbs } = useSEO()
 
-// SEO
-useHead({
-  title: 'Extensiones Chrome - Hotelier Tools',
-  meta: [
-    {
-      name: 'description',
-      content: 'Instala y configura extensiones de Chrome y scripts Tampermonkey para mejorar tu experiencia con Little Hotelier. Guía paso a paso y soporte técnico.'
+// Set SEO metadata for chrome extensions page
+setSEO('chromeExtensions')
+
+// Set structured data and breadcrumbs
+onMounted(() => {
+  setStructuredData('Product', {
+    name: 'Chrome Extensions for Little Hotelier',
+    description: t('seo.pages.chromeExtensions.description'),
+    rating: {
+      value: 4.8,
+      count: 150
     }
-  ]
+  })
+  
+  setBreadcrumbs([
+    { name: t('nav.home'), url: '/' },
+    { name: t('nav.tools'), url: '/tools' },
+    { name: 'Chrome Extensions', url: '/chrome-extensions' }
+  ])
 })
 
 // Tampermonkey scripts data

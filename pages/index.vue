@@ -194,24 +194,24 @@ import BotAnimation from '../components/BotAnimation.vue'
 
 const { t } = useI18n()
 const localePath = useLocalePath()
+const { setSEO, setStructuredData, setBreadcrumbs } = useSEO()
 
-// SEO
-useHead({
-  title: t('home.meta.title'),
-  meta: [
-    {
-      name: 'description',
-      content: t('home.meta.description')
-    },
-    {
-      property: 'og:title',
-      content: t('home.meta.title')
-    },
-    {
-      property: 'og:description',
-      content: t('home.meta.description')
-    }
-  ]
+// Set SEO metadata for home page
+setSEO('home')
+
+// Set structured data for the home page
+onMounted(() => {
+  setStructuredData('Article', {
+    title: t('seo.pages.home.title'),
+    description: t('seo.pages.home.description'),
+    datePublished: '2024-01-01T00:00:00Z',
+    dateModified: new Date().toISOString()
+  })
+  
+  // Set breadcrumbs for home page
+  setBreadcrumbs([
+    { name: t('nav.home'), url: '/' }
+  ])
 })
 
 const features = [

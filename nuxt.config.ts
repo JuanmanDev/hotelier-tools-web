@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@nuxt/content', 'vue3-carousel-nuxt'],
+  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@nuxt/content', 'vue3-carousel-nuxt', '@nuxtjs/seo'],
 
   // Nuxt Content configuration
   content: {
@@ -67,6 +67,69 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
+    }
+  },
+
+  // SEO Configuration
+  seo: {
+    redirectToCanonicalSiteUrl: true
+  },
+
+  // Site Configuration
+  site: {
+    url: 'https://hotelier-tools.vercel.app',
+    name: 'Hotelier Tools',
+    description: 'Herramientas para optimizar la gestión de hoteles que utilizan Little Hotelier de Siteminder',
+    defaultLocale: 'en',
+    identity: {
+      type: 'Organization'
+    },
+    twitter: '@hoteliertools',
+    trailingSlash: false
+  },
+
+  // Robots Configuration
+  robots: {
+    allow: ['/'],
+    disallow: ['/admin', '/api'],
+    sitemap: ['/sitemap.xml']
+  },
+
+  // Sitemap Configuration
+  sitemap: {
+    autoLastmod: true,
+    defaultSitemapsChunkSize: 100,
+    sources: [
+      '/sitemap.xml'
+    ]
+  },
+
+  // Link Checker Configuration
+  linkChecker: {
+    enabled: false,
+    excludeLinks: [
+      'https://fonts.googleapis.com/**'
+    ]
+  },
+
+  // Schema.org Configuration
+  schemaOrg: {
+    identity: {
+      type: 'Organization',
+      name: 'Hotelier Tools',
+      url: 'https://hotelier-tools.vercel.app',
+      logo: 'https://hotelier-tools.vercel.app/logo.png'
+    }
+  },
+
+  // Open Graph Configuration  
+  ogImage: {
+    enabled: true,
+    componentDirs: ['components/OgImage'],
+    defaults: {
+      width: 1200,
+      height: 630,
+      extension: 'png'
     }
   },
 

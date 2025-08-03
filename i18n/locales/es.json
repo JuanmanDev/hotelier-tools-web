@@ -682,5 +682,93 @@
         "feature3": "Procesamiento masivo y organización"
       }
     }
+  },
+  "seo": {
+    "site": {
+      "name": "Hotelier Tools",
+      "description": "Herramientas especializadas para hoteles que utilizan la plataforma Little Hotelier de Siteminder. Automatiza procesos, mejora la interfaz y aumenta tu tasa de conversión.",
+      "keywords": "gestión hotelera, Little Hotelier, Siteminder, automatización hotelera, gestión de reservas, software hotelero, extensiones chrome, herramientas hoteleras"
+    },
+    "pages": {
+      "home": {
+        "title": "Hotelier Tools - Optimiza tu gestión hotelera con Little Hotelier",
+        "description": "Herramientas especializadas para hoteles que utilizan la plataforma Little Hotelier de Siteminder. Automatiza procesos, mejora la interfaz y aumenta tu tasa de conversión.",
+        "ogTitle": "Hotelier Tools - Automatización de Gestión Hotelera",
+        "ogDescription": "Transforma las operaciones de tu hotel con herramientas especializadas para Little Hotelier. Automatiza reservas, previene errores y mejora la eficiencia."
+      },
+      "tools": {
+        "title": "Herramientas de Gestión Hotelera - Scripts y Automatizaciones",
+        "description": "Descubre nuestra suite completa de herramientas de gestión hotelera incluyendo extensiones de navegador y soluciones automatizadas para Little Hotelier.",
+        "ogTitle": "Herramientas y Automatizaciones Hoteleras",
+        "ogDescription": "Suite completa de herramientas para optimizar las operaciones de tu hotel con la plataforma Little Hotelier."
+      },
+      "chromeExtensions": {
+        "title": "Extensiones Chrome para Little Hotelier - Mejoras de Interfaz",
+        "description": "Extensiones Chrome gratuitas que mejoran la interfaz de Little Hotelier, facilitando las tareas diarias de gestión hotelera.",
+        "ogTitle": "Extensiones Chrome para Gestión Hotelera",
+        "ogDescription": "Extensiones Chrome gratuitas para mejorar la interfaz de Little Hotelier y optimizar las operaciones hoteleras."
+      },
+      "documentation": {
+        "title": "Documentación - Cómo usar Hotelier Tools",
+        "description": "Documentación completa y guías sobre cómo instalar y usar nuestras herramientas de gestión hotelera para la plataforma Little Hotelier.",
+        "ogTitle": "Documentación de Hotelier Tools",
+        "ogDescription": "Aprende a instalar y usar nuestras herramientas de gestión hotelera con guías paso a paso y documentación completa."
+      },
+      "contact": {
+        "title": "Contacto - Soporte de Hotelier Tools",
+        "description": "Ponte en contacto con nuestro equipo de soporte para ayuda con herramientas de gestión hotelera, soporte técnico o consultas comerciales.",
+        "ogTitle": "Contacto Soporte Hotelier Tools",
+        "ogDescription": "Contacta con nuestro equipo de soporte para ayuda con herramientas de gestión hotelera y asistencia técnica."
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes - Hotelier Tools",
+        "description": "Encuentra respuestas a preguntas comunes sobre nuestras herramientas de gestión hotelera, instalación, precios y soporte técnico.",
+        "ogTitle": "FAQ - Hotelier Tools",
+        "ogDescription": "Obtén respuestas a preguntas frecuentes sobre nuestras herramientas de gestión hotelera y servicios."
+      },
+      "marketing": {
+        "title": "Herramientas de Marketing Hotelero - Aumenta tus Reservas Directas | Hotelier Tools",
+        "description": "Descubre estrategias y herramientas de marketing para aumentar las reservas directas de tu hotel. Reduce comisiones de OTAs y mejora la rentabilidad con nuestras soluciones especializadas.",
+        "ogTitle": "Herramientas de Marketing Hotelero - Aumenta Reservas Directas",
+        "ogDescription": "Reduce comisiones de OTAs y aumenta reservas directas con nuestras herramientas especializadas de marketing hotelero."
+      }
+    }
+  },
+  "marketing": {
+    "hero": {
+      "title": "Maximiza el Potencial de",
+      "span": "Ingresos de tu Hotel",
+      "subtitle": "Descubre estrategias y herramientas probadas para aumentar las reservas directas, reducir comisiones de OTAs y optimizar los ingresos de tu hotel.",
+      "cta_start": "Comenzar Optimización",
+      "cta_contact": "Obtener Consultoría"
+    },
+    "features": {
+      "title": "Funciones de Optimización de Ingresos",
+      "subtitle": "Todo lo que necesitas para aumentar la rentabilidad de tu hotel y reducir la dependencia de plataformas de terceros.",
+      "direct_bookings": {
+        "title": "Aumentar Reservas Directas",
+        "description": "Herramientas y estrategias para dirigir más huéspedes a reservar directamente a través de tu sitio web, reduciendo costos de comisión."
+      },
+      "ota_reduction": {
+        "title": "Reducir Dependencia de OTAs",
+        "description": "Minimiza la dependencia de Agencias de Viajes Online y mantén más ingresos en tu bolsillo."
+      },
+      "revenue_optimization": {
+        "title": "Gestión de Ingresos",
+        "description": "Estrategias avanzadas de precios y herramientas para maximizar los ingresos por habitación disponible."
+      },
+      "customer_loyalty": {
+        "title": "Programas de Fidelidad",
+        "description": "Construye relaciones duraderas con los huéspedes a través de experiencias personalizadas y recompensas de fidelidad."
+      },
+      "analytics": {
+        "title": "Análisis de Rendimiento",
+        "description": "Información detallada sobre patrones de reserva, fuentes de ingresos y oportunidades de optimización."
+      },
+      "automation": {
+        "title": "Automatización de Marketing",
+        "description": "Campañas de email automatizadas, gestión de redes sociales y flujos de comunicación con huéspedes."
+      }
+    }
   }
 }
