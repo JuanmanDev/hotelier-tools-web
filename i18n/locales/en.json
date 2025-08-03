@@ -746,126 +746,6 @@
       }
     }
   },
-  "marketing": {
-    "error_detection_showcase": {
-      "controls": {
-        "speed_up": "Speed Up Animation",
-        "show_all_cards": "Show All Cards"
-      },
-      "cards": {
-        "customer": {
-          "title": "Customer",
-          "step1": "Selected dates & room preferences.",
-          "step2": "Fill personal details in the booking form.",
-          "step3": "Believes reservation is complete as the money is held."
-        },
-        "payment": {
-          "title": "Payment",
-          "step1": "Bank card details received.",
-          "step2": "Money held.",
-          "step3": "Waiting for confirmation from the bank"
-        },
-        "hostel": {
-          "title": "Hotel",
-          "step1": "Reservation not received",
-          "error_message": "Room not reserved, if the customer comes to the hotel won't have a place to stay.",
-          "success_message": "Reservation and room confirmed."
-        },
-        "bot": {
-          "title": "Bot",
-          "button": "Enable Automatic Review",
-          "progress_text": "Reviewing last reservations from direct booking...",
-          "completed": "Review completed",
-          "detected": "Detected 1 incomplete reservation."
-        },
-        "automated_alert": {
-          "title": "Automated Alert",
-          "description": "Our system automatically sends an alert to the front desk team about the incomplete reservation that needs attention."
-        },
-        "staff_review": {
-          "title": "Staff Review",
-          "description": "Front desk staff receives the notification and reviews the flagged reservation to identify and resolve the issue quickly."
-        },
-        "contact_customer": {
-          "title": "Contact with customer",
-          "description": "Reception staff contact the customer to confirm or cancel the reservation."
-        },
-        "resolution": {
-          "title": "Resolution Complete",
-          "step1": "Staff contacts the customer, resolves the issue, and completes the reservation process successfully.",
-          "success_message": "Customer contacted and confirmed. Reservation not lost and problem solved!"
-        }
-      }
-    },
-    "detect_incomplete_reservation": {
-      "header": {
-        "badge": "Advanced Detection System",
-        "title": "The Problem of Incomplete Reservations",
-        "subtitle": "Discover how our software helps hotels identify and resolve reservations that were not completed correctly"
-      },
-      "problem_flow": {
-        "title": "What's happening?",
-        "steps": {
-          "interested_client": {
-            "title": "Interested Client",
-            "description": "The client finds your hotel and decides to make a reservation"
-          },
-          "complete_form": {
-            "title": "Complete Form",
-            "description": "Fill in all fields: dates, guests, personal data"
-          },
-          "enter_card": {
-            "title": "Enter Card",
-            "description": "Provide banking details and see money withheld"
-          },
-          "problem": {
-            "badge": "PROBLEM!",
-            "title": "Communication Crisis",
-            "description": "Does not confirm final payment but leaves the website"
-          }
-        }
-      },
-      "disconnect": {
-        "title": "The Disconnect",
-        "client_side": {
-          "title": "What the client believes",
-          "quote": "Perfect! My reservation is confirmed",
-          "points": {
-            "money_withheld": "I see money withheld in my bank",
-            "completed_process": "I completed the entire process",
-            "hotel_has_reservation": "The hotel has my reservation"
-          }
-        },
-        "hotel_side": {
-          "title": "The hotel's reality",
-          "quote": "There is no confirmed reservation",
-          "points": {
-            "no_payment_confirmation": "We did not receive payment confirmation",
-            "room_available": "The room is still available",
-            "no_system_record": "There is no record in the system"
-          }
-        }
-      },
-      "solution": {
-        "title": "Our Solution",
-        "features": {
-          "monitoring": {
-            "title": "Automatic Monitoring",
-            "description": "We constantly review incomplete reservations"
-          },
-          "notifications": {
-            "title": "Smart Notifications",
-            "description": "We alert you when we detect problematic cases"
-          },
-          "resolution": {
-            "title": "Proactive Resolution",
-            "description": "Contact the client before it becomes a problem"
-          }
-        },
-        "button": "Learn More About Our Solution"
-      }
-    }
-  },
   "footer": {
     "description": "Optimize your hotel management with tools specifically designed for Little Hotelier by Siteminder.",
     "links": "Links",
@@ -1065,6 +945,125 @@
       "automation": {
         "title": "Marketing Automation",
         "description": "Automated email campaigns, social media management, and guest communication workflows."
+      }
+    },
+    
+    "error_detection_showcase": {
+      "controls": {
+        "speed_up": "Speed Up Animation",
+        "show_all_cards": "Show All Cards"
+      },
+      "cards": {
+        "customer": {
+          "title": "Customer",
+          "step1": "Selected dates & room preferences.",
+          "step2": "Fill personal details in the booking form.",
+          "step3": "Believes reservation is complete as the money is held."
+        },
+        "payment": {
+          "title": "Payment",
+          "step1": "Bank card details received.",
+          "step2": "Money held.",
+          "step3": "Waiting for confirmation from the bank"
+        },
+        "hostel": {
+          "title": "Hotel",
+          "step1": "Reservation not received",
+          "error_message": "Room not reserved, if the customer comes to the hotel won't have a place to stay.",
+          "success_message": "Reservation and room confirmed."
+        },
+        "bot": {
+          "title": "Bot",
+          "button": "Enable Automatic Review",
+          "progress_text": "Reviewing last reservations from direct booking...",
+          "completed": "Review completed",
+          "detected": "Detected 1 incomplete reservation."
+        },
+        "automated_alert": {
+          "title": "Automated Alert",
+          "description": "Our system automatically sends an alert to the front desk team about the incomplete reservation that needs attention."
+        },
+        "staff_review": {
+          "title": "Staff Review",
+          "description": "Front desk staff receives the notification and reviews the flagged reservation to identify and resolve the issue quickly."
+        },
+        "contact_customer": {
+          "title": "Contact with customer",
+          "description": "Reception staff contact the customer to confirm or cancel the reservation."
+        },
+        "resolution": {
+          "title": "Resolution Complete",
+          "step1": "Staff contacts the customer, resolves the issue, and completes the reservation process successfully.",
+          "success_message": "Customer contacted and confirmed. Reservation not lost and problem solved!"
+        }
+      }
+    },
+    "detect_incomplete_reservation": {
+      "header": {
+        "badge": "Advanced Detection System",
+        "title": "The Problem of Incomplete Reservations",
+        "subtitle": "Discover how our software helps hotels identify and resolve reservations that were not completed correctly"
+      },
+      "problem_flow": {
+        "title": "What's happening?",
+        "steps": {
+          "interested_client": {
+            "title": "Interested Client",
+            "description": "The client finds your hotel and decides to make a reservation"
+          },
+          "complete_form": {
+            "title": "Complete Form",
+            "description": "Fill in all fields: dates, guests, personal data"
+          },
+          "enter_card": {
+            "title": "Enter Card",
+            "description": "Provide banking details and see money withheld"
+          },
+          "problem": {
+            "badge": "PROBLEM!",
+            "title": "Communication Crisis",
+            "description": "Does not confirm final payment but leaves the website"
+          }
+        }
+      },
+      "disconnect": {
+        "title": "The Disconnect",
+        "client_side": {
+          "title": "What the client believes",
+          "quote": "Perfect! My reservation is confirmed",
+          "points": {
+            "money_withheld": "I see money withheld in my bank",
+            "completed_process": "I completed the entire process",
+            "hotel_has_reservation": "The hotel has my reservation"
+          }
+        },
+        "hotel_side": {
+          "title": "The hotel's reality",
+          "quote": "There is no confirmed reservation",
+          "points": {
+            "no_payment_confirmation": "We did not receive payment confirmation",
+            "room_available": "The room is still available",
+            "no_system_record": "There is no record in the system"
+          }
+        }
+      },
+      "solution": {
+        "title": "Our Solution",
+        "features": {
+          "monitoring": {
+            "title": "Automatic Monitoring",
+            "description": "We constantly review incomplete reservations"
+          },
+          "notifications": {
+            "title": "Smart Notifications",
+            "description": "We alert you when we detect problematic cases"
+          },
+          "resolution": {
+            "title": "Proactive Resolution",
+            "description": "Contact the client before it becomes a problem"
+          }
+        },
+        "button": "Learn More About Our Solution"
       }
     }
   }

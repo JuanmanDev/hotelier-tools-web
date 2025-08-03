@@ -891,126 +891,6 @@
       }
     }
   },
-  "marketing": {
-    "error_detection_showcase": {
-      "controls": {
-        "speed_up": "Acelerar Animación",
-        "show_all_cards": "Mostrar Todas las Tarjetas"
-      },
-      "cards": {
-        "customer": {
-          "title": "Cliente",
-          "step1": "Fechas seleccionadas y preferencias de habitación.",
-          "step2": "Completar datos personales en el formulario de reserva.",
-          "step3": "Cree que la reserva está completa ya que el dinero está retenido."
-        },
-        "payment": {
-          "title": "Pago",
-          "step1": "Datos de tarjeta bancaria recibidos.",
-          "step2": "Dinero retenido.",
-          "step3": "Esperando confirmación del banco"
-        },
-        "hostel": {
-          "title": "Hotel",
-          "step1": "Reserva no recibida",
-          "error_message": "Habitación no reservada, si el cliente viene al hotel no tendrá lugar donde alojarse.",
-          "success_message": "Reserva y habitación confirmadas."
-        },
-        "bot": {
-          "title": "Bot",
-          "button": "Habilitar Revisión Automática",
-          "progress_text": "Revisando últimas reservas de reserva directa...",
-          "completed": "Revisión completada",
-          "detected": "Detectada 1 reserva incompleta."
-        },
-        "automated_alert": {
-          "title": "Alerta Automatizada",
-          "description": "Nuestro sistema envía automáticamente una alerta al equipo de recepción sobre la reserva incompleta que necesita atención."
-        },
-        "staff_review": {
-          "title": "Revisión del Personal",
-          "description": "El personal de recepción recibe la notificación y revisa la reserva marcada para identificar y resolver el problema rápidamente."
-        },
-        "contact_customer": {
-          "title": "Contacto con cliente",
-          "description": "El personal de recepción contacta al cliente para confirmar o cancelar la reserva."
-        },
-        "resolution": {
-          "title": "Resolución Completa",
-          "step1": "El personal contacta al cliente, resuelve el problema y completa el proceso de reserva exitosamente.",
-          "success_message": "Cliente contactado y confirmado. ¡Reserva no perdida y problema resuelto!"
-        }
-      }
-    },
-    "detect_incomplete_reservation": {
-      "header": {
-        "badge": "Sistema de Detección Avanzada",
-        "title": "El Problema de las Reservas Incompletas",
-        "subtitle": "Descubre cómo nuestro software ayuda a los hoteles a identificar y resolver reservas que no se completaron correctamente"
-      },
-      "problem_flow": {
-        "title": "¿Qué está pasando?",
-        "steps": {
-          "interested_client": {
-            "title": "Cliente Interesado",
-            "description": "El cliente encuentra tu hotel y decide hacer una reserva"
-          },
-          "complete_form": {
-            "title": "Completa Formulario",
-            "description": "Rellena todos los campos: fechas, huéspedes, datos personales"
-          },
-          "enter_card": {
-            "title": "Introduce Tarjeta",
-            "description": "Proporciona datos bancarios y ve dinero retenido"
-          },
-          "problem": {
-            "badge": "¡PROBLEMA!",
-            "title": "Crisis de Comunicación",
-            "description": "No confirma el pago final pero sale de la web"
-          }
-        }
-      },
-      "disconnect": {
-        "title": "La Desconexión",
-        "client_side": {
-          "title": "Lo que cree el cliente",
-          "quote": "¡Perfecto! Mi reserva está confirmada",
-          "points": {
-            "money_withheld": "Veo dinero retenido en mi banco",
-            "completed_process": "Completé todo el proceso",
-            "hotel_has_reservation": "El hotel tiene mi reserva"
-          }
-        },
-        "hotel_side": {
-          "title": "La realidad del hotel",
-          "quote": "No hay ninguna reserva confirmada",
-          "points": {
-            "no_payment_confirmation": "No recibimos confirmación de pago",
-            "room_available": "La habitación sigue disponible",
-            "no_system_record": "No hay registro en el sistema"
-          }
-        }
-      },
-      "solution": {
-        "title": "Nuestra Solución",
-        "features": {
-          "monitoring": {
-            "title": "Monitoreo Automático",
-            "description": "Revisamos constantemente las reservas incompletas"
-          },
-          "notifications": {
-            "title": "Notificaciones Inteligentes",
-            "description": "Te alertamos cuando detectamos casos problemáticos"
-          },
-          "resolution": {
-            "title": "Resolución Proactiva",
-            "description": "Contacta al cliente antes de que se convierta en problema"
-          }
-        },
-        "button": "Conoce Más Sobre Nuestra Solución"
-      }
-    }
-  },
   "footer": {
     "description": "Optimiza la gestión de tu hotel con herramientas diseñadas específicamente para Little Hotelier de Siteminder.",
     "links": "Enlaces",
@@ -1210,6 +1090,125 @@
       "automation": {
         "title": "Automatización de Marketing",
         "description": "Campañas de email automatizadas, gestión de redes sociales y flujos de comunicación con huéspedes."
+      }
+    },
+    
+    "error_detection_showcase": {
+      "controls": {
+        "speed_up": "Acelerar Animación",
+        "show_all_cards": "Mostrar Todas las Tarjetas"
+      },
+      "cards": {
+        "customer": {
+          "title": "Cliente",
+          "step1": "Fechas seleccionadas y preferencias de habitación.",
+          "step2": "Completar datos personales en el formulario de reserva.",
+          "step3": "Cree que la reserva está completa ya que el dinero está retenido."
+        },
+        "payment": {
+          "title": "Pago",
+          "step1": "Datos de tarjeta bancaria recibidos.",
+          "step2": "Dinero retenido.",
+          "step3": "Esperando confirmación del banco"
+        },
+        "hostel": {
+          "title": "Hotel",
+          "step1": "Reserva no recibida",
+          "error_message": "Habitación no reservada, si el cliente viene al hotel no tendrá lugar donde alojarse.",
+          "success_message": "Reserva y habitación confirmadas."
+        },
+        "bot": {
+          "title": "Bot",
+          "button": "Habilitar Revisión Automática",
+          "progress_text": "Revisando últimas reservas de reserva directa...",
+          "completed": "Revisión completada",
+          "detected": "Detectada 1 reserva incompleta."
+        },
+        "automated_alert": {
+          "title": "Alerta Automatizada",
+          "description": "Nuestro sistema envía automáticamente una alerta al equipo de recepción sobre la reserva incompleta que necesita atención."
+        },
+        "staff_review": {
+          "title": "Revisión del Personal",
+          "description": "El personal de recepción recibe la notificación y revisa la reserva marcada para identificar y resolver el problema rápidamente."
+        },
+        "contact_customer": {
+          "title": "Contacto con cliente",
+          "description": "El personal de recepción contacta al cliente para confirmar o cancelar la reserva."
+        },
+        "resolution": {
+          "title": "Resolución Completa",
+          "step1": "El personal contacta al cliente, resuelve el problema y completa el proceso de reserva exitosamente.",
+          "success_message": "Cliente contactado y confirmado. ¡Reserva no perdida y problema resuelto!"
+        }
+      }
+    },
+    "detect_incomplete_reservation": {
+      "header": {
+        "badge": "Sistema de Detección Avanzada",
+        "title": "El Problema de las Reservas Incompletas",
+        "subtitle": "Descubre cómo nuestro software ayuda a los hoteles a identificar y resolver reservas que no se completaron correctamente"
+      },
+      "problem_flow": {
+        "title": "¿Qué está pasando?",
+        "steps": {
+          "interested_client": {
+            "title": "Cliente Interesado",
+            "description": "El cliente encuentra tu hotel y decide hacer una reserva"
+          },
+          "complete_form": {
+            "title": "Completa Formulario",
+            "description": "Rellena todos los campos: fechas, huéspedes, datos personales"
+          },
+          "enter_card": {
+            "title": "Introduce Tarjeta",
+            "description": "Proporciona datos bancarios y ve dinero retenido"
+          },
+          "problem": {
+            "badge": "¡PROBLEMA!",
+            "title": "Crisis de Comunicación",
+            "description": "No confirma el pago final pero sale de la web"
+          }
+        }
+      },
+      "disconnect": {
+        "title": "La Desconexión",
+        "client_side": {
+          "title": "Lo que cree el cliente",
+          "quote": "¡Perfecto! Mi reserva está confirmada",
+          "points": {
+            "money_withheld": "Veo dinero retenido en mi banco",
+            "completed_process": "Completé todo el proceso",
+            "hotel_has_reservation": "El hotel tiene mi reserva"
+          }
+        },
+        "hotel_side": {
+          "title": "La realidad del hotel",
+          "quote": "No hay ninguna reserva confirmada",
+          "points": {
+            "no_payment_confirmation": "No recibimos confirmación de pago",
+            "room_available": "La habitación sigue disponible",
+            "no_system_record": "No hay registro en el sistema"
+          }
+        }
+      },
+      "solution": {
+        "title": "Nuestra Solución",
+        "features": {
+          "monitoring": {
+            "title": "Monitoreo Automático",
+            "description": "Revisamos constantemente las reservas incompletas"
+          },
+          "notifications": {
+            "title": "Notificaciones Inteligentes",
+            "description": "Te alertamos cuando detectamos casos problemáticos"
+          },
+          "resolution": {
+            "title": "Resolución Proactiva",
+            "description": "Contacta al cliente antes de que se convierta en problema"
+          }
+        },
+        "button": "Conoce Más Sobre Nuestra Solución"
       }
     }
   }
