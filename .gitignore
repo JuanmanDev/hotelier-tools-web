@@ -42,3 +42,5 @@ dist
 .env.*.local
 
 .vercel
+
+.data/content/contents.sqlite
