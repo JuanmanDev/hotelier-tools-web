@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@nuxt/content', 'vue3-carousel-nuxt'],
+  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@nuxt/content', 'vue3-carousel-nuxt', '@nuxtjs/seo'],
 
   // Nuxt Content configuration
   content: {
@@ -46,6 +46,32 @@ export default defineNuxtConfig({
   // Color mode configuration
   colorMode: {
     preference: 'system'
+  },
+
+  // Site Configuration for SEO
+  site: {
+    url: 'https://hotelier-tools.vercel.app',
+    name: 'Hotelier Tools',
+    description: 'Herramientas para optimizar la gestión de hoteles que utilizan Little Hotelier de Siteminder',
+    defaultLocale: 'en',
+    identity: {
+      type: 'Organization'
+    },
+    twitter: '@hoteliertools',
+    trailingSlash: false
+  },
+
+  // Robots Configuration
+  robots: {
+    allow: ['/'],
+    disallow: ['/admin', '/api'],
+    sitemap: ['/sitemap.xml']
+  },
+
+  // Sitemap Configuration
+  sitemap: {
+    autoLastmod: true,
+    defaultSitemapsChunkSize: 100
   },
   
   // Meta configuration

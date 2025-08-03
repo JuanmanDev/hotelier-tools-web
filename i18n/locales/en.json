@@ -979,5 +979,38 @@
         "feature3": "Generates all invoices without checking one by one manually"
       }
     }
+  },
+  "seo": {
+    "site": {
+      "name": "Hotelier Tools",
+      "description": "Specialized tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate preventing errors.",
+      "keywords": "hotel management, Little Hotelier, Siteminder, hotel automation, booking management, hotel software, chrome extensions, hotel tools"
+    },
+    "pages": {
+      "home": {
+        "title": "Hotelier Tools - Optimize your hotel management with Little Hotelier",
+        "description": "Specialized tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate preventing errors.",
+        "ogTitle": "Hotelier Tools - Hotel Management Automation",
+        "ogDescription": "Transform your hotel operations with specialized tools for Little Hotelier. Automate bookings, prevent errors, and boost efficiency."
+      },
+      "tools": {
+        "title": "Hotel Management Tools - Browser Scripts & Automations",
+        "description": "Discover our comprehensive suite of hotel management tools including browser extensions and automated solutions for Little Hotelier platform.",
+        "ogTitle": "Hotel Management Tools & Automations",
+        "ogDescription": "Comprehensive suite of tools to optimize your hotel operations with Little Hotelier platform."
+      },
+      "chromeExtensions": {
+        "title": "Chrome Extensions for Little Hotelier - Interface Improvements",
+        "description": "Free Chrome extensions that enhance Little Hotelier interface, making daily hotel management tasks easier and more efficient.",
+        "ogTitle": "Chrome Extensions for Hotel Management",
+        "ogDescription": "Free Chrome extensions to improve Little Hotelier interface and streamline hotel operations."
+      },
+      "faq": {
+        "title": "Frequently Asked Questions - Hotelier Tools",
+        "description": "Find answers to common questions about our hotel management tools, installation, pricing, and technical support.",
+        "ogTitle": "FAQ - Hotelier Tools",
+        "ogDescription": "Get answers to frequently asked questions about our hotel management tools and services."
+      }
+    }
   }
 }
