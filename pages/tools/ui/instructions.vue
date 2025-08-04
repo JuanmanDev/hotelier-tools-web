@@ -402,7 +402,7 @@
                 </UButton>
               </div>
 
-              <UButton :to="localePath('https://github.com/JuanmanDev/TampermonkeyLittleHotelier')" variant="outline" icon="i-heroicons-code-bracket-square" size="lg">
+              <UButton to="https://github.com/JuanmanDev/TampermonkeyLittleHotelier" variant="outline" icon="i-heroicons-code-bracket-square" size="lg">
                 Ver repositorio de codigo de los scripts en github para notificar errores
               </UButton>
             </div>
