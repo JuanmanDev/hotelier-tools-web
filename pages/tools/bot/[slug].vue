@@ -64,7 +64,7 @@
         <!-- Back Button -->
         <div class="mt-8 text-center">
           <UButton
-            to="/tools/bot"
+            :to="localePath('/tools/bot')"
             color="gray"
             variant="outline"
             size="lg"
@@ -80,6 +80,8 @@
 <script setup lang="ts">
 const route = useRoute()
 const slug = route.params.slug as string
+const localePath = useLocalePath()
+
 
 // Features data
 const features = [

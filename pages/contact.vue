@@ -101,7 +101,7 @@
               <UButton
                 color="blue"
                 variant="outline"
-                to="/faq"
+                :to="localePath('/faq')"
                 size="lg"
                 class="w-full sm:w-auto"
               >
@@ -119,6 +119,7 @@
 <script setup lang="ts">
 // Internationalization
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
 
 const showLangNotice = computed(() => {
   const code = locale.value

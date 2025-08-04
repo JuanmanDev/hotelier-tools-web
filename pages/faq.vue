@@ -33,7 +33,7 @@
               <p class="text-gray-600 dark:text-gray-300 mb-6">
                 {{ $t('faq.contact_section.subtitle') }}
               </p>
-              <UButton to="/contact" color="amber" size="lg" icon="i-heroicons-envelope">
+              <UButton :to="localePath('/contact')" color="amber" size="lg" icon="i-heroicons-envelope">
                 {{ $t('faq.contact_section.button') }}
               </UButton>
             </div>
@@ -47,6 +47,7 @@
 <script setup>
 const { t } = useI18n()
 const { setSEO, setStructuredData, setBreadcrumbs, setFAQStructuredData } = useSEO()
+const localePath = useLocalePath()
 
 // Set SEO metadata for FAQ page
 setSEO('faq')

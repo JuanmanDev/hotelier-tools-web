@@ -161,7 +161,7 @@
                   />
                 </div>
                 
-                <UButton to="/tools/ui" icon="i-heroicons-arrow-right" size="lg">
+                <UButton :to="localePath('/tools/ui')" icon="i-heroicons-arrow-right" size="lg">
                   Ver scripts disponibles
                 </UButton>
               </div>
@@ -393,16 +393,16 @@
               </p>
               
               <div class="flex flex-col sm:flex-row gap-3">
-                <UButton to="/contact" icon="i-heroicons-envelope" size="lg">
+                <UButton :to="localePath('/contact')" icon="i-heroicons-envelope" size="lg">
                   Contactar soporte
                 </UButton>
                 
-                <UButton to="/faq" variant="outline" icon="i-heroicons-question-mark-circle" size="lg">
+                <UButton :to="localePath('/faq')" variant="outline" icon="i-heroicons-question-mark-circle" size="lg">
                   Ver preguntas frecuentes
                 </UButton>
               </div>
-                
-              <UButton to="https://github.com/JuanmanDev/TampermonkeyLittleHotelier" variant="outline" icon="i-heroicons-code-bracket-square" size="lg">
+
+              <UButton :to="localePath('https://github.com/JuanmanDev/TampermonkeyLittleHotelier')" variant="outline" icon="i-heroicons-code-bracket-square" size="lg">
                 Ver repositorio de codigo de los scripts en github para notificar errores
               </UButton>
             </div>
@@ -414,6 +414,8 @@
 </template>
 
 <script setup>
+const localePath = useLocalePath()
+
 // SEO metadata
 definePageMeta({
   title: 'Instrucciones de Instalación - Hotelier Tools'
