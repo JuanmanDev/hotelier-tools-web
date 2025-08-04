@@ -14,16 +14,58 @@ export default defineNuxtConfig({
   i18n: {
     locales: [
       {
+        code: 'en',
+        name: 'English (US)',
+        iso: 'en-US',
+        file: 'en.json'
+      },
+      {
+        code: 'en-gb',
+        name: 'English (UK)',
+        iso: 'en-GB',
+        file: 'en-gb.json'
+      },
+      {
         code: 'es',
         name: 'Español',
         iso: 'es-ES',
         file: 'es.json'
       },
       {
-        code: 'en',
-        name: 'English',
-        iso: 'en-US',
-        file: 'en.json'
+        code: 'fr',
+        name: 'Français',
+        iso: 'fr-FR',
+        file: 'fr.json'
+      },
+      {
+        code: 'de',
+        name: 'Deutsch',
+        iso: 'de-DE',
+        file: 'de.json'
+      },
+      {
+        code: 'id',
+        name: 'Bahasa Indonesia',
+        iso: 'id-ID',
+        file: 'id.json'
+      },
+      {
+        code: 'it',
+        name: 'Italiano',
+        iso: 'it-IT',
+        file: 'it.json'
+      },
+      {
+        code: 'pt',
+        name: 'Português',
+        iso: 'pt-PT',
+        file: 'pt.json'
+      },
+      {
+        code: 'th',
+        name: 'ไทย',
+        iso: 'th-TH',
+        file: 'th.json'
       }
     ],
     defaultLocale: 'en',

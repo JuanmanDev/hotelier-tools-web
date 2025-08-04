@@ -672,6 +672,18 @@
       }
     }
   },
+  "faq": {
+    "hero": {
+      "title": "Preguntas",
+      "span": "Frecuentes",
+      "subtitle": "Encuentra respuestas a las preguntas más comunes sobre Hotelier Tools, desde instalación hasta uso avanzado de nuestras herramientas."
+    },
+    "contact_section": {
+      "title": "¿No encuentras la respuesta que buscas?",
+      "subtitle": "Nuestro equipo está aquí para ayudarte. Contacta con nosotros y te responderemos lo antes posible.",
+      "button": "Contactar con soporte"
+    }
+  },
   "contact": {
     "hero": {
       "title": "Contacta con {span}",
@@ -704,7 +716,8 @@
         "extension": "Ayuda con extensiones Chrome",
         "billing": "Facturación y precios",
         "partnership": "Colaboración/Partnership"
-      }
+      },
+      "lang_notice": "El soporte solo está disponible en inglés o español. Para otros idiomas, puedes contactarnos por email y usaremos traducción para ayudarte."
     },
     "info": {
       "title": "Información de contacto",

@@ -210,11 +210,11 @@
                   />
 
                   <div class="flex flex-col sm:flex-row gap-3">
-                    <UButton to="/tools/ui" icon="i-heroicons-arrow-right" size="lg">
+                    <UButton :to="localePath('/tools/ui')" icon="i-heroicons-arrow-right" size="lg">
                       {{ $t('documentation.web_scripts.view_all_scripts') }}
                     </UButton>
 
-                    <UButton to="/tools/ui/instructions" variant="outline" icon="i-heroicons-document-text" size="lg">
+                    <UButton :to="localePath('/tools/ui/instructions')" variant="outline" icon="i-heroicons-document-text" size="lg">
                       {{ $t('documentation.web_scripts.installation_guide') }}
                     </UButton>
                   </div>
@@ -310,7 +310,7 @@
                     {{ $t('documentation.automations.available_automations.title') }}
                   </h3>
 
-                  <UButton to="/tools/bot" color="green" variant="solid" icon="i-heroicons-arrow-right">
+                  <UButton :to="localePath('/tools/bot')" color="green" variant="solid" icon="i-heroicons-arrow-right">
                     {{ $t('documentation.automations.available_automations.view_all') }}
                   </UButton>
                 </div>
@@ -368,6 +368,7 @@
 <script setup>
 // I18n
 const { t, tm, rt } = useI18n()
+const localePath = useLocalePath()
 
 // SEO metadata
 definePageMeta({
