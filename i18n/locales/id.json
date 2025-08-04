@@ -1,0 +1,1191 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "tools": "Alat",
+    "documentation": "Dokumentasi",
+    "contact": "Kontak"
+  },
+  "home": {
+    "hero": {
+      "title": "Optimalkan",
+      "span": "manajemen hotel",
+      "span2": "dengan Little Hotelier",
+      "subtitle": "Alat khusus untuk hotel yang menggunakan platform Little Hotelier dari Siteminder. Otomatisasi proses, tingkatkan antarmuka dan tingkatkan tingkat konversi dengan mencegah kesalahan.",
+      "cta_tools": "Lihat Alat",
+      "cta_docs": "Dokumentasi",
+      "bot_button": "Lihat Semua Otomatisasi",
+      "trust": {
+        "secure": "Aman dan terpercaya",
+        "support": "Dukungan Cepat",
+        "easy": "Mudah digunakan"
+      },
+      "cards": {
+        "extensions": {
+          "title": "Skrip Browser Web",
+          "description": "Tingkatkan antarmuka Little Hotelier langsung di browser Anda. Membuat penggunaan web jauh lebih mudah tanpa modifikasi besar dan sepenuhnya gratis.",
+          "button": "Lihat Peningkatan"
+        },
+        "automations": {
+          "title": "Otomatisasi Lanjutan",
+          "description": "Bot akan melakukan tugas-tugas lanjutan yang menghemat waktu review dan mencegah kesalahan, menghindari ketidakpuasan pelanggan dan kemungkinan keluhan.",
+          "button": "Lihat Otomatisasi"
+        }
+      }
+    },
+    "animation": {
+      "title": "Bagaimana cara kerja Hotelier Tools?",
+      "subtitle": "Lihat bagaimana alat kami meningkatkan manajemen hotel Anda langkah demi langkah",
+      "progress": "Kemajuan",
+      "steps": {
+        "detection": {
+          "title": "Reservasi Terdeteksi",
+          "description": "Reservasi yang tidak dikonfirmasi oleh bank terdeteksi"
+        },
+        "notification": {
+          "title": "Email Terkirim",
+          "description": "Email notifikasi dikirim secara otomatis"
+        },
+        "resolution": {
+          "title": "Masalah Terpecahkan",
+          "description": "Resepsionis menghubungi tamu dan mengkonfirmasi reservasi"
+        }
+      },
+      "status": {
+        "pending": "Menunggu",
+        "in_progress": "Sedang berlangsung",
+        "completed": "Selesai",
+        "error": "Kesalahan"
+      },
+      "controls": {
+        "restart": "Mulai Ulang",
+        "play": "Putar",
+        "pause": "Jeda"
+      },
+      "benefits": {
+        "conversion": {
+          "title": "Peningkatan Konversi",
+          "description": "Mencegah kehilangan reservasi karena masalah pembayaran"
+        },
+        "automation": {
+          "title": "Otomatisasi Total",
+          "description": "Proses yang sepenuhnya otomatis tanpa intervensi manual"
+        },
+        "response": {
+          "title": "Respons Cepat",
+          "description": "Notifikasi segera untuk menyelesaikan masalah tepat waktu"
+        }
+      }
+    },
+    "process_animation": {
+      "title": "Bagaimana cara kerja Hotelier Tools?",
+      "subtitle": "Lihat bagaimana alat kami meningkatkan manajemen hotel Anda langkah demi langkah",
+      "progress": "Kemajuan",
+      "steps": {
+        "detection": {
+          "title": "Periksa otomatis semua data",
+          "description": "Analisis reservasi di Front Desk dan Pemesanan Langsung dengan semua field"
+        },
+        "notification": {
+          "title": "Email terkirim",
+          "description": "Kirim email ketika ada masalah yang perlu diperbaiki secepat mungkin atau informasikan tentang tugas-tugas terakhir yang diterapkan secara otomatis"
+        },
+        "resolution": {
+          "title": "Menggunakan API",
+          "description": "Menggunakan data secara langsung membuat pengambilan dan pemantauan menjadi sangat cepat"
+        }
+      },
+      "status": {
+        "pending": "Menunggu",
+        "in_progress": "Sedang berlangsung",
+        "completed": "Selesai",
+        "error": "Kesalahan"
+      },
+      "controls": {
+        "restart": "Mulai Ulang",
+        "play": "Putar",
+        "pause": "Jeda"
+      },
+      "benefits": {
+        "conversion": {
+          "title": "Peningkatan Konversi",
+          "description": "Mencegah kehilangan reservasi karena masalah pembayaran"
+        },
+        "automation": {
+          "title": "Otomatisasi Total",
+          "description": "Proses yang sepenuhnya otomatis tanpa intervensi manual"
+        },
+        "response": {
+          "title": "Respons Cepat",
+          "description": "Notifikasi segera untuk menyelesaikan masalah tepat waktu"
+        }
+      }
+    },
+    "process_showcase": {
+      "scenarios": {
+        "payment_issue": "Masalah Pembayaran",
+        "missing_data": "Pemeriksaan Data yang Hilang",
+        "all_complete": "Semua Lengkap"
+      },
+      "steps": {
+        "1": {
+          "title": "Verifikasi check-in malam hari",
+          "subtitle": "Semua check-in yang dilakukan pada hari itu diperiksa setiap malam"
+        },
+        "2": {
+          "title": "Analisis data tamu",
+          "subtitle": "Diverifikasi bahwa sistem memiliki semua data klien dan reservasi telah dibayar penuh"
+        },
+        "3": {
+          "title": "Notifikasi data yang hilang",
+          "subtitle": "Pemberitahuan dikirim tentang data yang hilang untuk diminta pada hari berikutnya sebelum check-out"
+        },
+        "4": {
+          "title": "Review pembayaran tertunda",
+          "subtitle": "Verifikasi harian reservasi dengan pembayaran tertunda atau tidak lengkap"
+        },
+        "5": {
+          "title": "Masalah pembayaran terdeteksi",
+          "subtitle": "Kesalahan transaksi pembayaran terdeteksi yang memerlukan perhatian segera"
+        },
+        "6": {
+          "title": "Penyelesaian masalah pembayaran",
+          "subtitle": "Hubungi klien untuk meminta metode pembayaran alternatif sebelum kedatangan"
+        }
+      }
+    },
+    "features": {
+      "title": "Mengapa memilih Hotelier Tools?",
+      "subtitle": "Fitur yang membuat perbedaan dalam manajemen hotel Anda",
+      "chrome": {
+        "title": "Skrip Web untuk Browser",
+        "description": "Tingkatkan antarmuka Little Hotelier langsung di browser Anda",
+        "view_extensions": "Lihat Ekstensi",
+        "benefits": [
+          "Tabel lebar penuh",
+          "Kalkulator komisi",
+          "Visualisasi data yang lebih baik",
+          "Antarmuka yang dioptimalkan"
+        ]
+      },
+      "automation": {
+        "title": "Otomatisasi",
+        "description": "Tugas otomatis yang menghemat waktu dan mengurangi kesalahan",
+        "see_more": "Lihat lebih banyak otomatisasi",
+        "benefits": [
+          "Check-out otomatis",
+          "Validasi pembayaran",
+          "Manajemen faktur",
+          "Pemantauan reservasi"
+        ]
+      },
+      "notifications": {
+        "title": "Notifikasi",
+        "description": "Tetap terinformasi tentang segala hal yang terjadi di hotel Anda",
+        "check_available": "Periksa notifikasi yang tersedia",
+        "benefits": [
+          "Peringatan waktu nyata",
+          "Email otomatis",
+          "Dashboard terpusat",
+          "Laporan terperinci"
+        ]
+      }
+    },
+    "testimonials": {
+      "title": "Apa yang dikatakan klien kami",
+      "subtitle": "Pendapat nyata dari hotel yang menggunakan alat kami",
+      "reviews": [
+        {
+          "quote": "Alat-alat ini menghemat banyak waktu kami setiap kuartal untuk menyajikan semua faktur. Otomatisasinya luar biasa.",
+          "author": "Hostal Sol",
+          "location": "Zamora, Spanyol",
+          "website": "hostalsolzamora.com",
+          "rating": 5
+        },
+        {
+          "quote": "Ekstensi membuat penggunaan aplikasi di layar sentuh kami menjadi mudah. 10 dari 10!",
+          "author": "Tim Manajemen Hotel",
+          "location": "Spanyol",
+          "rating": 5
+        },
+        {
+          "quote": "Kami dapat mendeteksi pembayaran yang tidak dikonfirmasi untuk mencegah masalah ketika tamu tiba di hotel - masalah yang pernah kami alami sebelumnya.",
+          "author": "Staf Resepsionis Hotel",
+          "location": "Spanyol",
+          "rating": 5
+        }
+      ]
+    },
+    "stats": {
+      "title": "Hasil berbicara untuk diri mereka sendiri",
+      "subtitle": "Temukan dampak dari alat kami",
+      "error_reduction": "Pengurangan kesalahan",
+      "time_saved": "Waktu yang dihemat setiap hari",
+      "conversion_increase": "Peningkatan konversi",
+      "monitoring": "Pemantauan berkelanjutan"
+    },
+    "cta": {
+      "title": "Siap mengoptimalkan hotel Anda?",
+      "subtitle": "Bergabunglah dengan hotel yang sudah meningkatkan manajemen mereka dengan alat kami",
+      "start_now": "Mulai Sekarang",
+      "talk_sales": "Bicara dengan Penjualan"
+    }
+  },
+  "tools": {
+    "hero": {
+      "title": "Alat untuk {span}",
+      "span": "Little Hotelier",
+      "subtitle": "Temukan koleksi lengkap alat kami yang dirancang khusus untuk mengoptimalkan manajemen hotel Anda dengan Little Hotelier dari Siteminder."
+    },
+    "showcase": {
+      "title": "Alat Kami",
+      "subtitle": "Temukan alat yang akan merevolusi manajemen hotel Anda",
+      "categories": {
+        "all": "Semua",
+        "chrome_extension": "Skrip Web untuk Browser",
+        "automation": "Otomatisasi"
+      },
+      "card": {
+        "features": "Fitur utama:",
+        "more_features": "+{count} fitur lainnya",
+        "actions": {
+          "use_now": "Gunakan Sekarang",
+          "beta": "Beta",
+          "coming_soon": "Segera Hadir"
+        }
+      },
+      "cta": {
+        "title": "Butuh alat khusus?",
+        "description": "Hubungi kami untuk mengembangkan solusi spesifik untuk hotel Anda",
+        "button": "Kontak"
+      },
+      "status": {
+        "available": "Tersedia",
+        "beta": "Beta",
+        "coming_soon": "Segera Hadir",
+        "unknown": "Tidak Diketahui"
+      },
+      "tools": {
+        "ui_enhancer": {
+          "name": "Peningkat UI",
+          "description": "Meningkatkan antarmuka Little Hotelier dengan tabel lebar penuh dan visualisasi yang lebih baik.",
+          "features": [
+            "Tabel lebar penuh",
+            "Penghapusan scroll horizontal",
+            "Harga terlihat di kalender",
+            "Antarmuka yang lebih bersih dan fungsional"
+          ]
+        },
+        "commission_calculator": {
+          "name": "Kalkulator Komisi",
+          "description": "Secara otomatis menghitung komisi Booking.com pada setiap reservasi.",
+          "features": [
+            "Perhitungan komisi otomatis",
+            "Informasi waktu nyata",
+            "Analisis profitabilitas",
+            "Riwayat komisi"
+          ]
+        },
+        "auto_checkout_bot": {
+          "name": "Bot Check-out Otomatis",
+          "description": "Secara otomatis memproses check-out tamu pada akhir tanggal menginap mereka.",
+          "features": [
+            "Check-out otomatis",
+            "Pembaruan status waktu nyata",
+            "Notifikasi tamu",
+            "Integrasi dengan sistem manajemen properti"
+          ]
+        },
+        "auto_checkout": {
+          "name": "Check-out Otomatis",
+          "description": "Secara otomatis menandai reservasi sebagai check-out pada akhir tanggal.",
+          "features": [
+            "Check-out otomatis",
+            "Penjadwalan tugas",
+            "Notifikasi status",
+            "Log aktivitas"
+          ]
+        },
+        "payment_validator": {
+          "name": "Validator Pembayaran",
+          "description": "Memeriksa bahwa semua reservasi telah dibayar penuh.",
+          "features": [
+            "Verifikasi pembayaran otomatis",
+            "Peringatan pembayaran tertunda",
+            "Laporan status keuangan",
+            "Integrasi akuntansi"
+          ]
+        },
+        "reservation_monitor": {
+          "name": "Monitor Reservasi",
+          "description": "Memantau reservasi web yang tidak lengkap dan memberitahu masalah pembayaran.",
+          "features": [
+            "Deteksi reservasi tidak lengkap",
+            "Notifikasi email",
+            "Dashboard pelacakan",
+            "Pemulihan reservasi hilang"
+          ]
+        },
+        "invoice_manager": {
+          "name": "Manajer Faktur",
+          "description": "Mengelola faktur secara otomatis dan memverifikasi field wajib.",
+          "features": [
+            "Unduhan faktur massal",
+            "Validasi field wajib",
+            "Ringkasan otomatis",
+            "Notifikasi field yang hilang"
+          ]
+        },
+        "bot_automations_collection": {
+          "name": "Koleksi Otomatisasi Bot Hotel",
+          "description": "Suite otomatisasi lanjutan untuk tugas manajemen hotel termasuk check-out, pembayaran, dan reservasi.",
+          "features": [
+            "Pemrosesan check-out tamu otomatis",
+            "Validasi dan pemantauan pembayaran",
+            "Pelacakan reservasi tidak dikonfirmasi",
+            "Otomatisasi komunikasi tamu",
+            "Bantuan optimisasi harga",
+            "Manajemen dan validasi faktur"
+          ]
+        },
+        "tables_full_width": {
+          "name": "Tabel Lebar Penuh",
+          "description": "Memperluas tabel untuk menggunakan lebar layar penuh untuk visibilitas data yang lebih baik.",
+          "features": [
+            "Tampilan tabel lebar penuh",
+            "Visibilitas data yang lebih baik",
+            "Scroll horizontal berkurang",
+            "Pemanfaatan ruang layar yang ditingkatkan"
+          ]
+        },
+        "compact_calendar_ui": {
+          "name": "Kalender Kompak",
+          "description": "Mengoptimalkan tata letak kalender dengan mengurangi spasi yang tidak perlu dan meningkatkan visibilitas tanggal.",
+          "features": [
+            "Tampilan tanggal satu baris",
+            "Tinggi tipe kamar berkurang",
+            "Lebih banyak informasi di layar",
+            "Tata letak kalender yang lebih bersih"
+          ]
+        },
+        "prices_display": {
+          "name": "Tampilan Harga Kalender",
+          "description": "Menampilkan informasi harga langsung di tampilan kalender untuk visibilitas yang lebih baik.",
+          "features": [
+            "Harga terlihat di kalender",
+            "Gambaran harga yang lebih baik",
+            "Perbandingan tarif cepat",
+            "Alur kerja penetapan harga yang ditingkatkan"
+          ]
+        },
+        "touch_screen_optimization": {
+          "name": "Optimisasi Layar Sentuh",
+          "description": "Mengoptimalkan antarmuka untuk perangkat layar sentuh dan tablet.",
+          "features": [
+            "Kontrol ramah sentuh",
+            "Ukuran tombol yang ditingkatkan",
+            "Pengalaman mobile yang lebih baik",
+            "Optimisasi tablet"
+          ]
+        },
+        "guest_management_bot": {
+          "name": "Bot Manajemen Tamu",
+          "description": "Mengotomatisasi tugas dan komunikasi terkait tamu.",
+          "features": [
+            "Pemrosesan informasi tamu",
+            "Bantuan check-in otomatis",
+            "Template komunikasi tamu",
+            "Pelacakan preferensi"
+          ]
+        },
+        "pricing_optimization_bot": {
+          "name": "Bot Asisten Penetapan Harga",
+          "description": "Membantu mengoptimalkan harga kamar dan manajemen pendapatan.",
+          "features": [
+            "Saran optimisasi tarif",
+            "Penetapan harga berdasarkan permintaan",
+            "Analisis pesaing",
+            "Peramalan pendapatan"
+          ]
+        },
+        "ui_scripts_collection": {
+          "name": "Koleksi Skrip Peningkatan UI",
+          "description": "Koleksi skrip browser untuk meningkatkan antarmuka Little Hotelier dengan tabel lebar penuh dan visualisasi yang lebih baik.",
+          "features": [
+            "Tabel lebar penuh",
+            "Penghapusan scroll horizontal",
+            "Harga terlihat di kalender",
+            "Antarmuka yang lebih bersih dan fungsional"
+          ]
+        },
+        "booking_commission_calculator": {
+          "name": "Kalkulator Komisi",
+          "description": "Secara otomatis menghitung komisi Booking.com pada setiap reservasi.",
+          "features": [
+            "Perhitungan komisi otomatis",
+            "Informasi real-time",
+            "Analisis profitabilitas",
+            "Riwayat komisi"
+          ]
+        },
+        "payment_validator_bot": {
+          "name": "Bot Validator Pembayaran",
+          "description": "Memantau dan memvalidasi pembayaran tamu untuk mencegah masalah reservasi.",
+          "features": [
+            "Verifikasi pembayaran otomatis",
+            "Peringatan pembayaran tertunda",
+            "Laporan status keuangan",
+            "Integrasi akuntansi"
+          ]
+        },
+        "unconfirmed_reservations_bot": {
+          "name": "Monitor Reservasi Tidak Dikonfirmasi",
+          "description": "Melacak dan mengelola reservasi yang tidak dikonfirmasi untuk mencegah kehilangan pemesanan.",
+          "features": [
+            "Deteksi reservasi tidak lengkap",
+            "Notifikasi email",
+            "Dashboard pelacakan",
+            "Pemulihan reservasi hilang"
+          ]
+        },
+        "invoice_management_bot": {
+          "name": "Bot Manajemen Faktur",
+          "description": "Mengotomatisasi proses pembuatan dan manajemen faktur.",
+          "features": [
+            "Unduhan faktur massal",
+            "Validasi field wajib",
+            "Ringkasan otomatis",
+            "Notifikasi field yang hilang"
+          ]
+        }
+      }
+    },
+    "categories": {
+      "all": "Semua",
+      "chrome_extensions": "Skrip Web untuk Browser",
+      "automations": "Otomatisasi"
+    },
+    "status": {
+      "available": "Tersedia",
+      "beta": "Beta",
+      "coming_soon": "Segera Hadir"
+    },
+    "actions": {
+      "use_now": "Gunakan Sekarang",
+      "beta_access": "Beta",
+      "coming_soon": "Segera Hadir",
+      "download_extensions": "Unduh Ekstensi",
+      "request_setup": "Minta Setup"
+    },
+    "features": "Fitur utama:",
+    "more_features": "fitur lainnya",
+    "custom_tool": {
+      "title": "Butuh alat khusus?",
+      "description": "Hubungi kami untuk mengembangkan solusi spesifik untuk hotel Anda",
+      "contact": "Kontak"
+    },
+    "ui": {
+      "title": "Skrip Tampermonkey",
+      "subtitle": "Koleksi skrip Tampermonkey untuk meningkatkan pengalaman Little Hotelier Anda.",
+      "view_details": "Lihat detail",
+      "view_code": "Lihat kode skrip di GitHub untuk menyalinnya",
+      "view_instructions": "Lihat instruksi",
+      "back_to_list": "Kembali ke daftar",
+      "before": "Sebelum",
+      "after": "Sesudah",
+      "gallery": "Galeri",
+      "install_instructions": "Lihat instruksi untuk menginstal skrip"
+    },
+    "faq": {
+      "title": "Pertanyaan yang Sering Diajukan",
+      "subtitle": "Kami menyelesaikan pertanyaan paling umum tentang alat kami",
+      "search_placeholder": "Cari dalam pertanyaan yang sering diajukan...",
+      "no_results": "Tidak ada pertanyaan yang ditemukan sesuai dengan pencarian Anda.",
+      "items": [
+        {
+          "label": "Apakah alat-alat ini aman?",
+          "content": "Ya, semua alat kami dirancang dengan standar keamanan tertinggi. Ekstensi hanya memodifikasi antarmuka visual dan otomatisasi menggunakan kredensial akses terbatas."
+        },
+        {
+          "label": "Apakah saya perlu pengetahuan teknis untuk menggunakan alat ini?",
+          "content": "Tidak, alat kami dirancang agar mudah digunakan. Ekstensi diinstal hanya dengan beberapa klik dan kami mengkonfigurasi otomatisasi untuk Anda."
+        },
+        {
+          "label": "Apa yang terjadi jika Little Hotelier memperbarui platform mereka?",
+          "content": "Kami terus memantau perubahan di Little Hotelier dan memperbarui alat kami untuk mempertahankan kompatibilitas. Pembaruan dilakukan secara otomatis."
+        },
+        {
+          "label": "Bisakah saya meminta alat khusus?",
+          "content": "Tentu saja. Kami menawarkan pengembangan alat khusus sesuai dengan kebutuhan spesifik hotel Anda. Hubungi kami untuk informasi lebih lanjut."
+        },
+        {
+          "label": "Apakah dukungan teknis tersedia?",
+          "content": "Ya, kami menawarkan dukungan teknis untuk semua alat kami. Anda dapat menghubungi kami melalui email, chat atau telepon."
+        },
+        {
+          "label": "Apakah alat-alat ini mempengaruhi kinerja Little Hotelier?",
+          "content": "Tidak, alat kami dioptimalkan agar tidak mempengaruhi kinerja platform. Ekstensi hanya memodifikasi presentasi visual dan otomatisasi bekerja secara independen."
+        }
+      ]
+    }
+  },
+  "faq": {
+    "hero": {
+      "title": "Pertanyaan yang",
+      "span": "Sering Diajukan",
+      "subtitle": "Temukan jawaban untuk pertanyaan paling umum tentang Hotelier Tools, dari instalasi hingga penggunaan lanjutan alat kami."
+    },
+    "contact_section": {
+      "title": "Tidak dapat menemukan jawaban yang Anda cari?",
+      "subtitle": "Tim kami di sini untuk membantu Anda. Hubungi kami dan kami akan merespons secepatnya.",
+      "button": "Hubungi dukungan"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Hubungi {span}",
+      "span": "tim kami",
+      "subtitle": "Punya pertanyaan tentang alat kami? Butuh solusi khusus? Kami di sini untuk membantu Anda mengoptimalkan manajemen hotel Anda."
+    },
+    "form": {
+      "title": "Kirim pesan kepada kami",
+      "name": "Nama lengkap",
+      "email": "Email",
+      "phone": "Telepon",
+      "hotel_name": "Nama hotel",
+      "subject": "Subjek",
+      "message": "Pesan",
+      "privacy": "Saya menerima kebijakan privasi dan pemrosesan data",
+      "send": "Kirim Pesan",
+      "placeholders": {
+        "name": "Nama lengkap Anda",
+        "email": "Alamat email Anda",
+        "phone": "+62 812 0000 0000",
+        "hotel": "Hotel Paradise",
+        "subject": "Pilih subjek",
+        "message": "Beri tahu kami bagaimana kami dapat membantu Anda..."
+      },
+      "subjects": {
+        "general": "Pertanyaan umum",
+        "technical": "Dukungan teknis",
+        "custom": "Alat khusus",
+        "automation": "Pengaturan otomatisasi",
+        "extension": "Bantuan Skrip Web",
+        "billing": "Penagihan dan harga",
+        "partnership": "Kolaborasi/Kemitraan"
+      },
+      "lang_notice": "Dukungan hanya tersedia dalam bahasa Inggris atau Spanyol. Untuk bahasa lain, silakan hubungi kami melalui email dan kami akan menggunakan terjemahan untuk membantu Anda."
+    },
+    "info": {
+      "title": "Informasi kontak",
+      "email": "Email",
+      "schedule": "Jam dukungan",
+      "schedule_text": "Senin sampai Sabtu dari 17:00 sampai 21:00",
+      "response": "Respons rata-rata",
+      "response_text": "Kurang dari 2 jam"
+    },
+    "support": {
+      "title": "Opsi dukungan",
+      "email": {
+        "title": "Dukungan Email",
+        "description": "Sempurna untuk pertanyaan detail dan masalah kompleks",
+        "response": "Respons dalam waktu kurang dari 2 jam"
+      },
+      "urgent": {
+        "title": "Dukungan Mendesak",
+        "description": "Untuk masalah kritis yang mempengaruhi operasi hotel Anda",
+        "response": "Respons segera"
+      },
+      "consulting": {
+        "title": "Konsultasi Teknis",
+        "description": "Saran yang dipersonalisasi untuk mengoptimalkan alur kerja Anda",
+        "response": "Sesi dijadwalkan dalam 24 jam"
+      }
+    },
+    "faq_link": {
+      "title": "Punya pertanyaan cepat?",
+      "description": "Periksa pertanyaan yang sering diajukan, kami mungkin sudah memiliki jawaban yang Anda cari.",
+      "view_faq": "Lihat FAQ"
+    }
+  },
+  "documentation": {
+    "hero": {
+      "title": "Dokumentasi untuk",
+      "span": "Hotelier Tools",
+      "subtitle": "Panduan lengkap, tutorial, dan referensi teknis untuk memaksimalkan alat manajemen hotel kami."
+    },
+    "nav": {
+      "getting_started": "Memulai",
+      "chrome_extensions": "Skrip Web untuk Browser",
+      "automations": "Otomatisasi",
+      "api": "Referensi API",
+      "faq": "FAQ",
+      "content": "Konten"
+    },
+    "getting_started": {
+      "title": "Memulai dengan Hotelier Tools",
+      "welcome": {
+        "title": "Selamat datang!",
+        "description": "Selamat datang di dokumentasi lengkap Hotelier Tools. Di sini Anda akan menemukan semua informasi yang diperlukan untuk memulai."
+      },
+      "intro": "Hotelier Tools adalah seperangkat alat yang dirancang khusus untuk mengoptimalkan manajemen hotel menggunakan Little Hotelier dari Siteminder.",
+      "what_includes": {
+        "title": "Apa yang termasuk dalam Hotelier Tools?",
+        "web_scripts": {
+          "title": "Skrip peningkatan web",
+          "features": [
+            "Peningkatan antarmuka pengguna",
+            "Kalkulator komisi",
+            "Visualisasi data yang dioptimalkan",
+            "Fungsionalitas tambahan"
+          ]
+        },
+        "automations": {
+          "title": "Otomatisasi",
+          "features": [
+            "Check-out otomatis",
+            "Validasi pembayaran",
+            "Manajemen faktur",
+            "Pemantauan reservasi"
+          ]
+        }
+      },
+      "system_requirements": {
+        "title": "Persyaratan sistem",
+        "scripts": "Untuk skrip peningkatan: Browser yang kompatibel dengan Tampermonkey (Chrome, Edge, Firefox, Safari dan sejenisnya)",
+        "automations": "Untuk otomatisasi: Akun Little Hotelier aktif dengan akses ke reservasi FrontDesk dan Pemesanan Langsung",
+        "user_access": "Akses pengguna: Email dan kata sandi"
+      },
+      "mobile_compatibility": {
+        "title": "Kompatibilitas perangkat mobile",
+        "description": "Skrip peningkatan tidak berfungsi di browser mobile standar seperti Chrome untuk Android atau Safari untuk iOS.",
+        "android_alternative": "Alternatif untuk Android: Kiwi Browser kompatibel dengan Tampermonkey, meskipun konfigurasinya lebih kompleks."
+      },
+      "first_time": {
+        "title": "Pertama kali menggunakan Hotelier Tools?",
+        "recommendation": "Jika ini pertama kali Anda menggunakan alat kami, kami merekomendasikan memulai dengan skrip peningkatan web karena lebih mudah diinstal dan digunakan.",
+        "view_scripts": "Lihat skrip yang tersedia",
+        "view_automations": "Lihat otomatisasi yang tersedia"
+      }
+    },
+    "web_scripts": {
+      "title": "Skrip peningkatan web",
+      "intro": "Skrip peningkatan web langsung mengoptimalkan antarmuka Little Hotelier di browser Anda, memberikan pengalaman pengguna yang lebih baik dan fungsionalitas tambahan.",
+      "browser_compatibility": {
+        "title": "Kompatibilitas browser",
+        "chrome": "Chrome: Kompatibilitas penuh",
+        "edge": "Edge: Kompatibilitas penuh",
+        "firefox": "Firefox: Kompatibilitas penuh",
+        "safari": "Safari: Kompatibilitas penuh"
+      },
+      "tampermonkey_requirement": {
+        "title": "Persyaratan Tampermonkey",
+        "description": "Semua skrip memerlukan ekstensi Tampermonkey yang diinstal di browser Anda untuk berfungsi dengan benar."
+      },
+      "view_all_scripts": "Lihat semua skrip yang tersedia",
+      "installation_guide": "Panduan instalasi lengkap"
+    },
+    "automations": {
+      "title": "Otomatisasi",
+      "intro": "Otomatisasi melakukan tugas-tugas berulang di hotel Anda secara otomatis, menghemat waktu dan mengurangi kesalahan manusia.",
+      "credentials_warning": {
+        "title": "Penting: Kredensial akses",
+        "description": "Untuk otomatisasi, kami memerlukan kredensial akses terbatas ke akun Little Hotelier Anda. Kredensial ini hanya akan memiliki izin minimum yang diperlukan untuk melakukan tugas otomatis."
+      },
+      "access_credentials": {
+        "title": "Kredensial akses",
+        "intro": "Untuk menggunakan otomatisasi, kami memerlukan Anda memberikan kredensial akses ke akun Little Hotelier Anda. Kredensial ini harus memiliki izin terbatas untuk memastikan keamanan informasi Anda.",
+        "create_user": "Buat pengguna dari panel administrasi Little Hotelier dengan izin berikut:",
+        "steps": {
+          "1": {
+            "title": "Buat pengguna baru di Little Hotelier",
+            "description": "Akses bagian manajemen pengguna di Little Hotelier dan buat pengguna baru dengan izin terbatas."
+          },
+          "2": {
+            "title": "Tetapkan izin yang diperlukan",
+            "description": "Pengguna harus memiliki akses ke bagian di mana otomatisasi akan beroperasi sesuai detail di bawah ini."
+          },
+          "3": {
+            "title": "Berikan kami kredensial",
+            "description": "Kirimkan nama pengguna dan kata sandi melalui formulir kontak aman kami."
+          }
+        },
+        "modules_required": {
+          "title": "Modul yang diperlukan",
+          "direct_booking": {
+            "title": "Pemesanan Langsung",
+            "access": "Akses: Ya",
+            "user_type": "Jenis Pengguna: Umum"
+          },
+          "frontdesk": {
+            "title": "FrontDesk",
+            "access": "Akses: Ya",
+            "user_type": "Jenis Pengguna: Umum",
+            "permissions": "Izin: Reservasi"
+          }
+        },
+        "verify_user": "Setelah pengguna dibuat, pastikan itu berfungsi dengan mengakses Little Hotelier dengan nama pengguna dan kata sandi yang baru dibuat.",
+        "email_trick": {
+          "title": "Trik email",
+          "description": "Jika Anda tidak ingin membuat alamat email baru, Anda dapat menggunakan alamat yang ada dan menambahkan akhiran dengan +. Jika email Anda adalah: juanma{'@'}hotelier-tools.com Anda dapat menggunakannya sebagai: juanma+bot-1{'@'}hotelier-tools.com"
+        },
+        "contact_us": "Setelah Anda membuat pengguna, silakan hubungi kami melalui formulir kontak sehingga kami dapat mengkonfigurasi otomatisasi dengan menunjukkan nama pengguna dan kata sandi yang dibuat, memberi tahu kami otomatisasi mana yang Anda minati."
+      },
+      "available_automations": {
+        "title": "Otomatisasi yang tersedia",
+        "view_all": "Lihat semua otomatisasi yang tersedia"
+      }
+    },
+    "api_reference": {
+      "title": "Referensi API",
+      "intro": "Kami saat ini menggunakan API yang tersedia di situs web Little Hotelier.",
+      "current_state": {
+        "title": "Status API saat ini",
+        "description": "Ini dapat menyebabkan beberapa inkonsistensi yang akan kami coba perbaiki secepat mungkin."
+      },
+      "future": "Di masa depan kami akan mencoba terhubung langsung dengan API SiteMinder untuk memiliki lebih banyak ketahanan dan stabilitas.",
+      "collaborate": {
+        "title": "Ingin berkolaborasi?",
+        "description": "Jika Anda tertarik untuk berkolaborasi dengan kami dalam aspek ini, silakan hubungi melalui formulir kontak kami dan kami akan mencoba memberi Anda akses ke kode."
+      }
+    },
+    "faq": {
+      "title": "Pertanyaan yang Sering Diajukan",
+      "search_placeholder": "Cari dalam pertanyaan yang sering diajukan...",
+      "no_results": "Tidak ada pertanyaan yang ditemukan sesuai dengan pencarian Anda.",
+      "items": {
+        "security": {
+          "label": "Apakah Hotelier Tools aman?",
+          "content": "Ya, semua alat kami dirancang dengan standar keamanan tertinggi. Ekstensi hanya memodifikasi antarmuka visual dan otomatisasi menggunakan kredensial akses terbatas dengan izin minimal.",
+          "links": [
+            {
+              "text": "Lihat dokumentasi teknis",
+              "url": "/documentation"
+            },
+            {
+              "text": "Hubungi dukungan teknis",
+              "url": "/contact"
+            }
+          ]
+        },
+        "easy_use": {
+          "label": "Apakah saya perlu pengetahuan teknis untuk menggunakan alat ini?",
+          "content": "Tidak, alat kami dirancang agar mudah digunakan. Ekstensi diinstal hanya dengan beberapa klik dan kami mengkonfigurasi otomatisasi untuk Anda. Kami menyediakan panduan langkah demi langkah untuk semuanya.",
+          "links": [
+            {
+              "text": "Panduan instalasi",
+              "url": "/tools/ui/instructions"
+            },
+            {
+              "text": "Lihat semua alat",
+              "url": "/tools"
+            }
+          ]
+        },
+        "compatibility": {
+          "label": "Apa yang terjadi jika Little Hotelier memperbarui platform mereka?",
+          "content": "Kami terus memantau perubahan di Little Hotelier dan memperbarui alat kami untuk mempertahankan kompatibilitas. Pembaruan dilakukan secara otomatis dan transparan bagi pengguna.",
+          "links": [
+            {
+              "text": "Lihat dokumentasi",
+              "url": "/documentation"
+            },
+            {
+              "text": "Laporkan masalah",
+              "url": "/contact"
+            }
+          ]
+        },
+        "custom_tools": {
+          "label": "Bisakah saya meminta alat khusus?",
+          "content": "Tentu saja. Kami menawarkan pengembangan alat khusus sesuai dengan kebutuhan spesifik hotel Anda. Tim teknis kami akan bekerja dengan Anda untuk menciptakan solusi yang disesuaikan.",
+          "links": [
+            {
+              "text": "Minta pengembangan khusus",
+              "url": "/contact"
+            },
+            {
+              "text": "Lihat alat yang tersedia",
+              "url": "/tools"
+            }
+          ]
+        },
+        "support": {
+          "label": "Apakah dukungan teknis tersedia?",
+          "content": "Ya, kami menawarkan dukungan teknis selama jam tertentu. Anda dapat menghubungi kami melalui email dan kami akan merespons secepat mungkin. Kami juga memiliki dokumentasi lengkap yang tersedia.",
+          "links": [
+            {
+              "text": "Hubungi dukungan",
+              "url": "/contact"
+            },
+            {
+              "text": "Lihat dokumentasi",
+              "url": "/documentation"
+            }
+          ]
+        },
+        "performance": {
+          "label": "Apakah alat-alat ini mempengaruhi kinerja Little Hotelier?",
+          "content": "Tidak, alat kami dioptimalkan agar tidak mempengaruhi kinerja platform. Ekstensi hanya memodifikasi presentasi visual dan otomatisasi bekerja secara independen di latar belakang.",
+          "links": [
+            {
+              "text": "Informasi teknis",
+              "url": "/documentation"
+            },
+            {
+              "text": "Laporkan masalah kinerja",
+              "url": "/contact"
+            }
+          ]
+        },
+        "tampermonkey": {
+          "label": "Apa itu Tampermonkey dan mengapa saya membutuhkannya?",
+          "content": "Tampermonkey adalah ekstensi browser yang memungkinkan menjalankan skrip pengguna. Ini diperlukan agar skrip peningkatan kami berfungsi dengan benar di browser Anda. Gratis dan aman.",
+          "links": [
+            {
+              "text": "Panduan instalasi Tampermonkey",
+              "url": "/tools/ui/instructions"
+            },
+            {
+              "text": "Unduh Tampermonkey",
+              "url": "https://tampermonkey.net/"
+            }
+          ]
+        },
+        "mobile_support": {
+          "label": "Apakah skrip berfungsi di mobile?",
+          "content": "Skrip peningkatan tidak berfungsi di browser mobile standar. Untuk Android, Anda dapat menggunakan Kiwi Browser dengan Tampermonkey, meskipun konfigurasinya lebih kompleks.",
+          "links": [
+            {
+              "text": "Alternatif mobile",
+              "url": "/documentation/web-scripts"
+            },
+            {
+              "text": "Dukungan mobile",
+              "url": "/contact"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "footer": {
+    "description": "Optimalkan manajemen hotel Anda dengan alat yang dirancang khusus untuk Little Hotelier dari Siteminder.",
+    "links": "Tautan",
+    "support": "Dukungan",
+    "email": "Email",
+    "faq": "FAQ",
+    "rights": "Semua hak dilindungi.",
+    "made_with": "Dibuat dengan ❤️ untuk komunitas hotel"
+  },
+  "common": {
+    "loading": "Memuat...",
+    "error": "Kesalahan",
+    "success": "Berhasil",
+    "warning": "Peringatan",
+    "info": "Informasi",
+    "close": "Tutup",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "edit": "Edit",
+    "delete": "Hapus",
+    "view": "Lihat",
+    "download": "Unduh",
+    "upload": "Unggah",
+    "search": "Cari",
+    "filter": "Filter",
+    "sort": "Urutkan",
+    "next": "Berikutnya",
+    "previous": "Sebelumnya",
+    "back": "Kembali",
+    "continue": "Lanjutkan",
+    "finish": "Selesai",
+    "yes": "Ya",
+    "no": "Tidak",
+    "ok": "OK",
+    "confirm": "Konfirmasi",
+    "free": "Gratis",
+    "backToOverview": "Kembali ke Ikhtisar"
+  },
+  "bot": {
+    "hero": {
+      "title": "Biarkan {span} Anda memeriksa dirinya sendiri",
+      "span": "Hotel",
+      "subtitle": "Bot cerdas kami bekerja 24/7 mengotomatisasi tugas-tugas kritis untuk hotel Anda"
+    },
+    "tasks": {
+      "checkout": {
+        "title": "Check-out Otomatis",
+        "description": "Pemrosesan check-out otomatis"
+      },
+      "payments": {
+        "title": "Review Pembayaran",
+        "description": "Verifikasi reservasi yang dibayar"
+      },
+      "guests": {
+        "title": "Data Tamu",
+        "description": "Konfirmasi informasi lengkap"
+      },
+      "unconfirmed": {
+        "title": "Reservasi Tidak Dikonfirmasi",
+        "description": "Deteksi pembayaran tertunda"
+      },
+      "prices": {
+        "title": "Koreksi Harga",
+        "description": "Koreksi sen otomatis"
+      },
+      "invoices": {
+        "title": "Pembuatan Faktur",
+        "description": "Faktur bulanan otomatis"
+      }
+    },
+    "details": {
+      "title": "Fitur Otomatisasi Cerdas",
+      "subtitle": "Temukan bagaimana bot kami berpikir untuk Anda, menghemat uang, waktu dan mencegah masalah sebelum terjadi",
+      "learnMore": "Pelajari Lebih Lanjut",
+      "overview": "Ikhtisar",
+      "keyFeatures": "Fitur Utama",
+      "checkout": {
+        "longDescription": "Bot kami secara otomatis memproses check-out semua reservasi pada akhir tanggal menginap mereka, menghilangkan kebutuhan untuk intervensi manual dan memastikan catatan yang akurat.",
+        "feature1": "Check-out otomatis pada akhir tanggal menginap",
+        "feature2": "Pembaruan status dan notifikasi waktu nyata",
+        "feature3": "Integrasi dengan sistem manajemen properti"
+      },
+      "payments": {
+        "longDescription": "Sistem verifikasi pembayaran komprehensif yang memantau semua saluran pembayaran dan mengidentifikasi perbedaan antara catatan Little Hotelier dan pembayaran yang benar-benar diterima.",
+        "feature1": "Verifikasi pembayaran otomatis",
+        "feature2": "Deteksi reservasi tidak dikonfirmasi",
+        "feature3": "Verifikasi pembayaran multi-saluran"
+      },
+      "guests": {
+        "longDescription": "Memastikan informasi tamu lengkap dikumpulkan dan diverifikasi sebelum check-in, termasuk semua field wajib yang diperlukan oleh peraturan lokal dan kebijakan hotel.",
+        "feature1": "Verifikasi data tamu lengkap",
+        "feature2": "Validasi field wajib",
+        "feature3": "Kepatuhan dengan peraturan lokal"
+      },
+      "unconfirmed": {
+        "longDescription": "Secara proaktif mengidentifikasi reservasi dengan masalah pembayaran atau status konfirmasi yang tidak lengkap, memungkinkan intervensi dini untuk mencegah kehilangan pendapatan dan ketidakpuasan tamu.",
+        "feature1": "Deteksi proaktif masalah pembayaran",
+        "feature2": "Sistem peringatan dini",
+        "feature3": "Perlindungan pendapatan dan pencegahan kerugian"
+      },
+      "prices": {
+        "longDescription": "Secara otomatis mengoreksi perbedaan harga untuk ketidakselarasan kecil dan kesalahan pembulatan sen yang dapat terjadi selama sinkronisasi tarif di berbagai platform pemesanan.",
+        "feature1": "Koreksi harga otomatis",
+        "feature2": "Sinkronisasi tarif multi-platform",
+        "feature3": "Optimisasi pendapatan"
+      },
+      "invoices": {
+        "longDescription": "Menghasilkan dan mengelola faktur secara otomatis dengan semua informasi fiskal yang diperlukan, memastikan kepatuhan dan mengurangi beban administratif.",
+        "feature1": "Pembuatan faktur bulanan otomatis",
+        "feature2": "Kepatuhan pajak dan persyaratan fiskal",
+        "feature3": "Menghasilkan semua faktur tanpa memeriksa satu per satu secara manual"
+      }
+    }
+  },
+  "seo": {
+    "site": {
+      "name": "Hotelier Tools",
+      "description": "Alat khusus untuk hotel yang menggunakan platform Little Hotelier dari Siteminder. Otomatisasi proses, tingkatkan antarmuka dan tingkatkan tingkat konversi dengan mencegah kesalahan.",
+      "keywords": "manajemen hotel, Little Hotelier, Siteminder, otomatisasi hotel, manajemen pemesanan, perangkat lunak hotel, ekstensi chrome, alat hotel"
+    },
+    "pages": {
+      "home": {
+        "title": "Hotelier Tools - Optimalkan manajemen hotel Anda dengan Little Hotelier",
+        "description": "Alat khusus untuk hotel yang menggunakan platform Little Hotelier dari Siteminder. Otomatisasi proses, tingkatkan antarmuka dan tingkatkan tingkat konversi dengan mencegah kesalahan.",
+        "ogTitle": "Hotelier Tools - Otomatisasi Manajemen Hotel",
+        "ogDescription": "Transformasikan operasi hotel Anda dengan alat khusus untuk Little Hotelier. Otomatisasi pemesanan, cegah kesalahan, dan tingkatkan efisiensi."
+      },
+      "tools": {
+        "title": "Alat Manajemen Hotel - Skrip Browser & Otomatisasi",
+        "description": "Temukan suite lengkap alat manajemen hotel kami termasuk ekstensi browser dan solusi otomatis untuk Little Hotelier.",
+        "ogTitle": "Alat & Otomatisasi Hotel",
+        "ogDescription": "Suite lengkap alat untuk mengoptimalkan operasi hotel Anda dengan platform Little Hotelier."
+      },
+      "chromeExtensions": {
+        "title": "Skrip Web untuk Browser - Ekstensi Little Hotelier Gratis",
+        "description": "Ekstensi browser gratis untuk meningkatkan antarmuka Little Hotelier dan merampingkan operasi hotel. Instalasi mudah dan manfaat langsung.",
+        "ogTitle": "Ekstensi Browser Gratis untuk Little Hotelier",
+        "ogDescription": "Ekstensi browser gratis untuk meningkatkan antarmuka Little Hotelier dan merampingkan operasi hotel."
+      },
+      "documentation": {
+        "title": "Dokumentasi - Panduan Setup & Penggunaan Hotelier Tools",
+        "description": "Pelajari cara menginstal dan menggunakan alat manajemen hotel kami dengan panduan langkah demi langkah dan dokumentasi komprehensif.",
+        "ogTitle": "Dokumentasi Hotelier Tools",
+        "ogDescription": "Pelajari cara menginstal dan menggunakan alat manajemen hotel kami dengan panduan langkah demi langkah dan dokumentasi."
+      },
+      "contact": {
+        "title": "Hubungi Kami - Dukungan Hotelier Tools",
+        "description": "Hubungi tim dukungan kami untuk bantuan dengan alat manajemen hotel, dukungan teknis, atau pertanyaan bisnis.",
+        "ogTitle": "Kontak Dukungan Hotelier Tools",
+        "ogDescription": "Hubungi tim dukungan kami untuk bantuan dengan alat manajemen hotel dan bantuan teknis."
+      },
+      "faq": {
+        "title": "Pertanyaan yang Sering Diajukan - Hotelier Tools",
+        "description": "Temukan jawaban untuk pertanyaan umum tentang alat manajemen hotel kami, instalasi, harga, dan dukungan teknis.",
+        "ogTitle": "FAQ - Hotelier Tools",
+        "ogDescription": "Dapatkan jawaban untuk pertanyaan yang sering diajukan tentang alat manajemen hotel dan layanan kami."
+      },
+      "marketing": {
+        "title": "Alat Marketing Hotel - Tingkatkan Pemesanan Langsung Anda | Hotelier Tools",
+        "description": "Temukan strategi dan alat marketing untuk meningkatkan pemesanan langsung hotel Anda. Kurangi komisi OTA dan tingkatkan profitabilitas dengan solusi khusus kami.",
+        "ogTitle": "Alat Marketing Hotel - Tingkatkan Pemesanan Langsung",
+        "ogDescription": "Tingkatkan pemesanan langsung dan kurangi ketergantungan OTA dengan alat dan strategi marketing hotel khusus kami."
+      }
+    }
+  },
+  "marketing": {
+    "hero": {
+      "title": "Maksimalkan",
+      "span": "Potensi Pendapatan Hotel",
+      "subtitle": "Temukan strategi dan alat yang terbukti untuk meningkatkan pemesanan langsung, mengurangi komisi OTA, dan mengoptimalkan aliran pendapatan hotel Anda.",
+      "cta_start": "Mulai Optimisasi",
+      "cta_contact": "Dapatkan Konsultasi"
+    },
+    "features": {
+      "title": "Fitur Optimisasi Pendapatan",
+      "subtitle": "Semua yang Anda butuhkan untuk meningkatkan profitabilitas hotel dan mengurangi ketergantungan pada platform pihak ketiga.",
+      "direct_bookings": {
+        "title": "Tingkatkan Pemesanan Langsung",
+        "description": "Alat dan strategi untuk mendorong lebih banyak tamu memesan langsung melalui website Anda, mengurangi biaya komisi."
+      },
+      "ota_reduction": {
+        "title": "Kurangi Ketergantungan OTA",
+        "description": "Minimalkan ketergantungan pada Online Travel Agencies dan simpan lebih banyak pendapatan di kantong Anda."
+      },
+      "revenue_optimization": {
+        "title": "Manajemen Pendapatan",
+        "description": "Strategi penetapan harga lanjutan dan alat untuk memaksimalkan pendapatan per kamar tersedia."
+      },
+      "customer_loyalty": {
+        "title": "Program Loyalitas Tamu",
+        "description": "Bangun hubungan yang langgeng dengan tamu melalui pengalaman yang dipersonalisasi dan reward loyalitas."
+      },
+      "analytics": {
+        "title": "Analitik Kinerja",
+        "description": "Wawasan detail tentang pola pemesanan, sumber pendapatan, dan peluang optimisasi."
+      },
+      "automation": {
+        "title": "Otomatisasi Pemasaran",
+        "description": "Kampanye email otomatis, manajemen media sosial, dan alur kerja komunikasi tamu."
+      }
+    },
+    "error_detection_showcase": {
+      "controls": {
+        "speed_up": "Percepat Animasi",
+        "show_all_cards": "Tampilkan Semua Kartu"
+      },
+      "cards": {
+        "customer": {
+          "title": "Pelanggan",
+          "step1": "Memilih tanggal & preferensi kamar.",
+          "step2": "Mengisi detail pribadi dalam formulir pemesanan.",
+          "step3": "Percaya reservasi selesai karena uang ditahan."
+        },
+        "payment": {
+          "title": "Pembayaran",
+          "step1": "Detail kartu bank diterima.",
+          "step2": "Uang ditahan.",
+          "step3": "Menunggu konfirmasi dari bank"
+        },
+        "hostel": {
+          "title": "Hotel",
+          "step1": "Reservasi tidak diterima",
+          "error_message": "Kamar tidak dipesan, jika pelanggan datang ke hotel tidak akan ada tempat untuk menginap.",
+          "success_message": "Reservasi dan kamar dikonfirmasi."
+        },
+        "bot": {
+          "title": "Bot",
+          "button": "Aktifkan Review Otomatis",
+          "progress_text": "Meninjau reservasi terakhir dari pemesanan langsung...",
+          "completed": "Review selesai",
+          "detected": "Terdeteksi 1 reservasi tidak lengkap."
+        },
+        "automated_alert": {
+          "title": "Peringatan Otomatis",
+          "description": "Sistem kami secara otomatis mengirim peringatan ke tim front desk tentang reservasi tidak lengkap yang memerlukan perhatian."
+        },
+        "staff_review": {
+          "title": "Review Staf",
+          "description": "Staf front desk menerima notifikasi dan meninjau reservasi yang ditandai untuk mengidentifikasi dan menyelesaikan masalah dengan cepat."
+        },
+        "contact_customer": {
+          "title": "Kontak dengan pelanggan",
+          "description": "Staf resepsionis menghubungi pelanggan untuk mengkonfirmasi atau membatalkan reservasi."
+        },
+        "resolution": {
+          "title": "Resolusi Selesai",
+          "step1": "Staf menghubungi pelanggan, menyelesaikan masalah, dan menyelesaikan proses reservasi dengan sukses.",
+          "success_message": "Pelanggan dihubungi dan dikonfirmasi. Reservasi tidak hilang dan masalah terpecahkan!"
+        }
+      }
+    },
+    "detect_incomplete_reservation": {
+      "header": {
+        "badge": "Sistem Deteksi Lanjutan",
+        "title": "Masalah Reservasi Tidak Lengkap",
+        "subtitle": "Temukan bagaimana perangkat lunak kami membantu hotel mengidentifikasi dan menyelesaikan reservasi yang tidak diselesaikan dengan benar"
+      },
+      "problem_flow": {
+        "title": "Apa yang terjadi?",
+        "steps": {
+          "interested_client": {
+            "title": "Klien Tertarik",
+            "description": "Klien menemukan hotel Anda dan memutuskan untuk membuat reservasi"
+          },
+          "complete_form": {
+            "title": "Lengkapi Formulir",
+            "description": "Mengisi semua field: tanggal, tamu, data pribadi"
+          },
+          "enter_card": {
+            "title": "Masukkan Kartu",
+            "description": "Memberikan detail perbankan dan melihat uang ditahan"
+          },
+          "problem": {
+            "badge": "MASALAH!",
+            "title": "Krisis Komunikasi",
+            "description": "Tidak mengkonfirmasi pembayaran akhir tetapi meninggalkan website"
+          }
+        }
+      },
+      "disconnect": {
+        "title": "Ketidaksesuaian",
+        "client_side": {
+          "title": "Apa yang dipercayai klien",
+          "quote": "Sempurna! Reservasi saya dikonfirmasi",
+          "points": {
+            "money_withheld": "Saya melihat uang ditahan di bank saya",
+            "completed_process": "Saya menyelesaikan seluruh proses",
+            "hotel_has_reservation": "Hotel memiliki reservasi saya"
+          }
+        },
+        "hotel_side": {
+          "title": "Kenyataan hotel",
+          "quote": "Tidak ada reservasi yang dikonfirmasi",
+          "points": {
+            "no_payment_confirmation": "Kami tidak menerima konfirmasi pembayaran",
+            "room_available": "Kamar masih tersedia",
+            "no_system_record": "Tidak ada catatan dalam sistem"
+          }
+        }
+      },
+      "solution": {
+        "title": "Solusi Kami",
+        "features": {
+          "monitoring": {
+            "title": "Pemantauan Otomatis",
+            "description": "Kami terus meninjau reservasi yang tidak lengkap"
+          },
+          "notifications": {
+            "title": "Notifikasi Cerdas",
+            "description": "Kami memperingatkan Anda ketika kami mendeteksi kasus bermasalah"
+          },
+          "resolution": {
+            "title": "Resolusi Proaktif",
+            "description": "Hubungi klien sebelum menjadi masalah"
+          }
+        },
+        "button": "Pelajari Lebih Lanjut Tentang Solusi Kami"
+      }
+    }
+  }
+}

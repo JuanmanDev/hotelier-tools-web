@@ -23,6 +23,9 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <!-- Contact Form -->
           <div class="order-2 lg:order-1">
+            <div v-if="showLangNotice" class="mb-6 p-4 rounded-lg bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-200 dark:border-yellow-700 text-yellow-800 dark:text-yellow-100 text-sm">
+              {{ t('contact.form.lang_notice') }}
+            </div>
             <ContactForm />
           </div>
 
@@ -115,7 +118,12 @@
 
 <script setup lang="ts">
 // Internationalization
-const { t } = useI18n()
+const { t, locale } = useI18n()
+
+const showLangNotice = computed(() => {
+  const code = locale.value
+  return code !== 'es' && code !== 'en' && code !== 'en-gb'
+})
 
 // SEO
 useHead({

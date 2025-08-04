@@ -74,6 +74,7 @@
 </template>
 
 <script setup lang="js">
+
 const { t, tm, rt } = useI18n()
 const route = useRoute()
 const localePath = useLocalePath()
@@ -107,6 +108,15 @@ const filteredFaqItems = computed(() => {
     item.content.toLowerCase().includes(query) ||
     item.id.toLowerCase().includes(query)
   )
+})
+
+watch(filteredFaqItems, (newFilteredItems) => {
+  // Reset opened items when search query changes
+  if (searchQuery.value && newFilteredItems.length > 0) {
+    opennedItems.value = Object.keys(filteredFaqItems.value.map((_, index) => +index))
+  } else {
+    opennedItems.value = []
+  }
 })
 
 // Default open items based on URL hash or search results

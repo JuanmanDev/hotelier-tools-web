@@ -7,11 +7,10 @@
   },
   "home": {
     "hero": {
-      "title": "Optimize your",
+      "title": "Optimise your",
       "span": "hotel management",
       "span2": "on Little Hotelier",
-
-      "subtitle": "Specialized tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate preventing errors.",
+      "subtitle": "Specialised tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate preventing errors.",
       "cta_tools": "View Tools",
       "cta_docs": "Documentation",
       "bot_button": "See All Automations",
@@ -84,7 +83,7 @@
       "steps": {
         "detection": {
           "title": "Auto Check all data",
-          "description": "Analyze reservations on Front Desk and Direct Booking with all fields"
+          "description": "Analyse reservations on Front Desk and Direct Booking with all fields"
         },
         "notification": {
           "title": "Email sent",
@@ -164,8 +163,8 @@
         "benefits": [
           "Full-width tables",
           "Commission calculator",
-          "Better data visualization",
-          "Optimized interface"
+          "Better data visualisation",
+          "Optimised interface"
         ]
       },
       "automation": {
@@ -186,7 +185,7 @@
         "benefits": [
           "Real-time alerts",
           "Automatic emails",
-          "Centralized dashboard",
+          "Centralised dashboard",
           "Detailed reports"
         ]
       }
@@ -225,7 +224,7 @@
       "monitoring": "Continuous monitoring"
     },
     "cta": {
-      "title": "Ready to optimize your hotel?",
+      "title": "Ready to optimise your hotel?",
       "subtitle": "Join the hotels that are already improving their management with our tools",
       "start_now": "Start Now",
       "talk_sales": "Talk to Sales"
@@ -235,11 +234,11 @@
     "hero": {
       "title": "Tools for {span}",
       "span": "Little Hotelier",
-      "subtitle": "Discover our complete collection of tools designed specifically to optimize your hotel management with Little Hotelier by Siteminder."
+      "subtitle": "Discover our complete collection of tools designed specifically to optimise your hotel management with Little Hotelier by Siteminder."
     },
     "showcase": {
       "title": "Our Tools",
-      "subtitle": "Discover the tools that will revolutionize your hotel management",
+      "subtitle": "Discover the tools that will revolutionise your hotel management",
       "categories": {
         "all": "All",
         "chrome_extension": "Web Scripts for Browsers",
@@ -268,7 +267,7 @@
       "tools": {
         "ui_enhancer": {
           "name": "UI Enhancer",
-          "description": "Improves the Little Hotelier interface with full-width tables and better visualization.",
+          "description": "Improves the Little Hotelier interface with full-width tables and better visualisation.",
           "features": [
             "Full-width tables",
             "Horizontal scroll removal",
@@ -286,34 +285,24 @@
             "Commission history"
           ]
         },
-        "auto_checkout": {
-          "name": "Automatic Check-out",
-          "description": "Automatically marks reservations as checked-out at the end of the date.",
+        "auto_checkout_bot": {
+          "name": "Auto Check-out Bot",
+          "description": "Automatically processes guest check-outs at the end of their stay date.",
           "features": [
             "Automatic check-out",
-            "Task scheduling",
-            "Status notifications",
-            "Activity logs"
+            "Real-time status updates",
+            "Guest notifications",
+            "Integration with property management system"
           ]
         },
-        "payment_validator": {
-          "name": "Payment Validator",
-          "description": "Checks that all reservations are fully paid.",
+        "payment_verification_bot": {
+          "name": "Payment Verification Bot",
+          "description": "Verifies payments and detects unconfirmed reservations.",
           "features": [
             "Automatic payment verification",
-            "Pending payment alerts",
-            "Financial status reports",
-            "Accounting integration"
-          ]
-        },
-        "reservation_monitor": {
-          "name": "Reservation Monitor",
-          "description": "Monitors incomplete web reservations and notifies of payment issues.",
-          "features": [
-            "Incomplete reservation detection",
-            "Email notifications",
-            "Tracking dashboard",
-            "Lost reservation recovery"
+            "Unconfirmed reservation detection",
+            "Revenue protection",
+            "Multi-channel payment verification"
           ]
         },
         "invoice_manager": {
@@ -334,7 +323,7 @@
             "Payment validation and monitoring", 
             "Unconfirmed reservation tracking",
             "Guest communication automation",
-            "Price optimization assistance",
+            "Price optimisation assistance",
             "Invoice management and validation"
           ]
         },
@@ -345,7 +334,7 @@
             "Full-width table display",
             "Better data visibility",
             "Reduced horizontal scrolling",
-            "Improved screen space utilization"
+            "Improved screen space utilisation"
           ]
         }
       },
@@ -545,7 +534,7 @@
     "hero": {
       "title": "Contact {span}",
       "span": "our team",
-      "subtitle": "Have questions about our tools? Need a custom solution? We're here to help you optimize your hotel management."
+      "subtitle": "Have questions about our tools? Need a custom solution? We're here to help you optimise your hotel management."
     },
     "form": {
       "title": "Send us a message",
@@ -560,13 +549,13 @@
       "placeholders": {
         "name": "Your full name",
         "email": "Your email address",
-        "phone": "+34 600 000 000",
+        "phone": "+44 7700 000000",
         "hotel": "Paradise Hotel",
         "subject": "Select a subject",
         "message": "Tell us how we can help you..."
       },
       "subjects": {
-        "general": "General inquiry",
+        "general": "General enquiry",
         "technical": "Technical support",
         "custom": "Custom tool",
         "automation": "Automation setup",
@@ -588,7 +577,7 @@
       "title": "Support options",
       "email": {
         "title": "Email Support",
-        "description": "Perfect for detailed inquiries and complex problems",
+        "description": "Perfect for detailed enquiries and complex problems",
         "response": "Response in less than 2 hours"
       },
       "urgent": {
@@ -598,7 +587,7 @@
       },
       "consulting": {
         "title": "Technical Consulting",
-        "description": "Personalized advice to optimize your workflow",
+        "description": "Personalised advice to optimise your workflow",
         "response": "Session scheduled within 24h"
       }
     },
@@ -628,7 +617,7 @@
         "title": "Welcome!",
         "description": "Welcome to the complete documentation of Hotelier Tools. Here you will find all the information needed to get started."
       },
-      "intro": "Hotelier Tools is a set of tools designed specifically to optimize hotel management using Little Hotelier by Siteminder.",
+      "intro": "Hotelier Tools is a set of tools designed specifically to optimise hotel management using Little Hotelier by Siteminder.",
       "what_includes": {
         "title": "What does Hotelier Tools include?",
         "web_scripts": {
@@ -636,7 +625,7 @@
           "features": [
             "User interface improvement",
             "Commission calculator",
-            "Optimized data visualization",
+            "Optimised data visualisation",
             "Additional functionalities"
           ]
         },
@@ -662,34 +651,24 @@
         "android_alternative": "Alternative for Android: Kiwi Browser is compatible with Tampermonkey, although its configuration is more complex."
       },
       "first_time": {
-        "title": "First time using our tools?",
-        "description": "We recommend starting with web improvement scripts, as they are easier to install and provide immediate benefits."
+        "title": "First time using Hotelier Tools?",
+        "recommendation": "If this is your first time using our tools, we recommend starting with the web enhancement scripts as they are easier to install and use.",
+        "view_scripts": "View available scripts",
+        "view_automations": "View available automations"
       }
     },
     "web_scripts": {
       "title": "Web enhancement scripts",
-      "intro": "Web enhancement scripts directly optimize Little Hotelier's interface in your browser, providing an improved user experience and additional functionalities.",
+      "intro": "Web enhancement scripts directly optimise Little Hotelier's interface in your browser, providing an improved user experience and additional functionalities.",
       "browser_compatibility": {
         "title": "Browser compatibility",
-        "desktop": {
-          "title": "Desktop browsers",
-          "browsers": [
-            "Chrome (recommended)",
-            "Microsoft Edge",
-            "Mozilla Firefox",
-            "Safari",
-            "Opera"
-          ]
-        },
-        "mobile": {
-          "title": "Mobile browsers",
-          "standard": "Chrome/Safari standard mobile",
-          "kiwi": "Kiwi Browser (Android)",
-          "complex_config": "*More complex configuration"
-        }
+        "chrome": "Chrome: Full compatibility",
+        "edge": "Edge: Full compatibility",
+        "firefox": "Firefox: Full compatibility",
+        "safari": "Safari: Full compatibility"
       },
       "tampermonkey_requirement": {
-        "title": "Requirement: Tampermonkey",
+        "title": "Tampermonkey requirement",
         "description": "All scripts require the Tampermonkey extension installed in your browser to work correctly."
       },
       "view_all_scripts": "View all available scripts",
@@ -704,18 +683,34 @@
       },
       "access_credentials": {
         "title": "Access credentials",
-        "intro": "To use automations, we need you to provide access credentials to your Little Hotelier account. These credentials must have limited permissions to ensure the security of your information.",
-        "create_user": "Create a user from the Little Hotelier administration panel with the following permissions:",
-        "direct_booking": {
-          "title": "Direct Booking",
-          "access": "Access: Yes",
-          "user_type": "User Type: General"
+        "intro": "To use automations, we need you to provide us with access credentials to your Little Hotelier account. These credentials must have limited permissions to ensure the security of your information.",
+        "steps": {
+          "1": {
+            "title": "Create a new user in Little Hotelier",
+            "description": "Access the user management section in Little Hotelier and create a new user with limited permissions."
+          },
+          "2": {
+            "title": "Assign the necessary permissions",
+            "description": "The user must have access to the sections where the automations will operate."
+          },
+          "3": {
+            "title": "Provide us with the credentials",
+            "description": "Send us the username and password through our secure contact form."
+          }
         },
-        "frontdesk": {
-          "title": "FrontDesk", 
-          "access": "Access: Yes",
-          "user_type": "User Type: General",
-          "permissions": "Permissions: Reservations"
+        "modules_required": {
+          "title": "Required modules",
+          "direct_booking": {
+            "title": "Direct Booking",
+            "access": "Access: Yes",
+            "user_type": "User Type: General"
+          },
+          "frontdesk": {
+            "title": "FrontDesk", 
+            "access": "Access: Yes",
+            "user_type": "User Type: General",
+            "permissions": "Permissions: Reservations"
+          }
         },
         "verify_user": "Once the user is created, make sure it works by accessing Little Hotelier with the newly created username and password.",
         "email_trick": {
@@ -919,7 +914,7 @@
     }
   },
   "footer": {
-    "description": "Optimize your hotel management with tools specifically designed for Little Hotelier by Siteminder.",
+    "description": "Optimise your hotel management with tools specifically designed for Little Hotelier by Siteminder.",
     "links": "Links",
     "support": "Support",
     "email": "Email",
@@ -995,37 +990,37 @@
       "overview": "Overview",
       "keyFeatures": "Key Features",
       "checkout": {
-        "longDescription": "Our bot automatically processes checkout for all reservations at the end of their stay date, eliminating the need for manual intervention and ensuring accurate records. The task would check the reservation is completed paid and the system has all the data required to check-out the guest.",
-        "feature1": "Automatic checkout at end of stay date",
+        "longDescription": "Our bot automatically processes checkout for all reservations at the end of their stay date, eliminating the need for manual intervention and ensuring accurate records.",
+        "feature1": "Automatic checkout at the end of stay date",
         "feature2": "Real-time status updates and notifications",
-        "feature3": "Email in case of errors or issues "
+        "feature3": "Integration with property management system"
       },
       "payments": {
-        "longDescription": "Continuously monitors payment status across all booking channels, detecting incomplete or failed payments before they become major issues for your hotel. usually happen when the client do not confirm the payment with the bank but have leave all information about the reservation.",
-        "feature1": "Continuous payment status monitoring",
-        "feature2": "Instant alerts for payment failures",
-        "feature3": "Check payments not verified and not completed"
+        "longDescription": "Comprehensive payment verification system that monitors all payment channels and identifies discrepancies between Little Hotelier records and actual payments received.",
+        "feature1": "Automatic payment verification",
+        "feature2": "Unconfirmed reservation detection",
+        "feature3": "Multi-channel payment verification"
       },
       "guests": {
-        "longDescription": "Validates that all required guest information is complete and accurate, ensuring compliance with local regulations and smooth check-in processes. Some hotels requires to have a ID card or Passport number to be able to check-in the guest.",
-        "feature1": "Mandatory field validation",
-        "feature2": "Missing information alerts",
+        "longDescription": "Ensures complete guest information is collected and verified before check-in, including all mandatory fields required by local regulations and hotel policies.",
+        "feature1": "Complete guest data verification",
+        "feature2": "Mandatory field validation",
         "feature3": "Compliance with local regulations"
       },
       "unconfirmed": {
-        "longDescription": "Proactively identifies reservations with pending bank confirmations or payment issues, allowing your team to resolve problems before guest arrival.",
-        "feature1": "Early detection of payment issues",
-        "feature2": "Automatic notification system",
+        "longDescription": "Proactively identifies reservations with payment issues or incomplete confirmation status, enabling early intervention to prevent revenue loss and guest dissatisfaction.",
+        "feature1": "Proactive payment issue detection",
+        "feature2": "Early warning system",
         "feature3": "Revenue protection and loss prevention"
       },
       "prices": {
-        "longDescription": "Automatically corrects pricing discrepancies for little misalignments and cent rounding errors that can occur during rate synchronization across different booking platforms. This usually happens when applying a discount on Direct Booking for multiples days that does not match a price per night equals on all nights. The error appears between the money paid and the total price for the reservation.",
+        "longDescription": "Automatically corrects pricing discrepancies for little misalignments and cent rounding errors that can occur during rate synchronisation across different booking platforms.",
         "feature1": "Automatic price correction",
-        "feature2": "Multi-platform rate synchronization",
-        "feature3": "Revenue optimization"
+        "feature2": "Multi-platform rate synchronisation",
+        "feature3": "Revenue optimisation"
       },
       "invoices": {
-        "longDescription": "Generates and manages invoices automatically with all required fiscal information, ensuring compliance and reducing administrative workload. We would create a folder and we would save all invoices in a folder with the month and year of the invoice, so you can easily find it later. We can also upload to OneDrive or Google Drive to have a backup of all invoices.",
+        "longDescription": "Generates and manages invoices automatically with all required fiscal information, ensuring compliance and reducing administrative workload.",
         "feature1": "Automated monthly invoice generation",
         "feature2": "Tax compliance and fiscal requirements",
         "feature3": "Generates all invoices without checking one by one manually"
@@ -1035,37 +1030,37 @@
   "seo": {
     "site": {
       "name": "Hotelier Tools",
-      "description": "Specialized tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate preventing errors.",
+      "description": "Specialised tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate preventing errors.",
       "keywords": "hotel management, Little Hotelier, Siteminder, hotel automation, booking management, hotel software, chrome extensions, hotel tools"
     },
     "pages": {
       "home": {
-        "title": "Hotelier Tools - Optimize your hotel management with Little Hotelier",
-        "description": "Specialized tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate preventing errors.",
+        "title": "Hotelier Tools - Optimise your hotel management with Little Hotelier",
+        "description": "Specialised tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate preventing errors.",
         "ogTitle": "Hotelier Tools - Hotel Management Automation",
-        "ogDescription": "Transform your hotel operations with specialized tools for Little Hotelier. Automate bookings, prevent errors, and boost efficiency."
+        "ogDescription": "Transform your hotel operations with specialised tools for Little Hotelier. Automate bookings, prevent errors, and boost efficiency."
       },
       "tools": {
         "title": "Hotel Management Tools - Browser Scripts & Automations",
-        "description": "Discover our comprehensive suite of hotel management tools including browser extensions and automated solutions for Little Hotelier platform.",
-        "ogTitle": "Hotel Management Tools & Automations",
-        "ogDescription": "Comprehensive suite of tools to optimize your hotel operations with Little Hotelier platform."
+        "description": "Discover our complete suite of hotel management tools including browser extensions and automated solutions for Little Hotelier.",
+        "ogTitle": "Hotel Tools & Automations",
+        "ogDescription": "Comprehensive suite of tools to optimise your hotel operations with Little Hotelier platform."
       },
       "chromeExtensions": {
-        "title": "Chrome Extensions for Little Hotelier - Interface Improvements",
-        "description": "Free Chrome extensions that enhance Little Hotelier interface, making daily hotel management tasks easier and more efficient.",
-        "ogTitle": "Chrome Extensions for Hotel Management",
-        "ogDescription": "Free Chrome extensions to improve Little Hotelier interface and streamline hotel operations."
+        "title": "Web Scripts for Browsers - Free Little Hotelier Extensions",
+        "description": "Free browser extensions to improve Little Hotelier interface and streamline hotel operations. Easy installation and immediate benefits.",
+        "ogTitle": "Free Browser Extensions for Little Hotelier",
+        "ogDescription": "Free browser extensions to improve Little Hotelier interface and streamline hotel operations."
       },
       "documentation": {
-        "title": "Documentation - How to Use Hotelier Tools",
-        "description": "Complete documentation and guides on how to install and use our hotel management tools for Little Hotelier platform.",
+        "title": "Documentation - Hotelier Tools Setup & Usage Guide",
+        "description": "Learn how to install and use our hotel management tools with step-by-step guides and comprehensive documentation.",
         "ogTitle": "Hotelier Tools Documentation",
         "ogDescription": "Learn how to install and use our hotel management tools with step-by-step guides and documentation."
       },
       "contact": {
         "title": "Contact Us - Hotelier Tools Support",
-        "description": "Get in touch with our support team for help with hotel management tools, technical support, or business inquiries.",
+        "description": "Get in touch with our support team for help with hotel management tools, technical support, or business enquiries.",
         "ogTitle": "Contact Hotelier Tools Support",
         "ogDescription": "Contact our support team for help with hotel management tools and technical assistance."
       },
@@ -1077,12 +1072,13 @@
       },
       "marketing": {
         "title": "Hotel Marketing Tools - Boost Your Direct Bookings | Hotelier Tools",
-        "description": "Discover marketing strategies and tools to increase direct bookings for your hotel. Reduce OTA commissions and improve profitability with our specialized solutions.",
+        "description": "Discover marketing strategies and tools to increase direct bookings for your hotel. Reduce OTA commissions and improve profitability with our specialised solutions.",
         "ogTitle": "Hotel Marketing Tools - Boost Direct Bookings",
-        "ogDescription": "Reduce OTA commissions and increase direct bookings with our specialized hotel marketing tools and strategies."
+        "ogDescription": "Increase direct bookings and reduce OTA dependency with our specialised hotel marketing tools and strategies."
       }
     }
   },
+  
   "marketing": {
     "hero": {
       "title": "Maximize Your Hotel's",

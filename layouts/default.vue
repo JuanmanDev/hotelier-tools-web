@@ -215,11 +215,23 @@ const currentLocale = computed({
   }
 })
 
+const flagIcons: Record<string, string> = {
+  es: 'i-twemoji-flag-spain',
+  en: 'i-twemoji-flag-united-states',
+  'en-gb': 'i-twemoji-flag-united-kingdom',
+  fr: 'i-twemoji-flag-france',
+  de: 'i-twemoji-flag-germany',
+  it: 'i-twemoji-flag-italy',
+  pt: 'i-twemoji-flag-brazil',
+  th: 'i-twemoji-flag-thailand',
+  id: 'i-twemoji-flag-indonesia',
+}
+
 const localeOptions = computed(() => 
   locales.value.map((l: any) => ({
     label: l.name,
     value: l.code,
-    icon: l.code === 'es' ? 'i-twemoji-flag-spain' : 'i-twemoji-flag-united-states',
+    icon: flagIcons[l.code] || 'i-twemoji-globe-showing-europe-africa',
     onSelect: () => changeLocale(l.code)
   }))
 )
