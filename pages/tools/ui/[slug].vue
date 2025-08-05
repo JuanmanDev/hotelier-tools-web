@@ -84,10 +84,22 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 const route = useRoute()
 const { locale } = useI18n()
 const localePath = useLocalePath()
-const newLocal = `/scripts/${locale.value}/${route.params.slug}`
-const { data: doc } = await useAsyncData(() => queryCollection('content').path(newLocal).first())
+
+const { data: doc, refresh } = await useAsyncData(
+  () => `ui-script-${route.params.slug}-${locale.value}`,
+  () => {
+    const contentPath = `/scripts/${locale.value}/${route.params.slug}`
+    return queryCollection('content').path(contentPath).first()
+  }
+)
+
+// Watch for locale changes and reload data
+watch(locale, async () => {
+  await refresh()
+})
 
 if (!doc.value) {
+  const newLocal = `/scripts/${locale.value}/${route.params.slug}`
   throw createError({ statusCode: 404, statusMessage: 'Script not found' + ' - ' + newLocal })
 }
 
