@@ -131,11 +131,6 @@ watch(locale, async () => {
   await refresh()
 })
 
-if (!doc.value) {
-  const newLocal = `/scripts/${locale.value}/${route.params.slug}`
-  throw createError({ statusCode: 404, statusMessage: 'Script not found' + ' - ' + newLocal })
-}
-
 // Features data
 const features = [
   {
