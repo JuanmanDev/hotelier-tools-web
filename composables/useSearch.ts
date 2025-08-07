@@ -5,58 +5,38 @@ export interface SearchResult {
   type: 'page' | 'bot' | 'tool'
   language: string
   excerpt?: string
+  content?: string
 }
 
 export const useSearch = () => {
   const { locale } = useI18n()
+  const { t } = useI18n()
   
   // Reactive state
   const isSearchOpen = ref(false)
   const searchQuery = ref('')
   const searchResults = ref<SearchResult[]>([])
   const isLoading = ref(false)
-  const allContent = ref<SearchResult[]>([])
+  const allContent = ref<Record<string, SearchResult>>({})
 
   // Preload all content on first use
   const preloadContent = async () => {
-    if (allContent.value.length > 0) return
+    if (Object.keys(allContent.value).length > 0) return
     
     try {
       isLoading.value = true
       
-      // Get all content for current language
-      const { data: content } = await $fetch('/api/_content/query', {
-        method: 'GET',
-        query: {
-          _params: JSON.stringify({
-            where: [
-              { _path: { $contains: `/${locale.value}` } },
-              { _draft: { $ne: true } }
-            ]
-          })
-        }
-      }).catch(() => ({ data: [] }))
+      // Get search data from our API endpoint
+      const searchData = await $fetch('/api/generate-search-data', {
+        query: { locale: locale.value }
+      })
 
-      // Transform content to search results
-      if (Array.isArray(content)) {
-        allContent.value = content.map(item => ({
-          title: item.title || extractTitleFromPath(item._path!),
-          description: item.description || extractDescriptionFromContent(item.body),
-          url: generateUrlFromPath(item._path!),
-          type: determineContentType(item._path!),
-          language: locale.value,
-          excerpt: extractExcerpt(item.body)
-        }))
-      }
-
-      // Also add static pages
-      const staticPages = getStaticPages()
-      allContent.value.push(...staticPages)
+      allContent.value = searchData
       
     } catch (error) {
       console.error('Error preloading content:', error)
       // If content fails to load, just use static pages
-      allContent.value = getStaticPages()
+      allContent.value = getStaticPagesAsRecord(t)
     } finally {
       isLoading.value = false
     }
@@ -70,12 +50,14 @@ export const useSearch = () => {
     }
 
     const lowercaseQuery = query.toLowerCase()
+    const contentArray = Object.values(allContent.value)
     
-    searchResults.value = allContent.value.filter(item => {
+    searchResults.value = contentArray.filter(item => {
       return (
         item.title.toLowerCase().includes(lowercaseQuery) ||
         item.description?.toLowerCase().includes(lowercaseQuery) ||
-        item.excerpt?.toLowerCase().includes(lowercaseQuery)
+        item.excerpt?.toLowerCase().includes(lowercaseQuery) ||
+        item.content?.toLowerCase().includes(lowercaseQuery)
       )
     }).slice(0, 10) // Limit to 10 results
   }
@@ -87,94 +69,48 @@ export const useSearch = () => {
 
   // Watch for locale changes to reload content
   watch(locale, () => {
-    allContent.value = []
+    allContent.value = {}
     preloadContent()
   })
 
-  // Utility functions
-  const extractTitleFromPath = (path: string): string => {
-    const segments = path.split('/')
-    const filename = segments[segments.length - 1]
-    return filename.replace('.md', '').replace('-', ' ').replace('_', ' ')
-      .split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
-  }
-
-  const extractDescriptionFromContent = (body: any): string => {
-    if (!body) return ''
-    
-    // Try to find first paragraph or text content
-    const findTextContent = (node: any): string => {
-      if (typeof node === 'string') return node
-      if (Array.isArray(node)) {
-        return node.map(findTextContent).join(' ')
-      }
-      if (node?.children) {
-        return findTextContent(node.children)
-      }
-      return ''
-    }
-    
-    const text = findTextContent(body)
-    return text.slice(0, 200) + (text.length > 200 ? '...' : '')
-  }
-
-  const extractExcerpt = (body: any): string => {
-    return extractDescriptionFromContent(body).slice(0, 150)
-  }
-
-  const determineContentType = (path: string): 'page' | 'bot' | 'tool' => {
-    if (path.includes('/bot/')) return 'bot'
-    if (path.includes('/tools/')) return 'tool'
-    return 'page'
-  }
-
-  const generateUrlFromPath = (path: string): string => {
-    // Remove language prefix and convert to route
-    const segments = path.split('/').filter(Boolean)
-    if (segments[0] === locale.value) {
-      segments.shift()
-    }
-    
-    if (segments[0] === 'bot') {
-      return `/tools/bot/${segments[segments.length - 1].replace('.md', '')}`
-    }
-    
-    return `/${segments.join('/')}`
-  }
-
-  const getStaticPages = (): SearchResult[] => {
-    const { t } = useI18n()
-    
-    return [
+  // Utility functions for fallback static pages
+  const getStaticPagesAsRecord = (tFunction: any): Record<string, SearchResult> => {
+    const pages = [
       {
-        title: t('nav.home'),
-        description: t('home.hero.subtitle'),
+        title: tFunction('nav.home'),
+        description: tFunction('home.hero.subtitle'),
         url: '/',
-        type: 'page',
+        type: 'page' as const,
         language: locale.value
       },
       {
-        title: t('nav.tools'),
-        description: 'Herramientas disponibles para optimizar tu gestión hotelera',
+        title: tFunction('nav.tools'),
+        description: 'Available tools to optimize your hotel management',
         url: '/tools',
-        type: 'page',
+        type: 'page' as const,
         language: locale.value
       },
       {
-        title: t('nav.documentation'),
-        description: 'Documentación completa sobre todas las herramientas',
+        title: tFunction('nav.documentation'),
+        description: 'Complete documentation about all tools',
         url: '/documentation',
-        type: 'page',
+        type: 'page' as const,
         language: locale.value
       },
       {
-        title: t('nav.contact'),
-        description: 'Ponte en contacto con nuestro equipo de soporte',
+        title: tFunction('nav.contact'),
+        description: 'Get in touch with our support team',
         url: '/contact',
-        type: 'page',
+        type: 'page' as const,
         language: locale.value
       }
     ]
+    
+    const record: Record<string, SearchResult> = {}
+    pages.forEach(page => {
+      record[page.url] = page
+    })
+    return record
   }
 
   // Control functions
