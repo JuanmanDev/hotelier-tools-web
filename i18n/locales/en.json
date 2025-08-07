@@ -994,6 +994,7 @@
       "learnMore": "Learn More",
       "overview": "Overview",
       "keyFeatures": "Key Features",
+      "documentation": "Documentation",
       "checkout": {
         "longDescription": "Our bot automatically processes checkout for all reservations at the end of their stay date, eliminating the need for manual intervention and ensuring accurate records. The task would check the reservation is completed paid and the system has all the data required to check-out the guest.",
         "feature1": "Automatic checkout at end of stay date",

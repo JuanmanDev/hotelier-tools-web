@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@nuxt/content', 'vue3-carousel-nuxt', '@nuxtjs/seo'],
+  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@nuxt/content', 'vue3-carousel-nuxt', '@nuxtjs/seo', '@nuxtjs/mdc'],
 
   // Nuxt Content configuration
   content: {
