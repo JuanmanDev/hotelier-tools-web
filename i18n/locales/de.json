@@ -3,7 +3,24 @@
     "home": "Startseite",
     "tools": "Tools",
     "documentation": "Dokumentation",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "search": "Suchen"
+  },
+  "search": {
+    "placeholder": "Tools, Dokumentation und Inhalte suchen...",
+    "loading": "Suche läuft...",
+    "noResults": "Keine Ergebnisse gefunden",
+    "tryDifferent": "Versuchen Sie es mit anderen Suchbegriffen",
+    "welcome": "Alle Inhalte durchsuchen",
+    "hint": "Tippen Sie, um in Tools, Dokumentation und Anleitungen zu suchen",
+    "navigate": "zum Navigieren",
+    "select": "zum Auswählen",
+    "close": "zum Schließen",
+    "types": {
+      "page": "Seite",
+      "bot": "Automatisierung",
+      "tool": "Tool"
+    }
   },
   "home": {
     "hero": {
