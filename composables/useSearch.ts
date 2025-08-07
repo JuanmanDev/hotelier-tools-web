@@ -33,10 +33,20 @@ export const useSearch = () => {
 
       allContent.value = searchData
       
+      // If there's already a search query, perform search with the loaded data
+      if (searchQuery.value.trim()) {
+        performSearch(searchQuery.value)
+      }
+      
     } catch (error) {
       console.error('Error preloading content:', error)
       // If content fails to load, just use static pages
       allContent.value = getStaticPagesAsRecord(t)
+      
+      // If there's already a search query, perform search with fallback data
+      if (searchQuery.value.trim()) {
+        performSearch(searchQuery.value)
+      }
     } finally {
       isLoading.value = false
     }
@@ -46,6 +56,12 @@ export const useSearch = () => {
   const performSearch = (query: string) => {
     if (!query.trim()) {
       searchResults.value = []
+      return
+    }
+
+    // If content is not loaded yet, trigger loading
+    if (Object.keys(allContent.value).length === 0) {
+      preloadContent()
       return
     }
 
