@@ -1,5 +1,4 @@
 ---
----
 title: "Botão Extra de Impressão de Fatura"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/reservationDetails/showExtraButtonPrintInvoice.user.js"
 category: "Reservation Details"
