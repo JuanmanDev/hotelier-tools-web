@@ -1,7 +1,5 @@
 <template>
   <UModal v-model:open="internalIsOpen" :transition="false">
-    AAA
-        <template #content>
     <div class="p-0" @keydown.esc="closeSearch">
       <!-- Search Header -->
       <div class="flex items-center gap-3 p-4 border-b border-gray-200 dark:border-gray-700">
@@ -120,7 +118,6 @@
         </div>
       </div>
     </div>
-    </template>
   </UModal>
 </template>
 
