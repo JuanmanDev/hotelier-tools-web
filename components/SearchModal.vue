@@ -198,17 +198,13 @@ const showShortcutHint = ref(true)
 
 onMounted(() => {
   // Detect if device has a physical keyboard
-  console.log('[SearchModal] Detecting keyboard type...')
   const isTouchOnly = 'ontouchstart' in window && !window.matchMedia('(pointer:fine)').matches
   showShortcutHint.value = !isTouchOnly
   if (showShortcutHint.value) {
     const isMac = navigator.platform.toLowerCase().includes('mac')
     shortcutLabel.value = isMac ? '⌘K' : 'Ctrl+K'
-    console.log(`[SearchModal] Shortcut to open search: ${shortcutLabel.value}`)
-  } else {
-    console.log('[SearchModal] No physical keyboard detected, shortcut hidden')
   }
-
+  
   // Attach global keyboard shortcut to open search
   const handleShortcut = (e: KeyboardEvent) => {
     const isMac = navigator.platform.toLowerCase().includes('mac')

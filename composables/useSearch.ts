@@ -9,12 +9,12 @@ export interface SearchResult {
 }
 
 export const useSearch = () => {
-  // Reactive state
-  const isSearchOpen = ref(false)
-  const searchQuery = ref('')
-  const searchResults = ref<SearchResult[]>([])
-  const isLoading = ref(false)
-  const allContent = ref<Record<string, Record<string, SearchResult>>>({}) // Cache by locale
+  // Use Nuxt's state management for singleton behavior
+  const isSearchOpen = useState('search.isOpen', () => false)
+  const searchQuery = useState('search.query', () => '')
+  const searchResults = useState<SearchResult[]>('search.results', () => [])
+  const isLoading = useState('search.loading', () => false)
+  const allContent = useState<Record<string, Record<string, SearchResult>>>('search.content', () => ({}))
 
   const { locale } = useI18n()
 
@@ -32,7 +32,6 @@ export const useSearch = () => {
       isLoading.value = true
       
       // Get current locale and log for debugging
-      const currentLocale = locale.value
       console.log('Search: Using locale:', currentLocale)
       
       // Get search data from our API endpoint
@@ -86,9 +85,6 @@ export const useSearch = () => {
     const lowercaseQuery = query.toLowerCase()
     const contentArray = Object.values(allContent.value[currentLocale]) as SearchResult[]
     
-    console.log('Search: Filtering results for locale:', currentLocale)
-    console.log('Search: Total content items:', contentArray.length)
-    
     searchResults.value = contentArray.filter((item: SearchResult) => {
       // First filter by locale to ensure we only show content for current language
       const matchesLocale = item.language === currentLocale
@@ -108,7 +104,7 @@ export const useSearch = () => {
   }
 
   // Watch for search query changes
-  watch(searchQuery, (newQuery) => {
+  watch(() => searchQuery.value, (newQuery) => {
     performSearch(newQuery)
   })
 
@@ -165,7 +161,9 @@ export const useSearch = () => {
 
   // Control functions
   const openSearch = () => {
+    console.log('Search: Opening search modal')
     isSearchOpen.value = true
+    console.log('Search: Preloading content', isSearchOpen.value)
     preloadContent()
   }
 
@@ -182,10 +180,10 @@ export const useSearch = () => {
 
   return {
     // State
-    isSearchOpen: readonly(isSearchOpen),
+    isSearchOpen,
     searchQuery,
-    searchResults: readonly(searchResults),
-    isLoading: readonly(isLoading),
+    searchResults,
+    isLoading,
     
     // Actions
     openSearch,
