@@ -1,5 +1,5 @@
 ---
-title: "Compact UI Reservation Details"
+title: "Antarmuka Kompak Detail Reservasi"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/reservationDetails/compactUIReservationDetails.user.js"
 category: "Reservation Details"
 images:

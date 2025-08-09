@@ -1,5 +1,5 @@
 ---
-title: "Extra Invoice Print Button"
+title: "ปุ่มพิมพ์ใบแจ้งหนี้เพิ่มเติม"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/reservationDetails/showExtraButtonPrintInvoice.user.js"
 category: "Reservation Details"
 images:

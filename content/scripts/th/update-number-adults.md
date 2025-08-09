@@ -1,5 +1,5 @@
 ---
-title: "Update Number Adults"
+title: "อัปเดตจำนวนผู้ใหญ่"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/reservationDetails/updateNumberAdults.user.js"
 category: "Reservation Details"
 images:

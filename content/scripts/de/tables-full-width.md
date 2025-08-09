@@ -1,5 +1,5 @@
 ---
-title: "Tables Full Width"
+title: "Tabellen in voller Breite"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/directBooking/fullWidthTablets.user.js"
 category: "Direct Booking"
 images:

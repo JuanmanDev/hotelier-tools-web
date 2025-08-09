@@ -1,5 +1,5 @@
 ---
-title: "Improve Style For Touch Screens"
+title: "Migliora Stile per Schermi Touch"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/reservationDetails/improveStyleForTouchScreens.user.js"
 category: "Reservation Details"
 images:

@@ -1,5 +1,5 @@
 ---
-title: "Auto Refresh On Inactivity"
+title: "Atualização Automática por Inatividade"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/autoRefreshOnInactivity.user.js"
 category: "General"
 images:

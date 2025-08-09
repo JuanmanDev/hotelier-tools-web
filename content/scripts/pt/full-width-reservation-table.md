@@ -1,5 +1,5 @@
 ---
-title: "Full Width Reservation Table"
+title: "Tabela de Reservas em Largura Total"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/fullWidthReservationTable.user.js"
 category: "Front Desk"
 images:

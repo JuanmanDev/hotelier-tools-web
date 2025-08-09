@@ -1,5 +1,5 @@
 ---
-title: "Update Payment Link Button"
+title: "Mettre à Jour le Bouton de Lien de Paiement"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/reservationDetails/updateGeneratePaymentLinkButton.user.js"
 category: "Reservation Details"
 images:

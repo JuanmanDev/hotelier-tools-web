@@ -1,5 +1,5 @@
 ---
-title: "Bank Transfer Email Button"
+title: "Botão de E-mail de Transferência Bancária"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/reservationDetails/showExtraButtonEmailBank.user.js"
 category: "Reservation Details"
 images:

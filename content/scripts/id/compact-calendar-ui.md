@@ -1,5 +1,5 @@
 ---
-title: "Compact Calendar UI"
+title: "Antarmuka Kalender Kompak"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/compactCalendarUI.user.js"
 category: "Calendar View"
 images:

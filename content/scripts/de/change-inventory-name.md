@@ -1,5 +1,5 @@
 ---
-title: "Change Inventory Name"
+title: "Inventarname ändern"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/directBooking/changeInventoryName.user.js"
 category: "Direct Booking"
 images:

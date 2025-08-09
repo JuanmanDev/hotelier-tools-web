@@ -1,5 +1,5 @@
 ---
-title: "Prices Display"
+title: "Preisanzeige"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/prices.user.js"
 category: "Calendar View"
 images:

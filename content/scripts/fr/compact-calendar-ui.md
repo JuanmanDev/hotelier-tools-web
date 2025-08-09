@@ -1,5 +1,5 @@
 ---
-title: "Compact Calendar UI"
+title: "Interface Calendrier Compacte"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/compactCalendarUI.user.js"
 category: "Calendar View"
 images:

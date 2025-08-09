@@ -1,5 +1,5 @@
 ---
-title: "Show Booking.com Commissions"
+title: "Tampilkan Komisi Booking.com"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/reservationDetails/showComissions.user.js"
 category: "Reservation Details"
 images:

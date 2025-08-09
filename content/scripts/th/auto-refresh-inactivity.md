@@ -1,5 +1,5 @@
 ---
-title: "Auto Refresh On Inactivity"
+title: "รีเฟรชอัตโนมัติเมื่อไม่ได้ใช้งาน"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/autoRefreshOnInactivity.user.js"
 category: "General"
 images:

@@ -1,5 +1,5 @@
 ---
-title: "Compact UI Reservation Details"
+title: "Interface Compacta para Detalhes da Reserva"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/reservationDetails/compactUIReservationDetails.user.js"
 category: "Reservation Details"
 images:

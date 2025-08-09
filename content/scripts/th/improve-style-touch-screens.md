@@ -1,5 +1,5 @@
 ---
-title: "Improve Style For Touch Screens"
+title: "ปรับปรุงสไตล์สำหรับหน้าจอสัมผัส"
 github: "https://github.com/JuanmanDev/TampermonkeyLittleHotelier/blob/main/frontdesk/reservationDetails/improveStyleForTouchScreens.user.js"
 category: "Reservation Details"
 images:
