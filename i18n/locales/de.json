@@ -3,7 +3,24 @@
     "home": "Startseite",
     "tools": "Tools",
     "documentation": "Dokumentation",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "search": "Suchen"
+  },
+  "search": {
+    "placeholder": "Tools, Dokumentation und Inhalte suchen...",
+    "loading": "Suche läuft...",
+    "noResults": "Keine Ergebnisse gefunden",
+    "tryDifferent": "Versuchen Sie es mit anderen Suchbegriffen",
+    "welcome": "Alle Inhalte durchsuchen",
+    "hint": "Tippen Sie, um in Tools, Dokumentation und Anleitungen zu suchen",
+    "navigate": "zum Navigieren",
+    "select": "zum Auswählen",
+    "close": "zum Schließen",
+    "types": {
+      "page": "Seite",
+      "bot": "Automatisierung",
+      "tool": "Tool"
+    }
   },
   "home": {
     "hero": {
@@ -989,6 +1006,7 @@
       "learnMore": "Mehr Erfahren",
       "overview": "Überblick",
       "keyFeatures": "Hauptfunktionen",
+      "documentation": "Dokumentation",
       "checkout": {
         "longDescription": "Unser Bot verarbeitet automatisch den Check-out aller Reservierungen am Ende ihres Aufenthaltsdatums, eliminiert die Notwendigkeit manueller Eingriffe und gewährleistet genaue Aufzeichnungen.",
         "feature1": "Automatischer Check-out am Ende des Aufenthaltsdatums",

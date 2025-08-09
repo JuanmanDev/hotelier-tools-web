@@ -119,21 +119,4 @@ watch(filteredFaqItems, (newFilteredItems) => {
   }
 })
 
-// Default open items based on URL hash or search results
-// const defaultOpenItems = computed(() => {
-//   // If there's a search query, open all matching items
-//   if (searchQuery.value) {
-//     return filteredFaqItems.value.map((_, index) => index)
-//   }
-  
-//   // If there's a hash in the URL, try to open that specific item
-//   if (route.hash) {
-//     const hashId = route.hash.replace('#', '')
-//     const itemIndex = filteredFaqItems.value.findIndex(item => item.id === hashId)
-//     return itemIndex >= 0 ? [itemIndex] : []
-//   }
-  
-//   return []
-// })
-
 </script>

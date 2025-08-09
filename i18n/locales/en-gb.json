@@ -684,6 +684,7 @@
       "access_credentials": {
         "title": "Access credentials",
         "intro": "To use automations, we need you to provide us with access credentials to your Little Hotelier account. These credentials must have limited permissions to ensure the security of your information.",
+        "create_user": "Create a user from the Little Hotelier administration panel with the following permissions:",
         "steps": {
           "1": {
             "title": "Create a new user in Little Hotelier",
@@ -698,19 +699,16 @@
             "description": "Send us the username and password through our secure contact form."
           }
         },
-        "modules_required": {
-          "title": "Required modules",
-          "direct_booking": {
-            "title": "Direct Booking",
-            "access": "Access: Yes",
-            "user_type": "User Type: General"
-          },
-          "frontdesk": {
-            "title": "FrontDesk", 
-            "access": "Access: Yes",
-            "user_type": "User Type: General",
-            "permissions": "Permissions: Reservations"
-          }
+        "direct_booking": {
+          "title": "Direct Booking",
+          "access": "Access: Yes",
+          "user_type": "User Type: General"
+        },
+        "frontdesk": {
+          "title": "FrontDesk", 
+          "access": "Access: Yes",
+          "user_type": "User Type: General",
+          "permissions": "Permissions: Reservations"
         },
         "verify_user": "Once the user is created, make sure it works by accessing Little Hotelier with the newly created username and password.",
         "email_trick": {

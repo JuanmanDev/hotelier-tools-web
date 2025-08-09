@@ -3,7 +3,24 @@
     "home": "Início",
     "tools": "Ferramentas",
     "documentation": "Documentação",
-    "contact": "Contato"
+    "contact": "Contato",
+    "search": "Pesquisar"
+  },
+  "search": {
+    "placeholder": "Pesquisar ferramentas, documentação e conteúdo...",
+    "loading": "Pesquisando...",
+    "noResults": "Nenhum resultado encontrado",
+    "tryDifferent": "Tente pesquisar com palavras-chave diferentes",
+    "welcome": "Pesquisar através de todo o conteúdo",
+    "hint": "Digite para pesquisar através de ferramentas, documentação e guias",
+    "navigate": "para navegar",
+    "select": "para selecionar",
+    "close": "para fechar",
+    "types": {
+      "page": "Página",
+      "bot": "Automação",
+      "tool": "Ferramenta"
+    }
   },
   "home": {
     "hero": {
@@ -772,6 +789,7 @@
       },
       "first_time": {
         "title": "Primeira vez com Hotelier Tools?",
+        "description": "Se é a primeira vez que usa as nossas ferramentas, aqui está um guia para começar da melhor forma.",
         "recommendation": "Se é a primeira vez que usa as nossas ferramentas, recomendamos começar com os scripts de melhoria web pois são mais fáceis de instalar e usar.",
         "view_scripts": "Ver scripts disponíveis",
         "view_automations": "Ver automações disponíveis"
@@ -785,7 +803,16 @@
         "chrome": "Chrome: Compatibilidade completa",
         "edge": "Edge: Compatibilidade completa",
         "firefox": "Firefox: Compatibilidade completa",
-        "safari": "Safari: Compatibilidade completa"
+        "safari": "Safari: Compatibilidade completa",
+        "desktop": {
+          "title": "Navegadores Desktop"
+        },
+        "mobile": {
+          "title": "Navegadores Móveis",
+          "standard": "Navegadores padrão não suportados",
+          "kiwi": "Kiwi Browser (Android): Suportado",
+          "complex_config": "Configuração complexa necessária"
+        }
       },
       "tampermonkey_requirement": {
         "title": "Requisito Tampermonkey",
@@ -819,19 +846,16 @@
             "description": "Envie-nos o nome de utilizador e password através do nosso formulário de contato seguro."
           }
         },
-        "modules_required": {
-          "title": "Módulos necessários",
-          "direct_booking": {
-            "title": "Reserva Direta",
-            "access": "Acesso: Sim",
-            "user_type": "Tipo de Utilizador: Geral"
-          },
-          "frontdesk": {
-            "title": "FrontDesk",
-            "access": "Acesso: Sim",
-            "user_type": "Tipo de Utilizador: Geral",
-            "permissions": "Permissões: Reservas"
-          }
+        "direct_booking": {
+          "title": "Reserva Direta",
+          "access": "Acesso: Sim",
+          "user_type": "Tipo de Utilizador: Geral"
+        },
+        "frontdesk": {
+          "title": "FrontDesk",
+          "access": "Acesso: Sim",
+          "user_type": "Tipo de Utilizador: Geral",
+          "permissions": "Permissões: Ver reservas, editar reservas"
         },
         "verify_user": "Uma vez criado o utilizador, certifique-se de que funciona fazendo login no Little Hotelier com o nome de utilizador e password recém-criados.",
         "email_trick": {

@@ -3,7 +3,24 @@
     "home": "Home",
     "tools": "Tools",
     "documentation": "Documentation",
-    "contact": "Contact"
+    "contact": "Contact",
+    "search": "Search"
+  },
+  "search": {
+    "placeholder": "Search tools, documentation and content...",
+    "loading": "Searching...",
+    "noResults": "No results found",
+    "tryDifferent": "Try searching with different keywords",
+    "welcome": "Search through all content",
+    "hint": "Type to search through tools, documentation, and guides",
+    "navigate": "to navigate",
+    "select": "to select",
+    "close": "to close",
+    "types": {
+      "page": "Page",
+      "bot": "Automation",
+      "tool": "Tool"
+    }
   },
   "home": {
     "hero": {
@@ -347,117 +364,117 @@
             "Reduced horizontal scrolling",
             "Improved screen space utilization"
           ]
+        },
+        "compact_calendar_ui": {
+          "name": "Compact Calendar",
+          "description": "Optimizes calendar layout by reducing unnecessary spacing and improving date visibility.",
+          "features": [
+            "Single-row date display",
+            "Reduced room type height",
+            "More information on screen",
+            "Cleaner calendar layout"
+          ]
+        },
+        "prices_display": {
+          "name": "Calendar Price Display",
+          "description": "Shows pricing information directly in the calendar view for better visibility.",
+          "features": [
+            "Visible prices in calendar",
+            "Better pricing overview",
+            "Quick rate comparison",
+            "Improved pricing workflow"
+          ]
+        },
+        "touch_screen_optimization": {
+          "name": "Touch Screen Optimization",
+          "description": "Optimizes the interface for touch screen devices and tablets.",
+          "features": [
+            "Touch-friendly controls",
+            "Improved button sizes",
+            "Better mobile experience",
+            "Tablet optimization"
+          ]
+        },
+        "guest_management_bot": {
+          "name": "Guest Management Bot",
+          "description": "Automates guest-related tasks and communications.",
+          "features": [
+            "Guest information processing",
+            "Automated check-in assistance",
+            "Guest communication templates",
+            "Preference tracking"
+          ]
+        },
+        "pricing_optimization_bot": {
+          "name": "Pricing Assistant Bot",
+          "description": "Helps optimize room pricing and revenue management.",
+          "features": [
+            "Rate optimization suggestions",
+            "Demand-based pricing",
+            "Competitor analysis",
+            "Revenue forecasting"
+          ]
+        },
+        "ui_scripts_collection": {
+          "name": "UI Enhancement Scripts",
+          "description": "Collection of browser scripts to improve Little Hotelier interface with full-width tables and better visualization.",
+          "features": [
+            "Full-width tables",
+            "Horizontal scroll removal",
+            "Visible prices in calendar",
+            "Cleaner and more functional interface"
+          ]
+        },
+        "booking_commission_calculator": {
+          "name": "Commission Calculator",
+          "description": "Automatically calculates Booking.com commissions on each reservation.",
+          "features": [
+            "Automatic commission calculation",
+            "Real-time information",
+            "Profitability analysis",
+            "Commission history"
+          ]
+        },
+        "auto_checkout_bot": {
+          "name": "Auto Checkout Bot",
+          "description": "Automatically processes guest checkouts at the end of their stay date.",
+          "features": [
+            "Automatic check-out",
+            "Task scheduling",
+            "Status notifications",
+            "Activity logs"
+          ]
+        },
+        "payment_validator_bot": {
+          "name": "Payment Validator Bot",
+          "description": "Monitors and validates guest payments to prevent booking issues.",
+          "features": [
+            "Automatic payment verification",
+            "Pending payment alerts",
+            "Financial status reports",
+            "Accounting integration"
+          ]
+        },
+        "unconfirmed_reservations_bot": {
+          "name": "Unconfirmed Reservations Monitor",
+          "description": "Tracks and manages unconfirmed reservations to prevent lost bookings.",
+          "features": [
+            "Incomplete reservation detection",
+            "Email notifications",
+            "Tracking dashboard",
+            "Lost reservation recovery"
+          ]
+        },
+        "invoice_management_bot": {
+          "name": "Invoice Management Bot",
+          "description": "Automates invoice generation and management processes.",
+          "features": [
+            "Bulk invoice download",
+            "Mandatory field validation",
+            "Automatic summaries",
+            "Missing field notifications"
+          ]
         }
-      },
-      "compact_calendar_ui": {
-        "name": "Compact Calendar",
-        "description": "Optimizes calendar layout by reducing unnecessary spacing and improving date visibility.",
-        "features": [
-          "Single-row date display",
-          "Reduced room type height",
-          "More information on screen",
-          "Cleaner calendar layout"
-        ]
-      },
-      "prices_display": {
-        "name": "Calendar Price Display",
-        "description": "Shows pricing information directly in the calendar view for better visibility.",
-        "features": [
-          "Visible prices in calendar",
-          "Better pricing overview",
-          "Quick rate comparison",
-          "Improved pricing workflow"
-        ]
-      },
-      "touch_screen_optimization": {
-        "name": "Touch Screen Optimization",
-        "description": "Optimizes the interface for touch screen devices and tablets.",
-        "features": [
-          "Touch-friendly controls",
-          "Improved button sizes",
-          "Better mobile experience",
-          "Tablet optimization"
-        ]
-      },
-      "guest_management_bot": {
-        "name": "Guest Management Bot",
-        "description": "Automates guest-related tasks and communications.",
-        "features": [
-          "Guest information processing",
-          "Automated check-in assistance",
-          "Guest communication templates",
-          "Preference tracking"
-        ]
-      },
-      "pricing_optimization_bot": {
-        "name": "Pricing Assistant Bot",
-        "description": "Helps optimize room pricing and revenue management.",
-        "features": [
-          "Rate optimization suggestions",
-          "Demand-based pricing",
-          "Competitor analysis",
-          "Revenue forecasting"
-        ]
-      },
-      "ui_scripts_collection": {
-        "name": "UI Enhancement Scripts",
-        "description": "Collection of browser scripts to improve Little Hotelier interface with full-width tables and better visualization.",
-        "features": [
-          "Full-width tables",
-          "Horizontal scroll removal",
-          "Visible prices in calendar",
-          "Cleaner and more functional interface"
-        ]
-      },
-      "booking_commission_calculator": {
-        "name": "Commission Calculator",
-        "description": "Automatically calculates Booking.com commissions on each reservation.",
-        "features": [
-          "Automatic commission calculation",
-          "Real-time information",
-          "Profitability analysis",
-          "Commission history"
-        ]
-      },
-      "auto_checkout_bot": {
-        "name": "Auto Checkout Bot",
-        "description": "Automatically processes guest checkouts at the end of their stay date.",
-        "features": [
-          "Automatic check-out",
-          "Task scheduling",
-          "Status notifications",
-          "Activity logs"
-        ]
-      },
-      "payment_validator_bot": {
-        "name": "Payment Validator Bot",
-        "description": "Monitors and validates guest payments to prevent booking issues.",
-        "features": [
-          "Automatic payment verification",
-          "Pending payment alerts",
-          "Financial status reports",
-          "Accounting integration"
-        ]
-      },
-      "unconfirmed_reservations_bot": {
-        "name": "Unconfirmed Reservations Monitor",
-        "description": "Tracks and manages unconfirmed reservations to prevent lost bookings.",
-        "features": [
-          "Incomplete reservation detection",
-          "Email notifications",
-          "Tracking dashboard",
-          "Lost reservation recovery"
-        ]
-      },
-      "invoice_management_bot": {
-        "name": "Invoice Management Bot",
-        "description": "Automates invoice generation and management processes.",
-        "features": [
-          "Bulk invoice download",
-          "Mandatory field validation",
-          "Automatic summaries",
-          "Missing field notifications"
-        ]
       }
     },
     "categories": {

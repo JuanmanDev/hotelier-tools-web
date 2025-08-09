@@ -3,7 +3,24 @@
     "home": "Home",
     "tools": "Strumenti",
     "documentation": "Documentazione",
-    "contact": "Contatto"
+    "contact": "Contatto",
+    "search": "Cerca"
+  },
+  "search": {
+    "placeholder": "Cerca strumenti, documentazione e contenuti...",
+    "loading": "Cercando...",
+    "noResults": "Nessun risultato trovato",
+    "tryDifferent": "Prova a cercare con parole chiave diverse",
+    "welcome": "Cerca attraverso tutti i contenuti",
+    "hint": "Digita per cercare attraverso strumenti, documentazione e guide",
+    "navigate": "per navigare",
+    "select": "per selezionare",
+    "close": "per chiudere",
+    "types": {
+      "page": "Pagina",
+      "bot": "Automazione",
+      "tool": "Strumento"
+    }
   },
   "home": {
     "hero": {
@@ -772,6 +789,7 @@
       },
       "first_time": {
         "title": "Prima volta con Hotelier Tools?",
+        "description": "Raccomandiamo di iniziare con gli script di miglioramento web, poiché sono più facili da installare e forniscono benefici immediati.",
         "recommendation": "Se è la prima volta che usi i nostri strumenti, raccomandiamo di iniziare con gli script di miglioramento web poiché sono più facili da installare e usare.",
         "view_scripts": "Visualizza script disponibili",
         "view_automations": "Visualizza automazioni disponibili"
@@ -782,6 +800,22 @@
       "intro": "Gli script di miglioramento web ottimizzano direttamente l'interfaccia di Little Hotelier nel tuo browser, fornendo un'esperienza utente migliorata e funzionalità aggiuntive.",
       "browser_compatibility": {
         "title": "Compatibilità browser",
+        "desktop": {
+          "title": "Browser desktop",
+          "browsers": [
+            "Chrome (consigliato)",
+            "Microsoft Edge",
+            "Mozilla Firefox",
+            "Safari",
+            "Opera"
+          ]
+        },
+        "mobile": {
+          "title": "Browser mobile",
+          "standard": "Chrome/Safari mobile standard",
+          "kiwi": "Kiwi Browser (Android)",
+          "complex_config": "*Configurazione più complessa"
+        },
         "chrome": "Chrome: Compatibilità completa",
         "edge": "Edge: Compatibilità completa",
         "firefox": "Firefox: Compatibilità completa",
@@ -819,19 +853,16 @@
             "description": "Inviaci username e password tramite il nostro modulo di contatto sicuro."
           }
         },
-        "modules_required": {
-          "title": "Moduli richiesti",
-          "direct_booking": {
-            "title": "Prenotazione Diretta",
-            "access": "Accesso: Sì",
-            "user_type": "Tipo Utente: Generale"
-          },
-          "frontdesk": {
-            "title": "FrontDesk",
-            "access": "Accesso: Sì",
-            "user_type": "Tipo Utente: Generale",
-            "permissions": "Permessi: Prenotazioni"
-          }
+        "direct_booking": {
+          "title": "Prenotazione Diretta",
+          "access": "Accesso: Sì",
+          "user_type": "Tipo Utente: Generale"
+        },
+        "frontdesk": {
+          "title": "FrontDesk",
+          "access": "Accesso: Sì",
+          "user_type": "Tipo Utente: Generale",
+          "permissions": "Permessi: Prenotazioni"
         },
         "verify_user": "Una volta creato l'utente, assicurati che funzioni accedendo a Little Hotelier con il nome utente e password appena creati.",
         "email_trick": {
@@ -1110,6 +1141,7 @@
       "learnMore": "Scopri di Più",
       "overview": "Panoramica",
       "keyFeatures": "Caratteristiche Principali",
+      "documentation": "Documentazione",
       "checkout": {
         "longDescription": "Il nostro bot elabora automaticamente il check-out di tutte le prenotazioni alla fine della loro data di soggiorno, eliminando la necessità di intervento manuale e garantendo registrazioni accurate.",
         "feature1": "Check-out automatico alla fine della data di soggiorno",

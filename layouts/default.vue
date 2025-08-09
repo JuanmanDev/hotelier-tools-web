@@ -37,8 +37,22 @@
               {{ $t('nav.contact') }}
             </NuxtLink>
           </div>
-          <!-- Theme Toggle, Language Selector & Mobile Menu -->
+          <!-- Theme Toggle, Language Selector, Search & Mobile Menu -->
           <div class="flex items-center space-x-4">
+            <!-- Search Button -->
+            <UButton
+              icon="i-heroicons-magnifying-glass"
+              size="sm"
+              color="gray"
+              variant="ghost"
+              :aria-label="$t('nav.search')"
+              class="hidden sm:flex"
+              @click="openSearch"
+            >
+              <span class="sr-only sm:not-sr-only ml-2">{{ $t('nav.search') }}</span>
+              <UKbd v-if="showShortcutHint" class="hidden lg:inline-flex ml-2">{{ shortcutLabel }}</UKbd>
+            </UButton>
+            
             <!-- Language Selector -->
             <UDropdownMenu
               @change="changeLocale"
@@ -80,6 +94,15 @@
         <!-- Mobile Navigation -->
         <div v-show="isMenuOpen" class="md:hidden py-4 border-t border-gray-200 dark:border-gray-800">
           <div class="space-y-2">
+            <!-- Mobile Search Button -->
+            <button 
+              @click="openSearch"
+              class="flex w-full items-center px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
+            >
+              <UIcon name="i-heroicons-magnifying-glass" class="h-5 w-5 mr-3" />
+              {{ $t('nav.search') }}
+            </button>
+            
             <NuxtLink 
               :to="localePath('/')"
               class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
@@ -195,6 +218,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- Search Modal -->
+    <SearchModal />
   </div>
 </template>
 
@@ -202,6 +228,19 @@
 const colorMode = useColorMode()
 const isDark = computed(() => colorMode.value === 'dark')
 const isMenuOpen = ref(false)
+
+// Search functionality
+const { isSearchOpen, openSearch } = useSearch()
+const { initializeShortcuts, cleanupShortcuts } = useKeyboardShortcuts()
+
+// Initialize keyboard shortcuts
+onMounted(() => {
+  initializeShortcuts()
+})
+
+onUnmounted(() => {
+  cleanupShortcuts()
+})
 
 // Internationalization
 const { locale, locales } = useI18n()
@@ -252,5 +291,25 @@ function changeLocale(newLocale: string) {
 // Close mobile menu on route change
 watch(() => useRoute().path, () => {
   isMenuOpen.value = false
+})
+
+// Close mobile menu when search opens
+watch(() => isSearchOpen, () => {
+  isMenuOpen.value = false
+})
+
+const showShortcutHint = ref(true)
+const shortcutLabel = ref('')
+
+onMounted(() => {
+  const isTouchOnly = 'ontouchstart' in window && !window.matchMedia('(pointer:fine)').matches
+  showShortcutHint.value = !isTouchOnly
+  const isMac = navigator.platform.toLowerCase().includes('mac')
+  shortcutLabel.value = isMac ? '⌘K' : 'Ctrl+K'
+  if (showShortcutHint.value) {
+    console.log(`[Layout] Shortcut to open search: ${shortcutLabel.value}`)
+  } else {
+    console.log('[Layout] No physical keyboard detected, shortcut hidden')
+  }
 })
 </script>

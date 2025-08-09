@@ -59,8 +59,8 @@
             <div class="space-y-2">
               <ul class="space-y-1">
                 <li 
-                  v-for="feature in tool.features.slice(0, 3)"
-                  :key="feature"
+                  v-for="feature in (Array.isArray(tool.features) ? tool.features.slice(0, 3) : [])"
+                  :key="typeof feature === 'string' ? feature : feature?.body?.static || JSON.stringify(feature)"
                   class="flex items-center text-sm text-gray-600 dark:text-gray-300"
                 >
                   <UIcon name="i-heroicons-check" class="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
@@ -69,7 +69,7 @@
                     : feature?.body?.static || (feature?.body || feature || '') }}
                 </li>
                 <li 
-                  v-if="tool.features.length > 3"
+                  v-if="Array.isArray(tool.features) && tool.features.length > 3"
                   class="text-sm text-gray-500 dark:text-gray-400"
                 >
                   {{ t('tools.showcase.card.more_features', { count: tool.features.length - 3 }) }}
@@ -173,7 +173,7 @@ const tools = toolsData.map(toolData => {
     name: t(`${translationKey}.name`),
     description: t(`${translationKey}.description`),
     category: toolData.category,
-    features: tm(`${translationKey}.features`) || [],
+    features: Array.isArray(tm(`${translationKey}.features`)) ? tm(`${translationKey}.features`) : [],
     icon: toolData.icon,
     status: toolData.status,
     linkTo: toolData.linkTo

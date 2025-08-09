@@ -3,7 +3,24 @@
     "home": "Beranda",
     "tools": "Alat",
     "documentation": "Dokumentasi",
-    "contact": "Kontak"
+    "contact": "Kontak",
+    "search": "Cari"
+  },
+  "search": {
+    "placeholder": "Cari alat, dokumentasi dan konten...",
+    "loading": "Mencari...",
+    "noResults": "Tidak ada hasil ditemukan",
+    "tryDifferent": "Coba cari dengan kata kunci yang berbeda",
+    "welcome": "Cari melalui semua konten",
+    "hint": "Ketik untuk mencari melalui alat, dokumentasi, dan panduan",
+    "navigate": "untuk navigasi",
+    "select": "untuk memilih",
+    "close": "untuk menutup",
+    "types": {
+      "page": "Halaman",
+      "bot": "Otomatisasi",
+      "tool": "Alat"
+    }
   },
   "home": {
     "hero": {
@@ -709,19 +726,16 @@
             "description": "Kirimkan nama pengguna dan kata sandi melalui formulir kontak aman kami."
           }
         },
-        "modules_required": {
-          "title": "Modul yang diperlukan",
-          "direct_booking": {
-            "title": "Pemesanan Langsung",
-            "access": "Akses: Ya",
-            "user_type": "Jenis Pengguna: Umum"
-          },
-          "frontdesk": {
-            "title": "FrontDesk",
-            "access": "Akses: Ya",
-            "user_type": "Jenis Pengguna: Umum",
-            "permissions": "Izin: Reservasi"
-          }
+        "direct_booking": {
+          "title": "Pemesanan Langsung",
+          "access": "Akses: Ya",
+          "user_type": "Jenis Pengguna: Umum"
+        },
+        "frontdesk": {
+          "title": "FrontDesk",
+          "access": "Akses: Ya",
+          "user_type": "Jenis Pengguna: Umum",
+          "permissions": "Izin: Reservasi"
         },
         "verify_user": "Setelah pengguna dibuat, pastikan itu berfungsi dengan mengakses Little Hotelier dengan nama pengguna dan kata sandi yang baru dibuat.",
         "email_trick": {

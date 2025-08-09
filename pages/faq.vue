@@ -54,17 +54,56 @@ setSEO('faq')
 
 // Set structured data and breadcrumbs
 onMounted(() => {
-  // Set FAQ structured data - you would need to define the FAQ items
+  // Set FAQ structured data using proper translation keys
   const faqItems = [
     {
-      question: t('faq.items.0.question'),
-      answer: t('faq.items.0.answer')
+      question: t('documentation.faq.items.security.label'),
+      answer: t('documentation.faq.items.security.content')
     },
     {
-      question: t('faq.items.1.question'),
-      answer: t('faq.items.1.answer')
+      question: t('documentation.faq.items.easy_use.label'),
+      answer: t('documentation.faq.items.easy_use.content')
+    },
+    {
+      question: t('documentation.faq.items.compatibility.label'),
+      answer: t('documentation.faq.items.compatibility.content')
+    },
+    {
+      question: t('documentation.faq.items.custom_tools.label'),
+      answer: t('documentation.faq.items.custom_tools.content')
+    },
+    {
+      question: t('documentation.faq.items.support.label'),
+      answer: t('documentation.faq.items.support.content')
+    },
+    {
+      question: t('documentation.faq.items.performance.label'),
+      answer: t('documentation.faq.items.performance.content')
+    },
+    {
+      question: t('documentation.faq.items.script_updates.label'),
+      answer: t('documentation.faq.items.script_updates.content')
+    },
+    {
+      question: t('documentation.faq.items.mobile_support.label'),
+      answer: t('documentation.faq.items.mobile_support.content')
+    },
+    {
+      question: t('documentation.faq.items.automation_permissions.label'),
+      answer: t('documentation.faq.items.automation_permissions.content')
+    },
+    {
+      question: t('documentation.faq.items.disable_automation.label'),
+      answer: t('documentation.faq.items.disable_automation.content')
+    },
+    {
+      question: t('documentation.faq.items.pricing.label'),
+      answer: t('documentation.faq.items.pricing.content')
+    },
+    {
+      question: t('documentation.faq.items.data_privacy.label'),
+      answer: t('documentation.faq.items.data_privacy.content')
     }
-    // Add more FAQ items as needed
   ]
   
   setFAQStructuredData(faqItems)
