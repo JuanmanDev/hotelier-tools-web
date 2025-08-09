@@ -1,3 +1,5 @@
+import { useState } from "nuxt/app"
+
 export interface SearchResult {
   title: string
   description?: string
@@ -17,6 +19,7 @@ export const useSearch = () => {
   const allContent = useState<Record<string, Record<string, SearchResult>>>('search.content', () => ({}))
 
   const { locale } = useI18n()
+  const { $fetch } = useNuxtApp()
 
   // Preload all content on first use
   const preloadContent = async () => {
@@ -31,39 +34,54 @@ export const useSearch = () => {
     try {
       isLoading.value = true
       
-      // Get current locale and log for debugging
-      console.log('Search: Using locale:', currentLocale)
+      let searchData: Record<string, SearchResult> = {}
       
-      // Get search data from our API endpoint
-      const searchData = await $fetch('/api/generate-search-data', {
-        query: { locale: currentLocale }
-      })
+      // In development, use API for real-time updates
+      if (process.env.NODE_ENV === 'development') {
+        console.log(`🔍 Search: Fetching data from API for locale: ${currentLocale}`)
+        try {
+          searchData = await $fetch(`/api/generate-search-data?locale=${currentLocale}`) || {}
+        } catch (apiError) {
+          console.warn('Search: API call failed, falling back to static files:', apiError)
+          // Fallback to static files if API fails
+          const response = await fetch(`/data/search/${currentLocale}.json`)
+          if (response.ok) {
+            searchData = await response.json()
+          }
+        }
+      } else {
+        // In production, use static files
+        console.log(`📁 Search: Loading static data for locale: ${currentLocale}`)
+        const response = await fetch(`/data/search/${currentLocale}.json`)
+        
+        if (!response.ok) {
+          throw new Error(`Failed to fetch search data: ${response.statusText}`)
+        }
+        
+        searchData = await response.json()
+      }
 
       // Store content for this specific locale
       if (!allContent.value[currentLocale]) {
         allContent.value[currentLocale] = {}
       }
-      allContent.value[currentLocale] = searchData
+      allContent.value[currentLocale] = searchData || {}
       
-      // If there's already a search query, perform search with the loaded data
-      if (searchQuery.value.trim()) {
-        performSearch(searchQuery.value)
-      }
-      
+      console.log(`✅ Search: Data loaded for locale: ${currentLocale}, Items: ${Object.keys(searchData || {}).length}`)
     } catch (error) {
-      console.error('Error preloading content:', error)
+      console.error('Error loading search data:', error)
       // If content fails to load, just use static pages for this locale
       if (!allContent.value[currentLocale]) {
         allContent.value[currentLocale] = {}
       }
       allContent.value[currentLocale] = getStaticPagesAsRecord(currentLocale)
-      
-      // If there's already a search query, perform search with fallback data
-      if (searchQuery.value.trim()) {
-        performSearch(searchQuery.value)
-      }
     } finally {
       isLoading.value = false
+    }
+    
+    // If there's already a search query, perform search with the loaded data
+    if (searchQuery.value.trim()) {
+      performSearch(searchQuery.value)
     }
   }
 
@@ -100,15 +118,14 @@ export const useSearch = () => {
       return matchesLocale && matchesQuery
     }).slice(0, 10) // Limit to 10 results
     
-    console.log('Search: Filtered results count:', searchResults.value.length)
   }
 
-  // Watch for search query changes
+  // Watch for search query changes - handled in search component instead
   watch(() => searchQuery.value, (newQuery) => {
     performSearch(newQuery)
   })
 
-  // Watch for locale changes and clear current results to force reload
+  // Watch for locale changes and clear current results to force reload - handled in search component
   watch(locale, (newLocale) => {
     console.log('Search: Locale changed to:', newLocale)
     // Clear search results when locale changes
@@ -174,7 +191,10 @@ export const useSearch = () => {
   }
 
   const navigateToResult = (result: SearchResult) => {
-    navigateTo(result.url)
+    // Use window.location for navigation to avoid import issues
+    if (typeof window !== 'undefined') {
+      navigateTo(result.url)
+    }
     closeSearch()
   }
 
