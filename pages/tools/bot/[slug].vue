@@ -187,9 +187,6 @@ useHead({
 @reference "../../../assets/css/main.css";
 
 
-main {
-  @apply pt-7 px-5;
-}
 
 main :deep(h1) {
   @apply text-green-600;

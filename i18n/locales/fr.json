@@ -726,19 +726,16 @@
             "description": "Envoyez-nous le nom d'utilisateur et le mot de passe via notre formulaire de contact sécurisé."
           }
         },
-        "modules_required": {
-          "title": "Modules requis",
-          "direct_booking": {
-            "title": "Réservation Directe",
-            "access": "Accès : Oui",
-            "user_type": "Type d'Utilisateur : Général"
-          },
-          "frontdesk": {
-            "title": "FrontDesk",
-            "access": "Accès : Oui",
-            "user_type": "Type d'Utilisateur : Général",
-            "permissions": "Permissions : Réservations"
-          }
+        "direct_booking": {
+          "title": "Réservation Directe",
+          "access": "Accès : Oui",
+          "user_type": "Type d'Utilisateur : Général"
+        },
+        "frontdesk": {
+          "title": "FrontDesk",
+          "access": "Accès : Oui",
+          "user_type": "Type d'Utilisateur : Général",
+          "permissions": "Permissions : Réservations"
         },
         "verify_user": "Une fois l'utilisateur créé, assurez-vous qu'il fonctionne en accédant à Little Hotelier avec le nom d'utilisateur et le mot de passe nouvellement créés.",
         "email_trick": {
@@ -961,6 +958,7 @@
       "learnMore": "En Savoir Plus",
       "overview": "Aperçu",
       "keyFeatures": "Fonctionnalités Clés",
+      "documentation": "Documentation",
       "checkout": {
         "longDescription": "Notre bot traite automatiquement le check-out de toutes les réservations à la fin de leur date de séjour, éliminant le besoin d'intervention manuelle et assurant des enregistrements précis.",
         "feature1": "Check-out automatique à la fin de la date de séjour",

@@ -50,7 +50,7 @@
               @click="openSearch"
             >
               <span class="sr-only sm:not-sr-only ml-2">{{ $t('nav.search') }}</span>
-              <UKbd class="hidden lg:inline-flex ml-2">⌘K</UKbd>
+              <UKbd v-if="showShortcutHint" class="hidden lg:inline-flex ml-2">{{ shortcutLabel }}</UKbd>
             </UButton>
             
             <!-- Language Selector -->
@@ -230,7 +230,7 @@ const isDark = computed(() => colorMode.value === 'dark')
 const isMenuOpen = ref(false)
 
 // Search functionality
-const { openSearch } = useSearch()
+const { isSearchOpen, openSearch } = useSearch()
 const { initializeShortcuts, cleanupShortcuts } = useKeyboardShortcuts()
 
 // Initialize keyboard shortcuts
@@ -294,7 +294,22 @@ watch(() => useRoute().path, () => {
 })
 
 // Close mobile menu when search opens
-watch(() => openSearch, () => {
+watch(() => isSearchOpen, () => {
   isMenuOpen.value = false
+})
+
+const showShortcutHint = ref(true)
+const shortcutLabel = ref('')
+
+onMounted(() => {
+  const isTouchOnly = 'ontouchstart' in window && !window.matchMedia('(pointer:fine)').matches
+  showShortcutHint.value = !isTouchOnly
+  const isMac = navigator.platform.toLowerCase().includes('mac')
+  shortcutLabel.value = isMac ? '⌘K' : 'Ctrl+K'
+  if (showShortcutHint.value) {
+    console.log(`[Layout] Shortcut to open search: ${shortcutLabel.value}`)
+  } else {
+    console.log('[Layout] No physical keyboard detected, shortcut hidden')
+  }
 })
 </script>

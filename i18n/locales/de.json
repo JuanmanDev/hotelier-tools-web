@@ -1006,6 +1006,7 @@
       "learnMore": "Mehr Erfahren",
       "overview": "Überblick",
       "keyFeatures": "Hauptfunktionen",
+      "documentation": "Dokumentation",
       "checkout": {
         "longDescription": "Unser Bot verarbeitet automatisch den Check-out aller Reservierungen am Ende ihres Aufenthaltsdatums, eliminiert die Notwendigkeit manueller Eingriffe und gewährleistet genaue Aufzeichnungen.",
         "feature1": "Automatischer Check-out am Ende des Aufenthaltsdatums",

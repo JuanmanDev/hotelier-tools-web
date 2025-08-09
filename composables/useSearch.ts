@@ -9,29 +9,42 @@ export interface SearchResult {
 }
 
 export const useSearch = () => {
-  const { locale } = useI18n()
-  const { t } = useI18n()
-  
   // Reactive state
   const isSearchOpen = ref(false)
   const searchQuery = ref('')
   const searchResults = ref<SearchResult[]>([])
   const isLoading = ref(false)
-  const allContent = ref<Record<string, SearchResult>>({})
+  const allContent = ref<Record<string, Record<string, SearchResult>>>({}) // Cache by locale
+
+  const { locale } = useI18n()
 
   // Preload all content on first use
   const preloadContent = async () => {
-    if (Object.keys(allContent.value).length > 0) return
+    const currentLocale = locale.value
+    
+    // Check if we already have content for this specific locale
+    if (allContent.value[currentLocale] && Object.keys(allContent.value[currentLocale]).length > 0) {
+      console.log(`Search: Content already preloaded for locale: ${currentLocale}`)
+      return
+    }
     
     try {
       isLoading.value = true
       
+      // Get current locale and log for debugging
+      const currentLocale = locale.value
+      console.log('Search: Using locale:', currentLocale)
+      
       // Get search data from our API endpoint
       const searchData = await $fetch('/api/generate-search-data', {
-        query: { locale: locale.value }
+        query: { locale: currentLocale }
       })
 
-      allContent.value = searchData
+      // Store content for this specific locale
+      if (!allContent.value[currentLocale]) {
+        allContent.value[currentLocale] = {}
+      }
+      allContent.value[currentLocale] = searchData
       
       // If there's already a search query, perform search with the loaded data
       if (searchQuery.value.trim()) {
@@ -40,8 +53,11 @@ export const useSearch = () => {
       
     } catch (error) {
       console.error('Error preloading content:', error)
-      // If content fails to load, just use static pages
-      allContent.value = getStaticPagesAsRecord(t)
+      // If content fails to load, just use static pages for this locale
+      if (!allContent.value[currentLocale]) {
+        allContent.value[currentLocale] = {}
+      }
+      allContent.value[currentLocale] = getStaticPagesAsRecord(currentLocale)
       
       // If there's already a search query, perform search with fallback data
       if (searchQuery.value.trim()) {
@@ -59,23 +75,36 @@ export const useSearch = () => {
       return
     }
 
-    // If content is not loaded yet, trigger loading
-    if (Object.keys(allContent.value).length === 0) {
+    const currentLocale = locale.value
+    
+    // If content is not loaded yet for this locale, trigger loading
+    if (!allContent.value[currentLocale] || Object.keys(allContent.value[currentLocale]).length === 0) {
       preloadContent()
       return
     }
 
     const lowercaseQuery = query.toLowerCase()
-    const contentArray = Object.values(allContent.value)
+    const contentArray = Object.values(allContent.value[currentLocale]) as SearchResult[]
     
-    searchResults.value = contentArray.filter(item => {
-      return (
+    console.log('Search: Filtering results for locale:', currentLocale)
+    console.log('Search: Total content items:', contentArray.length)
+    
+    searchResults.value = contentArray.filter((item: SearchResult) => {
+      // First filter by locale to ensure we only show content for current language
+      const matchesLocale = item.language === currentLocale
+      
+      // Then filter by search query
+      const matchesQuery = (
         item.title.toLowerCase().includes(lowercaseQuery) ||
         item.description?.toLowerCase().includes(lowercaseQuery) ||
         item.excerpt?.toLowerCase().includes(lowercaseQuery) ||
         item.content?.toLowerCase().includes(lowercaseQuery)
       )
+      
+      return matchesLocale && matchesQuery
     }).slice(0, 10) // Limit to 10 results
+    
+    console.log('Search: Filtered results count:', searchResults.value.length)
   }
 
   // Watch for search query changes
@@ -83,42 +112,47 @@ export const useSearch = () => {
     performSearch(newQuery)
   })
 
-  // Watch for locale changes to reload content
-  watch(locale, () => {
-    allContent.value = {}
-    preloadContent()
+  // Watch for locale changes and clear current results to force reload
+  watch(locale, (newLocale) => {
+    console.log('Search: Locale changed to:', newLocale)
+    // Clear search results when locale changes
+    searchResults.value = []
+    // If there's a current search query, re-perform search with new locale
+    if (searchQuery.value.trim()) {
+      performSearch(searchQuery.value)
+    }
   })
 
   // Utility functions for fallback static pages
-  const getStaticPagesAsRecord = (tFunction: any): Record<string, SearchResult> => {
+  const getStaticPagesAsRecord = (locale: string = 'en'): Record<string, SearchResult> => {
     const pages = [
       {
-        title: tFunction('nav.home'),
-        description: tFunction('home.hero.subtitle'),
+        title: 'Home',
+        description: 'Join the hotels that are already improving their management with our tools',
         url: '/',
         type: 'page' as const,
-        language: locale.value
+        language: locale
       },
       {
-        title: tFunction('nav.tools'),
+        title: 'Tools',
         description: 'Available tools to optimize your hotel management',
         url: '/tools',
         type: 'page' as const,
-        language: locale.value
+        language: locale
       },
       {
-        title: tFunction('nav.documentation'),
+        title: 'Documentation',
         description: 'Complete documentation about all tools',
         url: '/documentation',
         type: 'page' as const,
-        language: locale.value
+        language: locale
       },
       {
-        title: tFunction('nav.contact'),
+        title: 'Contact',
         description: 'Get in touch with our support team',
         url: '/contact',
         type: 'page' as const,
-        language: locale.value
+        language: locale
       }
     ]
     
@@ -142,8 +176,7 @@ export const useSearch = () => {
   }
 
   const navigateToResult = (result: SearchResult) => {
-    const localePath = useLocalePath()
-    navigateTo(localePath(result.url))
+    navigateTo(result.url)
     closeSearch()
   }
 

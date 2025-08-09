@@ -1,5 +1,7 @@
 <template>
-  <UModal v-model="internalIsOpen" :transition="false">
+  <UModal v-model:open="internalIsOpen" :transition="false">
+    AAA
+        <template #content>
     <div class="p-0" @keydown.esc="closeSearch">
       <!-- Search Header -->
       <div class="flex items-center gap-3 p-4 border-b border-gray-200 dark:border-gray-700">
@@ -16,7 +18,9 @@
           @keydown.up.prevent="highlightPrevious"
           @keydown.enter.prevent="selectHighlighted"
         />
-        <UKbd>⌘K</UKbd>
+        <UKbd v-if="showShortcutHint" class="hidden lg:inline-flex ml-2">
+          {{ shortcutLabel }}
+        </UKbd>
       </div>
 
       <!-- Search Results -->
@@ -116,10 +120,13 @@
         </div>
       </div>
     </div>
+    </template>
   </UModal>
 </template>
 
 <script setup lang="ts">
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+
 const {
   isSearchOpen,
   searchQuery,
@@ -128,6 +135,8 @@ const {
   closeSearch,
   navigateToResult
 } = useSearch()
+
+const shortcutLabel = ref('')
 
 // Internal reactive model for UModal
 const internalIsOpen = computed({
@@ -145,16 +154,6 @@ const resultsContainer = ref<HTMLElement>()
 
 // Highlighted result for keyboard navigation
 const highlightedIndex = ref(-1)
-
-// Focus input when modal opens
-watch(isSearchOpen, (isOpen) => {
-  if (isOpen) {
-    nextTick(() => {
-      searchInput.value?.focus()
-      highlightedIndex.value = -1
-    })
-  }
-})
 
 // Reset highlighted index when search results change
 watch(searchResults, () => {
@@ -194,6 +193,41 @@ const scrollToHighlighted = () => {
     })
   })
 }
+
+// Detect keyboard type and log shortcut
+const showShortcutHint = ref(true)
+
+onMounted(() => {
+  // Detect if device has a physical keyboard
+  console.log('[SearchModal] Detecting keyboard type...')
+  const isTouchOnly = 'ontouchstart' in window && !window.matchMedia('(pointer:fine)').matches
+  showShortcutHint.value = !isTouchOnly
+  if (showShortcutHint.value) {
+    const isMac = navigator.platform.toLowerCase().includes('mac')
+    shortcutLabel.value = isMac ? '⌘K' : 'Ctrl+K'
+    console.log(`[SearchModal] Shortcut to open search: ${shortcutLabel.value}`)
+  } else {
+    console.log('[SearchModal] No physical keyboard detected, shortcut hidden')
+  }
+
+  // Attach global keyboard shortcut to open search
+  const handleShortcut = (e: KeyboardEvent) => {
+    const isMac = navigator.platform.toLowerCase().includes('mac')
+    if (
+      ((isMac && e.metaKey && e.key.toLowerCase() === 'k') ||
+      (!isMac && e.ctrlKey && e.key.toLowerCase() === 'k')) &&
+      !isSearchOpen.value
+    ) {
+      e.preventDefault()
+      isSearchOpen.value = true
+    }
+  }
+  window.addEventListener('keydown', handleShortcut)
+  // Clean up
+  onUnmounted(() => {
+    window.removeEventListener('keydown', handleShortcut)
+  })
+})
 
 // Utility functions for styling
 const getTypeIcon = (type: string): string => {
