@@ -44,3 +44,6 @@ dist
 .vercel
 
 .data/content/contents.sqlite
+
+# Generated search data (built during build phase)
+public/data/search/
