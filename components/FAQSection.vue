@@ -127,7 +127,6 @@ onBeforeMount(() => {
   const hash = window.location.hash;
   console.log('Current hash:', hash);
   if (hash.startsWith('#faq-item-')) {
-    // debugger;
     const faqKey = hash.replace('#faq-item-', '')
     const itemIndex = faqItems.value.findIndex(item => item.id === faqKey)
     if (itemIndex >= 0) {
