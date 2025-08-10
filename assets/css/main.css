@@ -116,3 +116,7 @@
   --breakpoint-5xl: 160rem;
   --breakpoint-6xl: 180rem;
 }
+
+html {
+  scroll-padding-top: 4rem;
+}

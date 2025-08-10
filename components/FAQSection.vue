@@ -46,7 +46,7 @@
           :id="'faq-item-' + item.id"
         >
           <div class="flex items-center">
-            <UBadge :label="(index + 1).toString()" color="blue" variant="solid" class="mr-3" size="md" />
+            <UBadge :label="item.index.toString()" color="blue" variant="solid" class="mr-3" size="md" />
             <span class="text-left">{{ item.label }}</span>
           </div>
         </UButton>
@@ -74,6 +74,8 @@
 </template>
 
 <script setup lang="js">
+import { onMounted, onUpdated } from 'vue'
+
 
 const { t, tm, rt } = useI18n()
 const route = useRoute()
@@ -88,8 +90,9 @@ const faqItems = computed(() => {
   const items = tm('documentation.faq.items')
   if (!items || typeof items !== 'object') return []
   
-  return Object.entries(items).map(([key, item]) => ({
+  return Object.entries(items).map(([key, item], index) => ({
     id: key,
+    index: index + 1,
     label: rt(item.label),
     content: rt(item.content),
     links: item.links || []
@@ -116,6 +119,20 @@ watch(filteredFaqItems, (newFilteredItems) => {
     opennedItems.value = Object.keys(filteredFaqItems.value.map((_, index) => +index))
   } else {
     opennedItems.value = []
+  }
+})
+
+onBeforeMount(() => {
+  if (import.meta.server) return;
+  const hash = window.location.hash;
+  console.log('Current hash:', hash);
+  if (hash.startsWith('#faq-item-')) {
+    const faqKey = hash.replace('#faq-item-', '')
+    const itemIndex = faqItems.value.findIndex(item => item.id === faqKey)
+    if (itemIndex >= 0) {
+      opennedItems.value.push(itemIndex + "")
+      console.log('Opened FAQ item:', itemIndex);
+    }
   }
 })
 
