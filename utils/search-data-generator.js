@@ -110,6 +110,9 @@ export async function generateSearchDataForLocale(locale) {
     // Add tool data
     const toolContent = await getToolContent(locale)
 
+    // Add FAQ items
+    const faqItems = await getFAQContent(locale)
+
     // Add locale prefix for non-default locales
     if (locale !== 'en') {
       staticPages.forEach(page => {
@@ -123,6 +126,10 @@ export async function generateSearchDataForLocale(locale) {
       toolContent.forEach(page => {
         page.url = `/${locale}${page.url}`
       })
+      
+      faqItems.forEach(item => {
+        item.url = `/${locale}${item.url}`
+      })
     }
 
     staticPages.forEach(page => {
@@ -134,6 +141,10 @@ export async function generateSearchDataForLocale(locale) {
     })
     
     toolContent.forEach(item => {
+      searchData[item.url] = item
+    })
+
+    faqItems.forEach(item => {
       searchData[item.url] = item
     })
 
@@ -449,4 +460,48 @@ export async function getScriptContent(toolId, locale) {
     console.error(`Error loading script content for ${toolId}:`, error.message)
     return null
   }
+}
+
+export async function getFAQContent(locale) {
+  const results = []
+  
+  let translations = {}
+  try {
+    const localeFile = await readFile(
+      join(process.cwd(), 'i18n', 'locales', `${locale}.json`),
+      'utf-8'
+    )
+    translations = JSON.parse(localeFile)
+  } catch {
+    // Fallback to en
+    try {
+      const localeFile = await readFile(
+        join(process.cwd(), 'i18n', 'locales', 'en.json'),
+        'utf-8'
+      )
+      translations = JSON.parse(localeFile)
+    } catch {
+      translations = {}
+    }
+  }
+  
+  const faqItems = translations.documentation?.faq?.items || {}
+  
+  // Convert FAQ items to search entries
+  Object.keys(faqItems).forEach((key, index) => {
+    const item = faqItems[key]
+    if (item && item.label && item.content) {
+      results.push({
+        title: item.label,
+        description: item.content,
+        url: `/faq#faq-item-${key}`, // Use the actual key instead of index
+        type: 'faq',
+        language: locale,
+        excerpt: item.content.substring(0, 150),
+        content: `${item.label}\n\n${item.content}`
+      })
+    }
+  })
+  
+  return results
 }

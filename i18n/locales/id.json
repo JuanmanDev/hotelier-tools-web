@@ -19,7 +19,8 @@
     "types": {
       "page": "Halaman",
       "bot": "Otomatisasi",
-      "tool": "Alat"
+      "tool": "Alat",
+      "faq": "Pertanyaan Sering Diajukan"
     }
   },
   "home": {

@@ -19,7 +19,8 @@
     "types": {
       "page": "Seite",
       "bot": "Automatisierung",
-      "tool": "Tool"
+      "tool": "Tool",
+      "faq": "Häufige Fragen"
     }
   },
   "home": {
