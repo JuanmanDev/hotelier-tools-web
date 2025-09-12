@@ -3,7 +3,8 @@
     "home": "Home",
     "tools": "Tools",
     "documentation": "Documentation",
-    "contact": "Contact"
+    "contact": "Contact",
+    "search": "Search"
   },
   "home": {
     "hero": {
@@ -336,6 +337,46 @@
             "Reduced horizontal scrolling",
             "Improved screen space utilisation"
           ]
+        },
+        "booking_commission_calculator": {
+          "name": "Booking Commission Calculator",
+          "description": "Calculate commissions automatically for all your bookings"
+        },
+        "compact_calendar_ui": {
+          "name": "Compact Calendar UI",
+          "description": "More efficient calendar layout with better space utilization"
+        },
+        "guest_management_bot": {
+          "name": "Guest Management Bot",
+          "description": "Automate guest communications and data management"
+        },
+        "invoice_management_bot": {
+          "name": "Invoice Management Bot",
+          "description": "Automated invoice generation and management system"
+        },
+        "payment_validator_bot": {
+          "name": "Payment Validator Bot",
+          "description": "Automatically validate and verify payment transactions"
+        },
+        "prices_display": {
+          "name": "Prices Display",
+          "description": "Enhanced price visualization in calendar view"
+        },
+        "pricing_optimization_bot": {
+          "name": "Pricing Optimization Bot",
+          "description": "AI-powered pricing suggestions for maximum revenue"
+        },
+        "touch_screen_optimization": {
+          "name": "Touch Screen Optimization",
+          "description": "Enhanced interface for touch screen devices"
+        },
+        "ui_scripts_collection": {
+          "name": "UI Scripts Collection",
+          "description": "Complete collection of interface improvement scripts"
+        },
+        "unconfirmed_reservations_bot": {
+          "name": "Unconfirmed Reservations Bot",
+          "description": "Monitor and manage unconfirmed booking statuses"
         }
       },
       "compact_calendar_ui": {
@@ -652,7 +693,7 @@
       },
       "first_time": {
         "title": "First time using Hotelier Tools?",
-        "recommendation": "If this is your first time using our tools, we recommend starting with the web enhancement scripts as they are easier to install and use.",
+        "recommendation": "If this is your first time using our tools, we recommend starting with the browser scripts as they are easier to install and provide immediate improvements to your workflow.",
         "view_scripts": "View available scripts",
         "view_automations": "View available automations"
       }
@@ -665,7 +706,16 @@
         "chrome": "Chrome: Full compatibility",
         "edge": "Edge: Full compatibility",
         "firefox": "Firefox: Full compatibility",
-        "safari": "Safari: Full compatibility"
+        "safari": "Safari: Full compatibility",
+        "desktop": {
+          "title": "Desktop Browser Compatibility"
+        },
+        "mobile": {
+          "title": "Mobile Browser Compatibility",
+          "standard": "Standard mobile browsers do not support our scripts",
+          "kiwi": "Kiwi Browser (Android) supports our scripts",
+          "complex_config": "Mobile configuration requires additional setup"
+        }
       },
       "tampermonkey_requirement": {
         "title": "Tampermonkey requirement",
