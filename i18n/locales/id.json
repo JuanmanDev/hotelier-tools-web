@@ -511,7 +511,8 @@
       "before": "Sebelum",
       "after": "Sesudah",
       "gallery": "Galeri",
-      "install_instructions": "Lihat instruksi untuk menginstal skrip"
+      "install_instructions": "Lihat instruksi untuk menginstal skrip",
+      "install_tampermonkey": "Instal di Tampermonkey"
     },
     "faq": {
       "title": "Pertanyaan yang Sering Diajukan",

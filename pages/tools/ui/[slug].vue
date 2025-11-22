@@ -26,6 +26,14 @@
       <div class="flex gap-3 mb-6 sm:flex-row flex-col">
         <UButton
           color="primary"
+          :to="'https://www.tampermonkey.net/script_installation.php#url=' +  doc.meta.github.replace('/blob/', '/raw/')"
+          target="_blank"
+        >
+          <UIcon name="i-simple-icons-tampermonkey" class="w-5 h-5 mr-2" />
+          {{ $t('tools.ui.install_tampermonkey') }}
+        </UButton>
+        <UButton
+          color="secondary"
           :to="doc.meta.github"
           target="_blank"
         >

@@ -358,7 +358,7 @@
           "description": "Suite avançada de automação para tarefas de gestão hoteleira incluindo checkout, pagamentos e reservas.",
           "features": [
             "Processamento automático de checkout de hóspedes",
-            "Validação e monitorização de pagamentos", 
+            "Validação e monitorização de pagamentos",
             "Acompanhamento de reservas não confirmadas",
             "Automação de comunicação com hóspedes",
             "Assistência na otimização de preços",
@@ -621,7 +621,8 @@
       "before": "Antes",
       "after": "Depois",
       "gallery": "Galeria",
-      "install_instructions": "Ver instruções para instalar o script"
+      "install_instructions": "Ver instruções para instalar o script",
+      "install_tampermonkey": "Instalar no Tampermonkey"
     },
     "faq": {
       "title": "Perguntas Frequentes",

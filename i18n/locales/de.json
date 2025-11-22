@@ -481,7 +481,8 @@
       "before": "Vorher",
       "after": "Nachher",
       "gallery": "Galerie",
-      "install_instructions": "Anweisungen zur Skriptinstallation anzeigen"
+      "install_instructions": "Anweisungen zur Skriptinstallation anzeigen",
+      "install_tampermonkey": "Installieren Sie Tampermonkey"
     },
     "faq": {
       "title": "Häufig Gestellte Fragen",

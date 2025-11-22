@@ -28,7 +28,6 @@
       "title": "Optimize your",
       "span": "hotel management",
       "span2": "on Little Hotelier",
-
       "subtitle": "Specialized tools for hotels using Little Hotelier platform by Siteminder. Automate processes, improve interface and increase your conversion rate preventing errors.",
       "cta_tools": "View Tools",
       "cta_docs": "Documentation",
@@ -349,7 +348,7 @@
           "description": "Advanced automation suite for hotel management tasks including checkout, payments, and reservations.",
           "features": [
             "Automatic guest checkout processing",
-            "Payment validation and monitoring", 
+            "Payment validation and monitoring",
             "Unconfirmed reservation tracking",
             "Guest communication automation",
             "Price optimization assistance",
@@ -512,7 +511,8 @@
       "before": "Before",
       "after": "After",
       "gallery": "Gallery",
-      "install_instructions": "View instructions to install script"
+      "install_instructions": "View instructions to install script",
+      "install_tampermonkey": "Install on Tampermonkey"
     },
     "faq": {
       "title": "Frequently Asked Questions",
@@ -730,7 +730,7 @@
           "user_type": "User Type: General"
         },
         "frontdesk": {
-          "title": "FrontDesk", 
+          "title": "FrontDesk",
           "access": "Access: Yes",
           "user_type": "User Type: General",
           "permissions": "Permissions: Reservations"
@@ -1138,7 +1138,6 @@
         "description": "Automated email campaigns, social media management, and guest communication workflows."
       }
     },
-    
     "error_detection_showcase": {
       "controls": {
         "speed_up": "Speed Up Animation",

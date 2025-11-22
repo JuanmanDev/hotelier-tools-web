@@ -321,7 +321,7 @@
           "description": "Advanced automation suite for hotel management tasks including checkout, payments, and reservations.",
           "features": [
             "Automatic guest checkout processing",
-            "Payment validation and monitoring", 
+            "Payment validation and monitoring",
             "Unconfirmed reservation tracking",
             "Guest communication automation",
             "Price optimisation assistance",
@@ -524,7 +524,8 @@
       "before": "Before",
       "after": "After",
       "gallery": "Gallery",
-      "install_instructions": "View instructions to install script"
+      "install_instructions": "View instructions to install script",
+      "install_tampermonkey": "Install on Tampermonkey"
     },
     "faq": {
       "title": "Frequently Asked Questions",
@@ -755,7 +756,7 @@
           "user_type": "User Type: General"
         },
         "frontdesk": {
-          "title": "FrontDesk", 
+          "title": "FrontDesk",
           "access": "Access: Yes",
           "user_type": "User Type: General",
           "permissions": "Permissions: Reservations"
@@ -1126,7 +1127,6 @@
       }
     }
   },
-  
   "marketing": {
     "hero": {
       "title": "Maximize Your Hotel's",
@@ -1163,7 +1163,6 @@
         "description": "Automated email campaigns, social media management, and guest communication workflows."
       }
     },
-    
     "error_detection_showcase": {
       "controls": {
         "speed_up": "Speed Up Animation",

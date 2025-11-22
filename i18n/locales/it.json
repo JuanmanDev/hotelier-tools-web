@@ -621,7 +621,8 @@
       "before": "Prima",
       "after": "Dopo",
       "gallery": "Galleria",
-      "install_instructions": "Visualizza istruzioni per installare lo script"
+      "install_instructions": "Visualizza istruzioni per installare lo script",
+      "install_tampermonkey": "Installa Tampermonkey"
     },
     "faq": {
       "title": "Domande Frequenti",
