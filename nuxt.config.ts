@@ -1,7 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/ui', '@nuxt/fonts', '@nuxtjs/google-fonts', '@nuxtjs/i18n', '@nuxt/content', 'vue3-carousel-nuxt', '@nuxtjs/seo', '@nuxtjs/mdc'],
+  modules: [
+    '@nuxt/ui',
+    '@nuxt/fonts',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/i18n',
+    '@nuxt/content',
+    'vue3-carousel-nuxt',
+    '@nuxtjs/seo',
+    '@nuxtjs/mdc',
+    // Local module for search data generation
+    '~/modules/search-data-generator'
+  ],
 
   // Nuxt Content configuration
   content: {
@@ -197,36 +208,10 @@ export default defineNuxtConfig({
     preset: 'vercel'
   },
 
-  // Build hooks to generate search data
-  hooks: {
-    'build:before': async () => {
-      console.log('🔍 Generating static search data...')
-      const { execSync } = await import('child_process')
-      try {
-        execSync('node scripts/generate-search-data.js', { stdio: 'inherit' })
-        console.log('✅ Search data generated successfully')
-      } catch (error) {
-        console.error('❌ Failed to generate search data:', error)
-        throw error
-      }
-    },
-    'dev:prepared': async () => {
-      // Generate search data in development mode if it doesn't exist
-      const { existsSync } = await import('fs')
-      const { join } = await import('path')
-      const searchDataPath = join(process.cwd(), 'public', 'data', 'search', 'en.json')
-      
-      if (!existsSync(searchDataPath)) {
-        console.log('🔍 Generating search data for development...')
-        const { execSync } = await import('child_process')
-        try {
-          execSync('node scripts/generate-search-data.js', { stdio: 'inherit' })
-          console.log('✅ Development search data generated successfully')
-        } catch (error) {
-          console.warn('⚠️ Failed to generate development search data:', error)
-        }
-      }
-    }
+  // Search data generator configuration
+  searchDataGenerator: {
+    enabled: true,
+    outputDir: 'public/data/search'
   },
 
   // Runtime config for environment variables
