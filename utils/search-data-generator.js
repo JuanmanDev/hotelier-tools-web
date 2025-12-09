@@ -76,7 +76,9 @@ export const SCRIPT_MAPPING = {
     'update-payment-link-button',
     'bank-transfer-email-button',
     'add-button-check-front-desk',
-    'change-inventory-name'
+    'change-inventory-name',
+    'show-booking-commissions',
+    'show-chekin'
   ],
   'booking-commission-calculator': [
     'show-booking-commissions'
