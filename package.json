@@ -24,19 +24,19 @@
   },
   "homepage": "https://github.com/JuanmanDev/hotelier-tools-web#readme",
   "dependencies": {
-    "@formkit/auto-animate": "^0.8.2",
-    "@iconify-json/heroicons": "^1.2.2",
-    "@iconify-json/simple-icons": "^1.2.44",
-    "@nuxt/content": "^3.6.3",
+    "@formkit/auto-animate": "^0.8.4",
+    "@iconify-json/heroicons": "^1.2.3",
+    "@iconify-json/simple-icons": "^1.2.62",
+    "@nuxt/content": "^3.9.0",
     "@nuxt/fonts": "^0.11.4",
-    "@nuxt/ui": "^3.2.0",
+    "@nuxt/ui": "^3.3.7",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@nuxtjs/i18n": "^10.0.1",
-    "@nuxtjs/mdc": "^0.17.2",
-    "@nuxtjs/seo": "^3.1.0",
-    "better-sqlite3": "^12.2.0",
-    "nuxt": "^4.0.1",
+    "@nuxtjs/i18n": "^10.2.1",
+    "@nuxtjs/mdc": "^0.17.4",
+    "@nuxtjs/seo": "^3.2.2",
+    "better-sqlite3": "^12.5.0",
+    "nuxt": "^4.2.2",
     "vue3-carousel-nuxt": "^1.1.6",
-    "zod": "^3.24.0"
+    "zod": "^3.25.76"
   }
 }
