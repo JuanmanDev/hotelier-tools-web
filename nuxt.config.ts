@@ -100,7 +100,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'system'
   },
-  
+
   // Meta configuration
   app: {
     head: {
@@ -108,9 +108,9 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { 
-          name: 'description', 
-          content: 'Herramientas para optimizar la gestión de hoteles que utilizan Little Hotelier de Siteminder. Extensiones Chrome y automatizaciones para mejorar tu operativa hotelera.' 
+        {
+          name: 'description',
+          content: 'Herramientas para optimizar la gestión de hoteles que utilizan Little Hotelier de Siteminder. Extensiones Chrome y automatizaciones para mejorar tu operativa hotelera.'
         },
         { name: 'keywords', content: 'hotel, gestión hotelera, Little Hotelier, Siteminder, automatización, reservas, facturas' },
         { property: 'og:title', content: 'Hotelier Tools - Optimiza tu gestión hotelera' },
@@ -218,14 +218,32 @@ export default defineNuxtConfig({
   runtimeConfig: {
     // Private keys (only available on server-side)
     apiSecret: '',
-    
+
     // Public keys (exposed to client-side)
     public: {
       apiBase: '/api',
       baseUrl: process.env.NUXT_ENV_VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.NUXT_ENV_VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000'
     }
   },
-  
+
+  // Route rules for Vercel optimization
+  routeRules: {
+    // Prerender static pages
+    '/': { prerender: true },
+    '/contact': { prerender: true },
+    '/documentation': { prerender: true },
+    '/faq': { prerender: true },
+    '/chrome-extensions': { prerender: true },
+    '/marketing/**': { prerender: true },
+
+    // Tools section - index is static, subpages use ISR
+    '/tools': { prerender: true },
+    '/tools/**': { isr: 2592000 }, // 30 days
+
+    // API Caching
+    '/api/generate-search-data': { cache: { maxAge: 2592000, swr: true } }
+  },
+
   experimental: {
     viewTransition: true
   }
