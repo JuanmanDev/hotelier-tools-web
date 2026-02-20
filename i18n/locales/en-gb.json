@@ -6,6 +6,23 @@
     "contact": "Contact",
     "search": "Search"
   },
+  "search": {
+    "placeholder": "Search tools, documentation and content...",
+    "loading": "Searching...",
+    "noResults": "No results found",
+    "tryDifferent": "Try searching with different keywords",
+    "welcome": "Search through all content",
+    "hint": "Type to search through tools, documentation, and guides",
+    "navigate": "to navigate",
+    "select": "to select",
+    "close": "to close",
+    "types": {
+      "page": "Page",
+      "bot": "Automation",
+      "tool": "Tool",
+      "faq": "FAQ"
+    }
+  },
   "home": {
     "hero": {
       "title": "Optimise your",
@@ -1038,6 +1055,7 @@
       "learnMore": "Learn More",
       "overview": "Overview",
       "keyFeatures": "Key Features",
+      "documentation": "Documentation",
       "checkout": {
         "longDescription": "Our bot automatically processes checkout for all reservations at the end of their stay date, eliminating the need for manual intervention and ensuring accurate records.",
         "feature1": "Automatic checkout at the end of stay date",

@@ -960,6 +960,7 @@
       "learnMore": "Pelajari Lebih Lanjut",
       "overview": "Ikhtisar",
       "keyFeatures": "Fitur Utama",
+      "documentation": "Dokumentasi",
       "checkout": {
         "longDescription": "Bot kami secara otomatis memproses check-out semua reservasi pada akhir tanggal menginap mereka, menghilangkan kebutuhan untuk intervensi manual dan memastikan catatan yang akurat.",
         "feature1": "Check-out otomatis pada akhir tanggal menginap",

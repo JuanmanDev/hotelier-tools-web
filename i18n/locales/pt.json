@@ -1136,6 +1136,7 @@
       "learnMore": "Saber Mais",
       "overview": "Visão Geral",
       "keyFeatures": "Características Principais",
+      "documentation": "Documentação",
       "checkout": {
         "longDescription": "O nosso bot processa automaticamente o check-out de todas as reservas no final da sua data de estadia, eliminando a necessidade de intervenção manual e garantindo registos precisos.",
         "feature1": "Check-out automático no final da data de estadia",
