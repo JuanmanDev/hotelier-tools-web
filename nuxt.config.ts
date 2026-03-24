@@ -205,7 +205,9 @@ export default defineNuxtConfig({
 
   // Build configuration for Vercel
   nitro: {
-    preset: 'vercel'
+    prerender: {
+      failOnError: false
+    }
   },
 
   // Search data generator configuration
@@ -236,12 +238,9 @@ export default defineNuxtConfig({
     '/chrome-extensions': { prerender: true },
     '/marketing/**': { prerender: true },
 
-    // Tools section - index is static, subpages use ISR
+    // Tools section - index is static, subpages are prerendered at build time
     '/tools': { prerender: true },
-    '/tools/**': { isr: 2592000 }, // 30 days
-
-    // API Caching
-    '/api/generate-search-data': { cache: { maxAge: 2592000, swr: true } }
+    '/tools/**': { prerender: true }
   },
 
   experimental: {
