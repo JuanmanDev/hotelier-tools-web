@@ -110,15 +110,16 @@
 
 <script setup lang="ts">
 
+const { t } = useI18n()
 const localePath = useLocalePath();
 
 // SEO
 useHead({
-  title: computed(() => `${$t('bot.tasks.checkout.title')} - Hotelier Tools`),
+  title: computed(() => `${t('bot.tasks.checkout.title')} - Hotelier Tools`),
   meta: [
     {
       name: 'description',
-      content: computed(() => $t('bot.hero.subtitle'))
+      content: computed(() => t('bot.hero.subtitle'))
     }
   ]
 })

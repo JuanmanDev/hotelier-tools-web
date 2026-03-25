@@ -119,7 +119,7 @@ const localePath = useLocalePath()
 const { locale } = useI18n()
 
 const { data: doc, refresh } = await useAsyncData(
-  () => `ui-script-${route.params.slug}-${locale.value}`,
+  () => `bot-script-${route.params.slug}-${locale.value}`,
   () => {
     const contentPath = `/bot/${locale.value}/${route.params.slug}`
     return queryCollection('content').path(contentPath).first()
@@ -171,11 +171,11 @@ if (!feature) {
 
 // SEO
 useHead({
-  title: computed(() => `${$t(`bot.tasks.${slug}.title`)} - Hotelier Tools`),
+  title: computed(() => `${t(`bot.tasks.${slug}.title`)} - Hotelier Tools`),
   meta: [
     {
       name: 'description',
-      content: computed(() => $t(`bot.tasks.${slug}.description`))
+      content: computed(() => t(`bot.tasks.${slug}.description`))
     }
   ]
 })
