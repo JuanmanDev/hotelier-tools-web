@@ -4,7 +4,7 @@
   "description": "Herramientas para optimizar la gestión de hoteles que utilizan Little Hotelier de Siteminder",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt generate",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "generate:search": "npx nuxi prepare && npx tsx scripts/generate-search-data.ts",
