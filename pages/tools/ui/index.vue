@@ -52,7 +52,7 @@ if (!currentUrl.endsWith('/')) {
   currentUrl +=  '/';
 }
 
-const { data: scripts } = await useAsyncData(async () => {
+const { data: scripts } = await useAsyncData(`ui-scripts-index-${locale.value}`, async () => {
   const d = await queryCollection('content').where("path", "LIKE", "/scripts/" + locale.value +"/%").all()
   return d.map(e => ({
     ...e,
