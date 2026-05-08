@@ -13,6 +13,14 @@
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center space-x-8">
             <NuxtLink 
+              to="https://dashboard.hotelier.tools/"
+              class="relative inline-block text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
+            >
+              <!-- {{ $t('nav.home') }} -->
+              Dashboard
+              <UBadge size="xs" variant="solid" color="warning" class="absolute -top-2 -right-3">Beta</UBadge>
+            </NuxtLink>
+            <NuxtLink 
               :to="localePath('/')"
               class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
             >
