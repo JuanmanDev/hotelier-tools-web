@@ -36,6 +36,7 @@
     "@nuxtjs/seo": "^3.2.2",
     "better-sqlite3": "^12.5.0",
     "nuxt": "^4.2.2",
+    "nuxt-umami": "^3.2.1",
     "vue3-carousel-nuxt": "^1.1.6",
     "zod": "^3.25.76"
   }

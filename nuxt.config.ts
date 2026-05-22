@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     'vue3-carousel-nuxt',
     '@nuxtjs/seo',
     '@nuxtjs/mdc',
+    'nuxt-umami',
     // Local module for search data generation
     '~/modules/search-data-generator'
   ],
@@ -214,6 +215,15 @@ export default defineNuxtConfig({
   searchDataGenerator: {
     enabled: true,
     outputDir: 'public/data/search'
+  },
+
+  // Umami configuration
+  umami: {
+    id: 'de366eb58-491e-4829-8eb7-98765c84cdb4',
+    host: 'https://umami.hotelier.tools/',
+    autoTrack: true,
+    useDirective: true,
+    logErrors: process.env.NODE_ENV === 'development'
   },
 
   // Runtime config for environment variables
