@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-slate-800 py-12 px-4 transition-colors duration-500">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;detect-incomplete-reservation&quot;,&quot;path&quot;:&quot;pages/marketing/detect-incomplete-reservation.vue&quot;}" class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-slate-800 py-12 px-4 transition-colors duration-500">
     <div class="max-w-6xl mx-auto">
       <!-- Header -->
       <div class="text-center mb-16" v-auto-animate>
@@ -190,7 +190,7 @@
         </div>
 
         <div class="text-center">
-          <UButton 
+          <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;detect-incomplete-reservation&quot;,&quot;target&quot;:&quot;localePath('/tools/bot/unconfirmed')&quot;}" 
             size="xl" 
             color="neutral"
             variant="solid"

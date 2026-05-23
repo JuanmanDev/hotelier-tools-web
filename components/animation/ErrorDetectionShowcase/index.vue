@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-6xl mx-auto p-6 animate-height transition-all "
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;index&quot;,&quot;path&quot;:&quot;components/animation/ErrorDetectionShowcase/index.vue&quot;}" class="max-w-6xl mx-auto p-6 animate-height transition-all "
     :class="[
       (finnishedAnimation && !showAllCards) ? 'hideCardBodyNotHovering' : '',
     ]"
@@ -11,7 +11,7 @@
           (animationStarted && animationSpeed === 100 && !animationCard7Content1) || (finnishedAnimation && !showAllCards) ? 'max-h-32 mb-4' : 'max-h-0 mb-0'
         ]"
         >
-      <UButton 
+      <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;unknown&quot;}" 
         v-if="animationStarted && animationSpeed === 100 && !animationCard7Content1"
         @click="animationSpeed = 10"
         variant="outline"
@@ -21,7 +21,7 @@
       >
         {{ t('marketing.error_detection_showcase.controls.speed_up') }}
       </UButton>
-      <UButton 
+      <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;unknown&quot;}" 
         v-if="finnishedAnimation && !showAllCards"
         @click="showAllCards = true"
         variant="solid"
@@ -329,7 +329,7 @@
                   :class="showBotButton ? 'max-h-20 py-4' : 'max-h-0 py-0'"
                 >
 
-                  <button 
+                  <button data-umami-click="{&quot;name&quot;:&quot;click_button&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;unknown&quot;}" 
                     @click="handleBotButtonClick"
                     class="relative px-6 py-3 bg-purple-100 dark:bg-purple-900 text-black dark:text-white font-medium rounded-lg transition-all   animate-border-pulse border-blue"
                   >

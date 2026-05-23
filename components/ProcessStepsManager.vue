@@ -1,5 +1,5 @@
 <template>
-  <div class="relative z-10 flex flex-col items-center justify-center h-full min-h-[30vh] p-4 ">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;ProcessStepsManager&quot;,&quot;path&quot;:&quot;components/ProcessStepsManager.vue&quot;}" class="relative z-10 flex flex-col items-center justify-center h-full min-h-[30vh] p-4 ">
     <TransitionGroup name="card-list" tag="div" >
       <div class="process-steps-container" :key="activeScenario">
         <ProcessStepCard
@@ -14,7 +14,7 @@
     
     <!-- Navigation Buttons -->
     <div class="mt-8 flex flex-wrap justify-center gap-4  animate-fade-in-up  delay-2000 animation-fill-backwards">
-      <UButton
+      <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;ProcessStepsManager&quot;,&quot;target&quot;:&quot;unknown&quot;}"
         v-for="scenario in scenarios" 
         :key="scenario.id"
         :color="activeScenario === scenario.id ? 'primary' : 'neutral'"

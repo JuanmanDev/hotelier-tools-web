@@ -222,7 +222,7 @@ export default defineNuxtConfig({
     id: 'de366eb58-491e-4829-8eb7-98765c84cdb4',
     host: 'https://umami.hotelier.tools/',
     autoTrack: true,
-    useDirective: true,
+    useDirective: false,
     logErrors: process.env.NODE_ENV === 'development'
   },
 

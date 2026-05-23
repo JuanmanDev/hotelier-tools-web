@@ -1,5 +1,5 @@
 <template>
-  <UModal v-model:open="internalIsOpen" :transition="false">
+  <UModal data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;SearchModal&quot;,&quot;path&quot;:&quot;components/SearchModal.vue&quot;}" v-model:open="internalIsOpen" :transition="false">
     <template #content>
       <div class="p-0" @keydown.esc="closeSearch">
         <!-- Search Header -->

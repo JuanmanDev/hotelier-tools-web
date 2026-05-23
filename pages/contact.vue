@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;contact&quot;,&quot;path&quot;:&quot;pages/contact.vue&quot;}" class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +42,7 @@
                   <UIcon name="i-heroicons-envelope" class="w-6 h-6 text-blue-600 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <p class="font-medium text-gray-900 dark:text-white">{{ t('contact.info.email') }}</p>
-                    <a href="mailto:JuanmaDeveloper+hotelierTools@outlook.com" class="text-blue-600 hover:text-blue-800 transition-colors">
+                    <a data-umami-click="{&quot;name&quot;:&quot;click_a&quot;,&quot;file&quot;:&quot;contact&quot;,&quot;target&quot;:&quot;mailto:JuanmaDeveloper+hotelierTools@outlook.com&quot;}" href="mailto:JuanmaDeveloper+hotelierTools@outlook.com" class="text-blue-600 hover:text-blue-800 transition-colors">
                       JuanmaDeveloper+hotelierTools@outlook.com
                     </a>
                   </div>
@@ -98,7 +98,7 @@
               <p class="text-gray-600 dark:text-gray-300 mb-6">
                 {{ t('contact.faq_link.description') }}
               </p>
-              <UButton
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;contact&quot;,&quot;target&quot;:&quot;localePath('/faq')&quot;}"
                 color="blue"
                 variant="outline"
                 :to="localePath('/faq')"

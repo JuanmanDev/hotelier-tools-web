@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;index&quot;,&quot;path&quot;:&quot;pages/marketing/index.vue&quot;}" class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-green-50 to-emerald-100 dark:from-gray-800 dark:to-gray-900 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,7 +16,7 @@
           
           <!-- Call to Action Buttons -->
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <UButton
+            <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}"
               :to="localePath('/tools')"
               color="primary"
               size="xl"
@@ -24,7 +24,7 @@
             >
               {{ t('marketing.hero.cta_start') }}
             </UButton>
-            <UButton
+            <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}"
               :to="localePath('/contact')"
               color="white"
               size="xl"

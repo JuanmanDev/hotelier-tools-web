@@ -1,5 +1,4 @@
 export default defineNuxtPlugin((nuxtApp) => {
-  const { umTrackEvent } = useUmami();
   let startTime = Date.now();
   let currentPath = '';
 
@@ -10,11 +9,11 @@ export default defineNuxtPlugin((nuxtApp) => {
     const timeSpentSeconds = Math.round((endTime - startTime) / 1000);
     
     // Only track if they spent more than 1 second (to ignore instant redirects)
-    if (timeSpentSeconds > 1) {
+    if (timeSpentSeconds > 1 && typeof umTrackEvent === 'function') {
       umTrackEvent('time_spent', {
         path: currentPath,
         seconds: timeSpentSeconds
-      });
+      }).catch(() => {});
     }
   };
 

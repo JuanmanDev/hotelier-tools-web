@@ -1,5 +1,5 @@
 <template>
-  <svg 
+  <svg data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;GearIcon&quot;,&quot;path&quot;:&quot;components/GearIcon.vue&quot;}" 
     class="absolute top-0 left-0 animate-spin-slow overflow-visible"
     viewBox="0 0 100 100" 
     fill="none" 

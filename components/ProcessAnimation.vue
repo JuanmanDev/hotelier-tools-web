@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 py-16 lg:py-24">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;ProcessAnimation&quot;,&quot;path&quot;:&quot;components/ProcessAnimation.vue&quot;}" class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 py-16 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;faq&quot;,&quot;path&quot;:&quot;pages/faq.vue&quot;}" class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-amber-50 to-orange-100 dark:from-gray-800 dark:to-gray-900 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,7 +33,7 @@
               <p class="text-gray-600 dark:text-gray-300 mb-6">
                 {{ $t('faq.contact_section.subtitle') }}
               </p>
-              <UButton :to="localePath('/contact')" color="amber" size="lg" icon="i-heroicons-envelope">
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;faq&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}" :to="localePath('/contact')" color="amber" size="lg" icon="i-heroicons-envelope">
                 {{ $t('faq.contact_section.button') }}
               </UButton>
             </div>

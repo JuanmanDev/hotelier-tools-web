@@ -1,5 +1,5 @@
 <template>
-  <UCard id="faq" class="scroll-mt-24">
+  <UCard data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;FAQSection&quot;,&quot;path&quot;:&quot;components/FAQSection.vue&quot;}" id="faq" class="scroll-mt-24">
     <template #header>
       <div class="flex items-center justify-between">
         <div class="flex items-center">
@@ -38,7 +38,7 @@
       v-model="opennedItems"
     >
       <template #default="{ item, index, open }">
-        <UButton
+        <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;FAQSection&quot;,&quot;target&quot;:&quot;unknown&quot;}"
           color="gray"
           variant="ghost"
           class="border-b border-gray-200 dark:border-gray-700 w-full justify-between"
@@ -57,7 +57,7 @@
           <p class="mb-4">{{ item.content }}</p>
 
           <div v-if="item.links && item.links.length > 0" class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
-            <NuxtLink
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;FAQSection&quot;,&quot;target&quot;:&quot;localePath(rt(link.url))&quot;}"
               v-for="link in item.links"
               :to="localePath(rt(link.url))"
               :key="link.url"

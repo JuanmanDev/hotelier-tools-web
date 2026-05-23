@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;instructions&quot;,&quot;path&quot;:&quot;pages/tools/ui/instructions.vue&quot;}" class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,7 +77,7 @@
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-3">
-                  <UButton 
+                  <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;instructions&quot;,&quot;target&quot;:&quot;https://www.tampermonkey.net/&quot;}" 
                     to="https://www.tampermonkey.net/" 
                     external 
                     icon="i-heroicons-arrow-top-right-on-square"
@@ -161,7 +161,7 @@
                   />
                 </div>
                 
-                <UButton :to="localePath('/tools/ui')" icon="i-heroicons-arrow-right" size="lg">
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;instructions&quot;,&quot;target&quot;:&quot;localePath('/tools/ui')&quot;}" :to="localePath('/tools/ui')" icon="i-heroicons-arrow-right" size="lg">
                   Ver scripts disponibles
                 </UButton>
               </div>
@@ -393,16 +393,16 @@
               </p>
               
               <div class="flex flex-col sm:flex-row gap-3">
-                <UButton :to="localePath('/contact')" icon="i-heroicons-envelope" size="lg">
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;instructions&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}" :to="localePath('/contact')" icon="i-heroicons-envelope" size="lg">
                   Contactar soporte
                 </UButton>
                 
-                <UButton :to="localePath('/faq')" variant="outline" icon="i-heroicons-question-mark-circle" size="lg">
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;instructions&quot;,&quot;target&quot;:&quot;localePath('/faq')&quot;}" :to="localePath('/faq')" variant="outline" icon="i-heroicons-question-mark-circle" size="lg">
                   Ver preguntas frecuentes
                 </UButton>
               </div>
 
-              <UButton to="https://github.com/JuanmanDev/TampermonkeyLittleHotelier" variant="outline" icon="i-heroicons-code-bracket-square" size="lg">
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;instructions&quot;,&quot;target&quot;:&quot;https://github.com/JuanmanDev/TampermonkeyLittleHotelier&quot;}" to="https://github.com/JuanmanDev/TampermonkeyLittleHotelier" variant="outline" icon="i-heroicons-code-bracket-square" size="lg">
                 Ver repositorio de codigo de los scripts en github para notificar errores
               </UButton>
             </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-container relative w-full min-h-[90vh] overflow-hidden bg-slate-900">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;HeroSection&quot;,&quot;path&quot;:&quot;components/HeroSection.vue&quot;}" class="hero-container relative w-full min-h-[90vh] overflow-hidden bg-slate-900">
     <!-- Animated Gradient Background -->
     <div class="animated-gradient absolute inset-0"></div>
 

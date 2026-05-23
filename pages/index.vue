@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;index&quot;,&quot;path&quot;:&quot;pages/index.vue&quot;}">
     <!-- Hero Section -->
     <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-900 dark:to-blue-900">
       <div class="absolute inset-0 bg-grid-slate-100 dark:bg-grid-slate-700/25 bg-[size:20px_20px] [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]"></div>
@@ -24,7 +24,7 @@
             
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-up delay-400 animation-fill-backwards">
-                <UButton
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}"
                 color="primary"
                 size="xl"
                 :to="localePath('/tools')"
@@ -34,7 +34,7 @@
                 {{ t('home.hero.cta_tools') }}
                 </UButton>
                 
-                <UButton
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/documentation')&quot;}"
                 color="gray"
                 variant="outline"
                 size="xl"
@@ -79,8 +79,8 @@
       <BotAnimation
         class="animate-bot-scale-reveal"
       />
-      <NuxtLink :to="localePath('/tools/bot')" class="flex items-center justify-center mt-8">
-        <UButton>
+      <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/tools/bot')&quot;}" :to="localePath('/tools/bot')" class="flex items-center justify-center mt-8">
+        <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;unknown&quot;}">
           <UIcon name="i-heroicons-arrow-right" class="w-5 h-5 mr-2 mx-auto" />
           {{ t('home.hero.bot_button') }}
         </UButton>
@@ -137,7 +137,7 @@
                 {{ t(benefit) }}
               </li>
             </ul>
-            <UButton
+            <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath(feature.buttonLink)&quot;}"
               v-if="feature.buttonText && feature.buttonLink"
               :to="localePath(feature.buttonLink)"
               color="primary"
@@ -169,7 +169,7 @@
           {{ t('home.cta.subtitle') }}
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <UButton
+          <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}"
             color="primary"
             size="xl"
             :to="localePath('/tools')"
@@ -177,7 +177,7 @@
             <UIcon name="i-heroicons-rocket-launch" class="w-5 h-5 mr-2" />
             {{ t('home.cta.start_now') }}
           </UButton>
-          <UButton
+          <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}"
             color="gray"
             variant="outline"
             size="xl"

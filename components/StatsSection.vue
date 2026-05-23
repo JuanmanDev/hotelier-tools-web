@@ -1,5 +1,5 @@
 <template>
-  <section ref="statsSection" class="relative bg-gradient-to-r from-blue-600 to-indigo-600 py-16 lg:py-24 overflow-hidden">
+  <section data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;StatsSection&quot;,&quot;path&quot;:&quot;components/StatsSection.vue&quot;}" ref="statsSection" class="relative bg-gradient-to-r from-blue-600 to-indigo-600 py-16 lg:py-24 overflow-hidden">
     <!-- Animated Gear Background -->
     <div class="absolute inset-0 opacity-10">
       <GearIcon />

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;index&quot;,&quot;path&quot;:&quot;pages/tools/bot/index.vue&quot;}" class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Hero Section with Animation -->
     <section class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 pt-20 overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -90,7 +90,7 @@
               </div>
               
               <div class="flex justify-end col-span-1 md:col-span-2 lg:col-span-1">
-                <UButton
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath(`/tools/bot/${feature.key}`)&quot;}"
                   :to="localePath(`/tools/bot/${feature.key}`)"
                   color="blue"
                   variant="solid"

@@ -1,18 +1,18 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;default&quot;,&quot;path&quot;:&quot;layouts/default.vue&quot;}" class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Navigation Header -->
     <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800">
       <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <!-- Logo -->
-          <NuxtLink :to="localePath('/')" class="flex items-center space-x-2">
+          <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/')&quot;}" :to="localePath('/')" class="flex items-center space-x-2">
             <UIcon name="i-heroicons-building-office-2" class="h-8 w-8 text-primary-500" />
             <span class="text-xl font-bold text-gray-900 dark:text-white">Hotelier Tools</span>
           </NuxtLink>
 
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center space-x-8">
-            <NuxtLink 
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;https://dashboard.hotelier.tools/&quot;}" 
               to="https://dashboard.hotelier.tools/"
               class="relative inline-block text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
             >
@@ -20,25 +20,25 @@
               Dashboard
               <UBadge size="xs" variant="solid" color="warning" class="absolute -top-2 -right-3">Beta</UBadge>
             </NuxtLink>
-            <NuxtLink 
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/')&quot;}" 
               :to="localePath('/')"
               class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
             >
               {{ $t('nav.home') }}
             </NuxtLink>
-            <NuxtLink 
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}" 
               :to="localePath('/tools')"
               class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
             >
               {{ $t('nav.tools') }}
             </NuxtLink>
-            <NuxtLink 
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/documentation')&quot;}" 
               :to="localePath('/documentation')"
               class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
             >
               {{ $t('nav.documentation') }}
             </NuxtLink>
-            <NuxtLink 
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}" 
               :to="localePath('/contact')"
               class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
             >
@@ -48,7 +48,7 @@
           <!-- Theme Toggle, Language Selector, Search & Mobile Menu -->
           <div class="flex items-center space-x-4">
             <!-- Search Button -->
-            <UButton
+            <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;unknown&quot;}"
               icon="i-heroicons-magnifying-glass"
               size="sm"
               color="gray"
@@ -66,7 +66,7 @@
               @change="changeLocale"
               :items="localeOptions"
             >
-              <UButton
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;unknown&quot;}"
                 color="gray"
                 variant="ghost"
                 size="sm"
@@ -76,7 +76,7 @@
               </UButton>
             </UDropdownMenu>
             <ClientOnly>
-              <UButton
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;unknown&quot;}"
                 :icon="isDark ? 'i-heroicons-sun' : 'i-heroicons-moon'"
                 size="sm"
                 color="gray"
@@ -87,7 +87,7 @@
             </ClientOnly>
             
             <!-- Mobile menu button -->
-            <UButton
+            <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;unknown&quot;}"
               icon="i-heroicons-bars-3"
               size="sm"
               color="gray"
@@ -103,7 +103,7 @@
         <div v-show="isMenuOpen" class="md:hidden py-4 border-t border-gray-200 dark:border-gray-800">
           <div class="space-y-2">
             <!-- Mobile Search Button -->
-            <button 
+            <button data-umami-click="{&quot;name&quot;:&quot;click_button&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;unknown&quot;}" 
               @click="openSearch"
               class="flex w-full items-center px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
             >
@@ -111,28 +111,28 @@
               {{ $t('nav.search') }}
             </button>
             
-            <NuxtLink 
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/')&quot;}" 
               :to="localePath('/')"
               class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
               @click="isMenuOpen = false"
             >
               {{ $t('nav.home') }}
             </NuxtLink>
-            <NuxtLink 
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}" 
               :to="localePath('/tools')"
               class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
               @click="isMenuOpen = false"
             >
               {{ $t('nav.tools') }}
             </NuxtLink>
-            <NuxtLink 
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/documentation')&quot;}" 
               :to="localePath('/documentation')"
               class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
               @click="isMenuOpen = false"
             >
               {{ $t('nav.documentation') }}
             </NuxtLink>
-            <NuxtLink 
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}" 
               :to="localePath('/contact')"
               class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
               @click="isMenuOpen = false"
@@ -163,7 +163,7 @@
               {{ $t('footer.description') }}
             </p>
             <div class="flex space-x-4">
-              <UButton
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;https://github.com/JuanmanDev/hotelier-tools-web&quot;}"
                 icon="i-simple-icons-github"
                 size="sm"
                 color="gray"
@@ -182,17 +182,17 @@
             </h3>
             <ul class="space-y-2">
               <li>
-                <NuxtLink :to="localePath('/tools')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}" :to="localePath('/tools')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('nav.tools') }}
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink :to="localePath('/documentation')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/documentation')&quot;}" :to="localePath('/documentation')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('nav.documentation') }}
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink :to="localePath('/contact')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}" :to="localePath('/contact')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('nav.contact') }}
                 </NuxtLink>
               </li>
@@ -206,12 +206,12 @@
             </h3>
             <ul class="space-y-2">
               <li>
-                <a href="mailto:JuanmaDeveloper+hotelierTools@outlook.com" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <a data-umami-click="{&quot;name&quot;:&quot;click_a&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;mailto:JuanmaDeveloper+hotelierTools@outlook.com&quot;}" href="mailto:JuanmaDeveloper+hotelierTools@outlook.com" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('footer.email') }}
                 </a>
               </li>
               <li>
-                <NuxtLink :to="localePath('/faq')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/faq')&quot;}" :to="localePath('/faq')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('footer.faq') }}
                 </NuxtLink>
               </li>

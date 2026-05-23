@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full mx-auto max-w-6xl min-h-[600px]" ref="containerRef" id="bot-animation">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;BotAnimation&quot;,&quot;path&quot;:&quot;components/BotAnimation.vue&quot;}" class="relative w-full mx-auto max-w-6xl min-h-[600px]" ref="containerRef" id="bot-animation">
     <!-- Background Bot Icon -->
     <div class="absolute inset-0 flex items-center justify-center z-0">
       <UIcon name="i-heroicons-cpu-chip" class="w-80 h-80 text-blue-300/30 dark:text-blue-400/10" />

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;[slug]&quot;,&quot;path&quot;:&quot;pages/tools/bot/[slug].vue&quot;}" class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,7 +98,7 @@
 
         <!-- Back Button -->
         <div class="mt-8 text-center">
-          <UButton
+          <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;[slug]&quot;,&quot;target&quot;:&quot;localePath('/tools/bot')&quot;}"
             :to="localePath('/tools/bot')"
             color="gray"
             variant="outline"

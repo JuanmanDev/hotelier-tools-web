@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-200 dark:border-gray-700">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;ContactForm&quot;,&quot;path&quot;:&quot;components/ContactForm.vue&quot;}" class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-200 dark:border-gray-700">
     <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">
       {{ t('contact.form.title') }}
     </h2>
@@ -89,7 +89,7 @@
 
       <!-- Submit Button -->
       <div class="pt-6">
-        <UButton
+        <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;ContactForm&quot;,&quot;target&quot;:&quot;unknown&quot;}"
           @click="onSubmit"
           color="primary"
           size="lg"

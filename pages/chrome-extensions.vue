@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;chrome-extensions&quot;,&quot;path&quot;:&quot;pages/chrome-extensions.vue&quot;}" class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@
           <div class="p-6">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Cómo instalar Tampermonkey</h3>
             <ol class="list-decimal pl-6 mb-6 space-y-3 text-gray-600 dark:text-gray-300">
-              <li>Instala la extensión <a href="https://www.tampermonkey.net/" target="_blank" class="text-blue-600 hover:underline">Tampermonkey</a> desde la Chrome Web Store</li>
+              <li>Instala la extensión <a data-umami-click="{&quot;name&quot;:&quot;click_a&quot;,&quot;file&quot;:&quot;chrome-extensions&quot;,&quot;target&quot;:&quot;https://www.tampermonkey.net/&quot;}" href="https://www.tampermonkey.net/" target="_blank" class="text-blue-600 hover:underline">Tampermonkey</a> desde la Chrome Web Store</li>
               <li>Haz clic en el icono de Tampermonkey en tu navegador</li>
               <li>Selecciona "Añadir nuevo script" o haz clic en cualquiera de nuestros enlaces de instalación directa</li>
               <li>Guarda el script y estará listo para funcionar automáticamente en Little Hotelier</li>
@@ -53,14 +53,14 @@
           
           <div class="m-4">
 
-            <UButton color="primary" 
+            <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;chrome-extensions&quot;,&quot;target&quot;:&quot;https://www.tampermonkey.net/&quot;}" color="primary" 
               to="https://www.tampermonkey.net/"
               >
               <UIcon name="i-heroicons-information-circle" class="w-4 h-4 mr-2" />
               TaperMonkey
             </UButton>
             
-            <UButton color="primary" 
+            <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;chrome-extensions&quot;,&quot;target&quot;:&quot;https://www.tampermonkey.net/&quot;}" color="primary" 
               to="https://www.tampermonkey.net/"
               class="ml-4"
               >
@@ -92,7 +92,7 @@
                 <span class="text-sm font-medium px-2.5 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300">
                   Front Desk
                 </span>
-                <UButton color="primary" :to="script.infoUrl">
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;chrome-extensions&quot;,&quot;target&quot;:&quot;script.infoUrl&quot;}" color="primary" :to="script.infoUrl">
                   <UIcon name="i-heroicons-information-circle" class="w-4 h-4 mr-2" />
                   Más Información
                 </UButton>
@@ -115,7 +115,7 @@
                 <span class="text-sm font-medium px-2.5 py-0.5 rounded bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300">
                   Reservas
                 </span>
-                <UButton color="primary" :to="script.infoUrl">
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;chrome-extensions&quot;,&quot;target&quot;:&quot;script.infoUrl&quot;}" color="primary" :to="script.infoUrl">
                   <UIcon name="i-heroicons-information-circle" class="w-4 h-4 mr-2" />
                   Más Información
                 </UButton>
@@ -138,7 +138,7 @@
                 <span class="text-sm font-medium px-2.5 py-0.5 rounded bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300">
                   Detalles
                 </span>
-                <UButton color="primary" :to="script.infoUrl">
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;chrome-extensions&quot;,&quot;target&quot;:&quot;script.infoUrl&quot;}" color="primary" :to="script.infoUrl">
                   <UIcon name="i-heroicons-information-circle" class="w-4 h-4 mr-2" />
                   Más Información
                 </UButton>
@@ -172,7 +172,7 @@
               Instala la extensión Tampermonkey desde la Chrome Web Store para poder utilizar nuestros scripts personalizados.
             </p>
             <div class="mt-4">
-              <UButton color="primary" to="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank">
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;chrome-extensions&quot;,&quot;target&quot;:&quot;https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo&quot;}" color="primary" to="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank">
                 <UIcon name="i-heroicons-arrow-top-right-on-square" class="w-4 h-4 mr-2" />
                 Ir a Chrome Web Store
               </UButton>
@@ -211,7 +211,7 @@
                   <span class="text-gray-800 dark:text-gray-200 font-medium">{{ script.name }}</span>
                 </div>
                 <div class="mt-2">
-                  <UButton size="xs" color="primary" variant="soft" :to="script.infoUrl">
+                  <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;chrome-extensions&quot;,&quot;target&quot;:&quot;script.infoUrl&quot;}" size="xs" color="primary" variant="soft" :to="script.infoUrl">
                     Ver script
                   </UButton>
                 </div>
@@ -300,7 +300,7 @@
                 <UIcon name="i-heroicons-chat-bubble-left-right" class="w-12 h-12 text-blue-600 mb-3" />
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Chat en Vivo</h3>
                 <p class="text-sm text-gray-600 dark:text-gray-300 text-center mb-4">Respuesta inmediata en horario laboral</p>
-                <UButton
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;chrome-extensions&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}"
                 color="primary"
                 variant="soft"
                 size="sm"
@@ -314,7 +314,7 @@
                 <UIcon name="i-heroicons-envelope" class="w-12 h-12 text-blue-600 mb-3" />
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Email</h3>
                 <p class="text-sm text-gray-600 dark:text-gray-300 text-center mb-4">Respuesta en menos de 24 horas</p>
-                <UButton color="primary" variant="soft" size="sm" to="mailto:soporte@hoteliertools.com">
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;chrome-extensions&quot;,&quot;target&quot;:&quot;mailto:soporte@hoteliertools.com&quot;}" color="primary" variant="soft" size="sm" to="mailto:soporte@hoteliertools.com">
                   Enviar Email
                 </UButton>
               </div>
@@ -323,7 +323,7 @@
                 <UIcon name="i-heroicons-document-text" class="w-12 h-12 text-blue-600 mb-3" />
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Documentación</h3>
                 <p class="text-sm text-gray-600 dark:text-gray-300 text-center mb-4">Guías detalladas y FAQs</p>
-                <UButton color="primary" variant="soft" size="sm" :to="localePath('/documentation')">
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;chrome-extensions&quot;,&quot;target&quot;:&quot;localePath('/documentation')&quot;}" color="primary" variant="soft" size="sm" :to="localePath('/documentation')">
                   Ver Documentación
                 </UButton>
               </div>

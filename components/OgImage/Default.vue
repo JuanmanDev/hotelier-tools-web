@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-full h-full bg-gradient-to-br from-blue-600 to-indigo-700 text-white relative overflow-hidden">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;Default&quot;,&quot;path&quot;:&quot;components/OgImage/Default.vue&quot;}" class="flex flex-col w-full h-full bg-gradient-to-br from-blue-600 to-indigo-700 text-white relative overflow-hidden">
     <!-- Background pattern -->
     <div class="absolute inset-0 opacity-10">
       <div class="grid grid-cols-8 gap-4 w-full h-full">

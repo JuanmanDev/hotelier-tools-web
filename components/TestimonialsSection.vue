@@ -1,5 +1,5 @@
 <template>
-  <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-800 dark:via-blue-900 dark:to-indigo-900 py-16 lg:py-24">
+  <section data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;TestimonialsSection&quot;,&quot;path&quot;:&quot;components/TestimonialsSection.vue&quot;}" class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-800 dark:via-blue-900 dark:to-indigo-900 py-16 lg:py-24">
     <!-- Background Pattern -->
     <div class="absolute inset-0 bg-grid-slate-100 dark:bg-grid-slate-700/25 bg-[size:20px_20px] [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]"></div>
     
@@ -52,7 +52,7 @@
                 <p class="text-sm text-gray-600 dark:text-gray-400">
                   {{ t(`home.testimonials.reviews.${index}.location`) }}
                 </p>
-                <a 
+                <a data-umami-click="{&quot;name&quot;:&quot;click_a&quot;,&quot;file&quot;:&quot;TestimonialsSection&quot;,&quot;target&quot;:&quot;`https://${review.website}`&quot;}" 
                   v-if="review.website"
                   :href="`https://${review.website}`"
                   target="_blank"

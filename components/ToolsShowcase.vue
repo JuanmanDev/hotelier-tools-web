@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white dark:bg-gray-900 py-16 lg:py-24">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;ToolsShowcase&quot;,&quot;path&quot;:&quot;components/ToolsShowcase.vue&quot;}" class="bg-white dark:bg-gray-900 py-16 lg:py-24">
     <div class="max-w-[100vw] overflow-hidden">
       <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -82,7 +82,7 @@
           <!-- Tool Actions -->
           <div class="px-6 pb-6">
             <div class="flex space-x-3">
-              <UButton
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;ToolsShowcase&quot;,&quot;target&quot;:&quot;unknown&quot;}"
                 v-if="tool.status === 'available'"
                 color="primary"
                 class="flex-1"
@@ -92,7 +92,7 @@
                 {{ t('tools.showcase.card.actions.use_now') }}
               </UButton>
               
-              <UButton
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;ToolsShowcase&quot;,&quot;target&quot;:&quot;unknown&quot;}"
                 v-else-if="tool.status === 'beta'"
                 color="orange"
                 class="flex-1"
@@ -102,7 +102,7 @@
                 {{ t('tools.showcase.card.actions.beta') }}
               </UButton>
               
-              <UButton
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;ToolsShowcase&quot;,&quot;target&quot;:&quot;unknown&quot;}"
                 v-else
                 color="gray"
                 variant="outline"
@@ -113,7 +113,7 @@
                 {{ t('tools.showcase.card.actions.coming_soon') }}
               </UButton>
 
-              <UButton
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;ToolsShowcase&quot;,&quot;target&quot;:&quot;unknown&quot;}"
                 v-if="tool.documentation"
                 color="gray"
                 variant="ghost"
@@ -136,7 +136,7 @@
           <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
             {{ t('tools.showcase.cta.description') }}
           </p>
-          <UButton
+          <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;ToolsShowcase&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}"
             color="primary"
             size="lg"
             :to="localePath('/contact')"

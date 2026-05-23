@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;documentation&quot;,&quot;path&quot;:&quot;pages/documentation.vue&quot;}" class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,7 +29,7 @@
               </template>
               
               <nav class="space-y-1">
-                <UButton
+                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;documentation&quot;,&quot;target&quot;:&quot;`#${section.id}`&quot;}"
                   v-for="section in sections"
                   :key="section.id"
                   :to="`#${section.id}`"
@@ -210,11 +210,11 @@
                   />
 
                   <div class="flex flex-col sm:flex-row gap-3">
-                    <UButton :to="localePath('/tools/ui')" icon="i-heroicons-arrow-right" size="lg">
+                    <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;documentation&quot;,&quot;target&quot;:&quot;localePath('/tools/ui')&quot;}" :to="localePath('/tools/ui')" icon="i-heroicons-arrow-right" size="lg">
                       {{ $t('documentation.web_scripts.view_all_scripts') }}
                     </UButton>
 
-                    <UButton :to="localePath('/tools/ui/instructions')" variant="outline" icon="i-heroicons-document-text" size="lg">
+                    <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;documentation&quot;,&quot;target&quot;:&quot;localePath('/tools/ui/instructions')&quot;}" :to="localePath('/tools/ui/instructions')" variant="outline" icon="i-heroicons-document-text" size="lg">
                       {{ $t('documentation.web_scripts.installation_guide') }}
                     </UButton>
                   </div>
@@ -310,7 +310,7 @@
                     {{ $t('documentation.automations.available_automations.title') }}
                   </h3>
 
-                  <UButton :to="localePath('/tools/bot')" color="green" variant="solid" icon="i-heroicons-arrow-right">
+                  <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;documentation&quot;,&quot;target&quot;:&quot;localePath('/tools/bot')&quot;}" :to="localePath('/tools/bot')" color="green" variant="solid" icon="i-heroicons-arrow-right">
                     {{ $t('documentation.automations.available_automations.view_all') }}
                   </UButton>
                 </div>

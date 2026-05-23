@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto py-12 px-4">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;index&quot;,&quot;path&quot;:&quot;pages/tools/ui/index.vue&quot;}" class="max-w-7xl mx-auto py-12 px-4">
     <section class="text-center mb-12">
       <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
         {{ $t('tools.ui.title') }}
@@ -9,7 +9,7 @@
       </p>
     </section>
     <div class="gap-8">
-      <NuxtLink
+      <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;script.url&quot;}"
         v-for="script in scripts"
         :key="script.url"
         :to="script.url"
@@ -32,7 +32,7 @@
             >
               <ContentRenderer :value="script" :excerpt="true" />
             </div>
-            <UButton color="primary" class="mt-2 w-full md:mt-10">
+            <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;unknown&quot;}" color="primary" class="mt-2 w-full md:mt-10">
               {{ $t('tools.ui.view_details') }}
               <UIcon name="i-heroicons-arrow-right" class="w-5 h-5" />
             </UButton>

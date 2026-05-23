@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto py-12 px-4">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;[slug]&quot;,&quot;path&quot;:&quot;pages/tools/ui/[slug].vue&quot;}" class="mx-auto py-12 px-4">
     <!-- Before/After Images Section -->
     <section v-if="doc.meta.images?.before || doc.meta.images?.after" class="max-w-7xl mx-auto mb-8 w-full">
       <div class="flex items-center justify-center gap-0 w-full">
@@ -24,7 +24,7 @@
         :style="'view-transition-name: ui-features-title-'+ route.params.slug"
       >{{ doc?.title }}</h1>
       <div class="flex gap-3 mb-6 sm:flex-row flex-col">
-        <UButton
+        <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;[slug]&quot;,&quot;target&quot;:&quot;'https://www.tampermonkey.net/script_installation.php#url=' +  doc.meta.github.replace('/blob/', '/raw/')&quot;}"
           color="primary"
           :to="'https://www.tampermonkey.net/script_installation.php#url=' +  doc.meta.github.replace('/blob/', '/raw/')"
           target="_blank"
@@ -32,7 +32,7 @@
           <UIcon name="i-simple-icons-tampermonkey" class="w-5 h-5 mr-2" />
           {{ $t('tools.ui.install_tampermonkey') }}
         </UButton>
-        <UButton
+        <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;[slug]&quot;,&quot;target&quot;:&quot;doc.meta.github&quot;}"
           color="secondary"
           :to="doc.meta.github"
           target="_blank"
@@ -40,7 +40,7 @@
           <UIcon name="i-simple-icons-github" class="w-5 h-5 mr-2" />
           {{ $t('tools.ui.view_code') }}
         </UButton>
-        <UButton
+        <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;[slug]&quot;,&quot;target&quot;:&quot;doc.instructions || localePath('/tools/ui/instructions')&quot;}"
           color="secondary"
           :to="doc.instructions || localePath('/tools/ui/instructions')"
         >
@@ -78,7 +78,7 @@
       </Carousel>
     </section>
 
-    <UButton color="gray" :to="localePath('/tools/ui')" class="mt-4">
+    <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;[slug]&quot;,&quot;target&quot;:&quot;localePath('/tools/ui')&quot;}" color="gray" :to="localePath('/tools/ui')" class="mt-4">
       <UIcon name="i-heroicons-arrow-left" class="w-4 h-4 mr-2" />
       {{ $t('tools.ui.back_to_list') }}
     </UButton>

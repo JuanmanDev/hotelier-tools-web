@@ -1,5 +1,5 @@
 <template>
-  <div
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;ProcessStepCard&quot;,&quot;path&quot;:&quot;components/ProcessStepCard.vue&quot;}"
     class="process-step-card"
     :class="{ 
       'card-visible': isVisible,

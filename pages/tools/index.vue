@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;index&quot;,&quot;path&quot;:&quot;pages/tools/index.vue&quot;}" class="min-h-screen bg-gray-50 dark:bg-gray-900">
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,7 +30,7 @@
               <p class="text-gray-600 dark:text-gray-300 mb-6">
                 {{ $t('home.hero.cards.extensions.description') }}
               </p>
-              <UButton :to="localePath('/tools/ui')" color="primary" class="w-full">
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/tools/ui')&quot;}" :to="localePath('/tools/ui')" color="primary" class="w-full">
                 {{ $t('home.hero.cards.extensions.button') }}
               </UButton>
             </div>
@@ -46,7 +46,7 @@
               <p class="text-gray-600 dark:text-gray-300 mb-6">
                 {{ $t('home.hero.cards.automations.description') }}
               </p>
-              <UButton :to="localePath('/tools/bot')" color="primary" class="w-full">
+              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/tools/bot')&quot;}" :to="localePath('/tools/bot')" color="primary" class="w-full">
                 {{ $t('home.hero.cards.automations.button') }}
               </UButton>
             </div>
