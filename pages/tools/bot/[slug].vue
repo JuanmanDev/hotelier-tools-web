@@ -116,7 +116,7 @@
 const route = useRoute()
 const slug = route.params.slug as string
 const localePath = useLocalePath()
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const { data: doc, refresh } = await useAsyncData(
   () => `bot-script-${route.params.slug}-${locale.value}`,

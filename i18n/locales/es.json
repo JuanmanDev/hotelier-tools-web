@@ -877,7 +877,7 @@
           "title": "FrontDesk",
           "access": "Acceso: Sí",
           "user_type": "Tipo de Usuario: General",
-          "permissions": "Permisos: Reservations"
+          "permissions": "Permisos: Calendar, Reservations"
         },
         "verify_user": "Una vez creado el usuario, asegúrate de que funciona accediendo a Little Hotelier con el usuario y contraseña recién creados.",
         "email_trick": {
