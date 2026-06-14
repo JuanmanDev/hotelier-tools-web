@@ -111,6 +111,14 @@
               {{ $t('nav.search') }}
             </button>
             
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;https://dashboard.hotelier.tools/&quot;}" 
+              to="https://dashboard.hotelier.tools/"
+              class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
+              @click="isMenuOpen = false"
+            >
+              Dashboard
+              <UBadge size="xs" variant="solid" color="warning" class="ml-2">Beta</UBadge>
+            </NuxtLink>
             <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/')&quot;}" 
               :to="localePath('/')"
               class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
