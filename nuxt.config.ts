@@ -219,7 +219,7 @@ export default defineNuxtConfig({
 
   // Umami configuration
   umami: {
-    id: 'de366eb58-491e-4829-8eb7-98765c84cdb4',
+    id: 'e366eb58-491e-4829-8eb7-98765c84cdb4',
     host: 'https://umami.hotelier.tools/',
     autoTrack: true,
     useDirective: false,
