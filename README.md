@@ -1,5 +1,15 @@
 # Hotelier Tools Web
 
+<br>
+
+## 💖 Apoya este proyecto
+Si este proyecto te ha sido útil, ¡considera apoyarlo!
+
+[![GitHub Sponsor](https://img.shields.io/badge/Sponsor-JuanmanDev-ea4aaa?style=for-the-badge&logo=github)](https://github.com/sponsors/JuanmanDev) [![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/juanmandev) [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/juanmandev)
+
+<br>
+
+
 Página web oficial de Hotelier Tools - Herramientas especializadas para hoteles que utilizan Little Hotelier de Siteminder.
 
 ## 🚀 Características
@@ -142,3 +152,13 @@ Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
 - **Website**: [hoteliertools.com](https://hoteliertools.com)
 - **GitHub**: [JuanmanDev/hotelier-tools-web](https://github.com/JuanmanDev/hotelier-tools-web)
 
+
+
+<br>
+
+## 💖 Apoya este proyecto
+Si este proyecto te ha sido útil, ¡considera apoyarlo!
+
+[![GitHub Sponsor](https://img.shields.io/badge/Sponsor-JuanmanDev-ea4aaa?style=for-the-badge&logo=github)](https://github.com/sponsors/JuanmanDev) [![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/juanmandev) [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/juanmandev)
+
+<br>
