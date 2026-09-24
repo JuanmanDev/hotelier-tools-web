@@ -3,7 +3,7 @@
  * Integrates with nuxt-seo and nuxt-i18n modules
  */
 export const useSEO = () => {
-  const { t, locale } = useI18n()
+  const { t, locale, locales } = useI18n()
   const route = useRoute()
   const runtimeConfig = useRuntimeConfig()
 
@@ -12,7 +12,7 @@ export const useSEO = () => {
    */
   const getBaseUrl = () => {
     // Use runtime config for client-side compatibility
-    return runtimeConfig.public.baseUrl || 'http://localhost:3000'
+    return runtimeConfig.public.baseUrl || 'https://hotelier.tools'
   }
 
   /**
@@ -28,6 +28,8 @@ export const useSEO = () => {
     canonical: string
     noindex: boolean
     nofollow: boolean
+    /** Extra details for the generated share card */
+    og: { eyebrow?: string, status?: string, statusKind?: 'stable' | 'beta' | 'alpha' | 'soon', accent?: string }
   }>) => {
     const siteName = t('seo.site.name')
     const siteDescription = t('seo.site.description')
@@ -51,23 +53,15 @@ export const useSEO = () => {
     
     const canonical = customData?.canonical || `${baseUrl}${canonicalPath}`
 
-    // Set up alternate language links
+    // Alternate links for every configured language
+    const localeCodes = (locales.value as Array<string | { code: string }>).map(l => typeof l === 'string' ? l : l.code)
     const alternateLinks = [
-      { 
-        rel: 'alternate', 
-        hreflang: 'en', 
-        href: `${baseUrl}${canonicalPath}` 
-      },
-      { 
-        rel: 'alternate', 
-        hreflang: 'es', 
-        href: `${baseUrl}/es${canonicalPath}` 
-      },
-      { 
-        rel: 'alternate', 
-        hreflang: 'x-default', 
-        href: `${baseUrl}${canonicalPath}` 
-      }
+      ...localeCodes.map(code => ({
+        rel: 'alternate',
+        hreflang: code,
+        href: code === 'en' ? `${baseUrl}${canonicalPath}` : `${baseUrl}/${code}${canonicalPath === '/' ? '' : canonicalPath}`
+      })),
+      { rel: 'alternate', hreflang: 'x-default', href: `${baseUrl}${canonicalPath}` }
     ]
 
     // Apply SEO configuration
@@ -82,14 +76,14 @@ export const useSEO = () => {
       ogType: 'website',
       ogUrl: canonical,
       ogSiteName: siteName,
-      ogLocale: locale.value === 'es' ? 'es_ES' : 'en_US',
-      ogImage: customData?.ogImage || `${baseUrl}/og-image-${locale.value}.png`,
+      ogLocale: locale.value.replace('-', '_'),
+      ...(customData?.ogImage ? { ogImage: customData.ogImage } : {}),
       
       // Twitter
       twitterCard: 'summary_large_image',
       twitterTitle: ogTitle,
       twitterDescription: ogDescription,
-      twitterImage: customData?.ogImage || `${baseUrl}/og-image-${locale.value}.png`,
+      ...(customData?.ogImage ? { twitterImage: customData.ogImage } : {}),
       twitterSite: '@hoteliertools',
       
       // Robots
@@ -98,8 +92,22 @@ export const useSEO = () => {
       // Additional meta
       author: 'Hotelier Tools',
       copyright: `© ${new Date().getFullYear()} Hotelier Tools`,
-      language: locale.value === 'es' ? 'es-ES' : 'en-US'
+      language: locale.value
     })
+
+    // Share card generated for this page at build time (components/OgImage/Feature.vue)
+    if (!customData?.ogImage) {
+      defineOgImageComponent('Feature', {
+        title: ogTitle,
+        description: ogDescription,
+        eyebrow: customData?.og?.eyebrow ?? '',
+        status: customData?.og?.status ?? '',
+        statusKind: customData?.og?.statusKind ?? '',
+        accent: customData?.og?.accent ?? '#60a5fa',
+        footer: t('pricing.title', { date: new Intl.DateTimeFormat(locale.value, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC', calendar: 'gregory' }).format(new Date(Date.UTC(2027, 0, 10))) }),
+        site: baseUrl.replace(/^https?:\/\//, '')
+      })
+    }
 
     // Set canonical and alternate links
     useHead({
@@ -108,7 +116,7 @@ export const useSEO = () => {
         ...alternateLinks
       ],
       htmlAttrs: {
-        lang: locale.value === 'es' ? 'es' : 'en'
+        lang: locale.value
       }
     })
   }

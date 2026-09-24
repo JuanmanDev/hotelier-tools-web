@@ -14,6 +14,13 @@
         </p>
       </div>
 
+      <!-- Live example: incomplete reservations being detected (moved here from the home page) -->
+      <HeroSection class="rounded-3xl mb-20 shadow-xl">
+        <div class="flex justify-center px-4 py-12">
+          <ErrorDetectionShowcase />
+        </div>
+      </HeroSection>
+
       <!-- Problem Flow -->
       <div class="mb-20">
         <UCard class="mb-12 animate-fade-in-up animation-delay-300">
@@ -190,12 +197,12 @@
         </div>
 
         <div class="text-center">
-          <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;detect-incomplete-reservation&quot;,&quot;target&quot;:&quot;localePath('/tools/bot/unconfirmed')&quot;}" 
+          <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;detect-incomplete-reservation&quot;,&quot;target&quot;:&quot;localePath('/tools/bot/automated-checks')&quot;}" 
             size="xl" 
             color="neutral"
             variant="solid"
             class="transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-pulse"
-            :to="localePath('/tools/bot/unconfirmed')"
+            :to="localePath('/tools/bot/automated-checks')"
           >
             <UIcon name="i-heroicons-rocket-launch" class="w-5 h-5 mr-2" />
             {{ $t('marketing.detect_incomplete_reservation.solution.button') }}
@@ -207,6 +214,8 @@
 </template>
 
 <script setup>
+import HeroSection from '~/components/HeroSection.vue'
+import ErrorDetectionShowcase from '~/components/animation/ErrorDetectionShowcase/index.vue'
 // Vue 3 Composition API setup
 import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
 

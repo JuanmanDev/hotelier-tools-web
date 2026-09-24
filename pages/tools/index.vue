@@ -59,6 +59,8 @@
     <ToolsShowcase />
 
 
+    <!-- The dashboard, one click away -->
+    <DashboardBanner />
   </div>
 </template>
 

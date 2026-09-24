@@ -105,42 +105,42 @@ export const toolsData: ToolData[] = [
     category: 'automation',
     icon: 'i-heroicons-arrow-right-start-on-rectangle',
     status: 'beta',
-    linkTo: '/tools/bot/checkout'
+    linkTo: '/tools/bot/automated-checks'
   },
   {
     id: 'payment-validator-bot',
     category: 'automation',
     icon: 'i-heroicons-credit-card',
     status: 'beta',
-    linkTo: '/tools/bot/payments'
+    linkTo: '/tools/bot/automated-checks'
   },
   {
     id: 'unconfirmed-reservations-bot',
     category: 'automation',
     icon: 'i-heroicons-exclamation-triangle',
     status: 'available',
-    linkTo: '/tools/bot/unconfirmed'
+    linkTo: '/tools/bot/automated-checks'
   },
   {
     id: 'guest-management-bot',
     category: 'automation',
     icon: 'i-heroicons-user-group',
     status: 'beta',
-    linkTo: '/tools/bot/guests'
+    linkTo: '/tools/bot/automated-checks'
   },
   {
     id: 'pricing-optimization-bot',
     category: 'automation',
     icon: 'i-heroicons-chart-bar-square',
     status: 'beta',
-    linkTo: '/tools/bot/prices'
+    linkTo: '/tools/bot/dynamic-pricing'
   },
   {
     id: 'invoice-management-bot',
     category: 'automation',
     icon: 'i-heroicons-document-text',
-    status: 'coming-soon',
-    linkTo: '/tools/bot/invoices'
+    status: 'available',
+    linkTo: '/tools/bot/invoicing'
   }
 ]
 
@@ -170,28 +170,28 @@ export const getToolsData = () => {
       category: 'automation', 
       status: 'beta',
       scripts: SCRIPT_MAPPING['auto-checkout'],
-      documentation: '/tools/bot/checkout'
+      documentation: '/tools/bot/automated-checks'
     },
     {
       id: 'payment-validator' as ToolId,
       category: 'automation',
       status: 'beta', 
       scripts: SCRIPT_MAPPING['payment-validator'],
-      documentation: '/tools/bot/payments'
+      documentation: '/tools/bot/automated-checks'
     },
     {
       id: 'reservation-monitor' as ToolId,
       category: 'automation',
       status: 'available',
       scripts: SCRIPT_MAPPING['reservation-monitor'],
-      documentation: '/tools/bot/unconfirmed'
+      documentation: '/tools/bot/automated-checks'
     },
     {
       id: 'invoice-manager' as ToolId,
       category: 'automation',
       status: 'coming-soon',
       scripts: SCRIPT_MAPPING['invoice-manager'],
-      documentation: '/tools/bot/invoices'
+      documentation: '/tools/bot/invoicing'
     }
   ]
 

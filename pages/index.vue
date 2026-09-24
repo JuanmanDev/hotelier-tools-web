@@ -1,70 +1,12 @@
 <template>
   <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;index&quot;,&quot;path&quot;:&quot;pages/index.vue&quot;}">
-    <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-900 dark:to-blue-900">
-      <div class="absolute inset-0 bg-grid-slate-100 dark:bg-grid-slate-700/25 bg-[size:20px_20px] [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]"></div>
-      <HeroSection >
-        <slot name="hero-content">
-          <div class="text-center backdrop-blur-sm">
-            <!-- Main Heading -->
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 animation-title">
-                <span class="animate-fade-in-up  delay-100 animation-fill-backwards">
-                  {{ t('home.hero.title').replaceAll(" ", "&nbsp;") }}
-                </span> <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent animate-fade-in-up  delay-200 animation-fill-backwards">
-                  {{ t('home.hero.span').replaceAll(" ", "&nbsp;") }}
-                </span> <span class="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent animate-fade-in-up  delay-300 animation-fill-backwards">
-                  {{ t('home.hero.span2').replaceAll(" ", "&nbsp;") }}
-                </span>
-            </h1>
-            
-            <!-- Subtitle -->
-            <p class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-4xl mx-auto animate-fade-in-up delay-500 animation-fill-backwards">
-                {{ t('home.hero.subtitle') }}
-            </p>
-            
-            <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-up delay-400 animation-fill-backwards">
-                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}"
-                color="primary"
-                size="xl"
-                :to="localePath('/tools')"
-                class="w-full sm:w-auto"
-                >
-                <UIcon name="i-heroicons-rocket-launch" class="w-5 h-5 mr-2" />
-                {{ t('home.hero.cta_tools') }}
-                </UButton>
-                
-                <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/documentation')&quot;}"
-                color="gray"
-                variant="outline"
-                size="xl"
-                :to="localePath('/documentation')"
-                class="w-full sm:w-auto"
-                >
-                <UIcon name="i-heroicons-document-text" class="w-5 h-5 mr-2" />
-                {{ t('home.hero.cta_docs') }}
-                </UButton>
-            </div>
+    <!-- Hero: dashboard feature tour -->
+    <HeroSection>
+      <PlatformShowcase hero />
+    </HeroSection>
 
-            <!-- Trust Indicators -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-500 dark:text-gray-400 animate-fade-in-up delay-500 animation-fill-backwards">
-                <div class="flex items-center">
-                <UIcon name="i-heroicons-shield-check" class="w-5 h-5 mr-2 text-green-500" />
-                {{ t('home.hero.trust.secure') }}
-                </div>
-                <div class="flex items-center">
-                <UIcon name="i-heroicons-clock" class="w-5 h-5 mr-2 text-blue-500" />
-                {{ t('home.hero.trust.support') }}
-                </div>
-                <div class="flex items-center">
-                <UIcon name="i-heroicons-star" class="w-5 h-5 mr-2 text-yellow-500" />
-                {{ t('home.hero.trust.easy') }}
-                </div>
-            </div>
-          </div>
-        </slot>
-      </HeroSection>
-    </section>
+    <!-- What lands in the inbox -->
+    <EmailExamples />
 
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="text-center mb-12">
@@ -159,6 +101,12 @@
     <!-- Stats Section -->
     <StatsSection />
 
+    <!-- Pricing -->
+    <PricingSection />
+
+    <!-- Ask for what is missing -->
+    <FeatureRequest />
+
     <!-- CTA Section -->
     <section class="bg-white dark:bg-gray-900 py-16 lg:py-24">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -169,17 +117,28 @@
           {{ t('home.cta.subtitle') }}
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}"
+          <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;dashboard&quot;}"
             color="primary"
             size="xl"
-            :to="localePath('/tools')"
+            :to="DASHBOARD_URL"
+            target="_blank"
+            trailing-icon="i-heroicons-arrow-top-right-on-square"
           >
-            <UIcon name="i-heroicons-rocket-launch" class="w-5 h-5 mr-2" />
-            {{ t('home.cta.start_now') }}
+            {{ t('platform.open_dashboard') }}
+          </UButton>
+          <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;demo&quot;}"
+            color="neutral"
+            variant="outline"
+            size="xl"
+            :to="DEMO_URL"
+            target="_blank"
+            icon="i-heroicons-play-circle"
+          >
+            {{ t('platform.try_demo') }}
           </UButton>
           <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}"
-            color="gray"
-            variant="outline"
+            color="neutral"
+            variant="ghost"
             size="xl"
             :to="localePath('/contact')"
           >
@@ -194,6 +153,12 @@
 
 <script setup lang="ts">
 import BotAnimation from '../components/BotAnimation.vue'
+import PlatformShowcase from '../components/platform/PlatformShowcase.vue'
+import PricingSection from '../components/PricingSection.vue'
+import HeroSection from '../components/HeroSection.vue'
+import FeatureRequest from '../components/FeatureRequest.vue'
+import EmailExamples from '../components/platform/EmailExamples.vue'
+import { DASHBOARD_URL, DEMO_URL } from '~/data/platform'
 
 const { t } = useI18n()
 const localePath = useLocalePath()

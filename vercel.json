@@ -1,3 +1,11 @@
 {
-  "version": 2
+  "version": 2,
+  "redirects": [
+    { "source": "/tools/bot/:old(checkout|payments|guests|unconfirmed)", "destination": "/tools/bot/automated-checks", "permanent": true },
+    { "source": "/:locale(en-gb|es|fr|de|id|it|pt|th)/tools/bot/:old(checkout|payments|guests|unconfirmed)", "destination": "/:locale/tools/bot/automated-checks", "permanent": true },
+    { "source": "/tools/bot/prices", "destination": "/tools/bot/dynamic-pricing", "permanent": true },
+    { "source": "/:locale(en-gb|es|fr|de|id|it|pt|th)/tools/bot/prices", "destination": "/:locale/tools/bot/dynamic-pricing", "permanent": true },
+    { "source": "/tools/bot/invoices", "destination": "/tools/bot/invoicing", "permanent": true },
+    { "source": "/:locale(en-gb|es|fr|de|id|it|pt|th)/tools/bot/invoices", "destination": "/:locale/tools/bot/invoicing", "permanent": true }
+  ]
 }

@@ -1,4 +1,29 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { platformSlides, LEGACY_BOT_SLUGS } from './data/platform'
+
+// Public origin used in canonical links and share images. Vercel sets the production host;
+// any other build (preview, local generate) still points shares at the real site.
+const PRODUCTION_HOST = process.env.NUXT_ENV_VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_PROJECT_PRODUCTION_URL
+const SITE_URL = PRODUCTION_HOST
+  ? `https://${PRODUCTION_HOST}`
+  : process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://hotelier.tools'
+
+const LOCALE_CODES = ['en', 'en-gb', 'es', 'fr', 'de', 'id', 'it', 'pt', 'th']
+// Every feature landing page in every language, so none depends on the crawler finding it
+const featureRoutes = LOCALE_CODES.flatMap(code => {
+  const prefix = code === 'en' ? '' : `/${code}`
+  return [`${prefix}/tools/bot`, ...platformSlides.map(f => `${prefix}/tools/bot/${f.slug}`)]
+})
+
+// Old bot pages answer with a 301 to the feature page that replaced them
+const legacyBotRedirects = Object.fromEntries(LOCALE_CODES.flatMap((code) => {
+  const prefix = code === 'en' ? '' : `/${code}`
+  return Object.entries(LEGACY_BOT_SLUGS).map(([from, to]) => [
+    `${prefix}/tools/bot/${from}`,
+    { redirect: { to: `${prefix}/tools/bot/${to}`, statusCode: 301 } }
+  ])
+}))
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
@@ -105,17 +130,17 @@ export default defineNuxtConfig({
   // Meta configuration
   app: {
     head: {
-      title: 'Hotelier Tools - Optimiza tu gestión hotelera con Little Hotelier',
+      title: 'Hotelier Tools - Panel para hoteles con Little Hotelier: facturas, precios y huéspedes',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
-          content: 'Herramientas para optimizar la gestión de hoteles que utilizan Little Hotelier de Siteminder. Extensiones Chrome y automatizaciones para mejorar tu operativa hotelera.'
+          content: 'Panel para hoteles con Little Hotelier: facturas trimestrales, comprobaciones automáticas, precios dinámicos, bandeja de WhatsApp, email y Booking.com, asistente IA e informes del INE. Gratis hasta el 10 de enero de 2027.'
         },
-        { name: 'keywords', content: 'hotel, gestión hotelera, Little Hotelier, Siteminder, automatización, reservas, facturas' },
-        { property: 'og:title', content: 'Hotelier Tools - Optimiza tu gestión hotelera' },
-        { property: 'og:description', content: 'Herramientas para optimizar la gestión de hoteles que utilizan Little Hotelier de Siteminder.' },
+        { name: 'keywords', content: 'hotel, gestión hotelera, Little Hotelier, Siteminder, automatización, reservas, facturas, precios dinámicos, channel manager, WhatsApp huéspedes, encuesta INE, asistente IA hotel' },
+        { property: 'og:title', content: 'Hotelier Tools - Todo lo que necesita tu recepción, en un solo panel' },
+        { property: 'og:description', content: 'Facturas, comprobaciones, precios, mensajes de huéspedes e informes del INE para Little Hotelier, en un solo panel.' },
         { property: 'og:type', content: 'website' }
       ],
       link: [
@@ -131,7 +156,7 @@ export default defineNuxtConfig({
 
   // Site Configuration
   site: {
-    url: process.env.NUXT_ENV_VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.NUXT_ENV_VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000',
+    url: SITE_URL,
     name: 'Hotelier Tools',
     description: 'Herramientas para optimizar la gestión de hoteles que utilizan Little Hotelier de Siteminder',
     defaultLocale: 'en',
@@ -171,15 +196,17 @@ export default defineNuxtConfig({
     identity: {
       type: 'Organization',
       name: 'Hotelier Tools',
-      url: process.env.NUXT_ENV_VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.NUXT_ENV_VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000',
-      logo: (process.env.NUXT_ENV_VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.NUXT_ENV_VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000') + '/logo.png'
+      url: SITE_URL,
+      logo: `${SITE_URL}/logo.png`
     }
   },
 
   // Open Graph Configuration  
   ogImage: {
     enabled: true,
-    componentDirs: ['components/OgImage'],
+    componentDirs: ['OgImage'],
+    // Thai titles need their own glyphs
+    fonts: ['Inter:400', 'Inter:700', 'Noto+Sans+Thai:400', 'Noto+Sans+Thai:700'],
     defaults: {
       width: 1200,
       height: 630,
@@ -207,7 +234,8 @@ export default defineNuxtConfig({
   // Build configuration for Vercel
   nitro: {
     prerender: {
-      failOnError: false
+      failOnError: false,
+      routes: featureRoutes
     }
   },
 
@@ -234,7 +262,7 @@ export default defineNuxtConfig({
     // Public keys (exposed to client-side)
     public: {
       apiBase: '/api',
-      baseUrl: process.env.NUXT_ENV_VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.NUXT_ENV_VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000'
+      baseUrl: SITE_URL
     }
   },
 
@@ -250,7 +278,8 @@ export default defineNuxtConfig({
 
     // Tools section - index is static, subpages are prerendered at build time
     '/tools': { prerender: true },
-    '/tools/**': { prerender: true }
+    '/tools/**': { prerender: true },
+    ...legacyBotRedirects
   },
 
   experimental: {

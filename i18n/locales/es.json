@@ -1,5 +1,7 @@
 {
   "nav": {
+    "features": "Funciones",
+    "demo": "Demo",
     "home": "Inicio",
     "tools": "Herramientas",
     "documentation": "Documentación",
@@ -606,7 +608,7 @@
         },
         "pricing": {
           "label": "¿Cuál es el precio de las herramientas?",
-          "content": "Ofrecemos diferentes opciones según tus necesidades. Las extensiones de navegador son gratuitas, mientras que las automatizaciones pueden requerir configuración personalizada.",
+          "content": "El panel es gratis para todos los hoteles hasta el 9 de enero de 2027. La facturación empieza el 10 de enero de 2027, y los hoteles que lo prueben en 2026 pagan 50 € al mes durante todo 2027. Los scripts de navegador siguen siendo gratis.",
           "links": [
             {
               "text": "Ver herramientas gratuitas",
@@ -728,6 +730,7 @@
         "message": "Cuéntanos cómo podemos ayudarte..."
       },
       "subjects": {
+        "feature": "Petición de función",
         "general": "Consulta general",
         "technical": "Soporte técnico",
         "custom": "Herramienta personalizada",
@@ -995,7 +998,7 @@
         },
         "pricing": {
           "label": "¿Cuál es el precio de las herramientas?",
-          "content": "Ofrecemos diferentes opciones según tus necesidades. Las extensiones de navegador son gratuitas, mientras que las automatizaciones pueden requerir configuración personalizada.",
+          "content": "El panel es gratis para todos los hoteles hasta el 9 de enero de 2027. La facturación empieza el 10 de enero de 2027, y los hoteles que lo prueben en 2026 pagan 50 € al mes durante todo 2027. Los scripts de navegador siguen siendo gratis.",
           "links": [
             {
               "text": "Ver herramientas gratuitas",
@@ -1198,15 +1201,21 @@
   "seo": {
     "site": {
       "name": "Hotelier Tools",
-      "description": "Herramientas especializadas para hoteles que utilizan la plataforma Little Hotelier de Siteminder. Automatiza procesos, mejora la interfaz y aumenta tu tasa de conversión.",
-      "keywords": "gestión hotelera, Little Hotelier, Siteminder, automatización hotelera, gestión de reservas, software hotelero, extensiones chrome, herramientas hoteleras"
+      "description": "Panel y herramientas de navegador gratuitas para hoteles con Little Hotelier: facturas, comprobaciones automáticas, precios dinámicos, bandeja de huéspedes, asistente IA e informes del INE.",
+      "keywords": "gestión hotelera, Little Hotelier, Siteminder, automatización hotelera, gestión de reservas, software hotelero, extensiones chrome, herramientas hoteleras, precios dinámicos, bandeja de huéspedes, WhatsApp para hoteles, encuesta INE, asistente IA para hoteles, facturas hotel"
     },
     "pages": {
+      "features": {
+        "title": "Funciones - Panel Hotelier Tools para Little Hotelier",
+        "description": "Facturación, comprobaciones automáticas, precios dinámicos, bandeja de WhatsApp, email y Booking.com, asistente IA e informes del INE para hoteles con Little Hotelier.",
+        "ogTitle": "Todas las funciones del panel de Hotelier Tools",
+        "ogDescription": "Facturas, comprobaciones, precios, mensajes de huéspedes, IA e informes del INE para Little Hotelier."
+      },
       "home": {
-        "title": "Hotelier Tools - Optimiza tu gestión hotelera con Little Hotelier",
-        "description": "Herramientas especializadas para hoteles que utilizan la plataforma Little Hotelier de Siteminder. Automatiza procesos, mejora la interfaz y aumenta tu tasa de conversión.",
-        "ogTitle": "Hotelier Tools - Automatización de Gestión Hotelera",
-        "ogDescription": "Transforma las operaciones de tu hotel con herramientas especializadas para Little Hotelier. Automatiza reservas, previene errores y mejora la eficiencia."
+        "title": "Panel para Little Hotelier: facturas, precios y bandeja de huéspedes",
+        "description": "Facturas, comprobaciones automáticas, precios dinámicos, bandeja de WhatsApp, email y Booking.com, asistente IA e informes del INE para hoteles con Little Hotelier. Gratis hasta el 10 de enero de 2027.",
+        "ogTitle": "Todo lo que necesita tu recepción, en un solo panel",
+        "ogDescription": "Facturas, comprobaciones, precios, mensajes de huéspedes e informes del INE para Little Hotelier, en un solo panel."
       },
       "tools": {
         "title": "Herramientas de Gestión Hotelera - Scripts y Automatizaciones",
@@ -1400,5 +1409,421 @@
         "button": "Conoce Más Sobre Nuestra Solución"
       }
     }
+  },
+  "platform": {
+    "pause": "Pausar el carrusel",
+    "play": "Reanudar el carrusel",
+    "title": "Todo lo que necesita tu recepción, en un solo panel",
+    "subtitle": "Hotelier Tools se conecta con Little Hotelier y Booking.com. Facturas, comprobaciones, precios, mensajes de huéspedes e informes oficiales se gestionan solos, y tú apruebas lo que de verdad importa.",
+    "open_dashboard": "Abrir el panel",
+    "status": {
+      "stable": "Estable",
+      "beta": "Beta",
+      "alpha": "Alfa",
+      "soon": "Próximamente"
+    },
+    "status_help": {
+      "stable": "Lista para el uso diario.",
+      "beta": "Funciona bien, todavía se está puliendo.",
+      "alpha": "Versión inicial, cambia con frecuencia.",
+      "soon": "En desarrollo."
+    },
+    "slides": {
+      "invoicing": {
+        "short": "Facturación",
+        "title": "Todo un trimestre de facturas en un clic",
+        "description": "Elige un rango de fechas y descarga todas las facturas de Little Hotelier en PDF dentro de un ZIP, con un resumen en CSV para tu asesoría.",
+        "items": {
+          "download": {
+            "name": "Descarga trimestral",
+            "text": "Un ZIP con los PDF y un resumen en CSV de cada trimestre."
+          },
+          "on_leave": {
+            "name": "Factura al hacer el check-out",
+            "text": "Marca una estancia y la factura se crea y se envía por correo al huésped cuando se marcha."
+          },
+          "preflight": {
+            "name": "Comprobaciones antes de facturar",
+            "text": "Evita facturas de empresa sin NIF, facturas anticipadas y duplicados."
+          },
+          "errors": {
+            "name": "Facturas fallidas",
+            "text": "Consulta por qué no se pudo facturar una reserva y vuelve a intentarlo cuando esté solucionado."
+          },
+          "language": {
+            "name": "Idioma de la factura",
+            "text": "Las facturas siguen el país del huésped o usan siempre el idioma que elijas."
+          }
+        }
+      },
+      "checks": {
+        "short": "Comprobaciones",
+        "title": "Detecta problemas antes de que llegue el huésped",
+        "description": "Cada reserva se revisa en cinco momentos de la estancia, para que veas lo que necesita atención, desde un documento de identidad que falta hasta un saldo pendiente.",
+        "items": {
+          "lifecycle": {
+            "name": "Cinco momentos de comprobación",
+            "text": "Al reservar, antes de la llegada, al llegar, durante la estancia y al salir."
+          },
+          "issues": {
+            "name": "Incidencias por reserva",
+            "text": "Incidencias abiertas y resueltas en una sola lista, con un botón para volver a comprobar."
+          },
+          "watchlist": {
+            "name": "Lista de huéspedes no admitidos",
+            "text": "Recibe un aviso cuando un huésped marcado vuelve a reservar. No se cancela nada por ti."
+          },
+          "emails": {
+            "name": "Resúmenes por correo",
+            "text": "Un resumen claro en tu bandeja de entrada, fácil de leer desde cualquier móvil."
+          }
+        }
+      },
+      "pricing": {
+        "short": "Precios dinámicos",
+        "title": "Precios que se ajustan a tu mercado",
+        "description": "Compara tus tarifas con hoteles similares en Booking.com, Expedia, Google Hotels, Hostelworld y Agoda, y recibe un precio recomendado para cada habitación y noche.",
+        "items": {
+          "competitors": {
+            "name": "Precios de la competencia",
+            "text": "Hoteles cercanos de categoría similar, revisados cada día."
+          },
+          "recommendations": {
+            "name": "Recomendaciones de precio",
+            "text": "Cada precio viene con el motivo detrás de él. Nada cambia hasta que tú lo confirmas."
+          },
+          "rules": {
+            "name": "Reglas en lenguaje sencillo",
+            "text": "Escribe las reglas tal como las dirías: estancias mínimas, límites de precio, paquetes de fin de semana."
+          },
+          "events": {
+            "name": "Eventos locales",
+            "text": "Ferias, festivos y eventos cercanos se detectan y se tienen en cuenta."
+          },
+          "autopilot": {
+            "name": "Piloto automático",
+            "text": "Los cambios se aplican en Little Hotelier de forma automática, dentro de los límites que definas."
+          },
+          "stop_sell": {
+            "name": "Stop-sell en SiteMinder",
+            "text": "Abre o cierra habitaciones por noche desde la misma pantalla."
+          }
+        }
+      },
+      "inbox": {
+        "short": "Bandeja de huéspedes",
+        "title": "WhatsApp, correo y Booking.com en una sola bandeja",
+        "description": "Todas las conversaciones con huéspedes en una sola lista, junto a la reserva. El asistente redacta respuestas a partir de tus propias preguntas frecuentes y notas del hotel.",
+        "items": {
+          "unified": {
+            "name": "Una sola bandeja",
+            "text": "WhatsApp, Gmail, Outlook, cualquier cuenta de correo y los mensajes de Booking.com."
+          },
+          "reply_modes": {
+            "name": "Modos de respuesta por canal",
+            "text": "Desactivado, borradores para que los revises, o respuestas automáticas tras el tiempo que elijas."
+          },
+          "knowledge": {
+            "name": "Respuestas basadas en tus preguntas frecuentes",
+            "text": "El asistente solo usa lo que has escrito sobre tu establecimiento."
+          },
+          "training": {
+            "name": "Aprende con el ejemplo",
+            "text": "Corrige una respuesta una vez y el asistente aprende de ella."
+          },
+          "auto_drafts": {
+            "name": "Borradores automáticos",
+            "text": "Cada mensaje nuevo de WhatsApp o Booking.com tiene una respuesta lista para que la revises y la envíes."
+          },
+          "booking_qa": {
+            "name": "Preguntas de Booking.com",
+            "text": "Las preguntas que hacen los huéspedes en tu página de Booking.com se responden desde la misma bandeja."
+          },
+          "safety": {
+            "name": "Seguro desde el diseño",
+            "text": "El asistente solo habla de la reserva del huésped verificado y nunca cambia nada sin ti."
+          }
+        }
+      },
+      "ai": {
+        "short": "Asistente de IA",
+        "title": "Pídeselo al panel y él lo hace por ti",
+        "description": "Escribe o di lo que necesitas. El asistente encuentra la reserva, comprueba la disponibilidad y te muestra el cambio antes de que ocurra nada.",
+        "items": {
+          "chat": {
+            "name": "Chat con el asistente por voz",
+            "text": "Pregunta por reservas, precios o huéspedes por texto o por voz."
+          },
+          "approvals": {
+            "name": "Tú apruebas cada cambio",
+            "text": "Cada cambio aparece como una tarjeta que puedes aprobar o rechazar."
+          },
+          "staff": {
+            "name": "Asistente para el equipo",
+            "text": "Tu equipo hace preguntas por WhatsApp o correo, y los cambios propuestos esperan tu aprobación."
+          },
+          "teams": {
+            "name": "Cuentas de equipo",
+            "text": "Roles de propietario, gerente y personal en una sola cuenta."
+          }
+        }
+      },
+      "reports": {
+        "short": "Informes del INE",
+        "title": "La encuesta del INE, rellenada y enviada",
+        "description": "Las llegadas y pernoctaciones por región y país se preparan a partir de tus reservas y se envían al INE por ti.",
+        "items": {
+          "origins": {
+            "name": "Origen de los huéspedes",
+            "text": "Llegadas y noches por comunidad autónoma o país, habitaciones ocupadas y tarifa media."
+          },
+          "submit": {
+            "name": "Envío directo",
+            "text": "Se envía al INE a través de IRIA, y se guarda el justificante."
+          },
+          "saved": {
+            "name": "Historial de informes",
+            "text": "El informe de cada mes, si se envió y su justificante."
+          }
+        }
+      },
+      "waitlist": {
+        "short": "Lista de espera",
+        "title": "Avisa a los huéspedes cuando una estancia agotada se libera",
+        "description": "Vigila las fechas completas. Cuando todas las noches quedan libres, el huésped o tu equipo reciben un único mensaje por correo o WhatsApp.",
+        "items": {
+          "watch": {
+            "name": "Vigila estancias agotadas",
+            "text": "Sigue cualquier estancia sin bloquear habitaciones."
+          },
+          "notify": {
+            "name": "Un solo mensaje, por correo o WhatsApp",
+            "text": "Se envía una sola vez, cuando todas las noches están libres."
+          },
+          "form": {
+            "name": "Formulario público de inscripción",
+            "text": "Los huéspedes se apuntan a la lista de espera desde un enlace en tu web."
+          }
+        }
+      },
+      "automations": {
+        "short": "Automatizaciones",
+        "title": "Tareas que funcionan mientras duermes",
+        "description": "Programa comprobaciones, facturas, actualizaciones de precio y revisión de la bandeja de entrada. Cada ejecución queda registrada y los fallos llegan a tu correo.",
+        "items": {
+          "schedules": {
+            "name": "Horarios flexibles",
+            "text": "Ejecuta ahora, cada pocos minutos, a diario, cada semana o cada mes."
+          },
+          "history": {
+            "name": "Historial de ejecuciones",
+            "text": "Un resumen claro de lo que hizo cada ejecución."
+          },
+          "breaker": {
+            "name": "Pausa de seguridad",
+            "text": "Si una contraseña caduca, las tareas se pausan para que tu cuenta de Little Hotelier nunca se bloquee."
+          },
+          "one_click": {
+            "name": "Configuración en un clic",
+            "text": "Cada página de función crea la tarea que necesita."
+          }
+        }
+      },
+      "developer": {
+        "short": "API y MCP",
+        "title": "Conecta tus propias herramientas y asistentes de IA",
+        "description": "Una API REST documentada y un servidor MCP te permiten usar los datos de tu hotel desde tu propio software, Claude, Cursor o VS Code.",
+        "items": {
+          "rest": {
+            "name": "API REST",
+            "text": "Reservas, huéspedes, precios y disponibilidad, con un explorador interactivo."
+          },
+          "mcp": {
+            "name": "Servidor MCP",
+            "text": "Conecta asistentes de IA a más de 100 herramientas para hoteles."
+          },
+          "cards": {
+            "name": "Tarjetas integrables",
+            "text": "Resúmenes de reservas y recomendaciones de precio para tus propias páginas."
+          }
+        }
+      },
+      "overview": {
+        "short": "Resumen",
+        "title": "Tu alojamiento de un vistazo",
+        "description": "Nada más entrar ves qué está conectado, qué se está ejecutando y quién llega, y encuentras cualquier página escribiendo lo que necesitas.",
+        "items": {
+          "glance": {
+            "name": "Inicio de un vistazo",
+            "text": "Conexiones, funciones activas, próximas llegadas y actividad reciente en una sola pantalla."
+          },
+          "search": {
+            "name": "Busca lo que sea",
+            "text": "Escribe lo que necesitas, en español o en inglés, y ve directo a ello."
+          },
+          "property": {
+            "name": "Datos del alojamiento ya rellenos",
+            "text": "Dirección, habitaciones, impuestos y políticas se leen de Little Hotelier y se mantienen al día."
+          },
+          "secure": {
+            "name": "Acceso seguro",
+            "text": "Entra con una llave de acceso (passkey) y tus contraseñas se guardan cifradas."
+          }
+        }
+      }
+    },
+    "scenes": {
+      "invoicing": {
+        "period": "Tercer trimestre de 2026",
+        "count": "{n} facturas",
+        "nights": "{n} noche | {n} noches",
+        "invoiced": "Facturado",
+        "missing_tax_id": "Falta el NIF",
+        "toast": "Factura enviada por correo al huésped al hacer el check-out"
+      },
+      "checks": {
+        "steps": {
+          "booked": "Reservado",
+          "before": "Antes de llegar",
+          "arrival": "Llegada",
+          "stay": "Estancia",
+          "checkout": "Salida"
+        },
+        "issues": {
+          "watchlist": "Huésped en tu lista de no admitidos",
+          "id": "Falta el documento de identidad",
+          "balance": "Saldo pendiente de 120 €",
+          "room": "Sin habitación asignada"
+        },
+        "report": "Resumen diario enviado a recepción"
+      },
+      "pricing": {
+        "current": "Actual",
+        "recommended": "Recomendado",
+        "competitors": "Competencia",
+        "event": "Feria local el viernes y el sábado",
+        "reason": "La demanda ha subido y los hoteles similares están un 12 % más caros.",
+        "apply": "Aplicar {n} noches"
+      },
+      "inbox": {
+        "guest": "¡Hola! ¿Podríamos hacer el check-in mañana a las 11?",
+        "draft_label": "Respuesta sugerida",
+        "draft": "¡Hola, Laura! El check-in es a partir de las 14:00, pero podemos tener tu habitación lista a las 11:00 por 15 €. ¿Te lo añado?",
+        "source": "Basado en tus preguntas frecuentes",
+        "edit": "Editar",
+        "send": "Enviar",
+        "more": "Borradores listos en {n} conversaciones más"
+      },
+      "ai": {
+        "prompt": "Cambia la reserva de Laura Martín al 14-16 de octubre",
+        "step1": "Reserva encontrada",
+        "step2": "La habitación 3 está libre esas noches",
+        "step3": "El precio no cambia",
+        "card_title": "Cambiar fechas",
+        "card_body": "Laura Martín, habitación 3, 2 noches",
+        "approve": "Aprobar",
+        "reject": "Rechazar",
+        "voice": "Di tu petición"
+      },
+      "reports": {
+        "title": "Llegadas por origen, agosto",
+        "stays": "Pernoctaciones",
+        "rooms": "Habitaciones ocupadas",
+        "sent": "Enviado al INE"
+      },
+      "waitlist": {
+        "watching": "Vigilando {n} noches",
+        "full": "Completo",
+        "free": "Libre",
+        "toast": "Las 4 noches vuelven a estar libres. Se ha avisado a Ana por WhatsApp."
+      },
+      "automations": {
+        "jobs": {
+          "checks": "Comprobaciones de reservas",
+          "invoices": "Factura al hacer el check-out",
+          "competitors": "Precios de la competencia",
+          "report": "Informe mensual del INE"
+        },
+        "schedule": {
+          "hourly": "Cada hora",
+          "every15": "Cada 15 minutos",
+          "daily": "Cada día a las 06:00",
+          "monthly": "El día 1 de cada mes"
+        },
+        "ok": "Hecho",
+        "paused": "Tareas en pausa: la contraseña de Little Hotelier ha caducado. Actualízala para que se reanuden."
+      },
+      "developer": {
+        "clients": "Funciona con",
+        "tools": "{n} herramientas"
+      },
+      "overview": {
+        "query": "lista de espera",
+        "result": "Lista de espera: 2 estancias vigiladas",
+        "connected": "Conectado",
+        "running": "Activo",
+        "tasks": "12 automatizaciones",
+        "arrivals": "Llegan hoy"
+      }
+    },
+    "try_demo": "Probar la demo",
+    "slide_demo": "Verlo en la demo",
+    "banner": {
+      "title": "Todo esto está en el panel de Hotelier Tools",
+      "text": "Facturas, comprobaciones, precios, mensajes de huéspedes e informes del INE para Little Hotelier. Gratis hasta el 10 de enero de 2027.",
+      "features": "Ver todas las funciones"
+    },
+    "learn_more": "Saber más"
+  },
+  "pricing": {
+    "title": "Gratis hasta el {date}",
+    "subtitle": "Usa todas las funciones, incluidas las que están en beta y alfa, y ayúdanos a definir lo que viene después.",
+    "now": {
+      "period": "Desde hoy hasta el {date}",
+      "description": "Gratis para todos los hoteles.",
+      "points": [
+        "Todas las funciones incluidas",
+        "Sin necesidad de tarjeta",
+        "Tu opinión da forma a la hoja de ruta"
+      ],
+      "days_left": "Queda {n} día de acceso gratis | Quedan {n} días de acceso gratis"
+    },
+    "billing_starts": "La facturación empieza",
+    "later": {
+      "period": "Durante todo 2027",
+      "description": "Para los hoteles que prueben Hotelier Tools en 2026.",
+      "points": [
+        "Empieza a usarlo antes del 31 de diciembre de 2026",
+        "El precio se mantiene igual durante todo 2027",
+        "Por hotel, al mes"
+      ]
+    },
+    "per_month": "/ mes",
+    "cta": "Empezar gratis",
+    "note": "Los scripts de navegador siguen siendo gratis."
+  },
+  "features": {
+    "title": "Todas las funciones del panel de Hotelier Tools",
+    "subtitle": "Facturación, comprobaciones automáticas, precios dinámicos, bandeja de huéspedes, asistente IA, informes del INE y más, pensado para hoteles con Little Hotelier. Cada función indica si es estable, beta o alfa.",
+    "what_you_get": "Qué hace",
+    "other": "Más del panel",
+    "breadcrumb": "Ruta de navegación",
+    "seo_feature_title": "{name} para Little Hotelier",
+    "request": {
+      "title": "¿Echas algo en falta para tu hotel?",
+      "text": "Cuéntanos qué te ahorraría tiempo. Leemos cada petición y con ellas decidimos qué construir después.",
+      "cta": "Pedir una función",
+      "email": "Escríbenos"
+    }
+  },
+  "emails": {
+    "title": "Los emails que recibirás",
+    "subtitle": "Ejemplos reales de lo que llega a tu bandeja y de lo que reciben tus huéspedes.",
+    "to_hotel": "Para tu equipo",
+    "to_guest": "Para el huésped",
+    "reception": "Recepción",
+    "guest_name": "Ana Ribeiro",
+    "hotel_sender": "Tu hotel",
+    "note": "Ejemplo con datos inventados, basado en los emails que envía el panel."
   }
 }

@@ -16,15 +16,28 @@
               to="https://dashboard.hotelier.tools/"
               class="relative inline-block text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
             >
-              <!-- {{ $t('nav.home') }} -->
+
               Dashboard
               <UBadge size="xs" variant="solid" color="warning" class="absolute -top-2 -right-3">Beta</UBadge>
+            </NuxtLink>
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;https://demo.hotelier.tools/&quot;}"
+              to="https://demo.hotelier.tools/"
+              target="_blank"
+              class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
+            >
+              {{ $t('nav.demo') }}
             </NuxtLink>
             <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/')&quot;}" 
               :to="localePath('/')"
               class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
             >
               {{ $t('nav.home') }}
+            </NuxtLink>
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/tools/bot')&quot;}"
+              :to="localePath('/tools/bot')"
+              class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
+            >
+              {{ $t('nav.features') }}
             </NuxtLink>
             <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}" 
               :to="localePath('/tools')"
@@ -119,12 +132,27 @@
               Dashboard
               <UBadge size="xs" variant="solid" color="warning" class="ml-2">Beta</UBadge>
             </NuxtLink>
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;https://demo.hotelier.tools/&quot;}"
+              to="https://demo.hotelier.tools/"
+              target="_blank"
+              class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
+              @click="isMenuOpen = false"
+            >
+              {{ $t('nav.demo') }}
+            </NuxtLink>
             <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/')&quot;}" 
               :to="localePath('/')"
               class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
               @click="isMenuOpen = false"
             >
               {{ $t('nav.home') }}
+            </NuxtLink>
+            <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/tools/bot')&quot;}"
+              :to="localePath('/tools/bot')"
+              class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors"
+              @click="isMenuOpen = false"
+            >
+              {{ $t('nav.features') }}
             </NuxtLink>
             <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}" 
               :to="localePath('/tools')"
@@ -160,7 +188,7 @@
     <!-- Footer -->
     <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
           <!-- Company Info -->
           <div class="col-span-1 md:col-span-2">
             <div class="flex items-center space-x-2 mb-4">
@@ -183,12 +211,36 @@
             </div>
           </div>
 
+          <!-- Dashboard features, from data/platform.ts -->
+          <div>
+            <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
+              {{ $t('nav.features') }}
+            </h3>
+            <ul class="space-y-2">
+              <li v-for="f in platformSlides" :key="f.slug">
+                <NuxtLink :to="localePath(`/tools/bot/${f.slug}`)" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" :data-umami-click="`{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;/tools/bot/${f.slug}&quot;}`">
+                  {{ $t(`platform.slides.${f.id}.short`) }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
+
           <!-- Quick Links -->
           <div>
             <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
               {{ $t('footer.links') }}
             </h3>
             <ul class="space-y-2">
+              <li>
+                <a data-umami-click="{&quot;name&quot;:&quot;click_a&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;https://dashboard.hotelier.tools/&quot;}" href="https://dashboard.hotelier.tools/" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a data-umami-click="{&quot;name&quot;:&quot;click_a&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;https://demo.hotelier.tools/&quot;}" href="https://demo.hotelier.tools/" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                  {{ $t('nav.demo') }}
+                </a>
+              </li>
               <li>
                 <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}" :to="localePath('/tools')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('nav.tools') }}
@@ -241,6 +293,8 @@
 </template>
 
 <script setup lang="ts">
+import { platformSlides } from '~/data/platform'
+
 const colorMode = useColorMode()
 const isDark = computed(() => colorMode.value === 'dark')
 const isMenuOpen = ref(false)

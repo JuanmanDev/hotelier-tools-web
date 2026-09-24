@@ -66,41 +66,41 @@ export const toolsData: ToolData[] = [
     category: 'automation',
     icon: 'i-heroicons-arrow-right-start-on-rectangle',
     status: 'beta',
-    linkTo: '/tools/bot/checkout'
+    linkTo: '/tools/bot/automated-checks'
   },
   {
     id: 'payment-validator-bot',
     category: 'automation',
     icon: 'i-heroicons-credit-card',
     status: 'beta',
-    linkTo: '/tools/bot/payments'
+    linkTo: '/tools/bot/automated-checks'
   },
   {
     id: 'unconfirmed-reservations-bot',
     category: 'automation',
     icon: 'i-heroicons-exclamation-triangle',
     status: 'available',
-    linkTo: '/tools/bot/unconfirmed'
+    linkTo: '/tools/bot/automated-checks'
   },
   {
     id: 'guest-management-bot',
     category: 'automation',
     icon: 'i-heroicons-user-group',
     status: 'beta',
-    linkTo: '/tools/bot/guests'
+    linkTo: '/tools/bot/automated-checks'
   },
   {
     id: 'pricing-optimization-bot',
     category: 'automation',
     icon: 'i-heroicons-chart-bar-square',
     status: 'beta',
-    linkTo: '/tools/bot/prices'
+    linkTo: '/tools/bot/dynamic-pricing'
   },
   {
     id: 'invoice-management-bot',
     category: 'automation',
     icon: 'i-heroicons-document-text',
     status: 'coming-soon',
-    linkTo: '/tools/bot/invoices'
+    linkTo: '/tools/bot/invoicing'
   }
 ]

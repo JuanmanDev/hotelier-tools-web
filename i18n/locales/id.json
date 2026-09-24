@@ -1,5 +1,7 @@
 {
   "nav": {
+    "features": "Fitur",
+    "demo": "Demo",
     "home": "Beranda",
     "tools": "Alat",
     "documentation": "Dokumentasi",
@@ -584,6 +586,7 @@
         "message": "Beri tahu kami bagaimana kami dapat membantu Anda..."
       },
       "subjects": {
+        "feature": "Permintaan fitur",
         "general": "Pertanyaan umum",
         "technical": "Dukungan teknis",
         "custom": "Alat khusus",
@@ -1002,15 +1005,21 @@
   "seo": {
     "site": {
       "name": "Hotelier Tools",
-      "description": "Alat khusus untuk hotel yang menggunakan platform Little Hotelier dari Siteminder. Otomatisasi proses, tingkatkan antarmuka dan tingkatkan tingkat konversi dengan mencegah kesalahan.",
-      "keywords": "manajemen hotel, Little Hotelier, Siteminder, otomatisasi hotel, manajemen pemesanan, perangkat lunak hotel, ekstensi chrome, alat hotel"
+      "description": "Dasbor dan alat browser gratis untuk hotel yang memakai Little Hotelier: faktur, pemeriksaan otomatis, harga dinamis, kotak masuk tamu, asisten AI, dan laporan INE.",
+      "keywords": "manajemen hotel, Little Hotelier, Siteminder, otomatisasi hotel, manajemen pemesanan, perangkat lunak hotel, ekstensi chrome, alat hotel, harga dinamis, kotak masuk tamu, WhatsApp untuk hotel, survei INE, asisten AI hotel, faktur hotel"
     },
     "pages": {
+      "features": {
+        "title": "Fitur - Dasbor Hotelier Tools untuk Little Hotelier",
+        "description": "Faktur, pemeriksaan otomatis, harga dinamis, kotak masuk WhatsApp, email, dan Booking.com, asisten AI, serta laporan INE untuk hotel yang memakai Little Hotelier.",
+        "ogTitle": "Semua fitur dasbor Hotelier Tools",
+        "ogDescription": "Faktur, pemeriksaan, harga, pesan tamu, AI, dan laporan INE untuk Little Hotelier."
+      },
       "home": {
-        "title": "Hotelier Tools - Optimalkan manajemen hotel Anda dengan Little Hotelier",
-        "description": "Alat khusus untuk hotel yang menggunakan platform Little Hotelier dari Siteminder. Otomatisasi proses, tingkatkan antarmuka dan tingkatkan tingkat konversi dengan mencegah kesalahan.",
-        "ogTitle": "Hotelier Tools - Otomatisasi Manajemen Hotel",
-        "ogDescription": "Transformasikan operasi hotel Anda dengan alat khusus untuk Little Hotelier. Otomatisasi pemesanan, cegah kesalahan, dan tingkatkan efisiensi."
+        "title": "Dasbor untuk Little Hotelier: faktur, harga, dan kotak masuk tamu",
+        "description": "Faktur, pemeriksaan otomatis, harga dinamis, kotak masuk WhatsApp, email, dan Booking.com, asisten AI, serta laporan INE untuk hotel yang memakai Little Hotelier. Gratis sampai 10 Januari 2027.",
+        "ogTitle": "Semua yang dibutuhkan resepsionis Anda, dalam satu dasbor",
+        "ogDescription": "Faktur, pemeriksaan, harga, pesan tamu, dan laporan INE untuk Little Hotelier, dalam satu dasbor."
       },
       "tools": {
         "title": "Alat Manajemen Hotel - Skrip Browser & Otomatisasi",
@@ -1204,5 +1213,421 @@
         "button": "Pelajari Lebih Lanjut Tentang Solusi Kami"
       }
     }
+  },
+  "platform": {
+    "pause": "Jeda tayangan",
+    "play": "Lanjutkan tayangan",
+    "title": "Semua yang dibutuhkan resepsionis Anda, dalam satu dashboard",
+    "subtitle": "Hotelier Tools terhubung dengan Little Hotelier dan Booking.com. Faktur, pemeriksaan, harga, pesan tamu, dan laporan resmi berjalan secara otomatis, dan Anda tinggal menyetujui hal-hal yang penting.",
+    "open_dashboard": "Buka dashboard",
+    "status": {
+      "stable": "Stabil",
+      "beta": "Beta",
+      "alpha": "Alpha",
+      "soon": "Segera hadir"
+    },
+    "status_help": {
+      "stable": "Siap digunakan setiap hari.",
+      "beta": "Sudah berjalan baik, masih terus disempurnakan.",
+      "alpha": "Versi awal, masih sering berubah.",
+      "soon": "Sedang dikembangkan."
+    },
+    "slides": {
+      "invoicing": {
+        "short": "Faktur",
+        "title": "Faktur satu kuartal penuh hanya dengan satu klik",
+        "description": "Pilih rentang tanggal dan dapatkan semua faktur dari Little Hotelier dalam bentuk PDF di satu file ZIP, lengkap dengan ringkasan CSV untuk akuntan Anda.",
+        "items": {
+          "download": {
+            "name": "Unduhan per kuartal",
+            "text": "Satu file ZIP berisi PDF dan ringkasan CSV untuk setiap kuartal."
+          },
+          "on_leave": {
+            "name": "Faktur saat check-out",
+            "text": "Tandai satu masa menginap, dan faktur akan dibuat lalu dikirim ke email tamu saat mereka check-out."
+          },
+          "preflight": {
+            "name": "Pemeriksaan sebelum penagihan",
+            "text": "Mencegah faktur perusahaan tanpa nomor pajak, faktur yang terlalu dini, dan faktur duplikat."
+          },
+          "errors": {
+            "name": "Faktur gagal",
+            "text": "Lihat alasan sebuah reservasi tidak dapat ditagih, lalu coba lagi setelah diperbaiki."
+          },
+          "language": {
+            "name": "Bahasa faktur",
+            "text": "Faktur mengikuti negara tamu, atau selalu memakai bahasa pilihan Anda."
+          }
+        }
+      },
+      "checks": {
+        "short": "Pemeriksaan",
+        "title": "Temukan masalah sebelum tamu tiba",
+        "description": "Setiap reservasi diperiksa pada lima momen selama masa menginap, sehingga Anda tahu persis apa yang perlu diperhatikan, mulai dari identitas yang belum lengkap hingga tagihan yang belum lunas.",
+        "items": {
+          "lifecycle": {
+            "name": "Lima momen pemeriksaan",
+            "text": "Setelah pemesanan, sebelum kedatangan, saat kedatangan, selama menginap, dan saat check-out."
+          },
+          "issues": {
+            "name": "Masalah per reservasi",
+            "text": "Masalah yang terbuka dan yang sudah selesai dalam satu daftar, dengan tombol untuk memeriksa ulang."
+          },
+          "watchlist": {
+            "name": "Daftar tamu tidak diterima kembali",
+            "text": "Dapatkan notifikasi saat tamu yang Anda tandai memesan lagi. Tidak ada yang dibatalkan secara otomatis."
+          },
+          "emails": {
+            "name": "Laporan lewat email",
+            "text": "Ringkasan yang jelas langsung di kotak masuk Anda, mudah dibaca dari ponsel mana pun."
+          }
+        }
+      },
+      "pricing": {
+        "short": "Harga dinamis",
+        "title": "Harga yang mengikuti pasar Anda",
+        "description": "Bandingkan tarif Anda dengan hotel sejenis di Booking.com, Expedia, Google Hotels, Hostelworld, dan Agoda, lalu dapatkan rekomendasi harga untuk setiap kamar dan malam.",
+        "items": {
+          "competitors": {
+            "name": "Harga kompetitor",
+            "text": "Hotel sekitar dengan kategori serupa, diperiksa setiap hari."
+          },
+          "recommendations": {
+            "name": "Rekomendasi harga",
+            "text": "Setiap harga disertai alasannya. Tidak ada yang berubah sampai Anda mengonfirmasi."
+          },
+          "rules": {
+            "name": "Aturan dalam bahasa sederhana",
+            "text": "Tulis aturan seperti Anda mengucapkannya: lama menginap minimum, batas harga, paket akhir pekan."
+          },
+          "events": {
+            "name": "Acara lokal",
+            "text": "Pameran, hari libur, dan acara di sekitar Anda ditemukan dan diperhitungkan secara otomatis."
+          },
+          "autopilot": {
+            "name": "Autopilot",
+            "text": "Perubahan diterapkan langsung ke Little Hotelier secara otomatis, sesuai batasan yang Anda tentukan."
+          },
+          "stop_sell": {
+            "name": "Stop-sell di SiteMinder",
+            "text": "Buka atau tutup kamar per malam dari layar yang sama."
+          }
+        }
+      },
+      "inbox": {
+        "short": "Kotak masuk tamu",
+        "title": "WhatsApp, email, dan Booking.com dalam satu kotak masuk",
+        "description": "Semua percakapan dengan tamu ada dalam satu daftar, berdampingan dengan data reservasi. Asisten menyusun draf balasan berdasarkan FAQ dan catatan properti Anda sendiri.",
+        "items": {
+          "unified": {
+            "name": "Satu kotak masuk",
+            "text": "Pesan dari WhatsApp, Gmail, Outlook, akun email apa pun, dan Booking.com."
+          },
+          "reply_modes": {
+            "name": "Mode balasan per kanal",
+            "text": "Nonaktif, draf untuk Anda tinjau, atau balasan otomatis setelah jeda waktu yang Anda tentukan."
+          },
+          "knowledge": {
+            "name": "Jawaban dari FAQ Anda",
+            "text": "Asisten hanya menggunakan informasi yang sudah Anda tulis tentang properti Anda."
+          },
+          "training": {
+            "name": "Latih lewat contoh",
+            "text": "Perbaiki satu balasan saja, dan asisten akan belajar darinya."
+          },
+          "auto_drafts": {
+            "name": "Draf otomatis",
+            "text": "Setiap pesan baru dari WhatsApp atau Booking.com mendapat balasan siap untuk Anda periksa dan kirim."
+          },
+          "booking_qa": {
+            "name": "Pertanyaan Booking.com",
+            "text": "Pertanyaan tamu di halaman Booking.com Anda dijawab dari kotak masuk yang sama."
+          },
+          "safety": {
+            "name": "Aman sejak awal",
+            "text": "Asisten hanya membahas pemesanan milik tamu yang terverifikasi dan tidak pernah mengubah apa pun tanpa Anda."
+          }
+        }
+      },
+      "ai": {
+        "short": "Asisten AI",
+        "title": "Minta dashboard yang mengerjakannya untuk Anda",
+        "description": "Ketik atau ucapkan apa yang Anda butuhkan. Asisten akan mencari reservasinya, memeriksa ketersediaan, dan menunjukkan perubahan yang akan dilakukan sebelum benar-benar terjadi.",
+        "items": {
+          "chat": {
+            "name": "Obrolan asisten dengan suara",
+            "text": "Tanyakan tentang pemesanan, harga, atau tamu lewat teks atau suara."
+          },
+          "approvals": {
+            "name": "Anda menyetujui setiap perubahan",
+            "text": "Setiap perubahan muncul sebagai kartu yang bisa Anda setujui atau tolak."
+          },
+          "staff": {
+            "name": "Asisten untuk staf",
+            "text": "Tim Anda bisa bertanya lewat WhatsApp atau email, dan perubahan yang diusulkan akan menunggu persetujuan Anda."
+          },
+          "teams": {
+            "name": "Akun tim",
+            "text": "Peran pemilik, manajer, dan staf dalam satu akun."
+          }
+        }
+      },
+      "reports": {
+        "short": "Laporan INE",
+        "title": "Survei INE, diisi dan dikirim otomatis",
+        "description": "Data kedatangan dan malam menginap berdasarkan wilayah dan negara disiapkan dari reservasi Anda, lalu dikirimkan ke INE untuk Anda.",
+        "items": {
+          "origins": {
+            "name": "Asal tamu",
+            "text": "Kedatangan dan jumlah malam berdasarkan wilayah Spanyol atau negara asal, kamar terisi, dan tarif rata-rata."
+          },
+          "submit": {
+            "name": "Pengiriman langsung",
+            "text": "Dikirim ke INE melalui IRIA, dengan bukti terima yang tersimpan."
+          },
+          "saved": {
+            "name": "Riwayat laporan",
+            "text": "Laporan setiap bulan, beserta status pengiriman dan bukti terimanya."
+          }
+        }
+      },
+      "waitlist": {
+        "short": "Daftar tunggu",
+        "title": "Beri tahu tamu saat masa menginap yang penuh kembali tersedia",
+        "description": "Pantau tanggal-tanggal yang sudah penuh. Begitu semua malam tersedia kembali, tamu atau tim Anda akan menerima satu pesan lewat email atau WhatsApp.",
+        "items": {
+          "watch": {
+            "name": "Pantau masa menginap yang penuh",
+            "text": "Ikuti masa menginap mana pun tanpa perlu menahan kamar."
+          },
+          "notify": {
+            "name": "Satu pesan, lewat email atau WhatsApp",
+            "text": "Dikirim sekali, saat semua malam sudah tersedia."
+          },
+          "form": {
+            "name": "Formulir pendaftaran publik",
+            "text": "Tamu bisa bergabung ke daftar tunggu lewat tautan di situs web Anda."
+          }
+        }
+      },
+      "automations": {
+        "short": "Otomatisasi",
+        "title": "Tugas yang berjalan sementara Anda tidur",
+        "description": "Jadwalkan pemeriksaan, faktur, pembaruan harga, dan pengecekan kotak masuk. Setiap proses tercatat, dan kegagalan langsung dikirim ke email Anda.",
+        "items": {
+          "schedules": {
+            "name": "Jadwal fleksibel",
+            "text": "Jalankan sekarang, setiap beberapa menit, harian, mingguan, atau bulanan."
+          },
+          "history": {
+            "name": "Riwayat proses",
+            "text": "Ringkasan yang mudah dibaca tentang apa yang dilakukan setiap proses."
+          },
+          "breaker": {
+            "name": "Jeda otomatis yang aman",
+            "text": "Jika kata sandi kedaluwarsa, tugas akan dijeda agar akun Little Hotelier Anda tidak pernah terkunci."
+          },
+          "one_click": {
+            "name": "Pengaturan satu klik",
+            "text": "Setiap halaman fitur membuat tugas yang dibutuhkannya sendiri."
+          }
+        }
+      },
+      "developer": {
+        "short": "API dan MCP",
+        "title": "Hubungkan alat dan asisten AI Anda sendiri",
+        "description": "REST API yang terdokumentasi dan server MCP memungkinkan Anda menggunakan data hotel dari software Anda sendiri, Claude, Cursor, atau VS Code.",
+        "items": {
+          "rest": {
+            "name": "REST API",
+            "text": "Reservasi, tamu, harga, dan ketersediaan, lengkap dengan explorer interaktif."
+          },
+          "mcp": {
+            "name": "Server MCP",
+            "text": "Hubungkan asisten AI ke lebih dari 100 alat hotel."
+          },
+          "cards": {
+            "name": "Kartu yang bisa disematkan",
+            "text": "Ringkasan reservasi dan rekomendasi harga untuk halaman Anda sendiri."
+          }
+        }
+      },
+      "overview": {
+        "short": "Ringkasan",
+        "title": "Properti Anda dalam sekali lihat",
+        "description": "Begitu masuk, Anda langsung melihat apa yang terhubung, apa yang berjalan, dan siapa yang tiba berikutnya, serta menemukan halaman mana pun cukup dengan mengetik kebutuhan Anda.",
+        "items": {
+          "glance": {
+            "name": "Beranda sekilas",
+            "text": "Koneksi, fitur aktif, kedatangan berikutnya, dan aktivitas terbaru dalam satu layar."
+          },
+          "search": {
+            "name": "Cari apa saja",
+            "text": "Ketik yang Anda butuhkan, dalam bahasa Inggris atau Spanyol, lalu langsung menuju ke sana."
+          },
+          "property": {
+            "name": "Data properti terisi otomatis",
+            "text": "Alamat, kamar, pajak, dan kebijakan dibaca dari Little Hotelier dan selalu diperbarui."
+          },
+          "secure": {
+            "name": "Akses aman",
+            "text": "Masuk dengan passkey, dan kata sandi Anda disimpan terenkripsi."
+          }
+        }
+      }
+    },
+    "scenes": {
+      "invoicing": {
+        "period": "Kuartal ketiga 2026",
+        "count": "{n} faktur",
+        "nights": "{n} malam | {n} malam",
+        "invoiced": "Sudah ditagih",
+        "missing_tax_id": "Nomor pajak belum ada",
+        "toast": "Faktur dikirim ke email tamu saat check-out"
+      },
+      "checks": {
+        "steps": {
+          "booked": "Dipesan",
+          "before": "Sebelum kedatangan",
+          "arrival": "Kedatangan",
+          "stay": "Menginap",
+          "checkout": "Check-out"
+        },
+        "issues": {
+          "watchlist": "Tamu ada di daftar tidak diterima kembali",
+          "id": "Dokumen identitas belum ada",
+          "balance": "Tagihan belum lunas sebesar 120 €",
+          "room": "Belum ada kamar yang ditetapkan"
+        },
+        "report": "Ringkasan harian dikirim ke resepsionis"
+      },
+      "pricing": {
+        "current": "Saat ini",
+        "recommended": "Rekomendasi",
+        "competitors": "Kompetitor",
+        "event": "Pameran lokal pada Jumat dan Sabtu",
+        "reason": "Permintaan sedang naik dan hotel sejenis 12% lebih mahal.",
+        "apply": "Terapkan {n} malam"
+      },
+      "inbox": {
+        "guest": "Hai! Bisakah kami check-in jam 11 besok?",
+        "draft_label": "Balasan yang disarankan",
+        "draft": "Hai Laura! Check-in mulai pukul 14:00, tapi kamar Anda bisa siap pukul 11:00 dengan tambahan 15 €. Mau saya tambahkan?",
+        "source": "Berdasarkan FAQ Anda",
+        "edit": "Edit",
+        "send": "Kirim",
+        "more": "Draf siap di {n} percakapan lain"
+      },
+      "ai": {
+        "prompt": "Pindahkan reservasi Laura Martín ke 14–16 Oktober",
+        "step1": "Reservasi ditemukan",
+        "step2": "Kamar 3 kosong pada malam-malam tersebut",
+        "step3": "Harga tetap sama",
+        "card_title": "Ubah tanggal",
+        "card_body": "Laura Martín, kamar 3, 2 malam",
+        "approve": "Setujui",
+        "reject": "Tolak",
+        "voice": "Ucapkan permintaan Anda"
+      },
+      "reports": {
+        "title": "Kedatangan berdasarkan asal, Agustus",
+        "stays": "Malam menginap",
+        "rooms": "Kamar terisi",
+        "sent": "Dikirim ke INE"
+      },
+      "waitlist": {
+        "watching": "Memantau {n} malam",
+        "full": "Penuh",
+        "free": "Tersedia",
+        "toast": "Keempat malam kini tersedia lagi. Ana sudah diberi tahu lewat WhatsApp."
+      },
+      "automations": {
+        "jobs": {
+          "checks": "Pemeriksaan reservasi",
+          "invoices": "Faktur saat check-out",
+          "competitors": "Harga kompetitor",
+          "report": "Laporan bulanan INE"
+        },
+        "schedule": {
+          "hourly": "Setiap jam",
+          "every15": "Setiap 15 menit",
+          "daily": "Setiap hari pukul 06:00",
+          "monthly": "Setiap tanggal 1"
+        },
+        "ok": "Selesai",
+        "paused": "Tugas dijeda: kata sandi Little Hotelier sudah kedaluwarsa. Perbarui kata sandinya agar tugas berjalan lagi."
+      },
+      "developer": {
+        "clients": "Bekerja dengan",
+        "tools": "{n} alat"
+      },
+      "overview": {
+        "query": "daftar tunggu",
+        "result": "Daftar tunggu: 2 masa inap dipantau",
+        "connected": "Terhubung",
+        "running": "Berjalan",
+        "tasks": "12 otomatisasi",
+        "arrivals": "Tiba hari ini"
+      }
+    },
+    "try_demo": "Coba demo",
+    "slide_demo": "Lihat di demo",
+    "banner": {
+      "title": "Semua ini ada di dasbor Hotelier Tools",
+      "text": "Faktur, pemeriksaan, harga, pesan tamu, dan laporan INE untuk Little Hotelier. Gratis sampai 10 Januari 2027.",
+      "features": "Lihat semua fitur"
+    },
+    "learn_more": "Selengkapnya"
+  },
+  "pricing": {
+    "title": "Gratis sampai {date}",
+    "subtitle": "Gunakan semua fitur, termasuk yang masih beta dan alpha, dan bantu kami menentukan langkah selanjutnya.",
+    "now": {
+      "period": "Mulai hari ini sampai {date}",
+      "description": "Gratis untuk semua hotel.",
+      "points": [
+        "Semua fitur termasuk",
+        "Tidak perlu kartu",
+        "Masukan Anda membentuk roadmap kami"
+      ],
+      "days_left": "Tersisa {n} hari akses gratis | Tersisa {n} hari akses gratis"
+    },
+    "billing_starts": "Penagihan dimulai",
+    "later": {
+      "period": "Sepanjang 2027",
+      "description": "Untuk hotel yang mencoba Hotelier Tools di tahun 2026.",
+      "points": [
+        "Mulai gunakan sebelum 31 Desember 2026",
+        "Harga tetap sama sepanjang 2027",
+        "Per hotel, per bulan"
+      ]
+    },
+    "per_month": "/ bulan",
+    "cta": "Mulai gratis",
+    "note": "Skrip browser tetap gratis."
+  },
+  "features": {
+    "title": "Semua fitur dasbor Hotelier Tools",
+    "subtitle": "Faktur, pemeriksaan otomatis, harga dinamis, kotak masuk tamu, asisten AI, laporan INE, dan lainnya, dibuat untuk hotel yang memakai Little Hotelier. Setiap fitur menunjukkan apakah stabil, beta, atau alfa.",
+    "what_you_get": "Apa fungsinya",
+    "other": "Lainnya dari dasbor",
+    "breadcrumb": "Navigasi",
+    "seo_feature_title": "{name} untuk Little Hotelier",
+    "request": {
+      "title": "Ada yang kurang untuk hotel Anda?",
+      "text": "Beri tahu kami apa yang bisa menghemat waktu Anda. Kami membaca setiap permintaan dan memakainya untuk menentukan apa yang dibuat berikutnya.",
+      "cta": "Minta fitur",
+      "email": "Kirim email"
+    }
+  },
+  "emails": {
+    "title": "Email yang akan Anda terima",
+    "subtitle": "Contoh nyata apa yang masuk ke kotak masuk Anda, dan apa yang diterima tamu Anda.",
+    "to_hotel": "Untuk tim Anda",
+    "to_guest": "Untuk tamu",
+    "reception": "Resepsionis",
+    "guest_name": "Ana Ribeiro",
+    "hotel_sender": "Hotel Anda",
+    "note": "Contoh dengan data rekaan, berdasarkan email yang dikirim dasbor."
   }
 }

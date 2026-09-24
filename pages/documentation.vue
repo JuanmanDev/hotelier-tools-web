@@ -362,6 +362,8 @@
         </div>
       </div>
     </section>
+    <!-- The dashboard, one click away -->
+    <DashboardBanner />
   </div>
 </template>
 

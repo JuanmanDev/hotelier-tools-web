@@ -1,39 +1,28 @@
 <template>
-  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;HeroSection&quot;,&quot;path&quot;:&quot;components/HeroSection.vue&quot;}" class="hero-container relative w-full min-h-[90vh] overflow-hidden bg-slate-900">
+  <div data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;HeroSection&quot;,&quot;path&quot;:&quot;components/HeroSection.vue&quot;}" class="hero-container relative w-full overflow-hidden bg-slate-900">
     <!-- Animated Gradient Background -->
     <div class="animated-gradient absolute inset-0"></div>
 
     <!-- Floating Icons -->
-    <div class="absolute inset-0">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
       <Icon
         v-for="icon in icons"
         :key="icon.id"
         :name="icon.name"
-        class="floating-icon absolute text-slate-800 dark:text-white/30"
+        class="floating-icon absolute text-blue-900/15 dark:text-white/15"
         :class="icon.blur"
         :style="icon.style"
       />
     </div>
 
-    <!-- Content Wrapper for Process Steps and Slot -->
-    <div class="relative z-10 flex flex-col items-center w-full min-h-[90vh] p-4 justify-evenly">
-      <div class="order-2 md:order-1">
-        <!-- Process Steps -->
-        <!-- <ProcessStepsManager /> -->
-         <ErrorDetectionShowcase />
-      </div>
-      <div class="order-1 md:order-2">
-        <!-- Slot for additional content -->
-        <slot />
-      </div>
+    <div class="relative z-10 w-full">
+      <slot />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import ProcessStepsManager from '~/components/ProcessStepsManager.vue';
-import ErrorDetectionShowcase from './animation/ErrorDetectionShowcase/index.vue';
 
 // --- Types ---
 interface FloatingIcon {
@@ -175,6 +164,11 @@ onMounted(() => {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-gradient { animation: none; }
+  .floating-icon { display: none; }
 }
 
 .floating-icon {

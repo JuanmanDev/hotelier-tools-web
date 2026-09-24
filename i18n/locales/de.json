@@ -1,5 +1,7 @@
 {
   "nav": {
+    "features": "Funktionen",
+    "demo": "Demo",
     "home": "Startseite",
     "tools": "Tools",
     "documentation": "Dokumentation",
@@ -516,7 +518,7 @@
         },
         {
           "label": "Was kostet die Nutzung der Tools?",
-          "content": "Wir bieten verschiedene Optionen entsprechend Ihren Bedürfnissen an. Browser-Erweiterungen sind kostenlos, während Automatisierungen möglicherweise eine benutzerdefinierte Konfiguration erfordern."
+          "content": "Das Dashboard ist für jedes Hotel bis zum 9. Januar 2027 kostenlos. Die Abrechnung beginnt am 10. Januar 2027, und Hotels, die es 2026 ausprobieren, zahlen das ganze Jahr 2027 über 50 € pro Monat. Die Browser-Skripte bleiben kostenlos."
         },
         {
           "label": "Wie installiere ich die Browser-Erweiterungen?",
@@ -578,6 +580,7 @@
         "message": "Sagen Sie uns, wie wir Ihnen helfen können..."
       },
       "subjects": {
+        "feature": "Funktionswunsch",
         "general": "Allgemeine Anfrage",
         "technical": "Technischer Support",
         "custom": "Benutzerdefiniertes Tool",
@@ -903,7 +906,7 @@
         },
         "pricing": {
           "label": "Was kostet die Nutzung der Tools?",
-          "content": "Wir bieten verschiedene Optionen entsprechend Ihren Bedürfnissen an. Browser-Erweiterungen sind kostenlos, während Automatisierungen möglicherweise eine benutzerdefinierte Konfiguration erfordern.",
+          "content": "Das Dashboard ist für jedes Hotel bis zum 9. Januar 2027 kostenlos. Die Abrechnung beginnt am 10. Januar 2027, und Hotels, die es 2026 ausprobieren, zahlen das ganze Jahr 2027 über 50 € pro Monat. Die Browser-Skripte bleiben kostenlos.",
           "links": [
             {
               "text": "Kostenlose Tools anzeigen",
@@ -1050,15 +1053,21 @@
   "seo": {
     "site": {
       "name": "Hotelier Tools",
-      "description": "Spezialisierte Tools für Hotels, die die Little Hotelier Plattform von Siteminder nutzen. Automatisieren Sie Prozesse, verbessern Sie die Benutzeroberfläche und erhöhen Sie Ihre Conversion-Rate durch Fehlervermeidung.",
-      "keywords": "Hotelmanagement, Little Hotelier, Siteminder, Hotelautomatisierung, Buchungsmanagement, Hotelsoftware, Chrome-Erweiterungen, Hotel-Tools"
+      "description": "Dashboard und kostenlose Browser-Tools für Hotels mit Little Hotelier: Rechnungen, automatische Prüfungen, dynamische Preise, Gästepostfach, KI-Assistent und INE-Berichte.",
+      "keywords": "Hotelmanagement, Little Hotelier, Siteminder, Hotelautomatisierung, Buchungsmanagement, Hotelsoftware, Chrome-Erweiterungen, Hotel-Tools, dynamische Preise, Gästepostfach, WhatsApp für Hotels, INE-Umfrage, KI-Assistent Hotel, Hotelrechnungen"
     },
     "pages": {
+      "features": {
+        "title": "Funktionen - Hotelier Tools Dashboard für Little Hotelier",
+        "description": "Rechnungen, automatische Prüfungen, dynamische Preise, ein Postfach für WhatsApp, E-Mail und Booking.com, KI-Assistent und INE-Berichte für Hotels mit Little Hotelier.",
+        "ogTitle": "Alle Funktionen des Hotelier Tools Dashboards",
+        "ogDescription": "Rechnungen, Prüfungen, Preise, Gästenachrichten, KI und INE-Berichte für Little Hotelier."
+      },
       "home": {
-        "title": "Hotelier Tools - Optimieren Sie Ihr Hotelmanagement mit Little Hotelier",
-        "description": "Spezialisierte Tools für Hotels, die die Little Hotelier Plattform von Siteminder nutzen. Automatisieren Sie Prozesse, verbessern Sie die Benutzeroberfläche und erhöhen Sie Ihre Conversion-Rate durch Fehlervermeidung.",
-        "ogTitle": "Hotelier Tools - Hotelmanagement-Automatisierung",
-        "ogDescription": "Transformieren Sie Ihre Hoteloperationen mit spezialisierten Tools für Little Hotelier. Automatisieren Sie Buchungen, verhindern Sie Fehler und steigern Sie die Effizienz."
+        "title": "Dashboard für Little Hotelier: Rechnungen, Preise und Gästepostfach",
+        "description": "Rechnungen, automatische Prüfungen, dynamische Preise, ein Postfach für WhatsApp, E-Mail und Booking.com, KI-Assistent und INE-Berichte für Hotels mit Little Hotelier. Kostenlos bis 10. Januar 2027.",
+        "ogTitle": "Alles, was Ihre Rezeption braucht, in einem Dashboard",
+        "ogDescription": "Rechnungen, Prüfungen, Preise, Gästenachrichten und INE-Berichte für Little Hotelier, in einem Dashboard."
       },
       "tools": {
         "title": "Hotelmanagement-Tools - Browser-Skripte & Automatisierungen",
@@ -1248,5 +1257,421 @@
         "button": "Mehr Über Unsere Lösung Erfahren"
       }
     }
+  },
+  "platform": {
+    "pause": "Diashow pausieren",
+    "play": "Diashow fortsetzen",
+    "title": "Alles, was Ihre Rezeption braucht – in einem Dashboard",
+    "subtitle": "Hotelier Tools verbindet sich mit Little Hotelier und Booking.com. Rechnungen, Prüfungen, Preise, Gästenachrichten und offizielle Meldungen laufen von allein – und Sie entscheiden bei allem, was wichtig ist.",
+    "open_dashboard": "Dashboard öffnen",
+    "status": {
+      "stable": "Stabil",
+      "beta": "Beta",
+      "alpha": "Alpha",
+      "soon": "Demnächst"
+    },
+    "status_help": {
+      "stable": "Bereit für den täglichen Einsatz.",
+      "beta": "Funktioniert gut und wird noch weiter verfeinert.",
+      "alpha": "Frühe Version, die sich häufig ändert.",
+      "soon": "In Entwicklung."
+    },
+    "slides": {
+      "invoicing": {
+        "short": "Rechnungen",
+        "title": "Ein ganzes Quartal an Rechnungen mit einem Klick",
+        "description": "Wählen Sie einen Zeitraum und erhalten Sie alle Rechnungen aus Little Hotelier als PDFs in einer ZIP-Datei, dazu eine CSV-Übersicht für Ihre Buchhaltung.",
+        "items": {
+          "download": {
+            "name": "Quartalsdownload",
+            "text": "Eine ZIP-Datei mit PDFs und eine CSV-Übersicht für jedes Quartal."
+          },
+          "on_leave": {
+            "name": "Rechnung beim Check-out",
+            "text": "Markieren Sie einen Aufenthalt, und die Rechnung wird beim Abreisetag erstellt und dem Gast per E-Mail zugeschickt."
+          },
+          "preflight": {
+            "name": "Prüfung vor der Rechnungsstellung",
+            "text": "Verhindert Firmenrechnungen ohne Steuernummer, verfrühte Rechnungen und Duplikate."
+          },
+          "errors": {
+            "name": "Fehlgeschlagene Rechnungen",
+            "text": "Sehen Sie, warum eine Buchung nicht abgerechnet werden konnte, und versuchen Sie es nach der Korrektur erneut."
+          },
+          "language": {
+            "name": "Rechnungssprache",
+            "text": "Rechnungen richten sich nach dem Land des Gastes oder nutzen immer die Sprache Ihrer Wahl."
+          }
+        }
+      },
+      "checks": {
+        "short": "Prüfungen",
+        "title": "Probleme erkennen, bevor der Gast ankommt",
+        "description": "Jede Reservierung wird zu fünf Zeitpunkten des Aufenthalts geprüft, damit Sie sofort sehen, was Aufmerksamkeit braucht – von einem fehlenden Ausweis bis zu einem offenen Betrag.",
+        "items": {
+          "lifecycle": {
+            "name": "Fünf Prüfzeitpunkte",
+            "text": "Nach der Buchung, vor der Anreise, bei der Anreise, während des Aufenthalts und beim Check-out."
+          },
+          "issues": {
+            "name": "Probleme je Reservierung",
+            "text": "Offene und gelöste Probleme in einer Liste, mit einem Button für eine erneute Prüfung."
+          },
+          "watchlist": {
+            "name": "Nicht-erneut-buchen-Liste",
+            "text": "Sie erhalten eine Benachrichtigung, wenn ein markierter Gast erneut bucht. Nichts wird automatisch storniert."
+          },
+          "emails": {
+            "name": "Berichte per E-Mail",
+            "text": "Eine übersichtliche Zusammenfassung in Ihrem Posteingang, gut lesbar auf jedem Smartphone."
+          }
+        }
+      },
+      "pricing": {
+        "short": "Dynamische Preisgestaltung",
+        "title": "Preise, die sich am Markt orientieren",
+        "description": "Vergleichen Sie Ihre Preise mit ähnlichen Hotels auf Booking.com, Expedia, Google Hotels, Hostelworld und Agoda und erhalten Sie für jedes Zimmer und jede Nacht eine Preisempfehlung.",
+        "items": {
+          "competitors": {
+            "name": "Preise der Mitbewerber",
+            "text": "Hotels in der Nähe mit ähnlicher Kategorie, täglich geprüft."
+          },
+          "recommendations": {
+            "name": "Preisempfehlungen",
+            "text": "Zu jedem Preis gibt es eine Begründung. Nichts ändert sich, bevor Sie zustimmen."
+          },
+          "rules": {
+            "name": "Regeln in einfachen Worten",
+            "text": "Formulieren Sie Regeln so, wie Sie sie aussprechen würden: Mindestaufenthalte, Preisgrenzen, Wochenendpakete."
+          },
+          "events": {
+            "name": "Lokale Veranstaltungen",
+            "text": "Messen, Feiertage und Veranstaltungen in Ihrer Nähe werden erkannt und berücksichtigt."
+          },
+          "autopilot": {
+            "name": "Autopilot",
+            "text": "Änderungen werden automatisch in Little Hotelier übernommen, innerhalb der von Ihnen festgelegten Grenzen."
+          },
+          "stop_sell": {
+            "name": "Verkaufsstopp in SiteMinder",
+            "text": "Öffnen oder sperren Sie Zimmer pro Nacht direkt in derselben Ansicht."
+          }
+        }
+      },
+      "inbox": {
+        "short": "Gästepostfach",
+        "title": "WhatsApp, E-Mail und Booking.com in einem Postfach",
+        "description": "Alle Gästegespräche in einer Liste, direkt neben der Reservierung. Der Assistent erstellt Antwortentwürfe auf Basis Ihrer eigenen FAQ und Hausnotizen.",
+        "items": {
+          "unified": {
+            "name": "Ein gemeinsames Postfach",
+            "text": "WhatsApp, Gmail, Outlook, jedes beliebige E-Mail-Konto und Nachrichten von Booking.com."
+          },
+          "reply_modes": {
+            "name": "Antwortmodi je Kanal",
+            "text": "Aus, Entwürfe zur Prüfung oder automatische Antworten nach einer von Ihnen gewählten Verzögerung."
+          },
+          "knowledge": {
+            "name": "Antworten aus Ihrer FAQ",
+            "text": "Der Assistent nutzt ausschließlich das, was Sie über Ihr Haus geschrieben haben."
+          },
+          "training": {
+            "name": "Durch Beispiele trainieren",
+            "text": "Korrigieren Sie eine Antwort einmal, und der Assistent lernt daraus."
+          },
+          "auto_drafts": {
+            "name": "Automatische Entwürfe",
+            "text": "Jede neue WhatsApp- oder Booking.com-Nachricht bekommt eine Antwort, die Sie nur prüfen und senden."
+          },
+          "booking_qa": {
+            "name": "Booking.com-Fragen",
+            "text": "Fragen von Gästen auf Ihrer Booking.com-Seite beantworten Sie im selben Posteingang."
+          },
+          "safety": {
+            "name": "Sicher von Grund auf",
+            "text": "Der Assistent spricht nur über die Buchung des verifizierten Gastes und ändert nie etwas ohne Sie."
+          }
+        }
+      },
+      "ai": {
+        "short": "KI-Assistent",
+        "title": "Lassen Sie das Dashboard die Arbeit für Sie erledigen",
+        "description": "Schreiben oder sagen Sie, was Sie brauchen. Der Assistent findet die Reservierung, prüft die Verfügbarkeit und zeigt Ihnen die Änderung, bevor etwas geschieht.",
+        "items": {
+          "chat": {
+            "name": "Assistent-Chat mit Sprachsteuerung",
+            "text": "Fragen Sie per Text oder Sprache nach Buchungen, Preisen oder Gästen."
+          },
+          "approvals": {
+            "name": "Sie bestätigen jede Änderung",
+            "text": "Jede Änderung erscheint als Karte, die Sie annehmen oder ablehnen können."
+          },
+          "staff": {
+            "name": "Assistent fürs Team",
+            "text": "Ihr Team stellt Fragen über WhatsApp oder E-Mail, und vorgeschlagene Änderungen warten auf Ihre Freigabe."
+          },
+          "teams": {
+            "name": "Teamkonten",
+            "text": "Rollen für Inhaber, Manager und Mitarbeiter in einem Konto."
+          }
+        }
+      },
+      "reports": {
+        "short": "INE-Meldungen",
+        "title": "Die INE-Erhebung, ausgefüllt und versendet",
+        "description": "Ankünfte und Übernachtungen nach Region und Land werden aus Ihren Reservierungen erstellt und für Sie an das INE übermittelt.",
+        "items": {
+          "origins": {
+            "name": "Herkunft der Gäste",
+            "text": "Ankünfte und Nächte nach spanischer Region oder Land, belegte Zimmer und Durchschnittspreis."
+          },
+          "submit": {
+            "name": "Direkte Übermittlung",
+            "text": "Wird über IRIA an das INE gesendet, die Bestätigung wird gespeichert."
+          },
+          "saved": {
+            "name": "Verlauf der Meldungen",
+            "text": "Die Meldung jedes Monats, ob sie gesendet wurde, und die zugehörige Bestätigung."
+          }
+        }
+      },
+      "waitlist": {
+        "short": "Warteliste",
+        "title": "Informieren Sie Gäste, sobald ein ausgebuchter Zeitraum wieder frei wird",
+        "description": "Behalten Sie ausgebuchte Termine im Blick. Sobald jede Nacht wieder frei ist, erhält der Gast oder Ihr Team eine Nachricht per E-Mail oder WhatsApp.",
+        "items": {
+          "watch": {
+            "name": "Ausgebuchte Zeiträume beobachten",
+            "text": "Verfolgen Sie jeden Zeitraum, ohne Zimmer zu blockieren."
+          },
+          "notify": {
+            "name": "Eine Nachricht, per E-Mail oder WhatsApp",
+            "text": "Wird einmal gesendet, sobald alle Nächte frei sind."
+          },
+          "form": {
+            "name": "Öffentliches Anmeldeformular",
+            "text": "Gäste tragen sich über einen Link auf Ihrer Website in die Warteliste ein."
+          }
+        }
+      },
+      "automations": {
+        "short": "Automatisierungen",
+        "title": "Aufgaben, die laufen, während Sie schlafen",
+        "description": "Planen Sie Prüfungen, Rechnungen, Preisaktualisierungen und das Abrufen des Postfachs. Jeder Lauf wird protokolliert, und Fehler werden Ihnen per E-Mail gemeldet.",
+        "items": {
+          "schedules": {
+            "name": "Flexible Zeitpläne",
+            "text": "Sofort ausführen oder alle paar Minuten, täglich, wöchentlich oder monatlich."
+          },
+          "history": {
+            "name": "Ausführungsverlauf",
+            "text": "Eine verständliche Zusammenfassung dessen, was jeder Lauf getan hat."
+          },
+          "breaker": {
+            "name": "Sichere Pause",
+            "text": "Läuft ein Passwort ab, werden Aufgaben pausiert, damit Ihr Little-Hotelier-Konto nie gesperrt wird."
+          },
+          "one_click": {
+            "name": "Einrichtung mit einem Klick",
+            "text": "Jede Funktionsseite erstellt die dafür nötige Aufgabe."
+          }
+        }
+      },
+      "developer": {
+        "short": "API und MCP",
+        "title": "Verbinden Sie Ihre eigenen Tools und KI-Assistenten",
+        "description": "Eine dokumentierte REST API und ein MCP-Server ermöglichen den Zugriff auf Ihre Hoteldaten aus eigener Software, Claude, Cursor oder VS Code.",
+        "items": {
+          "rest": {
+            "name": "REST API",
+            "text": "Reservierungen, Gäste, Preise und Verfügbarkeit, mit einem interaktiven Explorer."
+          },
+          "mcp": {
+            "name": "MCP-Server",
+            "text": "Verbinden Sie KI-Assistenten mit mehr als 100 Hoteltools."
+          },
+          "cards": {
+            "name": "Einbettbare Karten",
+            "text": "Reservierungsübersichten und Preisempfehlungen für Ihre eigenen Seiten."
+          }
+        }
+      },
+      "overview": {
+        "short": "Übersicht",
+        "title": "Ihre Unterkunft auf einen Blick",
+        "description": "Direkt nach der Anmeldung sehen Sie, was verbunden ist, was läuft und wer als Nächstes anreist, und finden jede Seite, indem Sie eintippen, was Sie brauchen.",
+        "items": {
+          "glance": {
+            "name": "Startseite auf einen Blick",
+            "text": "Verbindungen, aktive Funktionen, nächste Anreisen und letzte Aktivitäten auf einem Bildschirm."
+          },
+          "search": {
+            "name": "Alles durchsuchen",
+            "text": "Tippen Sie ein, was Sie brauchen, auf Englisch oder Spanisch, und springen Sie direkt hin."
+          },
+          "property": {
+            "name": "Unterkunftsdaten schon ausgefüllt",
+            "text": "Adresse, Zimmer, Steuern und Richtlinien werden aus Little Hotelier gelesen und aktuell gehalten."
+          },
+          "secure": {
+            "name": "Sicherer Zugang",
+            "text": "Anmeldung mit Passkey, und Ihre Passwörter werden verschlüsselt gespeichert."
+          }
+        }
+      }
+    },
+    "scenes": {
+      "invoicing": {
+        "period": "Drittes Quartal 2026",
+        "count": "{n} Rechnungen",
+        "nights": "{n} Nacht | {n} Nächte",
+        "invoiced": "Abgerechnet",
+        "missing_tax_id": "Steuernummer fehlt",
+        "toast": "Rechnung wurde dem Gast beim Check-out per E-Mail zugeschickt"
+      },
+      "checks": {
+        "steps": {
+          "booked": "Gebucht",
+          "before": "Vor der Anreise",
+          "arrival": "Anreise",
+          "stay": "Aufenthalt",
+          "checkout": "Check-out"
+        },
+        "issues": {
+          "watchlist": "Gast steht auf Ihrer Nicht-erneut-buchen-Liste",
+          "id": "Ausweisdokument fehlt",
+          "balance": "Offener Betrag von 120 €",
+          "room": "Kein Zimmer zugewiesen"
+        },
+        "report": "Tägliche Zusammenfassung an die Rezeption gesendet"
+      },
+      "pricing": {
+        "current": "Aktuell",
+        "recommended": "Empfohlen",
+        "competitors": "Mitbewerber",
+        "event": "Lokale Messe am Freitag und Samstag",
+        "reason": "Die Nachfrage steigt, ähnliche Hotels liegen 12 % höher.",
+        "apply": "{n} Nächte übernehmen"
+      },
+      "inbox": {
+        "guest": "Hallo! Könnten wir morgen um 11 Uhr einchecken?",
+        "draft_label": "Vorschlag für die Antwort",
+        "draft": "Hallo Laura! Der Check-in ist ab 14:00 Uhr möglich, aber wir können Ihr Zimmer für 15 € bereits ab 11:00 Uhr vorbereiten. Soll ich das hinzufügen?",
+        "source": "Basierend auf Ihrer FAQ",
+        "edit": "Bearbeiten",
+        "send": "Senden",
+        "more": "Entwürfe bereit in {n} weiteren Unterhaltungen"
+      },
+      "ai": {
+        "prompt": "Verschiebe die Buchung von Laura Martín auf den 14.–16. Oktober",
+        "step1": "Reservierung gefunden",
+        "step2": "Zimmer 3 ist in diesen Nächten frei",
+        "step3": "Der Preis bleibt gleich",
+        "card_title": "Termine ändern",
+        "card_body": "Laura Martín, Zimmer 3, 2 Nächte",
+        "approve": "Bestätigen",
+        "reject": "Ablehnen",
+        "voice": "Sagen Sie Ihre Anfrage"
+      },
+      "reports": {
+        "title": "Ankünfte nach Herkunft, August",
+        "stays": "Übernachtungen",
+        "rooms": "Belegte Zimmer",
+        "sent": "An das INE gesendet"
+      },
+      "waitlist": {
+        "watching": "{n} Nächte werden beobachtet",
+        "full": "Ausgebucht",
+        "free": "Frei",
+        "toast": "Alle 4 Nächte sind wieder frei. Ana wurde per WhatsApp informiert."
+      },
+      "automations": {
+        "jobs": {
+          "checks": "Reservierungsprüfungen",
+          "invoices": "Rechnung beim Check-out",
+          "competitors": "Preise der Mitbewerber",
+          "report": "Monatliche INE-Meldung"
+        },
+        "schedule": {
+          "hourly": "Stündlich",
+          "every15": "Alle 15 Minuten",
+          "daily": "Täglich um 06:00 Uhr",
+          "monthly": "Am 1. jedes Monats"
+        },
+        "ok": "Fertig",
+        "paused": "Aufgaben pausiert: Das Little-Hotelier-Passwort ist abgelaufen. Aktualisieren Sie es, damit sie weiterlaufen."
+      },
+      "developer": {
+        "clients": "Funktioniert mit",
+        "tools": "{n} Tools"
+      },
+      "overview": {
+        "query": "Warteliste",
+        "result": "Warteliste: 2 Aufenthalte beobachtet",
+        "connected": "Verbunden",
+        "running": "Aktiv",
+        "tasks": "12 Automatisierungen",
+        "arrivals": "Anreise heute"
+      }
+    },
+    "try_demo": "Demo ausprobieren",
+    "slide_demo": "In der Demo ansehen",
+    "banner": {
+      "title": "All das steckt im Hotelier Tools Dashboard",
+      "text": "Rechnungen, Prüfungen, Preise, Gästenachrichten und INE-Berichte für Little Hotelier. Kostenlos bis 10. Januar 2027.",
+      "features": "Alle Funktionen ansehen"
+    },
+    "learn_more": "Mehr erfahren"
+  },
+  "pricing": {
+    "title": "Kostenlos bis {date}",
+    "subtitle": "Nutzen Sie alle Funktionen, auch die in Beta und Alpha, und helfen Sie uns, die nächsten Schritte mitzugestalten.",
+    "now": {
+      "period": "Von heute bis {date}",
+      "description": "Kostenlos für jedes Hotel.",
+      "points": [
+        "Alle Funktionen inklusive",
+        "Keine Kreditkarte nötig",
+        "Ihr Feedback prägt die Roadmap"
+      ],
+      "days_left": "{n} Tag kostenloser Zugang übrig | {n} Tage kostenloser Zugang übrig"
+    },
+    "billing_starts": "Abrechnung beginnt",
+    "later": {
+      "period": "Das ganze Jahr 2027",
+      "description": "Für Hotels, die Hotelier Tools 2026 ausprobieren.",
+      "points": [
+        "Vor dem 31. Dezember 2026 starten",
+        "Der Preis bleibt das ganze Jahr 2027 gleich",
+        "Pro Hotel, pro Monat"
+      ]
+    },
+    "per_month": "/ Monat",
+    "cta": "Kostenlos starten",
+    "note": "Die Browser-Skripte bleiben kostenlos."
+  },
+  "features": {
+    "title": "Alle Funktionen des Hotelier Tools Dashboards",
+    "subtitle": "Rechnungen, automatische Prüfungen, dynamische Preise, ein Gästepostfach, ein KI-Assistent, INE-Berichte und mehr, gemacht für Hotels mit Little Hotelier. Jede Funktion zeigt, ob sie stabil, Beta oder Alpha ist.",
+    "what_you_get": "Was sie kann",
+    "other": "Mehr aus dem Dashboard",
+    "breadcrumb": "Brotkrumennavigation",
+    "seo_feature_title": "{name} für Little Hotelier",
+    "request": {
+      "title": "Fehlt Ihrem Hotel etwas?",
+      "text": "Sagen Sie uns, was Ihnen Zeit sparen würde. Wir lesen jede Anfrage und entscheiden damit, was wir als Nächstes bauen.",
+      "cta": "Funktion anfragen",
+      "email": "E-Mail schreiben"
+    }
+  },
+  "emails": {
+    "title": "Diese E-Mails bekommen Sie",
+    "subtitle": "Echte Beispiele dafür, was in Ihrem Postfach landet und was Ihre Gäste erhalten.",
+    "to_hotel": "An Ihr Team",
+    "to_guest": "An den Gast",
+    "reception": "Rezeption",
+    "guest_name": "Ana Ribeiro",
+    "hotel_sender": "Ihr Hotel",
+    "note": "Beispiel mit erfundenen Daten, nach den E-Mails, die das Dashboard verschickt."
   }
 }

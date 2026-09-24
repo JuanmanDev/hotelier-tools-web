@@ -40,6 +40,8 @@
         </div>
       </NuxtLink>
     </div>
+    <!-- The dashboard, one click away -->
+    <DashboardBanner />
   </div>
 </template>
 

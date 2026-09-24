@@ -6,7 +6,7 @@
 
     <form @submit.prevent="onSubmit" class="space-y-8">
       <!-- Name -->
-      <UFormGroup :label="t('contact.form.name')" name="name" required class="space-y-3">
+      <UFormField :label="t('contact.form.name')" name="name" required class="space-y-3">
         <UInput
           v-model="contactForm.name"
           :placeholder="t('contact.form.placeholders.name')"
@@ -14,10 +14,10 @@
           size="lg"
           class="w-full mb-4"
         />
-      </UFormGroup>
+      </UFormField>
 
       <!-- Email -->
-      <UFormGroup :label="t('contact.form.email')" name="email" required class="space-y-3">
+      <UFormField :label="t('contact.form.email')" name="email" required class="space-y-3">
         <UInput
           v-model="contactForm.email"
           type="email"
@@ -26,10 +26,10 @@
           size="lg"
           class="w-full mb-4"
         />
-      </UFormGroup>
+      </UFormField>
 
       <!-- Phone -->
-      <UFormGroup :label="t('contact.form.phone')" name="phone" class="space-y-3">
+      <UFormField :label="t('contact.form.phone')" name="phone" class="space-y-3">
         <UInput
           v-model="contactForm.phone"
           type="tel"
@@ -38,10 +38,10 @@
           size="lg"
           class="w-full mb-4"
         />
-      </UFormGroup>
+      </UFormField>
 
       <!-- Hotel Name -->
-      <UFormGroup :label="t('contact.form.hotel_name')" name="hotelName" class="space-y-3">
+      <UFormField :label="t('contact.form.hotel_name')" name="hotelName" class="space-y-3">
         <UInput
           v-model="contactForm.hotelName"
           :placeholder="t('contact.form.placeholders.hotel')"
@@ -49,10 +49,10 @@
           size="lg"
           class="w-full mb-4"
         />
-      </UFormGroup>
+      </UFormField>
 
       <!-- Subject -->
-      <UFormGroup :label="t('contact.form.subject')" name="subject" required class="space-y-3">
+      <UFormField :label="t('contact.form.subject')" name="subject" required class="space-y-3">
         <USelect
           v-model="contactForm.subject"
           :items="subjectOptions"
@@ -60,10 +60,10 @@
           size="lg"
           class="w-full mb-4"
         />
-      </UFormGroup>
+      </UFormField>
 
       <!-- Message -->
-      <UFormGroup :label="t('contact.form.message')" name="message" required class="space-y-3">
+      <UFormField :label="t('contact.form.message')" name="message" required class="space-y-3">
         <UTextarea
           v-model="contactForm.message"
           :placeholder="t('contact.form.placeholders.message')"
@@ -71,10 +71,10 @@
           size="lg"
           class="w-full resize-none mb-4"
         />
-      </UFormGroup>
+      </UFormField>
 
       <!-- Privacy Policy -->
-      <UFormGroup name="acceptPrivacy" class="pt-4">
+      <UFormField name="acceptPrivacy" class="pt-4">
         <div class="flex items-start space-x-3 mb-4">
           <UCheckbox
             v-model="contactForm.acceptPrivacy"
@@ -85,7 +85,7 @@
             {{ t('contact.form.privacy') }}
           </label>
         </div>
-      </UFormGroup>
+      </UFormField>
 
       <!-- Submit Button -->
       <div class="pt-6">
@@ -114,7 +114,8 @@ const contactForm = reactive({
   email: '',
   phone: '',
   hotelName: '',
-  subject: '',
+  // Links such as /contact?subject=feature open the form with that subject chosen
+  subject: typeof useRoute().query.subject === 'string' ? useRoute().query.subject as string : '',
   message: '',
   acceptPrivacy: false
 })
@@ -123,6 +124,7 @@ const contactForm = reactive({
 const subjectOptions = [
   { value: 'general', label: t('contact.form.subjects.general') },
   { value: 'technical', label: t('contact.form.subjects.technical') },
+  { value: 'feature', label: t('contact.form.subjects.feature') },
   { value: 'custom', label: t('contact.form.subjects.custom') },
   { value: 'automation', label: t('contact.form.subjects.automation') },
   { value: 'extension', label: t('contact.form.subjects.extension') },

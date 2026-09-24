@@ -2,6 +2,7 @@ import { defineNuxtModule, createResolver, useLogger } from '@nuxt/kit'
 import { writeFile, mkdir, readdir, readFile, stat } from 'fs/promises'
 import { join, relative, parse } from 'path'
 import { existsSync } from 'fs'
+import { platformSlides } from '../data/platform'
 
 // Module options interface
 export interface ModuleOptions {
@@ -575,6 +576,27 @@ export default defineNuxtModule({
       return results
     }
 
+    // Dashboard feature landing pages (/tools/bot/<slug>), texts from the `platform` translations
+    async function getFeatureContent(locale: string, translations: Record<string, any>): Promise<SearchItem[]> {
+      const defaultLocale = getDefaultLocale()
+      const slides = translations.platform?.slides || {}
+      return platformSlides.flatMap((feature) => {
+        const text = slides[feature.id]
+        if (!text?.title) return []
+        const items = Object.values(text.items || {}) as { name: string, text: string }[]
+        const path = `/tools/bot/${feature.slug}`
+        return [{
+          title: text.short ? `${text.short}: ${text.title}` : text.title,
+          description: text.description,
+          url: locale !== defaultLocale ? `/${locale}${path}` : path,
+          type: 'page' as const,
+          language: locale,
+          excerpt: String(text.description || '').substring(0, 150),
+          content: [text.title, text.description, ...items.map(i => `${i.name}. ${i.text}`)].join(' ')
+        }]
+      })
+    }
+
     // Get FAQ content
     async function getFAQContent(locale: string, translations: Record<string, any>): Promise<SearchItem[]> {
       const results: SearchItem[] = []
@@ -614,16 +636,18 @@ export default defineNuxtModule({
       
       try {
         // Get all content types
-        const [staticPages, botContent, toolContent, uiScriptsContent, faqItems] = await Promise.all([
+        const [staticPages, botContent, toolContent, uiScriptsContent, faqItems, featureItems] = await Promise.all([
           getStaticPages(pages, locale, translations),
           getBotContent(locale),
           getToolContent(locale, translations),
           getUIScriptsContent(locale),
-          getFAQContent(locale, translations)
+          getFAQContent(locale, translations),
+          getFeatureContent(locale, translations)
         ])
         
         // Combine all content (uiScriptsContent may override toolContent for same URLs, which is fine)
-        const allItems = [...staticPages, ...botContent, ...toolContent, ...uiScriptsContent, ...faqItems]
+        // botContent is left out: those old /tools/bot/<task> pages now redirect to the feature pages
+        const allItems = [...staticPages, ...toolContent, ...uiScriptsContent, ...faqItems, ...featureItems]
         
         allItems.forEach(item => {
           searchData[item.url] = item
