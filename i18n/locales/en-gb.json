@@ -6,7 +6,8 @@
     "tools": "Tools",
     "documentation": "Documentation",
     "contact": "Contact",
-    "search": "Search"
+    "search": "Search",
+    "blog": "Guides"
   },
   "search": {
     "placeholder": "Search tools, documentation and content...",
@@ -22,7 +23,8 @@
       "page": "Page",
       "bot": "Automation",
       "tool": "Tool",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "guide": "Guide"
     }
   },
   "home": {
@@ -1151,6 +1153,12 @@
         "description": "Discover marketing strategies and tools to increase direct bookings for your hotel. Reduce OTA commissions and improve profitability with our specialised solutions.",
         "ogTitle": "Hotel Marketing Tools - Boost Direct Bookings",
         "ogDescription": "Increase direct bookings and reduce OTA dependency with our specialised hotel marketing tools and strategies."
+      },
+      "blog": {
+        "title": "Little Hotelier guides: API, AI, invoices, pricing and automation",
+        "description": "Step-by-step guides for hotels on Little Hotelier: use an API, connect Claude or ChatGPT with MCP, download invoices, automate checks, pricing and guest messages.",
+        "ogTitle": "Little Hotelier guides and tutorials",
+        "ogDescription": "Practical how-tos for Little Hotelier, with screenshots from a live demo."
       }
     }
   },
@@ -1724,5 +1732,71 @@
     "guest_name": "Ana Ribeiro",
     "hotel_sender": "Your hotel",
     "note": "Example with invented data, based on the emails the dashboard sends."
+  },
+  "blog": {
+    "eyebrow": "Guides and tutorials",
+    "title": "Get more out of Little Hotelier",
+    "subtitle": "Practical, step-by-step guides with screenshots from a live demo: APIs and AI assistants, invoices, checks, pricing, guest messages and everyday front-desk tricks.",
+    "search_placeholder": "Search guides, e.g. \"invoices\" or \"Claude\"",
+    "categories_label": "Filter by topic",
+    "all": "All guides",
+    "featured": "Start here",
+    "latest": "Latest guides",
+    "no_results": "No guide matches your search yet. Try other words, or tell us what you would like to read.",
+    "read": "Read the guide",
+    "toc": "On this page",
+    "faq_title": "Frequently asked questions",
+    "share": "Share",
+    "copy_link": "Copy link",
+    "copy": "Copy",
+    "copied": "Copied",
+    "copy_code": "Copy code",
+    "other_languages": "Also available in:",
+    "sidebar_text": "See exactly what this guide explains in the live demo, with invented data. No sign-up needed.",
+    "related": "Keep reading",
+    "back": "All guides",
+    "updated": "Updated {date}",
+    "reading_time": "{n} min read",
+    "prompt_label": "Try asking",
+    "guides_for": "Guides about {name}",
+    "cta": {
+      "title": "Try it in the live demo",
+      "text": "Open the same screen in the Hotelier Tools demo, filled with invented data. No sign-up, nothing to install.",
+      "demo": "Open the demo"
+    },
+    "categories": {
+      "ai": {
+        "name": "AI and assistants",
+        "description": "Connect Claude, ChatGPT and other assistants to your hotel, and let AI draft replies and do the busywork while you approve."
+      },
+      "api": {
+        "name": "API and integrations",
+        "description": "Use your Little Hotelier data from your own software, spreadsheets and automation tools."
+      },
+      "invoicing": {
+        "name": "Invoicing",
+        "description": "Download, send and check invoices without opening every booking."
+      },
+      "operations": {
+        "name": "Front desk and operations",
+        "description": "Catch problems before guests arrive and automate the daily routine."
+      },
+      "pricing": {
+        "name": "Pricing and revenue",
+        "description": "Set better prices with competitor data, local events and simple rules."
+      },
+      "guests": {
+        "name": "Guest messages",
+        "description": "WhatsApp, email and Booking.com conversations in one place, with replies ready to send."
+      },
+      "compliance": {
+        "name": "Reports and compliance",
+        "description": "Official statistics and reporting obligations, filled in from your bookings."
+      },
+      "tips": {
+        "name": "Tips and tricks",
+        "description": "Small changes that make Little Hotelier quicker to use every day."
+      }
+    }
   }
 }

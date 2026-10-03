@@ -26,7 +26,7 @@ interface SearchItem {
   title: string
   description: string
   url: string
-  type: 'page' | 'bot' | 'tool' | 'faq' | 'marketing'
+  type: 'page' | 'bot' | 'tool' | 'faq' | 'marketing' | 'guide'
   language: string
   excerpt: string
   content: string
@@ -597,6 +597,38 @@ export default defineNuxtModule({
       })
     }
 
+    // Blog guides (/blog/<slug>): the frontmatter description plus the readable text, without MDC component syntax
+    async function getBlogContent(locale: string): Promise<SearchItem[]> {
+      const dir = join(nuxt.options.rootDir, 'content', 'blog', locale)
+      if (!existsSync(dir)) return []
+      const defaultLocale = getDefaultLocale()
+      const files = (await readdir(dir)).filter(f => f.endsWith('.md'))
+      return Promise.all(files.map(async (file) => {
+        const raw = (await readFile(join(dir, file), 'utf-8')).replace(/\r\n?/g, '\n')
+        const [, fm = '', body = ''] = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/) ?? []
+        const field = (key: string) => fm.match(new RegExp(`^${key}:\\s*(.*)$`, 'm'))?.[1]?.trim().replace(/^(["'])(.*)\1$/, '$2') ?? ''
+        const text = body
+          .replace(/```[\s\S]*?```/g, ' ')
+          .replace(/^::.*$/gm, ' ')
+          .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
+          .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+          .replace(/[#*_>`|]/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim()
+        const slug = file.replace('.md', '')
+        const description = field('description')
+        return {
+          title: field('title') || extractTitle(slug),
+          description,
+          url: locale !== defaultLocale ? `/${locale}/blog/${slug}` : `/blog/${slug}`,
+          type: 'guide' as const,
+          language: locale,
+          excerpt: description.substring(0, 150),
+          content: `${description} ${text}`.substring(0, 2000)
+        }
+      }))
+    }
+
     // Get FAQ content
     async function getFAQContent(locale: string, translations: Record<string, any>): Promise<SearchItem[]> {
       const results: SearchItem[] = []
@@ -636,18 +668,19 @@ export default defineNuxtModule({
       
       try {
         // Get all content types
-        const [staticPages, botContent, toolContent, uiScriptsContent, faqItems, featureItems] = await Promise.all([
+        const [staticPages, botContent, toolContent, uiScriptsContent, faqItems, featureItems, blogItems] = await Promise.all([
           getStaticPages(pages, locale, translations),
           getBotContent(locale),
           getToolContent(locale, translations),
           getUIScriptsContent(locale),
           getFAQContent(locale, translations),
-          getFeatureContent(locale, translations)
+          getFeatureContent(locale, translations),
+          getBlogContent(locale)
         ])
         
         // Combine all content (uiScriptsContent may override toolContent for same URLs, which is fine)
         // botContent is left out: those old /tools/bot/<task> pages now redirect to the feature pages
-        const allItems = [...staticPages, ...toolContent, ...uiScriptsContent, ...faqItems, ...featureItems]
+        const allItems = [...staticPages, ...toolContent, ...uiScriptsContent, ...faqItems, ...featureItems, ...blogItems]
         
         allItems.forEach(item => {
           searchData[item.url] = item

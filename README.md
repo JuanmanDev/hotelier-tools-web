@@ -117,6 +117,17 @@ Soporte para modo claro y oscuro con cambio automático basado en las preferenci
 - Sitemap automático
 - Structured data
 - Performance optimizado
+- `/llms.txt` con el índice de guías para asistentes de IA
+
+## 📝 Guías (blog)
+
+Las guías viven en `content/blog/<idioma>/<slug>.md` y se publican en `/blog/<slug>` (inglés) o `/<idioma>/blog/<slug>`. El slug es el mismo en todos los idiomas: así se enlazan las traducciones (hreflang) y el selector de idioma.
+
+- **Frontmatter**: `title`, `description` (≤ 155 caracteres), `date`, `category` (`ai`, `api`, `invoicing`, `operations`, `pricing`, `guests`, `compliance`, `tips`), `tags`, `keywords`, `feature` (slug de `data/platform.ts`), `demoPath`, `cover`, `coverAlt`, `featured` y `faq` (lista de `q`/`a`, se publica como FAQPage). Tipos en `data/blog.ts`.
+- **Componentes** (`components/content/`): `::screenshot{src alt caption path mobile}`, `::callout{type title}`, `::prompt{label}`, `::demo-cta{path}`. Los bloques de código llevan botón de copiar.
+- **Capturas**: `public/images/blog/demo/en|es/`, sacadas de la demo pública (datos inventados). Los artículos en español usan `/demo/es/`.
+- **Guías que no existen en un idioma** (temas solo de España): se listan en `BLOG_MISSING_LOCALES` (`data/blog.ts`) y sus enlaces abren la versión inglesa.
+- **Comprobar antes de publicar**: `npm run validate:blog` (YAML, componentes, enlaces internos, imágenes y longitud de la descripción).
 
 ## 🚀 Deploy
 

@@ -4,7 +4,7 @@ export interface SearchResult {
   title: string
   description?: string
   url: string
-  type: 'page' | 'bot' | 'tool'
+  type: 'page' | 'bot' | 'tool' | 'guide'
   language: string
   excerpt?: string
   content?: string

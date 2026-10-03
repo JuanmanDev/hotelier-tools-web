@@ -30,7 +30,7 @@
             size="lg"
             color="neutral"
             variant="outline"
-            class="text-white ring-white/60 hover:bg-white/10"
+            class="bg-transparent text-white ring-white/60 hover:bg-white/10"
             icon="i-heroicons-play-circle"
           >
             {{ t('platform.try_demo') }}

@@ -229,7 +229,8 @@ const getTypeIcon = (type: string): string => {
   const icons = {
     page: 'i-heroicons-document-text',
     bot: 'i-heroicons-cpu-chip',
-    tool: 'i-heroicons-wrench-screwdriver'
+    tool: 'i-heroicons-wrench-screwdriver',
+    guide: 'i-heroicons-book-open'
   }
   return icons[type as keyof typeof icons] || 'i-heroicons-document-text'
 }
@@ -238,7 +239,8 @@ const getTypeColor = (type: string): string => {
   const colors = {
     page: 'text-blue-500',
     bot: 'text-purple-500',
-    tool: 'text-green-500'
+    tool: 'text-green-500',
+    guide: 'text-amber-500'
   }
   return colors[type as keyof typeof colors] || 'text-gray-500'
 }
@@ -247,7 +249,8 @@ const getTypeBadgeColor = (type: string): string => {
   const colors = {
     page: 'blue',
     bot: 'purple',
-    tool: 'green'
+    tool: 'green',
+    guide: 'amber'
   }
   return colors[type as keyof typeof colors] || 'gray'
 }

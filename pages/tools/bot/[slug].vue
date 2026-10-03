@@ -104,6 +104,8 @@
 
     <EmailExamples :feature="feature.id" />
 
+    <FeatureGuides :feature="feature.slug" :name="name" />
+
     <PricingSection />
 
     <!-- The rest of the dashboard -->
@@ -128,6 +130,7 @@ import PricingSection from '~/components/PricingSection.vue'
 import FeatureRequest from '~/components/FeatureRequest.vue'
 import FeatureGrid from '~/components/platform/FeatureGrid.vue'
 import EmailExamples from '~/components/platform/EmailExamples.vue'
+import FeatureGuides from '~/components/blog/FeatureGuides.vue'
 
 const route = useRoute()
 const { t } = useI18n()

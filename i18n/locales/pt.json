@@ -6,7 +6,8 @@
     "tools": "Ferramentas",
     "documentation": "Documentação",
     "contact": "Contato",
-    "search": "Pesquisar"
+    "search": "Pesquisar",
+    "blog": "Guias"
   },
   "search": {
     "placeholder": "Pesquisar ferramentas, documentação e conteúdo...",
@@ -22,7 +23,8 @@
       "page": "Página",
       "bot": "Automação",
       "tool": "Ferramenta",
-      "faq": "Perguntas Frequentes"
+      "faq": "Perguntas Frequentes",
+      "guide": "Guia"
     }
   },
   "home": {
@@ -1232,6 +1234,12 @@
         "description": "Descubra estratégias e ferramentas marketing para aumentar as reservas diretas do seu hotel. Reduza comissões OTA e melhore a rentabilidade com as nossas soluções especializadas.",
         "ogTitle": "Ferramentas Marketing Hotel - Aumento Reservas Diretas",
         "ogDescription": "Aumente reservas diretas e reduza dependência OTA com as nossas ferramentas e estratégias marketing hotel especializadas."
+      },
+      "blog": {
+        "title": "Guias do Little Hotelier: API, IA, faturas, preços e automação",
+        "description": "Guias passo a passo para hotéis com Little Hotelier: usar uma API, ligar o Claude ou o ChatGPT via MCP, descarregar faturas, automatizar verificações, preços e mensagens.",
+        "ogTitle": "Guias e tutoriais do Little Hotelier",
+        "ogDescription": "Tutoriais práticos para o Little Hotelier, com capturas de uma demo real."
       }
     }
   },
@@ -1805,5 +1813,71 @@
     "guest_name": "Ana Ribeiro",
     "hotel_sender": "O seu alojamento",
     "note": "Exemplo com dados inventados, baseado nos emails que o painel envia."
+  },
+  "blog": {
+    "eyebrow": "Guias e tutoriais",
+    "title": "Tire mais partido do Little Hotelier",
+    "subtitle": "Guias práticos passo a passo com capturas de uma demo real: API e assistentes de IA, faturas, verificações, preços, mensagens de hóspedes e truques para a receção.",
+    "search_placeholder": "Pesquisar guias, ex. \"faturas\" ou \"Claude\"",
+    "categories_label": "Filtrar por tema",
+    "all": "Todos os guias",
+    "featured": "Comece aqui",
+    "latest": "Guias mais recentes",
+    "no_results": "Nenhum guia corresponde à pesquisa. Experimente outras palavras ou diga-nos o que gostaria de ler.",
+    "read": "Ler o guia",
+    "toc": "Nesta página",
+    "faq_title": "Perguntas frequentes",
+    "share": "Partilhar",
+    "copy_link": "Copiar ligação",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "copy_code": "Copiar código",
+    "other_languages": "Também disponível em:",
+    "sidebar_text": "Veja na demo, com dados inventados, exatamente o que este guia explica. Sem registo.",
+    "related": "Continue a ler",
+    "back": "Todos os guias",
+    "updated": "Atualizado a {date}",
+    "reading_time": "{n} min de leitura",
+    "prompt_label": "Experimente pedir",
+    "guides_for": "Guias sobre {name}",
+    "cta": {
+      "title": "Experimente na demo",
+      "text": "Abra o mesmo ecrã na demo do Hotelier Tools, com dados inventados. Sem registo e sem instalar nada.",
+      "demo": "Abrir a demo"
+    },
+    "categories": {
+      "ai": {
+        "name": "IA e assistentes",
+        "description": "Ligue o Claude, o ChatGPT e outros assistentes ao seu hotel e deixe a IA preparar respostas e tarefas repetitivas enquanto aprova."
+      },
+      "api": {
+        "name": "API e integrações",
+        "description": "Use os dados do Little Hotelier no seu software, folhas de cálculo e ferramentas de automação."
+      },
+      "invoicing": {
+        "name": "Faturação",
+        "description": "Descarregue, envie e verifique faturas sem abrir cada reserva."
+      },
+      "operations": {
+        "name": "Receção e operações",
+        "description": "Detete problemas antes da chegada do hóspede e automatize a rotina diária."
+      },
+      "pricing": {
+        "name": "Preços e revenue",
+        "description": "Melhores preços com dados da concorrência, eventos locais e regras simples."
+      },
+      "guests": {
+        "name": "Mensagens de hóspedes",
+        "description": "WhatsApp, email e Booking.com num só sítio, com respostas prontas a enviar."
+      },
+      "compliance": {
+        "name": "Relatórios e obrigações",
+        "description": "Estatísticas oficiais e obrigações de registo, preenchidas a partir das suas reservas."
+      },
+      "tips": {
+        "name": "Dicas e truques",
+        "description": "Pequenas mudanças que tornam o Little Hotelier mais rápido no dia a dia."
+      }
+    }
   }
 }

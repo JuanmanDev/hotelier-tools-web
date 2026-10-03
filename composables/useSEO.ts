@@ -28,6 +28,9 @@ export const useSEO = () => {
     canonical: string
     noindex: boolean
     nofollow: boolean
+    /** Languages this page exists in; defaults to every configured language */
+    alternates: string[]
+    ogType: 'website' | 'article'
     /** Extra details for the generated share card */
     og: { eyebrow?: string, status?: string, statusKind?: 'stable' | 'beta' | 'alpha' | 'soon', accent?: string }
   }>) => {
@@ -42,26 +45,24 @@ export const useSEO = () => {
     const ogDescription = customData?.ogDescription || t(`seo.pages.${pageKey}.ogDescription`)
     const keywords = customData?.keywords || defaultKeywords
 
-    // Generate canonical URL with proper locale handling
+    // Every language version is its own page: the canonical points at the URL being served,
+    // and the alternates tie the translations together
     const baseUrl = getBaseUrl()
-    let canonicalPath = route.path
-    
-    // Remove locale prefix for canonical URL generation
-    if (locale.value !== 'en' && canonicalPath.startsWith(`/${locale.value}`)) {
-      canonicalPath = canonicalPath.replace(`/${locale.value}`, '') || '/'
+    let barePath = route.path
+    if (locale.value !== 'en' && (barePath === `/${locale.value}` || barePath.startsWith(`/${locale.value}/`))) {
+      barePath = barePath.slice(locale.value.length + 1) || '/'
     }
-    
-    const canonical = customData?.canonical || `${baseUrl}${canonicalPath}`
+    const localizedUrl = (code: string) => code === 'en'
+      ? `${baseUrl}${barePath}`
+      : `${baseUrl}/${code}${barePath === '/' ? '' : barePath}`
 
-    // Alternate links for every configured language
-    const localeCodes = (locales.value as Array<string | { code: string }>).map(l => typeof l === 'string' ? l : l.code)
+    const canonical = customData?.canonical || localizedUrl(locale.value)
+
+    const localeCodes = customData?.alternates
+      ?? (locales.value as Array<string | { code: string }>).map(l => typeof l === 'string' ? l : l.code)
     const alternateLinks = [
-      ...localeCodes.map(code => ({
-        rel: 'alternate',
-        hreflang: code,
-        href: code === 'en' ? `${baseUrl}${canonicalPath}` : `${baseUrl}/${code}${canonicalPath === '/' ? '' : canonicalPath}`
-      })),
-      { rel: 'alternate', hreflang: 'x-default', href: `${baseUrl}${canonicalPath}` }
+      ...localeCodes.map(code => ({ rel: 'alternate', hreflang: code, href: localizedUrl(code) })),
+      ...(localeCodes.includes('en') ? [{ rel: 'alternate', hreflang: 'x-default', href: localizedUrl('en') }] : [])
     ]
 
     // Apply SEO configuration
@@ -73,7 +74,7 @@ export const useSEO = () => {
       // Open Graph
       ogTitle: ogTitle,
       ogDescription: ogDescription,
-      ogType: 'website',
+      ogType: customData?.ogType ?? 'website',
       ogUrl: canonical,
       ogSiteName: siteName,
       ogLocale: locale.value.replace('-', '_'),

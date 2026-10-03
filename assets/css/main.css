@@ -185,3 +185,82 @@ html {
   background: color-mix(in srgb, #0b1220 62%, transparent);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 20px 40px -28px rgba(0, 0, 0, 0.6);
 }
+
+/* Blog article body. Tailwind's typography plugin is not installed, so the reading styles live here.
+   Unlayered on purpose: icon styles injected at the top of <head> declare the components layer before
+   Tailwind's base layer, so a layered rule here would lose to the preflight reset. Components inside
+   articles opt out with .not-prose. */
+.ht-article {
+  color: var(--color-gray-700);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+.dark .ht-article { color: var(--color-gray-300); }
+.ht-article > :first-child { margin-top: 0; }
+.ht-article p:not(:where(.not-prose, .not-prose *)) { margin: 1.15em 0; }
+.ht-article h2,
+.ht-article h3,
+.ht-article h4 {
+  font-family: var(--font-display);
+  color: var(--color-gray-900);
+  letter-spacing: -0.01em;
+  scroll-margin-top: 5.5rem;
+}
+.dark .ht-article h2,
+.dark .ht-article h3,
+.dark .ht-article h4 { color: #fff; }
+.ht-article h2 { font-size: 1.75rem; line-height: 1.25; font-weight: 600; margin: 2.4em 0 0.8em; }
+.ht-article h3 { font-size: 1.3rem; line-height: 1.35; font-weight: 600; margin: 1.9em 0 0.6em; }
+.ht-article h4 { font-size: 1.1rem; font-weight: 600; margin: 1.6em 0 0.5em; }
+.ht-article h2 a,
+.ht-article h3 a,
+.ht-article h4 a { color: inherit; text-decoration: none; }
+.ht-article a:not(:where(.not-prose, .not-prose *)) {
+  color: var(--accent, var(--color-primary-600, #2563eb));
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.ht-article a:not(:where(.not-prose, .not-prose *)):hover { text-decoration-thickness: 2px; }
+.ht-article strong:not(:where(.not-prose, .not-prose *)) { color: var(--color-gray-900); font-weight: 600; }
+.dark .ht-article strong:not(:where(.not-prose, .not-prose *)) { color: #fff; }
+.ht-article ul:not(:where(.not-prose, .not-prose *)),
+.ht-article ol:not(:where(.not-prose, .not-prose *)) { margin: 1.1em 0; padding-left: 1.5em; }
+.ht-article ul:not(:where(.not-prose, .not-prose *)) { list-style: disc; }
+.ht-article ol:not(:where(.not-prose, .not-prose *)) { list-style: decimal; }
+.ht-article li:not(:where(.not-prose, .not-prose *)) { margin: 0.4em 0; padding-left: 0.25em; }
+.ht-article li::marker { color: var(--color-gray-400); }
+.ht-article ol > li::marker { font-weight: 600; color: var(--accent, var(--color-gray-500)); }
+.ht-article li > p { margin: 0.4em 0; }
+.ht-article blockquote {
+  margin: 1.6em 0;
+  padding: 0.2em 0 0.2em 1.1em;
+  border-left: 3px solid var(--accent, var(--color-gray-300));
+  font-style: italic;
+  color: var(--color-gray-600);
+}
+.dark .ht-article blockquote { color: var(--color-gray-400); }
+.ht-article hr { margin: 2.5em 0; border-color: var(--color-gray-200); }
+.dark .ht-article hr { border-color: var(--color-gray-800); }
+.ht-article img:not(.ht-shot img) { border-radius: 0.75rem; margin: 1.8em auto; box-shadow: 0 10px 30px -12px rgba(15, 23, 42, 0.35); }
+.ht-article :not(pre) > code:not(:where(.not-prose, .not-prose *)) {
+  font-size: 0.88em;
+  padding: 0.12em 0.4em;
+  border-radius: 0.35rem;
+  background: var(--color-gray-100);
+  color: var(--color-gray-900);
+}
+.dark .ht-article :not(pre) > code:not(:where(.not-prose, .not-prose *)) { background: var(--color-gray-800); color: var(--color-gray-100); }
+.ht-article table { width: 100%; margin: 1.8em 0; border-collapse: collapse; font-size: 0.95rem; display: block; overflow-x: auto; }
+.ht-article th,
+.ht-article td { padding: 0.6em 0.8em; border-bottom: 1px solid var(--color-gray-200); text-align: left; vertical-align: top; }
+.ht-article th { font-weight: 600; color: var(--color-gray-900); background: var(--color-gray-50); }
+.dark .ht-article th,
+.dark .ht-article td { border-color: var(--color-gray-800); }
+.dark .ht-article th { color: #fff; background: var(--color-gray-900); }
+
+/* Code blocks: Shiki colours both themes itself and follows the colour mode */
+.ht-code { border-radius: 0.85rem; overflow: hidden; background: var(--color-gray-50); box-shadow: inset 0 0 0 1px var(--color-gray-200); }
+.dark .ht-code { background: #0d1117; box-shadow: inset 0 0 0 1px var(--color-gray-800); }
+.ht-code pre { margin: 0; padding: 1rem 1.1rem; overflow-x: auto; font-size: 0.85rem; line-height: 1.65; background: transparent !important; }

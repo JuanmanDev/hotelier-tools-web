@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { readdirSync, existsSync } from 'node:fs'
 import { platformSlides, LEGACY_BOT_SLUGS } from './data/platform'
 
 // Public origin used in canonical links and share images. Vercel sets the production host;
@@ -13,6 +14,14 @@ const LOCALE_CODES = ['en', 'en-gb', 'es', 'fr', 'de', 'id', 'it', 'pt', 'th']
 const featureRoutes = LOCALE_CODES.flatMap(code => {
   const prefix = code === 'en' ? '' : `/${code}`
   return [`${prefix}/tools/bot`, ...platformSlides.map(f => `${prefix}/tools/bot/${f.slug}`)]
+})
+
+// Every blog article that exists in each language (content/blog/<locale>/<slug>.md)
+const blogRoutes = LOCALE_CODES.flatMap((code) => {
+  const dir = `./content/blog/${code}`
+  if (!existsSync(dir)) return []
+  const prefix = code === 'en' ? '' : `/${code}`
+  return [`${prefix}/blog`, ...readdirSync(dir).filter(f => f.endsWith('.md')).map(f => `${prefix}/blog/${f.slice(0, -3)}`)]
 })
 
 // Old bot pages answer with a 301 to the feature page that replaced them
@@ -44,7 +53,16 @@ export default defineNuxtConfig({
   content: {
     // Content directory
     contentHead: false,
-    documentDriven: false
+    documentDriven: false,
+    build: {
+      markdown: {
+        toc: { depth: 2, searchDepth: 2 },
+        highlight: {
+          theme: { default: 'github-light', dark: 'github-dark' },
+          langs: ['json', 'jsonc', 'bash', 'shell', 'powershell', 'ts', 'js', 'python', 'http', 'yaml', 'toml', 'md']
+        }
+      }
+    }
   },
 
   // Internationalization configuration
@@ -235,7 +253,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       failOnError: false,
-      routes: featureRoutes
+      routes: [...featureRoutes, ...blogRoutes, '/llms.txt']
     }
   },
 
@@ -275,6 +293,8 @@ export default defineNuxtConfig({
     '/faq': { prerender: true },
     '/chrome-extensions': { prerender: true },
     '/marketing/**': { prerender: true },
+    '/blog': { prerender: true },
+    '/blog/**': { prerender: true },
 
     // Tools section - index is static, subpages are prerendered at build time
     '/tools': { prerender: true },

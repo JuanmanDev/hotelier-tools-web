@@ -6,7 +6,8 @@
     "tools": "Alat",
     "documentation": "Dokumentasi",
     "contact": "Kontak",
-    "search": "Cari"
+    "search": "Cari",
+    "blog": "Panduan"
   },
   "search": {
     "placeholder": "Cari alat, dokumentasi dan konten...",
@@ -22,7 +23,8 @@
       "page": "Halaman",
       "bot": "Otomatisasi",
       "tool": "Alat",
-      "faq": "Pertanyaan Sering Diajukan"
+      "faq": "Pertanyaan Sering Diajukan",
+      "guide": "Panduan"
     }
   },
   "home": {
@@ -1056,6 +1058,12 @@
         "description": "Temukan strategi dan alat marketing untuk meningkatkan pemesanan langsung hotel Anda. Kurangi komisi OTA dan tingkatkan profitabilitas dengan solusi khusus kami.",
         "ogTitle": "Alat Marketing Hotel - Tingkatkan Pemesanan Langsung",
         "ogDescription": "Tingkatkan pemesanan langsung dan kurangi ketergantungan OTA dengan alat dan strategi marketing hotel khusus kami."
+      },
+      "blog": {
+        "title": "Panduan Little Hotelier: API, AI, invoice, harga, dan otomatisasi",
+        "description": "Panduan langkah demi langkah untuk hotel yang memakai Little Hotelier: memakai API, menghubungkan Claude atau ChatGPT lewat MCP, mengunduh invoice, mengotomatiskan pengecekan, harga, dan pesan tamu.",
+        "ogTitle": "Panduan dan tutorial Little Hotelier",
+        "ogDescription": "Panduan praktis Little Hotelier, dengan tangkapan layar dari demo langsung."
       }
     }
   },
@@ -1629,5 +1637,71 @@
     "guest_name": "Ana Ribeiro",
     "hotel_sender": "Hotel Anda",
     "note": "Contoh dengan data rekaan, berdasarkan email yang dikirim dasbor."
+  },
+  "blog": {
+    "eyebrow": "Panduan dan tutorial",
+    "title": "Maksimalkan Little Hotelier",
+    "subtitle": "Panduan praktis langkah demi langkah dengan tangkapan layar dari demo langsung: API dan asisten AI, invoice, pengecekan, harga, pesan tamu, dan trik untuk resepsionis.",
+    "search_placeholder": "Cari panduan, mis. \"invoice\" atau \"Claude\"",
+    "categories_label": "Filter menurut topik",
+    "all": "Semua panduan",
+    "featured": "Mulai dari sini",
+    "latest": "Panduan terbaru",
+    "no_results": "Belum ada panduan yang cocok. Coba kata lain, atau beri tahu kami apa yang ingin Anda baca.",
+    "read": "Baca panduan",
+    "toc": "Di halaman ini",
+    "faq_title": "Pertanyaan umum",
+    "share": "Bagikan",
+    "copy_link": "Salin tautan",
+    "copy": "Salin",
+    "copied": "Tersalin",
+    "copy_code": "Salin kode",
+    "other_languages": "Juga tersedia dalam:",
+    "sidebar_text": "Lihat langsung di demo, dengan data rekaan, persis apa yang dijelaskan panduan ini. Tanpa mendaftar.",
+    "related": "Baca juga",
+    "back": "Semua panduan",
+    "updated": "Diperbarui {date}",
+    "reading_time": "{n} menit baca",
+    "prompt_label": "Coba tanyakan",
+    "guides_for": "Panduan tentang {name}",
+    "cta": {
+      "title": "Coba di demo langsung",
+      "text": "Buka layar yang sama di demo Hotelier Tools, berisi data rekaan. Tanpa mendaftar, tanpa instalasi.",
+      "demo": "Buka demo"
+    },
+    "categories": {
+      "ai": {
+        "name": "AI dan asisten",
+        "description": "Hubungkan Claude, ChatGPT, dan asisten lain ke hotel Anda, lalu biarkan AI menyiapkan balasan dan pekerjaan rutin sementara Anda yang menyetujui."
+      },
+      "api": {
+        "name": "API dan integrasi",
+        "description": "Gunakan data Little Hotelier dari software, spreadsheet, dan alat otomatisasi Anda sendiri."
+      },
+      "invoicing": {
+        "name": "Invoice",
+        "description": "Unduh, kirim, dan periksa invoice tanpa membuka setiap reservasi."
+      },
+      "operations": {
+        "name": "Resepsionis dan operasional",
+        "description": "Temukan masalah sebelum tamu datang dan otomatiskan rutinitas harian."
+      },
+      "pricing": {
+        "name": "Harga dan revenue",
+        "description": "Harga yang lebih tepat dengan data pesaing, acara lokal, dan aturan sederhana."
+      },
+      "guests": {
+        "name": "Pesan tamu",
+        "description": "WhatsApp, email, dan Booking.com di satu tempat, dengan balasan siap kirim."
+      },
+      "compliance": {
+        "name": "Laporan dan kepatuhan",
+        "description": "Statistik resmi dan kewajiban pelaporan, diisi dari reservasi Anda."
+      },
+      "tips": {
+        "name": "Tips dan trik",
+        "description": "Perubahan kecil yang membuat Little Hotelier lebih cepat dipakai setiap hari."
+      }
+    }
   }
 }
