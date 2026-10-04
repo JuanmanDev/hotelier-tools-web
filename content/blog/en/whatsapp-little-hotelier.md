@@ -121,7 +121,7 @@ If you need the official API, Messaging hub is the right choice. If you mostly a
 - **It answers from your facts.** It uses your FAQ, house notes and property card (`/messaging/faq`), and answers "to confirm" for anything you haven't listed.
 - **It has no tools.** It returns a plan from a closed list (send a message, flag for staff, add a reservation note, set the arrival time). It can't cancel, change dates or touch payments.
 - **Automatic reply has conditions.** It needs a verified guest, an allowed request and enough confidence, and stops at 4 replies an hour, 12 a day, or 3 in a row without an answer from the guest.
-- **It waits for you first.** A WhatsApp message is analysed after 5 minutes; if someone on your team has already replied, nothing is analysed or charged. Each analysis uses AI credits.
+- **It waits for you first.** A WhatsApp message is analyzed after 5 minutes; if someone on your team has already replied, nothing is analyzed or charged. Each analysis uses AI credits.
 
 Your staff can also ask the AI about bookings by writing to the same connected number, through the **Staff assistant** (`/staff`, alpha). Their messages never enter the guest inbox, and any change they ask for waits for the owner's approval.
 

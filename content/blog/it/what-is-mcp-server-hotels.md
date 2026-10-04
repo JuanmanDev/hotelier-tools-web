@@ -5,7 +5,7 @@ description: "Un server MCP permette a Claude o ChatGPT di leggere e usare il so
 date: 2026-10-03
 category: ai
 tags: [mcp, ai, claude, chatgpt, pms]
-keywords: [server mcp cosa sono, mcp cos'è, mcp claude cos'è, server mcp per hotel, intelligenza artificiale per hotel, assistente ai per hotel, agente ai per hotel, little hotelier mcp]
+keywords: [server mcp cosa sono, mcp cos'è, mcp claude cos'è, server mcp per hotel, mcp pms hotel, little hotelier mcp, apaleo mcp server, mews mcp server]
 feature: api-mcp
 demoPath: /developer/mcp-setup
 cover: /images/blog/demo/en/mcp-setup.webp
@@ -17,7 +17,7 @@ faq:
   - q: "Un server MCP è la stessa cosa di un'API?"
     a: "No. Un'API è un insieme di richieste fisse su cui i programmatori scrivono codice. Un server MCP descrive i propri strumenti a un assistente AI, che può sceglierli e chiamarli a partire da una richiesta in linguaggio naturale. La maggior parte dei server MCP è costruita sopra un'API."
   - q: "Devo essere uno sviluppatore per usare un server MCP?"
-    a: "No. In Claude incolli l'indirizzo del server in un connettore personalizzato e accedi. In ChatGPT attivi la modalità sviluppatore e crei un'app con l'indirizzo. Gli sviluppatori possono usarlo anche da Claude Code, Cursor o VS Code."
+    a: "No. In Claude incolli l'indirizzo del server in un connettore personalizzato e accedi. In ChatGPT attivi la developer mode e crei un'app con l'indirizzo. Gli sviluppatori possono usarlo anche da Claude Code, Cursor o VS Code."
   - q: "SiteMinder ha un server MCP?"
     a: "Sì, ma per la distribuzione. Channels Plus MCP e Direct Booking MCP di SiteMinder permettono alle piattaforme di viaggio AI di mostrare e vendere camere d'albergo. Non servono a un gestore per interrogare un'AI sulle proprie prenotazioni in Little Hotelier."
   - q: "Un server MCP può modificare le mie prenotazioni?"
@@ -28,7 +28,7 @@ faq:
 
 Un server MCP è un connettore che permette a un assistente AI come Claude o ChatGPT di consultare dati ed eseguire compiti in un altro software, usando uno standard aperto chiamato **Model Context Protocol**. Per un hotel significa che puoi chiedere "chi arriva domani con un saldo da pagare?" e l'assistente ricava la risposta dal tuo gestionale (PMS) senza che tu debba copiarla a mano. A ottobre 2026 solo pochi PMS ne offrono uno ufficiale; Little Hotelier no, ma puoi collegarlo tramite Hotelier Tools.
 
-Questa è la guida di riferimento per le nostre guide sull'AI. Ogni sezione rimanda a una guida passo per passo quando sei pronto.
+Questa è la pagina di partenza delle nostre guide sull'AI. Ogni sezione rimanda a una guida passo per passo quando sei pronto.
 
 ## Cosa significa MCP e chi l'ha creato?
 
@@ -43,9 +43,9 @@ Quando fai una domanda, l'AI legge l'elenco degli strumenti, sceglie quello gius
 
 ## MCP, API e chatbot: un'analogia alberghiera
 
-Immagina il tuo PMS come il retro-ufficio in cui sta il registro delle prenotazioni.
+Immagina il tuo PMS come il back office in cui si trova il registro delle prenotazioni.
 
-- **Un'API** è lo sportello del retro-ufficio con un modulo d'ordine rigido. Il software può usarlo, ma un programmatore deve scrivere codice per ogni modulo da compilare.
+- **Un'API** è lo sportello del back office con un modulo di richiesta rigido. Il software può usarlo, ma un programmatore deve scrivere codice per ogni modulo da compilare.
 - **Un server MCP** è un concierge che sta a quello sportello. Consegna a qualsiasi assistente AI un menu stampato di ciò che può fare ("elenca gli arrivi", "controlla un saldo", "proponi una modifica"), compila i moduli al suo posto e rifiuta ciò che non è consentito. La maggior parte dei server MCP è costruita sopra un'API.
 - **Un chatbot** è un receptionist che ha letto solo l'opuscolo. Sa chiacchierare con garbo, ma non può aprire il registro delle prenotazioni. Dagli una connessione MCP e potrà controllare le prenotazioni vere.
 
@@ -59,18 +59,18 @@ Se vuoi approfondire il lato API, leggi [Little Hotelier ha un'API?](/blog/littl
 
 ## Cosa puoi chiedere a un'AI collegata al tuo PMS?
 
-Una volta collegata, chiedi con parole semplici. Con Little Hotelier collegato tramite Hotelier Tools, funzionano richieste come queste:
+Una volta collegata, chiedi a parole tue. Con Little Hotelier collegato tramite Hotelier Tools, funzionano richieste come queste:
 
 ::prompt{label="Claude"}
 Chi arriva domani e qualcuno di loro ha ancora un saldo da pagare?
 ::
 
 ::prompt{label="ChatGPT"}
-Quali soggiorni hanno fatto il check-out la settimana scorsa e non hanno ancora una fattura? Perché non si può ancora fatturare ciascuno?
+Quali soggiorni hanno fatto il check-out la settimana scorsa e non hanno ancora una fattura? Per ciascuno, perché non si può ancora fatturare?
 ::
 
 ::prompt{label="Claude"}
-Confronta i miei prezzi dei prossimi 14 giorni con i prezzi dei concorrenti che hai e dimmi dove sono più economico.
+Confronta i miei prezzi delle prossime 14 notti con i prezzi dei concorrenti che hai e dimmi dove sono più economico.
 ::
 
 ::prompt{label="Claude"}
@@ -82,7 +82,7 @@ Quali arrivi dei prossimi 7 giorni non hanno una camera assegnata o hanno il doc
 
 La differenza rispetto a incollare un'esportazione in un chatbot: i dati sono in tempo reale, non esporti nulla e l'assistente può anche agire (con la tua approvazione) invece di limitarsi a parlare.
 
-Cosa MCP non cambia: l'AI può comunque interpretare male una richiesta e la risposta vale quanto i dati nel tuo PMS. Quando un numero conta, chiedile di mostrare le prenotazioni che ha usato.
+Cosa l'MCP non cambia: l'AI può comunque interpretare male una richiesta e la risposta vale quanto i dati nel tuo PMS. Quando un numero conta, chiedile di mostrare le prenotazioni che ha usato.
 
 ## Quali PMS alberghieri hanno un server MCP? (a ottobre 2026)
 
@@ -101,11 +101,11 @@ Abbiamo controllato il sito e la documentazione di ogni fornitore il 3 ottobre 2
 | SiteMinder | Solo per la distribuzione | — | Vedi sotto |
 | Little Hotelier | Non trovato | — | Collegalo tramite [Hotelier Tools](/tools/bot/api-mcp), un server MCP indipendente |
 
-Emergono due tendenze. La maggior parte dei server ufficiali finora arriva dalle piattaforme per affitti vacanza e da Apaleo, un PMS alberghiero pensato prima di tutto per le API. E diversi fornitori usano "MCP" per altro: documentazione per sviluppatori o vendita di camere tramite app AI.
+Emergono due tendenze. La maggior parte dei server ufficiali finora arriva dalle piattaforme per affitti vacanza e da Apaleo, un PMS alberghiero pensato fin dall'inizio per le API. E diversi fornitori usano "MCP" per altro: documentazione per sviluppatori o vendita di camere tramite app AI.
 
 ## Little Hotelier ha un server MCP?
 
-Non uno ufficiale. A ottobre 2026 non abbiamo trovato alcun server MCP né annuncio di Little Hotelier su littlehotelier.com, nella newsroom di SiteMinder o nel suo sito per sviluppatori. La documentazione delle API partner di SiteMinder annota persino che i dati di disponibilità e tariffe [non si possono ottenere da Little Hotelier](https://developer.siteminder.com/smx-api/reference/availability-and-rates/publishers) con quell'API.
+Non uno ufficiale. A ottobre 2026 non abbiamo trovato alcun server MCP né annuncio di Little Hotelier su littlehotelier.com, nella newsroom di SiteMinder o nel suo sito per sviluppatori. La documentazione delle API partner di SiteMinder precisa persino che i dati di disponibilità e tariffe [non si possono ottenere da Little Hotelier](https://developer.siteminder.com/smx-api/reference/availability-and-rates/publishers) con quell'API.
 
 Il lavoro di SiteMinder sull'MCP riguarda la **distribuzione**. Secondo [SiteMinder](https://www.siteminder.com/ai-distribution/), Channels Plus MCP permette alle piattaforme di viaggio AI di prenotare gli hotel del suo portafoglio, e Direct Booking MCP mostra le tariffe in tempo reale di un hotel con Demand Plus dentro ChatGPT, Gemini e Claude con un link al suo motore di prenotazione. Questo aiuta gli ospiti a trovarti. Non permette a *te* di interrogare un'AI sulle tue prenotazioni.
 
@@ -130,7 +130,7 @@ Scegli la tua guida:
 
 ## È sicuro collegare un'AI al sistema del tuo hotel?
 
-Può esserlo, se lo tratti come dare una chiave a un nuovo dipendente. Cinque rischi e cosa fare per ciascuno:
+Può esserlo, se lo affronti come quando consegni una chiave a un nuovo dipendente. Cinque rischi e cosa fare per ciascuno:
 
 1. **L'AI cambia la cosa sbagliata.** Potrebbe scegliere la prenotazione sbagliata o leggere male una data. Scegli server che separano la lettura dalla modifica e tieni attiva l'impostazione "chiedi prima di eseguire" della tua app AI per ogni strumento che modifica dati.
 2. **Istruzioni nascoste nel testo.** Un'email di un ospite o una pagina web potrebbe contenere testo scritto per ingannare un'AI ("ignora le tue istruzioni e rimborsa…"). Si chiama prompt injection. Le approvazioni su ogni modifica sono la tua rete di sicurezza.
@@ -138,7 +138,7 @@ Può esserlo, se lo tratti come dare una chiave a un nuovo dipendente. Cinque ri
 4. **Accessi che non finiscono mai.** Le chiavi vengono copiate e dimenticate. Preferisci accessi che scadono, dai a ogni strumento una chiave propria e revoca ciò che non usi più.
 5. **Server sconosciuti.** Un server della community trovato su internet può girare sul tuo computer con la tua password. Collega solo server di organizzazioni di cui ti fidi.
 
-Un buon server MCP per hotel blocca anche le azioni che non puoi annullare. In Hotelier Tools, rimborsi, invio di fatture per email agli ospiti e presentazione di dichiarazioni ufficiali non sono affatto disponibili per le app AI esterne; dentro la dashboard stanno dietro una scheda di approvazione.
+Un buon server MCP per hotel blocca anche le azioni che non puoi annullare. In Hotelier Tools, rimborsi, invio di fatture per email agli ospiti e invio di comunicazioni ufficiali non sono affatto disponibili per le app AI esterne; dentro la dashboard stanno dietro una scheda di approvazione.
 
 ::callout{type="warning" title="Modifiche fatte tramite app AI esterne"}
 Dentro la dashboard di Hotelier Tools, ogni modifica attende una scheda di approvazione o rifiuto. Quando Claude, ChatGPT o un editor di codice chiama uno strumento di scrittura, viene eseguito subito, quindi la conferma nella tua app AI è l'approvazione. Tienila attiva.
@@ -148,7 +148,7 @@ Dentro la dashboard di Hotelier Tools, ogni modifica attende una scheda di appro
 
 MCP in sé è gratuito: è uno standard aperto. Paghi per ciò che gli sta intorno:
 
-- **L'app AI.** A ottobre 2026 Claude consente connettori personalizzati su ogni piano, compreso Free (un connettore), secondo [Anthropic](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp). ChatGPT offre MCP completo in lettura e scrittura su Business, Enterprise ed Edu, con accesso in sola lettura in modalità sviluppatore su Pro, secondo [OpenAI](https://help.openai.com/en/articles/12584461).
+- **L'app AI.** A ottobre 2026 Claude consente connettori personalizzati su ogni piano, compreso Free (un connettore), secondo [Anthropic](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp). ChatGPT offre MCP completo in lettura e scrittura su Business, Enterprise ed Edu, con accesso in sola lettura in developer mode su Pro, secondo [OpenAI](https://help.openai.com/en/articles/12584461).
 - **Il server.** I fornitori di PMS decidono le proprie condizioni; Hospitable, per esempio, esclude MCP dal piano Essentials. Hotelier Tools è gratuito per tutti gli hotel fino all'inizio della fatturazione, il 10 gennaio 2027; gli hotel che iniziano nel 2026 pagano poi 50 € al mese per tutto il 2027, con tutte le funzioni incluse.
 
 ::demo-cta{path="/chat"}

@@ -1,7 +1,7 @@
 ---
 title: "Cómo descargar todas las facturas de Little Hotelier de una vez (para el IVA trimestral)"
 seoTitle: "Descargar todas las facturas de Little Hotelier (2026)"
-description: "Little Hotelier puede comprimir las facturas que ya existen. Así se hace, y cómo crear las que faltan y enviar a tu gestor un ZIP y un CSV por trimestre."
+description: "Little Hotelier exporta en un ZIP las facturas que ya existen. Así se hace, y cómo crear las que faltan y enviar a tu gestor un ZIP y un CSV por trimestre."
 date: 2026-10-03
 category: invoicing
 tags: [invoices, accounting, little hotelier, quarterly tax, zip]
@@ -28,7 +28,7 @@ Sí. Little Hotelier puede meter en un solo ZIP todas las facturas que **ya exis
 
 ## ¿Puede Little Hotelier exportar todas las facturas de forma nativa?
 
-Sí. A octubre de 2026, el centro de ayuda de Little Hotelier describe tres formas de sacar las facturas. Cuál necesitas depende de lo que te pida tu gestor.
+Sí. A fecha de octubre de 2026, el centro de ayuda de Little Hotelier describe tres formas de sacar las facturas. Cuál necesitas depende de lo que te pida tu gestor.
 
 | Método | Qué obtienes | La pega |
 |---|---|---|
@@ -53,7 +53,7 @@ Dos límites: solo se exportan las facturas **marcadas como definitivas**, y el 
 
 ### Una a una
 
-Abre la reserva, haz clic en **Print**, elige **Invoice** y selecciona **Save as PDF** en la ventana de impresión ([centro de ayuda](https://helpcentre.littlehotelier.com/en/articles/8673812-generate-print-and-email-a-guest-invoice)). Si lo haces a menudo, el script gratuito [Extra Invoice Print Button](/tools/ui/extra-invoice-print-button) pone un enlace de impresión directo en la reserva.
+Abre la reserva, haz clic en **Print**, elige **Invoice** y selecciona **Save as PDF** en la ventana de impresión ([centro de ayuda](https://helpcentre.littlehotelier.com/en/articles/8673812-generate-print-and-email-a-guest-invoice)). Si lo haces a menudo, el script gratuito [Botón Extra de Imprimir Factura](/tools/ui/extra-invoice-print-button) pone un enlace de impresión directo en la reserva.
 
 ## Lo que no hace la exportación nativa
 
@@ -61,7 +61,7 @@ La descarga es la parte fácil. El trimestre suele torcerse antes:
 
 - **Facturas que faltan.** El ZIP solo contiene facturas que alguien generó. El centro de ayuda describe crearlas de una en una (pestaña **Invoices** > **Generate invoice**), así que una estancia en la que nadie hizo clic simplemente no está.
 - **Duplicados.** Cada solicitud de generar crea un documento nuevo en Little Hotelier, así que volver a generar una estancia puede dejar dos facturas donde tu gestor espera una.
-- **Facturas anticipadas.** Una factura emitida antes de que el huésped haga el check-out queda desfasada en cuanto se añade un extra o un pago, y arreglarla significa una factura corregida, una nota de crédito o, en España, una factura rectificativa.
+- **Facturas anticipadas.** Una factura emitida antes de que el huésped haga el check-out queda desfasada en cuanto se añade un extra o un pago, y arreglarla supone una factura corregida, una factura de abono o, en España, una factura rectificativa.
 - **Finalizar.** La exportación contable necesita que cada factura esté marcada como definitiva, y el centro de ayuda describe hacerlo reserva por reserva.
 
 ## Cómo descargar un trimestre entero en un ZIP y un CSV (la forma más rápida)
@@ -71,7 +71,7 @@ Hotelier Tools es un panel que se conecta a Little Hotelier con tu propio acceso
 1. Regístrate en [dashboard.hotelier.tools](https://dashboard.hotelier.tools/register) y conecta Little Hotelier en **Credenciales**. Tu acceso se guarda cifrado.
 2. En el menú, abre **Descarga de facturas** (`/invoices`).
 3. Pulsa **Generar facturas** y elige las fechas, por ejemplo del 1 de julio al 30 de septiembre.
-4. La app lee esas reservas de Little Hotelier y crea facturas para las estancias que cumplen los requisitos. Lo que no puede facturar va a **Errores** con el motivo. Nada se salta en silencio.
+4. La app lee esas reservas de Little Hotelier y crea facturas para las estancias que cumplen los requisitos. Lo que no puede facturar va a **Errores** con el motivo. No se omite nada sin avisar.
 5. Tus facturas aparecen agrupadas por trimestre y mes. En el trimestre, pulsa **ZIP** para descargar todos los PDF, o **Vista previa CSV** para revisar antes el resumen.
 
 ::screenshot{src="/images/blog/demo/es/invoices-quarter-zip-downloaded.webp" alt="Página de facturas agrupadas por trimestre, con los botones Vista previa CSV y ZIP en el 4T y el 3T de 2026, la tabla de facturas de septiembre de 2026 abierta y un aviso Paquete descargado que confirma que se descargó el paquete de facturas del 3T de 2026" caption="Cada trimestre tiene su propio ZIP de PDF y un resumen en CSV. Un clic en ZIP descarga el trimestre entero." path="/invoices"}
@@ -80,7 +80,7 @@ Hotelier Tools es un panel que se conecta a Little Hotelier con tu propio acceso
 Las facturas son documentos de la propia Little Hotelier. Hotelier Tools le pide a Little Hotelier que genere cada una, así que tu numeración, tu logo y tu diseño de **Customise invoices** se quedan exactamente como están.
 
 ::callout{type="info" title="Herramienta independiente"}
-Hotelier Tools no está afiliado ni respaldado por SiteMinder ni por Little Hotelier. Se conecta con el acceso a Little Hotelier de tu propio hotel.
+Hotelier Tools no está afiliado a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo. Se conecta con el acceso a Little Hotelier de tu propio hotel.
 ::
 
 ## Comprobaciones antes de facturar: NIF que faltan, facturas anticipadas y duplicados
@@ -101,11 +101,11 @@ Esa es la diferencia entre un ZIP en el que tu gestor puede confiar y uno que te
 Van a **Errores** (`/invoices/errors`), una fila por reserva con el motivo.
 
 1. Elige el rango de fechas arriba.
-2. Filtra por tipo de incidencia: **Falta DNI**, **Pago pendiente**, **Check-out pendiente**, **Error al descargar** y otros.
+2. Filtra por tipo de incidencia: **Falta DNI**, **Pago pendiente**, **Sin check-out**, **Error al descargar** y otros.
 3. Corrige la reserva en Little Hotelier: añade el NIF, registra el pago o haz el check-out del huésped.
 4. De vuelta en Errores, vuelve a comprobarla o márcala como resuelta. **Copiar CSV** te da la lista para un compañero.
 
-::screenshot{src="/images/blog/demo/es/invoice-failures.webp" alt="Página Errores e incidencias del 1 de julio al 30 de septiembre de 2026 con Copiar CSV, filtros por tipo de incidencia como Falta DNI, Pago pendiente, Check-out pendiente y Error al descargar, y una tabla de reservas con su ID de factura, fechas de estancia, total, etiqueta de incidencia, motivo y acciones" caption="Cada reserva que una ejecución no pudo facturar, con el motivo y una forma de reintentarlo." path="/invoices/errors"}
+::screenshot{src="/images/blog/demo/es/invoice-failures.webp" alt="Página Errores e incidencias del 1 de julio al 30 de septiembre de 2026 con Copiar CSV, filtros por tipo de incidencia como Falta DNI, Pago pendiente, Sin check-out y Error al descargar, y una tabla de reservas con su ID de factura, fechas de estancia, total, etiqueta de incidencia, motivo y acciones" caption="Cada reserva que una ejecución no pudo facturar, con el motivo y una forma de reintentarlo." path="/invoices/errors"}
 ::
 
 Si una estancia se queda bloqueada por un saldo de redondeo de uno o dos céntimos, la opción de ajuste de céntimos en **Ajustes > Facturas** puede cerrar esos saldos mínimos.
@@ -132,7 +132,7 @@ Una rutina corta que evita la mayoría de los emails de seguimiento:
 4. **Revisa los números de factura** por si hay huecos o repeticiones antes de enviar.
 5. **Menciona las facturas anuladas.** En Little Hotelier, anular una factura definitiva la mueve a **Older invoices** con el estado Cancelled, y sus datos siguen apareciendo en las exportaciones ([centro de ayuda](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). Tu gestor necesita saberlo para que los ingresos no se cuenten dos veces.
 
-En España esto alimenta tu declaración trimestral de IVA ([modelo 303](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml)). Si usas VeriFactu, Little Hotelier finaliza las facturas enviándolas él mismo a la AEAT ([centro de ayuda](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)). Hotelier Tools no tiene función propia de VeriFactu, así que deja ese paso en Little Hotelier. En cualquier país con facturación electrónica obligatoria, trata el ZIP como copias para tus archivos y consulta las normas con tu gestor.
+En España esto alimenta tu declaración trimestral de IVA ([modelo 303](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml)). Si usas VeriFactu, Little Hotelier marca las facturas como definitivas enviándolas directamente a la AEAT ([centro de ayuda](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)). Hotelier Tools no tiene función propia de VeriFactu, así que deja ese paso en Little Hotelier. En cualquier país con facturación electrónica obligatoria, trata el ZIP como copias para tus archivos y consulta las normas con tu gestor.
 
 Los desarrolladores también pueden obtener los PDF de las facturas uno a uno con la [API REST de Hotelier Tools](/blog/little-hotelier-api). Y si tu gestor quiere también los datos de reservas, mira [cómo exportar reservas a Excel](/blog/export-little-hotelier-reservations-excel).
 

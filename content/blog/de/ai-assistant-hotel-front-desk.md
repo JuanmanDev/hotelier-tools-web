@@ -22,10 +22,10 @@ faq:
   - q: "Was kostet der KI-Assistent?"
     a: "Hotelier Tools ist für jedes Hotel kostenlos, bis die Abrechnung am 10. Januar 2027 beginnt. Hotels, die 2026 starten, zahlen danach das ganze Jahr 2027 über 50 € pro Monat. Antworten des Assistenten verbrauchen KI-Guthaben, das Sie auf der Seite AI credits einsehen."
   - q: "Gehört Hotelier Tools zu Little Hotelier?"
-    a: "Nein. Hotelier Tools ist unabhängig und steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von beiden nicht empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hauses."
+    a: "Nein. Hotelier Tools ist unabhängig, steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hauses."
 ---
 
-Ja, ein KI-Assistent kann der Rezeption eines kleinen Hotels schon heute echte Arbeit abnehmen: "Wer reist morgen an und wer schuldet noch Geld?" beantworten, Gästeantworten entwerfen und Buchungsänderungen oder Rechnungen vorbereiten. Sicher ist das nur, wenn er frei lesen darf, aber **jede Änderung auf die Freigabe durch eine Person wartet**. Rückerstattungen, Preisänderungen und Antworten an Booking.com-Gäste überlässt man nie allein der KI.
+Ja, ein KI-Assistent kann der Rezeption eines kleinen Hotels schon heute echte Arbeit abnehmen: „Wer reist morgen an und wer schuldet noch Geld?“ beantworten, Gästeantworten entwerfen und Buchungsänderungen oder Rechnungen vorbereiten. Sicher ist das nur, wenn er frei lesen darf, aber **jede Änderung auf die Freigabe durch eine Person wartet**. Rückerstattungen, Preisänderungen und Antworten an Booking.com-Gäste überlässt man nie allein der KI.
 
 Dieser Leitfaden zeigt, wie das mit Hotelier Tools auf Basis von Little Hotelier in der Praxis aussieht, mit echten Anfragen und dem, was nach dem Druck auf Enter passiert.
 
@@ -47,11 +47,11 @@ Little Hotelier bietet an der Rezeption bereits viel. Der eigene [Guest Engageme
 
 ### Der Assistenten-Chat im Dashboard (Beta)
 
-Öffnen Sie **AI Chat** (`/chat`) und stellen Sie eine Frage zu Buchungen, Gästen, Preisen, Rechnungen, Prüfungen oder zur Warteliste. Der leere Chat sagt es deutlich: "Anything that changes data asks for your confirmation first." (Alles, was Daten ändert, verlangt zuerst Ihre Bestätigung.)
+Öffnen Sie **AI Chat** (`/chat`) und stellen Sie eine Frage zu Buchungen, Gästen, Preisen, Rechnungen, Prüfungen oder zur Warteliste. Der leere Chat sagt es deutlich: „Anything that changes data asks for your confirmation first.“ (Alles, was Daten ändert, verlangt zuerst Ihre Bestätigung.)
 
 Antworten kommen als Text und als Karten: eine Reservierungsübersicht, eine vorgeschlagene Änderung mit Belegtabelle, eine Karte zur Anmeldung für die Rechnung beim Check-out, eine Tabelle mit Preisempfehlungen oder Schieberegler für Preisregeln. Jede frühere Unterhaltung bleibt im **Chat History** (`/chat/history`) erhalten.
 
-Es gibt auch eine Mikrofontaste. Sie nutzt die eingebaute Spracherkennung Ihres Browsers, die derzeit **auf Spanisch (es-ES) eingestellt** ist. Spracheingabe eignet sich also für Spanischsprecher. Alle anderen tippen.
+Es gibt auch eine Mikrofontaste. Sie nutzt die eingebaute Spracherkennung Ihres Browsers, die derzeit **auf Spanisch (es-ES) eingestellt** ist. Spracheingabe eignet sich also für Spanischsprachige. Alle anderen tippen.
 
 ::screenshot{src="/images/blog/demo/en/ai-chat-arrivals-this-week.webp" alt="KI-Chat von Hotelier Tools beantwortet die Frage nach den Anreisen dieser Woche mit einem Tool-Aufruf und einer Liste Reservations (14) aus Karten, die je Gast An- und Abreisedatum, Paid oder Pending und ein Badge für ausgecheckt, eingecheckt oder bestätigt zeigen" caption="Fragen Sie in normalen Worten, die Antwort kommt als Reservierungskarten. Eine Abfrage wie diese ändert nichts." path="/chat/3a751210-d8ab-4cb7-8add-6ee5244c93af"}
 ::
@@ -60,7 +60,7 @@ Es gibt auch eine Mikrofontaste. Sie nutzt die eingebaute Spracherkennung Ihres 
 
 Unter **Staff assistant** (`/staff`) legen Sie einen Mitarbeiter mit Namen, WhatsApp-Nummer und/oder E-Mail-Adresse und einer Rolle an: **Read only** (nur lesen) oder **Can request changes** (darf Änderungen anfragen).
 
-Schreibt diese Person an die verbundene WhatsApp-Nummer oder das Postfach Ihres Hotels, antwortet ihr die KI als Mitarbeitende, im selben Kanal und mit Ihren Little-Hotelier-Daten. Ihre Nachrichten vermischen sich nie mit dem Gäste-Posteingang.
+Schreibt diese Person an die verbundene WhatsApp-Nummer oder das Postfach Ihres Hotels, behandelt die KI sie als Teammitglied und antwortet im selben Kanal mit Ihren Little-Hotelier-Daten. Ihre Nachrichten vermischen sich nie mit dem Gäste-Posteingang.
 
 - Ein Mitarbeiter mit **Read only** darf nur Fragen stellen.
 - Ein Mitarbeiter mit **Can request changes** darf Änderungen anfragen, aber jede wird zu einer Anfrage, die der Inhaber unter `/staff` freigibt.
@@ -86,9 +86,9 @@ Starten Sie mit **Draft** und bleiben Sie dabei, bis Sie den Antworten vertrauen
 
 Eine KI kann eine Nachricht falsch verstehen oder die falsche Buchung wählen. Freigabekarten sorgen dafür, dass ein Fehlgriff nie in Little Hotelier ankommt.
 
-1. **Jede Schreibaktion braucht eine Karte.** Kann das System nicht erkennen, ob ein Werkzeug liest oder schreibt, behandelt es es als Schreibaktion.
+1. **Jede Schreibaktion braucht eine Karte.** Kann das System nicht erkennen, ob ein Werkzeug liest oder schreibt, behandelt es dieses als Schreibaktion.
 2. **Die Karte zeigt die genaue Änderung.** Bei einer Reservierung sehen Sie eine Belegtabelle: den Wert in Little Hotelier, was der Absender angegeben hat und was im Nachrichtentext steht.
-3. **Sie bestätigen die Quelle.** Reservierungsänderungen aus dem Chat enthalten ein Kontrollkästchen ("das ist die richtige Reservierung und ich vertraue der Quelle"), denn eine Chatnachricht ist eine Behauptung, kein Nachweis, wer jemand ist.
+3. **Sie bestätigen die Quelle.** Reservierungsänderungen aus dem Chat enthalten ein Kontrollkästchen („das ist die richtige Reservierung und ich vertraue der Quelle“), denn eine Chatnachricht ist eine Behauptung, kein Nachweis, wer jemand ist.
 4. **Approve führt genau diesen Aufruf aus.** Mit **Approve** wird die gespeicherte Änderung auf dem Server ausgeführt. Die KI bekommt keine zweite Chance, sie umzuschreiben.
 5. **Jede Freigabe gilt nur einmal.** Sie ist an dieses Werkzeug, diese Werte, diese Unterhaltung und diese Person gebunden und läuft nach 24 Stunden ab.
 6. **Rückerstattungen sind getrennt.** Eine Rückerstattung ist eine nicht umkehrbare Aktion und liegt immer hinter einer eigenen Karte.
@@ -107,13 +107,13 @@ Wer reist morgen an, und hat jemand davon noch einen offenen Betrag?
 Der Assistent liest die Anreisen von morgen samt Zahlungen und listet sie auf, mit einer Reservierungskarte pro Gast. Es ändert sich nichts, also gibt es keine Karte freizugeben.
 
 ::prompt{label="Hotelier Tools Assistent"}
-Der Gast der Buchung BDC-1234567890 hat uns eine neue Handynummer gemailt: +34 600 000 000. Bitte aktualisieren.
+Der Gast der Buchung BDC-1234567890 hat uns per E-Mail eine neue Handynummer geschickt: +34 600 000 000. Bitte aktualisieren.
 ::
 
-Der Assistent findet die Reservierung und bereitet eine Karte **proposed change** (vorgeschlagene Änderung) vor: die alte Nummer, die neue Nummer und woher der neue Wert stammt. Sie setzen das Häkchen für das Vertrauen in die Quelle und klicken auf **Approve**. Erst dann wird Little Hotelier aktualisiert.
+Der Assistent findet die Reservierung und bereitet eine Karte **proposed change** (vorgeschlagene Änderung) vor: die alte Nummer, die neue Nummer und woher der neue Wert stammt. Sie bestätigen per Häkchen, dass Sie der Quelle vertrauen, und klicken auf **Approve**. Erst dann wird Little Hotelier aktualisiert.
 
 ::prompt{label="Hotelier Tools Assistent"}
-Der Gast in BDC-1234567890 möchte eine Rechnung. Schicken Sie sie automatisch beim Check-out.
+Der Gast in BDC-1234567890 möchte eine Rechnung. Schick sie automatisch beim Check-out.
 ::
 
 Sie erhalten die Karte zur Anmeldung für die Rechnung beim Check-out. Nach Ihrer Freigabe ist der Aufenthalt für die tägliche Rechnungsaufgabe vorgemerkt, und Little Hotelier versendet die Rechnung nach der Abreise aus Ihrer eigenen Vorlage. Details dazu in [Rechnung automatisch beim Check-out senden](/blog/send-invoice-to-guest-at-checkout).
@@ -125,7 +125,7 @@ Was sollte ein Doppelzimmer nächsten Samstag kosten, und warum?
 Sie erhalten die Tabelle mit Preisempfehlungen samt den Gründen hinter jeder Zahl: Mitbewerber, Nachfrage, Grenzen. Das Lesen ändert nichts. Einen Preis zu übernehmen ist eine Schreibaktion und wartet auf Ihre Freigabe.
 
 ::prompt{label="Hotelier Tools Assistent"}
-Erstatten Sie die Anzahlung von 40 € für BDC-1234567890 zurück.
+Erstatte die Anzahlung von 40 € für BDC-1234567890 zurück.
 ::
 
 Die Rückerstattung erscheint als eigene Karte. Erst nach Ihrer Freigabe wird etwas erstattet. Außerhalb des Dashboards sind Rückerstattungen über [externe KI-Assistenten](/blog/connect-claude-to-little-hotelier) vollständig gesperrt.
@@ -133,7 +133,7 @@ Die Rückerstattung erscheint als eigene Karte. Erst nach Ihrer Freigabe wird et
 Und vom Mitarbeiter-Assistenten per WhatsApp:
 
 ::prompt{label="Mitarbeiter per WhatsApp"}
-Ist Zimmer 5 heute Nacht frei? Wenn ja, buchen Sie die heute anreisende Buchung Martin dorthin um.
+Ist Zimmer 5 heute Nacht frei? Wenn ja, leg die Buchung von Martin mit Anreise heute dorthin um.
 ::
 
 Die erste Hälfte wird sofort beantwortet. Die Umbuchung ist eine Änderung und wird daher zu einer offenen Anfrage unter `/staff`, die der Inhaber freigibt.
@@ -146,32 +146,32 @@ Die erste Hälfte wird sofort beantwortet. Die Umbuchung ist eine Änderung und 
 Egal welches Werkzeug Sie nutzen: Das hier bleibt bei einer Person. So setzt Hotelier Tools jeden Punkt durch.
 
 - **Geld bewegen.** Rückerstattungen brauchen immer eine eigene Karte. Externe KI-Apps, die über MCP verbunden sind, können gar nicht erstatten.
-- **Eine Buchung ändern, nur weil eine Nachricht es sagt.** Die Gäste-KI sieht eine Reservierung nur, wenn der Absender verifiziert ist: eine Telefonnummer, die in den letzten 8 oder mehr Ziffern mit der Buchung übereinstimmt, die exakte E-Mail-Adresse oder ein Booking.com-Thread. Passen zwei Gäste, wird keine Buchung zugeordnet.
+- **Eine Buchung ändern, nur weil eine Nachricht es sagt.** Die Gäste-KI sieht eine Reservierung nur, wenn der Absender verifiziert ist: eine Telefonnummer, die in den letzten 8 oder mehr Ziffern mit der Buchung übereinstimmt, die exakte E-Mail-Adresse oder ein Booking.com-Verlauf. Passen zwei Gäste, wird keine Buchung zugeordnet.
 - **Booking.com-Gästen selbst antworten.** Automatischer KI-Versand an Booking.com ist nie erlaubt.
-- **Dinge erfinden.** Die Gäste-KI antwortet nur aus Ihren FAQ, Hausnotizen und der Objektkarte. Haben Sie nicht angegeben, ob es einen Parkplatz gibt, lautet die Antwort "wird geklärt", nie "ja".
+- **Dinge erfinden.** Die Gäste-KI antwortet nur auf Grundlage Ihrer FAQ, Hausnotizen und Objektdaten. Haben Sie nicht angegeben, ob es einen Parkplatz gibt, lautet die Antwort „wird geklärt“, nie „ja“.
 - **Andere Gäste erwähnen.** Ein Antwortfilter blockiert Buchungsnummern, die nicht zum Gast der Unterhaltung gehören.
-- **Preise ohne Grenzen übertragen.** Die KI sitzt nicht in der nächtlichen Preisberechnung. Der Autopilot ist standardmäßig aus und bewegt eine Nacht, wenn er an ist, standardmäßig um höchstens ±20 % und nie unter Ihren Mindestpreis.
-- **Offizielle Meldungen einreichen oder von außen Gäste anmailen.** Die INE-Erhebung abzusenden, eine Rechnung per E-Mail zu verschicken oder Gäste auf der Warteliste anzuschreiben ist für externe KI-Apps gesperrt. Im Dashboard-Chat steht jeweils eine Karte davor.
+- **Preise ohne Grenzen übertragen.** Die KI ist an der Preisberechnung pro Nacht nicht beteiligt. Der Autopilot ist standardmäßig aus und ändert eine Nacht, wenn er an ist, standardmäßig um höchstens ±20 % und nie unter Ihren Mindestpreis.
+- **Offizielle Meldungen einreichen oder von außen Gäste per E-Mail anschreiben.** Die INE-Erhebung abzusenden, eine Rechnung per E-Mail zu verschicken oder Gäste auf der Warteliste anzuschreiben ist für externe KI-Apps gesperrt. Im Dashboard-Chat steht jeweils eine Karte davor.
 
 Unbeaufsichtigte Antworten haben außerdem Mengenlimits: 4 pro Stunde, 12 pro Tag und 3 in Folge ohne Antwort des Gastes.
 
 ## Rollen, Datenschutz und Kosten
 
-**Rollen.** Anfragen des Mitarbeiter-Assistenten gibt der Inhaber unter `/staff` frei. Teamkonten mit Rollen stehen auf der [Assistenten-Seite](/tools/bot/ai-assistant) als "soon" (demnächst). Sie sind so gedacht, dass etwa ein Rezeptionslogin Preise sehen, aber nicht ändern kann und auch mit einer Karte keine Rückerstattung ausführen darf.
+**Rollen.** Anfragen des Mitarbeiter-Assistenten gibt der Inhaber unter `/staff` frei. Teamkonten mit Rollen stehen auf der [Assistenten-Seite](/tools/bot/ai-assistant) als „soon“ (demnächst). Sie sind so gedacht, dass etwa ein Rezeptionslogin Preise sehen, aber nicht ändern kann und auch mit einer Karte keine Rückerstattung ausführen darf.
 
 **Datenschutz.** Logins für Little Hotelier, Booking.com und Postfächer werden verschlüsselt gespeichert (AES-256-GCM). Gästenachrichten und Buchungsdetails verarbeitet ein KI-Anbieter, wenn der Assistent sie liest. Der [Auftragsverarbeitungsvertrag](https://dashboard.hotelier.tools/legal/dpa) und die [Datenschutzerklärung](https://dashboard.hotelier.tools/legal/privacy) erklären, was verarbeitet wird.
 
 **Kosten.** Hotelier Tools ist für jedes Hotel kostenlos, bis die Abrechnung am 10. Januar 2027 beginnt. Hotels, die 2026 starten, zahlen danach das ganze Jahr 2027 über 50 € pro Monat, mit allen Funktionen. Jede Antwort des Assistenten und jede Analyse einer Gästenachricht verbraucht KI-Guthaben. Kontingent, Stand und Verbrauch sehen Sie unter **AI credits** (`/messaging/credits`).
 
 ::callout{type="note" title="Unabhängiges Tool"}
-Hotelier Tools steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von beiden nicht empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hauses, und jede Änderung ist in Little Hotelier wie gewohnt sichtbar.
+Hotelier Tools steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hauses, und jede Änderung ist in Little Hotelier wie gewohnt sichtbar.
 ::
 
 ## So probieren Sie es gefahrlos aus
 
 1. Öffnen Sie die öffentliche Demo unten. Sie nutzt ein erfundenes Hotel, und nichts erreicht echte Systeme.
 2. Fragen Sie nach den Anreisen von morgen, bitten Sie dann um eine Änderung und sehen Sie sich die Karte an, die Sie erhalten.
-3. Verbinden Sie in Ihrem eigenen Dashboard Little Hotelier unter **Credentials**, füllen Sie die Objektkarte unter `/settings/property` aus (sie liest Adresse, Richtlinien und Zimmer aus Little Hotelier) und tragen Sie Ihre FAQ unter `/messaging/faq` ein.
+3. Verbinden Sie in Ihrem eigenen Dashboard Little Hotelier unter **Credentials**, füllen Sie die Objektdaten unter `/settings/property` aus (sie liest Adresse, Richtlinien und Zimmer aus Little Hotelier) und tragen Sie Ihre FAQ unter `/messaging/faq` ein.
 4. Lassen Sie den Gäste-Posteingang in den ersten Wochen auf **Draft** und korrigieren Sie unter `/messaging/training`, was die KI falsch versteht.
 
 ::demo-cta{path="/chat"}

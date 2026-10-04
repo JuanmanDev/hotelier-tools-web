@@ -1,7 +1,7 @@
 ---
 title: "Cómo conectar Claude con Little Hotelier (MCP, paso a paso)"
 seoTitle: "Conectar Claude con Little Hotelier: MCP paso a paso"
-description: "Conecta Claude con Little Hotelier con un conector personalizado: pega una URL, inicia sesión y permite el acceso. Primeras preguntas, seguridad y problemas."
+description: "Conecta Claude con Little Hotelier con un conector personalizado: pega una URL, inicia sesión y da acceso. Primeras preguntas, seguridad y problemas."
 date: 2026-10-03
 category: ai
 tags: [claude, mcp, ai, connectors, little hotelier]
@@ -13,32 +13,32 @@ coverAlt: "Guía de configuración MCP de Hotelier Tools con la explicación ¿Q
 featured: true
 faq:
   - q: "¿Qué planes de Claude pueden añadir un conector personalizado?"
-    a: "A octubre de 2026, Anthropic indica conectores personalizados en los planes Free, Pro, Max, Team y Enterprise. Las cuentas Free pueden añadir un conector personalizado. En Team y Enterprise, un propietario (Owner) lo añade para la organización y después cada miembro se conecta con su propio acceso."
+    a: "A fecha de octubre de 2026, Anthropic ofrece conectores personalizados en los planes Free, Pro, Max, Team y Enterprise. Las cuentas Free pueden añadir un conector personalizado. En Team y Enterprise, un propietario (Owner) lo añade para la organización y después cada miembro se conecta con su propio acceso."
   - q: "¿Funciona la conexión con Little Hotelier en la app móvil de Claude?"
     a: "Sí. Una vez que la conectas en claude.ai o en Claude Desktop, Anthropic dice que también está disponible en Claude para iOS y Android. Añadir conectores personalizados nuevos desde el móvil sigue en beta, así que configúralo desde un ordenador."
-  - q: "¿Cómo desconecto Claude o cambio el acceso?"
+  - q: "¿Cómo desconecto Claude o renuevo el acceso?"
     a: "En Claude, abre Customize, luego Connectors, y elige Disconnect o Remove. En Hotelier Tools, abre API y MCP, Claves API y revoca la conexión o la clave que usaste en Claves activas. Revocar desde Hotelier Tools corta el acceso al instante."
   - q: "¿Puede Claude cambiar mis reservas o mis precios?"
     a: "Sí, si se lo permites. Las herramientas de escritura se ejecutan cuando Claude las llama, y Hotelier Tools no añade una segunda tarjeta de aprobación fuera de su propio panel, así que mantén la aprobación por herramienta de Claude en Needs approval. Los reembolsos, el envío de facturas por email, la presentación de la encuesta del INE y otras acciones irreversibles están bloqueados para Claude."
   - q: "¿Tiene Little Hotelier su propio servidor MCP?"
-    a: "No uno oficial a octubre de 2026. El trabajo de SiteMinder con MCP trata de vender habitaciones a través de asistentes de IA, no de que los propietarios consulten sus propios datos. Hotelier Tools ejecuta un servidor MCP independiente que se conecta con el acceso a Little Hotelier de tu propio alojamiento."
+    a: "No hay uno oficial a fecha de octubre de 2026. El trabajo de SiteMinder con MCP trata de vender habitaciones a través de asistentes de IA, no de que los propietarios consulten sus propios datos. Hotelier Tools ejecuta un servidor MCP independiente que se conecta con el acceso a Little Hotelier de tu propio alojamiento."
   - q: "¿Es una integración oficial de Anthropic o de Little Hotelier?"
-    a: "No. Hotelier Tools es independiente y no está afiliado ni respaldado por Anthropic, SiteMinder ni Little Hotelier. Usa el protocolo estándar MCP que Claude admite para cualquier conector personalizado."
+    a: "No. Hotelier Tools es independiente: no está afiliado a Anthropic, a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo. Usa el protocolo estándar MCP que Claude admite para cualquier conector personalizado."
 ---
 
-Little Hotelier no ofrece un servidor MCP propio (a octubre de 2026), pero aun así puedes conectar Claude con él a través de Hotelier Tools, que ejecuta uno para tu alojamiento. En Claude, abre **Customize → Connectors → Add custom connector**, pega `https://dashboard.hotelier.tools/api/mcp`, inicia sesión en Hotelier Tools y pulsa **Permitir acceso**. Claude podrá entonces responder con tus reservas en vivo y, si se lo permites, hacer cambios.
+Little Hotelier no ofrece un servidor MCP propio (a fecha de octubre de 2026), pero aun así puedes conectar Claude con él a través de Hotelier Tools, que ejecuta uno para tu alojamiento. En Claude, abre **Customize → Connectors → Add custom connector**, pega `https://dashboard.hotelier.tools/api/mcp`, inicia sesión en Hotelier Tools y pulsa **Permitir acceso**. Claude podrá entonces responder a partir de tus reservas en tiempo real y, si se lo permites, hacer cambios.
 
 ¿Es la primera vez que oyes hablar de esto? Lee antes [qué es un servidor MCP](/blog/what-is-mcp-server-hotels). Son tres minutos.
 
 ## Qué necesitas antes de empezar
 
 ::callout{type="tip" title="Lista de comprobación"}
-- **Una cuenta de Claude.** A octubre de 2026, [Anthropic indica conectores personalizados](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp) (en inglés) en los planes Free, Pro, Max, Team y Enterprise. Las cuentas Free pueden añadir uno.
+- **Una cuenta de Claude.** A fecha de octubre de 2026, [Anthropic ofrece conectores personalizados](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp) (en inglés) en los planes Free, Pro, Max, Team y Enterprise. Las cuentas Free pueden añadir uno.
 - **Una cuenta de Hotelier Tools** con Little Hotelier conectado en **Credenciales** (`/credentials`). Es gratis para todos los hoteles hasta que empiece el cobro el 10 de enero de 2027.
 - **Acceso a la API en Hotelier Tools.** Lo tiene el propietario del alojamiento. Sin él, la conexión se rechaza.
 ::
 
-Hotelier Tools lee tus datos con el acceso a Little Hotelier de tu propio alojamiento. No está afiliado ni respaldado por SiteMinder, Little Hotelier ni Anthropic.
+Hotelier Tools lee tus datos con el acceso a Little Hotelier de tu propio alojamiento. No está afiliado a SiteMinder, a Little Hotelier ni a Anthropic, ni cuenta con su respaldo.
 
 ## Cómo conectar Claude con Little Hotelier (claude.ai y Claude Desktop)
 
@@ -47,7 +47,7 @@ Es la vía recomendada. Inicias sesión con el navegador, así que no hay ningun
 1. Abre [claude.ai](https://claude.ai) o la app Claude Desktop y ve a **Customize → Connectors**. Algunas pantallas todavía lo llaman **Settings → Connectors**.
 2. Haz clic en **Add custom connector** (en algunas cuentas: **+ Add** y luego **Add custom connector**).
 3. Ponle de nombre `Hotelier Tools` y pega la URL del servidor MCP: `https://dashboard.hotelier.tools/api/mcp`
-4. Si Claude te pregunta cómo inicia sesión la gente, elige **Sign in now**. Si te pide un cliente OAuth, elige **Register automatically**: el servidor de Hotelier Tools admite ese registro automático. Si solo ves **Advanced settings**, déjalos vacíos.
+4. Si Claude te pregunta cómo se inicia sesión, elige **Sign in now**. Si te pide un cliente OAuth, elige **Register automatically**: el servidor de Hotelier Tools admite ese registro automático. Si solo ves **Advanced settings**, déjalos vacíos.
 5. Haz clic en **Add** y luego en **Connect**. Se abre una ventana de Hotelier Tools.
 6. Inicia sesión en Hotelier Tools. En **Autorizar acceso MCP**, elige el alojamiento (solo si tienes varios) y pulsa **Permitir acceso**.
 
@@ -61,7 +61,7 @@ El inicio de sesión dura **30 días**. Después, Claude te pide que vuelvas a c
 
 ### En un plan Team o Enterprise
 
-Un propietario (Owner) añade el conector una sola vez: **Organization settings → Connectors → Add → Custom → Web**, con la misma URL. Cada compañero abre entonces **Customize → Connectors**, busca Hotelier Tools con la etiqueta **Custom** y hace clic en **Connect**. Cada conexión inicia sesión por separado en Hotelier Tools, y Claude actúa con los permisos del acceso que se haya usado.
+Un propietario (Owner) añade el conector una sola vez: **Organization settings → Connectors → Add → Custom → Web**, con la misma URL. Cada compañero abre entonces **Customize → Connectors**, busca Hotelier Tools con la etiqueta **Custom** y hace clic en **Connect**. Cada conexión inicia sesión por separado en Hotelier Tools, y Claude actúa con los permisos del usuario con el que se haya iniciado sesión.
 
 ### En la app móvil
 
@@ -72,15 +72,15 @@ Según [Anthropic](https://support.claude.com/en/articles/11176164-use-connector
 La mayoría debería usar el inicio de sesión de arriba. Una clave de API es útil cuando quieres un acceso que no caduque a los 30 días, o para un cliente que no puede hacer el inicio de sesión en el navegador.
 
 1. En Hotelier Tools, abre **API y MCP → Claves API** (`/developer/api-keys`).
-2. En "Generar una clave nueva", escribe un nombre como `claude-desktop` y pulsa **Generar clave**.
-3. Cópiala ahora. La página avisa: "Copia esta clave ahora: no se volverá a mostrar." Las claves empiezan por `htk_`.
+2. En **Generar una clave nueva**, escribe un nombre como `claude-desktop` y pulsa **Generar clave**.
+3. Cópiala ahora. La página avisa: «Copia esta clave ahora: no se volverá a mostrar». Las claves empiezan por `htk_`.
 
 ::screenshot{src="/images/blog/demo/es/api-key-generated-masked.webp" alt="Página de claves de API justo después de generar una clave: recuadro verde Clave generada que dice Copia esta clave ahora: no se volverá a mostrar, con la clave enmascarada y un botón de copiar, la nueva clave Integración del blog en Claves activas junto a otra clave, cada una con Revocar, y un aviso de Clave de API creada" caption="Crea una clave, o revoca una, en la página Claves API. La clave completa solo se muestra una vez." path="/developer/api-keys"}
 ::
 
-**En claude.ai**, algunas organizaciones ven una sección **Request headers** en el cuadro del conector. Anthropic la marca como beta y solo disponible para un conjunto limitado de organizaciones. Si la tienes, elige **No sign-in**, añade la cabecera `authorization` e introduce `Bearer htk_TU_CLAVE_DE_API` (con la palabra Bearer y un espacio).
+**En claude.ai**, algunas organizaciones ven una sección **Request headers** en el cuadro del conector. Anthropic la marca como beta y solo disponible para un conjunto limitado de organizaciones. Si la tienes, elige **No sign-in**, añade la cabecera `authorization` e introduce `Bearer htk_YOUR_API_KEY` con tu clave real (la palabra Bearer, un espacio y la clave).
 
-**En Claude Desktop**, el archivo de configuración (**Settings → Developer → Edit Config**) está pensado para servidores que se ejecutan en tu propio ordenador. La documentación de Anthropic dice que los servidores remotos se añaden [mediante Connectors](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp). La página de configuración MCP de Hotelier Tools muestra un fragmento con `url` + `headers`; si Claude Desktop lo ignora, el truco habitual es el puente gratuito de la comunidad [mcp-remote](https://github.com/punkpeye/mcp-remote), que necesita [Node.js](https://nodejs.org) instalado. Es una configuración típica que no hemos probado en todas las versiones de Claude Desktop:
+**En Claude Desktop**, el archivo de configuración (**Settings → Developer → Edit Config**) está pensado para servidores que se ejecutan en tu propio ordenador. La documentación de Anthropic dice que los servidores remotos se añaden [mediante Connectors](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp). La página de configuración MCP de Hotelier Tools muestra un fragmento con `url` + `headers`; si Claude Desktop lo ignora, la solución habitual es el puente gratuito de la comunidad [mcp-remote](https://github.com/punkpeye/mcp-remote), que necesita [Node.js](https://nodejs.org) instalado. Es una configuración típica que no hemos probado en todas las versiones de Claude Desktop:
 
 ```json [claude_desktop_config.json]
 {
@@ -102,7 +102,7 @@ La mayoría debería usar el inicio de sesión de arriba. Una clave de API es ú
 }
 ```
 
-Guarda el archivo y cierra del todo Claude Desktop y vuelve a abrirlo. La cabecera se escribe sin espacio después de los dos puntos a propósito: la documentación de mcp-remote explica que Claude Desktop en Windows puede estropear los espacios en los argumentos.
+Guarda el archivo, cierra Claude Desktop por completo y vuelve a abrirlo. La cabecera se escribe sin espacio después de los dos puntos a propósito: la documentación de mcp-remote explica que Claude Desktop en Windows puede estropear los espacios en los argumentos.
 
 ### Clave de API o inicio de sesión: ¿cuál usar?
 
@@ -117,7 +117,7 @@ Las dos funcionan igual una vez conectadas: Claude actúa **como la persona que 
 
 ## Qué preguntarle primero a Claude
 
-Empieza con preguntas que solo lean. Mencionar "Hotelier Tools" ayuda a Claude a elegir el conector correcto en lugar de buscar en la web.
+Empieza con preguntas que solo lean. Mencionar «Hotelier Tools» ayuda a Claude a elegir el conector correcto en lugar de buscar en la web.
 
 ::prompt{label="Claude"}
 Con Hotelier Tools, ¿quién llega hoy y mañana? Muéstrame nombre, noches, habitación y cualquier saldo todavía sin pagar.
@@ -143,7 +143,7 @@ Enséñame las incidencias abiertas de las comprobaciones automáticas, agrupada
 Explícame, paso a paso, el precio recomendado para una habitación doble el sábado 14 de noviembre.
 ::
 
-Claude también puede combinar respuestas: "Haz una tabla con las llegadas de la semana que viene con saldo pendiente y redacta un recordatorio de pago educado para cada una" funciona bien. Los borradores se quedan en Claude; no se envía nada.
+Claude también puede combinar respuestas: «Haz una tabla con las llegadas de la semana que viene con saldo pendiente y redacta un recordatorio de pago educado para cada una» funciona bien. Los borradores se quedan en Claude; no se envía nada.
 
 ## ¿Qué puede hacer Claude con los datos de tu hotel y cómo lo mantienes seguro?
 
@@ -151,7 +151,7 @@ El servidor MCP de Hotelier Tools ofrece a Claude más de 100 herramientas de ho
 
 **Puede leer:** reservas y huéspedes, pagos, facturas y si están listas para facturar, tarifas y disponibilidad, precios de la competencia y recomendaciones de precio con sus razones, incidencias de las comprobaciones automáticas, la lista «no volver a alojar», la lista de espera, las tareas programadas y los datos del alojamiento leídos de Little Hotelier.
 
-**Puede cambiar, cuando Claude llama a la herramienta:** los datos de una reserva (primero una propuesta con antes y después, luego un paso de aplicar que necesita `confirmed: true`), registros de pago, la inscripción para la [factura al check-out](/blog/send-invoice-to-guest-at-checkout), precios a partir de las recomendaciones, el cierre de ventas (stop sell) de un canal, entradas de la lista de espera y tareas programadas.
+**Puede cambiar, cuando Claude llama a la herramienta:** los datos de una reserva (primero una propuesta con antes y después, luego un paso de aplicar que necesita `confirmed: true`), registros de pago, la inscripción en la [factura a la salida](/blog/send-invoice-to-guest-at-checkout), precios a partir de las recomendaciones, el stop sell (cierre de ventas) de un canal, entradas de la lista de espera y tareas programadas.
 
 **No puede** hacer nada irreversible: esas herramientas están bloqueadas para Claude y para cualquier otro cliente externo. Por ejemplo, no puede:
 
@@ -173,17 +173,17 @@ Dentro del panel de Hotelier Tools, todo cambio espera una tarjeta de aprobar o 
 
 Cinco hábitos que lo mantienen seguro:
 
-1. **Mantén la aprobación activada en las herramientas de escritura.** En **Customize → Connectors → Hotelier Tools**, Anthropic te deja poner cada herramienta en **Always allow**, **Needs approval** o **Blocked**. Las herramientas de lectura pueden ir en "Always allow". Deja en "Needs approval" todo lo que modifique datos.
+1. **Mantén la aprobación activada en las herramientas de escritura.** En **Customize → Connectors → Hotelier Tools**, Anthropic te deja poner cada herramienta en **Always allow**, **Needs approval** o **Blocked**. Las herramientas de lectura pueden ir en **Always allow**. Deja en **Needs approval** todo lo que modifique datos.
 2. **Bloquea lo que nunca uses.** Si Claude nunca debería tocar los precios, pon `apply_price_recommendations` y `set_channel_stop_sell` en **Blocked**.
 3. **Lee la propuesta.** En los cambios de reserva, Claude primero muestra un antes y un después de `propose_reservation_changes`. Comprueba la referencia de la reserva y los valores antes de decir que sí.
 4. **Ojo con las instrucciones escondidas en un texto.** Los mensajes de huéspedes y las webs los escriben desconocidos. Si el resultado de una herramienta pide de repente que Claude haga algo que tú no pediste, para. Anthropic da el [mismo consejo](https://claude.com/docs/connectors/custom/add-unlisted#security-and-privacy).
-5. **Sabe quién está conectado.** Cada conexión actúa como el acceso de Hotelier Tools que la creó. Revoca las antiguas en `/developer/api-keys`, y siempre que alguien deje el equipo.
+5. **Controla quién está conectado.** Cada conexión actúa como el usuario de Hotelier Tools que la creó. Revoca las antiguas en `/developer/api-keys`, y siempre que alguien deje el equipo.
 
 ## ¿Se envían los datos de mis huéspedes a Anthropic?
 
 Sí, las partes que Claude lee. Cuando Claude llama a una herramienta, el resultado (nombres de huéspedes, fechas, importes) pasa a formar parte de tu conversación y lo procesa Anthropic según las condiciones de tu plan.
 
-A octubre de 2026, Anthropic dice que los datos de entrenamiento de sus planes de consumo "no incluyen contenido en bruto de conectores… incluidos servidores MCP remotos y locales", salvo que lo copies en el chat ([fuente](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training)). En los planes comerciales (Team, Enterprise, API), las entradas y salidas [no se usan para entrenar por defecto](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training).
+A fecha de octubre de 2026, Anthropic dice que los datos de entrenamiento de sus planes para particulares «no incluyen contenido en bruto de conectores… incluidos servidores MCP remotos y locales», salvo que lo copies en el chat ([fuente](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training)). En los planes comerciales (Team, Enterprise, API), las entradas y salidas [no se usan para entrenar por defecto](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training).
 
 Los datos de los huéspedes son datos personales y tu hotel sigue siendo responsable de ellos. Pídele a Claude solo lo que necesites y desactiva el conector en los chats que no lo necesiten.
 
@@ -195,8 +195,8 @@ Los datos de los huéspedes son datos personales y tu hotel sigue siendo respons
 | Qué ves | Causa probable | Qué hacer |
 |---|---|---|
 | Claude dice que no puede conectar, o un error 401 | El inicio de sesión caducó (30 días), se revocó la clave o ya no tienes acceso al alojamiento | **Disconnect** y **Connect** de nuevo, o crea una clave nueva |
-| 400 "No Little Hotelier credentials configured" | Little Hotelier todavía no está conectado | Conéctalo en **Credenciales** (`/credentials`) |
-| 403 `permission_denied` | Tu acceso no tiene permiso para la API | Pide al propietario que dé acceso a la API a tu rol |
+| 400 «No Little Hotelier credentials configured» | Little Hotelier todavía no está conectado | Conéctalo en **Credenciales** (`/credentials`) |
+| 403 `permission_denied` | Tu usuario no tiene acceso a la API | Pide al propietario que dé acceso a la API a tu rol |
 | 423 `lh_frozen` | El inicio de sesión en Little Hotelier está en pausa tras un fallo de acceso, a menudo por una contraseña caducada | Guarda la contraseña nueva en **Credenciales** o pulsa **Comprobar ahora y reanudar** |
 | Las herramientas no aparecen en el chat | El conector está desactivado en este chat, o no se reinició Desktop | **+ → Connectors** → actívalo; reinicia Claude Desktop tras editar la configuración |
 | La ventana de inicio de sesión no se abre | Ventanas emergentes bloqueadas | Permite las ventanas emergentes para claude.ai y prueba **Connect** de nuevo |

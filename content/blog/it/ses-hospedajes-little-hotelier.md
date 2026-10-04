@@ -1,5 +1,5 @@
 ---
-title: "SES Hospedajes con Little Hotelier: come registrare gli ospiti in Spagna (partes de viajeros)"
+title: "SES Hospedajes con Little Hotelier: come registrare gli ospiti (partes de viajeros) senza doppio lavoro"
 seoTitle: "SES Hospedajes con Little Hotelier: registrare gli ospiti"
 description: "Il registro ospiti SES.Hospedajes in Spagna spiegato: chi, quali dati, le scadenze di 24 ore, come inviarlo e come può inviarlo per te Little Hotelier."
 date: 2026-10-03
@@ -15,14 +15,14 @@ faq:
   - q: "Anche bambini e neonati vanno registrati?"
     a: "Sì. Gli ospiti sotto i 14 anni sono inclusi nel registro, con i dati forniti dall'adulto con cui viaggiano, e un documento d'identità diventa obbligatorio dai 14 anni. Quando un ospite è minorenne, devi anche registrare il rapporto tra i viaggiatori, come genitore o tutore."
   - q: "Qual è la multa per non inviare i dati degli ospiti a SES.Hospedajes?"
-    a: "Secondo la legge sulla sicurezza dei cittadini (Ley Orgánica 4/2015), non tenere il registro o non inviare i dati è una infrazione grave, punita con una multa da 601 a 30.000 euro. Errori o invii in ritardo sono infrazioni lievi, punite con una multa da 100 a 600 euro."
+    a: "Secondo la legge sulla sicurezza dei cittadini (Ley Orgánica 4/2015), non tenere il registro o non inviare i dati è un'infrazione grave, punita con una multa da 601 a 30.000 euro. Errori o invii in ritardo sono infrazioni lievi, punite con una multa da 100 a 600 euro."
   - q: "Per quanto tempo devo conservare i dati degli ospiti?"
     a: "Tre anni dalla fine del soggiorno. Il Ministero dell'Interno dice che non ti invierà elenchi delle tue comunicazioni passate, quindi conserva copie tue oppure affidati allo storico del tuo strumento di check-in."
   - q: "Hotelier Tools invia i dati degli ospiti a SES.Hospedajes?"
-    a: "No. Hotelier Tools non invia nulla a SES.Hospedajes né alla polizia. Segnala le prenotazioni con documento o indirizzo mancante, così puoi correggerle prima dell'arrivo. Per l'invio usa la comunicazione di conformità di Little Hotelier o un fornitore di check-in. Hotelier Tools è indipendente e non è affiliato a SiteMinder o Little Hotelier."
+    a: "No. Hotelier Tools non invia nulla a SES.Hospedajes né alla polizia. Segnala le prenotazioni con documento o indirizzo mancante, così puoi correggerle prima dell'arrivo. Per l'invio usa la comunicazione automatica alle autorità di Little Hotelier (compliance reporting) o un fornitore di check-in. Hotelier Tools è indipendente e non è affiliato a SiteMinder o Little Hotelier."
 ---
 
-Ogni hotel, hostal, B&B e casa vacanza in Spagna deve inviare i dati dei propri ospiti a **SES.Hospedajes**, il registro online del Ministero dell'Interno (Catalogna e Paesi Baschi usano i propri sistemi di polizia). Prenotazioni e cancellazioni vanno comunicate entro 24 ore, i dati degli ospiti entro 24 ore dal check-in ([Real Decreto 933/2021](https://www.boe.es/buscar/act.php?id=BOE-A-2021-17461)). Little Hotelier può inviare entrambi in automatico tramite il check-in online di Guest Engagement, oppure tramite un'app partner come Chekin, così nessuno digita lo stesso ospite due volte.
+Ogni hotel, hostal, B&B e casa vacanza in Spagna deve inviare i dati dei propri ospiti a **SES.Hospedajes**, il registro online del Ministero dell'Interno (Catalogna e Paesi Baschi usano i propri sistemi di polizia). Prenotazioni e cancellazioni vanno comunicate entro 24 ore, i dati degli ospiti entro 24 ore dal check-in ([Real Decreto 933/2021](https://www.boe.es/buscar/act.php?id=BOE-A-2021-17461)). Little Hotelier può inviare entrambi in automatico tramite il check-in online di Guest Engagement, oppure tramite un'app partner come Chekin, così nessuno deve inserire due volte i dati dello stesso ospite.
 
 ::callout{type="warning" title="Non è una consulenza legale"}
 Ultima verifica a ottobre 2026 sul BOE, sulla sede electrónica del Ministero dell'Interno e sul centro assistenza di Little Hotelier. Norme e moduli cambiano: verifica con il Ministero o con il tuo gestor prima di fare affidamento su qualsiasi dettaglio. Per chi gestisce una struttura in Spagna, i nomi ufficiali restano in spagnolo, con la spiegazione in italiano.
@@ -92,7 +92,7 @@ Puoi accedere all'app con un certificato digitale o con nome utente e password, 
 
 Sì. A ottobre 2026 ci sono due modi, più un'esportazione più vecchia.
 
-### Opzione 1: la comunicazione di conformità automatica di Little Hotelier
+### Opzione 1: la comunicazione automatica alle autorità di Little Hotelier
 
 **Guest Engagement** di Little Hotelier include un modulo di check-in per la conformità che invia i dati a SES.Hospedajes al posto tuo ([centro assistenza, aggiornato a giugno 2025](https://helpcentre.littlehotelier.com/en/articles/10303885-how-to-connect-automated-compliance-reporting-to-ses-hospedajes-platform)). Serve Guest Engagement sul tuo account, quindi chiedi a Little Hotelier se il tuo piano lo include.
 
@@ -114,7 +114,7 @@ Ogni invio mostra uno stato (Scheduled, In progress, Done, Failed e altri) e l'e
 
 ## Come evitare il doppio lavoro e i dati mancanti
 
-Il doppio lavoro nasce quando lo stesso ospite viene digitato in Little Hotelier e poi di nuovo in SES.Hospedajes o in un'app di check-in. La soluzione è raccogliere i dati una volta sola, il prima possibile, e farli arrivare a entrambi:
+Il doppio lavoro nasce quando i dati dello stesso ospite vengono inseriti in Little Hotelier e poi di nuovo in SES.Hospedajes o in un'app di check-in. La soluzione è raccogliere i dati una volta sola, il prima possibile, e farli arrivare a entrambi:
 
 1. **Invia il check-in online prima dell'arrivo.** Gli ospiti compilano i propri dati dalla conferma di prenotazione o da un link.
 2. **Raccogli il resto alla reception** nello stesso strumento, non su carta.
@@ -130,7 +130,7 @@ Lo userscript gratuito [Chekin Connection](/tools/ui/show-chekin) aggiunge un pa
 
 ### Segnala i documenti mancanti prima dell'arrivo
 
-Hotelier Tools **non** invia dati a SES.Hospedajes né alla polizia e non pretende di farlo. Controlla invece ogni prenotazione per documento o indirizzo mancante dopo la prenotazione, all'arrivo, durante il soggiorno e al check-out, con i [controlli automatici](/tools/bot/automated-checks). I problemi compaiono in un'unica pagina Issues e in un'email di riepilogo, così puoi sollecitare l'ospite quando c'è ancora tempo. Leggi la [checklist quotidiana della reception](/blog/hotel-front-desk-checklist-automation).
+Hotelier Tools **non** invia dati a SES.Hospedajes né alla polizia e non dichiara di farlo. Controlla invece ogni prenotazione per documento o indirizzo mancante dopo la prenotazione, all'arrivo, durante il soggiorno e al check-out, con i [controlli automatici](/tools/bot/automated-checks). I problemi compaiono in un'unica pagina Issues e in un'email di riepilogo, così puoi sollecitare l'ospite quando c'è ancora tempo. Leggi la [checklist quotidiana della reception](/blog/hotel-front-desk-checklist-automation).
 
 ::screenshot{src="/images/blog/demo/en/automated-checks-issues-full.webp" alt="Pagina Issues in Hotelier Tools con 20 aperti, 5 risolti e 25 in totale, che elenca prenotazioni con avvisi di saldo da pagare e, più in basso, errori ID / passport (police register) che dicono che l'ospite principale non ha un documento d'identità, ciascuno con un pulsante Verify (messaggi della demo in spagnolo)" caption="I problemi aperti raggruppati per prenotazione, compresi i soggiorni in cui l'ospite principale non ha ancora un documento." path="/automated-checks/issues" width="1440" height="2400"}
 ::
@@ -144,7 +144,7 @@ Il decreto chiede di vedere il documento e registrarne i dati, non di conservarn
 
 ## Riepilogo
 
-- SES.Hospedajes è obbligatorio per ogni tipo di alloggio in Spagna, salvo che Catalogna e Paesi Baschi comunicano alla propria polizia.
+- SES.Hospedajes è obbligatorio per ogni tipo di alloggio in Spagna, tranne in Catalogna e nei Paesi Baschi, che comunicano alla propria polizia.
 - Invia prenotazioni e cancellazioni entro 24 ore e i dati degli ospiti entro 24 ore dal check-in. Conserva i dati per tre anni.
 - Little Hotelier può inviare a SES.Hospedajes tramite il modulo di check-in per la conformità di Guest Engagement, oppure tramite Chekin.
 - Raccogli i dati una volta sola, prima dell'arrivo, e fai in modo che arrivino sia a Little Hotelier sia a SES.

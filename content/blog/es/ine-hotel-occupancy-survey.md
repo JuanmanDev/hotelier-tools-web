@@ -1,7 +1,7 @@
 ---
 title: "Encuesta de ocupación hotelera del INE: cómo rellenarla desde Little Hotelier"
 seoTitle: "Encuesta de ocupación hotelera INE con Little Hotelier"
-description: "Obligatoria si el INE selecciona tu hotel, con multas de hasta 30.050 €. Qué pide, cómo funciona IRIA y cómo rellenarla desde Little Hotelier."
+description: "Encuesta de ocupación hotelera del INE: obligatoria si te seleccionan (multas de hasta 30.050 €). Qué datos pide, IRIA y cómo hacerla con Little Hotelier."
 date: 2026-10-03
 category: compliance
 tags: [ine, spain, compliance, reports, little hotelier]
@@ -12,22 +12,22 @@ cover: /images/blog/demo/es/ine-guest-origins-report.webp
 coverAlt: "Estadísticas de origen de huéspedes (encuesta INE) en Hotelier Tools del 27 de septiembre al 3 de octubre de 2026: 8 entradas, 24 pernoctaciones, 3,4 huéspedes al día y 3 con datos que faltan, sobre las pestañas Resumen diario, Por origen, Habitaciones, ADR por cliente y Calidad de datos"
 faq:
   - q: "¿Es obligatoria la encuesta de ocupación del INE para un hostal o un B&B pequeño?"
-    a: "Sí, si el INE ha seleccionado tu establecimiento. La encuesta abarca todos los establecimientos hoteleros de España, incluidos hostales y pensiones, y el cuestionario del INE indica que es de cumplimentación obligatoria según la ley de la función estadística. Si has recibido una carta o un correo del INE con un número de orden y una contraseña, tienes que responder."
+    a: "Sí, si el INE ha seleccionado tu establecimiento. La encuesta abarca todos los establecimientos hoteleros de España, incluidos hostales y pensiones, y el cuestionario del INE indica que es de cumplimentación obligatoria según la Ley de la Función Estadística Pública. Si has recibido una carta o un correo del INE con un número de orden y una contraseña, tienes que responder."
   - q: "¿Cuánto es la multa por no contestar la encuesta del INE?"
-    a: "El cuestionario del INE cita la ley de la función estadística: de 60,10 a 300,51 € las infracciones leves, de 300,52 a 3.005,06 € las graves y de 3.005,07 a 30.050,61 € las muy graves, como enviar datos falsos. Responder tarde o no responder es leve, salvo que perjudique gravemente a la estadística."
+    a: "El cuestionario del INE cita la Ley de la Función Estadística Pública: de 60,10 a 300,51 € las infracciones leves, de 300,52 a 3.005,06 € las graves y de 3.005,07 a 30.050,61 € las muy graves, como enviar datos falsos. Responder tarde o no responder es leve, salvo que perjudique gravemente a la estadística."
   - q: "¿La encuesta del INE pide el DNI o el pasaporte de los huéspedes?"
-    a: "No. El INE pide totales: cuántos viajeros han entrado y cuántas noches se han alojado, agrupados por país de residencia o comunidad autónoma, además de habitaciones, tarifas y personal. No se envían números de documento, nombres ni direcciones. Los datos de identidad van a SES.Hospedajes, que es otra obligación distinta."
+    a: "No. El INE pide totales: cuántos viajeros han entrado y cuántas noches se han alojado, agrupados por país de residencia o comunidad autónoma, además de habitaciones, tarifas y personal. No se envían números de documento, nombres ni direcciones. Los datos de identidad van a SES.Hospedajes, que es una obligación aparte."
   - q: "¿La encuesta del INE usa la nacionalidad del huésped o dónde vive?"
     a: "Dónde vive. El INE clasifica a los viajeros por lugar de residencia: los residentes en España por comunidad autónoma y el resto por país. Un ciudadano alemán que vive en Valencia cuenta como residente en Valencia, así que revisa que el país y la provincia de la dirección del huésped estén rellenos."
   - q: "¿Sirve para apartamentos turísticos o casas rurales?"
     a: "Los apartamentos, campings, casas rurales y albergues responden a sus propios cuestionarios del INE. Hotelier Tools genera la encuesta de ocupación hotelera (EOH) para establecimientos hoteleros: hoteles, hostales y pensiones."
   - q: "¿Hotelier Tools es un producto oficial del INE o de Little Hotelier?"
-    a: "No. Hotelier Tools es independiente y no está afiliado ni respaldado por el INE, SiteMinder ni Little Hotelier. Lee tus reservas con tu propio acceso a Little Hotelier y envía el informe por IRIA, el sistema del INE, con el acceso IRIA de tu propio establecimiento."
+    a: "No. Hotelier Tools es independiente: no está afiliado al INE, a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo. Lee tus reservas con tu propio acceso a Little Hotelier y envía el informe por IRIA, el sistema del INE, con el acceso IRIA de tu propio establecimiento."
 ---
 
 Si el INE (Instituto Nacional de Estadística) ha seleccionado tu hotel u hostal para su encuesta de ocupación, responder es obligatorio. El propio cuestionario del INE cita multas de 60,10 a 30.050,61 €. Respondes en el portal web **IRIA** del INE o enviando un fichero XML. En ambos casos informas de las entradas y pernoctaciones según el lugar de residencia de los huéspedes, las habitaciones ocupadas, las tarifas medias por tipo de cliente y el personal.
 
-Little Hotelier guarda la mayoría de esas cifras. Esta guía explica qué pide el INE, cómo reunirlo desde Little Hotelier y cómo Hotelier Tools genera, comprueba y envía el informe por ti.
+Little Hotelier guarda la mayoría de esas cifras. Esta guía explica qué pide el INE, cómo sacarlo de Little Hotelier y cómo Hotelier Tools genera, comprueba y envía el informe por ti.
 
 ::callout{type="info" title="Última verificación: octubre de 2026"}
 Los datos de abajo salen de la [metodología de la encuesta hotelera 2025](https://www.ine.es/daco/daco42/ocuphotel/meto_eoh.pdf) del INE y de su [cuestionario hotelero](https://www.ine.es/daco/daco42/ocuphotel/eohxml_20.pdf). La carta o el correo que te envíe el INE tiene siempre la última palabra sobre fechas y plazos.
@@ -37,17 +37,17 @@ Los datos de abajo salen de la [metodología de la encuesta hotelera 2025](https
 
 Su nombre oficial es **Encuesta de Ocupación en Alojamientos Turísticos**. La parte hotelera es la **Encuesta de Ocupación Hotelera (EOH)**. El INE la usa para publicar cada mes cifras de viajeros, pernoctaciones, ocupación y empleo hotelero de España, de cada comunidad autónoma y de las principales zonas turísticas.
 
-Abarca todos los *establecimientos hoteleros*: hotel, aparthotel, motel, **hostal**, **pensión**, fonda y casa de huéspedes. Los apartamentos turísticos, los campings, el turismo rural y los albergues tienen sus propios cuestionarios dentro de la misma familia de encuestas ([INE: estadísticas de hostelería y turismo](https://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&cid=1254735576863)).
+Abarca todos los *establecimientos hoteleros*: hotel, aparthotel, motel, **hostal**, **pensión**, fonda y casa de huéspedes. Los apartamentos turísticos, los campings, los alojamientos de turismo rural y los albergues tienen sus propios cuestionarios dentro de la misma familia de encuestas ([INE: estadísticas de hostelería y turismo](https://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&cid=1254735576863)).
 
 ### ¿Quién tiene que contestarla?
 
-No todos los hoteles. El INE extrae una muestra aleatoria por provincia, categoría y tamaño. Los hoteles de cinco estrellas y los mayores de cada grupo entran siempre. Un hotel seleccionado suele permanecer cuatro años en la muestra, y cada año se renueva aproximadamente una cuarta parte ([metodología, apartado 6](https://www.ine.es/daco/daco42/ocuphotel/meto_eoh.pdf)).
+No todos los hoteles. El INE extrae una muestra aleatoria por provincia, categoría y tamaño. Los hoteles de cinco estrellas y los mayores de cada grupo entran siempre. Un hotel seleccionado suele permanecer cuatro años en la muestra, y la muestra se renueva aproximadamente en una cuarta parte ([metodología, apartado 6](https://www.ine.es/daco/daco42/ocuphotel/meto_eoh.pdf)).
 
 Si te seleccionan, el INE te escribe con un **número de orden** (el «NOrden») y una contraseña para su portal. Ese mensaje es la señal de que la encuesta ya te afecta.
 
 ## ¿Es obligatoria la encuesta del INE? ¿Cuánto es la multa?
 
-Sí, desde el momento en que te seleccionan. El cuestionario lleva la leyenda *«Estadística de cumplimentación obligatoria»*. La ley de la función estadística pública (Ley 12/1989, LFEP) dice que los informantes deben responder «de forma veraz, exacta, completa y dentro del plazo» (artículo 10.2). Las leyes 4/1990 y 13/1996 hacen obligatoria esta encuesta.
+Sí, desde el momento en que te seleccionan. El cuestionario lleva la leyenda *«Estadística de cumplimentación obligatoria»*. La Ley de la Función Estadística Pública (Ley 12/1989, LFEP) dice que los informantes deben responder «de forma veraz, exacta, completa y dentro del plazo» (artículo 10.2). Las leyes 4/1990 y 13/1996 hacen obligatoria esta encuesta.
 
 Multas que cita el formulario del INE (artículo 51 LFEP):
 
@@ -70,13 +70,13 @@ Los ejemplos salen del artículo 50 de la [Ley 12/1989 (BOE)](https://www.boe.es
 | *Personal ocupado* | Personal del mes: no remunerado, remunerado fijo y remunerado eventual | Nóminas, no Little Hotelier |
 | *ADR por tipo de cliente* | Tarifa media diaria y porcentaje de habitaciones por tipo de cliente | Tarifas y canal de reserva |
 
-Tres detalles que suelen pillar a la gente:
+Tres detalles en los que es fácil equivocarse:
 
 - **Residencia, no nacionalidad.** El INE agrupa a los huéspedes por dónde viven: los residentes en España por comunidad autónoma (el fichero XML usa la provincia) y el resto por país. Un francés que vive en Málaga cuenta como Málaga.
-- **El ADR tiene reglas estrictas.** El INE quiere la tarifa de una habitación doble, solo alojamiento (sin desayuno ni pensión), bruta de comisiones y sin IVA. La reparte en nueve tipos de cliente: touroperador tradicional, agencia de viajes tradicional, empresas, particulares, grupos, reserva directa en tu web, touroperador online, agencia de viajes online y otros.
-- **Las cunas son camas supletorias.** El INE cuenta las cunas como *camas supletorias*. Decláralas, o las noches que informes podrán superar tus camas.
+- **El ADR tiene reglas estrictas.** El INE quiere la tarifa de una habitación doble, solo alojamiento (sin desayuno ni pensión), bruta (con las comisiones incluidas) y sin IVA. La reparte en nueve tipos de cliente: tour operador tradicional, agencia de viajes tradicional, empresas, particulares, grupos, contratación directa en la web del hotel, tour operador online, agencia de viajes online y otros.
+- **Las cunas son camas supletorias.** El INE cuenta las cunas como *camas supletorias*. Decláralas; si no, las pernoctaciones declaradas pueden superar el número de camas.
 
-La encuesta no pide números de pasaporte ni de DNI. Son datos agregados, no un registro de viajeros. Registrar a los huéspedes ante la policía (los partes de viajeros) es otra obligación distinta: lee [SES.Hospedajes con Little Hotelier](/blog/ses-hospedajes-little-hotelier).
+La encuesta no pide números de pasaporte ni de DNI. Son datos agregados, no un registro de viajeros. Registrar a los huéspedes ante la policía (los partes de viajeros) es una obligación aparte: lee [SES.Hospedajes con Little Hotelier](/blog/ses-hospedajes-little-hotelier).
 
 ## ¿Qué fechas cubre y cuándo hay que enviarla?
 
@@ -93,7 +93,7 @@ En la práctica, usa exactamente las fechas y el plazo que figuren en la petici�
 
 Hacerlo a mano significa repasar todas las reservas del periodo y contar huéspedes y noches por país y por provincia. Ahí se va el tiempo, y ahí se cuelan los errores.
 
-## Cómo tener bien el país y la provincia del huésped en Little Hotelier
+## Cómo tener siempre el país y la provincia del huésped en Little Hotelier
 
 La ficha de huésped de Little Hotelier ya tiene los campos que necesita el INE: **País** y **Provincia/Región** en la dirección, además de **Nacionalidad**. El problema es que las reservas de Booking.com y de otros canales suelen llegar sin dirección, y esos campos quedan vacíos.
 
@@ -101,14 +101,14 @@ Tres hábitos lo arreglan casi todo:
 
 1. Rellena el país y la provincia en el check-in, con el documento de identidad o una pregunta rápida.
 2. Instala el userscript gratuito [Guardado Fácil de Provincia y País](/tools/ui/easy-save-province-country). Al hacer clic en el campo de provincia, muestra la lista de provincias de España, y al elegir una pone España como país.
-3. Deja que las [comprobaciones automáticas](/tools/bot/automated-checks) avisen de las reservas sin país o sin provincia tras la reserva, a la llegada y a la salida, cuando el huésped aún está ahí para preguntarle.
+3. Deja que las [comprobaciones automáticas](/tools/bot/automated-checks) avisen de las reservas sin país o sin provincia tras la reserva, a la llegada y a la salida, mientras el huésped sigue en el alojamiento y puedes preguntarle.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Pestaña de huésped de Little Hotelier con la lista de provincias españolas de Easy Save Province and Country abierta bajo el campo Provincia/Región" caption="El userscript gratuito convierte el campo de provincia en una lista y pone el país por ti."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Pestaña Huéspedes de una reserva en Little Hotelier con la lista de provincias españolas del userscript Guardado Fácil de Provincia y País abierta bajo el campo Provincia/Región" caption="El userscript gratuito convierte el campo de provincia en un desplegable y rellena el país por ti."}
 ::
 
 ## La forma más rápida: el informe del INE directo desde Little Hotelier
 
-A octubre de 2026 no hemos encontrado ninguna exportación para la encuesta del INE en el centro de ayuda de Little Hotelier. Hotelier Tools cubre ese hueco: lee tus reservas con tu propio acceso a Little Hotelier, genera las cifras del INE, las valida y envía el XML por IRIA. La función de informes del INE está marcada como estable.
+A fecha de octubre de 2026 no hemos encontrado ninguna exportación para la encuesta del INE en el centro de ayuda de Little Hotelier. Hotelier Tools cubre ese hueco: lee tus reservas con tu propio acceso a Little Hotelier, genera las cifras del INE, las valida y envía el XML por IRIA. La función de informes del INE está marcada como estable.
 
 ### 1. Configura tu establecimiento una sola vez
 
@@ -136,13 +136,13 @@ Pulsa **Validar para INE**, luego **Previsualizar XML** para ver exactamente qu�
 
 ### 5. Guarda todos los justificantes
 
-**Informes guardados** (`/reports/list`) muestra cada informe con su periodo, su estado y el justificante del INE. Un informe enviado ya no se puede modificar ni borrar, y aun así puedes descargar su XML.
+**Informes guardados** (`/reports/list`) muestra cada informe con su periodo, su estado y el justificante del INE. Un informe enviado ya no se puede modificar ni borrar, pero puedes seguir descargando su XML.
 
 ::screenshot{src="/images/blog/demo/es/ine-saved-reports.webp" alt="Página Informes guardados de Hotelier Tools con tres informes de origen de huéspedes en estado Borrador, con las columnas Periodo, Estado, Justificante INE, Personal y Creado, las acciones Ver y eliminar y el botón Nuevo informe" caption="Cada informe con su periodo, su estado y, una vez enviado, el justificante del INE." path="/reports/list"}
 ::
 
 ::callout{type="note" title="Pruébalo en la demo"}
-La demo pública tiene un hotel ficticio con un informe del INE guardado. El envío al INE está desactivado allí, así que no llega nada al INE, y no debes escribir nunca credenciales reales de IRIA.
+La demo pública tiene un hotel ficticio con un informe del INE guardado. El envío al INE está desactivado allí, así que no llega nada al INE. Nunca introduzcas en ella credenciales reales de IRIA.
 ::
 
 ::demo-cta{path="/reports/guest-origins"}
@@ -157,14 +157,14 @@ Los desarrolladores de un PMS hotelero de código abierto que corrigieron rechaz
 - cunas o camas supletorias sin declarar, de modo que las pernoctaciones superan las camas declaradas
 - un huésped de un país sin código ISO estándar, lo que deja el país vacío
 
-Ejecuta el paso de validación antes de cada envío y mantén el tipo y la categoría del INE de la configuración iguales a los que el INE tiene registrados.
+Valida siempre antes de enviar y comprueba que el tipo y la categoría de la configuración coinciden con los que constan en el INE.
 
 ## Resumen
 
 - La encuesta del INE es obligatoria desde que el INE selecciona tu establecimiento, y las multas llegan a 30.050,61 € por datos falsos.
 - Pide totales por residencia del huésped (no nacionalidad), habitaciones, camas supletorias, ADR por tipo de cliente y personal. Sin números de documento.
-- Se envía en IRIA a mano, o como fichero XML desde un programa.
+- Se envía a mano en IRIA o como fichero XML desde un programa de gestión.
 - Mantén el país y la provincia rellenos en Little Hotelier, con el [userscript de provincias](/tools/ui/easy-save-province-country) gratuito y las [comprobaciones automáticas](/tools/bot/automated-checks).
-- Los [informes INE de Hotelier Tools](/tools/bot/ine-reports) generan, validan y envían el informe por IRIA y guardan los justificantes. Es gratis para todos los hoteles hasta el 10 de enero de 2027. Hotelier Tools es independiente y no está afiliado ni respaldado por SiteMinder, Little Hotelier ni el INE.
+- Los [informes INE de Hotelier Tools](/tools/bot/ine-reports) generan, validan y envían el informe por IRIA y guardan los justificantes. Es gratis para todos los hoteles hasta el 10 de enero de 2027. Hotelier Tools es independiente: no está afiliado a SiteMinder, a Little Hotelier ni al INE, ni cuenta con su respaldo.
 
-Para el registro de viajeros ante la policía y las reglas de otros países, lee [normas de registro de huéspedes por país](/blog/guest-registration-rules-by-country).
+Para los partes de viajeros a la policía y las normas de otros países, lee [registro de viajeros por países](/blog/guest-registration-rules-by-country).

@@ -12,13 +12,13 @@ cover: /images/blog/demo/en/mcp-oauth-consent.webp
 coverAlt: "Hotelier Tools Authorize MCP access page that an AI assistant opens when it connects, with a 30-day token notice and the Deny and Allow access buttons"
 faq:
   - q: "Which ChatGPT plans can connect to Little Hotelier?"
-    a: "As of October 2026, OpenAI's help centre says full MCP support, including write actions, is for Business, Enterprise and Edu on the web, while Pro can connect MCP apps with read and fetch permissions in developer mode. OpenAI's developer docs also list Plus. Free and Go are not listed. Check what your own account shows."
+    a: "As of October 2026, OpenAI's help center says full MCP support, including write actions, is for Business, Enterprise and Edu on the web, while Pro can connect MCP apps with read and fetch permissions in developer mode. OpenAI's developer docs also list Plus. Free and Go are not listed. Check what your own account shows."
   - q: "Can I use an API key instead of signing in?"
     a: "No. OpenAI says ChatGPT cannot present custom API keys to an MCP server, so choose OAuth. You sign in to Hotelier Tools in a browser window and press Allow access."
   - q: "Can ChatGPT change my reservations or prices?"
     a: "Only if your plan allows write actions and you confirm them. OpenAI asks for confirmation before write actions by default. Hotelier Tools adds no second approval outside its dashboard, and it blocks refunds, emailing invoices, filing the INE return and other irreversible actions for ChatGPT entirely."
   - q: "Does it work in the ChatGPT mobile app?"
-    a: "Not for custom MCP apps. OpenAI's help centre says developer-mode MCP apps are web only. Use chatgpt.com in a browser."
+    a: "Not for custom MCP apps. OpenAI's help center says developer-mode MCP apps are web only. Use chatgpt.com in a browser."
   - q: "Is my guest data used to train OpenAI's models?"
     a: "On Business, Enterprise and Edu, OpenAI says it does not train on information from connected apps by default. On Free, Plus, Go and Pro it may, if Improve the model for everyone is on in Data controls. Switch it off before connecting hotel data."
   - q: "Claude or ChatGPT: which is better for hotel tasks?"
@@ -31,7 +31,7 @@ Below are the steps as OpenAI documents them today, what to check in your own ac
 
 ## What you need before you start
 
-- **A ChatGPT plan with developer mode.** OpenAI's [developer-mode guide](https://developers.openai.com/api/docs/guides/developer-mode) lists Pro, Plus, Business, Enterprise and Education accounts, on the web. Its [help centre](https://help.openai.com/en/articles/12584461) adds that **full MCP, including write actions, is for Business and Enterprise/Edu**, and that Pro can connect with read and fetch permissions only.
+- **A ChatGPT plan with developer mode.** OpenAI's [developer-mode guide](https://developers.openai.com/api/docs/guides/developer-mode) lists Pro, Plus, Business, Enterprise and Education accounts, on the web. Its [help center](https://help.openai.com/en/articles/12584461) adds that **full MCP, including write actions, is for Business and Enterprise/Edu**, and that Pro can connect with read and fetch permissions only.
 - **A computer browser.** OpenAI says custom MCP apps are web only, not in the mobile apps.
 - **A Hotelier Tools account** with Little Hotelier connected on **Credentials** (`/credentials`). The owner's login has the API access you need. Hotelier Tools is free for every hotel until billing starts on 10 January 2027.
 
@@ -43,7 +43,7 @@ Hotelier Tools is independent. It is not affiliated with or endorsed by OpenAI, 
 
 ## How to connect ChatGPT to Little Hotelier, step by step
 
-These steps follow OpenAI's [connection guide](https://developers.openai.com/plugins/deploy/connect-chatgpt) as of October 2026. If your screens look different, the older path from the help centre is noted in each step.
+These steps follow OpenAI's [connection guide](https://developers.openai.com/plugins/deploy/connect-chatgpt) as of October 2026. If your screens look different, the older path from the help center is noted in each step.
 
 1. Go to [chatgpt.com](https://chatgpt.com) in a browser and open **Settings → Security and login**. Turn on **Developer mode**. (Some accounts show it under **Settings → Apps → Advanced settings**.)
 2. Open **Plugins** ([chatgpt.com/plugins](https://chatgpt.com/plugins)) and press the **+** button to create a developer-mode app. (Older screens: **Settings → Apps → Create**.)
@@ -180,7 +180,7 @@ Inside the Hotelier Tools dashboard, every change waits for an approval card. Ou
 
 Practical rules:
 
-- **Keep app permissions on Always ask.** OpenAI's [app permissions](https://help.openai.com/en/articles/20001495) range from **Always ask** to **Allow all actions**; the last one skips prompts and carries "elevated risk". ChatGPT treats any tool not labelled read-only as a write action, so expect a prompt even for some lookups.
+- **Keep app permissions on Always ask.** OpenAI's [app permissions](https://help.openai.com/en/articles/20001495) range from **Always ask** to **Allow all actions**; the last one skips prompts and carries "elevated risk". ChatGPT treats any tool not labeled read-only as a write action, so expect a prompt even for some lookups.
 - **Don't let it remember approvals for writes** in long conversations. A remembered choice only lasts for that chat, but one chat can do a lot.
 - **Watch for instructions hidden in guest messages.** OpenAI warns about prompt injection. If ChatGPT proposes something you did not ask for, decline.
 
@@ -204,7 +204,7 @@ Guest data is personal data, and your hotel remains responsible for it. Ask only
 ## Troubleshooting
 
 - **Developer mode is missing.** Your plan may not include it, or on Business only admins can use it. On Enterprise and Edu, ask an admin to grant it.
-- **No Hotelier Tools tools appear, or only some.** Your plan may only allow read and fetch permissions. Check with OpenAI's help centre for your plan, or use [Claude](/blog/connect-claude-to-little-hotelier), which allows custom connectors with write tools on every plan.
+- **No Hotelier Tools tools appear, or only some.** Your plan may only allow read and fetch permissions. Check with OpenAI's help center for your plan, or use [Claude](/blog/connect-claude-to-little-hotelier), which allows custom connectors with write tools on every plan.
 - **ChatGPT stops working with the app after a month.** The sign-in lasted 30 days. Reconnect from **Settings → Plugins** (or **Apps**).
 - **Error "No Little Hotelier credentials configured".** Connect Little Hotelier on **Credentials** in Hotelier Tools first.
 - **"lh_frozen" or similar.** Little Hotelier sign-in is paused after a failed login, often an expired password. Save the new password on **Credentials** or press **Check now & resume**.

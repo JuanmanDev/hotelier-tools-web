@@ -1,7 +1,7 @@
 ---
 title: "Cara download semua invoice Little Hotelier sekaligus (untuk laporan pajak per kuartal)"
 seoTitle: "Download semua invoice Little Hotelier sekaligus (2026)"
-description: "Little Hotelier bisa meng-ZIP invoice yang sudah ada. Begini caranya, plus membuat yang belum ada dan mengirim akuntan satu ZIP dan CSV per kuartal."
+description: "Little Hotelier bisa meng-ZIP invoice yang sudah ada. Begini caranya, plus membuat yang belum ada dan mengirim satu ZIP dan CSV per kuartal ke akuntan."
 date: 2026-10-03
 category: invoicing
 tags: [invoices, accounting, little hotelier, quarterly tax, zip]
@@ -34,12 +34,12 @@ Bisa. Per Oktober 2026, pusat bantuan Little Hotelier menjelaskan tiga cara meng
 |---|---|---|
 | Invoice report | ZIP berisi PDF invoice dan daftar CSV | Hanya invoice yang sudah ada |
 | Accounting report | CSV yang dibuat untuk impor Xero dan QuickBooks | Hanya invoice yang ditandai final |
-| Satu reservasi per kali | Satu PDF (Print atau Save as PDF) | Lambat untuk satu kuartal penuh |
+| Satu per satu, per reservasi | Satu PDF (Print atau Save as PDF) | Lambat untuk satu kuartal penuh |
 
 ### Invoice report (PDF dalam ZIP)
 
 1. Buka **My Apps > Front Desk > Reports** dan klik **Invoices**.
-2. Pilih rentang tanggal untuk kuartal Anda. Secara opsional filter berdasarkan **Invoice status** dan **Payment status**, lalu klik **Apply**.
+2. Pilih rentang tanggal untuk kuartal Anda. Jika perlu, filter berdasarkan **Invoice status** dan **Payment status**, lalu klik **Apply**.
 3. Klik **Download invoice PDFs**, lalu **Download zip**.
 4. Konfirmasi permintaan autentikasi multi-faktor. ZIP akan terunduh.
 
@@ -53,15 +53,15 @@ Dua batasan: hanya invoice yang **ditandai final** yang diekspor, dan file itu u
 
 ### Satu per satu
 
-Buka reservasi, klik **Print**, pilih **Invoice** dan pilih **Save as PDF** di jendela cetak ([pusat bantuan](https://helpcentre.littlehotelier.com/en/articles/8673812-generate-print-and-email-a-guest-invoice)). Jika Anda sering melakukannya, script gratis [Extra Invoice Print Button](/tools/ui/extra-invoice-print-button) menambahkan tautan cetak langsung di reservasi.
+Buka reservasi, klik **Print**, pilih **Invoice** dan pilih **Save as PDF** di jendela cetak ([pusat bantuan](https://helpcentre.littlehotelier.com/en/articles/8673812-generate-print-and-email-a-guest-invoice)). Jika Anda sering melakukannya, skrip gratis [Extra Invoice Print Button](/tools/ui/extra-invoice-print-button) menambahkan tautan cetak langsung di reservasi.
 
 ## Yang tidak dilakukan ekspor native
 
-Mengunduh adalah bagian yang mudah. Kuartal biasanya bermasalah lebih awal:
+Mengunduh adalah bagian yang mudah. Masalahnya biasanya muncul jauh sebelum itu:
 
-- **Invoice yang hilang.** ZIP hanya berisi invoice yang dibuat seseorang. Pusat bantuan menjelaskan pembuatannya satu reservasi per kali (tab **Invoices** > **Generate invoice**), jadi menginap yang tidak diklik siapa pun tidak ada di sana.
-- **Duplikat.** Setiap permintaan generate membuat dokumen baru di Little Hotelier, jadi membuat ulang sebuah menginap bisa menghasilkan dua invoice padahal akuntan Anda mengharapkan satu.
-- **Invoice yang terlalu dini.** Invoice yang diterbitkan sebelum tamu check-out menjadi usang begitu ada extra atau pembayaran ditambahkan, dan memperbaikinya berarti invoice koreksi, credit note, atau, di Spanyol, rektifikasi.
+- **Invoice yang hilang.** ZIP hanya berisi invoice yang dibuat seseorang. Pusat bantuan menjelaskan pembuatannya satu per satu per reservasi (tab **Invoices** > **Generate invoice**), jadi masa inap yang tidak pernah diklik siapa pun tidak akan ada di sana.
+- **Duplikat.** Setiap permintaan generate membuat dokumen baru di Little Hotelier, jadi membuat ulang invoice untuk satu masa inap bisa menghasilkan dua invoice padahal akuntan Anda mengharapkan satu.
+- **Invoice yang terlalu dini.** Invoice yang diterbitkan sebelum tamu check-out menjadi usang begitu ada extras atau pembayaran yang ditambahkan, dan memperbaikinya berarti invoice koreksi, credit note, atau, di Spanyol, invoice rektifikasi.
 - **Finalisasi.** Ekspor akuntansi membutuhkan setiap invoice ditandai final, dan pusat bantuan menjelaskan cara melakukannya per reservasi.
 
 ## Cara mengunduh satu kuartal penuh sebagai satu ZIP dan CSV (cara yang lebih cepat)
@@ -71,7 +71,7 @@ Hotelier Tools adalah dashboard yang terhubung ke Little Hotelier dengan login A
 1. Daftar di [dashboard.hotelier.tools](https://dashboard.hotelier.tools/register) dan hubungkan Little Hotelier di **Credentials**. Login Anda disimpan terenkripsi.
 2. Di menu, buka **Invoice Download** (`/invoices`).
 3. Tekan **Generate invoices** dan pilih tanggalnya, misalnya 1 Juli sampai 30 September.
-4. Aplikasi membaca reservasi tersebut dari Little Hotelier dan membuat invoice untuk menginap yang memenuhi syarat. Apa pun yang tidak bisa dibuatkan invoice masuk ke **Errors** beserta alasannya. Tidak ada yang dilewati diam-diam.
+4. Aplikasi membaca reservasi tersebut dari Little Hotelier dan membuat invoice untuk masa inap yang memenuhi syarat. Apa pun yang tidak bisa dibuatkan invoice masuk ke **Errors** beserta alasannya. Tidak ada yang dilewati diam-diam.
 5. Invoice Anda muncul dikelompokkan per kuartal dan bulan. Pada kuartal, tekan **ZIP** untuk mengunduh semua PDF, atau **Preview CSV** untuk memeriksa ringkasannya terlebih dahulu.
 
 ::screenshot{src="/images/blog/demo/en/invoices-quarter-zip-downloaded.webp" alt="Halaman Invoices dikelompokkan per kuartal, dengan tombol Preview CSV dan ZIP pada Q4 dan Q3 2026, tabel invoice September 2026 terbuka, dan pemberitahuan Pack downloaded yang mengonfirmasi paket invoice untuk Q3 2026 telah diunduh" caption="Setiap kuartal punya ZIP berisi PDF dan ringkasan CSV sendiri. Satu klik pada ZIP mengunduh seluruh kuartal." path="/invoices"}
@@ -83,14 +83,14 @@ Invoice itu adalah dokumen Little Hotelier sendiri. Hotelier Tools meminta Littl
 Hotelier Tools tidak berafiliasi dengan atau didukung oleh SiteMinder maupun Little Hotelier. Layanan ini terhubung memakai login Little Hotelier hotel Anda sendiri.
 ::
 
-## Pengecekan sebelum membuat invoice: tax ID kosong, invoice dini, dan duplikat
+## Pengecekan sebelum membuat invoice: nomor pajak kosong, invoice terlalu dini, dan duplikat
 
-Sebelum meminta invoice dari Little Hotelier, Hotelier Tools menjalankan pengecekan awal. Layanan ini menolak membuat invoice untuk sebuah menginap ketika:
+Sebelum meminta invoice dari Little Hotelier, Hotelier Tools menjalankan pengecekan awal. Layanan ini menolak membuat invoice untuk sebuah masa inap jika:
 
 - tamu **belum check-out**, karena angkanya belum final
-- itu **invoice perusahaan tanpa tax ID** atau alamat fiskal
-- **tax ID tidak berformat benar**
-- menginap itu **sudah dibuatkan invoice**, yang mencegah duplikat
+- itu **invoice perusahaan tanpa nomor pajak (tax ID)** atau alamat fiskal
+- **format tax ID salah**
+- masa inap itu **sudah dibuatkan invoice**, sehingga duplikat tercegah
 
 Tamu pribadi tidak membutuhkan data fiskal, jadi dokumen identitas yang kosong hanya berupa peringatan untuk mereka.
 
@@ -102,13 +102,13 @@ Reservasi itu masuk ke **Errors** (`/invoices/errors`), satu baris per reservasi
 
 1. Pilih rentang tanggal di bagian atas.
 2. Filter berdasarkan jenis masalah: **Missing DNI**, **Pending payment**, **Not checked out**, **Download failed**, dan lainnya.
-3. Perbaiki reservasi di Little Hotelier: tambahkan tax ID, catat pembayaran, atau check-out-kan tamunya.
+3. Perbaiki reservasi di Little Hotelier: tambahkan tax ID, catat pembayaran, atau proses check-out tamunya.
 4. Kembali di Errors, periksa lagi atau tandai selesai. **Copy CSV** memberi Anda daftar untuk rekan kerja.
 
-::screenshot{src="/images/blog/demo/en/invoice-failures.webp" alt="Halaman Errors and issues untuk 1 Juli sampai 30 September 2026 dengan Copy CSV, chip filter jenis masalah seperti Missing DNI, Pending payment, Not checked out, dan Download failed, serta tabel reservasi dengan ID invoice, tanggal menginap, total, label masalah, alasan (dalam bahasa Spanyol), dan aksi" caption="Setiap reservasi yang tidak bisa dibuatkan invoice oleh sebuah proses, beserta alasan dan cara mencobanya lagi." path="/invoices/errors"}
+::screenshot{src="/images/blog/demo/en/invoice-failures.webp" alt="Halaman Errors and issues untuk 1 Juli sampai 30 September 2026 dengan Copy CSV, chip filter jenis masalah seperti Missing DNI, Pending payment, Not checked out, dan Download failed, serta tabel reservasi dengan ID invoice, tanggal menginap, total, label masalah, alasan (dalam bahasa Spanyol), dan aksi" caption="Setiap reservasi yang gagal dibuatkan invoice dalam satu proses, beserta alasan dan cara mencobanya lagi." path="/invoices/errors"}
 ::
 
-Jika sebuah menginap tertahan oleh selisih pembulatan satu atau dua sen, opsi cent-fix di **Settings > Invoices** bisa menutup saldo kecil itu.
+Jika sebuah masa inap tertahan oleh selisih pembulatan satu atau dua sen, opsi cent-fix di **Settings > Invoices** bisa menutup saldo kecil itu.
 
 ::demo-cta{path="/invoices"}
 ::
@@ -122,12 +122,12 @@ Anda memilihnya di **Settings > Invoices** (`/settings/invoices`):
 
 Pilih **Fallback language** lalu tekan **Save changes**.
 
-## Apa yang dikirim ke akuntan setiap kuartal
+## Apa yang perlu dikirim ke akuntan setiap kuartal
 
 Rutinitas singkat yang menghindari sebagian besar email tindak lanjut:
 
-1. **Jalankan kuartalnya** beberapa hari setelah berakhir, agar check-out yang terlambat sudah tertutup.
-2. **Bersihkan Errors** sampai hanya tersisa menginap yang memang tidak perlu invoice.
+1. **Jalankan kuartalnya** beberapa hari setelah berakhir, agar check-out yang terlambat sudah selesai diproses.
+2. **Bersihkan Errors** sampai hanya tersisa masa inap yang memang tidak perlu invoice.
 3. **Unduh ZIP dan CSV** lalu kirim keduanya.
 4. **Periksa nomor invoice** untuk celah atau pengulangan sebelum Anda kirim.
 5. **Sebutkan invoice yang dibatalkan.** Di Little Hotelier, membatalkan invoice final memindahkannya ke **Older invoices** dengan status Cancelled, dan datanya tetap muncul di ekspor ([pusat bantuan](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). Akuntan Anda perlu tahu agar pendapatan tidak terhitung dua kali.
@@ -139,6 +139,6 @@ Developer juga bisa mengambil PDF invoice satu per satu lewat [REST API Hotelier
 ## Ringkasan
 
 - **Invoice report** Little Hotelier meng-ZIP PDF invoice yang sudah ada; **Accounting report** mengekspor invoice final sebagai CSV untuk Xero atau QuickBooks.
-- Keduanya tidak membuat invoice yang hilang dan tidak mencegah duplikat maupun invoice dini.
+- Keduanya tidak membuat invoice yang belum ada dan tidak mencegah duplikat maupun invoice yang terlalu dini.
 - Hotelier Tools membuat invoice untuk satu rentang tanggal dalam satu proses, menolak invoice berisiko, mendaftar setiap kegagalan beserta alasannya, dan memberi Anda ZIP dan CSV per kuartal.
 - Untuk menghentikan penumpukan dari sumbernya, [kirim setiap invoice otomatis saat check-out](/blog/send-invoice-to-guest-at-checkout). Lihat semua yang dilakukan fitur invoicing di [halaman Invoicing](/tools/bot/invoicing).

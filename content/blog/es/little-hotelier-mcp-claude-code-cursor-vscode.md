@@ -12,15 +12,15 @@ cover: /images/blog/demo/es/mcp-setup.webp
 coverAlt: "Guía de configuración de MCP en Hotelier Tools: una explicación de qué es MCP y pestañas de configuración del cliente para Claude Desktop, VS Code, Cursor y Personalizado / SDK, con Claude Desktop seleccionado y su fragmento de claude_desktop_config.json"
 faq:
   - q: "¿Cuál es el comando claude mcp add para Little Hotelier?"
-    a: "Ejecuta: claude mcp add --transport http hotelier-tools https://dashboard.hotelier.tools/api/mcp --header \"Authorization: Bearer htk_YOUR_API_KEY\". Sustituye la clave por una de API y MCP, Claves API en Hotelier Tools, y compruébalo con /mcp dentro de Claude Code."
+    a: "Ejecuta: claude mcp add --transport http hotelier-tools https://dashboard.hotelier.tools/api/mcp --header \"Authorization: Bearer htk_YOUR_API_KEY\". Sustituye la clave por una creada en API y MCP → Claves API de Hotelier Tools, y compruébalo con /mcp dentro de Claude Code."
   - q: "¿Dónde está mcp.json en Cursor y en VS Code?"
     a: "Cursor lee ~/.cursor/mcp.json para todos los proyectos y .cursor/mcp.json dentro de un proyecto. VS Code lee .vscode/mcp.json en el espacio de trabajo y un fichero a nivel de usuario que abres con el comando MCP: Open User Configuration. VS Code usa la clave servers, no mcpServers."
   - q: "¿Hace falta ser programador para usar Claude Code con los datos de mi hotel?"
-    a: "No. Instalas Claude Code, pegas un comando y después pides las cosas con palabras normales. Ayuda saber dónde van tus ficheros y cómo ejecutar un script, pero Claude Code puede explicarte cada paso mientras trabaja."
+    a: "No. Instalas Claude Code, pegas un comando y después pides las cosas con tus propias palabras. Ayuda saber dónde van tus ficheros y cómo ejecutar un script, pero Claude Code puede explicarte cada paso mientras trabaja."
   - q: "¿Puedo iniciar sesión en vez de usar una clave de API?"
     a: "Sí, en los clientes que admiten OAuth. Añade la URL del servidor sin cabecera y luego inicia sesión cuando el cliente te lo pida: en Claude Code ejecuta /mcp y elige autenticarte. La sesión dura 30 días. Las claves son mejores para scripts que se ejecutan sin supervisión."
   - q: "¿Es una API oficial de Little Hotelier o de SiteMinder?"
-    a: "No. Hotelier Tools es independiente y no está afiliado ni respaldado por SiteMinder ni por Little Hotelier. Se conecta con el propio acceso de tu alojamiento a Little Hotelier y ofrece su propia REST API y su propio servidor MCP."
+    a: "No. Hotelier Tools es independiente: no está afiliado a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo. Se conecta con el propio acceso de tu alojamiento a Little Hotelier y ofrece su propia REST API y su propio servidor MCP."
 ---
 
 Añade un servidor MCP remoto, `https://dashboard.hotelier.tools/api/mcp`, con una clave de API de Hotelier Tools, y Claude Code, Cursor, VS Code (modo agente de Copilot), Windsurf o Gemini CLI podrán leer tus reservas, tarifas y facturas de Little Hotelier mientras te escriben código. En Claude Code es un solo comando: `claude mcp add --transport http hotelier-tools https://dashboard.hotelier.tools/api/mcp --header "Authorization: Bearer htk_YOUR_API_KEY"`.
@@ -29,11 +29,11 @@ Abajo tienes la configuración exacta para cada herramienta (revisada con la doc
 
 ## Antes de empezar: crea una clave de API
 
-Little Hotelier no publica un servidor MCP, y la propia documentación de la API para socios de SiteMinder dice que los datos de disponibilidad y tarifas [no se pueden obtener de Little Hotelier](https://developer.siteminder.com/smx-api/reference/availability-and-rates/publishers). Hotelier Tools ofrece un servidor MCP y una REST API, con el propio acceso de tu alojamiento a Little Hotelier. No está afiliado ni respaldado por SiteMinder ni por Little Hotelier. Contexto: [¿tiene API Little Hotelier?](/blog/little-hotelier-api)
+Little Hotelier no publica un servidor MCP, y la propia documentación de la API para partners de SiteMinder dice que los datos de disponibilidad y tarifas [no se pueden obtener de Little Hotelier](https://developer.siteminder.com/smx-api/reference/availability-and-rates/publishers). Hotelier Tools ofrece un servidor MCP y una REST API, con el propio acceso de tu alojamiento a Little Hotelier. No está afiliado a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo. Contexto: [¿tiene API Little Hotelier?](/blog/little-hotelier-api)
 
 1. En Hotelier Tools, conecta Little Hotelier en **Credenciales** (`/credentials`) si aún no lo has hecho.
 2. Abre **API y MCP → Claves API** (`/developer/api-keys`).
-3. Escribe un nombre que diga dónde va a vivir la clave, como `cursor-portatil`, y pulsa **Generar clave**.
+3. Escribe un nombre que indique dónde vas a usar la clave, como `cursor-portatil`, y pulsa **Generar clave**.
 4. Cópiala enseguida: «Copia esta clave ahora: no se volverá a mostrar». Empieza por `htk_`.
 
 ::screenshot{src="/images/blog/demo/es/api-keys.webp" alt="Página de claves de API en Hotelier Tools: el formulario Generar una clave nueva con un campo de nombre y el botón Generar clave, una clave activa (MCP internal (chat), enmascarada) con un botón Revocar y las notas de Buenas prácticas de seguridad" caption="Una clave por herramienta permite revocar solo la que dejes de usar." path="/developer/api-keys"}
@@ -113,7 +113,7 @@ VS Code usa `.vscode/mcp.json`, con `servers` como clave principal y un `"type":
     {
       "type": "promptString",
       "id": "ht-api-key",
-      "description": "Clave de API de Hotelier Tools (htk_…)",
+      "description": "Hotelier Tools API key (htk_…)",
       "password": true
     }
   ],
@@ -254,7 +254,7 @@ function syncArrivals() {
 }
 ```
 
-Guarda la clave en **Configuración del proyecto → Propiedades del script** como `HT_API_KEY`, ejecútalo una vez para conceder el acceso y añade un activador diario basado en tiempo en **Activadores**. `/reservations` devuelve como máximo 100 estancias por llamada, filtradas por fecha de entrada, así que divide los meses con mucha actividad en semanas. Recuerda que la hoja ahora contiene nombres de huéspedes: compártela con cuidado.
+Guarda la clave en **Configuración del proyecto → Propiedades del script** como `HT_API_KEY`, ejecútalo una vez para conceder el acceso y añade un activador diario basado en tiempo en **Activadores**. `/reservations` devuelve como máximo 100 estancias por llamada, filtradas por fecha de check-in, así que divide los meses con mucha actividad en semanas. Recuerda que la hoja ahora contiene nombres de huéspedes: compártela con cuidado.
 
 ### Un pequeño panel a medida
 
@@ -301,5 +301,5 @@ Los agentes de programación son buenos ejecutando herramientas rápido, y por e
 ## Próximos pasos
 
 - ¿No eres programador? [Conecta Claude](/blog/connect-claude-to-little-hotelier) o [ChatGPT](/blog/connect-chatgpt-to-little-hotelier) desde el navegador.
-- ¿Nuevo en la idea? Lee [qué es un servidor MCP](/blog/what-is-mcp-server-hotels).
+- ¿Es la primera vez que oyes hablar de MCP? Lee [qué es un servidor MCP](/blog/what-is-mcp-server-hotels).
 - ¿Quieres hojas de cálculo sin código? Mira [exportar reservas a Excel](/blog/export-little-hotelier-reservations-excel).

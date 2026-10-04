@@ -10,19 +10,19 @@ demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "When they arrive settings in Hotelier Tools with the ID / passport (police register), Physical room assignment and Address and origin validation checks switched on, each with what it can and cannot do"
 faq:
-  - q: "Is SES.Hospedajes mandatory for a small B&B or holiday let?"
+  - q: "Is SES.Hospedajes mandatory for a small B&B or vacation rental?"
     a: "Yes. Royal Decree 933/2021 covers hotels, hostales, pensiones, rural houses, campsites, tourist apartments and similar accommodation anywhere in Spain, and the Interior Ministry's FAQ confirms private individuals who rent out accommodation are covered too. Catalonia and the Basque Country report to their own police systems instead."
   - q: "Do children and babies have to be registered?"
-    a: "Yes. Guests under 14 are included in the register, with their data given by the adult they travel with, and an ID document becomes mandatory from 14. When any guest is a minor, you must also record the relationship between the travellers, such as parent or guardian."
+    a: "Yes. Guests under 14 are included in the register, with their data given by the adult they travel with, and an ID document becomes mandatory from 14. When any guest is a minor, you must also record the relationship between the travelers, such as parent or guardian."
   - q: "What is the fine for not sending guest data to SES.Hospedajes?"
-    a: "Under the citizen security law (Ley Orgánica 4/2015), not keeping the register or not sending the data is a serious offence, fined from 601 to 30,000 euros. Errors or late sending are minor offences, fined from 100 to 600 euros."
+    a: "Under the citizen security law (Ley Orgánica 4/2015), not keeping the register or not sending the data is a serious offense, fined from 601 to 30,000 euros. Errors or late sending are minor offenses, fined from 100 to 600 euros."
   - q: "How long must I keep the guest records?"
     a: "Three years from the end of the stay. The Interior Ministry says it will not send you lists of your past communications, so keep your own copies or rely on your check-in tool's history."
   - q: "Does Hotelier Tools send guest data to SES.Hospedajes?"
     a: "No. Hotelier Tools does not send anything to SES.Hospedajes or the police. It flags reservations with a missing ID document or address so you can fix them before arrival. For sending, use Little Hotelier's own compliance reporting or a check-in provider. Hotelier Tools is independent and not affiliated with SiteMinder or Little Hotelier."
 ---
 
-Every hotel, hostal, B&B and holiday let in Spain must send its guests' details to **SES.Hospedajes**, the Interior Ministry's online register (Catalonia and the Basque Country use their own police systems). Bookings and cancellations go in within 24 hours, and guest data within 24 hours of check-in ([Royal Decree 933/2021](https://www.boe.es/buscar/act.php?id=BOE-A-2021-17461)). Little Hotelier can send both automatically through its Guest Engagement online check-in, or through a partner app such as Chekin, so nobody types the same guest twice.
+Every hotel, hostal, B&B and vacation rental in Spain must send its guests' details to **SES.Hospedajes**, the Interior Ministry's online register (Catalonia and the Basque Country use their own police systems). Bookings and cancellations go in within 24 hours, and guest data within 24 hours of check-in ([Royal Decree 933/2021](https://www.boe.es/buscar/act.php?id=BOE-A-2021-17461)). Little Hotelier can send both automatically through its Guest Engagement online check-in, or through a partner app such as Chekin, so nobody types the same guest twice.
 
 ::callout{type="warning" title="Not legal advice"}
 Last verified in October 2026 against the BOE, the Interior Ministry's sede electrónica and Little Hotelier's help centre. Rules and forms change: check with the Ministry or your gestor before relying on any detail.
@@ -36,7 +36,7 @@ It applies in the whole of Spain to (RD 933/2021, article 2):
 
 - hotels, **hostales**, **pensiones**, casas de huéspedes and rural tourism accommodation
 - campsites and motorhome areas
-- tourist apartments, bungalows and similar holiday accommodation
+- tourist apartments, bungalows and similar vacation accommodation
 - private individuals who rent out accommodation, according to the Ministry's [FAQ of August 2026](https://sede.interior.gob.es/portal/dam/jcr:995aad35-2632-4de2-97fe-94cc2489c9c6/Preguntas-frecuentes-hospedajes-alquiler-vehiculos-20260810.pdf)
 
 **Catalonia and the Basque Country** keep their own systems. In Catalonia you report to the Mossos d'Esquadra through their existing platform ([Mossos](https://mossos.gencat.cat/ca/serveis_i_tramits/registre-dactivitats-dhostalatge-i-lloguer-de-vehicles-a-motor/)); in the Basque Country, to the Ertzaintza ([euskadi.eus](https://www.euskadi.eus/comunicacion/registro-hostelero/web01-tramite/es/)).
@@ -49,7 +49,7 @@ Annex I of RD 933/2021 lists three blocks:
 
 | Block | Data |
 |---|---|
-| **Each guest** | First name, both surnames, sex, ID document type (DNI, passport, TIE) and number, *número de soporte* (the document's support number), nationality, date of birth, usual address (full address, town, country), landline, mobile, email, number of travellers, relationship between travellers if one is a minor |
+| **Each guest** | First name, both surnames, sex, ID document type (DNI, passport, TIE) and number, *número de soporte* (the document's support number), nationality, date of birth, usual address (full address, town, country), landline, mobile, email, number of travelers, relationship between travelers if one is a minor |
 | **The booking** | Contract reference and date, check-in and check-out date and time, address, number of rooms, internet access yes or no |
 | **Payment** | Payment type, payment method identification (card type and number, IBAN, mobile payment…), holder, expiry, payment date |
 
@@ -73,7 +73,7 @@ Any later change to a booking needs a new communication. Keep the records for **
 
 Fines come from the citizen security law, [Ley Orgánica 4/2015](https://www.boe.es/buscar/act.php?id=BOE-A-2015-3442):
 
-| Offence | Example | Fine |
+| Offense | Example | Fine |
 |---|---|---|
 | Minor (*leve*, art. 37.9) | Errors in the data, or sending late | €100 to €600 |
 | Serious (*grave*, art. 36.20) | No register, or data not sent | €601 to €30,000 |

@@ -1,7 +1,7 @@
 ---
-title: "Little Hotelier Rechnungen herunterladen: alle auf einmal, für die Quartalsabrechnung"
-seoTitle: "Alle Little Hotelier Rechnungen auf einmal herunterladen"
-description: "Little Hotelier bündelt vorhandene Rechnungen als ZIP. So geht es, und so erzeugen Sie fehlende und senden dem Steuerberater ein ZIP und eine CSV pro Quartal."
+title: "Little-Hotelier-Rechnungen herunterladen: alle auf einmal für die Quartalsabrechnung"
+seoTitle: "Alle Little-Hotelier-Rechnungen auf einmal herunterladen"
+description: "Little Hotelier bündelt vorhandene Rechnungen als ZIP. So geht es, wie Sie fehlende erzeugen und dem Steuerberater pro Quartal ein ZIP und eine CSV senden."
 date: 2026-10-03
 category: invoicing
 tags: [invoices, accounting, little hotelier, quarterly tax, zip]
@@ -26,9 +26,9 @@ faq:
 
 Ja. Little Hotelier kann jede Rechnung, die **schon existiert**, in ein ZIP packen: Öffnen Sie **Front Desk > Reports > Invoices**, filtern Sie das Quartal und klicken Sie auf **Download invoice PDFs**. Was es nicht tut: Rechnungen erstellen, die niemand erzeugt hat, oder Sie vor Rechnungen warnen, die noch nicht gestellt werden sollten. Dafür erzeugt Hotelier Tools die fehlenden Rechnungen in einem Durchlauf, weist riskante zurück und gibt Ihnen das Quartal als ein ZIP mit PDFs plus eine CSV-Zusammenfassung.
 
-## Kann Little Hotelier alle Rechnungen nativ exportieren?
+## Kann Little Hotelier alle Rechnungen von Haus aus exportieren?
 
-Ja. Stand Oktober 2026 beschreibt das Help Center von Little Hotelier drei Wege, Rechnungen herauszubekommen. Welcher passt, hängt davon ab, was Ihr Steuerberater verlangt.
+Ja. Stand Oktober 2026 beschreibt das Hilfecenter von Little Hotelier drei Wege, Rechnungen herauszubekommen. Welcher passt, hängt davon ab, was Ihr Steuerberater verlangt.
 
 | Methode | Was Sie bekommen | Der Haken |
 |---|---|---|
@@ -53,16 +53,16 @@ Zwei Grenzen: Es werden nur Rechnungen exportiert, die **als final markiert** si
 
 ### Einzeln
 
-Öffnen Sie die Reservierung, klicken Sie auf **Print**, wählen Sie **Invoice** und im Druckfenster **Save as PDF** ([Help Center](https://helpcentre.littlehotelier.com/en/articles/8673812-generate-print-and-email-a-guest-invoice)). Tun Sie das oft, setzt das kostenlose Skript [Extra Invoice Print Button](/tools/ui/extra-invoice-print-button) einen direkten Druck-Link in die Reservierung.
+Öffnen Sie die Reservierung, klicken Sie auf **Print**, wählen Sie **Invoice** und im Druckfenster **Save as PDF** ([Hilfecenter](https://helpcentre.littlehotelier.com/en/articles/8673812-generate-print-and-email-a-guest-invoice)). Tun Sie das oft, setzt das kostenlose Skript [Extra Invoice Print Button](/tools/ui/extra-invoice-print-button) einen direkten Druck-Link in die Reservierung.
 
-## Was der native Export nicht leistet
+## Was der Export von Little Hotelier nicht leistet
 
 Der Download ist der leichte Teil. Das Quartal geht meist schon früher schief:
 
-- **Fehlende Rechnungen.** Das ZIP enthält nur Rechnungen, die jemand erzeugt hat. Das Help Center beschreibt das Erstellen einzeln pro Reservierung (Reiter **Invoices** > **Generate invoice**), ein Aufenthalt, den niemand angeklickt hat, fehlt also schlicht.
+- **Fehlende Rechnungen.** Das ZIP enthält nur Rechnungen, die jemand erzeugt hat. Laut Hilfecenter erstellen Sie sie einzeln pro Reservierung (Reiter **Invoices** > **Generate invoice**). Ein Aufenthalt, den niemand angeklickt hat, fehlt also schlicht.
 - **Duplikate.** Jede Erstellungsanfrage legt in Little Hotelier ein neues Dokument an, sodass ein erneutes Erzeugen eines Aufenthalts zwei Rechnungen hinterlassen kann, wo Ihr Steuerberater eine erwartet.
-- **Zu frühe Rechnungen.** Eine Rechnung vor dem Check-out des Gastes ist veraltet, sobald ein Extra oder eine Zahlung hinzukommt, und die Korrektur bedeutet eine berichtigte Rechnung oder eine Gutschrift (in Spanien eine Rectificación).
-- **Abschließen.** Der Buchhaltungsexport verlangt, dass jede Rechnung als final markiert ist, und das Help Center beschreibt, das pro Reservierung zu tun.
+- **Zu frühe Rechnungen.** Eine Rechnung, die vor dem Check-out des Gastes erstellt wird, ist veraltet, sobald ein Extra oder eine Zahlung hinzukommt. Die Korrektur bedeutet dann eine berichtigte Rechnung, eine Gutschrift oder, in Spanien, eine Rechnungsberichtigung (factura rectificativa).
+- **Finalisieren.** Der Buchhaltungsexport verlangt, dass jede Rechnung als final markiert ist, und laut Hilfecenter geschieht das pro Reservierung.
 
 ## So laden Sie ein ganzes Quartal als ein ZIP und eine CSV herunter (der schnellere Weg)
 
@@ -80,7 +80,7 @@ Hotelier Tools ist ein Dashboard, das sich mit Ihrem eigenen Login mit Little Ho
 Die Rechnungen sind Dokumente von Little Hotelier selbst. Hotelier Tools bittet Little Hotelier, jede zu erstellen, sodass Ihre Nummerierung, Ihr Logo und Ihr Layout aus **Customise invoices** genau so bleiben, wie sie sind.
 
 ::callout{type="info" title="Unabhängiges Tool"}
-Hotelier Tools steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von beiden nicht empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hotels.
+Hotelier Tools steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hotels.
 ::
 
 ## Prüfungen vor der Rechnungsstellung: fehlende Steuernummern, zu frühe Rechnungen und Duplikate
@@ -88,7 +88,7 @@ Hotelier Tools steht in keiner Verbindung zu SiteMinder oder Little Hotelier und
 Bevor es Little Hotelier um eine Rechnung bittet, führt Hotelier Tools eine Vorabprüfung durch. Es verweigert die Rechnung für einen Aufenthalt, wenn:
 
 - der Gast **noch nicht ausgecheckt** hat, weil die Zahlen nicht final sind
-- es eine **Firmenrechnung ohne Steuernummer** oder Anschrift ist
+- es eine **Firmenrechnung ohne Steuernummer** oder Rechnungsanschrift ist
 - die **Steuernummer fehlerhaft** ist
 - der Aufenthalt **bereits abgerechnet** ist, was Duplikate verhindert
 
@@ -103,7 +103,7 @@ Sie landen unter **Errors** (`/invoices/errors`), eine Zeile pro Reservierung mi
 1. Wählen Sie oben den Zeitraum.
 2. Filtern Sie nach Problemart: **Missing DNI**, **Pending payment**, **Not checked out**, **Download failed** und weitere.
 3. Beheben Sie die Reservierung in Little Hotelier: Steuernummer ergänzen, Zahlung erfassen oder den Gast auschecken.
-4. Prüfen Sie sie zurück unter Errors erneut oder markieren Sie sie als erledigt. **Copy CSV** liefert die Liste für einen Kollegen.
+4. Prüfen Sie die Reservierung anschließend unter Errors erneut oder markieren Sie sie als erledigt. **Copy CSV** liefert die Liste für einen Kollegen.
 
 ::screenshot{src="/images/blog/demo/en/invoice-failures.webp" alt="Seite Errors and issues für den 1. Juli bis 30. September 2026 mit Copy CSV, Filterchips für Problemarten wie Missing DNI, Pending payment, Not checked out und Download failed sowie einer Tabelle der Reservierungen mit Rechnungs-ID, Aufenthaltsdaten, Summe, Problem-Badge, Begründung (auf Spanisch) und Aktionen" caption="Jede Reservierung, die ein Durchlauf nicht abrechnen konnte, mit Begründung und einer Möglichkeit, es erneut zu versuchen." path="/invoices/errors"}
 ::
@@ -126,13 +126,13 @@ Wählen Sie die **Fallback language** und klicken Sie auf **Save changes**.
 
 Eine kurze Routine, die die meisten Rückfragen vermeidet:
 
-1. **Lassen Sie das Quartal laufen**, ein paar Tage nachdem es endet, damit späte Check-outs abgeschlossen sind.
+1. **Starten Sie den Lauf für das Quartal** ein paar Tage nach Quartalsende, damit späte Check-outs abgeschlossen sind.
 2. **Arbeiten Sie die Errors ab**, bis nur noch Aufenthalte übrig sind, die wirklich keine Rechnung brauchen.
 3. **Laden Sie das ZIP und die CSV herunter** und senden Sie beides.
 4. **Prüfen Sie die Rechnungsnummern** auf Lücken oder Wiederholungen, bevor Sie senden.
-5. **Erwähnen Sie stornierte Rechnungen.** Wird in Little Hotelier eine abgeschlossene Rechnung storniert, wandert sie zu **Older invoices** mit dem Status Cancelled, und ihre Daten erscheinen weiterhin in Exporten ([Help Center](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). Ihr Steuerberater muss das wissen, damit der Umsatz nicht doppelt gezählt wird.
+5. **Erwähnen Sie stornierte Rechnungen.** Wird in Little Hotelier eine abgeschlossene Rechnung storniert, wandert sie zu **Older invoices** mit dem Status Cancelled, und ihre Daten erscheinen weiterhin in Exporten ([Hilfecenter](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). Ihr Steuerberater muss das wissen, damit der Umsatz nicht doppelt gezählt wird.
 
-In Spanien fließt das in Ihre Umsatzsteuererklärung ein ([modelo 303](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml)). Nutzen Sie VeriFactu, schließt Little Hotelier Rechnungen ab, indem es sie selbst an die AEAT übermittelt ([Help Center](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)). Hotelier Tools hat keine eigene VeriFactu-Funktion, lassen Sie diesen Schritt also in Little Hotelier. In jedem Land mit Pflicht zur E-Rechnung behandeln Sie das ZIP als Kopien für Ihre Unterlagen und klären die Regeln mit Ihrem Steuerberater.
+In Spanien fließt das in Ihre Umsatzsteuererklärung ein ([modelo 303](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml)). Nutzen Sie VeriFactu, schließt Little Hotelier Rechnungen ab, indem es sie selbst an die AEAT übermittelt ([Hilfecenter](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)). Hotelier Tools hat keine eigene VeriFactu-Funktion; erledigen Sie diesen Schritt also in Little Hotelier. In jedem Land mit Pflicht zur E-Rechnung behandeln Sie das ZIP als Kopien für Ihre Unterlagen und klären die Regeln mit Ihrem Steuerberater.
 
 Entwickler können Rechnungs-PDFs auch einzeln über die [REST-API von Hotelier Tools](/blog/little-hotelier-api) abrufen. Und wenn Ihr Steuerberater auch Reservierungsdaten möchte, lesen Sie [Reservierungen nach Excel exportieren](/blog/export-little-hotelier-reservations-excel).
 
@@ -140,5 +140,5 @@ Entwickler können Rechnungs-PDFs auch einzeln über die [REST-API von Hotelier 
 
 - Der **Invoice report** von Little Hotelier packt die PDFs bereits vorhandener Rechnungen in ein ZIP, der **Accounting report** exportiert abgeschlossene Rechnungen als CSV für Xero oder QuickBooks.
 - Keiner erstellt fehlende Rechnungen oder verhindert Duplikate und zu frühe Rechnungen.
-- Hotelier Tools erzeugt einen Zeitraum in einem Durchlauf, weist riskante Rechnungen zurück, listet jeden Fehler mit Begründung auf und gibt Ihnen pro Quartal ein ZIP und eine CSV.
+- Hotelier Tools erzeugt die Rechnungen eines Zeitraums in einem Durchlauf, weist riskante Rechnungen zurück, listet jeden Fehler mit Begründung auf und gibt Ihnen pro Quartal ein ZIP und eine CSV.
 - Um den Rückstau an der Quelle zu stoppen, [senden Sie jede Rechnung automatisch beim Check-out](/blog/send-invoice-to-guest-at-checkout). Alles, was die Rechnungsfunktion kann, sehen Sie auf der Seite [Invoicing](/tools/bot/invoicing).

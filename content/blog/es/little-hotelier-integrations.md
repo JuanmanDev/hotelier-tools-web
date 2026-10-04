@@ -12,7 +12,7 @@ cover: /images/blog/demo/es/developer-portal.webp
 coverAlt: "Portal para desarrolladores de Hotelier Tools con tarjetas de API REST y Swagger, Configurar MCP, Claves de API y Métodos de LH, y un cuadro de Autenticación con un ejemplo de cURL que usa una clave de API de ejemplo"
 faq:
   - q: "¿Se integra Little Hotelier con Xero o QuickBooks?"
-    a: "Mediante un fichero, no con una sincronización en vivo. Asignas tus cuentas y códigos de impuestos en Little Hotelier y exportas las facturas finalizadas en un CSV pensado para importar en Xero y QuickBooks. A octubre de 2026, la App Store no lista ninguna app de contabilidad."
+    a: "Mediante un fichero, no con una sincronización en vivo. Asignas tus cuentas y códigos de impuestos en Little Hotelier y exportas las facturas finalizadas en un CSV pensado para importar en Xero y QuickBooks. A fecha de octubre de 2026, la App Store no incluye ninguna app de contabilidad."
   - q: "¿Funciona Little Hotelier con Zapier?"
     a: "No encontramos ninguna app de Little Hotelier en Zapier cuando lo comprobamos el 3 de octubre de 2026: su página de integraciones de Little Hotelier devolvía «no encontrado». Para conectar Little Hotelier con otras herramientas, usa una app de la App Store o un script que lea tus datos por una API."
   - q: "¿Cuánto cuestan las apps de la App Store de Little Hotelier?"
@@ -22,10 +22,10 @@ faq:
   - q: "¿Puede una app de revenue management cambiar mis estancias mínimas?"
     a: "Normalmente no. El centro de ayuda de Little Hotelier dice que una app de RMS conectada controla las actualizaciones de tarifas, mientras que la estancia mínima y el stop sell se siguen gestionando en Little Hotelier."
   - q: "¿Está Hotelier Tools en la App Store de Little Hotelier?"
-    a: "No. Hotelier Tools es independiente y no está afiliado ni respaldado por SiteMinder ni por Little Hotelier. Se conecta con el propio acceso de tu alojamiento a Little Hotelier, así que lo configuras tú mismo en lugar de pasar por la App Store."
+    a: "No. Hotelier Tools es independiente: no está afiliado a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo. Se conecta con el propio acceso de tu alojamiento a Little Hotelier, así que lo configuras tú mismo en lugar de pasar por la App Store."
 ---
 
-Little Hotelier se conecta con software externo en tres sitios: la **App Store de Little Hotelier** (unas 30 apps de socios para check-in, mensajería, ventas adicionales, reseñas, acceso sin llaves y precios a octubre de 2026), los **complementos del motor de reservas** y sus propios **add-ons**, como Guest Engagement y Dynamic Revenue Plus. La contabilidad es una exportación CSV pensada para Xero y QuickBooks, no una sincronización en vivo. Para lo que falte, puedes añadir una capa que lea tus datos por una API, o un script gratuito del navegador.
+Little Hotelier se conecta con software externo en tres sitios: la **App Store de Little Hotelier** (unas 30 apps de partners para check-in, mensajería, ventas adicionales, reseñas, acceso sin llaves y precios, a fecha de octubre de 2026), los **complementos del motor de reservas** y sus propios **add-ons**, como Guest Engagement y Dynamic Revenue Plus. La contabilidad es una exportación CSV pensada para Xero y QuickBooks, no una sincronización en vivo. Para lo que falte, puedes añadir una capa que lea tus datos por una API, o un script gratuito del navegador.
 
 ## Dónde están las integraciones de Little Hotelier
 
@@ -42,7 +42,7 @@ Algunas reglas del [artículo de ayuda de la App Store](https://help-platform.li
 - Little Hotelier no cobra por conectar; cada app tiene su propio precio. La [página de la App Store](https://www.littlehotelier.com/app-store/) dice que la mayoría cuesta menos de 50 USD al mes.
 - La configuración tarda minutos, o hasta 48 horas en algunas apps. El soporte de una app lo da su proveedor.
 
-Los complementos solo afectan a tu motor de reservas. A octubre de 2026, la [lista](https://help-platform.littlehotelier.com/en/articles/10440176-plug-in-apps-in-for-your-booking-engine) incluye Google Analytics 4 y Meta Pixel, comparadores de precios (123compare.me, TripTease), chatbots (HiJiffy, Book Me Bob), Tripadvisor Review Express, fidelización (The Guestbook, Laasie) y herramientas de publicidad (Google Ads, Sojern, The Hotels Network, Flip.to y otras).
+Los complementos solo afectan a tu motor de reservas. A fecha de octubre de 2026, la [lista](https://help-platform.littlehotelier.com/en/articles/10440176-plug-in-apps-in-for-your-booking-engine) incluye Google Analytics 4 y Meta Pixel, comparadores de precios (123compare.me, TripTease), chatbots (HiJiffy, Book Me Bob), Tripadvisor Review Express, fidelización (The Guestbook, Laasie) y herramientas de publicidad (Google Ads, Sojern, The Hotels Network, Flip.to y otras).
 
 ## Contabilidad: Xero, QuickBooks y el resto
 
@@ -60,16 +60,16 @@ Aquí es donde más se quejan los usuarios. En [Capterra](https://www.capterra.c
 
 La App Store tiene varias apps de check-in, con las franjas de precio que muestra su página (octubre de 2026):
 
-- **Chekin** (0–50 USD/mes): verificación de documentos con comparación biométrica, formularios de registro digitales, partes policiales y estadísticos y tasa turística en 18 países y regiones, entre ellos España, Italia, Portugal, Francia, Alemania y Tailandia ([artículo de ayuda](https://help-platform.littlehotelier.com/en/articles/10390472-connect-to-chekin)).
+- **Chekin** (0–50 USD/mes): verificación de documentos con comparación biométrica, formularios de registro digitales, partes de viajeros a la policía, envíos estadísticos y tasa turística en 18 países y regiones, entre ellos España, Italia, Portugal, Francia, Alemania y Tailandia ([artículo de ayuda](https://help-platform.littlehotelier.com/en/articles/10390472-connect-to-chekin)).
 - **Duve** (0–50 USD): check-in online, una app para el huésped y recordatorios de reseñas.
 - **Vikey** (0–50 USD): self check-in y cerraduras inteligentes.
 - **Abitari Kiosk**, **OpenKey** y **Akia**: quiosco, llaves móviles y check-in sin contacto.
 
-Little Hotelier también tiene una opción propia. Con el add-on **Guest Engagement**, un formulario de check-in de cumplimiento puede enviar los datos de los huéspedes a las autoridades en Italia, España, Portugal, Alemania, Suiza, Austria, Croacia, República Checa y Colombia ([fuente](https://help-platform.littlehotelier.com/en/articles/10066500-automated-compliance-reporting)). Los alojamientos españoles pueden ver cómo encaja con SES.Hospedajes en [SES.Hospedajes con Little Hotelier](/blog/ses-hospedajes-little-hotelier), y las normas de cada país están en [normas de registro de huéspedes por país](/blog/guest-registration-rules-by-country).
+Little Hotelier también tiene una opción propia. Con el add-on **Guest Engagement**, un formulario de check-in para el registro de viajeros puede enviar los datos de los huéspedes a las autoridades en Italia, España, Portugal, Alemania, Suiza, Austria, Croacia, República Checa y Colombia ([fuente](https://help-platform.littlehotelier.com/en/articles/10066500-automated-compliance-reporting)). Los alojamientos españoles pueden ver cómo encaja con SES.Hospedajes en [SES.Hospedajes con Little Hotelier](/blog/ses-hospedajes-little-hotelier), y las normas de cada país están en [registro de viajeros por países](/blog/guest-registration-rules-by-country).
 
-Si usas Chekin, el userscript gratuito **Conexión con Chekin** muestra el estado del check-in de Chekin dentro de la reserva de Little Hotelier: huéspedes encontrados, teléfonos y números de documento, con un botón para copiar el documento a la reserva para la factura.
+Si usas Chekin, el userscript gratuito **Conexión con Chekin** muestra el estado del check-in de Chekin dentro de la reserva de Little Hotelier: huéspedes encontrados, teléfonos y números de documento, con un botón para copiar el documento en la reserva para la factura.
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Reserva de Little Hotelier en español con un panel de Chekin: estado de 1 huésped encontrado, una tabla con nombre, teléfono y documento de identidad, y los botones Use document y View in Chekin" caption="El script gratuito Conexión con Chekin muestra los datos del check-in sin salir de la reserva."}
+::screenshot{src="/images/scripts/show-chekin/to.png" alt="Reserva de Little Hotelier en español con un panel de Chekin: estado de 1 huésped encontrado, una tabla con nombre, teléfono y documento de identidad, y los botones Utilizar Documento y Ver en Chekin" caption="El script gratuito Conexión con Chekin muestra los datos del check-in sin salir de la reserva."}
 ::
 
 Instálalo desde [Conexión con Chekin](/tools/ui/show-chekin); la [guía de instalación](/tools/ui/instructions) lleva unos minutos.
@@ -100,7 +100,7 @@ Hotelier Tools también tiene una bandeja de huéspedes (alfa): WhatsApp, Gmail,
 
 «Integración de IA» significa dos cosas distintas para un alojamiento de Little Hotelier.
 
-**IA que vende tus habitaciones.** Demand Plus incluye **AI bookings**: tu alojamiento puede aparecer en ChatGPT y Claude a través del socio DirectBooker, con tarifas en vivo, y los huéspedes terminan la reserva en tu motor de reservas. Está en beta con 0 % de comisión hasta el 30 de noviembre de 2026; desde el 1 de diciembre de 2026 se aplica un 6 % más impuestos a las reservas de IA completadas, y no se puede rechazar ([fuente](https://help-platform.littlehotelier.com/en/articles/16654506-ai-bookings-in-demand-plus)). Chatbots como HiJiffy y Book Me Bob se conectan al motor de reservas.
+**IA que vende tus habitaciones.** Demand Plus incluye **AI bookings**: tu alojamiento puede aparecer en ChatGPT y Claude a través del partner DirectBooker, con tarifas en tiempo real, y los huéspedes terminan la reserva en tu motor de reservas. Está en beta con 0 % de comisión hasta el 30 de noviembre de 2026; desde el 1 de diciembre de 2026 se aplica un 6 % más impuestos a las reservas de IA completadas, y no es posible darse de baja ([fuente](https://help-platform.littlehotelier.com/en/articles/16654506-ai-bookings-in-demand-plus)). Chatbots como HiJiffy y Book Me Bob se conectan al motor de reservas.
 
 **IA que trabaja con tus propios datos.** Aquí no hay una opción oficial. Little Hotelier no da a los alojamientos ninguna clave de API para reservas o huéspedes (la respuesta completa está en [¿tiene API Little Hotelier?](/blog/little-hotelier-api)).
 

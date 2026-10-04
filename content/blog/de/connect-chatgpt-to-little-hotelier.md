@@ -12,26 +12,26 @@ cover: /images/blog/demo/en/mcp-oauth-consent.webp
 coverAlt: "Seite Authorize MCP access von Hotelier Tools, die ein KI-Assistent beim Verbinden öffnet, mit Hinweis auf ein 30-Tage-Token und den Schaltflächen Deny und Allow access"
 faq:
   - q: "Welche ChatGPT-Tarife können sich mit Little Hotelier verbinden?"
-    a: "Stand Oktober 2026 nennt das Help Center von OpenAI vollen MCP-Support inklusive Schreibaktionen für Business, Enterprise und Edu im Web, während Pro im Entwicklermodus MCP-Apps mit Lese- und Abrufrechten verbinden kann. Die Entwicklerdokumentation von OpenAI nennt auch Plus. Free und Go werden nicht genannt. Prüfen Sie, was Ihr eigenes Konto anzeigt."
+    a: "Stand Oktober 2026 nennt das Hilfecenter von OpenAI vollen MCP-Support inklusive Schreibaktionen für Business, Enterprise und Edu im Web, während Pro im Entwicklermodus MCP-Apps mit Lese- und Abrufrechten verbinden kann. Die Entwicklerdokumentation von OpenAI nennt auch Plus. Free und Go werden nicht genannt. Prüfen Sie, was Ihr eigenes Konto anzeigt."
   - q: "Kann ich statt der Anmeldung einen API-Schlüssel verwenden?"
     a: "Nein. Laut OpenAI kann ChatGPT keine eigenen API-Schlüssel an einen MCP-Server übergeben, wählen Sie also OAuth. Sie melden sich in einem Browserfenster bei Hotelier Tools an und klicken auf Allow access."
   - q: "Kann ChatGPT meine Reservierungen oder Preise ändern?"
     a: "Nur wenn Ihr Tarif Schreibaktionen erlaubt und Sie sie bestätigen. OpenAI verlangt standardmäßig eine Bestätigung vor Schreibaktionen. Hotelier Tools fügt außerhalb seines Dashboards keine zweite Freigabe hinzu und sperrt Rückerstattungen, den E-Mail-Versand von Rechnungen, die INE-Meldung und andere nicht umkehrbare Aktionen für ChatGPT vollständig."
   - q: "Funktioniert es in der ChatGPT-App auf dem Handy?"
-    a: "Nicht für eigene MCP-Apps. Laut Help Center von OpenAI gibt es MCP-Apps im Entwicklermodus nur im Web. Nutzen Sie chatgpt.com im Browser."
+    a: "Nicht für eigene MCP-Apps. Laut Hilfecenter von OpenAI gibt es MCP-Apps im Entwicklermodus nur im Web. Nutzen Sie chatgpt.com im Browser."
   - q: "Werden meine Gästedaten zum Training der Modelle von OpenAI verwendet?"
     a: "Bei Business, Enterprise und Edu trainiert OpenAI laut eigener Angabe standardmäßig nicht mit Informationen aus verbundenen Apps. Bei Free, Plus, Go und Pro kann es das, wenn in den Datenkontrollen Improve the model for everyone aktiviert ist. Schalten Sie es aus, bevor Sie Hoteldaten verbinden."
   - q: "Claude oder ChatGPT: Was eignet sich besser für Hotelaufgaben?"
     a: "Beide funktionieren mit demselben Hotelier-Tools-Server. Stand Oktober 2026 erlaubt Claude eigene Connectors mit Schreibwerkzeugen in jedem Tarif, auch Free (ein Connector), während ChatGPT vollen Lese- und Schreibzugriff über MCP auf Business, Enterprise und Edu beschränkt. Nehmen Sie den Assistenten, den Ihr Team ohnehin nutzt."
 ---
 
-Ja, Sie können ChatGPT mit Little Hotelier verbinden. Aktivieren Sie in ChatGPT den **Entwicklermodus** (developer mode), erstellen Sie eine App, die per **OAuth** auf den MCP-Server von Hotelier Tools (`https://dashboard.hotelier.tools/api/mcp`) zeigt, und melden Sie sich bei Hotelier Tools an. Was ChatGPT danach tun darf, hängt von Ihrem Tarif ab: Stand Oktober 2026 reserviert OpenAI vollen Lese- und Schreibzugriff für Business, Enterprise und Edu, während Pro (und laut Entwicklerdokumentation von OpenAI auch Plus) nur mit Leserechten verbindet.
+Ja, Sie können ChatGPT mit Little Hotelier verbinden. Aktivieren Sie in ChatGPT den **Entwicklermodus** (developer mode), erstellen Sie eine App, die per **OAuth** auf den MCP-Server von Hotelier Tools (`https://dashboard.hotelier.tools/api/mcp`) zeigt, und melden Sie sich bei Hotelier Tools an. Was ChatGPT danach tun darf, hängt von Ihrem Tarif ab: Stand Oktober 2026 reserviert OpenAI vollen Lese- und Schreibzugriff für Business, Enterprise und Edu, während sich Pro (und laut Entwicklerdokumentation von OpenAI auch Plus) nur mit Leserechten verbinden kann.
 
 Unten finden Sie die Schritte, wie OpenAI sie heute dokumentiert, was Sie in Ihrem eigenen Konto prüfen sollten, und 18 Prompts, die in einem kleinen Hotel funktionieren.
 
 ## Was Sie vor dem Start brauchen
 
-- **Einen ChatGPT-Tarif mit Entwicklermodus.** Der [Developer-Mode-Leitfaden](https://developers.openai.com/api/docs/guides/developer-mode) von OpenAI nennt Pro-, Plus-, Business-, Enterprise- und Education-Konten im Web. Das [Help Center](https://help.openai.com/en/articles/12584461) ergänzt, dass **voller MCP-Zugriff inklusive Schreibaktionen für Business und Enterprise/Edu** gilt und Pro nur mit Lese- und Abrufrechten verbinden kann.
+- **Einen ChatGPT-Tarif mit Entwicklermodus.** Der [Developer-Mode-Leitfaden](https://developers.openai.com/api/docs/guides/developer-mode) von OpenAI nennt Pro-, Plus-, Business-, Enterprise- und Education-Konten im Web. Das [Hilfecenter](https://help.openai.com/en/articles/12584461) ergänzt, dass **voller MCP-Zugriff inklusive Schreibaktionen für Business und Enterprise/Edu** gilt und Pro nur mit Lese- und Abrufrechten verbinden kann.
 - **Einen Browser am Computer.** Laut OpenAI gibt es eigene MCP-Apps nur im Web, nicht in den mobilen Apps.
 - **Ein Hotelier-Tools-Konto** mit Little Hotelier, verbunden unter **Credentials** (`/credentials`). Der Login des Inhabers hat den nötigen API-Zugriff. Hotelier Tools ist für jedes Hotel kostenlos, bis die Abrechnung am 10. Januar 2027 beginnt.
 
@@ -39,11 +39,11 @@ Unten finden Sie die Schritte, wie OpenAI sie heute dokumentiert, was Sie in Ihr
 Der Hotelier-Tools-Server unterstützt die Anmeldung, die ChatGPT verwendet: OAuth mit PKCE und automatische Client-Registrierung. Menüs und Tarifregeln von ChatGPT ändern sich oft, und wir haben nicht jeden Tarif von Anfang bis Ende getestet. Bestätigen Sie in Ihrem Konto drei Dinge: dass **Developer mode** erscheint, dass die Werkzeuge von Hotelier Tools nach dem Verbinden auftauchen und ob Ihr Tarif ChatGPT Schreibaktionen erlaubt.
 ::
 
-Hotelier Tools ist unabhängig. Es steht in keiner Verbindung zu OpenAI, SiteMinder oder Little Hotelier und wird von keinem von ihnen empfohlen, und es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hauses.
+Hotelier Tools ist unabhängig. Es steht in keiner Verbindung zu OpenAI, SiteMinder oder Little Hotelier, wird von ihnen weder unterstützt noch empfohlen und verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hauses.
 
 ## So verbinden Sie ChatGPT mit Little Hotelier, Schritt für Schritt
 
-Diese Schritte folgen der [Verbindungsanleitung](https://developers.openai.com/plugins/deploy/connect-chatgpt) von OpenAI, Stand Oktober 2026. Sehen Ihre Bildschirme anders aus, ist in jedem Schritt der ältere Pfad aus dem Help Center vermerkt.
+Diese Schritte folgen der [Verbindungsanleitung](https://developers.openai.com/plugins/deploy/connect-chatgpt) von OpenAI, Stand Oktober 2026. Sehen Ihre Bildschirme anders aus, ist in jedem Schritt der ältere Pfad aus dem Hilfecenter vermerkt.
 
 1. Gehen Sie im Browser zu [chatgpt.com](https://chatgpt.com) und öffnen Sie **Settings → Security and login**. Aktivieren Sie **Developer mode**. (Manche Konten zeigen es unter **Settings → Apps → Advanced settings**.)
 2. Öffnen Sie **Plugins** ([chatgpt.com/plugins](https://chatgpt.com/plugins)) und klicken Sie auf **+**, um eine App im Entwicklermodus zu erstellen. (Ältere Bildschirme: **Settings → Apps → Create**.)
@@ -72,11 +72,11 @@ Bei **Business** dürfen laut OpenAI nur Admins und Inhaber den Entwicklermodus 
 
 ### Warum kein API-Schlüssel?
 
-Die [Authentifizierungsdokumentation](https://developers.openai.com/plugins/build/auth) von OpenAI sagt, ChatGPT "cannot present custom API keys". Die `htk_`-API-Schlüssel, die in [Claude Code, Cursor und VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode) funktionieren, kommen hier also nicht zum Einsatz. Der Weg hinein ist die Anmeldung im Browser.
+Die [Authentifizierungsdokumentation](https://developers.openai.com/plugins/build/auth) von OpenAI sagt, ChatGPT „cannot present custom API keys“ (kann keine eigenen API-Schlüssel übergeben). Die `htk_`-API-Schlüssel, die in [Claude Code, Cursor und VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode) funktionieren, kommen hier also nicht zum Einsatz. Der Weg hinein ist die Anmeldung im Browser.
 
 ## 18 Prompts, die in kleinen Hotels funktionieren
 
-Starten Sie jeden Chat mit ausgewähltem Hotelier Tools. Es hilft, die App im Prompt zu nennen, damit ChatGPT Ihre Daten statt des Webs nutzt. Die Buchungsnummer unten ist erfunden.
+Wählen Sie zu Beginn jedes Chats Hotelier Tools aus. Es hilft, die App im Prompt zu nennen, damit ChatGPT Ihre Daten statt des Webs nutzt. Die Buchungsnummer unten ist erfunden.
 
 ### Anreisen und Zimmer
 
@@ -103,7 +103,7 @@ Liste die Reservierungen mit Anreise in den nächsten 14 Tagen und offenem Saldo
 ::
 
 ::prompt{label="ChatGPT"}
-Welche Aufenthalte sind letzte Woche abgereist und haben noch keine Rechnung? Sag mir zu jedem, warum er noch nicht abgerechnet werden kann.
+Welche Aufenthalte mit Check-out in der letzten Woche haben noch keine Rechnung? Sag mir zu jedem, warum noch keine Rechnung möglich ist.
 ::
 
 ::prompt{label="ChatGPT"}
@@ -125,7 +125,7 @@ Vergleiche meine Preise für die nächsten 14 Nächte mit den Mitbewerberpreisen
 ::
 
 ::prompt{label="ChatGPT"}
-Erkläre Schritt für Schritt, warum der empfohlene Preis für ein Doppelzimmer am Samstag, 14. November, so hoch ist.
+Erkläre Schritt für Schritt, warum der empfohlene Preis für ein Doppelzimmer am Samstag, 14. November, genau so ausfällt.
 ::
 
 ::prompt{label="ChatGPT"}
@@ -139,7 +139,7 @@ Finde den Gast, dessen Telefonnummer auf 4521 endet, und zeig mir seine vergange
 ::
 
 ::prompt{label="ChatGPT"}
-Passt eine Anreise der nächsten 7 Tage zu meiner Liste "nicht erneut buchen"?
+Steht eine Anreise der nächsten 7 Tage auf meiner Sperrliste (Do-not-rebook list)?
 ::
 
 ::prompt{label="ChatGPT"}
@@ -175,16 +175,16 @@ Wollen Sie trotzdem Tabellen, lesen Sie [Reservierungen nach Excel exportieren](
 In Tarifen mit vollem MCP: ja. Hotelier Tools bietet Schreibwerkzeuge wie das Aktualisieren einer Reservierung (zuerst ein Vorher-nachher-Vorschlag, dann ein Schritt zum Anwenden), das Erfassen einer Zahlung, das Vormerken eines Aufenthalts für die [Rechnung beim Check-out](/blog/send-invoice-to-guest-at-checkout) und das Übernehmen von Preisen.
 
 ::callout{type="warning" title="Die Bestätigung in ChatGPT ist die einzige Freigabe"}
-Im Dashboard von Hotelier Tools wartet jede Änderung auf eine Freigabekarte. Außerhalb gibt es keine: **Ein Schreibwerkzeug läuft, wenn ChatGPT es aufruft.** OpenAI sagt, "write actions by default require confirmation", und warnt, falsche Schreibaktionen "could destroy data". Lesen Sie jede Bestätigung, bevor Sie sie akzeptieren.
+Im Dashboard von Hotelier Tools wartet jede Änderung auf eine Freigabekarte. Außerhalb gibt es keine: **Ein Schreibwerkzeug läuft, wenn ChatGPT es aufruft.** OpenAI sagt, „write actions by default require confirmation“ (Schreibaktionen erfordern standardmäßig eine Bestätigung), und warnt, dass falsche Schreibaktionen „could destroy data“ (Daten zerstören könnten). Lesen Sie jede Bestätigung, bevor Sie sie akzeptieren.
 ::
 
 Praktische Regeln:
 
-- **Lassen Sie die App-Berechtigungen auf Always ask.** Die [App-Berechtigungen](https://help.openai.com/en/articles/20001495) von OpenAI reichen von **Always ask** bis **Allow all actions**. Letzteres überspringt Rückfragen und birgt "elevated risk". ChatGPT behandelt jedes Werkzeug, das nicht als reine Leseaktion gekennzeichnet ist, als Schreibaktion, rechnen Sie also auch bei manchen Abfragen mit einer Rückfrage.
-- **Lassen Sie sich Freigaben für Schreibaktionen in langen Unterhaltungen nicht merken.** Eine gemerkte Auswahl gilt nur für diesen Chat, aber ein Chat kann viel anrichten.
+- **Lassen Sie die App-Berechtigungen auf Always ask.** Die [App-Berechtigungen](https://help.openai.com/en/articles/20001495) von OpenAI reichen von **Always ask** bis **Allow all actions**. Letzteres überspringt Rückfragen und birgt „elevated risk“ (ein erhöhtes Risiko). ChatGPT behandelt jedes Werkzeug, das nicht als reine Leseaktion gekennzeichnet ist, als Schreibaktion, rechnen Sie also auch bei manchen Abfragen mit einer Rückfrage.
+- **Lassen Sie ChatGPT Freigaben für Schreibaktionen in langen Unterhaltungen nicht speichern.** Eine gemerkte Auswahl gilt nur für diesen Chat, aber ein Chat kann viel anrichten.
 - **Achten Sie auf Anweisungen, die in Gästenachrichten versteckt sind.** OpenAI warnt vor Prompt Injection. Schlägt ChatGPT etwas vor, worum Sie nicht gebeten haben, lehnen Sie ab.
 
-Manche Aktionen sind für ChatGPT nie verfügbar, egal was Sie freigeben. Nicht umkehrbare Werkzeuge sind für jeden externen Client gesperrt, darunter das Mailen einer Rechnung an einen Gast, Rückerstattungen, die INE-Meldung, das Versenden von Team-Einladungen, das Mailen eines Rechnungslinks an einen Gast, das Beantworten einer Booking.com-Frage und die Wartelistenprüfung, die Gäste anschreibt. Sie bleiben im [Assistenten des Dashboards](/blog/ai-assistant-hotel-front-desk), hinter einer Karte.
+Manche Aktionen sind für ChatGPT nie verfügbar, egal was Sie freigeben. Nicht umkehrbare Werkzeuge sind für jeden externen Client gesperrt, darunter der E-Mail-Versand einer Rechnung an einen Gast, Rückerstattungen, die INE-Meldung, das Versenden von Team-Einladungen, der Versand eines Rechnungslinks per E-Mail an einen Gast, das Beantworten einer Booking.com-Frage und die Wartelistenprüfung, die Gäste anschreibt. Sie bleiben im [Assistenten des Dashboards](/blog/ai-assistant-hotel-front-desk), hinter einer Karte.
 
 ## Datenschutz: Wohin gehen die Daten?
 
@@ -192,9 +192,9 @@ Ruft ChatGPT ein Werkzeug von Hotelier Tools auf, gelangt das Ergebnis, etwa Gä
 
 Laut dem Artikel von OpenAI zu [verbundenen Apps](https://help.openai.com/en/articles/11487775) gilt Stand Oktober 2026:
 
-- Bei **Business, Enterprise und Edu** "does not use information accessed from connectors to train models by default".
-- Bei **Free, Plus, Go und Pro** "may use information accessed from apps to train our models", wenn **Improve the model for everyone** aktiviert ist. Schalten Sie es in den [Datenkontrollen](https://help.openai.com/en/articles/7730893) aus, bevor Sie Hoteldaten verbinden.
-- Der Speicher von ChatGPT kann Details behalten, die es über eine App gelesen hat. Prüfen Sie **Memory** in den Einstellungen, falls Ihnen das wichtig ist.
+- Bei **Business, Enterprise und Edu** gilt: OpenAI „does not use information accessed from connectors to train models by default“ (nutzt Informationen aus Connectors standardmäßig nicht für das Training).
+- Bei **Free, Plus, Go und Pro** gilt: OpenAI „may use information accessed from apps to train our models“ (darf Informationen aus Apps für das Training nutzen), wenn **Improve the model for everyone** aktiviert ist. Schalten Sie es in den [Datenkontrollen](https://help.openai.com/en/articles/7730893) aus, bevor Sie Hoteldaten verbinden.
+- Die Memory-Funktion von ChatGPT kann Details behalten, die es über eine App gelesen hat. Prüfen Sie **Memory** in den Einstellungen, falls Ihnen das wichtig ist.
 
 Gästedaten sind personenbezogene Daten, und Ihr Hotel bleibt dafür verantwortlich. Fragen Sie nur nach dem, was Sie brauchen.
 
@@ -204,14 +204,14 @@ Gästedaten sind personenbezogene Daten, und Ihr Hotel bleibt dafür verantwortl
 ## Fehlerbehebung
 
 - **Developer mode fehlt.** Ihr Tarif enthält ihn vielleicht nicht, oder bei Business können nur Admins ihn nutzen. Bei Enterprise und Edu bitten Sie einen Admin, ihn freizugeben.
-- **Keine oder nur einige Hotelier-Tools-Werkzeuge erscheinen.** Ihr Tarif erlaubt womöglich nur Lese- und Abrufrechte. Fragen Sie das Help Center von OpenAI zu Ihrem Tarif oder nutzen Sie [Claude](/blog/connect-claude-to-little-hotelier), das eigene Connectors mit Schreibwerkzeugen in jedem Tarif erlaubt.
+- **Keine oder nur einige Hotelier-Tools-Werkzeuge erscheinen.** Ihr Tarif erlaubt womöglich nur Lese- und Abrufrechte. Prüfen Sie im Hilfecenter von OpenAI, was für Ihren Tarif gilt, oder nutzen Sie [Claude](/blog/connect-claude-to-little-hotelier), das eigene Connectors mit Schreibwerkzeugen in jedem Tarif erlaubt.
 - **ChatGPT funktioniert nach einem Monat nicht mehr mit der App.** Die Anmeldung galt 30 Tage. Verbinden Sie sich neu unter **Settings → Plugins** (oder **Apps**).
-- **Fehler "No Little Hotelier credentials configured".** Verbinden Sie in Hotelier Tools zuerst Little Hotelier unter **Credentials**.
-- **"lh_frozen" oder Ähnliches.** Die Anmeldung bei Little Hotelier ist nach einem fehlgeschlagenen Login pausiert, oft wegen eines abgelaufenen Passworts. Speichern Sie das neue Passwort unter **Credentials** oder klicken Sie auf **Check now & resume**.
+- **Fehler „No Little Hotelier credentials configured“.** Verbinden Sie in Hotelier Tools zuerst Little Hotelier unter **Credentials**.
+- **„lh_frozen“ oder Ähnliches.** Die Anmeldung bei Little Hotelier ist nach einem fehlgeschlagenen Login pausiert, oft wegen eines abgelaufenen Passworts. Speichern Sie das neue Passwort unter **Credentials** oder klicken Sie auf **Check now & resume**.
 
 ## Zusammenfassung
 
 - Aktivieren Sie den Entwicklermodus, erstellen Sie eine App mit der URL `https://dashboard.hotelier.tools/api/mcp` und **OAuth** und klicken Sie auf **Allow access**.
-- Prüfen Sie Ihren Tarif: Voller Lese- und Schreibzugriff über MCP gilt für Business, Enterprise und Edu, Pro und eventuell Plus bekommen laut OpenAI nur Leserechte.
+- Prüfen Sie Ihren Tarif: Voller Lese- und Schreibzugriff über MCP gilt für Business, Enterprise und Edu; Pro und eventuell Plus bekommen laut OpenAI nur Leserechte.
 - Lassen Sie die App-Berechtigungen auf **Always ask**. Rückerstattungen und andere nicht umkehrbare Aktionen sind ohnehin gesperrt.
 - Neu bei MCP? Beginnen Sie mit [Was ist ein MCP-Server?](/blog/what-is-mcp-server-hotels). Alle Werkzeuge finden Sie auf der Seite [API & MCP](/tools/bot/api-mcp).

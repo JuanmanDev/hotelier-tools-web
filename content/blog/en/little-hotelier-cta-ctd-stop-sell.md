@@ -95,7 +95,7 @@ A **Room Closure** (**Front Desk > Calendar**) "reduces the availability sent to
 Good to know:
 
 - Restrictions are set **per room rate**, not per room type.
-- Derived rates are greyed out in the grid. Change the rate they derive from.
+- Derived rates are grayed out in the grid. Change the rate they derive from.
 - Front Desk accepts updates about 716 days ahead by default.
 
 ## How restrictions reach Booking.com, Expedia and Airbnb
@@ -105,7 +105,7 @@ Little Hotelier sends your restrictions to each connected channel through the ch
 - **Not every channel rate supports every restriction.** A dash (-) in a channel cell means that channel doesn't support that update type. In Channel Manager, a channel rate's **Configure** screen shows which update types it accepts.
 - **Booking windows differ.** Channel Manager sends updates 400 days ahead by default (up to 750). Updates beyond a channel's maximum don't sync; for Booking.com that maximum is 545 days.
 - **Expedia** takes stop sells from Little Hotelier at rate level only. Room-level stop sells are managed in Expedia Partner Central ([Expedia stop sell issues](https://helpcentre.littlehotelier.com/en/articles/15201269-troubleshoot-expedia-stop-sell-issues)).
-- **Airbnb** with Enhanced Sync receives rates, availability and restrictions, but a field you change in Airbnb's own extranet is then greyed out in Channel Manager ([map to Airbnb](https://helpcentre.littlehotelier.com/en/articles/8693078-map-to-airbnb)).
+- **Airbnb** with Enhanced Sync receives rates, availability and restrictions, but a field you change in Airbnb's own extranet is then grayed out in Channel Manager ([map to Airbnb](https://helpcentre.littlehotelier.com/en/articles/8693078-map-to-airbnb)).
 
 After setting an important restriction, open the channel's extranet and check one date.
 

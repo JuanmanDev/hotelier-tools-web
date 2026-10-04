@@ -11,20 +11,20 @@ cover: /images/scripts/prices-display/to.png
 coverAlt: "Calendario de Little Hotelier (interfaz en español) con el precio de cada noche bajo cada tipo de habitación, añadido por el script Mostrar Precios"
 faq:
   - q: "¿Estos scripts los ha hecho Little Hotelier?"
-    a: "No. Son scripts gratuitos e independientes publicados por Hotelier Tools, que no está afiliado ni respaldado por SiteMinder ni por Little Hotelier. Se ejecutan en tu propio navegador, dentro de tu propia sesión de Little Hotelier."
+    a: "No. Son scripts gratuitos e independientes publicados por Hotelier Tools, que no está afiliado a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo. Se ejecutan en tu propio navegador, dentro de tu propia sesión de Little Hotelier."
   - q: "¿Tampermonkey o una extensión de Chrome: cuál necesito?"
     a: "En cierto modo, las dos: Tampermonkey es la extensión de Chrome y los scripts se ejecutan dentro de ella. Instalas Tampermonkey una vez y después añades solo los scripts que quieras."
   - q: "¿Funcionan los scripts en una tablet?"
     a: "Tampermonkey funciona en varios navegadores y su menú ofrece una versión para móviles y tablets. Para pantallas táctiles, instala Mejorar Estilo para Pantallas Táctiles, que agranda botones y menús. Pruébalo antes en tu propio dispositivo."
   - q: "¿Se romperá un script cuando Little Hotelier se actualice?"
-    a: "Puede ocurrir. Los scripts modifican las páginas de Little Hotelier, así que un rediseño puede dejar de funcionar hasta que se actualice el script. Desactívalo en el menú de Tampermonkey y avisa del problema en GitHub."
+    a: "Puede ocurrir. Los scripts modifican las páginas de Little Hotelier, así que, tras un rediseño, un script puede dejar de funcionar hasta que se actualice. Desactívalo en el menú de Tampermonkey y avisa del problema en GitHub."
   - q: "¿Cómo desinstalo un script?"
     a: "Haz clic en el icono de Tampermonkey y desactiva el script, o abre el Panel (Dashboard) y bórralo. Recarga Little Hotelier y la página vuelve a la normalidad."
   - q: "¿Los scripts cuestan algo?"
     a: "No. Los scripts del navegador son gratis para siempre y no hace falta ninguna cuenta."
 ---
 
-Puedes hacer que Little Hotelier vaya más rápido con userscripts gratuitos: pequeños complementos que se ejecutan en tu navegador a través de la extensión Tampermonkey. Añaden precios al calendario, ensanchan las tablas apretadas, estiman la comisión de Booking.com de cada reserva, ponen un botón de factura con un clic en las reservas y más. Instala Tampermonkey una vez, activa **Permitir scripts de usuario** (Allow User Scripts) en Chrome y pulsa **Instalar en Tampermonkey** en la página de cada script.
+Puedes hacer que Little Hotelier vaya más rápido con userscripts gratuitos: pequeños complementos que se ejecutan en tu navegador a través de la extensión Tampermonkey. Añaden precios al calendario, ensanchan las tablas apretadas, estiman la comisión de Booking.com de cada reserva, ponen un botón de factura con un clic en las reservas y más. Instala Tampermonkey una vez, activa **Allow User Scripts** (permitir scripts de usuario) en Chrome y pulsa **Instalar en Tampermonkey** en la página de cada script.
 
 ## ¿Qué es Tampermonkey y por qué scripts en vez de una extensión?
 
@@ -45,17 +45,17 @@ Es una pregunta razonable, porque un script se ejecuta dentro de la página dond
 La regla general para cualquier userscript: instala solo de fuentes de confianza. Y si Little Hotelier cambia una página, un script puede dejar de funcionar hasta que se actualice. Desactívalo en el menú de Tampermonkey y avísalo en GitHub.
 
 ::callout{type="info" title="Independientes y gratuitos"}
-Estos scripts los publica Hotelier Tools, que no está afiliado ni respaldado por SiteMinder ni por Little Hotelier. Funcionan dentro del acceso a Little Hotelier de tu propio hotel y no necesitan cuenta.
+Estos scripts los publica Hotelier Tools, que no está afiliado a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo. Funcionan dentro del acceso a Little Hotelier de tu propio hotel y no necesitan cuenta.
 ::
 
 ## Cómo instalar un script (unos cinco minutos la primera vez)
 
 1. **Instala Tampermonkey** desde [tampermonkey.net](https://www.tampermonkey.net/). Elige la versión normal para tu navegador, no la beta.
-2. **Permítele ejecutar scripts.** En Chrome 138 o posterior, haz clic derecho en el icono de Tampermonkey, elige **Gestionar extensión** y activa **Permitir scripts de usuario**. En versiones anteriores de Chrome o en Edge, abre `chrome://extensions` (o `edge://extensions`) y activa el **Modo de desarrollador** ([preguntas frecuentes de Tampermonkey](https://www.tampermonkey.net/faq.php?q=Q209)).
+2. **Permítele ejecutar scripts.** En Chrome 138 o posterior, haz clic derecho en el icono de Tampermonkey, elige **Gestionar extensión** y activa **Allow User Scripts** (permitir scripts de usuario). En versiones anteriores de Chrome o en Edge, abre `chrome://extensions` (o `edge://extensions`) y activa el **Modo de desarrollador** ([preguntas frecuentes de Tampermonkey](https://www.tampermonkey.net/faq.php?q=Q209)).
 3. **Abre la página de un script** en esta web, por ejemplo [Mostrar Precios](/tools/ui/prices-display), y pulsa **Instalar en Tampermonkey**. Tampermonkey abre una pestaña con el código: pulsa **Instalar**.
 4. **Recarga Little Hotelier** (F5). El cambio aparece al instante.
 
-Si el botón no funciona, copia el código desde GitHub, elige **Crear un nuevo script…** en el menú de Tampermonkey, pégalo y guarda con Ctrl+S. La [guía de instalación](/tools/ui/instructions) muestra cada paso con imágenes, y aquí tienes [la lista de todos los scripts](/chrome-extensions).
+Si el botón no funciona, copia el código desde GitHub, elige **Create a new script…** en el menú de Tampermonkey, pégalo y guarda con Ctrl+S. La [guía de instalación](/tools/ui/instructions) muestra cada paso con imágenes, y aquí tienes [la lista de todos los scripts](/chrome-extensions).
 
 ::screenshot{src="/images/ui/tamperMonkeyMenu.png" alt="Menú de Tampermonkey en Chrome con las opciones Enabled, Create a new script y Dashboard" caption="El menú de Tampermonkey: activa o desactiva scripts, crea uno a mano o abre el Panel (Dashboard) para eliminar uno." width="624" height="645"}
 ::
@@ -102,7 +102,7 @@ Cada script tiene su propia página con imágenes del antes y el después y el b
 - [Guardado Fácil de Provincia y País](/tools/ui/easy-save-province-country): para alojamientos en España, una lista de provincias españolas en el campo de provincia. Al elegir una, el país pasa a ser España, y los campos de nombre y apellidos vacíos se rellenan con un guion bajo.
 - [Actualizar Número de Adultos](/tools/ui/update-number-adults): los formularios de reserva nueva empiezan con 2 adultos en vez de 0, lo que evita guardar una reserva sin adultos.
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Reserva de Little Hotelier (interfaz en español) con un panel de Chekin que lista un huésped registrado, el número de documento y un botón Use document" caption="Los registros de Chekin dentro de la reserva de Little Hotelier." width="1484" height="831"}
+::screenshot{src="/images/scripts/show-chekin/to.png" alt="Reserva de Little Hotelier (interfaz en español) con un panel de Chekin que lista un huésped registrado, el número de documento y un botón Utilizar Documento" caption="Los registros de Chekin dentro de la reserva de Little Hotelier." width="1484" height="831"}
 ::
 
 ### Comodidad diaria: recargas, tablets y atajos

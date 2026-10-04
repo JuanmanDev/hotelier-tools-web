@@ -1,7 +1,7 @@
 ---
 title: "Come collegare Claude a Little Hotelier (MCP, guida passo passo)"
 seoTitle: "Collegare Claude a Little Hotelier: guida MCP"
-description: "Collega Claude a Little Hotelier con un connettore personalizzato: incolla un URL, accedi, consenti l'accesso. Primi prompt, sicurezza e problemi."
+description: "Collega Claude a Little Hotelier con un connettore personalizzato: incolla un URL, accedi e consenti l'accesso. Primi prompt, sicurezza e problemi comuni."
 date: 2026-10-03
 category: ai
 tags: [claude, mcp, ai, connectors, little hotelier]
@@ -16,10 +16,10 @@ faq:
     a: "A ottobre 2026 Anthropic indica i connettori personalizzati sui piani Free, Pro, Max, Team ed Enterprise. Gli account Free possono aggiungere un connettore personalizzato. Su Team ed Enterprise lo aggiunge un Owner per l'organizzazione e poi ogni membro si collega con il proprio login."
   - q: "Il collegamento a Little Hotelier funziona nell'app mobile di Claude?"
     a: "Sì. Una volta collegato su claude.ai o in Claude Desktop, Anthropic dice che è disponibile anche in Claude per iOS e Android. Aggiungere nuovi connettori personalizzati dal telefono è ancora in beta, quindi fai la configurazione da un computer."
-  - q: "Come scollego Claude o cambio l'accesso?"
+  - q: "Come scollego Claude o rinnovo l'accesso?"
     a: "In Claude apri Customize, poi Connectors, e scegli Disconnect o Remove. In Hotelier Tools apri Developer, API Keys e revoca la connessione o la chiave che hai usato in Active keys. Revocare dal lato Hotelier Tools interrompe subito l'accesso."
   - q: "Claude può modificare le mie prenotazioni o i miei prezzi?"
-    a: "Sì, se glielo permetti. Gli strumenti di scrittura partono quando Claude li chiama e Hotelier Tools non aggiunge una seconda scheda di approvazione fuori dalla sua dashboard, quindi tieni l'approvazione per strumento di Claude su Needs approval. Rimborsi, invio di fatture via email, presentazione dell'indagine INE e altre azioni irreversibili sono bloccati per Claude."
+    a: "Sì, se glielo permetti. Gli strumenti di scrittura vengono eseguiti quando Claude li richiama e Hotelier Tools non aggiunge una seconda scheda di approvazione fuori dalla sua dashboard, quindi tieni l'approvazione per strumento di Claude su Needs approval. Rimborsi, invio di fatture via email, invio dell'indagine INE e altre azioni irreversibili sono bloccati per Claude."
   - q: "Little Hotelier ha un proprio server MCP?"
     a: "Non uno ufficiale, a ottobre 2026. Il lavoro di SiteMinder sull'MCP riguarda la vendita di camere tramite assistenti AI, non i titolari che interrogano i propri dati. Hotelier Tools gestisce un server MCP indipendente che si collega con il login Little Hotelier della tua struttura."
   - q: "È un'integrazione ufficiale di Anthropic o di Little Hotelier?"
@@ -28,7 +28,7 @@ faq:
 
 Little Hotelier non offre un proprio server MCP (a ottobre 2026), ma puoi comunque collegarci Claude tramite Hotelier Tools, che ne gestisce uno per la tua struttura. In Claude apri **Customize → Connectors → Add custom connector**, incolla `https://dashboard.hotelier.tools/api/mcp`, accedi a Hotelier Tools e premi **Allow access**. Claude potrà poi rispondere alle domande dalle tue prenotazioni in tempo reale e, se glielo permetti, fare modifiche.
 
-Nuovo all'idea? Leggi prima [cos'è un server MCP](/blog/what-is-mcp-server-hotels). Bastano tre minuti.
+È un concetto nuovo per te? Leggi prima [cos'è un server MCP](/blog/what-is-mcp-server-hotels). Bastano tre minuti.
 
 ## Cosa serve prima di iniziare
 
@@ -102,7 +102,7 @@ La maggior parte delle persone dovrebbe usare l'accesso qui sopra. Una chiave AP
 }
 ```
 
-Salva il file e chiudi del tutto e riapri Claude Desktop. L'header è scritto senza spazio dopo i due punti di proposito: la documentazione di mcp-remote spiega che Claude Desktop su Windows può rovinare gli spazi negli argomenti.
+Salva il file, chiudi completamente Claude Desktop e riaprilo. L'header è scritto di proposito senza spazio dopo i due punti: la documentazione di mcp-remote spiega che Claude Desktop su Windows può alterare gli spazi negli argomenti.
 
 ### Chiave API o accesso con login: quale usare?
 
@@ -117,7 +117,7 @@ Una volta collegati, funzionano allo stesso modo: Claude agisce **come la person
 
 ## Cosa chiedere per prima cosa a Claude
 
-Parti da domande che si limitano a leggere. Scrivere "Hotelier Tools" aiuta Claude a scegliere il connettore giusto invece di cercare sul web.
+Inizia con domande di sola lettura. Scrivere "Hotelier Tools" aiuta Claude a scegliere il connettore giusto invece di cercare sul web.
 
 ::prompt{label="Claude"}
 Usando Hotelier Tools, chi arriva oggi e domani? Mostrami nome, notti, camera e l'eventuale saldo ancora da pagare.
@@ -151,13 +151,13 @@ Il server MCP di Hotelier Tools offre a Claude più di 100 strumenti per l'hotel
 
 **Può leggere:** prenotazioni e ospiti, pagamenti, fatture e stato di fatturabilità, tariffe e disponibilità, prezzi dei concorrenti e prezzi consigliati con i relativi motivi, problemi dei controlli automatici, la lista do-not-rebook, la lista d'attesa, le attività programmate e i dati della struttura letti da Little Hotelier.
 
-**Può modificare, quando Claude chiama lo strumento:** i dettagli di una prenotazione (prima una proposta con prima/dopo, poi un passaggio di applicazione che richiede `confirmed: true`), i registri dei pagamenti, l'iscrizione alla [fattura al check-out](/blog/send-invoice-to-guest-at-checkout), i prezzi dalle raccomandazioni, lo stop sell del canale, le voci della lista d'attesa e le attività programmate.
+**Può modificare, quando Claude chiama lo strumento:** i dettagli di una prenotazione (prima una proposta con prima/dopo, poi un passaggio di applicazione che richiede `confirmed: true`), i pagamenti registrati, la programmazione della [fattura al check-out](/blog/send-invoice-to-guest-at-checkout), l'applicazione dei prezzi consigliati, lo stop sell sui canali, le voci della lista d'attesa e le attività programmate.
 
 **Non può** fare nulla di irreversibile: quegli strumenti sono bloccati per Claude e per ogni altro client esterno. Per esempio, non può:
 
 - inviare una fattura via email a un ospite
 - fare un rimborso
-- presentare l'indagine INE
+- inviare l'indagine INE
 - inviare inviti al team
 - inviare via email il link di una fattura a un ospite
 - rispondere a una domanda di un ospite di Booking.com
@@ -168,7 +168,7 @@ Quelle azioni restano nella chat della dashboard di Hotelier Tools, dietro una s
 ### Azioni di scrittura: come tenere Claude al sicuro
 
 ::callout{type="warning" title="La richiesta di Claude è la tua approvazione"}
-Dentro la dashboard di Hotelier Tools, ogni modifica aspetta una scheda da approvare o rifiutare. Fuori, non c'è una seconda scheda: **quando Claude chiama uno strumento di scrittura, questo parte.** L'approvazione che dai in Claude è l'unica.
+Dentro la dashboard di Hotelier Tools, ogni modifica aspetta una scheda da approvare o rifiutare. Fuori, non c'è una seconda scheda: **quando Claude richiama uno strumento di scrittura, questo viene eseguito.** L'approvazione che dai in Claude è l'unica.
 ::
 
 Cinque abitudini per stare tranquilli:

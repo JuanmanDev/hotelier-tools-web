@@ -1,7 +1,7 @@
 ---
 title: "Claude Code MCP: come usare i dati di Little Hotelier in Claude Code, Cursor e VS Code"
 seoTitle: "Little Hotelier MCP in Claude Code, Cursor e VS Code"
-description: "Aggiungi il server MCP di Hotelier Tools a Claude Code, Cursor, VS Code, Windsurf o Gemini CLI, poi crea report di occupazione, sync con Sheets o una dashboard."
+description: "Collega il server MCP di Hotelier Tools a Claude Code, Cursor, VS Code, Windsurf o Gemini CLI e crea report di occupazione, sync con Sheets o dashboard."
 date: 2026-10-03
 category: ai
 tags: [mcp, claude code, cursor, vs code, api]
@@ -33,7 +33,7 @@ Little Hotelier non pubblica un server MCP, e la documentazione delle API partne
 
 1. In Hotelier Tools collega Little Hotelier in **Credentials** (`/credentials`), se non l'hai ancora fatto.
 2. Apri **Developer → API & MCP → API Keys** (`/developer/api-keys`).
-3. Scrivi un nome che dica dove vivrà la chiave, per esempio `cursor-laptop`, e premi **Generate key**.
+3. Scrivi un nome che indichi dove userai la chiave, per esempio `cursor-laptop`, e premi **Generate key**.
 4. Copiala subito: "Copy this key now — it will not be shown again." Inizia con `htk_`.
 
 ::screenshot{src="/images/blog/demo/en/api-keys.webp" alt="Pagina API keys in Hotelier Tools: il modulo Generate a new key con un campo nome e il pulsante Generate key, una chiave attiva (MCP internal (chat), mascherata) con un pulsante Revoke e le note Good security practice" caption="Una chiave per ogni strumento rende facile revocare solo quella che non usi più." path="/developer/api-keys"}
@@ -183,10 +183,10 @@ Il trucco è lasciare che l'agente usi MCP per *guardare* i tuoi dati reali, poi
 Chiedi a Claude Code (o all'agente di Cursor) in una cartella vuota:
 
 ::prompt{label="Claude Code"}
-Usa il server MCP hotelier-tools per guardare i miei tipi di camera e le prenotazioni del mese scorso. Poi scrivi uno script Node.js che chiami l'API REST di Hotelier Tools (specifica: https://dashboard.hotelier.tools/api/v1/openapi.json) con la chiave in HT_API_KEY e che, per qualsiasi mese gli passi, stampi occupazione e tariffa media giornaliera per tipo di camera e li salvi in un CSV.
+Usa il server MCP hotelier-tools per guardare le mie tipologie di camera e le prenotazioni del mese scorso. Poi scrivi uno script Node.js che chiami l'API REST di Hotelier Tools (specifica: https://dashboard.hotelier.tools/api/v1/openapi.json) con la chiave in HT_API_KEY e che, per qualsiasi mese gli passi, stampi occupazione e tariffa media giornaliera per tipologia di camera e li salvi in un CSV.
 ::
 
-Un buon script inizia così. Recupera i tipi di camera e ogni prenotazione che si sovrappone al mese e salva la risposta grezza, così puoi controllare i campi prima di fare i calcoli:
+Un buon script inizia così. Recupera le tipologie di camera e ogni prenotazione che si sovrappone al mese e salva la risposta grezza, così puoi controllare i campi prima di fare i calcoli:
 
 ```js [fetch-month.mjs]
 // Uso: node fetch-month.mjs 2026-09   (serve HT_API_KEY nel tuo ambiente)
@@ -222,11 +222,11 @@ await writeFile(
 console.log(`Saved raw-${month}.json`);
 ```
 
-La specifica dell'API dice che gli oggetti prenotazione provengono da Little Hotelier e che la loro "forma può variare", quindi lascia che l'agente legga il file salvato prima di calcolare qualsiasi cosa. `/room-types` restituisce `totalRooms` per tipo, che è l'altra metà del calcolo dell'occupazione.
+La specifica dell'API dice che gli oggetti prenotazione provengono da Little Hotelier e che la loro "forma può variare", quindi lascia che l'agente legga il file salvato prima di calcolare qualsiasi cosa. `/room-types` restituisce `totalRooms` per tipologia, che è l'altra metà del calcolo dell'occupazione.
 
 ### Una sincronizzazione con Google Sheets
 
-Per un foglio che elenca gli arrivi dei prossimi 30 giorni e si aggiorna ogni mattina, apri il tuo foglio di calcolo, vai su **Extensions → Apps Script** e incolla:
+Per un foglio che elenca gli arrivi dei prossimi 30 giorni e si aggiorna ogni mattina, apri il tuo foglio di calcolo, vai su **Estensioni → Apps Script** e incolla:
 
 ```js [Code.gs]
 function syncArrivals() {
@@ -254,7 +254,7 @@ function syncArrivals() {
 }
 ```
 
-Salva la chiave in **Project Settings → Script properties** come `HT_API_KEY`, eseguilo una volta per concedere l'accesso, poi aggiungi un trigger giornaliero basato sul tempo in **Triggers**. `/reservations` restituisce al massimo 100 soggiorni per chiamata, filtrati per data di check-in, quindi dividi in settimane i mesi molto pieni. Ricorda che ora il foglio contiene i nomi degli ospiti: condividilo con attenzione.
+Salva la chiave in **Impostazioni progetto → Proprietà script** come `HT_API_KEY`, esegui la funzione una volta per concedere l'accesso, poi aggiungi un attivatore giornaliero basato sul tempo in **Attivatori**. `/reservations` restituisce al massimo 100 soggiorni per chiamata, filtrati per data di check-in, quindi dividi in settimane i mesi molto pieni. Ricorda che ora il foglio contiene i nomi degli ospiti: condividilo con attenzione.
 
 ### Una piccola dashboard personalizzata
 
@@ -279,10 +279,10 @@ Entrambi usano la stessa chiave e gli stessi permessi. La guida all'API REST è 
 
 Gli agenti di programmazione sono bravi a eseguire strumenti in fretta, ed è esattamente per questo che qui conviene rallentarli.
 
-- **Le scritture partono quando l'agente le chiama.** Fuori dalla dashboard di Hotelier Tools non c'è nessuna scheda di approvazione. Modificare una prenotazione, registrare un pagamento, applicare prezzi o impostare uno stop sell avviene non appena lo strumento viene eseguito. Lascia attiva l'impostazione del tuo editor "chiedi prima di eseguire gli strumenti" e non usare modalità di esecuzione automatica con questo server.
+- **Le scritture vengono eseguite appena l'agente le richiama.** Fuori dalla dashboard di Hotelier Tools non c'è nessuna scheda di approvazione. Modificare una prenotazione, registrare un pagamento, applicare prezzi o impostare uno stop sell avviene non appena lo strumento viene eseguito. Lascia attiva l'impostazione del tuo editor "chiedi prima di eseguire gli strumenti" e non usare modalità di esecuzione automatica con questo server.
 - **Le azioni irreversibili sono comunque bloccate.** Otto strumenti (invio di fatture per email agli ospiti, rimborsi, invio dell'indagine INE, inviti al team, invio di link agli ospiti per email, risposte alle domande di Booking.com e il controllo della lista d'attesa che scrive agli ospiti) sono disponibili solo nella dashboard.
 - **Le modifiche alle prenotazioni sono in due passaggi.** `propose_reservation_changes` mostra il prima e il dopo; `apply_reservation_changes` richiede `confirmed: true`. Leggi la proposta.
-- **Non committare mai una chiave.** Usa riferimenti del tipo `${HT_API_KEY}`, aggiungi i file di configurazione locali a `.gitignore` e revoca ogni chiave che trapela su `/developer/api-keys`.
+- **Non committare mai una chiave.** Usa riferimenti del tipo `${HT_API_KEY}`, aggiungi i file di configurazione locali a `.gitignore` e, se una chiave trapela, revocala su `/developer/api-keys`.
 
 ## Risoluzione dei problemi: "il server non compare"
 

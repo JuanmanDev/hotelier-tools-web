@@ -1,14 +1,14 @@
 ---
-title: "Komisi Booking.com berapa persen? Cara melihat net sebenarnya di Little Hotelier"
+title: "Komisi Booking.com berapa persen? Cara melihat pendapatan bersih di Little Hotelier"
 seoTitle: "Komisi Booking.com berapa persen? Panduan 2026"
-description: "Tidak ada satu tarif: Anda membayar persentase di perjanjian Anda, plus program dan biaya pembayaran. Dasar pengenaan, PPN, dan net per reservasi."
+description: "Tidak ada tarif tunggal: persentasenya sesuai perjanjian, plus program dan biaya pembayaran. Dasar pengenaan, PPN, dan pendapatan bersih per reservasi."
 date: 2026-10-03
 category: tips
 tags: [booking.com, commission, little hotelier, userscript, vat]
 keywords: [komisi booking.com berapa persen, komisi booking com untuk hotel, kalkulator komisi booking com, cara bayar komisi booking com, komisi genius booking.com, biaya pembayaran booking.com]
 demoPath: /
 cover: /images/scripts/show-booking-commissions/to.png
-coverAlt: "Ringkasan reservasi Little Hotelier (antarmuka bahasa Spanyol) dengan komisi Booking.com, biaya pembayaran, dan perkiraan net yang ditambahkan oleh script gratis"
+coverAlt: "Ringkasan reservasi Little Hotelier (antarmuka bahasa Spanyol) dengan komisi Booking.com, biaya pembayaran, dan perkiraan pendapatan bersih yang ditambahkan oleh skrip gratis"
 faq:
   - q: "Berapa persen yang diambil Booking.com dari hotel?"
     a: "Booking.com tidak mengumumkan satu tarif. Anda membayar persentase yang tercantum di perjanjian akomodasi Anda, yang bergantung pada negara, jenis properti, dan kontrak. Komisi tiap reservasi bisa dilihat di Extranet pada Finance > Reservation statements."
@@ -20,11 +20,11 @@ faq:
     a: "Genius tidak menambah persentase komisi, tetapi diskonnya Anda tanggung sendiri (10% secara default, hingga 15% atau 20% untuk level Genius yang lebih tinggi jika Anda mengaktifkannya). Preferred Partner, Preferred Plus, dan Visibility Booster adalah program yang menaikkan komisi Anda."
   - q: "Kapan Booking.com menagih komisi?"
     a: "Sebulan sekali, untuk setiap reservasi yang tamunya check-out pada bulan sebelumnya. Invoice harus dibayar dalam 14 hari. Pada Payments by Booking.com, komisi bisa dipotong langsung dari pencairan dana Anda."
-  - q: "Apakah script komisi untuk Little Hotelier gratis?"
-    a: "Ya. Userscript Show Booking.com Commissions gratis selamanya. Script berjalan di browser Anda sendiri dengan ekstensi Tampermonkey yang gratis dan hanya membaca halaman reservasi yang sedang Anda buka."
+  - q: "Apakah skrip komisi untuk Little Hotelier gratis?"
+    a: "Ya. Userscript Show Booking.com Commissions gratis selamanya. Skrip berjalan di browser Anda sendiri dengan ekstensi Tampermonkey yang gratis dan hanya membaca halaman reservasi yang sedang Anda buka."
 ---
 
-Tidak ada satu komisi Booking.com yang berlaku untuk semua. Anda membayar persentase yang tertulis di perjanjian Anda sendiri, yang bergantung pada negara, jenis properti, dan kontrak, dan program seperti Preferred Partner atau Visibility Booster menambahkannya. Komisi dikenakan atas seluruh nilai reservasi (di sebagian besar negara termasuk PPN, tidak pernah atas city tax), dan Payments by Booking.com bisa menambah biaya pembayaran, jadi net Anda yang sebenarnya adalah total reservasi dikurangi semuanya.
+Tidak ada satu komisi Booking.com yang berlaku untuk semua. Anda membayar persentase yang tertulis di perjanjian Anda sendiri, yang bergantung pada negara, jenis properti, dan kontrak, dan program seperti Preferred Partner atau Visibility Booster menambah persentasenya. Komisi dikenakan atas seluruh nilai reservasi (di sebagian besar negara termasuk PPN, tidak pernah atas city tax), dan Payments by Booking.com bisa menambah biaya pembayaran, jadi pendapatan bersih Anda yang sebenarnya adalah total reservasi dikurangi semua itu.
 
 Aturan di bawah ini diperiksa terhadap Partner Help Booking.com per Oktober 2026. Booking.com sering memperbarui halaman-halaman ini, jadi tautannya mengarah ke sumber aslinya.
 
@@ -47,14 +47,14 @@ Komisi mencakup "the room rate as well as any additional fees you charge—such 
 
 **Anda membayar komisi atas:**
 
-- menginap yang selesai
-- reservasi non-refundable dan sebagian refundable, baik tamu datang maupun tidak
+- masa inap yang sudah selesai
+- reservasi non-refundable dan refundable sebagian, baik tamu datang maupun tidak
 - biaya pembatalan dan no-show yang Anda kenakan
 - overbooking (dibebaskan jika Anda baru aktif kurang dari 30 hari, atau mengalami kurang dari lima overbooking dalam 12 bulan terakhir)
 
 **Anda tidak membayar komisi atas:**
 
-- biaya pembatalan yang Anda putuskan untuk dibebaskan
+- biaya pembatalan yang Anda bebaskan
 - no-show yang Anda tandai di Extranet dalam 48 jam setelah check-out, ketika Anda membebaskan biayanya
 - reservasi yang kartu tamunya Anda tandai tidak valid
 
@@ -88,17 +88,17 @@ Untuk melihat keduanya pada satu reservasi, buka tab **Reservations** di Extrane
 Di Uni Eropa, tergantung nomor VAT Anda ([EU VAT and commission invoices](https://partner.booking.com/en-us/compliance/tax-remittance-management/eu-vat-and-commission-invoices)):
 
 - **Dengan nomor VAT yang valid untuk transaksi UE** (Booking.com memeriksanya di database VIES milik UE), invoice komisi terbit tanpa PPN. Anda "remain responsible for reporting any VAT you may owe" kepada kantor pajak Anda. Akuntan menyebutnya reverse charge.
-- **Tanpa nomor tersebut**, Booking.com menambahkan PPN pada invoice komisi Anda. Pada pencairan transfer bank bersih, Booking.com memotong komisi, biaya pembayaran, dan PPN atas keduanya.
+- **Tanpa nomor tersebut**, Booking.com menambahkan PPN pada invoice komisi Anda. Pada pencairan net lewat transfer bank, Booking.com memotong komisi, biaya pembayaran, dan PPN atas keduanya.
 
 Untuk menambahkan nomor Anda: **Finance > Finance settings > VAT details > Edit details**, pastikan nomornya valid untuk transaksi UE, masukkan, lalu simpan. Di luar UE, aturannya berbeda di tiap negara, jadi tanyakan kepada akuntan Anda.
 
 Invoice komisi tiba sebulan sekali, untuk setiap tamu yang check-out pada bulan sebelumnya, dan harus dibayar dalam 14 hari. Invoice yang tidak dibayar dapat menutup sementara properti Anda.
 
-## Cara melihat net setiap reservasi Booking.com di Little Hotelier
+## Cara melihat pendapatan bersih setiap reservasi Booking.com di Little Hotelier
 
-Ringkasan reservasi Little Hotelier menampilkan total kamar, extra, diskon, dan biaya kartu. Ringkasan itu tidak menampilkan berapa yang ditahan Booking.com. Komisi dan biaya pembayaran yang persis untuk setiap reservasi ada di Extranet (**Reservation statements**, atau kolom **Commission and charges**). Yang Anda terima adalah total dikurangi semua itu dan pajak yang sudah termasuk dalam harga.
+Ringkasan reservasi Little Hotelier menampilkan total kamar, extras, diskon, dan biaya kartu. Ringkasan itu tidak menampilkan bagian yang diambil Booking.com. Komisi dan biaya pembayaran yang persis untuk setiap reservasi ada di Extranet (**Reservation statements**, atau kolom **Commission and charges**). Yang Anda terima adalah total dikurangi semua itu dan pajak yang sudah termasuk dalam harga.
 
-### Contoh perhitungan: dari harga reservasi ke net Anda
+### Contoh perhitungan: dari harga reservasi ke pendapatan bersih Anda
 
 Ini angka dari tangkapan layar di bawah: reservasi Booking.com sebesar €125,18, dengan komisi 17% dan biaya pembayaran 1,3%. Persentase Anda mungkin berbeda.
 
@@ -108,35 +108,35 @@ Ini angka dari tangkapan layar di bawah: reservasi Booking.com sebesar €125,18
 | Komisi, 17% dari total | −€21,28 |
 | Biaya pembayaran, 1,3% dari total | −€1,63 |
 | Pajak yang termasuk dalam harga | −€11,38 |
-| **Perkiraan net** | **€90,89** |
+| **Perkiraan pendapatan bersih** | **€90,89** |
 
 Kira-kira seperempat dari yang dibayar tamu tidak pernah sampai kepada Anda. Jika Booking.com menambahkan PPN pada invoice komisi Anda, kurangkan juga.
 
-### Lihat di setiap reservasi dengan script gratis
+### Lihat di setiap reservasi dengan skrip gratis
 
-::screenshot{src="/images/scripts/show-booking-commissions/from.png" alt="Ringkasan reservasi Little Hotelier (antarmuka bahasa Spanyol) untuk reservasi Booking.com, menampilkan total kamar, extra, diskon, dan total diterima, tanpa baris komisi" caption="Sebelum: Little Hotelier menampilkan totalnya, bukan yang ditahan Booking.com." width="720" height="669"}
+::screenshot{src="/images/scripts/show-booking-commissions/from.png" alt="Ringkasan reservasi Little Hotelier (antarmuka bahasa Spanyol) untuk reservasi Booking.com, menampilkan total kamar, extras, diskon, dan total diterima, tanpa baris komisi" caption="Sebelum: Little Hotelier menampilkan totalnya, bukan bagian yang diambil Booking.com." width="720" height="669"}
 ::
 
-Untuk perkiraan cepat langsung di dalam Little Hotelier, pakai script gratis **Show Booking.com Commissions**:
+Untuk perkiraan cepat langsung di dalam Little Hotelier, pakai skrip gratis **Show Booking.com Commissions**:
 
 1. Pasang ekstensi browser Tampermonkey yang gratis. [Panduan instalasi](/tools/ui/instructions) memandu Anda langkah demi langkah.
 2. Buka [Show Booking.com Commissions](/tools/ui/show-booking-commissions) dan klik **Install on Tampermonkey**.
-3. Buka reservasi mana pun yang sumbernya Booking.com di Little Hotelier. Setelah beberapa detik, empat baris muncul di atas total: biaya transfer (1,3%), komisi Booking.com (17%), seluruh potongan, dan perkiraan net.
+3. Buka reservasi mana pun yang sumbernya Booking.com di Little Hotelier. Setelah beberapa detik, empat baris muncul di atas total: biaya transfer (1,3%), komisi Booking.com (17%), seluruh potongan, dan perkiraan pendapatan bersih.
 
-::screenshot{src="/images/scripts/show-booking-commissions/to.png" alt="Ringkasan reservasi Little Hotelier dengan empat baris tambahan: biaya transfer 1,3%, komisi Booking.com 17%, total potongan, dan perkiraan net 90,89 euro" caption="Sesudah: komisi, biaya pembayaran, dan perkiraan net pada setiap reservasi Booking.com." width="752" height="715"}
+::screenshot{src="/images/scripts/show-booking-commissions/to.png" alt="Ringkasan reservasi Little Hotelier dengan empat baris tambahan: biaya transfer 1,3%, komisi Booking.com 17%, total potongan, dan perkiraan pendapatan bersih 90,89 euro" caption="Sesudah: komisi, biaya pembayaran, dan perkiraan pendapatan bersih pada setiap reservasi Booking.com." width="752" height="715"}
 ::
 
 Yang perlu diketahui sebelum Anda mengandalkannya:
 
-- **Tarifnya tetap di dalam script**: komisi 17% dan biaya pembayaran 1,3%. Jika milik Anda berbeda, buka script di editor Tampermonkey dan ubah `0.17` dan `0.013`.
+- **Tarifnya ditanam di dalam skrip**: komisi 17% dan biaya pembayaran 1,3%. Jika tarif Anda berbeda, buka skrip di editor Tampermonkey dan ubah `0.17` dan `0.013`.
 - **Labelnya berbahasa Spanyol** dan jumlahnya dalam euro.
-- **Ini hanya perkiraan.** Script tidak tahu soal Preferred, Visibility Booster, atau PPN yang ditambahkan pada invoice komisi Anda.
-- **Semuanya tetap di browser Anda.** Script membaca halaman yang Anda buka dan tidak mengirim apa pun ke mana pun.
+- **Ini hanya perkiraan.** Skrip tidak tahu soal Preferred, Visibility Booster, atau PPN yang ditambahkan pada invoice komisi Anda.
+- **Semuanya tetap di browser Anda.** Skrip membaca halaman yang Anda buka dan tidak mengirim apa pun ke mana pun.
 
-Script gratis lainnya seperti ini ada di [ekstensi Chrome gratis untuk Little Hotelier](/blog/little-hotelier-chrome-extensions).
+Skrip gratis lainnya seperti ini ada di [ekstensi Chrome gratis untuk Little Hotelier](/blog/little-hotelier-chrome-extensions).
 
 ::callout{type="info" title="Tool independen"}
-Hotelier Tools tidak berafiliasi dengan atau didukung oleh Booking.com, SiteMinder, maupun Little Hotelier. Script berjalan di dalam sesi Little Hotelier Anda sendiri, dan dashboard Hotelier Tools terhubung memakai login Little Hotelier milik hotel Anda sendiri.
+Hotelier Tools tidak berafiliasi dengan atau didukung oleh Booking.com, SiteMinder, maupun Little Hotelier. Skrip berjalan di dalam sesi Little Hotelier Anda sendiri, dan dashboard Hotelier Tools terhubung memakai login Little Hotelier milik hotel Anda sendiri.
 ::
 
 ## Tentukan harga dengan memperhitungkan komisi: Channels & discounts
@@ -153,11 +153,11 @@ Genius dan diskon channel lainnya mengubah yang dibayar tamu, dan karena itu yan
 ::demo-cta{path="/pricing/settings/channels"}
 ::
 
-Sisa mesin harga (harga kompetitor, aturan, acara lokal) dijelaskan di [dynamic pricing untuk hotel kecil di Little Hotelier](/blog/dynamic-pricing-little-hotelier) dan di [halaman Dynamic pricing](/tools/bot/dynamic-pricing). Dashboard gratis untuk setiap hotel sampai penagihan dimulai pada 10 Januari 2027; script browser tetap gratis.
+Bagian lain dari mesin harga (harga kompetitor, aturan, acara lokal) dijelaskan di [dynamic pricing untuk hotel kecil di Little Hotelier](/blog/dynamic-pricing-little-hotelier) dan di [halaman Dynamic pricing](/tools/bot/dynamic-pricing). Dashboard gratis untuk setiap hotel sampai penagihan dimulai pada 10 Januari 2027; skrip browser tetap gratis.
 
 ## Ringkasan
 
 - Komisi Booking.com adalah persentase di perjanjian Anda. Preferred, Preferred Plus, dan Visibility Booster menambahnya, dan Genius membuat Anda menanggung diskonnya.
 - Komisi dikenakan atas seluruh nilai reservasi, biasanya termasuk PPN, tidak pernah atas city tax.
 - Payments by Booking.com menambah biaya pembayaran untuk pencairan via transfer bank. Di UE, nomor VAT yang valid membuat invoice komisi Anda bebas PPN.
-- Cek angka pastinya di **Finance > Reservation statements**, dan lihat perkiraan di setiap reservasi Booking.com di Little Hotelier dengan script gratis [Show Booking.com Commissions](/tools/ui/show-booking-commissions).
+- Cek angka pastinya di **Finance > Reservation statements**, dan lihat perkiraan di setiap reservasi Booking.com di Little Hotelier dengan skrip gratis [Show Booking.com Commissions](/tools/ui/show-booking-commissions).

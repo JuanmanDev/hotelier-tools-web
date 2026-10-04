@@ -1,7 +1,7 @@
 ---
-title: "Export data reservasi Little Hotelier ke Excel (sebelum data tamu disamarkan)"
+title: "Export data reservasi dan daftar tamu Little Hotelier ke Excel (sebelum data tamu disamarkan)"
 seoTitle: "Export data reservasi Little Hotelier ke Excel atau Sheets"
-description: "Little Hotelier menyamarkan data tamu 180 hari setelah check-out. Ekspor reservasi dan daftar tamu ke Excel atau Google Sheets sekarang, manual atau otomatis."
+description: "Little Hotelier menyamarkan data tamu 180 hari setelah check-out. Ekspor reservasi dan daftar tamu ke Excel atau Sheets sekarang, manual atau otomatis."
 date: 2026-10-03
 category: api
 tags: [export, excel, google sheets, reports, little hotelier]
@@ -16,7 +16,7 @@ faq:
   - q: "Mengapa nomor telepon tidak ada di hasil ekspor Little Hotelier saya?"
     a: "Little Hotelier tidak menyertakan nomor telepon tamu dalam CSV reservasi demi alasan keamanan. Anda tetap bisa melihat telepon di reservasi atau profil tamu, dan pencarian tamu di API Hotelier Tools mengembalikan field phone_number jika Little Hotelier memilikinya."
   - q: "Bisakah saya menjadwalkan ekspor di dalam Little Hotelier?"
-    a: "Artikel pusat bantuan yang kami periksa pada Oktober 2026 menjelaskan menjalankan dan mengekspor laporan secara manual, tanpa ekspor terjadwal. Untuk mengotomatiskannya, pakai script atau trigger Google Sheets yang membaca data lewat API."
+    a: "Artikel pusat bantuan yang kami periksa pada Oktober 2026 menjelaskan menjalankan dan mengekspor laporan secara manual, tanpa ekspor terjadwal. Untuk mengotomatiskannya, pakai skrip atau trigger Google Sheets yang membaca data lewat API."
   - q: "Bisakah saya mengekspor lebih dari satu tahun sekaligus?"
     a: "Little Hotelier membatasi ekspor total tamu hingga 365 hari, dan pencarian reservasi channel manager hanya menjangkau 548 hari ke belakang. Ekspor satu tahun (atau satu bulan) per kali dan simpan filenya."
   - q: "Bagaimana mengekspor hanya reservasi Booking.com?"
@@ -34,7 +34,7 @@ Dua batasan lain yang perlu diketahui:
 - Pencarian reservasi channel manager hanya menemukan reservasi yang "created or checked out within the last 548 days".
 - Setelah data disamarkan, tidak ada ekspor atau API yang bisa mengembalikannya.
 
-Jadi jika Anda membutuhkan data tamu untuk invoice, daftar tamu yang kembali, sengketa, atau statistik Anda sendiri, ekspor selagi masih ada. Simpan hanya yang punya alasan untuk disimpan, dan simpan filenya di tempat yang akses-nya terkontrol: file itu berisi data pribadi.
+Jadi jika Anda membutuhkan data tamu untuk invoice, daftar tamu yang kembali, sengketa, atau statistik Anda sendiri, ekspor selagi masih ada. Simpan hanya data yang memang perlu disimpan, dan taruh filenya di tempat yang aksesnya terbatas: file itu berisi data pribadi.
 
 ::callout{type="info" title="Dua versi Little Hotelier"}
 Akun yang dibuat sejak Mei 2025 (atau di-upgrade) memakai **platform** yang lebih baru, dengan [pusat bantuan tersendiri](https://help-platform.littlehotelier.com/en/). Akun yang lebih lama memakai versi **classic**. Langkah di bawah mencantumkan kedua jalur menu.
@@ -43,7 +43,7 @@ Akun yang dibuat sejak Mei 2025 (atau di-upgrade) memakai **platform** yang lebi
 ## Cara mengekspor reservasi dari Little Hotelier ke Excel
 
 1. Buka **Reservations**. Di versi classic: **My Apps → Front Desk → Reservations**.
-2. Atur **Date type** (**Check-in date**, **Check-out date**, atau **Booked on date**), lalu **Date from** dan **Date to**. Satu bulan kalender adalah satuan yang baik.
+2. Atur **Date type** (**Check-in date**, **Check-out date**, atau **Booked on date**), lalu **Date from** dan **Date to**. Satu bulan kalender adalah rentang yang pas.
 3. Pilih **Status** jika Anda mau: **All**, **Confirmed**, **Checked-in**, **Checked-out**, atau **Cancelled**.
 4. Klik **Search**.
 5. Klik **Export**. File terunduh sebagai `.csv`. Di platform yang lebih baru, Little Hotelier meminta kode MFA atau passkey Anda sebelum ekspor reservasi, tamu, pembayaran, pendapatan, dan invoice.
@@ -63,10 +63,10 @@ Ekspor punya lebih banyak kolom daripada layar. Menurut [Little Hotelier](https:
 - **Reservasi:** referensi, tanggal pemesanan, channel, status, tanggal pembatalan
 - **Tamu:** nama depan dan belakang, email, organisasi, alamat lengkap
 - **Menginap:** check-in, check-out, jumlah malam, jam kedatangan, komentar tamu, tipe kamar, kamar, rate plan
-- **Uang:** subtotal, extra, surcharge, pajak, pembayaran diterima, saldo terutang
+- **Uang:** subtotal, extras, surcharge, pajak, pembayaran diterima, saldo terutang
 - **Jumlah tamu:** dewasa, anak, bayi; jawaban atas pertanyaan reservasi kustom
 
-Tidak termasuk: **nomor telepon** ("for security reasons") dan riwayat perubahan, seperti jam persis tamu di-check-in.
+Tidak termasuk: **nomor telepon** ("for security reasons") dan riwayat perubahan, seperti jam persis tamu melakukan check-in.
 
 ## Laporan lain apa yang bisa diekspor Little Hotelier?
 
@@ -77,18 +77,18 @@ Sebagian besar laporan punya tombol **Export** yang menghasilkan CSV. Jalur di b
 | Guests | Reports → Operational → Guests | Tamu yang menginap, berdasarkan rentang tanggal |
 | Invoices | Reports → Operational → Invoices | Daftar invoice sebagai CSV, PDF sebagai ZIP |
 | Accounting | Reports → Operational → Accounting | Invoice final, ditata untuk Xero dan QuickBooks |
-| Revenue (7 tampilan) | Reports → Strategic → Revenue | Ringkasan, tipe kamar, kamar, rate plan, channel, pajak, extra |
+| Revenue (7 tampilan) | Reports → Strategic → Revenue | Ringkasan, tipe kamar, kamar, rate plan, channel, pajak, extras |
 | Channel manager | Channel Manager → Reports | Ringkasan reservasi, room stays, check-in, channel yield |
 | Booking engine | Direct Booking → Reports | Reservasi dengan perangkat yang dipakai dan persetujuan GDPR |
-| Spanish police | Reports → Operational → Police report | Hanya Spanyol: data tamu untuk register kepolisian |
+| Spanish police | Reports → Operational → Police report | Hanya Spanyol: data tamu untuk pelaporan ke kepolisian |
 
 Sumber: [Getting started with Reports](https://help-platform.littlehotelier.com/en/articles/10813931-getting-started-with-reports), [Invoice report](https://help-platform.littlehotelier.com/en/articles/14390737-how-to-run-an-invoice-report), [Accounting export](https://help-platform.littlehotelier.com/en/articles/10472787-export-invoices-marked-as-final), [Revenue reports](https://helpcentre.littlehotelier.com/en/articles/8884214-revenue-reports).
 
-Tips: ekspor pendapatan **Summary** punya kolom "Rate per night", satu baris per malam. Ini cara tercepat untuk melihat harga jual setiap malam dari menginap yang panjang.
+Tips: ekspor pendapatan **Summary** punya kolom "Rate per night", satu baris per malam. Ini cara tercepat untuk melihat harga jual setiap malam dari masa inap yang panjang.
 
-## Cara membuka CSV di Excel tanpa aksara yang rusak
+## Cara membuka CSV di Excel tanpa huruf beraksen yang rusak
 
-Jika nama seperti "José" berubah menjadi "JosÃ©", Excel salah menebak encoding. Impor file itu, jangan klik ganda:
+Jika nama seperti "José" berubah menjadi "JosÃ©", Excel salah menebak encoding. Impor file itu, jangan klik dua kali:
 
 1. Di Excel, buka **Data → From Text/CSV** dan pilih filenya ([langkah dari Microsoft](https://support.microsoft.com/en-us/office/import-or-export-text-txt-or-csv-files-5250ac4c-663c-47ce-937b-339e391393ba)).
 2. Atur **File Origin** ke **65001: Unicode (UTF-8)** dan **Delimiter** ke **Comma**.
@@ -110,12 +110,12 @@ Aturan pemasaran berbeda di tiap negara. Kirim email hanya kepada tamu yang opt-
 Little Hotelier tidak punya API key untuk reservasi Anda (detailnya ada di [apakah Little Hotelier punya API?](/blog/little-hotelier-api)). Hotelier Tools, dashboard independen, terhubung dengan login Little Hotelier Anda sendiri dan memberi Anda REST API serta server MCP untuk asisten AI. Layanan ini tidak berafiliasi dengan atau didukung oleh SiteMinder maupun Little Hotelier, dan gratis untuk setiap hotel sampai penagihan dimulai pada 10 Januari 2027.
 
 ::callout{type="warning" title="API tidak bisa membuka samaran data"}
-Hotelier Tools membaca apa yang masih dimiliki Little Hotelier. Reservasi yang lebih dari 180 hari setelah check-out juga kembali dalam keadaan tersamarkan lewat API. Otomatiskan ekspornya sekarang agar setiap bulan tertangkap selagi datanya lengkap.
+Hotelier Tools membaca apa yang masih dimiliki Little Hotelier. Reservasi yang check-out-nya sudah lewat 180 hari juga tetap tersamarkan saat dibaca lewat API. Otomatiskan ekspornya sekarang agar setiap bulan tertangkap selagi datanya lengkap.
 ::
 
 Pertama buat key: **Developer → API & MCP → API Keys** (`/developer/api-keys`), ketik nama, tekan **Generate key** dan salin. Halaman hanya menampilkannya sekali.
 
-::screenshot{src="/images/blog/demo/en/api-key-generated-masked.webp" alt="Halaman API keys tepat setelah membuat key bernama Blog integration: formulir Generate a new key, kotak hijau Key generated yang menyatakan Copy this key now, it will not be shown again, dengan key tersamar dan tombol salin, serta key baru terdaftar di Active keys dengan Revoke" caption="Satu key per keperluan: beri nama sesuai sheet atau script yang akan menyimpannya, dan salin selagi ditampilkan." path="/developer/api-keys"}
+::screenshot{src="/images/blog/demo/en/api-key-generated-masked.webp" alt="Halaman API keys tepat setelah membuat key bernama Blog integration: formulir Generate a new key, kotak hijau Key generated yang menyatakan Copy this key now, it will not be shown again, dengan key tersamar dan tombol salin, serta key baru terdaftar di Active keys dengan Revoke" caption="Satu key per keperluan: beri nama sesuai sheet atau skrip yang akan menyimpannya, dan salin selagi ditampilkan." path="/developer/api-keys"}
 ::
 
 ### Tanpa kode: jalankan ekspor dari dashboard
@@ -166,14 +166,14 @@ function importLastMonth() {
 4. Klik **Run** sekali dan izinkan akses saat Google memintanya.
 5. Untuk menjadwalkannya, buka **Triggers → Add Trigger**, pilih `importLastMonth`, event source **Time-driven**, dan **Month timer** pada tanggal 1 ([panduan Google](https://developers.google.com/apps-script/guides/triggers/installable)).
 
-API mengembalikan hingga 100 reservasi per panggilan. Jika satu bulan memenuhi 100 baris, bagi menjadi dua paruh. Siapa pun yang bisa mengedit script bisa membaca key-nya, jadi bagikan sheet dengan hati-hati, dan cabut key di `/developer/api-keys` jika bocor.
+API mengembalikan hingga 100 reservasi per panggilan. Jika satu bulan memenuhi 100 baris, bagi menjadi dua periode setengah bulan. Siapa pun yang bisa mengedit skrip bisa membaca key-nya, jadi bagikan sheet dengan hati-hati, dan cabut key di `/developer/api-keys` jika bocor.
 
 ### Minta asisten AI membuat tabelnya
 
 Jika Anda sudah menghubungkan Claude atau ChatGPT ke Hotelier Tools (lihat [menghubungkan Claude ke Little Hotelier](/blog/connect-claude-to-little-hotelier)), minta dengan kata-kata biasa:
 
 ::prompt{label="Claude"}
-Dengan Hotelier Tools, daftar semua reservasi yang check-out pada September 2026 sebagai tabel: referensi reservasi, nama tamu, email, check-in, check-out, jumlah malam, channel, dan total. Lalu berikan tabel yang sama dalam format CSV.
+Dengan Hotelier Tools, buat daftar semua reservasi yang check-out pada September 2026 sebagai tabel: referensi reservasi, nama tamu, email, check-in, check-out, jumlah malam, channel, dan total. Lalu berikan tabel yang sama dalam format CSV.
 ::
 
 Asisten membaca reservasi Anda lewat server MCP dan mengembalikan tabelnya. Ingat bahwa apa yang dibacanya (nama, email, jumlah) menjadi bagian dari chat Anda dengan penyedia AI tersebut.
@@ -185,5 +185,5 @@ Asisten membaca reservasi Anda lewat server MCP dan mengembalikan tabelnya. Inga
 
 - **Manual:** **Reservations → Search → Export** menghasilkan CSV berisi nama tamu, email, dan alamat, tetapi tanpa nomor telepon.
 - **Batas waktu:** data tamu disamarkan 180 hari setelah check-out, jadi ekspor setiap bulan.
-- **Aksara:** impor dengan **Data → From Text/CSV** dan UTF-8 di Excel.
+- **Huruf beraksen:** impor dengan **Data → From Text/CSV** dan UTF-8 di Excel.
 - **Otomatis:** trigger Google Sheets dengan API Hotelier Tools, atau permintaan ke asisten AI Anda. Selengkapnya di [halaman fitur API & MCP](/tools/bot/api-mcp).

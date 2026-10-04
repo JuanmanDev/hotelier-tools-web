@@ -1,7 +1,7 @@
 ---
 title: "Un huésped pide factura: cómo enviarla automáticamente al hacer el check-out desde Little Hotelier"
 seoTitle: "Enviar la factura al huésped al salir desde Little Hotelier"
-description: "Booking.com no factura a tus huéspedes: lo haces tú. Envía la factura desde Little Hotelier a mano o por email automático cuando el huésped haga el check-out."
+description: "Booking.com no factura a tus huéspedes: lo haces tú. Envía la factura desde Little Hotelier a mano, o por email automático tras el check-out del huésped."
 date: 2026-10-03
 category: invoicing
 tags: [invoices, checkout, booking.com, little hotelier, automation]
@@ -27,7 +27,7 @@ Booking.com nunca factura a tus huéspedes: lo hace el alojamiento, aunque Booki
 
 ## ¿Envía Booking.com una factura al huésped?
 
-No. La ayuda para socios de Booking.com lo deja claro: cada reserva es un acuerdo entre tú y tu huésped, así que «es tu responsabilidad proporcionar la factura al huésped, no de Booking.com», sea quien sea el que gestionó el pago ([Booking.com Partner Hub](https://partner.booking.com/en-gb/help/policies-payments/guest-payments/supplying-guests-invoices)).
+No. La ayuda para partners de Booking.com lo deja claro: cada reserva es un acuerdo entre tú y tu huésped, así que «es tu responsabilidad proporcionar la factura al huésped, no de Booking.com», sea quien sea el que gestionó el pago ([Booking.com Partner Hub](https://partner.booking.com/en-gb/help/policies-payments/guest-payments/supplying-guests-invoices)).
 
 La misma página añade tres reglas prácticas:
 
@@ -43,7 +43,7 @@ Depende de tu país, pero en la UE una factura completa con IVA incluye ([Comisi
 
 - fecha de emisión y un número único y correlativo
 - tu nombre completo y tu dirección, y los del cliente
-- el número de IVA del cliente, cuando este es quien debe el impuesto (normalmente una empresa)
+- el NIF o número de IVA del cliente, cuando este es quien debe el impuesto (normalmente una empresa)
 - una descripción de la estancia, el precio unitario sin impuestos y la fecha de la operación si es distinta
 - el tipo de IVA, la cuota de IVA y un desglose por tipos
 
@@ -57,7 +57,7 @@ Configura tu formato una sola vez en Little Hotelier, en **Front Desk > Setup > 
 2. Ve a la pestaña **Invoices** y haz clic en **Generate invoice**.
 3. Haz clic en **Email** y elige **Invoice**. Little Hotelier la envía al email del contacto principal de la reserva.
 
-También puedes marcar **Email invoice** al **Record Payment** (registrar un pago). Si editas la reserva después, la pestaña Invoices muestra **Invoice is outdated**; haz clic para generar una factura corregida y envía esa. Fuentes: [Generate, print, and email a guest invoice](https://helpcentre.littlehotelier.com/en/articles/8673812-generate-print-and-email-a-guest-invoice) y [Record a payment](https://helpcentre.littlehotelier.com/en/articles/9743295-record-a-payment-or-refund-for-a-reservation).
+También puedes marcar **Email invoice** al usar **Record Payment** (registrar un pago). Si editas la reserva después, la pestaña Invoices muestra **Invoice is outdated**; haz clic para generar una factura corregida y envía esa. Fuentes: [Generate, print, and email a guest invoice](https://helpcentre.littlehotelier.com/en/articles/8673812-generate-print-and-email-a-guest-invoice) y [Record a payment](https://helpcentre.littlehotelier.com/en/articles/9743295-record-a-payment-or-refund-for-a-reservation).
 
 Para imprimir en vez de enviar, haz clic en **Print** y elige **Invoice**. El script gratuito [Botón Extra de Imprimir Factura](/tools/ui/extra-invoice-print-button) añade un enlace directo para que te saltes el menú:
 
@@ -71,7 +71,7 @@ El inconveniente: es un paso manual con cada huésped. Los emails automáticos d
 **Factura a la salida** de Hotelier Tools (beta) hace por ti los pasos manuales de arriba, después del check-out. Marcas una reserva una sola vez; marcarla no envía nada en ese momento.
 
 1. Abre **Factura a la salida** (`/invoice-on-leave`). Si el aviso dice que aún no hay tarea, pulsa **Crear la tarea diaria (16:00, después del check-out)**.
-2. Solo se emite factura de una estancia con el **check-out hecho** en Little Hotelier. Si tu equipo no hace el check-out de los huéspedes a mano antes de las 16:00, usa la tarjeta **Check-out automático** y pulsa **Crear la tarea diaria (15:05)**. Cierra las salidas del día en Little Hotelier, así que se mantiene apagada hasta que la crees.
+2. Solo se emite factura de una estancia con el **check-out hecho** en Little Hotelier. Si tu equipo no hace el check-out de los huéspedes a mano antes de las 16:00, usa la tarjeta **Check-out automático** y pulsa **Crear la tarea diaria (15:05)**. Cierra las salidas del día en Little Hotelier, por eso no se activa hasta que la crees.
 3. Busca la reserva y activa **Facturar al salir** para ella. Los filtros de inscritas y no inscritas muestran cómo está cada estancia. Puedes inscribir a un huésped que todavía está en el alojamiento: la factura sale en la primera ejecución después de que se vaya.
 4. Tras el check-out, la tarea diaria le pide a Little Hotelier que genere la factura, y Little Hotelier la envía por email desde tu propia plantilla y tu propio remitente.
 5. Mira **Facturas pendientes de enviar** (`/invoice-on-leave/scheduled`) para ver lo que está en cola, lo que vence hoy, lo atrasado o lo ya facturado.
@@ -79,17 +79,17 @@ El inconveniente: es un paso manual con cada huésped. Los emails automáticos d
 ::screenshot{src="/images/blog/demo/es/invoice-at-checkout-full.webp" alt="Página completa Factura a la salida: un aviso rojo de que nada hace el check-out de los huéspedes automáticamente, la tarjeta Check-out automático (sin configurar) con Crear la tarea diaria (15:05), la tarea Facturación automática a la salida en marcha, el enlace Facturas pendientes de enviar y nueve reservas, cada una con un botón Facturar al salir" caption="Crea la tarea de check-out si la necesitas y marca la estancia con Facturar al salir. La factura se crea y se envía después de que el huésped haga el check-out." path="/invoice-on-leave" width="1440" height="1526"}
 ::
 
-¿La necesitas ya? Cada fila tiene una acción **Procesar ahora** para emitir esa factura de inmediato.
+¿La necesitas ya? Cada fila tiene una acción para procesarla al momento y emitir esa factura de inmediato.
 
-### Qué la mantiene a salvo
+### Por qué es seguro
 
-- **La marca vive en Little Hotelier.** La inscripción se guarda como una etiqueta en las notas de la reserva en Little Hotelier, así que tu personal puede verla allí.
+- **La marca se guarda en Little Hotelier.** La inscripción se guarda como una etiqueta en las notas de la reserva en Little Hotelier, así que tu personal puede verla allí.
 - **Sin envíos dobles.** Una segunda etiqueta marca «factura enviada», que se escribe solo cuando Little Hotelier acepta el email. Las estancias ya facturadas no se pueden inscribir de nuevo.
 - **La misma comprobación previa que la facturación masiva.** Una factura de empresa sin NIF o sin dirección fiscal, o con un NIF mal formado, se rechaza en vez de enviarse a medias.
 - **Recuperación y límites.** La tarea diaria mira 8 días atrás para recuperar ejecuciones perdidas y lee hasta 100 check-outs por ejecución. Una estancia pasada sin email del huésped se avisa una vez, no se reintenta cada día.
 
 ::callout{type="info" title="Herramienta independiente"}
-Hotelier Tools no está afiliado ni respaldado por SiteMinder ni por Little Hotelier. Se conecta con el propio acceso de tu hotel a Little Hotelier, y la factura es un documento de Little Hotelier.
+Hotelier Tools no está afiliado a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo. Se conecta con el propio acceso de tu hotel a Little Hotelier, y la factura es un documento de Little Hotelier.
 ::
 
 ::demo-cta{path="/invoice-on-leave"}
@@ -111,7 +111,7 @@ Si las peticiones de factura te llegan por mensajes de Booking.com, mira [cómo 
 
 ## ¿Cómo reenvío una factura?
 
-Abre la reserva y usa otra vez **Email > Invoice**. Un consejo de momento: una vez que una factura está **marcada como final**, Little Hotelier ya no ofrece Print ni Email para ella. Envíala primero y finalízala después, o descarga el PDF más tarde desde el informe de facturas.
+Abre la reserva y usa otra vez **Email > Invoice**. Un consejo sobre el orden: una vez que una factura está **marcada como final**, Little Hotelier ya no ofrece Print ni Email para ella. Envíala primero y finalízala después, o descarga el PDF más tarde desde el informe de facturas.
 
 ::callout{type="tip" title="Huéspedes que pagan por transferencia bancaria"}
 El script [Botón de Email de Transferencia Bancaria](/tools/ui/bank-transfer-email-button) añade un botón que envía por email tus datos bancarios desde la reserva. Todavía no está publicado y se prepara bajo petición para cada alojamiento.

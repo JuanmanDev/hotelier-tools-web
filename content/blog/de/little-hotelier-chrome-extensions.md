@@ -1,7 +1,7 @@
 ---
-title: "Chrome-Erweiterung für Little Hotelier: kostenlose Userscripts, die ihn schneller machen"
+title: "Chrome-Erweiterung für Little Hotelier: kostenlose Userscripts für schnelleres Arbeiten"
 seoTitle: "Chrome-Erweiterung für Little Hotelier: kostenlose Skripte"
-description: "Kostenlose Userscripts für Little Hotelier: Preise im Kalender, breitere Tabellen, Booking.com-Provision, Rechnung per Klick. Sicher installieren."
+description: "Kostenlose Userscripts für Little Hotelier: Kalenderpreise, breitere Tabellen, Booking.com-Provision, Rechnung per Klick. So installieren Sie sie sicher."
 date: 2026-10-03
 category: tips
 tags: [chrome extension, tampermonkey, userscripts, little hotelier, productivity]
@@ -11,41 +11,41 @@ cover: /images/scripts/prices-display/to.png
 coverAlt: "Little-Hotelier-Kalender (spanische Oberfläche) mit dem Preis jeder Nacht unter jedem Zimmertyp, eingefügt vom Skript Prices Display"
 faq:
   - q: "Stammen diese Skripte von Little Hotelier?"
-    a: "Nein. Es sind kostenlose, unabhängige Skripte von Hotelier Tools, das weder mit SiteMinder oder Little Hotelier verbunden noch von ihnen empfohlen ist. Sie laufen in Ihrem eigenen Browser, in Ihrer eigenen Little-Hotelier-Sitzung."
-  - q: "Tampermonkey oder eine Chrome-Erweiterung: was brauche ich?"
+    a: "Nein. Es sind kostenlose, unabhängige Skripte von Hotelier Tools. Hotelier Tools steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen. Die Skripte laufen in Ihrem eigenen Browser, in Ihrer eigenen Little-Hotelier-Sitzung."
+  - q: "Tampermonkey oder eine Chrome-Erweiterung: Was brauche ich?"
     a: "In gewisser Weise beides: Tampermonkey ist die Chrome-Erweiterung, und die Skripte laufen darin. Sie installieren Tampermonkey einmal und fügen dann nur die Skripte hinzu, die Sie wollen."
   - q: "Funktionieren die Skripte auf einem Tablet?"
     a: "Tampermonkey läuft in mehreren Browsern, und sein Menü bietet eine Version für Smartphones und Tablets an. Für Touchscreens installieren Sie Improve Style For Touch Screens, das Schaltflächen und Menüs vergrößert. Testen Sie zuerst auf Ihrem eigenen Gerät."
   - q: "Geht ein Skript kaputt, wenn Little Hotelier aktualisiert wird?"
-    a: "Das kann passieren. Skripte verändern die Seiten von Little Hotelier, ein Redesign kann also eines außer Funktion setzen, bis es aktualisiert ist. Schalten Sie es im Tampermonkey-Menü aus und melden Sie das Problem auf GitHub."
+    a: "Das kann passieren. Skripte verändern die Seiten von Little Hotelier. Nach einem Redesign funktioniert eines davon womöglich nicht mehr, bis es aktualisiert ist. Schalten Sie es im Tampermonkey-Menü aus und melden Sie das Problem auf GitHub."
   - q: "Wie deinstalliere ich ein Skript?"
-    a: "Klicken Sie auf das Tampermonkey-Symbol und schalten Sie das Skript aus, oder öffnen Sie das Dashboard und löschen Sie es. Laden Sie Little Hotelier neu, und die Seite ist wieder wie vorher."
+    a: "Klicken Sie auf das Tampermonkey-Symbol und schalten Sie das Skript aus, oder öffnen Sie das Dashboard und löschen Sie es. Laden Sie Little Hotelier neu, dann sieht die Seite wieder normal aus."
   - q: "Kosten die Skripte etwas?"
     a: "Nein. Die Browser-Skripte sind für immer kostenlos, ein Konto ist nicht nötig."
 ---
 
-Mit kostenlosen Userscripts machen Sie Little Hotelier schneller: kleine Zusätze, die über die Erweiterung Tampermonkey in Ihrem Browser laufen. Sie blenden Preise im Kalender ein, verbreitern enge Tabellen, schätzen die Booking.com-Provision je Buchung, legen einen Rechnungsknopf mit einem Klick in die Reservierung und mehr. Installieren Sie Tampermonkey einmal, schalten Sie in Chrome **Allow User Scripts** ein und klicken Sie dann auf der Seite eines Skripts auf **Install on Tampermonkey**.
+Mit kostenlosen Userscripts machen Sie Little Hotelier schneller: kleine Zusätze, die über die Erweiterung Tampermonkey in Ihrem Browser laufen. Sie blenden Preise im Kalender ein, verbreitern enge Tabellen, schätzen die Booking.com-Provision je Buchung, fügen der Reservierung eine Schaltfläche für die Rechnung per Klick hinzu und mehr. Installieren Sie Tampermonkey einmal, schalten Sie in Chrome **Allow User Scripts** ein und klicken Sie dann auf der Seite eines Skripts auf **Install on Tampermonkey**.
 
 ## Was ist Tampermonkey, und warum Skripte statt einer Erweiterung?
 
-Tampermonkey ist eine Browser-Erweiterung, die **Userscripts** ausführt: kleine JavaScript-Dateien, die eine Webseite nach dem Laden anpassen. Statt für jede Kleinigkeit eine eigene Erweiterung installieren Sie Tampermonkey einmal und fügen nur die Skripte hinzu, die Sie brauchen. Es läuft in Chrome, Edge, Firefox, Safari und Opera.
+Tampermonkey ist eine Browser-Erweiterung, die **Userscripts** ausführt: kleine JavaScript-Dateien, die eine Webseite nach dem Laden anpassen. Statt für jede Kleinigkeit eine eigene Erweiterung zu installieren, richten Sie Tampermonkey einmal ein und fügen nur die Skripte hinzu, die Sie brauchen. Es läuft in Chrome, Edge, Firefox, Safari und Opera.
 
-Jedes Skript von Hotelier Tools ist eine einzelne, lesbare Datei in einem [öffentlichen GitHub-Repository](https://github.com/JuanmanDev/TampermonkeyLittleHotelier). Es gibt 16: 15 sofort installierbar und eines auf Anfrage. Alle sind für immer kostenlos.
+Jedes Skript von Hotelier Tools ist eine einzelne, lesbare Datei in einem [öffentlichen GitHub-Repository](https://github.com/JuanmanDev/TampermonkeyLittleHotelier). Es gibt 16: 15 sind sofort installierbar, eines wird auf Anfrage eingerichtet. Alle sind für immer kostenlos.
 
-## Sind Userscripts sicher? Was sie anfassen können und was nicht
+## Sind Userscripts sicher? Worauf sie zugreifen können und worauf nicht
 
-Eine berechtigte Frage, denn ein Skript läuft in der Seite, in der Ihre Buchungen liegen. Das tun diese Skripte und das nicht:
+Eine berechtigte Frage, denn ein Skript läuft auf der Seite, auf der Ihre Buchungen liegen. Das tun diese Skripte, und das tun sie nicht:
 
 - **Sie laufen nur auf Little Hotelier.** Jedes Skript legt fest, auf welchen Seiten es laufen darf: den eigenen Adressen von Little Hotelier (einschließlich Direct Booking) und, beim Chekin-Skript, denen von Chekin.
 - **Ihre Daten bleiben, wo sie sind.** Die Skripte sprechen mit Little Hotelier (und bei diesem einen Skript mit Chekin). An Hotelier Tools wird nichts gesendet.
-- **Sie handeln als Sie.** Ein Skript nutzt Ihre offene Sitzung, es kann also nur tun, was Sie mit eigenen Klicks tun könnten. Einige passen ein Formular an, bevor Sie auf Speichern klicken, etwa um das Land oder die Zahl der Erwachsenen zu setzen.
+- **Sie handeln in Ihrem Namen.** Ein Skript nutzt Ihre offene Sitzung, es kann also nur tun, was Sie mit eigenen Klicks tun könnten. Einige passen ein Formular an, bevor Sie auf Speichern klicken, etwa um das Land oder die Zahl der Erwachsenen zu setzen.
 - **Sie können sie lesen.** Der Code ist öffentlich, und Tampermonkey zeigt ihn vor der Installation an.
-- **Sie aktualisieren sich selbst.** Jedes Skript trägt seine GitHub-Adresse, damit Tampermonkey neue Versionen holen kann.
+- **Sie aktualisieren sich selbst.** Jedes Skript enthält seine GitHub-Adresse, damit Tampermonkey neue Versionen holen kann.
 
 Die allgemeine Regel für jedes Userscript: Installieren Sie nur aus Quellen, denen Sie vertrauen. Und wenn Little Hotelier eine Seite ändert, kann ein Skript aufhören zu funktionieren, bis es aktualisiert ist. Schalten Sie es im Tampermonkey-Menü aus und melden Sie es auf GitHub.
 
 ::callout{type="info" title="Unabhängig und kostenlos"}
-Diese Skripte werden von Hotelier Tools veröffentlicht, das weder mit SiteMinder oder Little Hotelier verbunden noch von ihnen empfohlen ist. Sie arbeiten im eigenen Little-Hotelier-Login Ihres Hotels und brauchen kein Konto.
+Diese Skripte werden von Hotelier Tools veröffentlicht. Hotelier Tools steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen. Die Skripte arbeiten mit dem eigenen Little-Hotelier-Login Ihres Hotels und brauchen kein Konto.
 ::
 
 ## So installieren Sie ein Skript (beim ersten Mal etwa fünf Minuten)
@@ -78,7 +78,7 @@ Jedes Skript hat eine eigene Seite mit Vorher-nachher-Bildern und der Installati
 
 ### Preise und Booking.com-Provisionen
 
-- [Prices Display](/tools/ui/prices-display): zeigt den Zimmerpreis jeder Nacht im Kalender an, gelesen von Ihrer Seite Inventory. Praktisch, wenn ein Gast anruft und nach Freitag fragt.
+- [Prices Display](/tools/ui/prices-display): zeigt den Zimmerpreis jeder Nacht im Kalender an, ausgelesen aus Ihrer Seite Inventory. Praktisch, wenn ein Gast anruft und nach Freitag fragt.
 - [Show Booking.com Commissions](/tools/ui/show-booking-commissions): ergänzt Booking.com-Reservierungen um eine geschätzte Aufschlüsselung der Provision und einen ungefähren Nettobetrag. Es ist eine Schätzung, maßgeblich ist Ihre Booking.com-Rechnung. Mehr in [Wie viel Provision nimmt Booking.com?](/blog/booking-com-commission).
 - [Change Inventory Name](/tools/ui/change-inventory-name): benennt das Menü **Inventory** in „Inventory - Prices“ um (Englisch und Spanisch), damit neue Mitarbeiter die Preise finden.
 
@@ -94,7 +94,7 @@ Jedes Skript hat eine eigene Seite mit Vorher-nachher-Bildern und der Installati
 ::screenshot{src="/images/scripts/extra-invoice-print-button/to.png" alt="Fußbereich einer Little-Hotelier-Reservierung (spanische Oberfläche) mit einem zusätzlichen Link Imprimir Factura neben den Menüs Print und Email" caption="Ein Klick, um die Rechnung zu drucken." width="604" height="265"}
 ::
 
-Sie möchten, dass die Rechnung ganz ohne Klick rausgeht? Siehe [Rechnung automatisch beim Check-out an den Gast senden](/blog/send-invoice-to-guest-at-checkout).
+Sie möchten, dass die Rechnung ganz ohne Klick verschickt wird? Siehe [Rechnung automatisch beim Check-out an den Gast senden](/blog/send-invoice-to-guest-at-checkout).
 
 ### Gästedaten und Check-in
 
@@ -109,18 +109,18 @@ Sie möchten, dass die Rechnung ganz ohne Klick rausgeht? Siehe [Rechnung automa
 
 - [Auto Refresh On Inactivity](/tools/ui/auto-refresh-inactivity): lädt die Seite nach 10 Minuten ohne Klicks, Mausbewegung oder Scrollen neu, damit Sie nicht zu einer abgelaufenen Sitzung zurückkommen. Es lädt nie neu, während Sie arbeiten.
 - [Improve Style For Touch Screens](/tools/ui/improve-style-touch-screens): größere Schaltflächen und Menüs für Tablets, und die Schaltfläche zum Entfernen eines Zimmers, die sonst nur beim Darüberfahren mit der Maus erscheint, ist immer sichtbar.
-- [Add Button Check on Front Desk](/tools/ui/add-button-check-front-desk): bei einer Direct-Booking-Reservierung eine Schaltfläche, um sie im Front Desk einzuchecken und Erstattungen zu prüfen. Wenn Sie nicht im Front Desk angemeldet sind, müssen Sie sie eventuell zweimal drücken.
+- [Add Button Check on Front Desk](/tools/ui/add-button-check-front-desk): bei einer Direct-Booking-Reservierung eine Schaltfläche, um die Reservierungsdetails im Front Desk zu prüfen und Erstattungen zu kontrollieren. Wenn Sie nicht im Front Desk angemeldet sind, müssen Sie sie eventuell zweimal drücken.
 
 ## Welche Skripte zuerst installieren?
 
 - **Rezeption am Laptop:** Full Width Reservation Table, Auto Refresh On Inactivity, Extra Invoice Print Button.
-- **Eigentümer oder Revenue:** Prices Display und Show Booking.com Commissions.
+- **Inhaber oder Revenue-Management:** Prices Display und Show Booking.com Commissions.
 - **Betriebe in Spanien:** Easy Save Province and Country, dazu Chekin Connection, wenn Sie Chekin nutzen.
 - **Tablet an der Rezeption:** Improve Style For Touch Screens.
 
 ## Wenn Sie mehr brauchen als Änderungen an der Oberfläche
 
-Skripte verändern, was Sie sehen, solange Sie vor dem Bildschirm sitzen. Sie können nicht arbeiten, während Sie weg sind. Für Aufgaben, die von allein laufen, etwa jede Anreise auf fehlende Ausweise zu prüfen oder Rechnungen beim Check-out zu mailen, gibt es das [Hotelier-Tools-Dashboard](/tools/bot). Es ist für jedes Hotel kostenlos, bis die Abrechnung am 10. Januar 2027 beginnt. Die Skripte bleiben für immer kostenlos. Weitere Abkürzungen in Little Hotelier selbst finden Sie unter [Little-Hotelier-Tipps und versteckte Funktionen](/blog/little-hotelier-tips).
+Skripte verändern, was Sie sehen, solange Sie vor dem Bildschirm sitzen. Wenn Sie nicht da sind, können sie nichts tun. Für Aufgaben, die selbstständig laufen, etwa jede Anreise auf fehlende Ausweise zu prüfen oder Rechnungen beim Check-out per E-Mail zu versenden, gibt es das [Hotelier-Tools-Dashboard](/tools/bot). Es ist für jedes Hotel kostenlos, bis die Abrechnung am 10. Januar 2027 beginnt. Die Skripte bleiben für immer kostenlos. Weitere Abkürzungen in Little Hotelier selbst finden Sie unter [Little-Hotelier-Tipps und versteckte Funktionen](/blog/little-hotelier-tips).
 
 ::demo-cta{path="/"}
 ::
@@ -129,5 +129,5 @@ Skripte verändern, was Sie sehen, solange Sie vor dem Bildschirm sitzen. Sie k�
 
 - Installieren Sie Tampermonkey einmal, erlauben Sie Userscripts und klicken Sie dann bei jedem gewünschten Skript auf **Install on Tampermonkey**.
 - Die Skripte laufen nur auf Little Hotelier (und bei einem davon auf Chekin), senden nichts an Hotelier Tools und aktualisieren sich selbst.
-- Beginnen Sie mit denen, die zu Ihrer Aufgabe passen: breitere Tabellen und Auto Refresh für die Rezeption, Preise und Provisionen für den Eigentümer.
+- Beginnen Sie mit denen, die zu Ihrer Aufgabe passen: breitere Tabellen und Auto Refresh für die Rezeption, Preise und Provisionen für Inhaber.
 - Wenn eines nach einem Update von Little Hotelier Probleme macht, schalten Sie es im Tampermonkey-Menü aus.

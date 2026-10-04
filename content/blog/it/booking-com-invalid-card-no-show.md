@@ -1,7 +1,7 @@
 ---
-title: "Booking.com carta non valida o no-show: cosa fare, passo per passo"
-seoTitle: "Booking.com carta non valida o no-show: cosa fare"
-description: "Segnala la carta come non valida, dai 24 ore all'ospite, poi cancella senza commissione. Scadenze del no-show, carte virtuali rifiutate e controlli."
+title: "Carta non valida su Booking.com o no-show: cosa fare, passo per passo"
+seoTitle: "Carta non valida su Booking.com o no-show: cosa fare"
+description: "Segnala la carta come non valida, dai 24 ore all'ospite e cancella senza commissione. Più scadenze del no-show, carte virtuali rifiutate e prevenzione."
 date: 2026-10-03
 category: operations
 tags: [booking.com, no-show, payments, little hotelier, automated checks]
@@ -25,7 +25,7 @@ faq:
     a: "No. I controlli automatici si limitano a segnalare: avvisano di un saldo da pagare prima dell'arrivo e decidi tu cosa fare. Hotelier Tools è indipendente e si collega con il login Little Hotelier della tua struttura."
 ---
 
-Segnala la carta come non valida nell'Extranet di Booking.com, nell'app Pulse o nel Channel Manager di Little Hotelier. L'ospite ha poi 24 ore per inviare una nuova carta (12 ore se ha prenotato entro 48 ore dal check-in) e, se non lo fa, puoi cancellare senza pagare commissione. Per un ospite che non si presenta, segna il no-show tra la mezzanotte della data di check-in e 48 ore dopo il check-out previsto, e scegli se addebitare o rinunciare alla penale.
+Segnala la carta come non valida nell'Extranet di Booking.com, nell'app Pulse o nel Channel Manager di Little Hotelier. L'ospite ha poi 24 ore per inviare una nuova carta (12 ore se ha prenotato entro 48 ore dal check-in) e, se non lo fa, puoi cancellare senza pagare commissione. Per un ospite che non si presenta, segna il no-show tra la mezzanotte della data di check-in e 48 ore dopo il check-out previsto, e scegli se addebitare la penale o rinunciarvi.
 
 Passaggi e scadenze qui sotto sono stati verificati sul Partner Help di Booking.com a ottobre 2026.
 
@@ -59,7 +59,7 @@ Fallo appena un addebito o una convalida non va a buon fine. Il tempo per l'ospi
 2. Apri la prenotazione Booking.com e clicca sulla scheda **Manage Reservation**.
 3. Clicca su **Report payment card as invalid to Booking.com**. Una finestra verde lo conferma; una rossa significa che devi controllare l'Extranet ([centro assistenza di Little Hotelier](https://helpcentre.littlehotelier.com/en/articles/9303299-report-a-booking-com-reservation-as-a-no-show-or-payment-invalid)).
 
-Booking.com scrive quindi via email e SMS all'ospite chiedendo i dati di una nuova carta, e scrive a te quando li aggiorna. Annota nelle note della prenotazione cosa hai provato (data, importo, motivo del rifiuto): aiuta chi sarà al banco dopo di te.
+Booking.com scrive quindi via email e SMS all'ospite chiedendo i dati di una nuova carta, e scrive a te quando li aggiorna. Annota nelle note della prenotazione cosa hai provato (data, importo, motivo del rifiuto): aiuta chi sarà alla reception dopo di te.
 
 ## Quanto tempo ha l'ospite per aggiornare la carta?
 
@@ -107,7 +107,7 @@ Una carta di credito virtuale è una Mastercard digitale temporanea che Booking.
 | "Invalid merchant" | Il tuo terminale deve essere registrato come fornitore di alloggi. Chiama il tuo gestore di pagamenti. |
 | Blocco di sicurezza | Troppi tentativi falliti. Riprova dopo 24-48 ore. |
 
-Non pre-autorizzare mai una carta virtuale. Se l'hai fatto, regola l'importo con il codice di autorizzazione oppure annulla l'autorizzazione e addebita di nuovo. Ancora rifiutata? Chiedi al tuo gestore di pagamenti il codice di rifiuto, poi scrivi a Booking.com dalla inbox dell'Extranet.
+Non pre-autorizzare mai una carta virtuale. Se l'hai fatto, completa l'addebito con il codice di autorizzazione oppure annulla l'autorizzazione e addebita di nuovo. Ancora rifiutata? Chiedi al tuo gestore di pagamenti il codice di rifiuto, poi scrivi a Booking.com dalla inbox dell'Extranet.
 
 ## Come segnare un no-show e addebitare (o rinunciare a) la penale
 
@@ -127,8 +127,8 @@ Un no-show è un ospite che non è arrivato entro la mezzanotte della data di ch
 Quanto ti costa:
 
 - **Penale addebitata:** paghi la commissione sulla penale.
-- **Penale rinunciata e segnalata in tempo:** nessuna commissione.
-- **Non segnalato entro 48 ore dal check-out:** commissione piena sulla prenotazione originale.
+- **Rinuncia alla penale e no-show segnalato in tempo:** nessuna commissione.
+- **No-show non segnalato entro 48 ore dal check-out:** commissione piena sulla prenotazione originale.
 - **Con Payments by Booking.com:** Booking.com prova a incassare la penale per le prenotazioni non prepagate e te la versa; se non ci riesce, rinuncia alla commissione. Dove incassa le penali di no-show per le prenotazioni con cancellazione gratuita, segnalale entro quattro giorni di calendario dal check-in ([Payments by Booking.com](https://partner.booking.com/en-us/help/payments-payouts-invoices/payments-bookingcom/joining-payments-bookingcom)).
 
 ## Come accorgersi dei problemi di pagamento prima dell'arrivo
@@ -151,7 +151,7 @@ Il controllo **When they leave** guarda di nuovo il saldo al check-out. I contro
 ::demo-cta{path="/automated-checks/issues"}
 ::
 
-La routine quotidiana completa è in [la checklist della reception: 8 problemi da individuare prima dell'arrivo](/blog/hotel-front-desk-checklist-automation), e ogni controllo è nella [pagina Automated checks](/tools/bot/automated-checks). Hotelier Tools è gratuito per ogni struttura fino all'inizio della fatturazione, il 10 gennaio 2027.
+La routine quotidiana completa è nella [checklist della reception: 8 problemi da individuare prima dell'arrivo](/blog/hotel-front-desk-checklist-automation), e ogni controllo è nella [pagina Automated checks](/tools/bot/automated-checks). Hotelier Tools è gratuito per ogni struttura fino all'inizio della fatturazione, il 10 gennaio 2027.
 
 ::callout{type="info" title="Strumento indipendente"}
 Hotelier Tools non è affiliato né approvato da Booking.com, SiteMinder o Little Hotelier. Si collega con il login Little Hotelier della tua struttura.
@@ -159,13 +159,13 @@ Hotelier Tools non è affiliato né approvato da Booking.com, SiteMinder o Littl
 
 ### Conviene aggiungere l'ospite a una lista do-not-rebook?
 
-Se un ospite se n'è andato senza pagare, o ha continuato a dare carte che non funzionavano, potresti non volerlo più. In **Issues** premi **Do not rebook…** sulla sua prenotazione, scegli l'ospite, un livello di gravità (per esempio **Do not accept again**) e un motivo oggettivo. Da quel momento, una nuova prenotazione che corrisponde genera un avviso.
+Se un ospite se n'è andato senza pagare, o ha continuato a dare carte che non funzionavano, potresti non volerlo più ospitare. In **Issues** premi **Do not rebook…** sulla sua prenotazione, scegli l'ospite, un livello di gravità (per esempio **Do not accept again**) e un motivo oggettivo. Da quel momento, una nuova prenotazione che corrisponde genera un avviso.
 
-Avvisa e basta. Non cancella né rifiuta mai una prenotazione: decide una persona. Il solo nome non basta mai a far scattare la corrispondenza; serve lo stesso numero di documento, la stessa email esatta o un telefono con le ultime 8 cifre uguali (oppure un nome più la stessa nazionalità o data di nascita). Scrivi motivi oggettivi. Maggiori dettagli in [come tenere una lista nera degli ospiti nel rispetto della legge](/blog/hotel-do-not-rent-list).
+Avvisa e basta. Non cancella né rifiuta mai una prenotazione: decide una persona. Il solo nome non basta mai a far scattare la corrispondenza; serve lo stesso numero di documento, la stessa email o un telefono con le ultime 8 cifre uguali (oppure un nome più la stessa nazionalità o data di nascita). Scrivi motivi oggettivi. Maggiori dettagli in [come tenere una lista nera degli ospiti nel rispetto della legge](/blog/hotel-do-not-rent-list).
 
 ## Riepilogo
 
-- Carta rifiutata: segnalala come non valida (Extranet, Pulse o scheda **Manage Reservation** di Little Hotelier). L'ospite ha 24 ore, 12 per le prenotazioni last minute, 2 per i soggiorni dell'ultimo minuto di 10 o più notti.
+- Carta rifiutata: segnalala come non valida (Extranet, Pulse o scheda **Manage Reservation** di Little Hotelier). L'ospite ha 24 ore, 12 se ha prenotato nelle 48 ore prima del check-in, 2 se in più il soggiorno è di 10 o più notti.
 - Nessuna carta valida: cancella tramite Booking.com, senza commissione. Oppure invia prima una richiesta di pagamento.
-- L'ospite non è venuto: segna il no-show entro 48 ore dal check-out previsto e addebita la penale o rinuncia.
+- L'ospite non è venuto: segna il no-show entro 48 ore dal check-out previsto e addebita la penale o rinunciaci.
 - Accorgitene presto: lascia che un controllo programmato elenchi ogni arrivo che deve ancora pagare, giorni prima dell'arrivo.

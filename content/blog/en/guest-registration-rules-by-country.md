@@ -43,8 +43,8 @@ This is a summary as of October 2026, checked against official sources linked in
 
 ## Spain: SES.Hospedajes
 
-- **Who:** every guest, in hotels, hostales, B&Bs, rural houses, campsites and holiday lets, under [Royal Decree 933/2021](https://www.boe.es/buscar/act.php?id=BOE-A-2021-17461). Catalonia reports to the Mossos d'Esquadra and the Basque Country to the Ertzaintza instead.
-- **What:** names, sex, ID type and number with its support number, nationality, date of birth, address, phone and email, the relationship between travellers when one is a minor, plus booking and payment details.
+- **Who:** every guest, in hotels, hostales, B&Bs, rural houses, campsites and vacation rentals, under [Royal Decree 933/2021](https://www.boe.es/buscar/act.php?id=BOE-A-2021-17461). Catalonia reports to the Mossos d'Esquadra and the Basque Country to the Ertzaintza instead.
+- **What:** names, sex, ID type and number with its support number, nationality, date of birth, address, phone and email, the relationship between travelers when one is a minor, plus booking and payment details.
 - **Deadline:** within 24 hours of the booking or cancellation, and within 24 hours of check-in. Keep records for 3 years.
 - **How:** the [SES.Hospedajes](https://sede.interior.gob.es/portal/sede/informacion_hospedajes) web form, an XML file upload, or a web service from your software.
 
@@ -71,7 +71,7 @@ Statistics reporting to ISTAT or your region (for example Ross1000) is a separat
 ## Germany: Meldeschein
 
 - **Who:** since **1 January 2025**, only **foreign** guests. The Bureaucracy Relief Act IV (BEG IV) removed the duty for German citizens ([Federal Law Gazette 2024 I No. 323](https://www.recht.bund.de/bgbl/1/2024/323/regelungstext.pdf?__blob=publicationFile&v=3)). Accompanying foreign spouses, partners and minor children are only counted. For groups of more than 10, the tour leader signs.
-- **What:** arrival and expected departure dates, surname, first names, date of birth, nationalities, address, number and nationality of foreign co-travellers, and the passport serial number. You must compare the form with the ID document ([§ 30 BMG](https://www.gesetze-im-internet.de/bmg/__30.html)).
+- **What:** arrival and expected departure dates, surname, first names, date of birth, nationalities, address, number and nationality of foreign co-travelers, and the passport serial number. You must compare the form with the ID document ([§ 30 BMG](https://www.gesetze-im-internet.de/bmg/__30.html)).
 - **Deadline:** the guest signs by hand on the day of arrival ([§ 29 BMG](https://www.gesetze-im-internet.de/bmg/__29.html)). Keep forms for 1 year after departure, destroy them within 3 months after that, and show them to the authorities on request.
 - **How:** paper, or digitally with the guest's consent: a card payment with strong customer authentication, the electronic ID function, or an approved pilot procedure.
 - **Fines:** up to €1,000.
@@ -80,7 +80,7 @@ Federal state law can add fields for tourist or spa tax, so a local form may sti
 
 ## France: fiche individuelle de police
 
-- **Who:** every guest who is not French, "including" EU nationals, in hotels, holiday villages, tourist residences, furnished holiday lets, *chambres d'hôtes* and campsites ([Service-Public](https://www.service-public.gouv.fr/particuliers/vosdroits/F33458)).
+- **Who:** every guest who is not French, "including" EU nationals, in hotels, vacation villages, tourist residences, furnished vacation rentals, *chambres d'hôtes* and campsites ([Service-Public](https://www.service-public.gouv.fr/particuliers/vosdroits/F33458)).
 - **What:** name and first names, date and place of birth, nationality, usual address, mobile phone and email, and arrival and planned departure dates. Children under 15 can go on an accompanying adult's form (CESEDA article R814-2, [Légifrance](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042803266/)).
 - **Deadline:** filled in on arrival. Keep the forms for **6 months**.
 - **How:** there is no routine online reporting. You hand the forms to the police or gendarmerie when they ask, on paper or electronically. The form model is set by the [order of 1 October 2015](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000031285813).
@@ -112,7 +112,7 @@ The Immigration Bureau's site could not be loaded from Europe in October 2026, s
 
 ## How to collect guest IDs in Little Hotelier
 
-Little Hotelier's reservation has a **Guests** tab with a form for each guest. Besides name, email and phone, it has gender, a second surname, and, under the expand arrow, the ID document type, ID number, nationality, issue date, expiry date, date of birth and a full address with country, city, state and postcode ([edit a reservation](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)). Add companions as extra guests.
+Little Hotelier's reservation has a **Guests** tab with a form for each guest. Besides name, email and phone, it has gender, a second surname, and, under the expand arrow, the ID document type, ID number, nationality, issue date, expiry date, date of birth and a full address with country, city, state and postal code ([edit a reservation](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)). Add companions as extra guests.
 
 ::screenshot{src="/images/scripts/easy-save-province-country/from.png" alt="Little Hotelier reservation Guests tab in Spanish with name, surnames, ID document type, ID number, nationality, issue and expiry dates, date of birth and address fields" caption="The Guests tab already has the fields most registration rules ask for (Spanish interface shown)."}
 ::
@@ -128,7 +128,7 @@ Three ways to fill them without retyping:
 
 ### Catch missing IDs before the deadline
 
-Incomplete or late data is an offence in itself in several countries; in Spain, for example, it is a minor offence fined from €100. Hotelier Tools' [automated checks](/tools/bot/automated-checks) look at every reservation after it is booked, on arrival, during the stay and at check-out, and flag a missing ID document or address on one Issues page and in a report email. It does not send anything to the authorities. See the [daily front-desk checklist](/blog/hotel-front-desk-checklist-automation).
+Incomplete or late data is an offense in itself in several countries; in Spain, for example, it is a minor offense fined from €100. Hotelier Tools' [automated checks](/tools/bot/automated-checks) look at every reservation after it is booked, on arrival, during the stay and at check-out, and flag a missing ID document or address on one Issues page and in a report email. It does not send anything to the authorities. See the [daily front-desk checklist](/blog/hotel-front-desk-checklist-automation).
 
 ::demo-cta{path="/automated-checks/issues"}
 ::

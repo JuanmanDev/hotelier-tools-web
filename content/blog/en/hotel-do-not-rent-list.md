@@ -57,9 +57,9 @@ Keep each entry short enough that you'd be comfortable if the guest read it. Und
 
 **Never record:**
 
-- Opinions and labels ("rude", "dodgy"). Describe behaviour instead: "Shouted at night staff at 02:00; two guests complained in writing."
+- Opinions and labels ("rude", "dodgy"). Describe behavior instead: "Shouted at night staff at 02:00; two guests complained in writing."
 - Health, ethnic origin, religion, sexual orientation or political views. These are special categories under GDPR Article 9.
-- Accusations of crimes. Criminal offence data has extra limits under Article 10, so write what you saw ("two towels and a lamp missing at check-out"), not a verdict.
+- Accusations of crimes. Criminal offense data has extra limits under Article 10, so write what you saw ("two towels and a lamp missing at check-out"), not a verdict.
 - Who the guest is as a reason. A list is for what someone did, never for nationality, appearance or any other personal trait. That is discrimination.
 
 The full text of the GDPR is on [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
@@ -102,10 +102,10 @@ Hotelier Tools has a **Do-not-rebook list** (beta) at `/automated-checks/watchli
 4. **Decide when a match appears.** Open the issue, look at the facts and decide what to do. The software never decides for you.
 5. **Clean up.** **Deactivate** stops alerts and keeps the record. **Delete** removes the personal data for good.
 
-::screenshot{src="/images/blog/demo/en/automated-checks-do-not-rebook-add-dialog.webp" alt="Add to the do-not-rebook list dialog filled from a reservation with details read from Little Hotelier: full name, document, email, phone, nationality, date of birth, severity Do not accept again, a factual reason, matching rules with optional similar-name and similar-phone alerts, and Cancel and Add to list buttons" caption="Adding a guest from a reservation: the details come from Little Hotelier, and the reason should be facts only. A match raises an alert; nothing is cancelled or changed." path="/automated-checks/watchlist"}
+::screenshot{src="/images/blog/demo/en/automated-checks-do-not-rebook-add-dialog.webp" alt="Add to the do-not-rebook list dialog filled from a reservation with details read from Little Hotelier: full name, document, email, phone, nationality, date of birth, severity Do not accept again, a factual reason, matching rules with optional similar-name and similar-phone alerts, and Cancel and Add to list buttons" caption="Adding a guest from a reservation: the details come from Little Hotelier, and the reason should be facts only. A match raises an alert; nothing is canceled or changed." path="/automated-checks/watchlist"}
 ::
 
-### How it recognises a guest whose details changed
+### How it recognizes a guest whose details changed
 
 - **Strong match:** the same document number, the exact email, or a phone that matches on the last 8 digits or more.
 - **Weak match:** the same name **plus** the same nationality or date of birth.

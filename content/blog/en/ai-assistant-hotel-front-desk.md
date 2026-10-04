@@ -37,7 +37,7 @@ Think of three kinds of work, each with a different level of trust.
 |---|---|---|
 | **Look up** | Tomorrow's arrivals, unpaid balances, unassigned rooms, whether a stay can be invoiced, tonight's rates | The assistant answers. Nothing changes. |
 | **Draft** | A reply to a WhatsApp or email question, a note for the night porter | You read it and send it, or edit it first. |
-| **Change** | Update a guest's phone, enrol a stay for the invoice at checkout, apply a price | The assistant prepares a card. You press **Approve** or **Reject**. |
+| **Change** | Update a guest's phone, enroll a stay for the invoice at checkout, apply a price | The assistant prepares a card. You press **Approve** or **Reject**. |
 
 Little Hotelier already gives you a lot at the desk. Its own [Guest Engagement Messaging Hub](https://www.littlehotelier.com/blog/learn-about-tech/unified-inbox/) brings email, SMS, WhatsApp and Airbnb conversations into one inbox, with templates and scheduled messages. What an assistant adds is the ability to *ask* in plain words and get an answer built from your live bookings, instead of clicking through the calendar and reservation screens.
 
@@ -49,7 +49,7 @@ Little Hotelier already gives you a lot at the desk. Its own [Guest Engagement M
 
 Open **AI Chat** (`/chat`) and type a question about bookings, guests, prices, invoices, checks or the waitlist. The empty chat says it plainly: "Anything that changes data asks for your confirmation first."
 
-Answers come back as text and as cards: a reservation summary, a proposed change with an evidence table, an invoice-at-checkout enrol card, a price-recommendations table, or pricing-rule sliders. Every past conversation is kept in **Chat History** (`/chat/history`).
+Answers come back as text and as cards: a reservation summary, a proposed change with an evidence table, an invoice-at-checkout enroll card, a price-recommendations table, or pricing-rule sliders. Every past conversation is kept in **Chat History** (`/chat/history`).
 
 There is also a microphone button. It uses your browser's built-in speech recognition, which is **set to Spanish (es-ES)** for now, so voice suits Spanish speakers. Everyone else types.
 
@@ -75,7 +75,7 @@ The [guest inbox](/tools/bot/guest-inbox) (`/messaging`) collects WhatsApp, emai
 
 | Mode | What happens |
 |---|---|
-| Off | Messages are shown. Nothing is analysed or sent. |
+| Off | Messages are shown. Nothing is analyzed or sent. |
 | **Draft** (default) | The AI prepares a reply and a plan. Nothing happens until you approve it. |
 | Auto | The AI sends its reply after a delay, but it can never change a reservation. |
 | Autonomous | The AI also carries out allowed reservation changes with no approval step. Review it several times a day. |
@@ -116,7 +116,7 @@ The assistant finds the reservation and prepares a **proposed change** card: the
 The guest in BDC-1234567890 wants an invoice. Send it automatically when they check out.
 ::
 
-You get the invoice-at-checkout enrol card. After you approve it, the stay is marked for the daily invoicing task, and Little Hotelier emails the invoice from your own template after checkout. Details are in [sending the invoice at checkout](/blog/send-invoice-to-guest-at-checkout).
+You get the invoice-at-checkout enroll card. After you approve it, the stay is marked for the daily invoicing task, and Little Hotelier emails the invoice from your own template after checkout. Details are in [sending the invoice at checkout](/blog/send-invoice-to-guest-at-checkout).
 
 ::prompt{label="Hotelier Tools assistant"}
 What should a double room cost next Saturday, and why?

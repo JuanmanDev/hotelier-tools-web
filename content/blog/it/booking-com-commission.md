@@ -1,5 +1,5 @@
 ---
-title: "Commissione Booking.com: che percentuale prende? E come vedere il netto in Little Hotelier"
+title: "Commissione Booking.com: che percentuale prende (e come vedere il netto reale in Little Hotelier)"
 seoTitle: "Commissione Booking.com: percentuale e netto (2026)"
 description: "Non esiste una percentuale unica: paghi quella del tuo contratto, più programmi e commissioni di pagamento. Su cosa si applica, IVA e netto reale."
 date: 2026-10-03
@@ -11,15 +11,15 @@ cover: /images/scripts/show-booking-commissions/to.png
 coverAlt: "Riepilogo di una prenotazione in Little Hotelier (interfaccia in spagnolo) con la commissione di Booking.com, la commissione di pagamento e il netto approssimativo aggiunti da uno script gratuito"
 faq:
   - q: "Che percentuale prende Booking.com agli hotel?"
-    a: "Booking.com non pubblica una percentuale unica. Paghi quella indicata nel tuo contratto con la struttura, che dipende dal paese, dal tipo di struttura e dall'accordo firmato. Vedi la commissione di ogni prenotazione nell'Extranet, in Finance > Reservation statements."
+    a: "Booking.com non pubblica una percentuale unica. Paghi quella indicata nel tuo contratto con Booking.com, che dipende dal paese, dal tipo di struttura e dall'accordo firmato. Vedi la commissione di ogni prenotazione nell'Extranet, in Finance > Reservation statements."
   - q: "Booking.com applica la commissione sulla tassa di soggiorno?"
-    a: "No. Booking.com non applica commissioni sulle tasse locali come la tassa di soggiorno. Nella maggior parte dei paesi la applica invece sull'IVA, a seconda della legge locale e delle General Delivery Terms."
+    a: "No. Booking.com non applica commissioni sulle tasse locali come la tassa di soggiorno. Nella maggior parte dei paesi la applica invece sull'IVA, a seconda della legge locale e delle tue General Delivery Terms."
   - q: "Pago la commissione su un no-show?"
     a: "Solo se addebiti all'ospite una penale per il no-show, e in quel caso sull'importo della penale. Se segnali il no-show nell'Extranet entro 48 ore dal check-out previsto e rinunci alla penale, non c'è commissione."
   - q: "Il programma Genius aumenta la mia commissione?"
     a: "Genius non aggiunge una percentuale di commissione, ma lo sconto lo finanzi tu (10% di base, fino al 15% o 20% per i livelli Genius superiori, se li attivi). Preferred Partner, Preferred Plus e Visibility Booster sono invece i programmi che aumentano la commissione."
-  - q: "Quando fattura la commissione Booking.com?"
-    a: "Una volta al mese, per ogni prenotazione il cui ospite ha fatto il check-out nel mese precedente. Le fatture vanno pagate entro 14 giorni. Con Payments by Booking.com la commissione può invece essere trattenuta dai tuoi pagamenti."
+  - q: "Quando Booking.com fattura la commissione?"
+    a: "Una volta al mese, per ogni prenotazione con check-out nel mese precedente. Le fatture vanno pagate entro 14 giorni. Con Payments by Booking.com la commissione può invece essere trattenuta dai tuoi pagamenti."
   - q: "Lo script per le commissioni in Little Hotelier è gratuito?"
     a: "Sì. Lo userscript Show Booking.com Commissions è gratuito per sempre. Funziona nel tuo browser con l'estensione gratuita Tampermonkey e legge solo la pagina della prenotazione che hai aperto."
 ---
@@ -28,7 +28,7 @@ Non esiste una commissione Booking.com unica. Paghi la percentuale del tuo contr
 
 Le regole qui sotto sono state verificate sul Partner Help di Booking.com a ottobre 2026. Booking.com aggiorna spesso queste pagine, quindi i link rimandano alla fonte.
 
-## Quanta commissione prende Booking.com a hotel e B&B?
+## Che percentuale di commissione prende Booking.com da hotel e B&B?
 
 Booking.com definisce la commissione come "a set percentage of the total booking amount" (una percentuale fissa dell'importo totale della prenotazione) per ogni prenotazione ([Partner Help: Understanding your commission](https://partner.booking.com/en-us/help/commission-invoices-tax/invoices/understanding-your-commission)). Non pubblica una percentuale uguale per tutti: "the exact percentage depends on your country, property type, and the accommodation agreement you signed". I nuovi partner la vedono nel passaggio **Agreement** della registrazione ([Booking.com FAQ](https://join.booking.com/faq.html?lang=en)).
 
@@ -38,7 +38,7 @@ Per trovare la percentuale che paghi davvero:
 
 1. Accedi all'Extranet e apri **Finance > Reservation statements**. Ogni prenotazione mostra la sua commissione.
 2. Confrontala con il tuo contratto. Per ottenere una copia delle General Delivery Terms vai in **Contracts**, sotto l'icona utente.
-3. Se l'estratto mostra una percentuale più alta, apri **Boost performance**: Preferred Partner o Visibility Booster aggiungono una percentuale alla tua base.
+3. Se l'estratto mostra una percentuale più alta, apri **Boost performance**: Preferred Partner o Visibility Booster aggiungono una percentuale alla tua commissione base.
 4. Con Payments by Booking.com, anche **Finance help** mostra la tua percentuale e la commissione di pagamento.
 
 ## Su cosa si applica la commissione di Booking.com?
@@ -50,7 +50,7 @@ La commissione copre "the room rate as well as any additional fees you charge—
 - soggiorni completati
 - prenotazioni non rimborsabili e parzialmente rimborsabili, che l'ospite si presenti o no
 - penali di cancellazione e di no-show che addebiti
-- overbooking (esente se sei online da meno di 30 giorni o hai avuto meno di cinque overbooking negli ultimi 12 mesi)
+- overbooking (non dovuta se sei online da meno di 30 giorni o hai avuto meno di cinque overbooking negli ultimi 12 mesi)
 
 **Non paghi la commissione su:**
 
@@ -61,7 +61,7 @@ La commissione copre "the room rate as well as any additional fees you charge—
 **Imposte.** Booking.com non applica commissioni sulle tasse locali come la tassa di soggiorno. "However, in most countries, commission is charged on VAT or GST" (tuttavia, nella maggior parte dei paesi la commissione si applica su IVA o GST), a seconda della legge locale. Le tue General Delivery Terms indicano cosa vale per te.
 
 ::callout{type="warning" title="La regola delle 48 ore"}
-Segnala no-show, cancellazioni e altre modifiche nell'Extranet entro 48 ore dal check-out. Dopo, Booking.com applica la commissione piena sulla prenotazione originale. Il passo passo è in [Booking.com carta non valida o no-show: cosa fare](/blog/booking-com-invalid-card-no-show).
+Segnala no-show, cancellazioni e altre modifiche nell'Extranet entro 48 ore dal check-out. Dopo, Booking.com applica la commissione piena sulla prenotazione originale. La procedura passo passo è in [Booking.com carta non valida o no-show: cosa fare](/blog/booking-com-invalid-card-no-show).
 ::
 
 ## Come Genius, Preferred e Visibility Booster cambiano quello che paghi
@@ -74,12 +74,12 @@ Segnala no-show, cancellazioni e altre modifiche nell'Extranet entro 48 ore dal 
 
 Non ci sono costi di attivazione ([Payments by Booking.com](https://partner.booking.com/en-us/help/payments-payouts-invoices/payments-bookingcom/joining-payments-bookingcom)). Quello che paghi dipende da come ricevi i pagamenti:
 
-| Metodo di pagamento | Costo aggiuntivo |
+| Modalità di accredito | Costo aggiuntivo |
 |---|---|
 | Bonifico bancario | Una commissione per il servizio di pagamento, in percentuale su ogni prenotazione completata. Dipende dalla località della struttura. |
 | Carta di credito virtuale (VCC) | La commissione della tua banca o del tuo gestore di pagamenti per l'addebito sulla carta. Non la stabilisce Booking.com. |
 
-Se rinunci alla penale di cancellazione di un ospite, non c'è nemmeno la commissione di pagamento. Quando Booking.com gestisce tutti i pagamenti degli ospiti, trattiene commissione e commissione di pagamento da ogni accredito. Altrimenti ricevi una fattura a fine mese.
+Se rinunci alla penale di cancellazione di un ospite, non c'è nemmeno la commissione di pagamento. Quando Booking.com gestisce tutti i pagamenti degli ospiti, trattiene da ogni accredito sia la commissione sia la commissione di pagamento. Altrimenti ricevi una fattura a fine mese.
 
 Per vedere entrambe le voci di una prenotazione, apri la scheda **Reservations** dell'Extranet e guarda la colonna **Commission and charges**. In **Reservation details** trovi il dettaglio.
 
@@ -87,8 +87,8 @@ Per vedere entrambe le voci di una prenotazione, apri la scheda **Reservations**
 
 Nell'UE dipende dalla tua partita IVA ([EU VAT and commission invoices](https://partner.booking.com/en-us/compliance/tax-remittance-management/eu-vat-and-commission-invoices)):
 
-- **Con una partita IVA valida per le operazioni UE** (Booking.com la verifica nel database VIES dell'UE), la fattura della commissione arriva senza IVA. Resti "responsible for reporting any VAT you may owe" (responsabile di dichiarare l'IVA eventualmente dovuta) all'Agenzia delle Entrate. I commercialisti lo chiamano reverse charge, o inversione contabile.
-- **Senza**, Booking.com aggiunge l'IVA alla fattura della commissione. Sugli accrediti netti via bonifico, trattiene la commissione, il costo di pagamento e l'IVA su entrambi.
+- **Con una partita IVA valida per le operazioni UE** (Booking.com la verifica nel database VIES dell'UE), la fattura della commissione arriva senza IVA. Resti "responsible for reporting any VAT you may owe" (responsabile di dichiarare l'IVA eventualmente dovuta) al fisco. I commercialisti lo chiamano reverse charge, o inversione contabile.
+- **Senza**, Booking.com aggiunge l'IVA alla fattura della commissione. Sugli accrediti netti via bonifico, trattiene la commissione, la commissione di pagamento e l'IVA su entrambe.
 
 Per aggiungere il tuo numero: **Finance > Finance settings > VAT details > Edit details**, conferma che sia valido per le operazioni UE, inseriscilo e salva. Fuori dall'UE le regole cambiano da paese a paese, quindi chiedi al tuo commercialista.
 
@@ -96,7 +96,7 @@ Le fatture della commissione arrivano una volta al mese, per ogni ospite che ha 
 
 ## Come vedere il netto di ogni prenotazione Booking.com in Little Hotelier
 
-Il riepilogo della prenotazione in Little Hotelier mostra il totale della camera, gli extra, gli sconti e le commissioni della carta. Non mostra quanto trattiene Booking.com. La commissione esatta e la commissione di pagamento di ogni prenotazione sono nell'Extranet (**Reservation statements**, o la colonna **Commission and charges**). Quello che incassi è il totale meno queste voci e le imposte incluse nel prezzo.
+Il riepilogo della prenotazione in Little Hotelier mostra il totale della camera, gli extra, gli sconti e i costi delle carte. Non mostra quanto trattiene Booking.com. La commissione esatta e la commissione di pagamento di ogni prenotazione sono nell'Extranet (**Reservation statements**, o la colonna **Commission and charges**). Quello che incassi è il totale meno queste voci e le imposte incluse nel prezzo.
 
 ### Un esempio concreto: dal prezzo della prenotazione al tuo netto
 
@@ -126,7 +126,7 @@ Per una stima veloce direttamente dentro Little Hotelier, usa lo script gratuito
 ::screenshot{src="/images/scripts/show-booking-commissions/to.png" alt="Riepilogo di una prenotazione in Little Hotelier con quattro righe in più: commissione di trasferimento 1,3%, commissione Booking.com 17%, totale trattenute e netto approssimativo di 90,89 euro" caption="Dopo: commissione, commissione di pagamento e netto approssimativo su ogni prenotazione Booking.com." width="752" height="715"}
 ::
 
-Cosa devi sapere prima di fidarti:
+Cosa sapere prima di affidarti a questa stima:
 
 - **Le percentuali sono fisse nello script**: 17% di commissione e 1,3% di commissione di pagamento. Se le tue sono diverse, apri lo script nell'editor di Tampermonkey e cambia `0.17` e `0.013`.
 - **Le etichette sono in spagnolo** e gli importi in euro.

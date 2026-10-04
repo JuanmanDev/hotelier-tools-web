@@ -1,7 +1,7 @@
 ---
 title: "Cara menghubungkan ChatGPT ke Little Hotelier (plus 18 prompt untuk hotel kecil)"
 seoTitle: "Hubungkan ChatGPT ke Little Hotelier + 18 prompt hotel"
-description: "Hubungkan ChatGPT ke Little Hotelier lewat developer mode dan aplikasi MCP, cek izin paket Anda, dan salin 18 prompt untuk kedatangan, pembayaran, harga."
+description: "Hubungkan ChatGPT ke Little Hotelier lewat developer mode dan aplikasi MCP, cek izin paket Anda, plus 18 prompt untuk kedatangan, pembayaran, dan harga."
 date: 2026-10-03
 category: ai
 tags: [chatgpt, mcp, ai, prompts, little hotelier]
@@ -16,7 +16,7 @@ faq:
   - q: "Bisakah saya memakai API key alih-alih login?"
     a: "Tidak. OpenAI menyatakan ChatGPT tidak bisa menyodorkan API key kustom ke server MCP, jadi pilih OAuth. Anda masuk ke Hotelier Tools di jendela browser dan menekan Allow access."
   - q: "Bisakah ChatGPT mengubah reservasi atau harga saya?"
-    a: "Hanya jika paket Anda mengizinkan aksi tulis dan Anda mengonfirmasinya. OpenAI secara default meminta konfirmasi sebelum aksi tulis. Hotelier Tools tidak menambahkan persetujuan kedua di luar dashboardnya, dan memblokir sepenuhnya refund, pengiriman invoice lewat email, pengajuan laporan INE, dan aksi tak terbalikkan lainnya untuk ChatGPT."
+    a: "Hanya jika paket Anda mengizinkan aksi tulis dan Anda mengonfirmasinya. OpenAI secara default meminta konfirmasi sebelum aksi tulis. Hotelier Tools tidak menambahkan persetujuan kedua di luar dashboardnya, dan memblokir sepenuhnya refund, pengiriman invoice lewat email, pengajuan laporan INE, dan aksi lain yang tidak bisa dibatalkan untuk ChatGPT."
   - q: "Apakah ini berfungsi di aplikasi seluler ChatGPT?"
     a: "Tidak untuk aplikasi MCP kustom. Pusat bantuan OpenAI menyatakan aplikasi MCP developer mode hanya untuk web. Pakai chatgpt.com di browser."
   - q: "Apakah data tamu saya dipakai untuk melatih model OpenAI?"
@@ -81,15 +81,15 @@ Mulai setiap chat dengan Hotelier Tools terpilih. Menyebutnya di dalam prompt me
 ### Kedatangan dan kamar
 
 ::prompt{label="ChatGPT"}
-Dengan Hotelier Tools, siapa yang check-in hari ini? Tampilkan tamu, jumlah malam, tipe kamar, dan apakah kamar sudah ditetapkan.
+Dengan Hotelier Tools, siapa yang check-in hari ini? Tampilkan tamu, jumlah malam, tipe kamar, dan apakah kamarnya sudah dialokasikan.
 ::
 
 ::prompt{label="ChatGPT"}
-Reservasi mana yang check-in dalam 7 hari ke depan dan belum punya kamar?
+Reservasi mana yang check-in dalam 7 hari ke depan dan belum dialokasikan ke kamar?
 ::
 
 ::prompt{label="ChatGPT"}
-Siapa yang check-out hari ini, dan apakah ada yang masih punya saldo terbuka?
+Siapa yang check-out hari ini, dan apakah ada yang saldonya belum lunas?
 ::
 
 ::prompt{label="ChatGPT"}
@@ -99,11 +99,11 @@ Berapa kamar tiap tipe yang masih tersedia malam ini dan besok malam?
 ### Pembayaran dan invoice
 
 ::prompt{label="ChatGPT"}
-Daftar reservasi yang check-in dalam 14 hari ke depan dengan saldo belum lunas, diurutkan dari jumlah terbesar.
+Tampilkan reservasi yang check-in dalam 14 hari ke depan dengan saldo belum lunas, urutkan dari jumlah terbesar.
 ::
 
 ::prompt{label="ChatGPT"}
-Menginap mana yang check-out minggu lalu dan masih belum punya invoice? Untuk masing-masing, jelaskan mengapa belum bisa dibuatkan invoice.
+Reservasi mana yang check-out minggu lalu dan masih belum punya invoice? Untuk masing-masing, jelaskan mengapa belum bisa dibuatkan invoice.
 ::
 
 ::prompt{label="ChatGPT"}
@@ -172,7 +172,7 @@ Jika Anda tetap menginginkan spreadsheet, lihat [mengekspor reservasi ke Excel](
 
 ## Bisakah ChatGPT membuat perubahan, dan bagaimana persetujuannya?
 
-Di paket dengan MCP penuh, bisa. Hotelier Tools menyediakan tool tulis seperti memperbarui reservasi (pertama usulan sebelum/sesudah, lalu langkah penerapan), mencatat pembayaran, mendaftarkan menginap untuk [invoice saat check-out](/blog/send-invoice-to-guest-at-checkout), dan menerapkan harga.
+Di paket dengan MCP penuh, bisa. Hotelier Tools menyediakan tool tulis seperti memperbarui reservasi (pertama usulan sebelum/sesudah, lalu langkah penerapan), mencatat pembayaran, mendaftarkan masa inap untuk [invoice saat check-out](/blog/send-invoice-to-guest-at-checkout), dan menerapkan harga.
 
 ::callout{type="warning" title="Konfirmasi ChatGPT adalah satu-satunya persetujuan"}
 Di dalam dashboard Hotelier Tools, setiap perubahan menunggu kartu persetujuan. Di luarnya, tidak ada: **tool tulis berjalan saat ChatGPT memanggilnya.** OpenAI menyatakan "write actions by default require confirmation" dan memperingatkan bahwa aksi tulis yang salah "could destroy data". Baca setiap konfirmasi sebelum Anda menerimanya.
@@ -180,7 +180,7 @@ Di dalam dashboard Hotelier Tools, setiap perubahan menunggu kartu persetujuan. 
 
 Aturan praktis:
 
-- **Biarkan izin aplikasi di Always ask.** [Izin aplikasi](https://help.openai.com/en/articles/20001495) OpenAI berkisar dari **Always ask** sampai **Allow all actions**; yang terakhir melewati konfirmasi dan membawa "elevated risk". ChatGPT menganggap tool apa pun yang tidak berlabel hanya-baca sebagai aksi tulis, jadi harapkan konfirmasi bahkan untuk beberapa pencarian.
+- **Biarkan izin aplikasi di Always ask.** [Izin aplikasi](https://help.openai.com/en/articles/20001495) OpenAI berkisar dari **Always ask** sampai **Allow all actions**; yang terakhir melewati konfirmasi dan, menurut OpenAI, membawa "elevated risk" (risiko lebih tinggi). ChatGPT menganggap tool apa pun yang tidak berlabel hanya-baca sebagai aksi tulis, jadi bersiaplah melihat konfirmasi bahkan untuk beberapa pencarian data.
 - **Jangan biarkan ia mengingat persetujuan untuk aksi tulis** dalam percakapan panjang. Pilihan yang diingat hanya bertahan di chat itu, tetapi satu chat bisa melakukan banyak hal.
 - **Waspadai instruksi tersembunyi di pesan tamu.** OpenAI memperingatkan soal prompt injection. Jika ChatGPT mengusulkan sesuatu yang tidak Anda minta, tolak.
 
@@ -213,5 +213,5 @@ Data tamu adalah data pribadi, dan hotel Anda tetap bertanggung jawab atasnya. M
 
 - Aktifkan developer mode, buat aplikasi dengan URL `https://dashboard.hotelier.tools/api/mcp` dan **OAuth**, lalu tekan **Allow access**.
 - Cek paket Anda: MCP baca-tulis penuh untuk Business, Enterprise, dan Edu; Pro, dan mungkin Plus, mendapat izin hanya-baca, menurut OpenAI.
-- Biarkan izin aplikasi di **Always ask**; refund dan aksi tak terbalikkan lainnya tetap diblokir.
-- Baru mengenal MCP? Mulai dari [MCP server adalah apa](/blog/what-is-mcp-server-hotels). Semua tool ada di [halaman API & MCP](/tools/bot/api-mcp).
+- Biarkan izin aplikasi di **Always ask**; refund dan aksi lain yang tidak bisa dibatalkan tetap diblokir.
+- Baru mengenal MCP? Mulai dari [apa itu MCP server](/blog/what-is-mcp-server-hotels). Semua tool ada di [halaman API & MCP](/tools/bot/api-mcp).

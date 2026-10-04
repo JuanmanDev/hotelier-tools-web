@@ -12,7 +12,7 @@ cover: /images/blog/demo/en/developer-portal.webp
 coverAlt: "Developer portal in Hotelier Tools with cards for REST API & Swagger, MCP setup, API keys and LH methods, and an Authentication box with a cURL example using a placeholder API key"
 faq:
   - q: "Does Little Hotelier integrate with Xero or QuickBooks?"
-    a: "Through a file, not a live sync. You map your account and tax codes in Little Hotelier, then export finalised invoices as a CSV built for Xero and QuickBooks import. As of October 2026, the App Store lists no accounting app."
+    a: "Through a file, not a live sync. You map your account and tax codes in Little Hotelier, then export finalized invoices as a CSV built for Xero and QuickBooks import. As of October 2026, the App Store lists no accounting app."
   - q: "Does Little Hotelier work with Zapier?"
     a: "We found no Little Hotelier app on Zapier when we checked on 3 October 2026; its integrations page for Little Hotelier returned not found. To connect Little Hotelier to other tools, use an App Store app or a script that reads your data through an API."
   - q: "How much do Little Hotelier App Store apps cost?"
@@ -130,5 +130,5 @@ The whole set is on the [browser extensions page](/chrome-extensions), and [free
 ## Next steps
 
 - Need check-in, upselling or reviews? Start in the App Store and ask for a free trial.
-- Need accounting? Map your codes once in **Setup → Accounting exports**, then export finalised invoices each month.
+- Need accounting? Map your codes once in **Setup → Accounting exports**, then export finalized invoices each month.
 - Need your own data in a sheet, a script or an AI assistant? Use an API layer such as the [Hotelier Tools API & MCP](/tools/bot/api-mcp), free for every hotel until billing starts on 10 January 2027.

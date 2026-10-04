@@ -1,7 +1,7 @@
 ---
 title: "Cómo exportar reservas y listados de huéspedes de Little Hotelier a Excel (antes de que se enmascaren)"
 seoTitle: "Exportar reservas de Little Hotelier a Excel o Sheets"
-description: "Little Hotelier enmascara los datos del huésped 180 días después del check-out. Exporta reservas y listados a Excel o Google Sheets ya, a mano o en automático."
+description: "Little Hotelier enmascara los datos del huésped 180 días tras el check-out. Exporta reservas y listados a Excel o Google Sheets ya, a mano o en automático."
 date: 2026-10-03
 category: api
 tags: [export, excel, google sheets, reports, little hotelier]
@@ -27,14 +27,14 @@ Abre **Reservations**, fija las fechas, pulsa **Search** y luego **Export**: Lit
 
 ## Por qué exportar antes de que se enmascaren los datos del huésped
 
-El centro de ayuda de Little Hotelier lo dice claro: "La información personal identificable (PII) del huésped se enmascara 180 días después de la fecha de check-out de la reserva" ([búsqueda del channel manager](https://helpcentre.littlehotelier.com/en/articles/8673959-search-and-view-a-reservation), [informes del channel manager](https://helpcentre.littlehotelier.com/en/articles/8673872-channel-manager-run-and-export-reports), [informes del motor de reservas](https://helpcentre.littlehotelier.com/en/articles/8673818-run-and-export-reports); en inglés).
+El centro de ayuda de Little Hotelier lo dice claro: «La información personal identificable (PII) del huésped se enmascara 180 días después de la fecha de check-out de la reserva» ([búsqueda del channel manager](https://helpcentre.littlehotelier.com/en/articles/8673959-search-and-view-a-reservation), [informes del channel manager](https://helpcentre.littlehotelier.com/en/articles/8673872-channel-manager-run-and-export-reports), [informes del motor de reservas](https://helpcentre.littlehotelier.com/en/articles/8673818-run-and-export-reports); en inglés).
 
 Merece la pena conocer dos límites más:
 
-- La búsqueda de reservas del channel manager solo encuentra reservas "creadas o con check-out en los últimos 548 días".
+- La búsqueda de reservas del channel manager solo encuentra reservas «creadas o con check-out en los últimos 548 días».
 - Una vez enmascarados, ninguna exportación ni API puede recuperar los datos.
 
-Así que, si necesitas los datos de los huéspedes para facturas, un listado de clientes que repiten, una reclamación o tus propias estadísticas, expórtalos mientras siguen ahí. Conserva solo lo que tengas motivo para conservar y guarda los archivos en un sitio con acceso controlado: contienen datos personales.
+Así que, si necesitas los datos de los huéspedes para facturas, un listado de huéspedes que repiten, una reclamación o tus propias estadísticas, expórtalos mientras siguen ahí. Conserva solo lo que tengas motivo para conservar y guarda los archivos en un sitio con acceso controlado: contienen datos personales.
 
 ::callout{type="info" title="Dos versiones de Little Hotelier"}
 Las cuentas creadas desde mayo de 2025 (o actualizadas) usan la nueva **plataforma**, con un [centro de ayuda aparte](https://help-platform.littlehotelier.com/en/). Las cuentas más antiguas usan la versión **clásica**. Los pasos de abajo dan las rutas de menú de las dos.
@@ -66,7 +66,7 @@ La exportación tiene más columnas que la pantalla. Según [Little Hotelier](ht
 - **Dinero:** subtotal, extras, recargos, impuestos, pagos recibidos, saldo pendiente
 - **Huéspedes:** adultos, niños, bebés; respuestas a las preguntas personalizadas de la reserva
 
-No se incluyen: los **teléfonos** ("por motivos de seguridad") ni un historial de cambios, como la hora exacta en que se hizo el check-in de un huésped.
+No se incluyen: los **teléfonos** («por motivos de seguridad») ni un historial de cambios, como la hora exacta en que se hizo el check-in de un huésped.
 
 ## ¿Qué otros informes puede exportar Little Hotelier?
 
@@ -84,30 +84,30 @@ La mayoría de los informes tienen un botón **Export** que genera un CSV. Las r
 
 Fuentes: [Getting started with Reports](https://help-platform.littlehotelier.com/en/articles/10813931-getting-started-with-reports), [Invoice report](https://help-platform.littlehotelier.com/en/articles/14390737-how-to-run-an-invoice-report), [Accounting export](https://help-platform.littlehotelier.com/en/articles/10472787-export-invoices-marked-as-final), [Revenue reports](https://helpcentre.littlehotelier.com/en/articles/8884214-revenue-reports).
 
-Consejo: la exportación de ingresos **Summary** tiene una columna "Rate per night", con una fila por noche. Es la forma más rápida de ver a qué precio se vendió cada noche de una estancia larga.
+Consejo: la exportación de ingresos **Summary** tiene una columna «Rate per night», con una fila por noche. Es la forma más rápida de ver a qué precio se vendió cada noche de una estancia larga.
 
 ## Cómo abrir el CSV en Excel sin que se rompan los acentos
 
-Si nombres como "José" se convierten en "JosÃ©", Excel ha adivinado mal la codificación. Importa el archivo en lugar de hacerle doble clic:
+Si nombres como «José» se convierten en «JosÃ©», Excel ha adivinado mal la codificación. Importa el archivo en lugar de hacerle doble clic:
 
-1. En Excel, ve a **Datos → Obtener datos → Desde un archivo → Desde texto o CSV** (en versiones antiguas: **Datos → Desde texto/CSV**) y elige el archivo ([pasos de Microsoft](https://support.microsoft.com/es-es/office/importar-o-exportar-archivos-de-texto-txt-o-csv-5250ac4c-663c-47ce-937b-339e391393ba)).
+1. En Excel, ve a **Datos → Obtener datos → Desde un archivo → Desde texto o CSV** (en versiones antiguas: **Datos → Desde texto/CSV**) y elige el archivo ([pasos de Microsoft](https://support.microsoft.com/en-us/office/import-or-export-text-txt-or-csv-files-5250ac4c-663c-47ce-937b-339e391393ba)).
 2. Pon **Origen del archivo** en **65001: Unicode (UTF-8)** y **Delimitador** en **Coma**.
 3. Haz clic en **Cargar**.
 
 En Google Sheets, usa **Archivo → Importar → Subir** y deja el separador en automático. Sheets lee UTF-8 correctamente.
 
-## Un listado de clientes que repiten: qué puedes exportar y qué necesitas
+## Un listado de huéspedes que repiten: qué puedes exportar y qué necesitas
 
-El CSV de reservas tiene nombres, emails y direcciones, suficiente para un agradecimiento o un email de "vuelve". Antes de enviar nada, comprueba quién aceptó recibir comunicaciones tuyas:
+El CSV de reservas tiene nombres, emails y direcciones, suficiente para un agradecimiento o un email de «vuelve pronto». Antes de enviar nada, comprueba quién aceptó recibir comunicaciones tuyas:
 
 - La exportación del **informe del motor de reservas** tiene una columna **GDPR consent**. Little Hotelier dice que se rellena cuando el huésped dio su consentimiento y queda vacía cuando no ([fuente](https://helpcentre.littlehotelier.com/en/articles/8673818-run-and-export-reports)).
-- Si usas Guest Engagement, **Guest engagement → Guests → Mailchimp export** envía huéspedes a una lista de Mailchimp. Se exportan todos los huéspedes "con independencia del estado de consentimiento RGPD", con el estado de aceptación marcado, así que filtra por él ([fuente](https://help-platform.littlehotelier.com/en/articles/8051434-connect-guest-engagement-to-mailchimp)).
+- Si usas Guest Engagement, **Guest engagement → Guests → Mailchimp export** envía huéspedes a una lista de Mailchimp. Se exportan todos los huéspedes «con independencia del estado de consentimiento RGPD», con el estado de aceptación marcado, así que filtra por él ([fuente](https://help-platform.littlehotelier.com/en/articles/8051434-connect-guest-engagement-to-mailchimp)).
 
-Las normas de marketing cambian según el país. En España, la LSSI y el RGPD exigen, en general, consentimiento previo para enviar comunicaciones comerciales por email: escribe solo a los huéspedes que aceptaron, salvo que un asesor te haya confirmado que se aplica otra base legal.
+Las normas de marketing cambian según el país. En España, la LSSI (artículo 21) y el RGPD exigen, en general, consentimiento previo para enviar comunicaciones comerciales por email: escribe solo a los huéspedes que aceptaron, salvo que un asesor te haya confirmado que se aplica otra base legal.
 
 ## La forma más rápida: exportaciones automáticas con una API
 
-Little Hotelier no tiene una clave de API para tus reservas (los detalles están en [¿tiene Little Hotelier una API?](/blog/little-hotelier-api)). Hotelier Tools, un panel independiente, se conecta con tu propio acceso a Little Hotelier y te da una API REST y un servidor MCP para asistentes de IA. No está afiliado ni respaldado por SiteMinder ni por Little Hotelier, y es gratis para todos los hoteles hasta que empiece el cobro el 10 de enero de 2027.
+Little Hotelier no tiene una clave de API para tus reservas (los detalles están en [¿tiene Little Hotelier una API?](/blog/little-hotelier-api)). Hotelier Tools, un panel independiente, se conecta con tu propio acceso a Little Hotelier y te da una API REST y un servidor MCP para asistentes de IA. No está afiliado a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo, y es gratis para todos los hoteles hasta que empiece el cobro el 10 de enero de 2027.
 
 ::callout{type="warning" title="Una API no puede desenmascarar datos"}
 Hotelier Tools lee lo que Little Hotelier todavía conserva. Las reservas de más de 180 días tras el check-out también llegan enmascaradas a través de la API. Automatiza la exportación ya para que capture cada mes mientras los datos están completos.
@@ -120,11 +120,11 @@ Primero crea una clave: **API y MCP → Claves API** (`/developer/api-keys`), es
 
 ### Sin código: ejecuta la exportación desde el panel
 
-1. Abre **Métodos LH** (`/methods`) y elige `fetchReservationsCSV`.
+1. Abre **Métodos de LH** (`/methods`) y elige `fetchReservationsCSV`.
 2. Rellena `dateFrom` y `dateTo` (por ejemplo `2026-09-01` y `2026-09-30`).
 3. Ejecútalo. El método obtiene tus reservas como CSV, que puedes pegar en una hoja.
 
-::screenshot{src="/images/blog/demo/es/little-hotelier-methods.webp" alt="Página Métodos de Little Hotelier en Hotelier Tools con una tarjeta por método, como getReservations, updateReservation, fetchReservationsCSV (obtiene reservas como un archivo CSV, 3 parámetros), generateInvoice y getInvoices" caption="Elige fetchReservationsCSV en Métodos LH para ejecutar la exportación CSV de reservas desde tu navegador, sin código." path="/methods"}
+::screenshot{src="/images/blog/demo/es/little-hotelier-methods.webp" alt="Página Métodos de Little Hotelier en Hotelier Tools con una tarjeta por método, como getReservations, updateReservation, fetchReservationsCSV (obtiene reservas como un archivo CSV, 3 parámetros), generateInvoice y getInvoices" caption="Elige fetchReservationsCSV en Métodos de LH para ejecutar la exportación CSV de reservas desde tu navegador, sin código." path="/methods"}
 ::
 
 ### Google Sheets, actualizado cada mes
@@ -170,10 +170,10 @@ La API devuelve hasta 100 reservas por llamada. Si un mes llena las 100 filas, d
 
 ### Pídele a un asistente de IA que construya la tabla
 
-Si has conectado Claude o ChatGPT a Hotelier Tools (mira [conectar Claude con Little Hotelier](/blog/connect-claude-to-little-hotelier)), pídelo con palabras normales:
+Si has conectado Claude o ChatGPT a Hotelier Tools (mira [conectar Claude con Little Hotelier](/blog/connect-claude-to-little-hotelier)), pídelo con tus propias palabras:
 
 ::prompt{label="Claude"}
-Con Hotelier Tools, lista todas las reservas que hicieron el check-out en septiembre de 2026 en una tabla: referencia de reserva, nombre del huésped, email, check-in, check-out, noches, canal y total. Después dame la misma tabla en CSV.
+Con Hotelier Tools, haz una tabla con todas las reservas que hicieron el check-out en septiembre de 2026: referencia de reserva, nombre del huésped, email, check-in, check-out, noches, canal y total. Después dame la misma tabla en CSV.
 ::
 
 El asistente lee tus reservas a través del servidor MCP y devuelve la tabla. Recuerda que lo que lee (nombres, emails, importes) pasa a formar parte de tu chat con ese proveedor de IA.

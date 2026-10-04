@@ -23,10 +23,10 @@ faq:
   - q: "Little Hotelier ha un server MCP per gli assistenti AI?"
     a: "Non per i gestori, a ottobre 2026. Il lavoro di SiteMinder sull'AI in Demand Plus riguarda i viaggiatori che trovano e prenotano le tue camere in ChatGPT e Claude. Per interrogare un'AI sulle tue prenotazioni serve un server MCP indipendente, come quello di Hotelier Tools."
   - q: "Posso provare l'API senza rischiare dati reali?"
-    a: "Non esiste una chiave sandbox pubblica. Inizia con chiamate in sola lettura (prenotazioni, prezzi, tipi di camera): non modificano nulla in Little Hotelier. Le chiamate che scrivono, come generare una fattura, creano documenti reali."
+    a: "Non esiste una chiave sandbox pubblica. Inizia con chiamate in sola lettura (prenotazioni, prezzi, tipologie di camera): non modificano nulla in Little Hotelier. Le chiamate che scrivono, come generare una fattura, creano documenti reali."
 ---
 
-Non una che puoi usare per le tue prenotazioni. A ottobre 2026 il centro assistenza di Little Hotelier non documenta alcuna chiave API che una struttura possa usare per prenotazioni, ospiti o fatture: le API di SiteMinder sono per partner tecnologici certificati e l'unica chiave che puoi generare da solo, la **Direct Booking API**, copre tariffe, disponibilità e dati della struttura per un sito di prenotazione. Per leggere i tuoi dati da uno script, un foglio di calcolo o un assistente AI puoi usare un'API REST indipendente come Hotelier Tools, che si collega con il tuo login di Little Hotelier.
+No, non una che tu possa usare per le tue prenotazioni. A ottobre 2026 il centro assistenza di Little Hotelier non documenta alcuna chiave API che una struttura possa usare per prenotazioni, ospiti o fatture: le API di SiteMinder sono per partner tecnologici certificati e l'unica chiave che puoi generare da solo, la **Direct Booking API**, copre tariffe, disponibilità e dati della struttura per un sito di prenotazione. Per leggere i tuoi dati da uno script, un foglio di calcolo o un assistente AI puoi usare un'API REST indipendente come Hotelier Tools, che si collega con il tuo login di Little Hotelier.
 
 Qui sotto: cosa offre esattamente SiteMinder, poi una configurazione di cinque minuti con esempi `curl` reali.
 
@@ -37,7 +37,7 @@ Ci sono quattro modi ufficiali per far entrare o uscire dati da Little Hotelier.
 | Opzione ufficiale | Chi può usarla | Cosa copre |
 |---|---|---|
 | SiteMinder Exchange (SMX) | App di partner certificati | Prenotazioni da Little Hotelier. Non disponibilità né tariffe |
-| Direct Booking API | Strutture che usano Direct Booking | Prezzi in tempo reale, disponibilità, struttura, tipi di camera, piani tariffari |
+| Direct Booking API | Strutture che usano Direct Booking | Prezzi in tempo reale, disponibilità, struttura, tipologie di camera, piani tariffari |
 | Esportazioni CSV | Qualsiasi utente, a mano | Prenotazioni, ricavi, fatture, contabilità |
 | App dell'App Store | Qualsiasi struttura, tramite il fornitore dell'app | Ciò che quell'app sincronizza |
 
@@ -57,7 +57,7 @@ Se il tuo account è sulla piattaforma più recente di Little Hotelier (iscrizio
 2. Clicca su **Generate key**.
 3. Dai la chiave e la guida per sviluppatori di SiteMinder al tuo sviluppatore web.
 
-Restituisce prezzi e disponibilità in tempo reale, dati della struttura, tipi di camera e piani tariffari, così uno sviluppatore può creare una pagina di prenotazione o un'app personalizzata. È inclusa in Direct Booking senza costi aggiuntivi. **Non** restituisce prenotazioni, ospiti, pagamenti o fatture, e l'assistenza di Little Hotelier non aiuta a creare o riparare ciò che sviluppi con essa.
+Restituisce prezzi e disponibilità in tempo reale, dati della struttura, tipologie di camera e piani tariffari, così uno sviluppatore può creare una pagina di prenotazione o un'app personalizzata. È inclusa in Direct Booking senza costi aggiuntivi. **Non** restituisce prenotazioni, ospiti, pagamenti o fatture, e l'assistenza di Little Hotelier non ti aiuta a sviluppare o correggere ciò che crei con essa.
 
 ### Esportazioni CSV e App Store
 
@@ -79,7 +79,7 @@ Hotelier Tools non è affiliato né approvato da SiteMinder o Little Hotelier. N
 
 ## Come creare una chiave API e fare la prima chiamata
 
-Ti serve un account Hotelier Tools (registrati su [dashboard.hotelier.tools/register](https://dashboard.hotelier.tools/register)) con Little Hotelier collegato in **Credentials**. Il proprietario della struttura ha l'accesso all'API di default.
+Ti serve un account Hotelier Tools (registrati su [dashboard.hotelier.tools/register](https://dashboard.hotelier.tools/register)) con Little Hotelier collegato in **Credentials**. Il proprietario della struttura ha l'accesso all'API per impostazione predefinita.
 
 1. Apri **Developer → API & MCP → API Keys** (`/developer/api-keys`).
 2. Sotto "Generate a new key", scrivi un nome che riconoscerai in seguito, come `sheets-export`, e premi **Generate key**.
@@ -108,9 +108,9 @@ $headers = @{ Authorization = "Bearer htk_YOUR_API_KEY" }
 Invoke-RestMethod -Headers $headers -Uri "https://dashboard.hotelier.tools/api/v1/property"
 ```
 
-Cosa può fare una chiave: **non ci sono scope**. Una chiave agisce sulla struttura per cui è stata creata, come la persona che l'ha creata, con i permessi che quella persona ha in quel momento. Ogni persona può avere fino a 10 chiavi e puoi revocarle dalla stessa pagina.
+Cosa può fare una chiave: **non ci sono ambiti (scope)**. Una chiave agisce sulla struttura per cui è stata creata, come la persona che l'ha creata, con i permessi che quella persona ha in quel momento. Ogni persona può avere fino a 10 chiavi e puoi revocarle dalla stessa pagina.
 
-### Preferisci cliccare a scrivere? Usa l'explorer
+### Preferisci cliccare invece di scrivere comandi? Usa l'explorer
 
 Apri **REST API & Swagger** (`/developer/rest-api`). In **Quick authorize**, incolla la chiave in "Bearer token (API key or session JWT)" e premi **Authorize Swagger**, oppure premi **Use my session** per saltare la chiave. Poi prova qualsiasi endpoint nell'"Interactive API explorer". La pagina ha anche **Download spec** e "Code templates" in cURL, JavaScript, Python e PowerShell.
 
@@ -130,8 +130,8 @@ L'URL di base è `https://dashboard.hotelier.tools/api/v1`. L'elenco completo e 
 | POST | `/reservations/{id}/invoices` | Crea una nuova fattura in Little Hotelier (nessuna email all'ospite) |
 | GET | `/guests` | Ricerca ospiti per testo, nome, email o telefono |
 | GET | `/prices` | Tariffe e disponibilità per un intervallo di date |
-| GET | `/room-types` | Tipi di camera con il numero di camere di ciascuno |
-| GET | `/methods` | I metodi grezzi di Little Hotelier che puoi chiamare (pubblico) |
+| GET | `/room-types` | Tipologie di camera con il numero di camere di ciascuna |
+| GET | `/methods` | I metodi nativi di Little Hotelier che puoi chiamare (pubblico) |
 | POST | `/methods/{methodName}` | Esegue uno di essi, per esempio `getReservationsByDateRange` |
 
 Alcuni esempi da copiare e incollare (date e ID sono inventati):
@@ -153,16 +153,16 @@ curl -H "Authorization: Bearer htk_YOUR_API_KEY" \
 curl -H "Authorization: Bearer htk_YOUR_API_KEY" \
   "https://dashboard.hotelier.tools/api/v1/guests?lastName=Garcia&perPage=50"
 
-# Ogni prenotazione che si sovrappone a un intervallo (metodo grezzo, parametri con nome)
+# Ogni prenotazione che si sovrappone a un intervallo (metodo nativo, parametri con nome)
 curl -X POST "https://dashboard.hotelier.tools/api/v1/methods/getReservationsByDateRange" \
   -H "Authorization: Bearer htk_YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"params":{"startDate":"2026-11-01","endDate":"2026-11-30"}}'
 ```
 
-Le chiamate di elenco restituiscono un JSON come `{ "success": true, "count": 2, "data": [ … ] }`. Per provare un metodo grezzo senza codice, apri **LH Methods** (`/methods`) nella dashboard ed eseguilo dal browser. Le esecuzioni vengono registrate in **Run History**.
+Le chiamate di elenco restituiscono un JSON come `{ "success": true, "count": 2, "data": [ … ] }`. Per provare un metodo nativo senza codice, apri **LH Methods** (`/methods`) nella dashboard ed eseguilo dal browser. Le esecuzioni vengono registrate in **Run History**.
 
-::screenshot{src="/images/blog/demo/en/little-hotelier-methods.webp" alt="Workbench dei metodi di Little Hotelier in Hotelier Tools con una scheda per ogni metodo grezzo, come getReservations, getReservationDetails, getReservationsByDateRange, addPaymentRecord, updateReservation e generateInvoice, ciascuna con il numero di parametri" caption="Esegui a mano qualsiasi metodo grezzo di Little Hotelier prima di scriverne lo script." path="/methods"}
+::screenshot{src="/images/blog/demo/en/little-hotelier-methods.webp" alt="Banco di prova dei metodi di Little Hotelier in Hotelier Tools con una scheda per ogni metodo nativo, come getReservations, getReservationDetails, getReservationsByDateRange, addPaymentRecord, updateReservation e generateInvoice, ciascuna con il numero di parametri" caption="Esegui a mano qualsiasi metodo nativo di Little Hotelier prima di scriverne lo script." path="/methods"}
 ::
 
 ::demo-cta{path="/developer/rest-api"}
@@ -192,7 +192,7 @@ Le chiamate di elenco restituiscono un JSON come `{ "success": true, "count": 2,
 
 ## Cosa puoi costruire?
 
-- **Un foglio prenotazioni in tempo reale.** Porta i soggiorni del mese scorso in Google Sheets o Excel a intervalli regolari: leggi [esportare le prenotazioni in Excel e Google Sheets](/blog/export-little-hotelier-reservations-excel).
+- **Un foglio prenotazioni sempre aggiornato.** Porta i soggiorni del mese scorso in Google Sheets o Excel a intervalli regolari: leggi [esportare le prenotazioni in Excel e Google Sheets](/blog/export-little-hotelier-reservations-excel).
 - **Pacchetti per il commercialista.** Scarica i PDF delle fatture per prenotazione, oppure salta il codice con lo ZIP trimestrale in [scaricare tutte le fatture in una volta](/blog/download-all-little-hotelier-invoices).
 - **Dashboard.** Porta occupazione e ricavi in Looker Studio o Power BI da un foglio che l'API tiene aggiornato.
 - **Assistenti AI.** La stessa chiave funziona con il server MCP di Hotelier Tools (`https://dashboard.hotelier.tools/api/mcp`), che offre a Claude, ChatGPT, Cursor o VS Code più di 100 strumenti per l'hotel. Parti da [cos'è un server MCP](/blog/what-is-mcp-server-hotels), poi [collega Claude](/blog/connect-claude-to-little-hotelier) o configura [Claude Code, Cursor e VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode).

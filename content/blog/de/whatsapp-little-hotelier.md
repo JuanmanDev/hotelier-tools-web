@@ -1,7 +1,7 @@
 ---
 title: "WhatsApp mit Little Hotelier nutzen: Messaging hub, WhatsApp Business und Alternativen"
 seoTitle: "WhatsApp mit Little Hotelier: Ihre Optionen 2026"
-description: "Der Messaging hub von Little Hotelier nutzt die offizielle WhatsApp Business API. Vergleich mit der kostenlosen Business-App und einem Posteingang."
+description: "Der Messaging hub von Little Hotelier nutzt die offizielle WhatsApp Business API. Vergleich mit der kostenlosen App und einem Posteingang, plus Vorlagen."
 date: 2026-10-03
 category: guests
 tags: [whatsapp, messaging, little hotelier, guest engagement, inbox]
@@ -25,7 +25,7 @@ faq:
     a: "Nur, wenn Sie für dieses Konto Automatic reply oder Autonomous wählen. Die Voreinstellung Draft bereitet eine Antwort vor, die auf einen Menschen wartet. Automatische Antworten brauchen außerdem einen verifizierten Gast, eine erlaubte Anfrage und ausreichende Sicherheit und sind pro Stunde und pro Tag begrenzt."
 ---
 
-Ja, Little Hotelier verbindet sich nativ mit WhatsApp, über den **Messaging hub** im kostenpflichtigen Add-on **Guest Engagement**, mit der offiziellen WhatsApp Business API: Einem Gast zu antworten, der in den letzten 24 Stunden geschrieben hat, ist kostenlos, und wer zuerst schreibt, braucht eine genehmigte Vorlage, die Meta berechnet. Der andere verbreitete Weg ist die kostenlose WhatsApp-Business-App auf dem Smartphone, die keine Verbindung zu Ihren Buchungen hat. Hotelier Tools ergänzt eine dritte Option, WhatsApp in einem Posteingang mit E-Mail und Booking.com, über eine WhatsApp-Web-Sitzung (WAHA) statt über die offizielle API.
+Ja, Little Hotelier verbindet sich direkt mit WhatsApp, über den **Messaging hub** im kostenpflichtigen Add-on **Guest Engagement** und mit der offiziellen WhatsApp Business API: Einem Gast zu antworten, der in den letzten 24 Stunden geschrieben hat, ist kostenlos; wenn Sie zuerst schreiben, brauchen Sie eine genehmigte Vorlage, die Meta berechnet. Der andere verbreitete Weg ist die kostenlose WhatsApp-Business-App auf dem Smartphone, die keine Verbindung zu Ihren Buchungen hat. Hotelier Tools ergänzt eine dritte Option, WhatsApp in einem Posteingang mit E-Mail und Booking.com, über eine WhatsApp-Web-Sitzung (WAHA) statt über die offizielle API.
 
 Die Angaben zu Little Hotelier und WhatsApp unten wurden im Oktober 2026 anhand der Hilfeseiten geprüft.
 
@@ -41,7 +41,7 @@ So verbinden Sie WhatsApp ([WhatsApp in Guest Engagement verbinden](https://help
 4. Hinterlegen Sie Ihre Zahlungsdaten. WhatsApp stellt Ihnen direkt Rechnung, Little Hotelier erhebt keine WhatsApp-Gebühr.
 
 ::callout{type="warning" title="Ihre aktuelle Nummer"}
-Eine Nummer kann nicht gleichzeitig in der WhatsApp-Business-App und im Messaging hub sein. Um sie umzuziehen, sichern Sie sie zuerst und entfernen Sie sie aus der App. Die Chats lassen sich dort danach nicht wiederherstellen. Little Hotelier empfiehlt, den Messaging hub zuerst mit einer anderen Nummer zu testen.
+Eine Nummer kann nicht gleichzeitig in der WhatsApp-Business-App und im Messaging hub sein. Um sie umzuziehen, sichern Sie zuerst Ihre Chats und entfernen die Nummer aus der App. Die Chats lassen sich dort danach nicht wiederherstellen. Little Hotelier empfiehlt, den Messaging hub zuerst mit einer anderen Nummer zu testen.
 ::
 
 ## WhatsApp-Business-App oder WhatsApp Business API?
@@ -72,7 +72,7 @@ booking_confirmation (Utility)
 Guten Tag [Gastname], Ihr Aufenthalt im [Betriebsname] ist bestätigt: [Anreisedatum] bis [Abreisedatum]. Antworten Sie hier, wenn Sie Fragen haben.
 
 checkin_instructions (Utility)
-Guten Tag [Gastname], wir freuen uns auf Sie am [Anreisedatum]! Der Check-in ist ab [Check-in-Zeit] unter [Adresse]. Antworten Sie mit Ihrer Ankunftszeit, dann haben wir alles bereit.
+Guten Tag [Gastname], wir freuen uns auf Sie am [Anreisedatum]! Der Check-in ist ab [Check-in-Zeit] unter [Adresse]. Antworten Sie mit Ihrer Ankunftszeit, dann ist alles für Sie vorbereitet.
 
 payment_reminder (Utility)
 Guten Tag [Gastname], für Ihren Aufenthalt am [Anreisedatum] ist ein Saldo von [Betrag] offen. Sie können hier sicher bezahlen: [Zahlungslink]. Kartendaten erfragen wir nie in diesem Chat.
@@ -84,13 +84,13 @@ WhatsApp lehnt Vorlagen ab, die sensible personenbezogene Daten verlangen. Frage
 
 - **Messaging hub:** ja. Die API ist dafür gebaut: Mehrere Benutzer antworten aus einem gemeinsamen Posteingang, und die Reservierung steht neben jedem Chat.
 - **WhatsApp-Business-App:** Dieselben Chats erscheinen auf dem Smartphone und seinen verknüpften Geräten, etwa WhatsApp Web an der Rezeption. Es gibt keine Zuweisung, und nichts verknüpft einen Chat mit einer Buchung. Mit Meta Verified können Sie laut WhatsApp bis zu 10 Geräte und Agenten verknüpfen.
-- **Hotelier Tools:** Der Posteingang ist eine Webseite, wer im Dashboard angemeldet ist, sieht also dieselben Unterhaltungen, mit der Reservierung neben jeder.
+- **Hotelier Tools:** Der Posteingang ist eine Webseite: Wer im Dashboard angemeldet ist, sieht dieselben Unterhaltungen, jeweils mit der Reservierung daneben.
 
-Eine Änderung betrifft jede Option: Seit dem 28. September 2026 sendet Booking.com keine Telefonnummern von Gästen mehr an Channel Manager, neue Booking.com-Buchungen kommen also ohne eine bei Little Hotelier an ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Kopieren Sie die Nummer aus dem Extranet (**Show phone number**), wenn Sie diesem Gast per WhatsApp schreiben wollen.
+Eine Änderung betrifft jede Option: Seit dem 28. September 2026 sendet Booking.com keine Telefonnummern von Gästen mehr an Channel-Manager, neue Booking.com-Buchungen kommen also ohne Telefonnummer bei Little Hotelier an ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Kopieren Sie die Nummer aus dem Extranet (**Show phone number**), wenn Sie diesem Gast per WhatsApp schreiben wollen.
 
 ## WhatsApp, E-Mail und Booking.com in einem Posteingang mit Hotelier Tools
 
-Der **Inbox** von Hotelier Tools (`/messaging`, Alpha) zeigt Nachrichten von WhatsApp, E-Mail und Booking.com in einer Liste. Zu jeder Unterhaltung zeigt er die Reservierung und eine von der KI entworfene Antwort, die ein Mensch freigibt.
+Die **Inbox** (Posteingang) von Hotelier Tools (`/messaging`, Alpha) zeigt Nachrichten von WhatsApp, E-Mail und Booking.com in einer Liste. Zu jeder Unterhaltung zeigt sie die Reservierung und eine von der KI entworfene Antwort, die ein Mensch freigibt.
 
 ### Was „WAHA, nicht die offizielle API“ für Sie bedeutet
 
@@ -99,7 +99,7 @@ WhatsApp erreicht Hotelier Tools über [WAHA](https://waha.devlike.pro/docs/over
 - **Ihre Nummer bleibt auf Ihrem Smartphone.** Es funktioniert wie ein auf einem Computer geöffnetes WhatsApp Web, Sie nutzen Ihre WhatsApp- oder WhatsApp-Business-App also wie gewohnt weiter.
 - **Keine Meta-Unternehmensverifizierung und keine Vorlagengenehmigungen**, weil es nicht über die WhatsApp Business Platform läuft.
 - **Es ist nicht offiziell erlaubt.** Die Dokumentation von WAHA selbst sagt: „WhatsApp does not allow bots or unofficial clients on their platform, so this shouldn't be considered totally safe.“ (WhatsApp erlaubt keine Bots oder inoffiziellen Clients, es sollte also nicht als völlig sicher gelten.) Eine so genutzte Nummer könnte gesperrt werden. WAHA rät, Menschen zu antworten, die Ihnen schreiben, statt Unterhaltungen zu beginnen, und nie Massennachrichten zu senden ([How to avoid blocking](https://waha.devlike.pro/docs/overview/how-to-avoid-blocking/)).
-- **Sie brauchen einen WAHA-Server.** Das Dashboard fragt nach seiner Adresse, einem Sitzungsnamen und einem API-Schlüssel. Klären Sie mit Hotelier Tools, ob für Ihren Betrieb einer bereitgestellt werden kann, sonst betreiben Sie Ihren eigenen.
+- **Sie brauchen einen WAHA-Server.** Das Dashboard fragt nach seiner Adresse, einem Sitzungsnamen und einem API-Schlüssel. Klären Sie mit Hotelier Tools, ob für Ihren Betrieb einer bereitgestellt werden kann; andernfalls betreiben Sie Ihren eigenen.
 - **Gruppenchats werden ignoriert.**
 
 Wenn Sie die offizielle API brauchen, ist der Messaging hub die richtige Wahl. Wenn Sie vor allem Gästen antworten, die Ihnen schreiben, und WhatsApp neben E-Mail und Booking.com wollen, passt der Posteingang besser.
@@ -118,12 +118,12 @@ Wenn Sie die offizielle API brauchen, ist der Messaging hub die richtige Wahl. W
 ### Was die KI auf WhatsApp darf
 
 - **Sie sieht eine Buchung nur, wenn der Absender verifiziert ist.** Auf WhatsApp muss die Nummer mindestens in den letzten 8 Ziffern mit dem Telefon der Reservierung übereinstimmen. Passen zwei Gäste, sieht sie keinen von beiden. Bei Booking.com-Gästen tragen Sie die Telefonnummer in die Little-Hotelier-Reservierung ein, damit der Chat zugeordnet werden kann.
-- **Sie antwortet aus Ihren Fakten.** Sie nutzt Ihre FAQ, Hausnotizen und Betriebskarte (`/messaging/faq`) und antwortet „to confirm“ (zu bestätigen) bei allem, was Sie nicht aufgelistet haben.
+- **Sie antwortet aus Ihren Fakten.** Sie nutzt Ihre FAQ, Hausnotizen und Objektdaten (`/messaging/faq`) und antwortet „to confirm“ (zu bestätigen) bei allem, was Sie nicht aufgelistet haben.
 - **Sie hat keine Werkzeuge.** Sie liefert einen Plan aus einer geschlossenen Liste (eine Nachricht senden, für das Personal markieren, eine Reservierungsnotiz hinzufügen, die Ankunftszeit setzen). Sie kann nicht stornieren, Daten ändern oder Zahlungen anfassen.
-- **Automatic reply hat Bedingungen.** Sie braucht einen verifizierten Gast, eine erlaubte Anfrage und ausreichende Sicherheit und stoppt bei 4 Antworten pro Stunde, 12 pro Tag oder 3 hintereinander ohne Antwort des Gastes.
+- **Der Modus Automatic reply hat Bedingungen.** Er braucht einen verifizierten Gast, eine erlaubte Anfrage und ausreichende Sicherheit und stoppt bei 4 Antworten pro Stunde, 12 pro Tag oder 3 hintereinander ohne Antwort des Gastes.
 - **Sie wartet zuerst auf Sie.** Eine WhatsApp-Nachricht wird nach 5 Minuten analysiert. Hat jemand aus Ihrem Team schon geantwortet, wird nichts analysiert oder berechnet. Jede Analyse verbraucht KI-Credits.
 
-Ihr Personal kann die KI auch zu Buchungen befragen, indem es an dieselbe verbundene Nummer schreibt, über den **Staff assistant** (`/staff`, Alpha). Ihre Nachrichten gelangen nie in den Gäste-Posteingang, und jede gewünschte Änderung wartet auf die Freigabe des Eigentümers.
+Ihr Personal kann die KI auch zu Buchungen befragen, indem es an dieselbe verbundene Nummer schreibt, über den **Staff assistant** (`/staff`, Alpha). Ihre Nachrichten gelangen nie in den Gäste-Posteingang, und jede gewünschte Änderung wartet auf die Freigabe des Inhabers.
 
 ::screenshot{src="/images/blog/demo/en/guest-messaging-reply-modes-menu.webp" alt="Seite Channels mit dem geöffneten Menü When a guest writes bei der Verbindung WhatsApp (WAHA): Off, collect only; Draft, I approve everything (ausgewählt); Automatic reply, no reservation changes; Autonomous, replies and changes reservations" caption="Ein Antwortmodus pro Nummer. Draft wartet auf einen Menschen." path="/messaging/channels"}
 ::
@@ -133,8 +133,8 @@ Ihr Personal kann die KI auch zu Buchungen befragen, indem es an dieselbe verbun
 
 Wie der Posteingang Booking.com-Unterhaltungen behandelt, steht in [Booking.com-Gästenachrichten verwalten](/blog/booking-com-guest-messages), die vollständige Funktionsliste auf der [Seite Guest inbox](/tools/bot/guest-inbox). Das Dashboard ist für jedes Hotel kostenlos, bis die Abrechnung am 10. Januar 2027 beginnt.
 
-::callout{type="info" title="Unabhängiges Werkzeug"}
-Hotelier Tools ist weder mit SiteMinder, Little Hotelier, WhatsApp oder Meta verbunden noch von ihnen empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hotels.
+::callout{type="info" title="Unabhängiges Tool"}
+Hotelier Tools steht in keiner Verbindung zu SiteMinder, Little Hotelier, WhatsApp oder Meta und wird von ihnen weder unterstützt noch empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hotels.
 ::
 
 ## Einwilligung und Datenschutz bei WhatsApp
@@ -147,7 +147,7 @@ Die Business-Richtlinie von WhatsApp besagt, dass Sie nur Personen kontaktieren 
 
 ## Zusammenfassung
 
-- Der **Messaging hub** (Add-on Guest Engagement) ist die native Option von Little Hotelier mit offizieller API: gemeinsamer Posteingang, verknüpfte Reservierung, Vorlagen, Meta-Gebühren für Nachrichten, die Sie beginnen.
+- Der **Messaging hub** (Add-on Guest Engagement) ist die hauseigene Option von Little Hotelier mit offizieller API: gemeinsamer Posteingang, verknüpfte Reservierung, Vorlagen, Meta-Gebühren für Nachrichten, die Sie beginnen.
 - **Die WhatsApp-Business-App** ist kostenlos und für eine Person in Ordnung, weiß aber nichts über Ihre Buchungen.
-- **Der Posteingang von Hotelier Tools** bringt WhatsApp mit E-Mail und Booking.com zusammen, mit KI-Entwürfen, die ein Mensch freigibt. Er nutzt eine WhatsApp-Web-Sitzung (WAHA), nicht die offizielle API, beschränken Sie ihn also auf Unterhaltungen, die Gäste beginnen.
+- **Der Posteingang von Hotelier Tools** bringt WhatsApp mit E-Mail und Booking.com zusammen, mit KI-Entwürfen, die ein Mensch freigibt. Er nutzt eine WhatsApp-Web-Sitzung (WAHA), nicht die offizielle API; beschränken Sie ihn also auf Unterhaltungen, die Gäste beginnen.
 - Seit dem 28. September 2026 kommen Booking.com-Buchungen ohne Telefonnummer an: Kopieren Sie sie aus dem Extranet, wenn Sie sie brauchen.

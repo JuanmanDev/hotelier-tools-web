@@ -1,7 +1,7 @@
 ---
 title: "Assistente AI per hotel: cosa può fare alla reception, con la tua approvazione"
 seoTitle: "Assistente AI per hotel: cosa fa alla reception"
-description: "Un assistente AI consulta le prenotazioni, prepara risposte agli ospiti e propone modifiche. Cosa può fare in sicurezza e perché approvi ogni modifica."
+description: "Un assistente AI per hotel consulta prenotazioni, prepara risposte agli ospiti e propone modifiche. Cosa fa in sicurezza e perché approvi tu ogni modifica."
 date: 2026-10-03
 category: ai
 tags: [ai, ai assistant, front desk, approvals, little hotelier]
@@ -12,7 +12,7 @@ cover: /images/blog/demo/en/ai-chat-start.webp
 coverAlt: "Schermata iniziale dell'assistente AI di Hotelier Tools: avvisa che qualsiasi azione che modifica i dati chiede prima conferma, con domande suggerite e la cronologia delle chat a sinistra"
 faq:
   - q: "Un assistente AI può sostituire il receptionist di un hotel?"
-    a: "No. Toglie dal banco le ricerche e le prime bozze: chi arriva, chi deve ancora pagare, cosa rispondere. Le decisioni su soldi, prenotazioni e ospiti difficili restano a una persona, che approva ogni modifica."
+    a: "No. Toglie alla reception le ricerche e le prime bozze: chi arriva, chi deve ancora pagare, cosa rispondere. Le decisioni su soldi, prenotazioni e ospiti difficili restano a una persona, che approva ogni modifica."
   - q: "L'AI può cancellare una prenotazione o fare un rimborso da sola?"
     a: "Non nella chat della dashboard. Ogni modifica mostra prima una scheda da approvare o rifiutare, e il rimborso è un'azione irreversibile a parte che richiede sempre una scheda. L'AI che risponde agli ospiti non può cancellare, cambiare date né toccare i pagamenti."
   - q: "L'assistente vocale capisce l'italiano?"
@@ -25,9 +25,9 @@ faq:
     a: "No. Hotelier Tools è indipendente e non è affiliato né approvato da SiteMinder o Little Hotelier. Si collega con il login Little Hotelier della tua struttura."
 ---
 
-Sì, un assistente AI può già togliere lavoro vero dalla reception di una piccola struttura: rispondere a "chi arriva domani e chi deve ancora pagare?", preparare le risposte agli ospiti, proporre modifiche alle prenotazioni o fatture. Il modo sicuro di usarlo è semplice: può leggere liberamente, ma **ogni modifica aspetta l'approvazione di una persona**, e rimborsi, applicazione dei prezzi e risposte agli ospiti di Booking.com non vengono mai lasciati all'AI da sola.
+Sì, un assistente AI può già togliere lavoro vero alla reception di una piccola struttura: rispondere a "chi arriva domani e chi deve ancora pagare?", preparare le risposte agli ospiti, predisporre modifiche alle prenotazioni o fatture. Il modo sicuro di usarlo è semplice: può leggere liberamente, ma **ogni modifica aspetta l'approvazione di una persona**, e rimborsi, applicazione dei prezzi e risposte agli ospiti di Booking.com non vengono mai lasciati all'AI da sola.
 
-In questa guida vedi come funziona nella pratica con Hotelier Tools sopra Little Hotelier, con richieste reali e quello che succede dopo aver premuto Invio.
+In questa guida vedi come funziona nella pratica con Hotelier Tools insieme a Little Hotelier, con richieste reali e quello che succede dopo aver premuto Invio.
 
 ## Cosa può fare oggi un assistente AI alla reception di un piccolo hotel?
 
@@ -37,19 +37,19 @@ Pensa a tre tipi di lavoro, ognuno con un diverso livello di fiducia.
 |---|---|---|
 | **Consultare** | Arrivi di domani, saldi da incassare, camere non assegnate, se un soggiorno può essere fatturato, le tariffe di stasera | Risponde l'assistente. Non cambia nulla. |
 | **Preparare bozze** | Una risposta a una domanda su WhatsApp o via email, una nota per il portiere di notte | La leggi e la invii, oppure prima la modifichi. |
-| **Modificare** | Aggiornare il telefono di un ospite, iscrivere un soggiorno alla fattura al check-out, applicare un prezzo | L'assistente prepara una scheda. Tu premi **Approve** o **Reject**. |
+| **Modificare** | Aggiornare il telefono di un ospite, programmare la fattura al check-out di un soggiorno, applicare un prezzo | L'assistente prepara una scheda. Tu premi **Approve** o **Reject**. |
 
-Little Hotelier ti dà già molto al banco. Il suo [Guest Engagement Messaging Hub](https://www.littlehotelier.com/blog/learn-about-tech/unified-inbox/) riunisce in un'unica inbox le conversazioni via email, SMS, WhatsApp e Airbnb, con modelli e messaggi programmati. Quello che aggiunge un assistente è la possibilità di *chiedere* a parole tue e ricevere una risposta costruita sulle prenotazioni in tempo reale, senza scorrere calendario e schede delle prenotazioni.
+Little Hotelier ti offre già parecchio alla reception. Il suo [Guest Engagement Messaging Hub](https://www.littlehotelier.com/blog/learn-about-tech/unified-inbox/) riunisce in un'unica inbox le conversazioni via email, SMS, WhatsApp e Airbnb, con modelli e messaggi programmati. Quello che aggiunge un assistente è la possibilità di *chiedere* a parole tue e ricevere una risposta costruita sulle prenotazioni in tempo reale, invece di cliccare tra calendario e schede delle prenotazioni.
 
-## Dove funziona l'assistente in Hotelier Tools
+## I tre punti in cui lavora l'assistente in Hotelier Tools
 
-[Hotelier Tools](/tools/bot/ai-assistant) usa lo stesso set di strumenti in tre posti. Tutti seguono la stessa regola: le letture partono, le modifiche aspettano una persona.
+[Hotelier Tools](/tools/bot/ai-assistant) usa gli stessi strumenti in tre punti. Tutti seguono la stessa regola: le letture vengono eseguite subito, le modifiche aspettano una persona.
 
 ### La chat dell'assistente nella dashboard (beta)
 
 Apri **AI Chat** (`/chat`) e scrivi una domanda su prenotazioni, ospiti, prezzi, fatture, controlli o lista d'attesa. La chat vuota lo dice chiaramente: "Anything that changes data asks for your confirmation first" (qualsiasi azione che modifica i dati chiede prima la tua conferma).
 
-Le risposte arrivano come testo e come schede: il riepilogo di una prenotazione, una modifica proposta con una tabella di evidenze, la scheda per iscrivere un soggiorno alla fattura al check-out, una tabella di prezzi consigliati o i cursori delle regole di prezzo. Ogni conversazione passata resta in **Chat History** (`/chat/history`).
+Le risposte arrivano come testo e come schede: il riepilogo di una prenotazione, una modifica proposta con una tabella di evidenze, la scheda per programmare la fattura al check-out, una tabella di prezzi consigliati o i cursori delle regole di prezzo. Ogni conversazione passata resta in **Chat History** (`/chat/history`).
 
 C'è anche un pulsante microfono. Usa il riconoscimento vocale integrato nel browser, che per ora è **impostato sullo spagnolo (es-ES)**, quindi la voce è adatta a chi parla spagnolo. Tutti gli altri scrivono.
 
@@ -60,7 +60,7 @@ C'è anche un pulsante microfono. Usa il riconoscimento vocale integrato nel bro
 
 In **Staff assistant** (`/staff`) registri un dipendente con nome, numero WhatsApp e/o email e un ruolo: **Read only** (sola lettura) o **Can request changes** (può richiedere modifiche).
 
-Quando quella persona scrive al numero WhatsApp o alla casella email collegati alla struttura, l'AI risponde come allo staff, sullo stesso canale, usando i dati di Little Hotelier. I suoi messaggi non si mescolano mai con l'inbox degli ospiti.
+Quando quella persona scrive al numero WhatsApp o alla casella email collegati alla struttura, l'AI gli risponde come a un membro dello staff, sullo stesso canale, usando i dati di Little Hotelier. I suoi messaggi non si mescolano mai con l'inbox degli ospiti.
 
 - Un dipendente con **Read only** può solo fare domande.
 - Un dipendente con **Can request changes** può chiedere modifiche, ma ognuna diventa una richiesta che il titolare approva su `/staff`.
@@ -84,7 +84,7 @@ Parti da **Draft** e restaci finché non ti fidi delle risposte. L'AI per gli os
 
 ## Come le schede di approvazione evitano all'AI errori costosi
 
-Un'AI può interpretare male un messaggio o scegliere la prenotazione sbagliata. Le schede di approvazione servono a questo: un errore non arriva mai fino a Little Hotelier.
+Un'AI può interpretare male un messaggio o scegliere la prenotazione sbagliata. Le schede di approvazione servono proprio a evitare che un'ipotesi sbagliata arrivi fino a Little Hotelier.
 
 1. **Ogni scrittura richiede una scheda.** Se il sistema non sa se uno strumento legge o scrive, lo tratta come una scrittura.
 2. **La scheda mostra la modifica esatta.** Per una prenotazione vedi una tabella di evidenze: il valore in Little Hotelier, quello fornito dal mittente e quello scritto nel testo del messaggio.
@@ -107,7 +107,7 @@ Chi arriva domani, e qualcuno ha ancora un saldo da pagare?
 L'assistente legge i check-in di domani e i relativi pagamenti e li elenca, con una scheda riepilogativa per ogni ospite. Non cambia nulla, quindi non c'è nessuna scheda da approvare.
 
 ::prompt{label="Assistente Hotelier Tools"}
-L'ospite della prenotazione BDC-1234567890 ci ha scritto un nuovo cellulare: +34 600 000 000. Aggiornalo, per favore.
+L'ospite della prenotazione BDC-1234567890 ci ha mandato via email un nuovo numero di cellulare: +34 600 000 000. Aggiornalo, per favore.
 ::
 
 L'assistente trova la prenotazione e prepara una scheda di **modifica proposta**: il vecchio telefono, il nuovo e da dove arriva il nuovo valore. Spunti la casella di fiducia e premi **Approve**. Solo allora Little Hotelier viene aggiornato.
@@ -116,7 +116,7 @@ L'assistente trova la prenotazione e prepara una scheda di **modifica proposta**
 L'ospite della BDC-1234567890 vuole la fattura. Inviagliela in automatico al check-out.
 ::
 
-Ricevi la scheda per iscrivere il soggiorno alla fattura al check-out. Dopo l'approvazione, il soggiorno viene segnato per l'attività giornaliera di fatturazione e Little Hotelier invia la fattura via email con il tuo modello dopo il check-out. I dettagli sono in [come inviare la fattura al check-out](/blog/send-invoice-to-guest-at-checkout).
+Ricevi la scheda per programmare la fattura al check-out. Quando la approvi, il soggiorno viene aggiunto all'attività giornaliera di fatturazione e Little Hotelier invia la fattura via email con il tuo modello dopo il check-out. I dettagli sono in [come inviare la fattura al check-out](/blog/send-invoice-to-guest-at-checkout).
 
 ::prompt{label="Assistente Hotelier Tools"}
 Quanto dovrebbe costare una doppia sabato prossimo, e perché?
@@ -148,10 +148,10 @@ Qualunque strumento usi, tieni queste cose in mano a una persona. Ecco come Hote
 - **Muovere denaro.** I rimborsi richiedono sempre una scheda dedicata. Le app AI esterne collegate tramite MCP non possono rimborsare affatto.
 - **Cambiare una prenotazione perché lo dice un messaggio.** L'AI per gli ospiti vede una prenotazione solo se il mittente è verificato: un telefono che coincide con la prenotazione su almeno 8 cifre finali, l'email esatta o una conversazione di Booking.com. Se due ospiti coincidono, non viene collegata nessuna prenotazione.
 - **Rispondere da sola agli ospiti di Booking.com.** L'invio automatico dell'AI verso Booking.com non è mai consentito.
-- **Inventare.** L'AI per gli ospiti risponde solo in base alle tue FAQ, alle note della struttura e alla scheda della proprietà. Se non hai indicato se c'è il parcheggio, la risposta è "da confermare", mai "sì".
+- **Inventare.** L'AI per gli ospiti risponde solo in base alle tue FAQ, alle tue note interne e alla scheda della struttura. Se non hai indicato se c'è il parcheggio, la risposta è "da confermare", mai "sì".
 - **Nominare altri ospiti.** Un filtro sulle risposte blocca i codici prenotazione che non appartengono all'ospite della conversazione.
-- **Spingere i prezzi senza limiti.** L'AI non entra nel calcolo notturno dei prezzi. L'autopilota è spento per impostazione predefinita e, quando è attivo, sposta una notte al massimo del ±20% (valore predefinito) e mai sotto il tuo prezzo minimo.
-- **Presentare dichiarazioni ufficiali o scrivere agli ospiti dall'esterno.** L'invio dell'indagine INE, l'invio di una fattura via email o i messaggi agli ospiti in lista d'attesa sono bloccati per le app AI esterne. Nella chat della dashboard, ognuno sta dietro una scheda.
+- **Spingere i prezzi senza limiti.** L'AI non entra nel calcolo notturno dei prezzi. L'autopilota è spento per impostazione predefinita e, quando è attivo, cambia il prezzo di una notte al massimo del ±20% (valore predefinito) e mai sotto il tuo prezzo minimo.
+- **Inviare comunicazioni ufficiali o scrivere agli ospiti dall'esterno.** L'invio dell'indagine INE, l'invio di una fattura via email o i messaggi agli ospiti in lista d'attesa sono bloccati per le app AI esterne. Nella chat della dashboard, ognuno sta dietro una scheda.
 
 Le risposte senza supervisione hanno anche dei limiti di volume: 4 all'ora, 12 al giorno e 3 di fila senza risposta dell'ospite.
 
@@ -161,7 +161,7 @@ Le risposte senza supervisione hanno anche dei limiti di volume: 4 all'ora, 12 a
 
 **Privacy.** I login di Little Hotelier, Booking.com e della casella email sono conservati cifrati (AES-256-GCM). I messaggi degli ospiti e i dettagli delle prenotazioni vengono elaborati da un fornitore di AI quando l'assistente li legge. L'[accordo sul trattamento dei dati](https://dashboard.hotelier.tools/legal/dpa) e l'[informativa sulla privacy](https://dashboard.hotelier.tools/legal/privacy) spiegano cosa viene trattato.
 
-**Costi.** Hotelier Tools è gratuito per ogni struttura fino all'inizio della fatturazione, il 10 gennaio 2027. Le strutture che iniziano nel 2026 pagano poi 50 € al mese per tutto il 2027, con tutte le funzioni incluse. Ogni risposta dell'assistente e ogni analisi di un messaggio degli ospiti usa crediti AI; il tuo budget, il saldo e la spesa sono in **AI credits** (`/messaging/credits`).
+**Costi.** Hotelier Tools è gratuito per ogni struttura fino all'inizio della fatturazione, il 10 gennaio 2027. Le strutture che iniziano nel 2026 pagano poi 50 € al mese per tutto il 2027, con tutte le funzioni incluse. Ogni risposta dell'assistente e ogni analisi di un messaggio degli ospiti usa crediti AI; i crediti inclusi, il saldo e la spesa sono in **AI credits** (`/messaging/credits`).
 
 ::callout{type="note" title="Strumento indipendente"}
 Hotelier Tools non è affiliato né approvato da SiteMinder o Little Hotelier. Si collega con il login Little Hotelier della tua struttura e ogni modifica che fa è visibile in Little Hotelier come sempre.
@@ -181,5 +181,5 @@ Hotelier Tools non è affiliato né approvato da SiteMinder o Little Hotelier. S
 
 - Un assistente AI è sicuro alla reception quando legge liberamente e **chiede prima di ogni modifica**.
 - In Hotelier Tools funziona nella chat della dashboard, su WhatsApp o email per lo staff e come bozze di risposta nell'inbox ospiti.
-- Rimborsi, risposte su Booking.com, limiti di prezzo e dichiarazioni ufficiali restano alle persone.
+- Rimborsi, risposte su Booking.com, limiti di prezzo e comunicazioni ufficiali restano in mano alle persone.
 - Vuoi le stesse risposte dentro Claude o ChatGPT? Leggi [cos'è un server MCP](/blog/what-is-mcp-server-hotels) e poi [come collegare Claude a Little Hotelier](/blog/connect-claude-to-little-hotelier).

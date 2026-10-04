@@ -35,7 +35,7 @@ The same page adds three practical rules:
 - Don't show Booking.com as the seller. You are the supplier.
 - If you are paid by virtual card, the cardholder shows as "Booking.com (Agent)", but you still invoice the full stay value.
 
-Business travellers who booked through Booking.com for Business can press **Request invoice**, which simply messages you ([Booking.com for Business help](https://help.business.booking.com/hc/en-gb/articles/14862570197268-How-can-I-get-my-invoice)). The work still lands on your front desk.
+Business travelers who booked through Booking.com for Business can press **Request invoice**, which simply messages you ([Booking.com for Business help](https://help.business.booking.com/hc/en-gb/articles/14862570197268-How-can-I-get-my-invoice)). The work still lands on your front desk.
 
 ## What must a hotel invoice include?
 
@@ -72,7 +72,7 @@ The catch: it's a manual step for every guest. Little Hotelier's automatic guest
 
 1. Open **Invoice on Leave** (`/invoice-on-leave`). If the banner says there is no task yet, press **Create the daily task (16:00, after check-out)**.
 2. An invoice is only issued for a stay that is **checked out** in Little Hotelier. If your team doesn't check guests out by hand before 16:00, use the **Automatic check-out** card and press **Create the daily task (15:05)**. It closes the day's departures in Little Hotelier, so it stays off until you create it.
-3. Find the reservation and turn on auto-invoice for it. The **Enrolled** and **Not enrolled** filters show where each stay stands. You can enrol a guest who is still in the house: the invoice goes out on the first run after they leave.
+3. Find the reservation and turn on auto-invoice for it. The **Enrolled** and **Not enrolled** filters show where each stay stands. You can enroll a guest who is still in the house: the invoice goes out on the first run after they leave.
 4. After checkout, the daily task asks Little Hotelier to generate the invoice, and Little Hotelier emails it from your own template and sender.
 5. Check **Pending invoices to send** (`/invoice-on-leave/scheduled`) for what is queued, due today, overdue or already invoiced.
 
@@ -83,7 +83,7 @@ Need it now? Each row has a "process now" action to issue that invoice immediate
 
 ### What keeps it safe
 
-- **The mark lives in Little Hotelier.** Enrolment is saved as a tag in the reservation's notes in Little Hotelier, so your staff can see it there.
+- **The mark lives in Little Hotelier.** Enrollment is saved as a tag in the reservation's notes in Little Hotelier, so your staff can see it there.
 - **No double sending.** A second tag marks "invoice sent", written only after Little Hotelier accepts the email. Already-invoiced stays can't be enrolled again.
 - **The same preflight as bulk invoicing.** A company invoice without a tax ID or fiscal address, or with a malformed tax ID, is refused instead of sent half-done.
 - **Catch-up and limits.** The daily task looks back 8 days to catch up on missed runs and reads up to 100 checkouts per run. A past stay with no guest email is reported once, not retried every day.
@@ -103,7 +103,7 @@ Set it once in **Settings > Invoices** (`/settings/invoices`): **From the guest'
 
 **Before the invoice exists:** add the company name, tax ID and fiscal address to the reservation's guest details in Little Hotelier. Hotelier Tools refuses to issue a company invoice while the tax ID or fiscal address is missing or malformed, so nothing half-done reaches the guest.
 
-**After it was issued:** edit the details in Little Hotelier, then use **Invoice is outdated** to generate a corrected invoice. If you had already marked it as final, click **Cancel invoice**, then **Generate invoice** again ([help centre](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). In Spain with VeriFactu, a finalised invoice is changed through **Rectify invoice** ([help centre](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)).
+**After it was issued:** edit the details in Little Hotelier, then use **Invoice is outdated** to generate a corrected invoice. If you had already marked it as final, click **Cancel invoice**, then **Generate invoice** again ([help centre](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). In Spain with VeriFactu, a finalized invoice is changed through **Rectify invoice** ([help centre](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)).
 
 A private link where guests fill in their own company details is in development, and not available yet.
 
@@ -111,7 +111,7 @@ If invoice requests reach you through Booking.com messages, see [how to manage B
 
 ## How do I resend an invoice?
 
-Open the reservation and use **Email > Invoice** again. One timing tip: once an invoice is **marked as final**, Little Hotelier no longer offers Print or Email for it. Send it first and finalise afterwards, or download the PDF later from the Invoice report.
+Open the reservation and use **Email > Invoice** again. One timing tip: once an invoice is **marked as final**, Little Hotelier no longer offers Print or Email for it. Send it first and finalize afterwards, or download the PDF later from the Invoice report.
 
 ::callout{type="tip" title="Guests who pay by bank transfer"}
 The [Bank Transfer Email Button](/tools/ui/bank-transfer-email-button) script adds a button that emails your bank details from the reservation. It is not published yet and is set up on request for each property.

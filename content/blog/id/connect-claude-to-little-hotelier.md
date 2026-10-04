@@ -1,7 +1,7 @@
 ---
 title: "Cara menghubungkan Claude ke Little Hotelier (MCP, langkah demi langkah)"
 seoTitle: "Hubungkan Claude ke Little Hotelier: setup MCP"
-description: "Hubungkan Claude ke Little Hotelier dengan custom connector: tempel satu URL, masuk, izinkan akses. Prompt pertama, keamanan aksi tulis, dan pemecahan masalah."
+description: "Hubungkan Claude ke Little Hotelier lewat custom connector: tempel satu URL, login, izinkan akses. Prompt awal, keamanan aksi tulis, dan pemecahan masalah."
 date: 2026-10-03
 category: ai
 tags: [claude, mcp, ai, connectors, little hotelier]
@@ -19,20 +19,20 @@ faq:
   - q: "Bagaimana cara memutus koneksi Claude atau mengganti akses?"
     a: "Di Claude, buka Customize, lalu Connectors, dan pilih Disconnect atau Remove. Di Hotelier Tools, buka Developer, API Keys dan cabut koneksi atau key yang Anda pakai di Active keys. Pencabutan di sisi Hotelier Tools memutus akses seketika."
   - q: "Bisakah Claude mengubah reservasi atau harga saya?"
-    a: "Bisa, jika Anda mengizinkannya. Tool tulis berjalan saat Claude memanggilnya, dan Hotelier Tools tidak menambahkan kartu persetujuan kedua di luar dashboardnya sendiri, jadi biarkan persetujuan per tool di Claude pada Needs approval. Refund, pengiriman invoice lewat email, pengajuan laporan INE, dan aksi tak terbalikkan lainnya diblokir untuk Claude."
+    a: "Bisa, jika Anda mengizinkannya. Tool tulis berjalan saat Claude memanggilnya, dan Hotelier Tools tidak menambahkan kartu persetujuan kedua di luar dashboardnya sendiri, jadi biarkan persetujuan per tool di Claude pada Needs approval. Refund, pengiriman invoice lewat email, pengajuan laporan INE, dan aksi lain yang tidak bisa dibatalkan diblokir untuk Claude."
   - q: "Apakah Little Hotelier punya server MCP sendiri?"
-    a: "Belum yang resmi per Oktober 2026. Pekerjaan MCP SiteMinder berkaitan dengan penjualan kamar lewat asisten AI, bukan pemilik yang menanyakan datanya sendiri. Hotelier Tools menjalankan server MCP independen yang terhubung memakai login Little Hotelier milik properti Anda sendiri."
+    a: "Belum yang resmi per Oktober 2026. Inisiatif MCP SiteMinder berfokus pada penjualan kamar lewat asisten AI, bukan pada pemilik yang ingin menanyakan datanya sendiri. Hotelier Tools menjalankan server MCP independen yang terhubung memakai login Little Hotelier milik properti Anda sendiri."
   - q: "Apakah ini integrasi resmi Anthropic atau Little Hotelier?"
     a: "Bukan. Hotelier Tools independen dan tidak berafiliasi dengan atau didukung oleh Anthropic, SiteMinder, maupun Little Hotelier. Layanan ini memakai protokol MCP standar yang didukung Claude untuk custom connector apa pun."
 ---
 
-Little Hotelier tidak menyediakan server MCP sendiri (per Oktober 2026), tetapi Anda tetap bisa menghubungkan Claude ke sana lewat Hotelier Tools, yang menjalankan satu server untuk properti Anda. Di Claude, buka **Customize → Connectors → Add custom connector**, tempel `https://dashboard.hotelier.tools/api/mcp`, masuk ke Hotelier Tools, lalu tekan **Allow access**. Claude kemudian bisa menjawab pertanyaan dari data reservasi langsung Anda dan, jika Anda mengizinkan, membuat perubahan.
+Little Hotelier tidak menyediakan server MCP sendiri (per Oktober 2026), tetapi Anda tetap bisa menghubungkan Claude ke sana lewat Hotelier Tools, yang menjalankan satu server untuk properti Anda. Di Claude, buka **Customize → Connectors → Add custom connector**, tempel `https://dashboard.hotelier.tools/api/mcp`, masuk ke Hotelier Tools, lalu tekan **Allow access**. Claude kemudian bisa menjawab pertanyaan dari data reservasi Anda yang real-time dan, jika Anda mengizinkan, membuat perubahan.
 
-Baru mengenal konsepnya? Baca dulu [MCP server adalah apa](/blog/what-is-mcp-server-hotels). Hanya butuh tiga menit.
+Baru mengenal konsepnya? Baca dulu [apa itu MCP server](/blog/what-is-mcp-server-hotels). Hanya butuh tiga menit.
 
 ## Yang Anda butuhkan sebelum mulai
 
-::callout{type="tip" title="Daftar periksa"}
+::callout{type="tip" title="Checklist"}
 - **Akun Claude.** Per Oktober 2026, [Anthropic mencantumkan custom connector](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp) untuk paket Free, Pro, Max, Team, dan Enterprise. Akun Free bisa menambahkan satu.
 - **Akun Hotelier Tools** dengan Little Hotelier terhubung di **Credentials** (`/credentials`). Gratis untuk setiap hotel sampai penagihan dimulai pada 10 Januari 2027.
 - **Akses API di Hotelier Tools.** Pemilik properti memilikinya. Tanpa akses itu, koneksi ditolak.
@@ -110,7 +110,7 @@ Simpan file, lalu tutup Claude Desktop sepenuhnya dan buka kembali. Header senga
 |---|---|---|
 | Setup | Tempel URL, masuk, **Allow access** | Buat key, tempel ke konfigurasi |
 | Masa berlaku | 30 hari, lalu hubungkan ulang | Sampai Anda mencabutnya |
-| Cocok untuk | claude.ai, Claude Desktop, seluler | Script, [Claude Code, Cursor, dan VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode) |
+| Cocok untuk | claude.ai, Claude Desktop, seluler | Skrip, [Claude Code, Cursor, dan VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode) |
 | Dicabut di | `/developer/api-keys` (Active keys) | `/developer/api-keys` |
 
 Keduanya bekerja sama setelah terhubung: Claude bertindak **sebagai orang yang masuk atau membuat key**, pada **satu properti**, dengan izin orang itu saat ini.
@@ -124,7 +124,7 @@ Dengan Hotelier Tools, siapa yang check-in hari ini dan besok? Tampilkan nama, j
 ::
 
 ::prompt{label="Claude"}
-Reservasi mana yang check-in dalam 7 hari ke depan dan belum punya kamar?
+Reservasi mana yang check-in dalam 7 hari ke depan dan belum dialokasikan ke kamar?
 ::
 
 ::prompt{label="Claude"}
@@ -143,7 +143,7 @@ Bagaimana tarif dan ketersediaan saya untuk akhir pekan depan, dan bagaimana per
 Jelaskan harga rekomendasi untuk kamar double pada Sabtu 14 November, langkah demi langkah.
 ::
 
-Claude juga bisa menggabungkan jawaban: "Buat tabel kedatangan minggu depan beserta saldo belum lunas dan susun pengingat pembayaran yang sopan untuk masing-masing" berhasil dengan baik. Drafnya tetap di Claude; tidak ada yang dikirim.
+Claude juga bisa menggabungkan jawaban: "Buat tabel kedatangan minggu depan beserta saldo belum lunas dan susun pengingat pembayaran yang sopan untuk masing-masing" bekerja dengan baik. Drafnya tetap di Claude; tidak ada yang dikirim.
 
 ## Apa yang bisa dilakukan Claude dengan data hotel Anda, dan bagaimana menjaganya tetap aman?
 
@@ -153,7 +153,7 @@ Server MCP Hotelier Tools menyediakan lebih dari 100 tool hotel untuk Claude, ya
 
 **Yang bisa diubah, saat Claude memanggil tool:** detail reservasi (pertama usulan sebelum/sesudah, lalu langkah penerapan yang membutuhkan `confirmed: true`), catatan pembayaran, pendaftaran untuk [invoice saat check-out](/blog/send-invoice-to-guest-at-checkout), harga dari rekomendasi, stop sell channel, entri waiting list, dan tugas terjadwal.
 
-**Yang tidak bisa dilakukan** adalah apa pun yang tak terbalikkan: tool semacam itu diblokir untuk Claude dan setiap klien luar lainnya. Misalnya, Claude tidak bisa:
+**Yang tidak bisa dilakukan** adalah apa pun yang tidak bisa dibatalkan: tool semacam itu diblokir untuk Claude dan setiap klien luar lainnya. Misalnya, Claude tidak bisa:
 
 - mengirim invoice lewat email ke tamu
 - melakukan refund
@@ -204,6 +204,6 @@ Data tamu adalah data pribadi, dan hotel Anda tetap bertanggung jawab atasnya. M
 ## Langkah berikutnya
 
 - Ingin hal yang sama di ChatGPT? Ikuti [menghubungkan ChatGPT ke Little Hotelier](/blog/connect-chatgpt-to-little-hotelier).
-- Membuat laporan atau script? Lihat [Claude Code, Cursor, dan VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode) atau [panduan REST API](/blog/little-hotelier-api).
+- Membuat laporan atau skrip? Lihat [Claude Code, Cursor, dan VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode) atau [panduan REST API](/blog/little-hotelier-api).
 - Lebih suka kartu persetujuan untuk setiap perubahan? Pakai [asisten bawaan](/blog/ai-assistant-hotel-front-desk) di dashboard.
 - Semua yang disediakan server ada di [halaman fitur API & MCP](/tools/bot/api-mcp).

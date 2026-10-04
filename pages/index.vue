@@ -101,6 +101,9 @@
     <!-- Stats Section -->
     <StatsSection />
 
+    <!-- Guides -->
+    <LatestGuides />
+
     <!-- Pricing -->
     <PricingSection />
 
@@ -158,6 +161,7 @@ import PricingSection from '../components/PricingSection.vue'
 import HeroSection from '../components/HeroSection.vue'
 import FeatureRequest from '../components/FeatureRequest.vue'
 import EmailExamples from '../components/platform/EmailExamples.vue'
+import LatestGuides from '../components/blog/LatestGuides.vue'
 import { DASHBOARD_URL, DEMO_URL } from '~/data/platform'
 
 const { t } = useI18n()

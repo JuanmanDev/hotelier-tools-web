@@ -15,11 +15,11 @@ faq:
   - q: "Can Little Hotelier download all my invoices as PDFs at once?"
     a: "Yes, for invoices that already exist. Go to Front Desk > Reports > Invoices, filter the dates, press Download invoice PDFs and then Download zip. Little Hotelier asks you to confirm with multi-factor authentication first."
   - q: "Does Little Hotelier sync invoices to Xero or QuickBooks automatically?"
-    a: "No. The Accounting report exports invoices marked as final to a CSV file designed for Xero and QuickBooks import, and you import that file yourself. Only finalised invoices are included."
+    a: "No. The Accounting report exports invoices marked as final to a CSV file designed for Xero and QuickBooks import, and you import that file yourself. Only finalized invoices are included."
   - q: "Will Hotelier Tools change my invoice numbers or template?"
     a: "No. Hotelier Tools asks Little Hotelier to generate each invoice, so it is Little Hotelier's own document, with your numbering, logo and layout from Customise invoices."
-  - q: "What happens to cancelled invoices in my export?"
-    a: "In Little Hotelier, a cancelled finalised invoice moves to Older invoices with the status Cancelled, and its data still appears in exports. Tell your accountant so revenue is not counted twice."
+  - q: "What happens to canceled invoices in my export?"
+    a: "In Little Hotelier, a canceled finalized invoice moves to Older invoices with the status Cancelled, and its data still appears in exports. Tell your accountant so revenue is not counted twice."
   - q: "How much does Hotelier Tools cost?"
     a: "It is free for every hotel until billing starts on 10 January 2027. Hotels that start before 31 December 2026 then pay 50 € per hotel per month through 2027. No card is needed to start."
 ---
@@ -62,7 +62,7 @@ The download is the easy part. The quarter usually goes wrong earlier:
 - **Missing invoices.** The ZIP only holds invoices someone generated. The help centre describes creating them one reservation at a time (**Invoices** tab > **Generate invoice**), so a stay nobody clicked on is simply not there.
 - **Duplicates.** Each generate request creates a new document in Little Hotelier, so regenerating a stay can leave two invoices where your accountant expects one.
 - **Early invoices.** An invoice issued before the guest checks out goes stale as soon as an extra or a payment is added, and fixing it means a corrected invoice, a credit note or, in Spain, a rectification.
-- **Finalising.** The accounting export needs each invoice marked as final, and the help centre describes doing that per reservation.
+- **Finalizing.** The accounting export needs each invoice marked as final, and the help centre describes doing that per reservation.
 
 ## How to download a whole quarter as one ZIP and CSV (the faster way)
 
@@ -130,15 +130,15 @@ A short routine that avoids most follow-up emails:
 2. **Clear Errors** until only the stays that genuinely need no invoice are left.
 3. **Download the ZIP and the CSV** and send both.
 4. **Scan the invoice numbers** for gaps or repeats before you send.
-5. **Mention cancelled invoices.** In Little Hotelier, cancelling a finalised invoice moves it to **Older invoices** with the status Cancelled, and its data still appears in exports ([help centre](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). Your accountant needs to know so revenue isn't counted twice.
+5. **Mention canceled invoices.** In Little Hotelier, canceling a finalized invoice moves it to **Older invoices** with the status Cancelled, and its data still appears in exports ([help centre](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). Your accountant needs to know so revenue isn't counted twice.
 
-In Spain this feeds your VAT return ([modelo 303](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml)). If you use VeriFactu, Little Hotelier finalises invoices by submitting them to the AEAT itself ([help centre](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)). Hotelier Tools has no VeriFactu feature of its own, so keep that step in Little Hotelier. In any country with mandatory e-invoicing, treat the ZIP as copies for your records and check the rules with your accountant.
+In Spain this feeds your VAT return ([modelo 303](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml)). If you use VeriFactu, Little Hotelier finalizes invoices by submitting them to the AEAT itself ([help centre](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)). Hotelier Tools has no VeriFactu feature of its own, so keep that step in Little Hotelier. In any country with mandatory e-invoicing, treat the ZIP as copies for your records and check the rules with your accountant.
 
 Developers can also fetch invoice PDFs one by one through the [Hotelier Tools REST API](/blog/little-hotelier-api). And if your accountant wants reservation data too, see [how to export reservations to Excel](/blog/export-little-hotelier-reservations-excel).
 
 ## Summary
 
-- Little Hotelier's **Invoice report** zips the PDFs of invoices that already exist; the **Accounting report** exports finalised invoices as a CSV for Xero or QuickBooks.
+- Little Hotelier's **Invoice report** zips the PDFs of invoices that already exist; the **Accounting report** exports finalized invoices as a CSV for Xero or QuickBooks.
 - Neither creates missing invoices or stops duplicates and early invoices.
 - Hotelier Tools generates a date range in one run, refuses risky invoices, lists every failure with its reason and gives you a ZIP and CSV per quarter.
 - To stop the backlog at the source, [send each invoice automatically at checkout](/blog/send-invoice-to-guest-at-checkout). See everything the invoicing feature does on the [Invoicing page](/tools/bot/invoicing).

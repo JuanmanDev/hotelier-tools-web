@@ -60,8 +60,8 @@ Two details from the [help centre](https://help-platform.littlehotelier.com/en/a
 
 The export has more columns than the screen. According to [Little Hotelier](https://helpcentre.littlehotelier.com/en/articles/8673668-run-and-export-reservations-information), you get:
 
-- **Booking:** reference, booked date, channel, status, cancelled-at date
-- **Guest:** first and last name, email, organisation, full address
+- **Booking:** reference, booked date, channel, status, canceled-at date
+- **Guest:** first and last name, email, organization, full address
 - **Stay:** check-in, check-out, nights, arrival time, guest comments, room types, rooms, rate plans
 - **Money:** subtotal, extras, surcharges, taxes, payments received, outstanding balance
 - **Guests:** adults, children, infants; answers to custom booking questions
@@ -76,7 +76,7 @@ Most reports have an **Export** button that produces a CSV. Paths are for the ne
 |---|---|---|
 | Guests | Reports → Operational → Guests | Guests who stayed, by date range |
 | Invoices | Reports → Operational → Invoices | Invoice list as CSV, PDFs as a ZIP |
-| Accounting | Reports → Operational → Accounting | Finalised invoices, laid out for Xero and QuickBooks |
+| Accounting | Reports → Operational → Accounting | Finalized invoices, laid out for Xero and QuickBooks |
 | Revenue (7 views) | Reports → Strategic → Revenue | Summary, room type, room, rate plan, channel, taxes, extras |
 | Channel manager | Channel Manager → Reports | Reservation summary, room stays, check-ins, channel yield |
 | Booking engine | Direct Booking → Reports | Bookings with device used and GDPR consent |

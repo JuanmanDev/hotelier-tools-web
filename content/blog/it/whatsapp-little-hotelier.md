@@ -1,7 +1,7 @@
 ---
 title: "WhatsApp Business per hotel con Little Hotelier: Messaging hub, app e altre opzioni"
 seoTitle: "WhatsApp con Little Hotelier: le opzioni nel 2026"
-description: "Il Messaging hub di Little Hotelier usa la WhatsApp Business API ufficiale. Confrontalo con l'app WhatsApp Business gratuita e con una inbox condivisa."
+description: "Il Messaging hub di Little Hotelier usa la WhatsApp Business API ufficiale. Confrontalo con l'app WhatsApp Business gratuita e un'inbox condivisa."
 date: 2026-10-03
 category: guests
 tags: [whatsapp, messaging, little hotelier, guest engagement, inbox]
@@ -16,7 +16,7 @@ faq:
   - q: "Posso mantenere il numero della mia app WhatsApp Business quando collego il Messaging hub?"
     a: "Non su entrambi contemporaneamente. Un numero collegato alla WhatsApp Business API non può essere usato anche nell'app WhatsApp Business. Devi prima rimuoverlo dall'app, e lo storico delle chat dell'app non si può ripristinare, quindi Little Hotelier suggerisce di provare con un altro numero."
   - q: "Quanto costa WhatsApp per un piccolo hotel?"
-    a: "L'app WhatsApp Business è gratuita. Sulla WhatsApp Business Platform (l'API dietro il Messaging hub), Meta addebita ogni messaggio modello consegnato, mentre le risposte entro la finestra di assistenza clienti di 24 ore sono gratuite. Little Hotelier non aggiunge costi per WhatsApp, ma Guest Engagement stesso è un add-on a pagamento."
+    a: "L'app WhatsApp Business è gratuita. Sulla WhatsApp Business Platform (l'API dietro il Messaging hub), Meta addebita ogni messaggio template consegnato, mentre le risposte entro la finestra di assistenza clienti di 24 ore sono gratuite. Little Hotelier non aggiunge costi per WhatsApp, ma Guest Engagement stesso è un add-on a pagamento."
   - q: "Posso inviare messaggi automatici prima dell'arrivo su WhatsApp?"
     a: "Nel Messaging hub avvii le conversazioni WhatsApp con modelli approvati da WhatsApp, come le istruzioni per il check-in. L'app WhatsApp Business gratuita automatizza solo un messaggio di saluto e uno di assenza."
   - q: "La connessione WhatsApp di Hotelier Tools è la WhatsApp Business API ufficiale?"
@@ -25,7 +25,7 @@ faq:
     a: "Solo se scegli Automatic reply o Autonomous per quell'account. Il valore predefinito, Draft, prepara una risposta che attende una persona. Le risposte automatiche richiedono anche un ospite verificato, una richiesta consentita e una fiducia sufficiente, e hanno un limite orario e giornaliero."
 ---
 
-Sì, Little Hotelier si collega a WhatsApp in modo nativo tramite il **Messaging hub**, parte dell'add-on a pagamento **Guest Engagement**, usando la WhatsApp Business API ufficiale: rispondere a un ospite che ha scritto nelle ultime 24 ore è gratuito, mentre scrivere per primi richiede un modello approvato che Meta addebita. L'altra strada comune è l'app WhatsApp Business gratuita su un telefono, che non ha alcun legame con le tue prenotazioni. Hotelier Tools aggiunge una terza opzione, WhatsApp in un'unica inbox con email e Booking.com, tramite una sessione di WhatsApp Web (WAHA) invece dell'API ufficiale.
+Sì, Little Hotelier si collega a WhatsApp in modo nativo tramite il **Messaging hub**, parte dell'add-on a pagamento **Guest Engagement**, usando la WhatsApp Business API ufficiale: rispondere a un ospite che ha scritto nelle ultime 24 ore è gratuito, mentre scrivere per primi richiede un modello approvato, a pagamento secondo le tariffe di Meta. L'altra strada comune è l'app WhatsApp Business gratuita su un telefono, che non ha alcun legame con le tue prenotazioni. Hotelier Tools aggiunge una terza opzione, WhatsApp in un'unica inbox con email e Booking.com, tramite una sessione di WhatsApp Web (WAHA) invece dell'API ufficiale.
 
 I dettagli su Little Hotelier e WhatsApp qui sotto sono stati verificati sulle rispettive pagine di assistenza a ottobre 2026.
 
@@ -69,13 +69,13 @@ Tre modelli da adattare (ogni parentesi quadra diventa una variabile):
 
 ```text [whatsapp-templates.txt]
 booking_confirmation (Utility)
-Buongiorno [nome ospite], il tuo soggiorno presso [nome struttura] è confermato: dal [data di arrivo] al [data di partenza]. Rispondi qui se hai domande.
+Ciao [nome ospite], il tuo soggiorno presso [nome struttura] è confermato: dal [data di arrivo] al [data di partenza]. Rispondi qui se hai domande.
 
 checkin_instructions (Utility)
-Buongiorno [nome ospite], ti aspettiamo il [data di arrivo]! Il check-in è dalle [ora check-in] in [indirizzo]. Rispondi con il tuo orario di arrivo e troverai tutto pronto.
+Ciao [nome ospite], ti aspettiamo il [data di arrivo]! Il check-in è dalle [ora check-in] in [indirizzo]. Rispondi con il tuo orario di arrivo e troverai tutto pronto.
 
 payment_reminder (Utility)
-Buongiorno [nome ospite], c'è un saldo di [importo] per il tuo soggiorno del [data di arrivo]. Puoi pagare in modo sicuro qui: [link di pagamento]. In questa chat non chiediamo mai i dati della carta.
+Ciao [nome ospite], c'è un saldo di [importo] per il tuo soggiorno del [data di arrivo]. Puoi pagare in modo sicuro qui: [link di pagamento]. In questa chat non chiediamo mai i dati della carta.
 ```
 
 WhatsApp rifiuta i modelli che chiedono informazioni personali sensibili, quindi non richiedere documenti o numeri di carta.
@@ -99,7 +99,7 @@ WhatsApp arriva a Hotelier Tools tramite [WAHA](https://waha.devlike.pro/docs/ov
 - **Il tuo numero resta sul tuo telefono.** Funziona come WhatsApp Web aperto su un computer, quindi continui a usare la tua app WhatsApp o WhatsApp Business come sempre.
 - **Niente verifica aziendale Meta e niente approvazione dei modelli**, perché non passa dalla WhatsApp Business Platform.
 - **Non è ufficialmente consentito.** La documentazione di WAHA stessa dice "WhatsApp non consente bot o client non ufficiali sulla sua piattaforma, quindi non va considerato del tutto sicuro." Un numero usato così potrebbe essere bloccato. Il consiglio di WAHA è rispondere alle persone che ti scrivono invece di avviare conversazioni, e non inviare mai messaggi in massa ([How to avoid blocking](https://waha.devlike.pro/docs/overview/how-to-avoid-blocking/)).
-- **Ti serve un server WAHA.** La dashboard chiede il suo indirizzo, un nome di sessione e una chiave API. Chiedi a Hotelier Tools se se ne può fornire uno per la tua struttura; altrimenti ne gestisci uno tuo.
+- **Ti serve un server WAHA.** La dashboard chiede il suo indirizzo, un nome di sessione e una chiave API. Chiedi a Hotelier Tools se può fornirtene uno per la tua struttura; altrimenti dovrai gestirne uno tuo.
 - **Le chat di gruppo vengono ignorate.**
 
 Se ti serve l'API ufficiale, il Messaging hub è la scelta giusta. Se rispondi soprattutto agli ospiti che ti scrivono e vuoi WhatsApp accanto a email e Booking.com, l'inbox è più adatta.
@@ -118,7 +118,7 @@ Se ti serve l'API ufficiale, il Messaging hub è la scelta giusta. Se rispondi s
 ### Cosa può fare l'AI su WhatsApp
 
 - **Vede una prenotazione solo quando il mittente è verificato.** Su WhatsApp, il numero deve coincidere con il telefono della prenotazione almeno nelle ultime 8 cifre. Se due ospiti coincidono, non vede nessuno dei due. Per gli ospiti di Booking.com, aggiungi il telefono alla prenotazione di Little Hotelier in modo che la chat possa essere abbinata.
-- **Risponde in base ai tuoi dati.** Usa le tue FAQ, le note sulla casa e la scheda della struttura (`/messaging/faq`), e risponde "da confermare" per tutto ciò che non hai indicato.
+- **Risponde in base ai tuoi dati.** Usa le tue FAQ, le tue note interne e la scheda della struttura (`/messaging/faq`), e risponde "da confermare" per tutto ciò che non hai indicato.
 - **Non ha strumenti.** Restituisce un piano scelto da un elenco chiuso (invia un messaggio, segnala allo staff, aggiungi una nota alla prenotazione, imposta l'orario di arrivo). Non può cancellare, cambiare date né toccare i pagamenti.
 - **La risposta automatica ha delle condizioni.** Richiede un ospite verificato, una richiesta consentita e una fiducia sufficiente, e si ferma a 4 risposte all'ora, 12 al giorno o 3 di fila senza una risposta dell'ospite.
 - **Prima aspetta te.** Un messaggio WhatsApp viene analizzato dopo 5 minuti; se qualcuno del tuo team ha già risposto, non viene analizzato né addebitato nulla. Ogni analisi usa crediti AI.
@@ -141,7 +141,7 @@ Hotelier Tools non è affiliato né approvato da SiteMinder, Little Hotelier, Wh
 
 La Business Policy di WhatsApp dice che puoi contattare solo persone che ti hanno dato il loro numero e "l'autorizzazione (opt-in) ... a confermare che desiderano ricevere messaggi o chiamate successivi da te" ([WhatsApp Business Policy](https://business.whatsapp.com/policy)). In pratica:
 
-- Chiedi alla prenotazione o al check-in se l'ospite vuole ricevere aggiornamenti su WhatsApp e annotalo nella prenotazione.
+- Chiedi al momento della prenotazione o del check-in se l'ospite vuole ricevere aggiornamenti su WhatsApp e annotalo nella prenotazione.
 - Usa il numero solo per il suo soggiorno. Il marketing richiede un consenso a parte.
 - Indica nell'informativa sulla privacy che usi WhatsApp e smetti quando un ospite lo chiede.
 

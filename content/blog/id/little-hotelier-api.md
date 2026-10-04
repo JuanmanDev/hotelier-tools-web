@@ -1,7 +1,7 @@
 ---
 title: "Little Hotelier punya API? Jawaban 2026 dan cara mengambil data Anda"
 seoTitle: "Apakah Little Hotelier Punya API? (Jawaban 2026)"
-description: "Tidak ada API key untuk booking atau tamu Anda. Apa yang resmi ditawarkan SiteMinder, dan cara membaca data Little Hotelier lewat REST dalam hitungan menit."
+description: "Tidak ada API key untuk reservasi atau tamu Anda. Apa yang resmi dari SiteMinder, dan cara membaca data Little Hotelier lewat REST dalam hitungan menit."
 date: 2026-10-03
 category: api
 tags: [api, rest, little hotelier, siteminder, developers]
@@ -13,22 +13,22 @@ coverAlt: "Halaman REST API reference di Hotelier Tools dengan base URL, unduhan
 featured: true
 faq:
   - q: "Apakah Little Hotelier punya API publik untuk reservasi saya?"
-    a: "Tidak ada yang bisa dipakai properti untuk booking-nya sendiri, per Oktober 2026. API SiteMinder diperuntukkan bagi mitra teknologi bersertifikasi, dan API key Direct Booking yang bisa Anda buat sendiri hanya mencakup tarif, ketersediaan, dan detail properti untuk situs pemesanan."
+    a: "Tidak ada yang bisa dipakai properti untuk reservasinya sendiri, per Oktober 2026. API SiteMinder diperuntukkan bagi mitra teknologi bersertifikasi, dan API key Direct Booking yang bisa Anda buat sendiri hanya mencakup tarif, ketersediaan, dan detail properti untuk situs pemesanan."
   - q: "Apa itu SiteMinder Exchange (SMX), dan apakah mencakup Little Hotelier?"
-    a: "SMX adalah API SiteMinder untuk aplikasi mitra seperti check-in, pesan tamu, dan alat revenue. Panduan pengembang SiteMinder mencantumkan Little Hotelier sebagai sumber reservasi untuk SMX, tetapi bukan sumber ketersediaan dan tarif. Hanya mitra bersertifikasi yang dapat terhubung."
+    a: "SMX adalah API SiteMinder untuk aplikasi mitra seperti check-in, pesan tamu, dan tool revenue. Panduan pengembang SiteMinder mencantumkan Little Hotelier sebagai sumber reservasi untuk SMX, tetapi bukan sumber ketersediaan dan tarif. Hanya mitra bersertifikasi yang dapat terhubung."
   - q: "Bagaimana cara menjadi mitra integrasi SiteMinder, dan berapa lama prosesnya?"
     a: "Anda mengirim formulir pendaftaran integrasi SiteMinder, menandatangani perjanjian kemitraan, lalu membangun, mensertifikasi, dan meluncurkan integrasi. SiteMinder menyebut sebagian besar integrasi memerlukan sekitar 60 hari dari awal hingga live. Jalur ini ditujukan bagi perusahaan software, bukan satu hotel."
   - q: "Apakah API tidak resmi seperti Hotelier Tools aman dan diizinkan?"
     a: "Hotelier Tools masuk memakai login Little Hotelier Anda sendiri, menyimpannya terenkripsi (AES-256-GCM), dan hanya bisa melakukan apa yang bisa dilakukan login tersebut di aplikasi web Little Hotelier. Ini bukan integrasi resmi SiteMinder, jadi jika ragu, periksa perjanjian Anda sendiri dengan SiteMinder. Anda dapat mencabut setiap key kapan saja."
   - q: "Apakah Little Hotelier punya MCP server untuk asisten AI?"
-    a: "Belum ada untuk pemilik, per Oktober 2026. Pekerjaan AI SiteMinder di Demand Plus berfokus pada wisatawan yang menemukan dan memesan kamar Anda lewat ChatGPT dan Claude. Untuk bertanya ke AI tentang booking Anda sendiri, Anda memerlukan MCP server independen seperti yang ada di Hotelier Tools."
+    a: "Belum ada untuk pemilik, per Oktober 2026. Pekerjaan AI SiteMinder di Demand Plus berfokus pada wisatawan yang menemukan dan memesan kamar Anda lewat ChatGPT dan Claude. Untuk bertanya ke AI tentang reservasi Anda sendiri, Anda memerlukan MCP server independen seperti yang ada di Hotelier Tools."
   - q: "Bisakah saya menguji API tanpa risiko pada data asli?"
     a: "Tidak ada sandbox key publik. Mulailah dengan panggilan hanya-baca (reservasi, harga, tipe kamar). Panggilan itu tidak mengubah apa pun di Little Hotelier. Panggilan yang menulis, seperti membuat invoice, menghasilkan dokumen sungguhan."
 ---
 
-Tidak ada yang bisa Anda pakai untuk booking Anda sendiri. Per Oktober 2026, pusat bantuan Little Hotelier tidak mendokumentasikan API key yang bisa dipakai properti untuk reservasi, tamu, atau invoice-nya: API SiteMinder diperuntukkan bagi mitra teknologi bersertifikasi, dan satu-satunya key yang bisa Anda buat sendiri, **Direct Booking API**, mencakup tarif, ketersediaan, dan detail properti untuk situs pemesanan. Untuk membaca data Anda sendiri dari skrip, spreadsheet, atau asisten AI, Anda bisa memakai REST API independen seperti Hotelier Tools, yang terhubung dengan login Little Hotelier Anda sendiri.
+Tidak ada yang bisa Anda pakai untuk reservasi Anda sendiri. Per Oktober 2026, pusat bantuan Little Hotelier tidak mendokumentasikan API key yang bisa dipakai properti untuk reservasi, tamu, atau invoice-nya: API SiteMinder diperuntukkan bagi mitra teknologi bersertifikasi, dan satu-satunya key yang bisa Anda buat sendiri, **Direct Booking API**, mencakup tarif, ketersediaan, dan detail properti untuk situs pemesanan. Untuk membaca data Anda sendiri dari skrip, spreadsheet, atau asisten AI, Anda bisa memakai REST API independen seperti Hotelier Tools, yang terhubung dengan login Little Hotelier Anda sendiri.
 
-Di bawah ini: apa persisnya yang ditawarkan SiteMinder, lalu penyiapan lima menit dengan contoh `curl` sungguhan.
+Di bawah ini: apa persisnya yang ditawarkan SiteMinder, lalu setup lima menit dengan contoh `curl` sungguhan.
 
 ## Apakah Little Hotelier punya API publik?
 
@@ -37,7 +37,7 @@ Ada empat cara resmi untuk memasukkan atau mengeluarkan data dari Little Hotelie
 | Opsi resmi | Siapa yang bisa memakai | Cakupan |
 |---|---|---|
 | SiteMinder Exchange (SMX) | Aplikasi mitra bersertifikasi | Reservasi dari Little Hotelier. Bukan ketersediaan atau tarif |
-| Direct Booking API | Properti yang memakai Direct Booking | Harga dan ketersediaan langsung, properti, tipe kamar, rate plan |
+| Direct Booking API | Properti yang memakai Direct Booking | Harga dan ketersediaan real-time, properti, tipe kamar, rate plan |
 | Ekspor CSV | Pengguna mana pun, secara manual | Reservasi, pendapatan, invoice, akuntansi |
 | Aplikasi App Store | Properti mana pun, lewat vendor aplikasinya | Apa pun yang disinkronkan aplikasi itu |
 
@@ -51,7 +51,7 @@ Aksesnya untuk mitra. [FAQ](https://developer.siteminder.com/get-started/resourc
 
 ### Direct Booking API: satu-satunya key yang bisa Anda buat
 
-Jika akun Anda berada di platform Little Hotelier yang lebih baru (pendaftaran sejak Mei 2025, atau akun yang sudah ditingkatkan), [pusat bantuan](https://help-platform.littlehotelier.com/en/articles/15689086-direct-booking-api) mendokumentasikan Direct Booking API:
+Jika akun Anda berada di platform Little Hotelier yang lebih baru (pendaftaran sejak Mei 2025, atau akun yang sudah di-upgrade), [pusat bantuan](https://help-platform.littlehotelier.com/en/articles/15689086-direct-booking-api) mendokumentasikan Direct Booking API:
 
 1. Buka **Direct booking → Configuration → API integration**.
 2. Klik **Generate key**.
@@ -65,7 +65,7 @@ Selebihnya dilakukan manual atau lewat vendor. Halaman Reservations dan sebagian
 
 ## Cara mengambil data Little Hotelier Anda secara terprogram
 
-Hotelier Tools adalah dasbor independen untuk properti Little Hotelier. Di dalamnya ada REST API (status: beta) dan MCP server untuk asisten AI.
+Hotelier Tools adalah dashboard independen untuk properti Little Hotelier. Di dalamnya ada REST API (status: beta) dan MCP server untuk asisten AI.
 
 Cara kerjanya, dengan bahasa sederhana:
 
@@ -74,7 +74,7 @@ Cara kerjanya, dengan bahasa sederhana:
 - Skrip Anda memanggil Hotelier Tools dengan API key, dan Hotelier Tools berkomunikasi dengan Little Hotelier.
 
 ::callout{type="note" title="Independen, bukan resmi"}
-Hotelier Tools tidak berafiliasi dengan atau didukung oleh SiteMinder maupun Little Hotelier. Ini bukan API resmi SiteMinder dan terhubung memakai login Little Hotelier milik properti Anda sendiri. Dasbornya gratis untuk setiap hotel sampai penagihan dimulai pada 10 Januari 2027.
+Hotelier Tools tidak berafiliasi dengan atau didukung oleh SiteMinder maupun Little Hotelier. Ini bukan API resmi SiteMinder dan terhubung memakai login Little Hotelier milik properti Anda sendiri. Dashboard-nya gratis untuk setiap hotel sampai penagihan dimulai pada 10 Januari 2027.
 ::
 
 ## Cara membuat API key dan melakukan panggilan pertama
@@ -124,8 +124,8 @@ Base URL-nya adalah `https://dashboard.hotelier.tools/api/v1`. Daftar lengkap da
 | Metode | Path | Yang Anda dapatkan |
 |---|---|---|
 | GET | `/reservations` | Reservasi berdasarkan tanggal check-in, `status` dan `limit` opsional |
-| GET | `/reservations/{id}` | Detail lengkap satu booking (id numerik atau referensi `LH…`) |
-| GET | `/reservations/{id}/invoices` | Invoice dari sebuah booking |
+| GET | `/reservations/{id}` | Detail lengkap satu reservasi (id numerik atau referensi `LH…`) |
+| GET | `/reservations/{id}/invoices` | Invoice dari sebuah reservasi |
 | GET | `/reservations/{id}/invoices/{invoiceId}/download` | Satu invoice dalam bentuk PDF |
 | POST | `/reservations/{id}/invoices` | Membuat invoice baru di Little Hotelier (tanpa email ke tamu) |
 | GET | `/guests` | Pencarian tamu berdasarkan teks, nama, email, atau telepon |
@@ -160,7 +160,7 @@ curl -X POST "https://dashboard.hotelier.tools/api/v1/methods/getReservationsByD
   -d '{"params":{"startDate":"2026-11-01","endDate":"2026-11-30"}}'
 ```
 
-Panggilan daftar mengembalikan JSON seperti `{ "success": true, "count": 2, "data": [ … ] }`. Untuk mencoba metode mentah tanpa kode, buka **LH Methods** (`/methods`) di dasbor dan jalankan dari browser. Setiap eksekusi tercatat di **Run History**.
+Panggilan daftar mengembalikan JSON seperti `{ "success": true, "count": 2, "data": [ … ] }`. Untuk mencoba metode mentah tanpa kode, buka **LH Methods** (`/methods`) di dashboard dan jalankan dari browser. Setiap eksekusi tercatat di **Run History**.
 
 ::screenshot{src="/images/blog/demo/en/little-hotelier-methods.webp" alt="Workbench metode Little Hotelier di Hotelier Tools dengan satu kartu per metode mentah, seperti getReservations, getReservationDetails, getReservationsByDateRange, addPaymentRecord, updateReservation, dan generateInvoice, masing-masing dengan jumlah parameternya" caption="Jalankan metode mentah Little Hotelier mana pun secara manual sebelum Anda membuat skripnya." path="/methods"}
 ::
@@ -172,7 +172,7 @@ Panggilan daftar mengembalikan JSON seperti `{ "success": true, "count": 2, "dat
 
 **Batas laju.** 100 permintaan per menit per alamat IP. Setiap respons menyertakan `X-RateLimit-Limit`, `X-RateLimit-Remaining`, dan `X-RateLimit-Reset`. Jika melewati batas, Anda mendapat `429` dengan header `Retry-After`.
 
-**Paginasi.** `/reservations` mengembalikan maksimal 100 per panggilan (`limit`, default 50) dan memfilter berdasarkan tanggal check-in. Untuk data setahun, minta satu bulan sekali; jika satu bulan mengembalikan tepat 100, bagi menjadi dua. `/guests` memakai `page` dan `perPage` (hingga 50). `/prices` memecah rentang yang lebih panjang dari dua minggu menjadi beberapa bagian, jadi rentang panjang lebih lambat.
+**Paginasi.** `/reservations` mengembalikan maksimal 100 per panggilan (`limit`, default 50) dan memfilter berdasarkan tanggal check-in. Untuk data setahun, ambil per bulan; jika satu bulan mengembalikan tepat 100, bagi menjadi dua. `/guests` memakai `page` dan `perPage` (hingga 50). `/prices` memecah rentang yang lebih panjang dari dua minggu menjadi beberapa bagian, jadi rentang panjang lebih lambat.
 
 **Error** dikembalikan sebagai JSON dengan `statusCode` dan `statusMessage`:
 
@@ -188,15 +188,15 @@ Panggilan daftar mengembalikan JSON seperti `{ "success": true, "count": 2, "dat
 
 **Tidak tersedia:** webhook keluar atau notifikasi real-time, sandbox key publik, dan paket SDK di npm atau PyPI. Untuk menjalankan sesuatu secara terjadwal, gunakan penjadwal Anda sendiri (cron job, Windows Task Scheduler, atau trigger Google Sheets).
 
-**Penulisan itu nyata.** `POST /reservations/{id}/invoices` membuat dokumen invoice baru di Little Hotelier setiap kali Anda memanggilnya. Mulailah dengan panggilan hanya-baca, dan jauhkan key dari spreadsheet bersama dan kode publik.
+**Penulisan data itu nyata.** `POST /reservations/{id}/invoices` membuat dokumen invoice baru di Little Hotelier setiap kali Anda memanggilnya. Mulailah dengan panggilan hanya-baca, dan jauhkan key dari spreadsheet bersama dan kode publik.
 
 ## Apa yang bisa Anda bangun dengannya?
 
-- **Sheet reservasi yang selalu terbarui.** Tarik data menginap bulan lalu ke Google Sheets atau Excel secara terjadwal: lihat [ekspor reservasi ke Excel dan Google Sheets](/blog/export-little-hotelier-reservations-excel).
-- **Paket untuk akuntan.** Unduh PDF invoice per booking, atau lewati kodenya dengan ZIP per kuartal di [unduh semua invoice sekaligus](/blog/download-all-little-hotelier-invoices).
-- **Dasbor.** Alirkan okupansi dan pendapatan ke Looker Studio atau Power BI dari sheet yang dijaga tetap terbarui oleh API.
-- **Asisten AI.** Key yang sama bekerja dengan MCP server Hotelier Tools (`https://dashboard.hotelier.tools/api/mcp`), yang memberi Claude, ChatGPT, Cursor, atau VS Code lebih dari 100 alat hotel. Mulailah dengan [apa itu MCP server](/blog/what-is-mcp-server-hotels), lalu [hubungkan Claude](/blog/connect-claude-to-little-hotelier) atau siapkan [Claude Code, Cursor, dan VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode).
-- **Penghubung antar alat.** Jika tidak ada aplikasi App Store, skrip kecil dapat memindahkan data antara Little Hotelier dan sisa sistem Anda. Bandingkan opsinya di [integrasi Little Hotelier terbaik](/blog/little-hotelier-integrations).
+- **Sheet reservasi yang selalu terbarui.** Tarik data masa inap bulan lalu ke Google Sheets atau Excel secara terjadwal: lihat [ekspor reservasi ke Excel dan Google Sheets](/blog/export-little-hotelier-reservations-excel).
+- **Paket untuk akuntan.** Unduh PDF invoice per reservasi, atau lewati kodenya dengan ZIP per kuartal di [unduh semua invoice sekaligus](/blog/download-all-little-hotelier-invoices).
+- **Dashboard.** Alirkan okupansi dan pendapatan ke Looker Studio atau Power BI dari sheet yang dijaga tetap terbarui oleh API.
+- **Asisten AI.** Key yang sama bekerja dengan MCP server Hotelier Tools (`https://dashboard.hotelier.tools/api/mcp`), yang memberi Claude, ChatGPT, Cursor, atau VS Code lebih dari 100 tool hotel. Mulailah dengan [apa itu MCP server](/blog/what-is-mcp-server-hotels), lalu [hubungkan Claude](/blog/connect-claude-to-little-hotelier) atau siapkan [Claude Code, Cursor, dan VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode).
+- **Penghubung antar-tool.** Jika tidak ada aplikasi App Store, skrip kecil dapat memindahkan data antara Little Hotelier dan sisa sistem Anda. Bandingkan opsinya di [integrasi Little Hotelier terbaik](/blog/little-hotelier-integrations).
 
 ## Langkah berikutnya
 

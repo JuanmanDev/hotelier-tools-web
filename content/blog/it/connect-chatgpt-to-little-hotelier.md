@@ -1,7 +1,7 @@
 ---
 title: "Come collegare ChatGPT a Little Hotelier (e 18 prompt per piccoli hotel)"
 seoTitle: "Collegare ChatGPT a Little Hotelier + 18 prompt"
-description: "Collega ChatGPT a Little Hotelier con la developer mode e un'app MCP, controlla cosa permette il tuo piano e copia 18 prompt per arrivi, pagamenti e prezzi."
+description: "Collega ChatGPT a Little Hotelier con developer mode e un'app MCP, verifica cosa consente il tuo piano e copia 18 prompt per arrivi, pagamenti e prezzi."
 date: 2026-10-03
 category: ai
 tags: [chatgpt, mcp, ai, prompts, little hotelier]
@@ -13,10 +13,10 @@ coverAlt: "Pagina Authorize MCP access di Hotelier Tools che un assistente AI ap
 faq:
   - q: "Quali piani di ChatGPT possono collegarsi a Little Hotelier?"
     a: "A ottobre 2026, il centro assistenza di OpenAI indica che il supporto MCP completo, comprese le azioni di scrittura, è per Business, Enterprise ed Edu sul web, mentre Pro può collegare app MCP con permessi di lettura e recupero in developer mode. Anche la documentazione per sviluppatori di OpenAI elenca Plus. Free e Go non sono elencati. Controlla cosa mostra il tuo account."
-  - q: "Posso usare una chiave API invece di accedere con il login?"
+  - q: "Posso usare una chiave API invece di fare il login?"
     a: "No. OpenAI dice che ChatGPT non può presentare chiavi API personalizzate a un server MCP, quindi scegli OAuth. Accedi a Hotelier Tools in una finestra del browser e premi Allow access."
   - q: "ChatGPT può modificare le mie prenotazioni o i miei prezzi?"
-    a: "Solo se il tuo piano consente le azioni di scrittura e le confermi tu. OpenAI chiede per impostazione predefinita la conferma prima delle azioni di scrittura. Hotelier Tools non aggiunge una seconda approvazione fuori dalla sua dashboard e blocca del tutto per ChatGPT rimborsi, invio di fatture via email, presentazione dell'indagine INE e altre azioni irreversibili."
+    a: "Solo se il tuo piano consente le azioni di scrittura e le confermi tu. OpenAI chiede per impostazione predefinita la conferma prima delle azioni di scrittura. Hotelier Tools non aggiunge una seconda approvazione fuori dalla sua dashboard e blocca del tutto per ChatGPT rimborsi, invio di fatture via email, invio dell'indagine INE e altre azioni irreversibili."
   - q: "Funziona nell'app mobile di ChatGPT?"
     a: "Non per le app MCP personalizzate. Il centro assistenza di OpenAI dice che le app MCP in developer mode sono solo web. Usa chatgpt.com in un browser."
   - q: "I dati dei miei ospiti vengono usati per addestrare i modelli di OpenAI?"
@@ -72,7 +72,7 @@ Su **Business**, OpenAI dice che solo amministratori e proprietari possono usare
 
 ### Perché non una chiave API?
 
-La [documentazione sull'autenticazione](https://developers.openai.com/plugins/build/auth) di OpenAI dice che ChatGPT "cannot present custom API keys". Le chiavi API `htk_` che funzionano in [Claude Code, Cursor e VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode) quindi qui non si usano. L'accesso dal browser è la strada.
+La [documentazione sull'autenticazione](https://developers.openai.com/plugins/build/auth) di OpenAI dice che ChatGPT "cannot present custom API keys". Le chiavi API `htk_` che funzionano in [Claude Code, Cursor e VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode) quindi qui non si usano. L'unica via è l'accesso dal browser.
 
 ## 18 prompt che funzionano per i piccoli hotel
 
@@ -129,7 +129,7 @@ Spiegami, passo per passo, perché il prezzo consigliato per una doppia sabato 1
 ::
 
 ::prompt{label="ChatGPT"}
-Quali notti dei prossimi 30 giorni hanno la minore occupazione? Suggeriscimi da quali conviene partire.
+Quali notti dei prossimi 30 giorni hanno la minore occupazione? Suggeriscimi quali dovrei guardare per prime.
 ::
 
 ### Ospiti
@@ -172,19 +172,19 @@ Se vuoi comunque i fogli di calcolo, vedi [esportare le prenotazioni in Excel](/
 
 ## ChatGPT può fare modifiche e come vengono approvate?
 
-Sui piani con MCP completo, sì. Hotelier Tools offre strumenti di scrittura come aggiornare una prenotazione (prima una proposta prima/dopo, poi un passaggio di applicazione), registrare un pagamento, iscrivere un soggiorno alla [fattura al check-out](/blog/send-invoice-to-guest-at-checkout) e applicare i prezzi.
+Sui piani con MCP completo, sì. Hotelier Tools offre strumenti di scrittura come aggiornare una prenotazione (prima una proposta prima/dopo, poi un passaggio di applicazione), registrare un pagamento, programmare la [fattura al check-out](/blog/send-invoice-to-guest-at-checkout) di un soggiorno e applicare i prezzi.
 
 ::callout{type="warning" title="La conferma di ChatGPT è l'unica approvazione"}
-Dentro la dashboard di Hotelier Tools, ogni modifica aspetta una scheda di approvazione. Fuori, non ce n'è: **uno strumento di scrittura parte quando ChatGPT lo chiama.** OpenAI dice che "write actions by default require confirmation" e avverte che azioni di scrittura sbagliate "could destroy data". Leggi ogni conferma prima di accettarla.
+Dentro la dashboard di Hotelier Tools, ogni modifica aspetta una scheda di approvazione. Fuori, non ce n'è: **uno strumento di scrittura viene eseguito non appena ChatGPT lo richiama.** OpenAI dice che "write actions by default require confirmation" e avverte che azioni di scrittura sbagliate "could destroy data". Leggi ogni conferma prima di accettarla.
 ::
 
 Regole pratiche:
 
 - **Tieni i permessi dell'app su Always ask.** I [permessi delle app](https://help.openai.com/en/articles/20001495) di OpenAI vanno da **Always ask** a **Allow all actions**; l'ultimo salta le richieste di conferma e comporta un "elevated risk". ChatGPT tratta come azione di scrittura qualsiasi strumento non etichettato come sola lettura, quindi aspettati una richiesta anche per alcune consultazioni.
-- **Non lasciare che ricordi le approvazioni per le scritture** nelle conversazioni lunghe. Una scelta ricordata dura solo per quella chat, ma una chat può fare molto.
+- **Non lasciare che ricordi le approvazioni per le scritture** nelle conversazioni lunghe. Una scelta ricordata vale solo per quella chat, ma in una sola chat si possono fare molte cose.
 - **Fai attenzione alle istruzioni nascoste nei messaggi degli ospiti.** OpenAI avverte della prompt injection. Se ChatGPT propone qualcosa che non hai chiesto, rifiuta.
 
-Alcune azioni non sono mai disponibili per ChatGPT, qualunque cosa tu approvi. Gli strumenti irreversibili sono bloccati per ogni client esterno, compresi l'invio di una fattura via email a un ospite, i rimborsi, la presentazione dell'indagine INE, l'invio di inviti al team, l'invio via email del link di una fattura a un ospite, la risposta a una domanda di Booking.com e il controllo della lista d'attesa che scrive agli ospiti. Restano nell'[assistente della dashboard](/blog/ai-assistant-hotel-front-desk), dietro una scheda.
+Alcune azioni non sono mai disponibili per ChatGPT, qualunque cosa tu approvi. Gli strumenti irreversibili sono bloccati per ogni client esterno, compresi l'invio di una fattura via email a un ospite, i rimborsi, l'invio dell'indagine INE, l'invio di inviti al team, l'invio via email del link di una fattura a un ospite, la risposta a una domanda di Booking.com e il controllo della lista d'attesa che scrive agli ospiti. Restano nell'[assistente della dashboard](/blog/ai-assistant-hotel-front-desk), dietro una scheda.
 
 ## Privacy: dove vanno i dati?
 
@@ -214,4 +214,4 @@ I dati degli ospiti sono dati personali e la tua struttura ne resta responsabile
 - Attiva la developer mode, crea un'app con l'URL `https://dashboard.hotelier.tools/api/mcp` e **OAuth**, e premi **Allow access**.
 - Controlla il tuo piano: l'MCP completo in lettura e scrittura è per Business, Enterprise ed Edu; Pro, e forse Plus, hanno permessi di sola lettura, secondo OpenAI.
 - Tieni i permessi dell'app su **Always ask**; rimborsi e altre azioni irreversibili sono comunque bloccati.
-- Nuovo all'MCP? Parti da [cos'è un server MCP](/blog/what-is-mcp-server-hotels). Tutti gli strumenti sono nella [pagina API & MCP](/tools/bot/api-mcp).
+- Non conosci ancora l'MCP? Parti da [cos'è un server MCP](/blog/what-is-mcp-server-hotels). Tutti gli strumenti sono nella [pagina API & MCP](/tools/bot/api-mcp).

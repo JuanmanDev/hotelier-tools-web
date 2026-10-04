@@ -1,7 +1,7 @@
 ---
 title: "Fattura ospite Booking: come inviarla automaticamente al check-out da Little Hotelier"
 seoTitle: "Fattura ospite Booking: invio al check-out"
-description: "Booking.com non fattura i tuoi ospiti, lo fai tu. Invia la fattura da Little Hotelier a mano oppure automaticamente per email quando l'ospite fa il check-out."
+description: "Booking.com non fattura i tuoi ospiti: lo fai tu. Invia la fattura da Little Hotelier a mano o in automatico per email quando l'ospite fa il check-out."
 date: 2026-10-03
 category: invoicing
 tags: [invoices, checkout, booking.com, little hotelier, automation]
@@ -31,7 +31,7 @@ No. L'assistenza partner di Booking.com è chiara: ogni prenotazione è un accor
 
 La stessa pagina aggiunge tre regole pratiche:
 
-- Emetti la fattura a nome dell'ospite, o di un altro nome concordato con lui.
+- Emetti la fattura a nome dell'ospite, o a un altro nominativo concordato con lui.
 - Non indicare Booking.com come venditore. Il fornitore sei tu.
 - Se vieni pagato con carta virtuale, l'intestatario risulta "Booking.com (Agent)", ma devi comunque fatturare l'intero valore del soggiorno.
 
@@ -72,7 +72,7 @@ Il problema: è un passaggio manuale per ogni ospite. Le email automatiche di Li
 
 1. Apri **Invoice on Leave** (`/invoice-on-leave`). Se il banner dice che non c'è ancora un'attività, premi **Create the daily task (16:00, after check-out)**.
 2. Una fattura viene emessa solo per un soggiorno con **check-out effettuato** in Little Hotelier. Se il tuo team non registra a mano il check-out degli ospiti prima delle 16:00, usa la scheda **Automatic check-out** e premi **Create the daily task (15:05)**. Chiude le partenze del giorno in Little Hotelier, quindi resta disattivata finché non la crei.
-3. Trova la prenotazione e attiva l'auto-fattura. I filtri **Enrolled** e **Not enrolled** mostrano a che punto è ogni soggiorno. Puoi iscrivere anche un ospite ancora in struttura: la fattura parte alla prima esecuzione dopo la sua partenza.
+3. Trova la prenotazione e attiva **Auto-invoice**. I filtri **Enrolled** e **Not enrolled** mostrano a che punto è ogni soggiorno. Puoi attivarla anche per un ospite ancora in struttura: la fattura parte alla prima esecuzione dopo la sua partenza.
 4. Dopo il check-out, l'attività giornaliera chiede a Little Hotelier di generare la fattura e Little Hotelier la invia per email dal tuo modello e dal tuo mittente.
 5. Controlla **Pending invoices to send** (`/invoice-on-leave/scheduled`) per vedere cosa è in coda, in scadenza oggi, in ritardo o già fatturato.
 
@@ -83,9 +83,9 @@ Ti serve subito? Ogni riga ha un'azione "process now" per emettere quella fattur
 
 ### Cosa lo rende sicuro
 
-- **Il segno vive in Little Hotelier.** L'iscrizione viene salvata come tag nelle note della prenotazione in Little Hotelier, così il tuo personale la vede lì.
-- **Nessun doppio invio.** Un secondo tag segna "fattura inviata", scritto solo dopo che Little Hotelier accetta l'email. I soggiorni già fatturati non possono essere iscritti di nuovo.
-- **Gli stessi controlli preliminari della fatturazione in blocco.** Una fattura aziendale senza partita IVA o codice fiscale, senza indirizzo fiscale o con un codice malformato viene rifiutata invece di essere inviata a metà.
+- **Il contrassegno resta in Little Hotelier.** L'attivazione viene salvata come tag nelle note della prenotazione in Little Hotelier, così il tuo personale la vede lì.
+- **Nessun doppio invio.** Un secondo tag segna "fattura inviata", scritto solo dopo che Little Hotelier accetta l'email. I soggiorni già fatturati non possono essere riattivati.
+- **Gli stessi controlli preliminari della fatturazione in blocco.** Una fattura aziendale senza partita IVA o codice fiscale, senza indirizzo fiscale o con un codice in formato errato viene rifiutata invece di essere inviata a metà.
 - **Recupero e limiti.** L'attività giornaliera guarda indietro di 8 giorni per recuperare le esecuzioni saltate e legge fino a 100 check-out per esecuzione. Un soggiorno passato senza email dell'ospite viene segnalato una volta sola, non ritentato ogni giorno.
 
 ::callout{type="info" title="Strumento indipendente"}
@@ -97,13 +97,13 @@ Hotelier Tools non è affiliato né approvato da SiteMinder o Little Hotelier. S
 
 ## In che lingua parte la fattura?
 
-Impostala una volta sola in **Settings > Invoices** (`/settings/invoices`): **From the guest's country** (il paese dell'indirizzo dell'ospite sceglie la lingua) oppure **Always the same language**. Un paese mancante o non corrispondente usa la tua **Fallback language**.
+Impostala una volta sola in **Settings > Invoices** (`/settings/invoices`): **From the guest's country** (il paese dell'indirizzo dell'ospite sceglie la lingua) oppure **Always the same language**. Se il paese manca o non viene riconosciuto, si usa la tua **Fallback language** (lingua di riserva).
 
 ## L'ospite la vuole intestata a un'azienda, o dopo la partenza
 
-**Prima che la fattura esista:** aggiungi ragione sociale, partita IVA o codice fiscale e indirizzo fiscale ai dati dell'ospite nella prenotazione in Little Hotelier. Hotelier Tools rifiuta di emettere una fattura aziendale finché la partita IVA o l'indirizzo fiscale mancano o sono malformati, così all'ospite non arriva nulla di incompleto.
+**Prima che la fattura esista:** aggiungi ragione sociale, partita IVA o codice fiscale e indirizzo fiscale ai dati dell'ospite nella prenotazione in Little Hotelier. Hotelier Tools rifiuta di emettere una fattura aziendale finché la partita IVA o l'indirizzo fiscale mancano o hanno un formato errato, così all'ospite non arriva nulla di incompleto.
 
-**Dopo l'emissione:** modifica i dati in Little Hotelier, poi usa **Invoice is outdated** per generare una fattura corretta. Se l'avevi già segnata come finale, clicca **Cancel invoice**, poi di nuovo **Generate invoice** ([centro assistenza](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). In Spagna con VeriFactu, una fattura finalizzata si modifica con **Rectify invoice** ([centro assistenza](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)).
+**Dopo l'emissione:** modifica i dati in Little Hotelier, poi usa **Invoice is outdated** per generare una fattura corretta. Se l'avevi già segnata come definitiva, clicca **Cancel invoice**, poi di nuovo **Generate invoice** ([centro assistenza](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). In Spagna con VeriFactu, una fattura definitiva si modifica con **Rectify invoice** ([centro assistenza](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)).
 
 Un link privato in cui gli ospiti compilano da soli i dati della propria azienda è in sviluppo e non ancora disponibile.
 
@@ -111,7 +111,7 @@ Se le richieste di fattura ti arrivano tramite i messaggi di Booking.com, leggi 
 
 ## Come reinvio una fattura?
 
-Apri la prenotazione e usa di nuovo **Email > Invoice**. Un consiglio sui tempi: quando una fattura è **segnata come finale**, Little Hotelier non offre più Print né Email per essa. Inviala prima e finalizzala dopo, oppure scarica il PDF più tardi dal report delle fatture.
+Apri la prenotazione e usa di nuovo **Email > Invoice**. Un consiglio sui tempi: quando una fattura è **segnata come definitiva**, Little Hotelier non offre più Print né Email per essa. Inviala prima e rendila definitiva dopo, oppure scarica il PDF più tardi dal report delle fatture.
 
 ::callout{type="tip" title="Ospiti che pagano con bonifico"}
 Lo script [Bank Transfer Email Button](/tools/ui/bank-transfer-email-button) aggiunge un pulsante che invia per email le tue coordinate bancarie dalla prenotazione. Non è ancora pubblicato e si configura su richiesta per ogni struttura.

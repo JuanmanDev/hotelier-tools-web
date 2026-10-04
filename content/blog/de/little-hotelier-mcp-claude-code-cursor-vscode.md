@@ -1,7 +1,7 @@
 ---
 title: "Little Hotelier mit Claude Code, Cursor und VS Code nutzen: MCP einrichten (Anleitung)"
 seoTitle: "Claude Code MCP einrichten: Little Hotelier, Cursor, VS Code"
-description: "MCP-Server von Hotelier Tools in Claude Code, Cursor, VS Code, Windsurf oder Gemini CLI einrichten und Auslastungsberichte, Sheets-Sync oder Dashboard bauen."
+description: "Hotelier-Tools-MCP-Server in Claude Code, Cursor, VS Code, Windsurf oder Gemini CLI einrichten und Auslastungsbericht, Sheets-Sync oder Dashboard bauen."
 date: 2026-10-03
 category: ai
 tags: [mcp, claude code, cursor, vs code, api]
@@ -20,7 +20,7 @@ faq:
   - q: "Kann ich mich anmelden, statt einen API-Schlüssel zu nutzen?"
     a: "Ja, in Clients, die OAuth unterstützen. Fügen Sie die Server-URL ohne Header hinzu und melden Sie sich an, wenn der Client danach fragt: In Claude Code führen Sie /mcp aus und wählen die Authentifizierung. Die Anmeldung gilt 30 Tage. Für Skripte, die unbeaufsichtigt laufen, sind Schlüssel besser."
   - q: "Ist das eine offizielle API von Little Hotelier oder SiteMinder?"
-    a: "Nein. Hotelier Tools ist unabhängig und weder mit SiteMinder oder Little Hotelier verbunden noch von ihnen empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Betriebs und bietet eine eigene REST-API und einen eigenen MCP-Server."
+    a: "Nein. Hotelier Tools ist unabhängig, steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Betriebs und bietet eine eigene REST-API und einen eigenen MCP-Server."
 ---
 
 Fügen Sie einen Remote-MCP-Server, `https://dashboard.hotelier.tools/api/mcp`, mit einem Hotelier-Tools-API-Schlüssel hinzu, und Claude Code, Cursor, VS Code (Copilot-Agentenmodus), Windsurf oder Gemini CLI können Ihre Little-Hotelier-Reservierungen, Preise und Rechnungen lesen, während sie Code für Sie schreiben. In Claude Code ist es ein einziger Befehl: `claude mcp add --transport http hotelier-tools https://dashboard.hotelier.tools/api/mcp --header "Authorization: Bearer htk_YOUR_API_KEY"`.
@@ -29,7 +29,7 @@ Unten stehen die genauen Konfigurationen für jedes Werkzeug (im Oktober 2026 ge
 
 ## Bevor Sie starten: einen API-Schlüssel erstellen
 
-Little Hotelier veröffentlicht keinen MCP-Server, und die eigene Partner-API-Dokumentation von SiteMinder sagt, dass Verfügbarkeits- und Preisdaten [nicht von Little Hotelier bezogen werden können](https://developer.siteminder.com/smx-api/reference/availability-and-rates/publishers). Hotelier Tools bietet beides, einen MCP-Server und eine REST-API, mit dem eigenen Little-Hotelier-Login Ihres Betriebs. Es ist weder mit SiteMinder oder Little Hotelier verbunden noch von ihnen empfohlen. Hintergrund: [Hat Little Hotelier eine API?](/blog/little-hotelier-api)
+Little Hotelier veröffentlicht keinen MCP-Server, und die eigene Partner-API-Dokumentation von SiteMinder sagt, dass Verfügbarkeits- und Preisdaten [nicht von Little Hotelier bezogen werden können](https://developer.siteminder.com/smx-api/reference/availability-and-rates/publishers). Hotelier Tools bietet beides, einen MCP-Server und eine REST-API, mit dem eigenen Little-Hotelier-Login Ihres Betriebs. Es steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen. Hintergrund: [Hat Little Hotelier eine API?](/blog/little-hotelier-api)
 
 1. Verbinden Sie in Hotelier Tools Little Hotelier unter **Credentials** (`/credentials`), falls noch nicht geschehen.
 2. Öffnen Sie **Developer → API & MCP → API Keys** (`/developer/api-keys`).
@@ -55,7 +55,7 @@ setx HT_API_KEY "htk_YOUR_API_KEY"
 
 ## So fügen Sie den MCP-Server zu Claude Code, Cursor, VS Code, Windsurf und Gemini CLI hinzu
 
-Jedes Werkzeug speichert dieselben drei Angaben (Adresse, Transport, Schlüssel) in einer etwas anderen Datei. Wählen Sie Ihres.
+Jedes Werkzeug speichert dieselben drei Angaben (Adresse, Transport, Schlüssel) in einer etwas anderen Datei. Wählen Sie Ihr Werkzeug.
 
 ### Claude Code
 
@@ -254,7 +254,7 @@ function syncArrivals() {
 }
 ```
 
-Speichern Sie den Schlüssel unter **Projekteinstellungen → Skripteigenschaften** als `HT_API_KEY`, führen Sie das Skript einmal aus, um den Zugriff zu erteilen, und legen Sie dann unter **Trigger** einen täglichen zeitgesteuerten Trigger an. `/reservations` liefert höchstens 100 Aufenthalte pro Aufruf, gefiltert nach Anreisedatum, teilen Sie volle Monate also in Wochen. Denken Sie daran: Die Tabelle enthält jetzt Gästenamen, geben Sie sie mit Bedacht frei.
+Speichern Sie den Schlüssel unter **Projekteinstellungen → Skripteigenschaften** als `HT_API_KEY`, führen Sie das Skript einmal aus, um den Zugriff zu erteilen, und legen Sie dann unter **Trigger** einen täglichen zeitgesteuerten Trigger an. `/reservations` liefert höchstens 100 Aufenthalte pro Aufruf, gefiltert nach Anreisedatum. Teilen Sie gut gebuchte Monate also in Wochen auf. Denken Sie daran: Die Tabelle enthält jetzt Gästenamen, geben Sie sie mit Bedacht frei.
 
 ### Ein kleines eigenes Dashboard
 
@@ -279,8 +279,8 @@ Beide nutzen denselben Schlüssel und dieselben Berechtigungen. Die REST-Anleitu
 
 Coding-Agenten führen Werkzeuge schnell aus, und genau deshalb sollten Sie sie hier ausbremsen.
 
-- **Schreibzugriffe laufen, sobald der Agent sie aufruft.** Außerhalb des Hotelier-Tools-Dashboards gibt es keine Freigabekarte. Eine Reservierung zu ändern, eine Zahlung zu erfassen, Preise anzuwenden oder Stop Sell zu setzen geschieht, sobald das Werkzeug läuft. Lassen Sie die Einstellung Ihres Editors „vor dem Ausführen von Werkzeugen fragen“ an und nutzen Sie mit diesem Server keine Auto-Run-Modi.
-- **Nicht umkehrbare Aktionen sind ohnehin gesperrt.** Acht Werkzeuge (Rechnungen per E-Mail an Gäste senden, Erstattungen, die INE-Umfrage einreichen, Team-Einladungen, Gästelinks per E-Mail senden, Booking.com-Fragen beantworten und die Wartelistenprüfung, die Gäste anschreibt) gibt es nur im Dashboard.
+- **Schreibzugriffe laufen, sobald der Agent sie aufruft.** Außerhalb des Hotelier-Tools-Dashboards gibt es keine Freigabekarte. Eine Reservierung zu ändern, eine Zahlung zu erfassen, Preise anzuwenden oder einen Stop-Sell zu setzen, geschieht, sobald das Werkzeug läuft. Lassen Sie die Einstellung Ihres Editors „vor dem Ausführen von Werkzeugen fragen“ an und nutzen Sie mit diesem Server keine Auto-Run-Modi.
+- **Nicht umkehrbare Aktionen sind ohnehin gesperrt.** Acht Werkzeuge (Rechnungen per E-Mail an Gäste senden, Erstattungen, die INE-Erhebung einreichen, Team-Einladungen, Gästelinks per E-Mail senden, Booking.com-Fragen beantworten und die Wartelistenprüfung, die Gäste anschreibt) gibt es nur im Dashboard.
 - **Reservierungsänderungen laufen in zwei Schritten.** `propose_reservation_changes` zeigt das Vorher und Nachher, `apply_reservation_changes` braucht `confirmed: true`. Lesen Sie den Vorschlag.
 - **Committen Sie nie einen Schlüssel.** Nutzen Sie Verweise im Stil `${HT_API_KEY}`, tragen Sie lokale Konfigurationsdateien in `.gitignore` ein und widerrufen Sie jeden durchgesickerten Schlüssel unter `/developer/api-keys`.
 
@@ -301,5 +301,5 @@ Coding-Agenten führen Werkzeuge schnell aus, und genau deshalb sollten Sie sie 
 ## Nächste Schritte
 
 - Kein Entwickler? [Verbinden Sie Claude](/blog/connect-claude-to-little-hotelier) oder [ChatGPT](/blog/connect-chatgpt-to-little-hotelier) stattdessen im Browser.
-- Neu bei der Idee? Lesen Sie [Was ist ein MCP-Server?](/blog/what-is-mcp-server-hotels).
+- Das Thema ist neu für Sie? Lesen Sie [Was ist ein MCP-Server?](/blog/what-is-mcp-server-hotels).
 - Tabellen ohne Code gewünscht? Siehe [Reservierungen nach Excel exportieren](/blog/export-little-hotelier-reservations-excel).

@@ -9,21 +9,21 @@ keywords: [cta ctd hotel cosa significa, little hotelier cta ctd, closed to arri
 feature: dynamic-pricing
 demoPath: /pricing/settings/restrictions
 cover: /images/blog/demo/en/price-recommendations.webp
-coverAlt: "Raccomandazioni di prezzo in Hotelier Tools per la camera Doble Estándar, dal 3 al 16 ottobre 2026: prezzo attuale e consigliato per notte, una colonna CTA / CTD con interruttori A e D, il soggiorno minimo, una colonna Channel e un pulsante Apply to Little Hotelier"
+coverAlt: "Prezzi consigliati in Hotelier Tools per la camera Doble Estándar, dal 3 al 16 ottobre 2026: prezzo attuale e consigliato per notte, una colonna CTA / CTD con interruttori A e D, il soggiorno minimo, una colonna Channel e un pulsante Apply to Little Hotelier"
 faq:
-  - q: "Che differenza c'è tra closed to arrival e stop sell?"
-    a: "Il closed to arrival blocca solo i nuovi check-in in quella data: un ospite arrivato il giorno prima può comunque fermarsi anche quella notte. Lo stop sell chiude la tariffa alla vendita in quella data, quindi nessuna nuova prenotazione può includere quella notte."
+  - q: "Che differenza c'è tra chiusura all'arrivo (CTA) e stop sell?"
+    a: "La chiusura all'arrivo blocca solo i nuovi check-in in quella data: un ospite arrivato il giorno prima può comunque fermarsi anche quella notte. Lo stop sell chiude la tariffa alla vendita in quella data, quindi nessuna nuova prenotazione può includere quella notte."
   - q: "Lo stop sell è come impostare la disponibilità a 0?"
-    a: "Per l'ospite il risultato è lo stesso: la notte non si può prenotare. Dal tuo lato è diverso. Uno stop sell mantiene il numero di camere, quindi riaprire richiede un solo interruttore. Una chiusura camera in Little Hotelier riduce la disponibilità inviata ai canali e non applica uno stop sell."
-  - q: "Quando conviene a un piccolo hotel usare il closed to arrival?"
+    a: "Per l'ospite il risultato è lo stesso: la notte non si può prenotare. Dal tuo lato è diverso. Uno stop sell mantiene il numero di camere, quindi riaprire richiede un solo interruttore. Una chiusura della camera (Room Closure) in Little Hotelier riduce la disponibilità inviata ai canali e non applica uno stop sell."
+  - q: "Quando conviene a un piccolo hotel usare la chiusura all'arrivo?"
     a: "Usalo per proteggere i soggiorni più lunghi: il sabato di un fine settimana pieno, così gli ospiti devono arrivare il venerdì, o nelle notti di un evento in cui preferisci vendere soggiorni completi. Rivedilo man mano che la data si avvicina e toglilo se la notte è ancora vuota."
   - q: "Perché la mia restrizione non compare su Booking.com o Airbnb?"
-    a: "Non ogni tariffa di un canale accetta ogni restrizione. Nella griglia dell'inventario di Little Hotelier un trattino in una cella di canale significa che quel canale non supporta quell'aggiornamento, e gli aggiornamenti oltre la finestra massima di prenotazione di un canale non si sincronizzano. Controlla la configurazione della tariffa del canale in Channel Manager per vedere quali tipi di aggiornamento supporta."
+    a: "Non tutte le tariffe dei canali accettano tutte le restrizioni. Nella griglia dell'inventario di Little Hotelier un trattino in una cella di canale significa che quel canale non supporta quell'aggiornamento, e gli aggiornamenti oltre la finestra massima di prenotazione di un canale non si sincronizzano. Controlla la configurazione della tariffa del canale in Channel Manager per vedere quali tipi di aggiornamento supporta."
   - q: "Hotelier Tools cambia le restrizioni da solo?"
     a: "No. Le politiche di restrizione vengono proposte notte per notte nella pagina Recommendations e nulla viene scritto finché non applichi. L'autopilota scrive i soggiorni minimi solo se lo consenti a parte e non tocca mai lo stop sell dei canali. Hotelier Tools è indipendente e non è affiliato né approvato da SiteMinder o Little Hotelier."
 ---
 
-In Little Hotelier, **CTA** (closed to arrival, chiuso in arrivo) significa che gli ospiti non possono fare check-in in quella data, e **CTD** (closed to departure, chiuso in partenza) che non possono fare check-out in quella data. Il **soggiorno minimo** (minimum stay) è il numero minimo di notti per cui si può prenotare una camera. Uno **stop sell** chiude una tariffa alla vendita in una data, mentre le camere restano in inventario. Imposti tutto per tariffa della camera in **Front Desk > Inventory**, una data alla volta o con **Bulk Update**.
+In Little Hotelier, **CTA** (closed to arrival, chiusura all'arrivo) significa che gli ospiti non possono fare check-in in quella data, e **CTD** (closed to departure, chiusura alla partenza) che non possono fare check-out in quella data. Il **soggiorno minimo** (minimum stay) è il numero minimo di notti per cui si può prenotare una camera. Uno **stop sell** chiude una tariffa alla vendita in una data, mentre le camere restano in inventario. Imposti tutto per tariffa della camera in **Front Desk > Inventory**, una data alla volta o con **Bulk Update**.
 
 | Termine | Cosa significa | Uso tipico |
 |---|---|---|
@@ -59,7 +59,7 @@ La griglia di Little Hotelier ha solo **Min Stay** e **Max Stay**. Il modo in cu
 
 Uno stop sell chiude una tariffa alla vendita in una data lasciando invariato il numero di camere. Little Hotelier poggia sul channel manager di SiteMinder, e una notte può avere una tariffa perfettamente valida e non vendersi da nessuna parte perché è in stop sell.
 
-Little Hotelier offre due modi per farlo e puoi usarne uno alla volta:
+Little Hotelier offre due modi per farlo e puoi usarne solo uno alla volta:
 
 - **Close Channels** in **Front Desk > Inventory** interrompe la vendita "su tutti i canali collegati (compreso il tuo motore di prenotazione)" per le tariffe e le date selezionate.
 - **Stop Sell** in **Channel Manager** chiude canali specifici. Vai su **My Apps > Channel Manager > Inventory**, premi il pulsante blu **Channels** accanto alla tariffa, trova la tariffa del canale e scegli **Stop Sell**. Per un intervallo di date usa **Bulk Update** e imposta **Stop Sell** su **On** ([stop sell per canali specifici](https://helpcentre.littlehotelier.com/en/articles/8673615-add-or-remove-stop-sells-for-specific-channels)).
@@ -69,10 +69,10 @@ Gli stop sell di Channel Manager non funzionano finché **Close Channels** è sp
 | | Stop sell | Chiusura camera (meno disponibilità) | CTA |
 |---|---|---|---|
 | Nuove prenotazioni che includono quella notte | Bloccate | Bloccate quando la disponibilità arriva a 0 | Consentite se arrivano prima |
-| Il tuo numero di camere | Invariato | Ridotto per quel tipo di camera | Invariato |
+| Il tuo numero di camere | Invariato | Ridotto per quella tipologia di camera | Invariato |
 | Utile per | Chiudere in fretta, per canale | Camere davvero fuori servizio | Modellare i soggiorni |
 
-Una **Room Closure** (**Front Desk > Calendar**) "riduce la disponibilità inviata ai canali per il tipo di camera chiuso. Non applica uno stop sell" ([chiusure camera](https://helpcentre.littlehotelier.com/en/articles/8674039-create-and-manage-room-closures)).
+Una **Room Closure** (**Front Desk > Calendar**) "riduce la disponibilità inviata ai canali per la tipologia di camera chiusa. Non applica uno stop sell" ([chiusure camera](https://helpcentre.littlehotelier.com/en/articles/8674039-create-and-manage-room-closures)).
 
 ## Come impostare CTA, CTD e soggiorno minimo in Little Hotelier
 
@@ -94,7 +94,7 @@ Una **Room Closure** (**Front Desk > Calendar**) "riduce la disponibilità invia
 
 Da sapere:
 
-- Le restrizioni si impostano **per tariffa della camera**, non per tipo di camera.
+- Le restrizioni si impostano **per tariffa della camera**, non per tipologia di camera.
 - Le tariffe derivate sono in grigio nella griglia. Modifica la tariffa da cui derivano.
 - Front Desk accetta aggiornamenti fino a circa 716 giorni in avanti per impostazione predefinita.
 
@@ -102,7 +102,7 @@ Da sapere:
 
 Little Hotelier invia le tue restrizioni a ogni canale collegato tramite il channel manager, con alcuni limiti ([griglia dell'inventario](https://helpcentre.littlehotelier.com/en/articles/8673827-front-desk-manage-rates-availability-and-restrictions-in-the-inventory-grid), [periodo di aggiornamento dei canali](https://helpcentre.littlehotelier.com/en/articles/8673945-channel-manager-manage-update-period)):
 
-- **Non ogni tariffa di un canale supporta ogni restrizione.** Un trattino (-) in una cella di canale significa che quel canale non supporta quel tipo di aggiornamento. In Channel Manager, la schermata **Configure** della tariffa di un canale mostra quali tipi di aggiornamento accetta.
+- **Non tutte le tariffe dei canali supportano tutte le restrizioni.** Un trattino (-) in una cella di canale significa che quel canale non supporta quel tipo di aggiornamento. In Channel Manager, la schermata **Configure** della tariffa di un canale mostra quali tipi di aggiornamento accetta.
 - **Le finestre di prenotazione differiscono.** Channel Manager invia aggiornamenti fino a 400 giorni in avanti per impostazione predefinita (fino a 750). Gli aggiornamenti oltre il massimo di un canale non si sincronizzano; per Booking.com il massimo è 545 giorni.
 - **Expedia** accetta gli stop sell da Little Hotelier solo a livello di tariffa. Gli stop sell a livello di camera si gestiscono in Expedia Partner Central ([problemi di stop sell su Expedia](https://helpcentre.littlehotelier.com/en/articles/15201269-troubleshoot-expedia-stop-sell-issues)).
 - **Airbnb** con Enhanced Sync riceve tariffe, disponibilità e restrizioni, ma un campo che modifichi nell'extranet di Airbnb diventa grigio in Channel Manager ([collegamento ad Airbnb](https://helpcentre.littlehotelier.com/en/articles/8693078-map-to-airbnb)).
@@ -119,7 +119,7 @@ Dopo aver impostato una restrizione importante, apri l'extranet del canale e con
 
 ## Il modo più veloce: politiche di restrizione e stop sell in Hotelier Tools
 
-Hotelier Tools lavora sopra Little Hotelier con il tuo login. Invece di impostare le restrizioni data per data, scrivi la politica una volta sola e viene proposta notte per notte, accanto al prezzo. Le funzioni di pricing sono in **alpha**.
+Hotelier Tools lavora insieme a Little Hotelier, con il tuo login. Invece di impostare le restrizioni data per data, scrivi la politica una volta sola e viene proposta notte per notte, accanto al prezzo. Le funzioni di pricing sono in **alpha**.
 
 ### 1. Scrivi la politica una volta sola
 
@@ -154,8 +154,8 @@ L'autopilota non cambia mai lo stop sell e scrive i soggiorni minimi solo se lo 
 
 ## Riepilogo
 
-- **CTA** blocca i check-in in una data, **CTD** i check-out, il **soggiorno minimo** fissa la prenotazione più breve e **stop sell** chiude la tariffa alla vendita mantenendo il numero di camere.
+- **CTA** blocca i check-in in una data, **CTD** i check-out, il **soggiorno minimo** fissa la prenotazione più breve e lo **stop sell** chiude la tariffa alla vendita mantenendo il numero di camere.
 - In Little Hotelier si impostano per tariffa della camera in **Front Desk > Inventory**, o con **Bulk Update** per un intervallo di date. Lo stop sell per canale sta in Channel Manager.
 - Controlla quali restrizioni accetta ogni canale e rivedile ogni settimana man mano che le date si avvicinano.
 - Con i [prezzi dinamici di Hotelier Tools](/tools/bot/dynamic-pricing) scrivi la politica una volta, la vedi accanto al prezzo e imposti lo stop sell di SiteMinder dalla stessa pagina. È gratuito per tutti gli hotel fino al 10 gennaio 2027.
-- Poi: [prezzi dinamici per piccoli hotel su Little Hotelier](/blog/dynamic-pricing-little-hotelier) e [trucchi e funzioni nascoste di Little Hotelier](/blog/little-hotelier-tips).
+- Per approfondire: [prezzi dinamici per piccoli hotel su Little Hotelier](/blog/dynamic-pricing-little-hotelier) e [trucchi e funzioni nascoste di Little Hotelier](/blog/little-hotelier-tips).

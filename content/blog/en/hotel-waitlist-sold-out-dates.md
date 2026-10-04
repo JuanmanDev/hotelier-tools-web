@@ -33,7 +33,7 @@ It means you asked for dates that are full, and the hotel will contact you if a 
 
 ## Why keep a waitlist when Booking.com shows you sold out?
 
-- **Cancellations resell fast.** A cancelled room goes back on sale on every channel at once, and an OTA guest may book it before you remember who asked.
+- **Cancellations resell fast.** A canceled room goes back on sale on every channel at once, and an OTA guest may book it before you remember who asked.
 - **It turns enquiries into direct bookings.** The guest who called you books on your website, without the OTA commission ([how much Booking.com takes](/blog/booking-com-commission)).
 - **It shows demand.** A list of nights people wanted and couldn't get is useful when you set next year's prices.
 
@@ -138,7 +138,7 @@ Hotelier Tools is not affiliated with or endorsed by SiteMinder or Little Hoteli
 
 ## Summary
 
-- A waitlist gives guests who asked first the first chance at a cancelled room, as a direct booking.
+- A waitlist gives guests who asked first the first chance at a canceled room, as a direct booking.
 - By hand: a sheet, cancellation alerts in the Little Hotelier or Pulse app, and a clear rule for who goes first.
 - Automatic: Hotelier Tools' **Availability Queue** checks every night of each stay on a schedule and sends one message with a booking link. Nothing is held.
 - Add the public waitlist page to your website so guests sign up themselves, with consent and email confirmation.

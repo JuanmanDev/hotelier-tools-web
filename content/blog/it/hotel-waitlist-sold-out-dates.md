@@ -25,13 +25,13 @@ faq:
     a: "Può esserlo, se gli ospiti sono d'accordo e usi i loro dati solo per quel soggiorno. Il modulo di Hotelier Tools richiede una casella di consenso, mostra un'informativa sulla privacy costruita dai dati della tua struttura e rimuove i dati di contatto dalle voci chiuse dopo 90 giorni."
 ---
 
-Una lista d'attesa per hotel è un elenco di ospiti che hanno chiesto date in cui sei al completo. Quando una cancellazione libera una camera, la offri a loro per primi con un link di prenotazione diretta, prima che si rivenda su un'OTA. Puoi gestirla con un foglio di calcolo e gli avvisi di cancellazione, oppure lasciare che Hotelier Tools controlli Little Hotelier a intervalli e scriva all'ospite via email appena tutte le notti del suo soggiorno sono libere.
+Una lista d'attesa per hotel è un elenco di ospiti che hanno chiesto date in cui sei al completo. Quando una cancellazione libera una camera, la offri a loro per primi con un link di prenotazione diretta, prima che venga rivenduta su un'OTA. Puoi gestirla con un foglio di calcolo e gli avvisi di cancellazione, oppure lasciare che Hotelier Tools controlli Little Hotelier a intervalli regolari e scriva all'ospite via email appena tutte le notti del suo soggiorno sono libere.
 
 ## Cosa significa "in lista d'attesa" in un hotel?
 
-Significa che hai chiesto date che sono piene e che la struttura ti contatterà se si libera una camera. Nulla è riservato e nulla è pagato. Quando arriva il messaggio, la camera va a chi prenota per primo, quindi un buon messaggio per la lista d'attesa include un link per prenotare subito.
+Significa che hai chiesto date che sono piene e che la struttura ti contatterà se si libera una camera. Non viene bloccato nulla e non si paga nulla. Quando arriva il messaggio, la camera va a chi prenota per primo, quindi un buon messaggio per la lista d'attesa include un link per prenotare subito.
 
-## Perché tenere una lista d'attesa se Booking.com ti mostra esaurito?
+## Perché tenere una lista d'attesa se su Booking.com risulti al completo?
 
 - **Le cancellazioni si rivendono in fretta.** Una camera cancellata torna in vendita su tutti i canali contemporaneamente e un ospite di un'OTA può prenotarla prima che tu ti ricordi chi l'aveva chiesta.
 - **Trasforma le richieste in prenotazioni dirette.** L'ospite che ti ha chiamato prenota sul tuo sito, senza la commissione dell'OTA ([quanto prende Booking.com](/blog/booking-com-commission)).
@@ -75,14 +75,14 @@ Il punto debole sono le persone. Qualcuno deve vedere l'avviso, aprire il foglio
 Scegli una regola e scrivila in cima al foglio:
 
 - **Chi prima arriva, meglio alloggia.** Semplice e facile da spiegare.
-- **Prima chi corrisponde meglio.** Una corrispondenza esatta, o il soggiorno più lungo, va per primo.
+- **Prima chi corrisponde meglio.** Una corrispondenza esatta, o il soggiorno più lungo, ha la precedenza.
 - **Tutti insieme.** Scrivi a tutti quelli che corrispondono; il primo che prenota vince. È il più veloce, ma qualche ospite resterà deluso.
 
 **Trattenere la camera** è una promessa che devi mantenere su ogni canale. Se vuoi trattenerla per un'ora, inserisci una prenotazione provvisoria in Little Hotelier così il tuo channel manager smette di venderla, poi invia un link di pagamento per quella prenotazione. Con Little Hotelier Pay, **Send Payment Request** lo fa ([richieste di pagamento](https://helpcentre.littlehotelier.com/en/articles/8673558-little-hotelier-pay-payment-requests)). Se non trattieni le camere, dillo chiaramente: "nulla è riservato finché non prenoti". Chiudere le notti su tutti i canali è un altro strumento, spiegato in [CTA, CTD, soggiorno minimo e stop sell](/blog/little-hotelier-cta-ctd-stop-sell).
 
 ## Il modo automatico: lascia che Hotelier Tools controlli Little Hotelier
 
-La **Availability Queue** di Hotelier Tools (`/availability-watch`, beta) tiene l'elenco e fa i controlli. Un'attività programmata guarda l'intera coda in Little Hotelier. Quando ogni camera richiesta è prenotabile in ogni notte, l'ospite e/o tu ricevete un messaggio via email o WhatsApp. Nulla viene riservato o trattenuto e il messaggio lo dice.
+La **Availability Queue** di Hotelier Tools (`/availability-watch`, beta) tiene l'elenco e fa i controlli. Un'attività programmata guarda l'intera coda in Little Hotelier. Quando ogni camera richiesta è prenotabile in ogni notte, l'ospite e/o tu ricevete un messaggio via email o WhatsApp. Nulla viene riservato o trattenuto e il messaggio lo specifica.
 
 1. Apri **Availability Queue** e vai su **Add a stay to watch**.
 2. Scegli la prima e l'ultima notte. Imposta **Rooms needed** (in ogni notte) e **Room types**; lascia vuote le tipologie e va bene qualsiasi camera. Per un gruppo misto, usa **Different numbers per room type**.
@@ -96,9 +96,9 @@ La **Availability Queue** di Hotelier Tools (`/availability-watch`, beta) tiene 
 
 Cosa sapere:
 
-- **Decide la notte più debole.** Un soggiorno conta come libero solo quando ogni notte ha le camere. Una notte senza dati conta come piena, mai come libera.
+- **Conta la notte più critica.** Un soggiorno conta come libero solo quando ogni notte ha le camere. Una notte senza dati conta come piena, mai come libera.
 - **L'email all'ospite include un link di prenotazione diretta** per quelle date, così il primo che prenota ottiene la camera.
-- **Un messaggio per controllo.** Dopo l'invio, la voce si chiude. **History** (`/availability-watch/history`) conserva il messaggio esatto inviato da ogni voce, utile quando un ospite risponde.
+- **Un solo messaggio per voce.** Dopo l'invio, la voce si chiude. **History** (`/availability-watch/history`) conserva il messaggio esatto inviato da ogni voce, utile quando un ospite risponde.
 - **L'invio può essere disattivato sul server.** La pagina te lo dice. In quello stato il controllo gira comunque e registra il messaggio che avrebbe inviato, senza inviarlo.
 - **I messaggi WhatsApp** partono dal numero WhatsApp che hai collegato (vedi [WhatsApp con Little Hotelier](/blog/whatsapp-little-hotelier)).
 
@@ -106,7 +106,7 @@ In alta stagione controlla più spesso di una volta a notte: con un controllo no
 
 ### Come la lista d'attesa influisce sui tuoi prezzi
 
-Ogni gruppo in attesa per una notte alza del 3% il prezzo consigliato per quella notte, fino al 12% a notte, nei prezzi dinamici di Hotelier Tools (alpha). Una lista d'attesa piena è un segnale di domanda e la raccomandazione lo mostra ([prezzi dinamici per piccoli hotel](/blog/dynamic-pricing-little-hotelier)).
+Ogni gruppo in attesa per una notte alza del 3% il prezzo consigliato per quella notte, fino al 12% a notte, nei prezzi dinamici di Hotelier Tools (alpha). Una lista d'attesa piena è un segnale di domanda e il prezzo consigliato ne tiene conto ([prezzi dinamici per piccoli hotel](/blog/dynamic-pricing-little-hotelier)).
 
 ::demo-cta{path="/availability-watch"}
 ::
@@ -118,7 +118,7 @@ Invece di scrivere tu ogni richiesta, lascia che gli ospiti si aggiungano da sol
 1. Attiva **Page open**. L'indirizzo usa lo slug Direct Book della tua struttura in Little Hotelier.
 2. In **Which stays** scegli **Any future stay** oppure **Only stays inside these dates**. Imposta **Longest stay** (14 notti per impostazione predefinita), **Which room types** e **Rooms per request** (2 per impostazione predefinita, fino a 10).
 3. Lascia attivo **Ask guests to confirm their email (double opt-in)**: l'ospite preme un pulsante in un'email prima di iscriversi. La pagina limita inoltre la lista a 100 persone in attesa e a 40 iscrizioni al giorno. Permettere agli ospiti di lasciare un numero WhatsApp è disattivato per impostazione predefinita.
-4. Se vuoi, aggiungi un testo introduttivo, un link di ritorno al tuo sito e avvisi su arrivi e partenze, così gli ospiti sanno quando scelgono un giorno in cui di solito chiudi agli arrivi.
+4. Se vuoi, aggiungi un testo introduttivo, un link di ritorno al tuo sito e avvisi su arrivi e partenze, così gli ospiti vengono avvisati se scelgono un giorno in cui di solito applichi la chiusura all'arrivo.
 5. Clicca su **Copy link** e mettilo nella pagina di prenotazione del tuo sito e nelle tue risposte "ci dispiace, siamo al completo".
 
 ::screenshot{src="/images/blog/demo/en/mobile-waitlist-public-form-dark.webp" alt="Pagina pubblica Join the waitlist su un telefono, in modalità scura: le date che vuoi sono al completo, lascia i tuoi dati e ricevi un link diretto per prenotare quando si libera una camera, con i campi per struttura, nome (facoltativo), email, telefono (facoltativo) e le tue notti" caption="Gli ospiti scelgono le notti, lasciano un'email e confermano. Nulla viene riservato." path="/waitlist" mobile}
@@ -128,7 +128,7 @@ L'ospite sceglie le notti e, se vuole, una tipologia di camera, lascia un'email 
 
 ## Le liste d'attesa funzionano per ostelli e letti in dormitorio?
 
-Sì. Scegli la tipologia di camera del dormitorio e il numero di unità di cui il gruppo ha bisogno. Il controllo legge la disponibilità come la conta Little Hotelier per quella tipologia, quindi se vendi il dormitorio a letto, chiedi i letti. Per un gruppo che si dividerebbe tra più tipologie, usa **Different numbers per room type** e tieni attivi per te gli avvisi **partial**: una corrispondenza parziale è una telefonata.
+Sì. Scegli la tipologia di camera del dormitorio e il numero di unità di cui il gruppo ha bisogno. Il controllo legge la disponibilità come la conta Little Hotelier per quella tipologia, quindi se vendi il dormitorio a letto, chiedi i letti. Per un gruppo che si dividerebbe tra più tipologie, usa **Different numbers per room type** e tieni attivi per te gli avvisi **partial**: una corrispondenza parziale vale una telefonata.
 
 Tutto ciò che fa la lista d'attesa è nella [pagina Waitlist](/tools/bot/waitlist). Hotelier Tools è gratuito per ogni struttura fino all'inizio della fatturazione, il 10 gennaio 2027.
 

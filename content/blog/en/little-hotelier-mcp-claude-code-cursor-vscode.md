@@ -186,7 +186,7 @@ Ask Claude Code (or Cursor's agent) in an empty folder:
 Use the hotelier-tools MCP server to look at my room types and last month's reservations. Then write a Node.js script that calls the Hotelier Tools REST API (spec: https://dashboard.hotelier.tools/api/v1/openapi.json) with the key in HT_API_KEY, and for any month I pass in, prints occupancy and average daily rate per room type and saves them to a CSV.
 ::
 
-A good script starts like this. It pulls the room types and every reservation that overlaps the month, and saves the raw answer so you can check the fields before doing maths:
+A good script starts like this. It pulls the room types and every reservation that overlaps the month, and saves the raw answer so you can check the fields before doing math:
 
 ```js [fetch-month.mjs]
 // Usage: node fetch-month.mjs 2026-09   (needs HT_API_KEY in your environment)

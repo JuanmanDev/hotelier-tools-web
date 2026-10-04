@@ -21,7 +21,7 @@ faq:
   - q: "Ist eine inoffizielle API wie Hotelier Tools sicher und erlaubt?"
     a: "Hotelier Tools meldet sich mit Ihrem eigenen Little-Hotelier-Login an, speichert ihn verschlüsselt (AES-256-GCM) und kann nur tun, was dieser Login in der Little-Hotelier-Web-App kann. Es ist keine offizielle Integration von SiteMinder. Wenn Sie unsicher sind, prüfen Sie Ihren eigenen Vertrag mit SiteMinder. Sie können jeden Schlüssel jederzeit widerrufen."
   - q: "Hat Little Hotelier einen MCP-Server für KI-Assistenten?"
-    a: "Stand Oktober 2026 keinen für Eigentümer. Die KI-Arbeit von SiteMinder in Demand Plus dreht sich darum, dass Reisende Ihre Zimmer in ChatGPT und Claude finden und buchen. Um eine KI zu Ihren eigenen Buchungen zu befragen, brauchen Sie einen unabhängigen MCP-Server wie den in Hotelier Tools."
+    a: "Stand Oktober 2026 keinen für Inhaber. Die KI-Arbeit von SiteMinder in Demand Plus dreht sich darum, dass Reisende Ihre Zimmer in ChatGPT und Claude finden und buchen. Um eine KI zu Ihren eigenen Buchungen zu befragen, brauchen Sie einen unabhängigen MCP-Server wie den in Hotelier Tools."
   - q: "Kann ich die API testen, ohne echte Daten zu gefährden?"
     a: "Es gibt keinen öffentlichen Sandbox-Schlüssel. Beginnen Sie mit reinen Leseaufrufen (Reservierungen, Preise, Zimmertypen). Sie ändern nichts in Little Hotelier. Schreibende Aufrufe, etwa das Erstellen einer Rechnung, erzeugen echte Dokumente."
 ---
@@ -45,7 +45,7 @@ Es gibt vier offizielle Wege, Daten in Little Hotelier hinein oder aus ihm herau
 
 Der [Entwicklerleitfaden](https://developer.siteminder.com/get-started/siteminder-apis) von SiteMinder nennt fünf APIs: pmsXchange, SiteConnect, Channels Plus, SMX und Direct Booking. Für Little Hotelier zählt SMX, die API hinter Apps wie Online-Check-in und Gästenachrichten.
 
-In der [Liste der SMX-Publisher](https://developer.siteminder.com/smx-api/additional-resources/reference-tables/property-publishers) von SiteMinder sendet Little Hotelier **Reservierungen**, aber keine Verfügbarkeit und Preise. Die [SMX-Schnellstartanleitung](https://developer.siteminder.com/smx-api/guides/quick-start) sagt dasselbe: „you are not able to obtain ARI data“ von Little Hotelier.
+In der [Liste der SMX-Publisher](https://developer.siteminder.com/smx-api/additional-resources/reference-tables/property-publishers) von SiteMinder sendet Little Hotelier **Reservierungen**, aber keine Verfügbarkeit und Preise. Die [SMX-Schnellstartanleitung](https://developer.siteminder.com/smx-api/guides/quick-start) sagt dasselbe: „you are not able to obtain ARI data“ von Little Hotelier, also keine Daten zu Verfügbarkeit, Preisen und Inventar.
 
 Der Zugang ist Partnern vorbehalten. Laut [FAQ](https://developer.siteminder.com/get-started/resources/faq) von SiteMinder müssen Sie zuerst über die [Integrationsbewerbung](https://www.siteminder.com/integrations/apply-now/) eine Partnerschaftsvereinbarung unterzeichnen, dann entwickeln, zertifizieren und live gehen, was „die meisten“ Partner innerhalb von 60 Tagen schaffen. Dieser Weg passt zu einem Softwareunternehmen. Ein einzelnes Hotel kann für sich keinen SMX-Schlüssel bekommen.
 
@@ -74,12 +74,12 @@ So funktioniert es, einfach erklärt:
 - Ihre Skripte rufen Hotelier Tools mit einem API-Schlüssel auf, und Hotelier Tools spricht mit Little Hotelier.
 
 ::callout{type="note" title="Unabhängig, nicht offiziell"}
-Hotelier Tools ist weder mit SiteMinder oder Little Hotelier verbunden noch von ihnen empfohlen. Es ist keine offizielle SiteMinder-API und verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Betriebs. Das Dashboard ist für jedes Hotel kostenlos, bis die Abrechnung am 10. Januar 2027 beginnt.
+Hotelier Tools steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen. Es ist keine offizielle SiteMinder-API und verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Betriebs. Das Dashboard ist für jedes Hotel kostenlos, bis die Abrechnung am 10. Januar 2027 beginnt.
 ::
 
 ## So erstellen Sie einen API-Schlüssel und machen den ersten Aufruf
 
-Sie brauchen ein Hotelier-Tools-Konto (Anmeldung unter [dashboard.hotelier.tools/register](https://dashboard.hotelier.tools/register)) mit verbundenem Little Hotelier unter **Credentials**. Der Eigentümer des Betriebs hat standardmäßig API-Zugang.
+Sie brauchen ein Hotelier-Tools-Konto (Anmeldung unter [dashboard.hotelier.tools/register](https://dashboard.hotelier.tools/register)) mit verbundenem Little Hotelier unter **Credentials**. Der Inhaber des Betriebs hat standardmäßig API-Zugang.
 
 1. Öffnen Sie **Developer → API & MCP → API Keys** (`/developer/api-keys`).
 2. Geben Sie unter „Generate a new key“ einen Namen ein, den Sie später wiedererkennen, etwa `sheets-export`, und klicken Sie auf **Generate key**.
@@ -172,7 +172,7 @@ Listenaufrufe liefern JSON wie `{ "success": true, "count": 2, "data": [ … ] }
 
 **Rate Limit.** 100 Anfragen pro Minute und IP-Adresse. Jede Antwort enthält `X-RateLimit-Limit`, `X-RateLimit-Remaining` und `X-RateLimit-Reset`. Oberhalb des Limits erhalten Sie `429` mit einem `Retry-After`-Header.
 
-**Seitenweise Abruf.** `/reservations` liefert höchstens 100 pro Aufruf (`limit`, Standard 50) und filtert nach dem Anreisedatum. Für ein ganzes Jahr fragen Sie jeweils einen Monat ab. Liefert ein Monat genau 100, teilen Sie ihn in zwei Hälften. `/guests` blättert mit `page` und `perPage` (bis 50). `/prices` teilt Zeiträume von mehr als zwei Wochen in Abschnitte, lange Zeiträume sind also langsamer.
+**Seitenweiser Abruf.** `/reservations` liefert höchstens 100 pro Aufruf (`limit`, Standard 50) und filtert nach dem Anreisedatum. Für ein ganzes Jahr fragen Sie jeweils einen Monat ab. Liefert ein Monat genau 100, teilen Sie ihn in zwei Hälften. `/guests` blättert mit `page` und `perPage` (bis 50). `/prices` teilt Zeiträume von mehr als zwei Wochen in Abschnitte, lange Zeiträume sind also langsamer.
 
 **Fehler** kommen als JSON mit `statusCode` und `statusMessage` zurück:
 
@@ -182,7 +182,7 @@ Listenaufrufe liefern JSON wie `{ "success": true, "count": 2, "data": [ … ] }
 | 404 | Keine solche Reservierung oder nicht in Ihrem Betrieb |
 | 422 | Ein Parameter ist falsch, zum Beispiel ein Datum nicht im Format `YYYY-MM-DD` |
 | 429 | Zu viele Anfragen, warten Sie auf `Retry-After` |
-| 500 / 502 | Little Hotelier hat nicht geantwortet, später erneut versuchen |
+| 500 / 502 | Little Hotelier hat nicht geantwortet, versuchen Sie es später erneut |
 
 **Maskierte Daten bleiben maskiert.** Die API liest, was Little Hotelier noch hält. Little Hotelier [maskiert Gästedaten 180 Tage nach dem Check-out](https://helpcentre.littlehotelier.com/en/articles/8673959-search-and-view-a-reservation), und keine API kann sie zurückholen. Exportieren Sie vorher.
 

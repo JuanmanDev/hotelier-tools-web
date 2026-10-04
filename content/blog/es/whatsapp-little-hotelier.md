@@ -1,7 +1,7 @@
 ---
 title: "WhatsApp con Little Hotelier: Messaging hub, WhatsApp Business para hoteles y otras opciones"
 seoTitle: "WhatsApp con Little Hotelier: tus opciones en 2026"
-description: "El Messaging hub de Little Hotelier usa la API oficial de WhatsApp Business. Compáralo con la app gratuita WhatsApp Business y una bandeja compartida."
+description: "El Messaging hub de Little Hotelier usa la API oficial de WhatsApp Business. Compáralo con la app gratuita y una bandeja compartida, con plantillas."
 date: 2026-10-03
 category: guests
 tags: [whatsapp, messaging, little hotelier, guest engagement, inbox]
@@ -27,7 +27,7 @@ faq:
 
 Sí, Little Hotelier se conecta a WhatsApp de forma nativa mediante el **Messaging hub**, parte del add-on de pago **Guest Engagement**, con la API oficial de WhatsApp Business: responder a un huésped que ha escrito en las últimas 24 horas es gratis, y escribir tú primero requiere una plantilla aprobada que Meta cobra. La otra vía habitual es la app gratuita WhatsApp Business en un móvil, que no tiene ninguna conexión con tus reservas. Hotelier Tools añade una tercera opción, WhatsApp en una sola bandeja con el correo y Booking.com, mediante una sesión de WhatsApp Web (WAHA) en vez de la API oficial.
 
-Los datos de Little Hotelier y WhatsApp de abajo se comprobaron con sus páginas de ayuda a octubre de 2026.
+Los datos de Little Hotelier y WhatsApp de abajo se comprobaron con sus páginas de ayuda a fecha de octubre de 2026.
 
 ## ¿Admite Little Hotelier WhatsApp?
 
@@ -118,7 +118,7 @@ Si necesitas la API oficial, el Messaging hub es la elección adecuada. Si sobre
 ### Qué puede hacer la IA en WhatsApp
 
 - **Solo ve una reserva cuando el remitente está verificado.** En WhatsApp, el número debe coincidir con el teléfono de la reserva al menos en sus últimos 8 dígitos. Si coinciden dos huéspedes, no ve ninguno. Para los huéspedes de Booking.com, añade el teléfono a la reserva de Little Hotelier para que el chat se pueda emparejar.
-- **Responde con tus datos.** Usa tus FAQ, las notas de la casa y la ficha del alojamiento (`/messaging/faq`), y responde «a confirmar» ante todo lo que no hayas incluido.
+- **Responde con tus datos.** Usa tus FAQ, las notas de la casa y la ficha del alojamiento (`/messaging/faq`), y responde «por confirmar» ante todo lo que no hayas incluido.
 - **No tiene herramientas.** Devuelve un plan de una lista cerrada (enviar un mensaje, avisar al personal, añadir una nota a la reserva, fijar la hora de llegada). No puede cancelar, cambiar fechas ni tocar pagos.
 - **La respuesta automática tiene condiciones.** Necesita un huésped verificado, una petición permitida y suficiente confianza, y se detiene a las 4 respuestas por hora, 12 al día o 3 seguidas sin respuesta del huésped.
 - **Antes espera a que contestes tú.** Un mensaje de WhatsApp se analiza a los 5 minutos; si alguien de tu equipo ya ha respondido, no se analiza ni se cobra nada. Cada análisis consume créditos de IA.
@@ -134,7 +134,7 @@ Tu personal también puede preguntar a la IA por las reservas escribiendo al mis
 Cómo gestiona la bandeja las conversaciones de Booking.com está en [cómo gestionar los mensajes de huéspedes de Booking.com](/blog/booking-com-guest-messages), y la lista completa de funciones está en la [página de la bandeja de huéspedes](/tools/bot/guest-inbox). El panel es gratis para todos los hoteles hasta que empiece el cobro el 10 de enero de 2027.
 
 ::callout{type="info" title="Herramienta independiente"}
-Hotelier Tools no está afiliado ni respaldado por SiteMinder, Little Hotelier, WhatsApp ni Meta. Se conecta con el propio acceso de tu hotel a Little Hotelier.
+Hotelier Tools no está afiliado a SiteMinder, a Little Hotelier, a WhatsApp ni a Meta, ni cuenta con su respaldo. Se conecta con el propio acceso de tu hotel a Little Hotelier.
 ::
 
 ## Consentimiento y privacidad en WhatsApp

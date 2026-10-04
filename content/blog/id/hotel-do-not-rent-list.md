@@ -1,7 +1,7 @@
 ---
 title: "Daftar hitam tamu hotel: cara membuat daftar do-not-rent secara legal di Little Hotelier"
 seoTitle: "Daftar hitam tamu hotel: cara membuatnya secara legal"
-description: "Hotel boleh menyimpan daftar do-not-rent menurut GDPR jika berpegang pada fakta. Apa yang dicatat, apa yang dilarang, dan cara mendapat peringatan."
+description: "Hotel boleh punya daftar do-not-rent menurut GDPR asal isinya fakta. Apa yang dicatat, apa yang dilarang, dan cara mendapat peringatan di Little Hotelier."
 date: 2026-10-03
 category: operations
 tags: [do not rent list, gdpr, guests, watchlist, little hotelier]
@@ -31,12 +31,12 @@ Ini informasi umum per Oktober 2026. Aturan perlindungan data dan kesetaraan ber
 
 ## Apakah daftar hitam tamu legal menurut GDPR?
 
-Bisa. Daftar do-not-rent adalah data pribadi, jadi setiap aturan GDPR berlaku untuknya. Badan penasihat perlindungan data UE terdahulu, Article 29 Working Party, menyebut daftar hitam sebagai "an intrusion" dan menyatakan daftar itu hanya bisa ada secara legal jika menghormati prinsip-prinsip yang lazim dan hak orang yang tercantum ([Working Document on Blacklists, WP 65](https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2002/wp65_en.pdf)).
+Bisa saja. Daftar do-not-rent adalah data pribadi, jadi setiap aturan GDPR berlaku untuknya. Badan penasihat perlindungan data UE terdahulu, Article 29 Working Party, menyebut daftar hitam sebagai "an intrusion" dan menyatakan daftar itu hanya bisa ada secara legal jika menghormati prinsip-prinsip yang lazim dan hak orang yang tercantum ([Working Document on Blacklists, WP 65](https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2002/wp65_en.pdf)).
 
 Untuk hotel, dasar hukum yang biasanya cocok adalah **kepentingan sah** (legitimate interests, GDPR Pasal 6(1)(f)): melindungi staf, properti, dan pendapatan Anda. ICO Inggris menjelaskannya sebagai uji tiga bagian ([ICO](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/legitimate-interests/)):
 
 1. **Tujuan:** apakah ada kepentingan yang nyata? Menghindari terulangnya menginap tanpa bayar, kerusakan, atau agresi adalah salah satunya.
-2. **Keperluan:** apakah daftar ini cara yang terarah dan proporsional untuk mencapainya, tanpa opsi yang kurang mengganggu?
+2. **Kebutuhan:** apakah daftar ini cara yang terarah dan proporsional untuk mencapainya, dan tidak ada opsi lain yang lebih ringan?
 3. **Keseimbangan:** apakah tamu secara wajar mengharapkannya, dan apakah daftar ini menghindari kerugian yang tidak beralasan bagi mereka?
 
 European Data Protection Board menetapkan tiga syarat yang sama dalam [Guidelines 1/2024 on legitimate interest](https://www.edpb.europa.eu/system/files/2024-10/edpb_guidelines_202401_legitimateinterest_en.pdf). Tuliskan jawaban Anda dalam dokumen singkat. Catatan itu adalah bukti Anda jika ada yang bertanya.
@@ -50,7 +50,7 @@ Jaga setiap entri cukup singkat sehingga Anda tidak keberatan jika tamu membacan
 | Kolom | Contoh | Alasan |
 |---|---|---|
 | Nama dan satu pengenal kuat | Email atau telepon yang sudah Anda miliki | Agar kecocokan andal |
-| Menginap dan referensi | 12–14 Maret 2026, reservasi 10234 | Terkait dengan faktanya |
+| Masa inap dan referensi | 12–14 Maret 2026, reservasi 10234 | Terkait dengan faktanya |
 | Apa yang terjadi, berupa fakta | "Pergi tanpa membayar 2 malam (€240). Tiga permintaan pembayaran tidak dijawab." | Objektif dan dapat dibuktikan |
 | Keputusan | Blokir, atau peringatkan dan tinjau | Manusia yang memutuskan |
 | Tanggal tinjauan | Maret 2027 | Tidak disimpan selamanya |
@@ -66,9 +66,9 @@ Teks lengkap GDPR ada di [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679/oj
 
 ### Berapa lama seseorang dipertahankan di daftar
 
-GDPR tidak menetapkan jumlah tahun. Aturannya menyatakan data tidak boleh disimpan lebih lama dari yang diperlukan (Pasal 5). Pilih masa tinjauan yang sesuai dengan tingkat keseriusannya, misalnya satu tahun untuk menginap yang berisik dan lebih lama untuk kerusakan serius, dan hapus entri yang tidak lagi punya pembenaran.
+GDPR tidak menetapkan jumlah tahun. Aturannya menyatakan data tidak boleh disimpan lebih lama dari yang diperlukan (Pasal 5). Pilih masa tinjauan yang sesuai dengan tingkat keseriusannya, misalnya satu tahun untuk tamu yang berisik dan lebih lama untuk kerusakan serius, dan hapus entri yang tidak lagi punya pembenaran.
 
-Sebutkan daftar itu di pemberitahuan privasi Anda (Pasal 13). Jika tamu bertanya apa yang Anda simpan atau mengajukan keberatan, jawab tanpa penundaan yang tidak semestinya dan dalam satu bulan (Pasal 12).
+Sebutkan daftar itu di pemberitahuan privasi Anda (Pasal 13). Jika tamu bertanya apa yang Anda simpan atau mengajukan keberatan, jawab tanpa menunda-nunda dan paling lambat dalam satu bulan (Pasal 12).
 
 ## Yang ditawarkan Little Hotelier dan Booking.com secara native
 
@@ -76,7 +76,7 @@ Sebutkan daftar itu di pemberitahuan privasi Anda (Pasal 13). Jika tamu bertanya
 
 - **Catatan ada di reservasi, bukan di tamu.** Profil tamu menyimpan nama, alamat, telepon, dan detail ID, tetapi pusat bantuan menyatakan catatan tentang tamu tidak bisa disimpan di profil, hanya di reservasi terkait ([pusat bantuan](https://helpcentre.littlehotelier.com/en/articles/8673754-update-and-manage-guest-profiles)). Tab **Notes** pada reservasi untuk catatan internal khusus staf ([pusat bantuan](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)).
 - **Anda bisa mencari tamu** di tab **Guests** berdasarkan nama, email, telepon, atau nomor reservasi.
-- **Batasannya:** seseorang harus mencari setiap reservasi baru secara manual. Dan Little Hotelier menyamarkan data pribadi tamu 180 hari setelah check-out ([pusat bantuan](https://helpcentre.littlehotelier.com/en/articles/8673818-run-and-export-reports)), sehingga catatan pada menginap tahun lalu sulit ditemukan lewat nama.
+- **Batasannya:** seseorang harus mencari setiap reservasi baru secara manual. Dan Little Hotelier menyamarkan data pribadi tamu 180 hari setelah check-out ([pusat bantuan](https://helpcentre.littlehotelier.com/en/articles/8673818-run-and-export-reports)), sehingga catatan tentang masa inap tahun lalu sulit ditemukan lewat nama.
 
 Rutinitas manual yang bisa dijalankan: tulis faktanya di Notes reservasi, simpan daftar terpisah yang singkat berisi email dan telepon tamu, dan periksa setiap reservasi baru terhadap daftar itu.
 
@@ -88,13 +88,13 @@ Fitur ini hanya mencakup Booking.com. Tamu yang sama tetap bisa memesan langsung
 
 ## Bisakah saya menolak atau membatalkan reservasi OTA dari tamu yang ada di daftar?
 
-Tidak sendirian, di Booking.com. **Request to cancel reservation** mengirim email kepada tamu yang memintanya mengonfirmasi, dan reservasi tetap aktif sampai mereka menerima. Anda bisa memakainya hingga 48 jam sebelum check-in; setelah itu, Booking.com meminta Anda mengarahkan tamu ke Customer Service ([Booking.com Partner Hub](https://partner.booking.com/en-gb/help/reservations/changes-cancellations/handling-cancellations-and-guests-cancellation-requests)). Kartu tidak valid mengikuti proses terpisah: lihat [kartu tidak valid atau no-show di Booking.com](/blog/booking-com-invalid-card-no-show).
+Di Booking.com, tidak bisa secara sepihak. **Request to cancel reservation** mengirim email kepada tamu yang memintanya mengonfirmasi, dan reservasi tetap aktif sampai mereka menerima. Anda bisa memakainya hingga 48 jam sebelum check-in; setelah itu, Booking.com meminta Anda mengarahkan tamu ke Customer Service ([Booking.com Partner Hub](https://partner.booking.com/en-gb/help/reservations/changes-cancellations/handling-cancellations-and-guests-cancellation-requests)). Kartu tidak valid mengikuti proses terpisah: lihat [kartu tidak valid atau no-show di Booking.com](/blog/booking-com-invalid-card-no-show).
 
-Dalam praktiknya, itu berarti menghubungi tamu lebih awal, menjelaskan dengan tenang, dan menawarkan pembatalan gratis. Untuk reservasi langsung, ketentuan Anda sendiri berlaku. Dalam kedua kasus, peringatan pada malam reservasi masuk memberi Anda beberapa hari untuk bertindak, bukan beberapa menit di meja resepsionis.
+Dalam praktiknya, itu berarti menghubungi tamu lebih awal, menjelaskan dengan tenang, dan menawarkan pembatalan gratis. Untuk reservasi langsung, ketentuan Anda sendiri berlaku. Dalam kedua kasus, peringatan pada malam reservasi masuk memberi Anda beberapa hari untuk bertindak, bukan beberapa menit di front desk.
 
 ## Cara mendapat peringatan saat tamu di daftar memesan lagi
 
-Hotelier Tools punya **Do-not-rebook list** (beta) di `/automated-checks/watchlist`. Setiap malam, reservasi baru hari itu dan kedatangan mendatang dibandingkan dengan daftar. Kecocokan menjadi sebuah issue dan satu baris di email laporan.
+Hotelier Tools punya **Do-not-rebook list** (beta) di `/automated-checks/watchlist`. Setiap malam, reservasi baru hari itu dan kedatangan mendatang dibandingkan dengan daftar. Setiap kecocokan menjadi satu masalah (issue) dan satu baris di email laporan.
 
 1. **Tambahkan tamu dari reservasi.** Di **Issues**, atau di panel reservasi inbox, tekan **Do not rebook…**. Pilih tamunya (pemesan atau teman perjalanan), tingkat keseriusan (seperti **Do not accept again**), dan alasan faktual.
 2. **Atau tambahkan secara manual.** Tekan **Add a guest**, atau pakai **Find a reservation…** untuk mencari berdasarkan tanggal menginap, nama, email, atau telepon.
@@ -120,7 +120,7 @@ Hotelier Tools tidak berafiliasi dengan atau didukung oleh SiteMinder maupun Lit
 ::demo-cta{path="/automated-checks/watchlist"}
 ::
 
-Proses malam yang sama bisa memeriksa kamar, ID, dan pembayaran juga. Lihat [checklist front office harian](/blog/hotel-front-desk-checklist-automation) dan [halaman Automated checks](/tools/bot/automated-checks).
+Proses malam yang sama bisa memeriksa kamar, ID, dan pembayaran juga. Lihat [checklist harian front desk](/blog/hotel-front-desk-checklist-automation) dan [halaman Automated checks](/tools/bot/automated-checks).
 
 ## Bolehkah hotel berbagi daftar do-not-rent?
 

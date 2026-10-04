@@ -1,14 +1,14 @@
 ---
 title: "Estensioni Chrome per Little Hotelier: userscript gratuiti per lavorare più in fretta"
 seoTitle: "Estensione Chrome per Little Hotelier: script gratuiti"
-description: "Userscript gratuiti per Little Hotelier: prezzi nel calendario, tabelle più larghe, commissioni Booking.com stimate e fatture con un clic. Come installarli."
+description: "Userscript gratuiti per Little Hotelier: prezzi nel calendario, tabelle più larghe, commissioni Booking.com stimate e fatture in un clic. Come installarli."
 date: 2026-10-03
 category: tips
 tags: [chrome extension, tampermonkey, userscripts, little hotelier, productivity]
 keywords: [estensione chrome little hotelier, tampermonkey script, userscript chrome, little hotelier prezzi calendario, little hotelier tabelle a larghezza piena, little hotelier commissioni booking.com]
 demoPath: /
 cover: /images/scripts/prices-display/to.png
-coverAlt: "Calendario di Little Hotelier (interfaccia in spagnolo) con il prezzo di ogni notte sotto ogni tipo di camera, aggiunto dallo script Prices Display"
+coverAlt: "Calendario di Little Hotelier (interfaccia in spagnolo) con il prezzo di ogni notte sotto ogni tipologia di camera, aggiunto dallo script Prices Display"
 faq:
   - q: "Questi script li ha creati Little Hotelier?"
     a: "No. Sono script gratuiti e indipendenti pubblicati da Hotelier Tools, che non è affiliato né approvato da SiteMinder o Little Hotelier. Funzionano nel tuo browser, dentro la tua sessione di Little Hotelier."
@@ -24,7 +24,7 @@ faq:
     a: "No. Gli script per il browser sono gratuiti per sempre, senza bisogno di alcun account."
 ---
 
-Puoi rendere Little Hotelier più veloce con gli userscript gratuiti: piccoli add-on che girano nel tuo browser tramite l'estensione Tampermonkey. Aggiungono i prezzi al calendario, allargano le tabelle strette, stimano la commissione di Booking.com su ogni prenotazione, mettono un pulsante per la fattura con un clic nelle prenotazioni e altro ancora. Installa Tampermonkey una volta sola, attiva **Allow User Scripts** in Chrome, poi premi **Install on Tampermonkey** nella pagina dello script che ti interessa.
+Puoi rendere Little Hotelier più veloce con gli userscript gratuiti: piccoli componenti aggiuntivi che girano nel tuo browser tramite l'estensione Tampermonkey. Aggiungono i prezzi al calendario, allargano le tabelle strette, stimano la commissione di Booking.com su ogni prenotazione, mettono un pulsante per la fattura con un clic nelle prenotazioni e altro ancora. Installa Tampermonkey una volta sola, attiva **Allow User Scripts** in Chrome, poi premi **Install on Tampermonkey** nella pagina dello script che ti interessa.
 
 ## Cos'è Tampermonkey e perché script invece di un'estensione?
 
@@ -70,16 +70,16 @@ Ogni script ha la sua pagina con immagini prima e dopo e il pulsante di installa
 
 - [Full Width Reservation Table](/tools/ui/full-width-reservation-table): l'elenco Reservations usa tutta la larghezza dello schermo. Niente più scorrimento laterale.
 - [Tables Full Width](/tools/ui/tables-full-width): lo stesso per ogni tabella di Direct Booking.
-- [Compact Calendar UI](/tools/ui/compact-calendar-ui): giorno e data su una riga invece di tre e righe dei tipi di camera più basse, così nel calendario entrano più camere.
+- [Compact Calendar UI](/tools/ui/compact-calendar-ui): giorno e data su una riga invece di tre e righe delle tipologie di camera più basse, così nel calendario entrano più camere.
 - [Compact UI Reservation Details](/tools/ui/compact-ui-reservation-details): una schermata di prenotazione più compatta con un campo commenti più alto.
 
-::screenshot{src="/images/scripts/compact-calendar-ui/to.png" alt="Calendario di Little Hotelier (interfaccia in spagnolo) dopo Compact Calendar UI, con giorno della settimana e data su una sola riga e righe compatte dei tipi di camera" caption="Compact Calendar UI fa entrare più camere e più giorni in una sola schermata." width="1187" height="1306"}
+::screenshot{src="/images/scripts/compact-calendar-ui/to.png" alt="Calendario di Little Hotelier (interfaccia in spagnolo) dopo Compact Calendar UI, con giorno della settimana e data su una sola riga e righe compatte delle tipologie di camera" caption="Compact Calendar UI fa entrare più camere e più giorni in una sola schermata." width="1187" height="1306"}
 ::
 
 ### Prezzi e commissioni di Booking.com
 
 - [Prices Display](/tools/ui/prices-display): mostra nel calendario il prezzo della camera per ogni notte, letto dalla tua pagina Inventory. Comodo quando un ospite chiama per chiedere del venerdì.
-- [Show Booking.com Commissions](/tools/ui/show-booking-commissions): aggiunge alle prenotazioni di Booking.com una stima della commissione e un importo netto approssimativo. È una stima; la fattura di Booking.com è la cifra definitiva. Approfondisci in [quanta commissione prende Booking.com](/blog/booking-com-commission).
+- [Show Booking.com Commissions](/tools/ui/show-booking-commissions): aggiunge alle prenotazioni di Booking.com una stima della commissione e un importo netto approssimativo. È una stima; la fattura di Booking.com è la cifra definitiva. Approfondisci in [che commissione prende Booking.com](/blog/booking-com-commission).
 - [Change Inventory Name](/tools/ui/change-inventory-name): rinomina il menu **Inventory** in "Inventory - Prices" (inglese e spagnolo), così il personale nuovo trova le tariffe.
 
 ::screenshot{src="/images/scripts/show-booking-commissions/to.png" alt="Prenotazione Booking.com in Little Hotelier (interfaccia in spagnolo) con righe di riepilogo in più per il costo del bonifico, la commissione di Booking.com, il totale delle commissioni con IVA e un importo netto approssimativo" caption="Una stima di quanto ti resta di una prenotazione Booking.com dopo la commissione." width="752" height="715"}
@@ -109,7 +109,7 @@ Vuoi che la fattura parta senza nemmeno un clic? Leggi [come inviare la fattura 
 
 - [Auto Refresh On Inactivity](/tools/ui/auto-refresh-inactivity): ricarica la pagina dopo 10 minuti senza clic, movimenti del mouse o scorrimento, così non torni a una sessione scaduta. Non ricarica mai mentre stai lavorando.
 - [Improve Style For Touch Screens](/tools/ui/improve-style-touch-screens): pulsanti e menu più grandi per i tablet, e il pulsante per rimuovere una camera, che di solito compare solo al passaggio del mouse, è sempre visibile.
-- [Add Button Check on Front Desk](/tools/ui/add-button-check-front-desk): da una prenotazione di Direct Booking, un pulsante per fare il check in Front Desk e controllare i rimborsi. Se non hai effettuato l'accesso a Front Desk, potrebbe servire premerlo due volte.
+- [Add Button Check on Front Desk](/tools/ui/add-button-check-front-desk): da una prenotazione di Direct Booking, un pulsante per verificarla in Front Desk e controllare i rimborsi. Se non hai effettuato l'accesso a Front Desk, potrebbe servire premerlo due volte.
 
 ## Quali script installare per primi
 
@@ -120,14 +120,14 @@ Vuoi che la fattura parta senza nemmeno un clic? Leggi [come inviare la fattura 
 
 ## Quando serve più di un ritocco all'interfaccia
 
-Gli script cambiano ciò che vedi mentre sei davanti allo schermo. Non possono lavorare quando non ci sei. Per i compiti che girano da soli, come controllare ogni arrivo per documenti mancanti o inviare le fatture al check-out, c'è la [dashboard di Hotelier Tools](/tools/bot). È gratuita per tutti gli hotel fino all'inizio della fatturazione, il 10 gennaio 2027; gli script restano gratuiti per sempre. Per altre scorciatoie dentro Little Hotelier, leggi [i trucchi e le funzioni nascoste di Little Hotelier](/blog/little-hotelier-tips).
+Gli script cambiano ciò che vedi mentre sei davanti allo schermo. Non possono lavorare quando non ci sei. Per le attività che devono funzionare da sole, come controllare ogni arrivo per documenti mancanti o inviare le fatture al check-out, c'è la [dashboard di Hotelier Tools](/tools/bot). È gratuita per tutti gli hotel fino all'inizio della fatturazione, il 10 gennaio 2027; gli script restano gratuiti per sempre. Per altre scorciatoie dentro Little Hotelier, leggi [i trucchi e le funzioni nascoste di Little Hotelier](/blog/little-hotelier-tips).
 
 ::demo-cta{path="/"}
 ::
 
 ## Riepilogo
 
-- Installa Tampermonkey una volta sola, consenti gli script utente, poi premi **Install on Tampermonkey** su ogni script che vuoi.
+- Installa Tampermonkey una volta sola, attiva **Allow User Scripts**, poi premi **Install on Tampermonkey** su ogni script che vuoi.
 - Gli script girano solo su Little Hotelier (e su Chekin per uno di essi), non inviano nulla a Hotelier Tools e si aggiornano da soli.
 - Parti da quelli adatti al tuo ruolo: tabelle più larghe e ricaricamento automatico per la reception, prezzi e commissioni per il titolare.
 - Se uno si comporta male dopo un aggiornamento di Little Hotelier, disattivalo dal menu di Tampermonkey.

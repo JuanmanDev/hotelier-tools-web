@@ -5,7 +5,7 @@ description: "Mark the card invalid, give the guest 24 hours, then cancel with n
 date: 2026-10-03
 category: operations
 tags: [booking.com, no-show, payments, little hotelier, automated checks]
-keywords: [booking.com invalid credit card, booking.com no show fee, booking.com virtual card declined, mark credit card invalid booking.com, booking.com reservation cancelled invalid credit card, booking.com no show commission]
+keywords: [booking.com invalid credit card, booking.com no show fee, booking.com virtual card declined, mark credit card invalid booking.com, booking.com reservation canceled invalid credit card, booking.com no show commission]
 feature: automated-checks
 demoPath: /automated-checks/issues
 cover: /images/blog/demo/en/automated-checks-issues.webp

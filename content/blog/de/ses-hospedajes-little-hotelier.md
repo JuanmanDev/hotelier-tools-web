@@ -15,14 +15,14 @@ faq:
   - q: "Müssen Kinder und Babys gemeldet werden?"
     a: "Ja. Gäste unter 14 Jahren stehen im Register, ihre Daten gibt die erwachsene Begleitperson an. Ein Ausweisdokument ist ab 14 Pflicht. Ist ein Gast minderjährig, müssen Sie außerdem das Verwandtschaftsverhältnis zwischen den Reisenden erfassen, etwa Elternteil oder Vormund."
   - q: "Wie hoch ist das Bußgeld, wenn ich Gästedaten nicht an SES.Hospedajes sende?"
-    a: "Nach dem Gesetz zur öffentlichen Sicherheit (Ley Orgánica 4/2015) ist es eine schwere Ordnungswidrigkeit, das Register nicht zu führen oder die Daten nicht zu senden. Das Bußgeld liegt zwischen 601 und 30.000 Euro. Fehler oder verspätetes Senden sind leichte Verstöße mit 100 bis 600 Euro."
+    a: "Nach dem Gesetz zur öffentlichen Sicherheit (Ley Orgánica 4/2015) ist es eine schwere Ordnungswidrigkeit, das Register nicht zu führen oder die Daten nicht zu senden. Das Bußgeld liegt zwischen 601 und 30.000 Euro. Fehler oder verspätetes Senden sind leichte Verstöße mit Bußgeldern von 100 bis 600 Euro."
   - q: "Wie lange muss ich die Gästedaten aufbewahren?"
     a: "Drei Jahre ab Ende des Aufenthalts. Das Innenministerium schickt Ihnen keine Listen Ihrer früheren Meldungen. Bewahren Sie also eigene Kopien auf oder nutzen Sie den Verlauf Ihres Check-in-Tools."
   - q: "Sendet Hotelier Tools Gästedaten an SES.Hospedajes?"
-    a: "Nein. Hotelier Tools sendet nichts an SES.Hospedajes oder die Polizei. Es markiert Reservierungen mit fehlendem Ausweisdokument oder fehlender Adresse, damit Sie sie vor der Anreise korrigieren können. Zum Senden nutzen Sie die Compliance-Meldung von Little Hotelier oder einen Check-in-Anbieter. Hotelier Tools ist unabhängig und weder mit SiteMinder noch mit Little Hotelier verbunden."
+    a: "Nein. Hotelier Tools sendet nichts an SES.Hospedajes oder die Polizei. Es markiert Reservierungen mit fehlendem Ausweisdokument oder fehlender Adresse, damit Sie sie vor der Anreise korrigieren können. Zum Senden nutzen Sie die Compliance-Meldung von Little Hotelier oder einen Check-in-Anbieter. Hotelier Tools ist unabhängig, steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen."
 ---
 
-Jedes Hotel, Hostal, B&B und jede Ferienunterkunft in Spanien muss die Daten der Gäste an **SES.Hospedajes** senden, das Online-Register des Innenministeriums (Katalonien und das Baskenland nutzen eigene Polizeisysteme). Buchungen und Stornierungen gehen innerhalb von 24 Stunden ein, die Gästedaten innerhalb von 24 Stunden nach dem Check-in ([Real Decreto 933/2021](https://www.boe.es/buscar/act.php?id=BOE-A-2021-17461)). Little Hotelier kann beides automatisch senden, über den Online-Check-in von Guest Engagement oder über eine Partner-App wie Chekin, damit niemand denselben Gast zweimal eintippt. Dieser Leitfaden richtet sich an deutschsprachige Eigentümer eines Hauses in Spanien. Die offiziellen spanischen Begriffe bleiben deshalb stehen, mit deutscher Erklärung.
+Jedes Hotel, Hostal, B&B und jede Ferienunterkunft in Spanien muss die Daten der Gäste an **SES.Hospedajes** senden, das Online-Register des Innenministeriums (Katalonien und das Baskenland nutzen eigene Polizeisysteme). Buchungen und Stornierungen müssen innerhalb von 24 Stunden gemeldet werden, die Gästedaten innerhalb von 24 Stunden nach dem Check-in ([Real Decreto 933/2021](https://www.boe.es/buscar/act.php?id=BOE-A-2021-17461)). Little Hotelier kann beides automatisch senden, über den Online-Check-in von Guest Engagement oder über eine Partner-App wie Chekin, damit niemand denselben Gast zweimal eintippt. Dieser Leitfaden richtet sich an deutschsprachige Inhaber einer Unterkunft in Spanien; die offiziellen spanischen Begriffe stehen deshalb im Original, mit deutscher Erklärung.
 
 ::callout{type="warning" title="Keine Rechtsberatung"}
 Zuletzt im Oktober 2026 geprüft anhand des BOE (Amtsblatt), der Sede Electrónica des Innenministeriums und des Hilfecenters von Little Hotelier. Regeln und Formulare ändern sich: Fragen Sie das Ministerium oder Ihren Gestor (spanischen Steuer- und Verwaltungsberater), bevor Sie sich auf ein Detail verlassen.
@@ -30,7 +30,7 @@ Zuletzt im Oktober 2026 geprüft anhand des BOE (Amtsblatt), der Sede Electróni
 
 ## Was ist SES.Hospedajes, und wer muss es nutzen?
 
-SES.Hospedajes ist die Plattform des Ministerio del Interior (spanisches Innenministerium) für das Gästeverzeichnis (*registro documental*), das Beherbergungsbetriebe führen müssen. Viele Eigentümer nennen die Einträge weiterhin **partes de viajeros** (Reisendenmeldungen, vergleichbar mit dem früheren Meldeschein). Das Ministerium hat die Plattform nach mehreren Verschiebungen am **2. Dezember 2024** in Betrieb genommen ([Pressemitteilung der Moncloa](https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/paginas/2024/021224-registro-hospedaje-alquiler-vehiculos.aspx)).
+SES.Hospedajes ist die Plattform des Ministerio del Interior (spanisches Innenministerium) für das Gästeverzeichnis (*registro documental*), das Beherbergungsbetriebe führen müssen. Viele Gastgeber nennen die Einträge weiterhin **partes de viajeros** (Reisendenmeldungen, vergleichbar mit dem deutschen Meldeschein). Das Ministerium hat die Plattform nach mehreren Verschiebungen am **2. Dezember 2024** in Betrieb genommen ([Pressemitteilung der Moncloa](https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/paginas/2024/021224-registro-hospedaje-alquiler-vehiculos.aspx)).
 
 Sie gilt in ganz Spanien für (RD 933/2021, Artikel 2):
 
@@ -49,7 +49,7 @@ Anhang I des RD 933/2021 nennt drei Blöcke:
 
 | Block | Daten |
 |---|---|
-| **Jeder Gast** | Vorname, beide Nachnamen, Geschlecht, Art und Nummer des Ausweisdokuments (DNI, Reisepass, TIE), *número de soporte* (Trägernummer des Dokuments), Staatsangehörigkeit, Geburtsdatum, gewöhnliche Anschrift (vollständige Adresse, Ort, Land), Festnetz, Mobilnummer, E-Mail, Zahl der Reisenden, Verwandtschaftsverhältnis der Reisenden, wenn einer minderjährig ist |
+| **Jeder Gast** | Vorname, beide Nachnamen, Geschlecht, Art und Nummer des Ausweisdokuments (DNI, Reisepass, TIE), *número de soporte* (Seriennummer des Dokuments), Staatsangehörigkeit, Geburtsdatum, gewöhnliche Anschrift (vollständige Adresse, Ort, Land), Festnetz, Mobilnummer, E-Mail, Zahl der Reisenden, Verwandtschaftsverhältnis der Reisenden, wenn einer minderjährig ist |
 | **Die Buchung** | Vertragsnummer und -datum, Check-in- und Check-out-Datum und -Uhrzeit, Adresse, Zahl der Zimmer, Internetzugang ja oder nein |
 | **Zahlung** | Zahlungsart, Kennung des Zahlungsmittels (Kartentyp und -nummer, IBAN, mobile Zahlung …), Inhaber, Ablaufdatum, Zahlungsdatum |
 
@@ -69,7 +69,7 @@ Artikel 6.3 des Dekrets setzt zwei getrennte 24-Stunden-Fristen, „unverzüglic
 1. ab **Buchung**, Vertrag oder dessen **Stornierung**
 2. ab **Beginn des Aufenthalts** (Check-in)
 
-Jede spätere Änderung einer Buchung erfordert eine neue Meldung. Bewahren Sie die Daten **drei Jahre** nach Ende des Aufenthalts auf (Artikel 5.3). Das Ministerium schickt Ihnen keine Listen dessen, was Sie gesendet haben, führen Sie also Ihren eigenen Verlauf.
+Jede spätere Änderung einer Buchung erfordert eine neue Meldung. Bewahren Sie die Daten **drei Jahre** nach Ende des Aufenthalts auf (Artikel 5.3). Das Ministerium schickt Ihnen keine Listen dessen, was Sie gesendet haben; führen Sie also Ihren eigenen Verlauf.
 
 Die Bußgelder stammen aus dem Gesetz zur öffentlichen Sicherheit, [Ley Orgánica 4/2015](https://www.boe.es/buscar/act.php?id=BOE-A-2015-3442):
 
@@ -100,9 +100,9 @@ Ja. Stand Oktober 2026 gibt es zwei Wege, dazu einen älteren Export.
 2. **In Little Hotelier** gehen Sie zu **Guest Engagement > Check-in > Settings** und wählen **Compliance reporting check-in form**.
 3. Tragen Sie die Betriebsdaten ein, wählen Sie, wie Gäste unterschreiben, schalten Sie **Authority connection** ein, wählen Sie unter **Automatically send info to** die Option **SES Hospedajes**, geben Sie die vier Zugangsdaten ein (der Benutzername endet auf „WS“) und klicken Sie auf **Validate**.
 4. Wählen Sie unter **Booking registration sending** die Option **Enabled**. Die Buchungsdaten werden dann gesendet, sobald die Reservierung entsteht, die Gästedaten nach dem Check-in. Sie können einzelne Buchungsquellen ausnehmen.
-5. Legen Sie eine Standard-**Payment type** (Zahlungsart) fest.
+5. Legen Sie unter **Payment type** eine Standard-Zahlungsart fest.
 
-Jede Übermittlung zeigt einen Status (Scheduled, In progress, Done, Failed und weitere), die Liste der gesendeten Dokumente steht auf derselben Einstellungsseite. Die [Compliance-Übersicht](https://helpcentre.littlehotelier.com/en/articles/10066500-automated-compliance-reporting) von Little Hotelier ergänzt, dass Änderungen an einer Reservierung an Chekin gesendet und bei der Behörde aktualisiert werden. Eigene Hilfeartikel behandeln die Mossos und die Ertzaintza.
+Jede Übermittlung zeigt einen Status (Scheduled, In progress, Done, Failed und weitere); die Liste der gesendeten Dokumente steht auf derselben Einstellungsseite. Die [Compliance-Übersicht](https://helpcentre.littlehotelier.com/en/articles/10066500-automated-compliance-reporting) von Little Hotelier ergänzt, dass Änderungen an einer Reservierung an Chekin gesendet und bei der Behörde aktualisiert werden. Eigene Hilfeartikel behandeln die Mossos und die Ertzaintza.
 
 ### Option 2: Chekin aus dem App Store
 
@@ -110,11 +110,11 @@ Jede Übermittlung zeigt einen Status (Scheduled, In progress, Done, Failed und 
 
 ### Der ältere Export des Polizeiberichts
 
-Unter **Front Desk > Reports > Police Report** exportieren Sie eine .txt-Datei der Gäste ab 16 Jahren für einen Zeitraum ([Hilfecenter](https://helpcentre.littlehotelier.com/en/articles/8673944-run-and-export-a-spanish-police-report)). Der Artikel sagt, Sie sollen sie auf „der Website der Polizei“ hochladen, und erwähnt SES.Hospedajes nicht. Prüfen Sie also, ob SES sie akzeptiert, bevor Sie sich darauf verlassen.
+Unter **Front Desk > Reports > Police Report** exportieren Sie eine .txt-Datei der Gäste ab 16 Jahren für einen Zeitraum ([Hilfecenter](https://helpcentre.littlehotelier.com/en/articles/8673944-run-and-export-a-spanish-police-report)). Laut Artikel laden Sie sie auf „the police website“ (die Website der Polizei) hoch; SES.Hospedajes wird nicht erwähnt. Prüfen Sie also, ob SES sie akzeptiert, bevor Sie sich darauf verlassen.
 
 ## So vermeiden Sie doppelte Arbeit und fehlende Daten
 
-Doppelte Arbeit entsteht, wenn derselbe Gast in Little Hotelier und noch einmal in SES.Hospedajes oder eine Check-in-App eingetippt wird. Die Lösung: Daten einmal erfassen, so früh wie möglich, und in beide Richtungen fließen lassen.
+Doppelte Arbeit entsteht, wenn derselbe Gast in Little Hotelier und noch einmal in SES.Hospedajes oder eine Check-in-App eingetippt wird. Die Lösung: Daten einmal erfassen, so früh wie möglich, und an beide Stellen weiterfließen lassen.
 
 1. **Senden Sie den Online-Check-in vor der Anreise.** Gäste füllen ihre Daten selbst aus, über die Buchungsbestätigung oder einen Link.
 2. **Holen Sie den Rest an der Rezeption nach**, im selben Tool, nicht auf Papier.
@@ -123,14 +123,14 @@ Doppelte Arbeit entsteht, wenn derselbe Gast in Little Hotelier und noch einmal 
 
 ### Wenn Sie Chekin nutzen: Sehen Sie es direkt in Little Hotelier
 
-Das kostenlose Userscript [Chekin Connection](/tools/ui/show-chekin) fügt der Reservierung in Little Hotelier ein Chekin-Panel hinzu. Sie sehen auf einen Blick, ob sich Gäste registriert haben, mit Namen, Telefonnummern und Dokumentnummern, und können die Dokumentnummer in die Reservierung kopieren, zum Beispiel für die Rechnung. Hat sich noch niemand registriert, zeigt es den Registrierungslink für Gäste mit Schaltflächen zum Öffnen, Kopieren, Mailen oder Senden per WhatsApp. Sie müssen im selben Browser bei Chekin angemeldet sein. Es ist ein unabhängiges Skript, nicht von Chekin oder Little Hotelier. Installationsanleitung: [So installieren Sie die Userscripts](/tools/ui/instructions).
+Das kostenlose Userscript [Chekin Connection](/tools/ui/show-chekin) fügt der Reservierung in Little Hotelier ein Chekin-Panel hinzu. Sie sehen auf einen Blick, ob sich Gäste registriert haben, mit Namen, Telefonnummern und Dokumentnummern, und können die Dokumentnummer in die Reservierung kopieren, zum Beispiel für die Rechnung. Hat sich noch niemand registriert, zeigt es den Registrierungslink für Gäste mit Schaltflächen zum Öffnen, Kopieren und Senden per E-Mail oder WhatsApp. Sie müssen im selben Browser bei Chekin angemeldet sein. Das Skript ist unabhängig und stammt weder von Chekin noch von Little Hotelier. Installationsanleitung: [So installieren Sie die Userscripts](/tools/ui/instructions).
 
 ::screenshot{src="/images/scripts/show-chekin/to.png" alt="Little-Hotelier-Reservierung mit dem Chekin-Panel: ein gefundener Gast mit Name, Telefonnummer und Dokumentnummer sowie den Schaltflächen Use document und View in Chekin" caption="Das Chekin-Panel in der Little-Hotelier-Reservierung, mit dem Dokument des Gastes zur direkten Verwendung."}
 ::
 
 ### Fehlende Ausweise vor der Anreise erkennen
 
-Hotelier Tools sendet **keine** Daten an SES.Hospedajes oder die Polizei und behauptet das auch nicht. Es prüft aber jede Reservierung auf ein fehlendes Ausweisdokument oder eine fehlende Adresse, nach der Buchung, bei der Anreise, während des Aufenthalts und beim Check-out, mit [automatischen Prüfungen](/tools/bot/automated-checks). Probleme erscheinen auf einer Issues-Seite und in einer Bericht-E-Mail, sodass Sie dem Gast nachgehen, solange noch Zeit ist. Siehe die [tägliche Rezeptions-Checkliste](/blog/hotel-front-desk-checklist-automation).
+Hotelier Tools sendet **keine** Daten an SES.Hospedajes oder die Polizei und behauptet das auch nicht. Es prüft aber jede Reservierung auf ein fehlendes Ausweisdokument oder eine fehlende Adresse, nach der Buchung, bei der Anreise, während des Aufenthalts und beim Check-out, mit [automatischen Prüfungen](/tools/bot/automated-checks). Probleme erscheinen gesammelt auf der Seite Issues und in einer Berichts-E-Mail, sodass Sie dem Gast nachgehen, solange noch Zeit ist. Siehe die [tägliche Rezeptions-Checkliste](/blog/hotel-front-desk-checklist-automation).
 
 ::screenshot{src="/images/blog/demo/en/automated-checks-issues-full.webp" alt="Seite Issues in Hotelier Tools mit 20 offenen, 5 behobenen und 25 insgesamt, mit Reservierungen mit Warnungen zu offenen Salden und weiter unten Fehlern bei ID / passport (police register), die besagen, dass der Hauptgast kein Ausweisdokument hat, jeweils mit einer Schaltfläche Verify (Demo-Meldungen auf Spanisch)" caption="Offene Probleme, nach Reservierung gruppiert, auch Aufenthalte, bei denen der Hauptgast noch kein Ausweisdokument hat." path="/automated-checks/issues" width="1440" height="2400"}
 ::
@@ -148,4 +148,4 @@ Das Dekret verlangt, dass Sie das Dokument ansehen und seine Daten erfassen, nic
 - Senden Sie Buchungen und Stornierungen innerhalb von 24 Stunden und die Gästedaten innerhalb von 24 Stunden nach dem Check-in. Bewahren Sie die Daten drei Jahre auf.
 - Little Hotelier kann über das Compliance-Check-in-Formular von Guest Engagement oder über Chekin an SES.Hospedajes senden.
 - Erfassen Sie Daten einmal, vor der Anreise, und lassen Sie sie nach Little Hotelier und SES fließen.
-- Nutzen Sie [automatische Prüfungen](/tools/bot/automated-checks) gegen fehlende Ausweise und, falls Sie Chekin einsetzen, das kostenlose Skript [Chekin Connection](/tools/ui/show-chekin). Für andere Länder lesen Sie [Meldepflicht für Gäste nach Ländern](/blog/guest-registration-rules-by-country), für Spaniens Statistikumfrage [die INE-Belegungsumfrage](/blog/ine-hotel-occupancy-survey).
+- Nutzen Sie [automatische Prüfungen](/tools/bot/automated-checks) gegen fehlende Ausweise und, falls Sie Chekin einsetzen, das kostenlose Skript [Chekin Connection](/tools/ui/show-chekin). Für andere Länder lesen Sie [Meldepflicht für Gäste nach Land](/blog/guest-registration-rules-by-country), für Spaniens Statistikerhebung [die INE-Belegungserhebung](/blog/ine-hotel-occupancy-survey).

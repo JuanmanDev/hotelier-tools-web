@@ -12,16 +12,16 @@ faq:
   - q: "¿Little Hotelier forma parte de SiteMinder?"
     a: "Sí. Little Hotelier es el producto de SiteMinder para alojamientos pequeños, y su channel manager es el de SiteMinder. La web de Little Hotelier la publica SiteMinder Limited, y la guía para desarrolladores de SiteMinder llama a Little Hotelier uno de sus propios productos."
   - q: "¿Cuánto cuesta Little Hotelier en 2026?"
-    a: "A octubre de 2026 hay dos planes, Basics y Pro, con precio mensual según tu número de habitaciones y tu ubicación, y 30 días de prueba gratuita. Basics añade una comisión del 1 % sobre el valor de tus reservas. La página de precios muestra la cifra exacta cuando introduces tu número de habitaciones."
+    a: "A fecha de octubre de 2026 hay dos planes, Basics y Pro, con precio mensual según tu número de habitaciones y tu ubicación, y 30 días de prueba gratuita. Basics añade una comisión del 1 % sobre el valor de tus reservas. La página de precios muestra la cifra exacta cuando introduces tu número de habitaciones."
   - q: "¿Little Hotelier o Cloudbeds: cuál es mejor para un hotel pequeño?"
-    a: "Los dos sirven para hoteles independientes y B&B. Little Hotelier publica sus planes y se dirige a alojamientos de 1 a 30 habitaciones; Cloudbeds da presupuesto a cada alojamiento y publica una API con más de 400 socios de integración. Si necesitas tus propias integraciones o un alojamiento con mucho hostel, Cloudbeds merece una demo; si quieres una distribución sencilla respaldada por SiteMinder, Little Hotelier cumple."
+    a: "Los dos sirven para hoteles independientes y B&B. Little Hotelier publica sus planes y se dirige a alojamientos de 1 a 30 habitaciones; Cloudbeds da presupuesto a cada alojamiento y publica una API con más de 400 partners de integración. Si necesitas tus propias integraciones o tu alojamiento funciona sobre todo como hostel, Cloudbeds merece una demo; si quieres una distribución sencilla respaldada por SiteMinder, Little Hotelier cumple."
   - q: "¿Qué pierdo si dejo Little Hotelier?"
     a: "Sobre todo el historial. Los datos de los huéspedes se enmascaran 180 días después del check-out y las reservas más antiguas desaparecen de la búsqueda del channel manager a los 548 días, así que exporta reservas, listas de huéspedes y PDF de facturas antes de cambiar. Los planes de tarifas y las asignaciones de canales hay que volver a crearlos en el sistema nuevo."
   - q: "¿Qué alternativas tienen servidor MCP para asistentes de IA?"
     a: "Ninguna de las seis de esta comparativa mencionaba un servidor MCP para datos del alojamiento en su documentación para desarrolladores cuando lo comprobamos el 3 de octubre de 2026. Cloudbeds ofrece un servidor MCP para su documentación de desarrolladores, y Apaleo lanzó uno en 2025."
 ---
 
-Para un hotel, B&B u hostal pequeño, las alternativas a Little Hotelier más cercanas son **Cloudbeds** (todo en uno, precio a presupuesto) y **Beds24** (pago por unidad, muy configurable), y **Mews** para hoteles más grandes con equipo. Si tu alojamiento son sobre todo apartamentos o casas vacacionales, mira **Lodgify**, **Smoobu** o **Hostaway**. Los seis publican una API, algo que Little Hotelier no ofrece para tus propias reservas. Antes de cambiar, exporta tu historial: Little Hotelier enmascara los datos de los huéspedes 180 días después del check-out.
+Para un hotel, B&B o hostel pequeño, las alternativas a Little Hotelier más cercanas son **Cloudbeds** (todo en uno, precio a presupuesto) y **Beds24** (pago por unidad, muy configurable), y **Mews** para hoteles más grandes con equipo. Si tu alojamiento son sobre todo apartamentos o casas vacacionales, mira **Lodgify**, **Smoobu** o **Hostaway**. Los seis publican una API, algo que Little Hotelier no ofrece para tus propias reservas. Antes de cambiar, exporta tu historial: Little Hotelier enmascara los datos de los huéspedes 180 días después del check-out.
 
 Cada precio y cada función de abajo se comprobó en las webs de los propios proveedores el **3 de octubre de 2026**. Los precios cambian, así que confírmalos antes de firmar.
 
@@ -29,11 +29,11 @@ Cada precio y cada función de abajo se comprobó en las webs de los propios pro
 
 Sí. Little Hotelier es el software de SiteMinder para alojamientos pequeños: su web la publica SiteMinder Limited, y la [guía para desarrolladores](https://developer.siteminder.com/smx-api/additional-resources/reference-tables/property-publishers) de SiteMinder lo incluye entre los «productos propios de SiteMinder». Su channel manager es el de SiteMinder.
 
-Según su [página de precios](https://www.littlehotelier.com/pricing/), Little Hotelier se especializa en «software para alojamientos de 1 a 30 habitaciones». A octubre de 2026:
+Según su [página de precios](https://www.littlehotelier.com/pricing/), Little Hotelier se especializa en «software para alojamientos de 1 a 30 habitaciones». A fecha de octubre de 2026:
 
 - **Basics:** channel manager, motor de reservas, calendario y app móvil, con una **comisión del 1 %** sobre las reservas además del precio mensual (su ejemplo: 1000 $ de reservas en un mes suman 10 $).
 - **Pro:** todo lo de Basics más información sobre precios de la competencia y paridad de tarifas, soporte telefónico y un especialista de implantación.
-- **Complementos:** Payments, Hotel Metasearch, Channels Plus, Dynamic Revenue Plus, Guest Engagement y Website Builder.
+- **Add-ons:** Payments, Hotel Metasearch, Channels Plus, Dynamic Revenue Plus, Guest Engagement y Website Builder.
 - **Precio:** «desde» un importe mensual que depende de tus habitaciones y tu ubicación; la página lo muestra cuando introduces el número de habitaciones. Hay **30 días de prueba gratuita**.
 
 ## Little Hotelier: opiniones, ventajas y desventajas
@@ -47,7 +47,7 @@ En [Capterra](https://www.capterra.com/p/144307/Little-Hotelier/reviews/), Littl
 
 Dos límites estructurales importan si piensas construir tus herramientas alrededor:
 
-- **No hay clave de API para tus reservas o tus huéspedes.** Las API de SiteMinder son para socios certificados; los alojamientos solo pueden generar una clave de Direct Booking API para tarifas y disponibilidad ([respuesta completa](/blog/little-hotelier-api)).
+- **No hay clave de API para tus reservas o tus huéspedes.** Las API de SiteMinder son para partners certificados; los alojamientos solo pueden generar una clave de Direct Booking API para tarifas y disponibilidad ([respuesta completa](/blog/little-hotelier-api)).
 - **Las exportaciones son manuales,** y los datos de los huéspedes se enmascaran 180 días después del check-out ([cómo exportar a tiempo](/blog/export-little-hotelier-reservations-excel)).
 
 ## Alternativas a Little Hotelier comparadas
@@ -68,7 +68,7 @@ Dos límites estructurales importan si piensas construir tus herramientas alrede
 
 ### Cloudbeds
 
-El cambio más directo para un hotel o un hostel. Cloudbeds dice que [no cobra comisión añadida](https://www.cloudbeds.com/pricing/) por su motor de reservas ni por su channel manager, que incluye multipropiedad, pagos, informes y soporte 24/7 en todos los planes, y que se conecta con «más de 400 socios de integración mediante API». El precio es a presupuesto, así que no se puede comparar sobre el papel sin una llamada.
+El cambio más directo para un hotel o un hostel. Cloudbeds dice que [no cobra comisión añadida](https://www.cloudbeds.com/pricing/) por su motor de reservas ni por su channel manager, que incluye multipropiedad, pagos, informes y soporte 24/7 en todos los planes, y que se conecta con «más de 400 partners de integración mediante API». El precio es a presupuesto, así que no se puede comparar sobre el papel sin una llamada.
 
 ### Mews
 
@@ -76,7 +76,7 @@ Pensado para hoteles que gestionan más que habitaciones: restaurante, servicios
 
 ### Beds24
 
-La opción económica y de bricolaje. Beds24 cobra [desde 15,50 € al mes](https://beds24.com/pricing.html) según tus unidades, más 0,55 € al mes por cada conexión de canal, sin permanencia y sin comisiones por reserva. Es muy flexible, lo que también significa más trabajo de configuración.
+La opción económica para quien prefiere configurarlo todo a su manera. Beds24 cobra [desde 15,50 € al mes](https://beds24.com/pricing.html) según tus unidades, más 0,55 € al mes por cada conexión de canal, sin permanencia y sin comisiones por reserva. Es muy flexible, lo que también significa más trabajo de configuración.
 
 ### Lodgify, Smoobu y Hostaway
 
@@ -91,8 +91,8 @@ Los tres están pensados para alquileres vacacionales. Encajan si tu alojamiento
 Cambiar cuesta tiempo: rehacer tarifas, reasignar cada canal, formar de nuevo al personal. Little Hotelier sigue siendo una opción sólida cuando:
 
 - tienes **hasta 30 habitaciones** y quieres un solo proveedor para PMS, channel manager y motor de reservas
-- dependes del **channel manager de SiteMinder** y de complementos como Demand Plus o Hotel Metasearch
-- necesitas **funciones de cumplimiento normativo** que ya tiene, como el [reporte automático de huéspedes](https://help-platform.littlehotelier.com/en/articles/10066500-automated-compliance-reporting) con Guest Engagement (Italia, España, Portugal, Alemania, Suiza, Austria, Croacia, República Checa y Colombia) o VeriFactu en España
+- dependes del **channel manager de SiteMinder** y de add-ons como Demand Plus o Hotel Metasearch
+- necesitas **funciones de cumplimiento normativo** que ya tiene, como el [envío automático de datos de huéspedes a las autoridades](https://help-platform.littlehotelier.com/en/articles/10066500-automated-compliance-reporting) con Guest Engagement (Italia, España, Portugal, Alemania, Suiza, Austria, Croacia, República Checa y Colombia) o VeriFactu en España
 - tus quejas son por **extras que faltan** (informes, facturas, comprobaciones, IA), no por el calendario ni la sincronización de canales
 
 ## Qué pierdes al cambiar
@@ -112,12 +112,12 @@ Muchas carencias se pueden cubrir sin mover tus reservas:
 1. **La App Store.** Las apps de check-in, mensajería, ventas adicionales e ingresos se conectan a tu cuenta actual. Mira [las mejores integraciones de Little Hotelier](/blog/little-hotelier-integrations).
 2. **Ajustes que quizá aún no usas.** Una tarifa mínima del alojamiento, planes de tarifas para noches huecas, el informe de limpieza y las passkeys vienen incluidos. Mira [trucos y funciones ocultas de Little Hotelier](/blog/little-hotelier-tips).
 3. **Userscripts gratuitos.** Precios en el calendario, comisiones de Booking.com en la reserva y tablas más anchas, gratis para siempre, desde la [página de scripts del navegador](/tools/ui).
-4. **Un panel complementario.** Hotelier Tools, que hacemos nosotros, añade facturación masiva, comprobaciones automáticas antes de la llegada y una API para tus propios datos encima de Little Hotelier. Es independiente (no está afiliado ni respaldado por SiteMinder ni por Little Hotelier), se conecta con tu propio acceso a Little Hotelier y es gratis para todos los hoteles hasta que empiece el cobro el 10 de enero de 2027.
+4. **Un panel complementario.** Hotelier Tools, que hacemos nosotros, añade facturación masiva, comprobaciones automáticas antes de la llegada y una API para tus propios datos encima de Little Hotelier. Es independiente (no está afiliado a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo), se conecta con tu propio acceso a Little Hotelier y es gratis para todos los hoteles hasta que empiece el cobro el 10 de enero de 2027.
 
 ## Resumen
 
 - **Hotel u hostel que se queda pequeño en Little Hotelier:** pide presupuesto a Cloudbeds y, si tienes personal y restauración, a Mews.
 - **Presupuesto ajustado y tiempo para configurar:** Beds24.
 - **Apartamentos o casas vacacionales:** Lodgify, Smoobu o Hostaway.
-- **Contento con lo básico pero te faltan extras:** quédate y añade apps, scripts o una capa de API.
+- **Si lo básico te convence pero echas en falta extras:** quédate y añade apps, scripts o una capa de API.
 - Elijas lo que elijas, **exporta tus datos ya**, antes de que se enmascaren los datos de los huéspedes.

@@ -1,7 +1,7 @@
 ---
 title: "Cara memakai data Little Hotelier di Claude Code, Cursor, dan VS Code (MCP)"
 seoTitle: "Little Hotelier MCP di Claude Code, Cursor, VS Code"
-description: "Tambahkan MCP server Hotelier Tools ke Claude Code, Cursor, VS Code, Windsurf, atau Gemini CLI, lalu buat laporan okupansi, sinkronisasi Sheets, atau dasbor."
+description: "Pasang MCP server Hotelier Tools di Claude Code, Cursor, VS Code, Windsurf, atau Gemini CLI, lalu buat laporan okupansi, sync ke Sheets, atau dashboard."
 date: 2026-10-03
 category: ai
 tags: [mcp, claude code, cursor, vs code, api]
@@ -9,7 +9,7 @@ keywords: [claude code adalah, claude code mcp setup, cursor mcp.json, vscode mc
 feature: api-mcp
 demoPath: /developer/mcp-setup
 cover: /images/blog/demo/en/mcp-setup.webp
-coverAlt: "Panduan penyiapan MCP di Hotelier Tools: penjelasan What is MCP? dan tab Client configuration untuk Claude Desktop, VS Code, Cursor, dan Custom / SDK, dengan Claude Desktop terpilih beserta cuplikan claude_desktop_config.json"
+coverAlt: "Panduan setup MCP di Hotelier Tools: penjelasan What is MCP? dan tab Client configuration untuk Claude Desktop, VS Code, Cursor, dan Custom / SDK, dengan Claude Desktop terpilih beserta cuplikan claude_desktop_config.json"
 faq:
   - q: "Apa perintah claude mcp add untuk Little Hotelier?"
     a: "Jalankan: claude mcp add --transport http hotelier-tools https://dashboard.hotelier.tools/api/mcp --header \"Authorization: Bearer htk_YOUR_API_KEY\". Ganti key dengan yang dari Developer, API Keys di Hotelier Tools, lalu periksa dengan /mcp di dalam Claude Code."
@@ -25,7 +25,7 @@ faq:
 
 Tambahkan satu MCP server jarak jauh, `https://dashboard.hotelier.tools/api/mcp`, dengan API key Hotelier Tools, dan Claude Code, Cursor, VS Code (mode agen Copilot), Windsurf, atau Gemini CLI dapat membaca reservasi, tarif, dan invoice Little Hotelier Anda sambil menulis kode untuk Anda. Di Claude Code cukup satu perintah: `claude mcp add --transport http hotelier-tools https://dashboard.hotelier.tools/api/mcp --header "Authorization: Bearer htk_YOUR_API_KEY"`.
 
-Di bawah ini ada konfigurasi persis untuk setiap alat (diperiksa terhadap dokumentasi masing-masing vendor pada Oktober 2026), tiga hal yang layak dibuat, dan kapan sebaiknya memanggil REST API secara langsung.
+Di bawah ini ada konfigurasi persis untuk setiap tool (diperiksa terhadap dokumentasi masing-masing vendor pada Oktober 2026), tiga hal yang layak dibuat, dan kapan sebaiknya memanggil REST API secara langsung.
 
 ## Sebelum mulai: buat API key
 
@@ -36,7 +36,7 @@ Little Hotelier tidak menerbitkan MCP server, dan dokumentasi API mitra SiteMind
 3. Ketik nama yang menunjukkan di mana key akan dipakai, misalnya `cursor-laptop`, lalu tekan **Generate key**.
 4. Salin segera: "Copy this key now — it will not be shown again." Key diawali dengan `htk_`.
 
-::screenshot{src="/images/blog/demo/en/api-keys.webp" alt="Halaman API keys di Hotelier Tools: formulir Generate a new key dengan kolom nama dan tombol Generate key, satu key aktif (MCP internal (chat), disamarkan) dengan tombol Revoke, dan catatan Good security practice" caption="Satu key per alat memudahkan Anda mencabut hanya yang tidak lagi dipakai." path="/developer/api-keys"}
+::screenshot{src="/images/blog/demo/en/api-keys.webp" alt="Halaman API keys di Hotelier Tools: formulir Generate a new key dengan kolom nama dan tombol Generate key, satu key aktif (MCP internal (chat), disamarkan) dengan tombol Revoke, dan catatan Good security practice" caption="Satu key per tool memudahkan Anda mencabut hanya yang tidak lagi dipakai." path="/developer/api-keys"}
 ::
 
 Sebuah key memiliki izin yang sama dengan akun Hotelier Tools Anda, pada satu properti tempat Anda membuatnya. Anda bisa memiliki hingga 10 key.
@@ -55,7 +55,7 @@ Buka terminal baru (dan mulai ulang editor Anda) agar variabelnya terbaca.
 
 ## Cara menambahkan MCP server ke Claude Code, Cursor, VS Code, Windsurf, dan Gemini CLI
 
-Setiap alat menyimpan tiga fakta yang sama (alamat, transport, key) dalam file yang sedikit berbeda. Pilih alat Anda.
+Setiap tool menyimpan tiga fakta yang sama (alamat, transport, key) dalam file yang sedikit berbeda. Pilih yang Anda pakai.
 
 ### Claude Code
 
@@ -101,7 +101,7 @@ Cursor membaca `~/.cursor/mcp.json` untuk semua proyek, atau `.cursor/mcp.json` 
 }
 ```
 
-Simpan, lalu pastikan server aktif di pengaturan MCP Cursor (versi terbaru menampilkan daftar server di bawah **Customize** pada sidebar). Bertanyalah di chat **Agent**. Cursor secara default meminta persetujuan sebelum menjalankan sebuah alat; biarkan begitu untuk server ini. Jika `headers` dihilangkan, Cursor akan menawarkan masuk lewat browser.
+Simpan, lalu pastikan server aktif di pengaturan MCP Cursor (versi terbaru menampilkan daftar server di bawah **Customize** pada sidebar). Bertanyalah di chat **Agent**. Cursor secara default meminta persetujuan sebelum menjalankan sebuah tool; biarkan begitu untuk server ini. Jika `headers` dihilangkan, Cursor akan menawarkan masuk lewat browser.
 
 ### VS Code dengan GitHub Copilot
 
@@ -127,7 +127,7 @@ VS Code memakai `.vscode/mcp.json`, dengan `servers` sebagai kunci teratas dan `
 }
 ```
 
-Buka Copilot Chat, pindah ke mode **Agent**, dan gunakan **Configure Tools** untuk melihat alat Hotelier Tools. VS Code mungkin meminta Anda mempercayai server saat pertama kali dijalankan. Untuk semua workspace, jalankan **MCP: Open User Configuration** dan tempel blok yang sama di sana. VS Code juga mendukung masuk lewat browser jika Anda menghilangkan `headers`.
+Buka Copilot Chat, pindah ke mode **Agent**, dan gunakan **Configure Tools** untuk melihat tool Hotelier Tools. VS Code mungkin meminta Anda mempercayai server saat pertama kali dijalankan. Untuk semua workspace, jalankan **MCP: Open User Configuration** dan tempel blok yang sama di sana. VS Code juga mendukung masuk lewat browser jika Anda menghilangkan `headers`.
 
 ::screenshot{src="/images/blog/demo/en/mcp-config-vscode-copilot.webp" alt="Tab VS Code / GitHub Copilot pada halaman penyiapan MCP Hotelier Tools: cuplikan .vscode/mcp.json dengan servers, hotelier-tools, type http, URL /api/mcp milik demo, dan header Authorization dengan placeholder htk_YOUR_API_KEY, lalu Turn on Agent mode in Copilot Chat" caption="Halaman MCP Setup menyediakan cuplikan siap pakai untuk setiap klien. Demo menampilkan alamatnya sendiri; alamat Anda adalah dashboard.hotelier.tools." path="/developer/mcp-setup" width="1036" height="446"}
 ::
@@ -147,7 +147,7 @@ Buka Copilot Chat, pindah ke mode **Agent**, dan gunakan **Configure Tools** unt
 }
 ```
 
-Windsurf membatasi Cascade hingga 100 alat secara total, dan Hotelier Tools menawarkan lebih dari 100, jadi Anda mungkin perlu mematikan alat yang tidak dipakai di panel MCP.
+Windsurf membatasi Cascade hingga 100 tool secara total, dan Hotelier Tools menawarkan lebih dari 100, jadi Anda mungkin perlu mematikan tool yang tidak dipakai di panel MCP.
 
 **Gemini CLI** membaca `~/.gemini/settings.json` (atau `.gemini/settings.json` di sebuah proyek) dan memakai `httpUrl` untuk jenis server ini; `url` berarti transport SSE yang lebih lama, yang tidak dilayani Hotelier Tools ([dokumentasi](https://geminicli.com/docs/tools/mcp-server/)):
 
@@ -166,7 +166,7 @@ Atau dari terminal: `gemini mcp add --transport http --header "Authorization: Be
 
 Kedua konfigurasi ini mengikuti dokumentasi masing-masing vendor; kami belum mengujinya di setiap versi.
 
-| Alat | File konfigurasi | Kunci teratas | Kunci URL |
+| Tool | File konfigurasi | Kunci teratas | Kunci URL |
 |---|---|---|---|
 | Claude Code | `.mcp.json` | `mcpServers` | `url` + `"type": "http"` |
 | Cursor | `.cursor/mcp.json` | `mcpServers` | `url` |
@@ -254,9 +254,9 @@ function syncArrivals() {
 }
 ```
 
-Simpan key di **Project Settings → Script properties** sebagai `HT_API_KEY`, jalankan sekali untuk memberi akses, lalu tambahkan pemicu harian berbasis waktu di **Triggers**. `/reservations` mengembalikan maksimal 100 reservasi per panggilan, difilter berdasarkan tanggal check-in, jadi bagi bulan yang padat menjadi per minggu. Ingat bahwa sheet kini berisi nama tamu: bagikan dengan hati-hati.
+Simpan key di **Project Settings → Script properties** sebagai `HT_API_KEY`, jalankan sekali untuk memberi akses, lalu tambahkan trigger harian berbasis waktu di **Triggers**. `/reservations` mengembalikan maksimal 100 reservasi per panggilan, difilter berdasarkan tanggal check-in, jadi bagi bulan yang padat menjadi per minggu. Ingat bahwa sheet kini berisi nama tamu: bagikan dengan hati-hati.
 
-### Dasbor kustom kecil
+### Dashboard kustom kecil
 
 ::prompt{label="Cursor"}
 Buat aplikasi web Node.js kecil yang menampilkan okupansi malam ini, kedatangan dan keberangkatan hari ini, serta reservasi dengan saldo belum dibayar, memakai REST API Hotelier Tools. Simpan HT_API_KEY hanya di server; browser harus memanggil server saya, tidak pernah memanggil API secara langsung. Simpan jawaban di cache selama lima menit.
@@ -268,25 +268,25 @@ Dua aturan membuatnya aman: key tetap di server (siapa pun yang membuka halaman 
 
 | | MCP server | REST API |
 |---|---|---|
-| Paling cocok untuk | Bertanya, membiarkan agen menjelajah sambil menulis kode | Skrip, Sheets, dasbor yang berjalan terjadwal |
+| Paling cocok untuk | Bertanya, membiarkan agen menjelajah sambil menulis kode | Skrip, Sheets, dashboard yang berjalan terjadwal |
 | Alamat | `https://dashboard.hotelier.tools/api/mcp` | `https://dashboard.hotelier.tools/api/v1` |
 | Autentikasi | API key atau masuk lewat browser | API key (`Authorization: Bearer htk_…`) |
 | Dokumentasi | Halaman MCP Setup (`/developer/mcp-setup`) | Explorer Swagger (`/developer/rest-api`) |
 
 Keduanya memakai key dan izin yang sama. Panduan REST ada di [API Little Hotelier](/blog/little-hotelier-api).
 
-## Alat baca vs tulis: jaga agen tetap terkendali
+## Tool baca vs tulis: jaga agen tetap terkendali
 
-Agen pemrograman pandai menjalankan alat dengan cepat, dan itulah alasan mengapa Anda perlu memperlambatnya di sini.
+Agen pemrograman pandai menjalankan tool dengan cepat, dan itulah alasan mengapa Anda perlu memperlambatnya di sini.
 
-- **Operasi tulis berjalan begitu agen memanggilnya.** Di luar dasbor Hotelier Tools tidak ada kartu persetujuan. Mengubah reservasi, mencatat pembayaran, menerapkan harga, atau mengatur stop sell terjadi begitu alatnya berjalan. Biarkan pengaturan "ask before running tools" di editor Anda aktif, dan jangan pakai mode auto-run dengan server ini.
-- **Tindakan yang tidak bisa dibatalkan tetap diblokir.** Delapan alat (mengirim invoice ke tamu lewat email, refund, mengajukan survei INE, undangan tim, mengirim tautan tamu lewat email, menjawab pertanyaan Booking.com, dan pengecekan waitlist yang mengirim pesan ke tamu) hanya tersedia di dasbor.
+- **Operasi tulis berjalan begitu agen memanggilnya.** Di luar dashboard Hotelier Tools tidak ada kartu persetujuan. Mengubah reservasi, mencatat pembayaran, menerapkan harga, atau mengatur stop sell terjadi begitu tool-nya berjalan. Biarkan pengaturan "ask before running tools" di editor Anda aktif, dan jangan pakai mode auto-run dengan server ini.
+- **Tindakan yang tidak bisa dibatalkan tetap diblokir.** Delapan tool (mengirim invoice ke tamu lewat email, refund, mengajukan survei INE, undangan tim, mengirim tautan tamu lewat email, menjawab pertanyaan Booking.com, dan pengecekan waiting list yang mengirim pesan ke tamu) hanya tersedia di dashboard.
 - **Perubahan reservasi dilakukan dua langkah.** `propose_reservation_changes` menampilkan sebelum/sesudah; `apply_reservation_changes` memerlukan `confirmed: true`. Baca usulannya.
 - **Jangan pernah meng-commit key.** Pakai rujukan bergaya `${HT_API_KEY}`, tambahkan file konfigurasi lokal ke `.gitignore`, dan cabut key yang bocor di `/developer/api-keys`.
 
 ## Pemecahan masalah "server tidak muncul"
 
-- **Tidak ada yang muncul setelah mengedit konfigurasi:** mulai ulang editor atau CLI. Sebagian besar alat membaca konfigurasi MCP saat dijalankan.
+- **Tidak ada yang muncul setelah mengedit konfigurasi:** mulai ulang editor atau CLI. Sebagian besar tool membaca konfigurasi MCP saat dijalankan.
 - **Claude Code atau VS Code mengabaikan server:** periksa `"type": "http"`.
 - **Gemini CLI terhubung tetapi gagal:** gunakan `httpUrl`, bukan `url`.
 - **401:** key salah atau sudah dicabut, atau variabel lingkungan belum diatur di terminal tersebut.

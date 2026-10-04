@@ -9,7 +9,7 @@ keywords: [checklist reception hotel, checklist check-in hotel, modello checklis
 feature: automated-checks
 demoPath: /automated-checks
 cover: /images/blog/demo/en/automated-checks-lifecycle.webp
-coverAlt: "Pagina Automated Checks di Hotelier Tools: come funzionano i controlli in quattro passaggi, un avviso Nothing runs any check yet che suggerisce Before they arrive e The journey of a reservation through its five stages"
+coverAlt: "Pagina Automated Checks di Hotelier Tools: come funzionano i controlli in quattro passaggi, un avviso Nothing runs any check yet che suggerisce Before they arrive e l'animazione The journey of a reservation con le sue cinque fasi"
 faq:
   - q: "Cosa deve controllare ogni giorno la reception di un hotel?"
     a: "Per gli arrivi di oggi e di domani: camera assegnata, saldo pagato, carta valida, documento d'identità, indirizzo, numero corretto di ospiti, orario di arrivo e nessuna corrispondenza con la tua lista do-not-rebook. Per le partenze di oggi: il saldo e tutto ciò che serve alla fattura."
@@ -29,16 +29,16 @@ Ogni giorno controlla otto cose sugli arrivi di oggi e di domani: camera assegna
 
 ## Gli 8 problemi delle prenotazioni da individuare prima che l'ospite arrivi
 
-1. **Nessuna camera assegnata.** Una prenotazione senza numero di camera è facile da non vedere finché l'ospite non è davanti al banco.
+1. **Nessuna camera assegnata.** Una prenotazione senza numero di camera passa facilmente inosservata finché l'ospite non è già alla reception.
 2. **Saldo da pagare.** Vuoi sapere prima dell'arrivo se incassare, sollecitare una caparra o inviare un link di pagamento.
 3. **Carta non valida su una prenotazione Booking.com.** Booking.com concede all'ospite una scadenza per aggiornare la carta, quindi accorgertene tardi ti toglie opzioni.
 4. **Documento d'identità mancante.** In molti paesi serve per la registrazione degli ospiti, per esempio per Alloggiati Web in Italia. Vedi [regole di registrazione degli ospiti per paese](/blog/guest-registration-rules-by-country).
 5. **Indirizzo o paese mancante.** Serve per la registrazione, per le statistiche ufficiali (come l'indagine INE spagnola o la comunicazione ISTAT) e per una fattura corretta.
 6. **Numero di ospiti sbagliato.** Zero adulti, o due ospiti in una prenotazione per quattro, possono falsare registrazione, colazione e l'eventuale imposta di soggiorno calcolata a persona.
 7. **Nessun orario di arrivo.** Arrivi tardivi e self check-in richiedono un piano il giorno prima.
-8. **Un ospite che hai chiesto di non far tornare.** Meglio saperlo prima che arrivi. Vedi [come tenere una lista nera degli ospiti](/blog/hotel-do-not-rent-list).
+8. **Un ospite a cui hai chiesto di non tornare.** Meglio saperlo prima che arrivi. Vedi [come tenere una lista nera degli ospiti](/blog/hotel-do-not-rent-list).
 
-Copia questa tabella come checklist stampabile:
+Copia questa tabella e usala come checklist da stampare:
 
 | Controllo | Dove guardare in Little Hotelier | Automatizzato in Hotelier Tools |
 |---|---|---|
@@ -54,8 +54,8 @@ Copia questa tabella come checklist stampabile:
 ## Come controllarli in Little Hotelier senza aprire ogni prenotazione
 
 1. Vai su **My Apps > Front Desk > Reservations**.
-2. Imposta il tipo di data su **Check-in date**, scegli oggi e domani (o la settimana successiva), imposta lo stato su **Confirmed** e clicca su **Search**.
-3. Leggi le colonne in orizzontale: una **Room** vuota, il numero di **Occupants**, un **ETA** in bianco e qualsiasi valore in **Outstanding**.
+2. Imposta il tipo di data su **Check-in date**, scegli oggi e domani (o i prossimi sette giorni), imposta lo stato su **Confirmed** e clicca su **Search**.
+3. Scorri le colonne: una **Room** vuota, il numero di **Occupants**, un **ETA** in bianco e qualsiasi valore in **Outstanding**.
 4. Lo vuoi su carta? Clicca su **Export** per un CSV. I numeri di telefono degli ospiti sono esclusi dal file per motivi di sicurezza.
 
 Fonte: [Run and export reservations information](https://helpcentre.littlehotelier.com/en/articles/8673668-run-and-export-reservations-information).
@@ -69,7 +69,7 @@ In Little Hotelier apri la prenotazione in **Channel Manager > Reservations**, v
 A ottobre 2026 l'ospite ha poi 24 ore per aggiornare la carta. Per le prenotazioni fatte entro 48 ore dal check-in sono 12 ore, oppure fino alle 15:00 del giorno del check-in, a seconda di quale scade prima. Se non lo fa, puoi cancellare fino alle 15:00 (ora locale) del giorno del check-in ([Booking.com Partner Hub](https://partner.booking.com/en-us/help/policies-payments/guest-payments/handling-invalid-credit-cards)). Per questo le carte vanno nella lista della sera prima. Guida completa: [Booking.com carta non valida o no-show](/blog/booking-com-invalid-card-no-show).
 
 ::callout{type="tip" title="Script gratuiti che rendono più veloce questa schermata"}
-[Full Width Reservation Table](/tools/ui/full-width-reservation-table) mostra tutte le colonne senza scorrere in orizzontale. [Update Number Adults](/tools/ui/update-number-adults) imposta le nuove prenotazioni su 2 adulti, così uno 0 non passa inosservato. Altri in [estensioni Chrome gratuite per Little Hotelier](/blog/little-hotelier-chrome-extensions).
+[Full Width Reservation Table](/tools/ui/full-width-reservation-table) mostra tutte le colonne senza scorrere in orizzontale. [Update Number Adults](/tools/ui/update-number-adults) imposta le nuove prenotazioni su 2 adulti, così uno 0 non passa inosservato. Altri script in [estensioni Chrome gratuite per Little Hotelier](/blog/little-hotelier-chrome-extensions).
 ::
 
 ## La sera prima o lo stesso giorno: quando eseguire ogni controllo
@@ -78,7 +78,7 @@ Alcuni problemi richiedono tempo per essere risolti (una carta, una camera), alt
 
 | Momento | Prenotazioni che legge | Cosa controlla |
 |---|---|---|
-| Dopo che una prenotazione è stata fatta | Prenotate ieri e oggi | Camera, documento, indirizzo, lista do-not-rebook |
+| Dopo la prenotazione | Prenotate ieri e oggi | Camera, documento, indirizzo, lista do-not-rebook |
 | Prima dell'arrivo | Check-in da oggi fino a 7 giorni (1–60, a tua scelta) | Camera, pagamento, lista do-not-rebook |
 | All'arrivo | Check-in oggi | Documento, indirizzo, camera |
 | Durante il soggiorno | Check-in negli ultimi 7 giorni (modificabile) | Documento, indirizzo |
@@ -92,7 +92,7 @@ Una regola semplice: camere, pagamenti e carte la sera prima; documento e indiri
 2. Apri **Automated Checks** (`/automated-checks`). Se non gira ancora nulla, la pagina suggerisce di iniziare da **Before they arrive**: individua un soggiorno senza camera quando c'è ancora tempo per assegnarla.
 3. Apri un momento, attiva o disattiva i suoi controlli e premi **Save and activate task**. Si crea così l'attività programmata con la pianificazione consigliata, per esempio ogni notte alle 23:30 per "After a booking is made".
 4. I problemi compaiono in **Issues** (`/automated-checks/issues`), raggruppati per prenotazione. Filtra per problemi aperti, tipo di controllo o date del soggiorno.
-5. Correggi la prenotazione in Little Hotelier, poi premi **Verify**. I controlli girano di nuovo su quella singola prenotazione e il problema si chiude una volta risolto.
+5. Correggi la prenotazione in Little Hotelier, poi premi **Verify**. I controlli vengono rieseguiti su quella singola prenotazione e il problema si chiude una volta risolto.
 
 ::screenshot{src="/images/blog/demo/en/automated-checks-moment-on-arrival.webp" alt="Momento When they arrive in Hotelier Tools: la scheda dell'attività non ancora configurata con Every 3 hours, Choose e Run now, il pulsante Save and activate task e i controlli ID / passport (police register), physical room assignment e address and origin validation attivati" caption="Ogni momento del soggiorno ha i suoi controlli e la sua pianificazione. Qui, When they arrive." path="/automated-checks/moment/on_arrival"}
 ::
@@ -105,7 +105,7 @@ Una regola semplice: camere, pagamenti e carte la sera prima; documento e indiri
 
 ## Come si presenta il report via email
 
-Ogni esecuzione invia **un'email di report per attività**, nella lingua che imposti per quell'attività: un riepilogo chiaro di ciò che l'esecuzione ha trovato, facile da leggere sul telefono. Ogni problema è anche in **Issues**, quindi l'email è il tuo promemoria e la dashboard è dove lavori. I destinatari condivisi, come il titolare e la reception, si impostano in **Settings > Notifications** (`/settings/notifications`).
+Ogni esecuzione invia **un'email di report per attività**, nella lingua che imposti per quell'attività: un riepilogo chiaro di ciò che l'esecuzione ha trovato, facile da leggere sul telefono. Ogni problema è anche in **Issues**, quindi l'email è il tuo promemoria e la dashboard è il posto in cui intervieni. I destinatari condivisi, come il titolare e la reception, si impostano in **Settings > Notifications** (`/settings/notifications`).
 
 ::screenshot{src="/images/blog/demo/en/settings-report-recipients.webp" alt="Pagina delle impostazioni Report recipients in Hotelier Tools con un indirizzo condiviso nel campo Addresses, un indirizzo suggerito da aggiungere e la nota che il report di ogni attività programmata va a questo elenco, a meno che l'attività non indichi il proprio" caption="La pagina Report recipients in Settings: gli indirizzi condivisi ricevono l'email di report di ogni attività di controllo." path="/settings/notifications"}
 ::
@@ -114,7 +114,7 @@ Ogni esecuzione invia **un'email di report per attività**, nella lingua che imp
 
 - **Avvisano e basta.** Nessun controllo modifica, cancella o addebita una prenotazione. L'eccezione è il **check-out automatico** facoltativo, che scrive su Little Hotelier ed è spento per impostazione predefinita.
 - **Al massimo una volta all'ora per attività.** Ogni esecuzione accede a Little Hotelier, quindi l'intervallo minimo è di 60 minuti.
-- **Si fermano in sicurezza.** Se la password di Little Hotelier scade, le attività programmate si mettono in pausa da sole invece di riprovare, il che protegge il tuo account da un blocco. La dashboard mostra "Automated jobs are paused" finché non salvi la nuova password in **Credentials** o premi **Check now & resume**.
+- **Si mettono in pausa in sicurezza.** Se la password di Little Hotelier scade, le attività programmate si mettono in pausa da sole invece di riprovare, il che protegge il tuo account da un blocco. La dashboard mostra "Automated jobs are paused" finché non salvi la nuova password in **Credentials** o premi **Check now & resume**.
 - **Tre controlli restano manuali.** Carte, numero di ospiti e orari di arrivo non vengono controllati in automatico, quindi tienili nella tua lista del mattino.
 
 Ogni attività è elencata in **Cron Jobs** (`/cron`) e ogni esecuzione in **Run History** (`/cron-logs`). La funzione è in beta. Maggiori informazioni sulla pianificazione nella [pagina Automations](/tools/bot/automations) e sull'intera funzione in [Automated checks](/tools/bot/automated-checks).

@@ -14,14 +14,14 @@ faq:
   - q: "Quanto costa Little Hotelier nel 2026?"
     a: "A ottobre 2026 ci sono due piani, Basics e Pro, con prezzo mensile in base al numero di camere e alla località, e una prova gratuita di 30 giorni. Basics aggiunge una commissione dell'1% sul valore delle prenotazioni. La pagina dei prezzi mostra la cifra esatta dopo aver inserito il numero di camere."
   - q: "Little Hotelier o Cloudbeds: quale è meglio per un piccolo hotel?"
-    a: "Entrambi vanno bene per hotel indipendenti e B&B. Little Hotelier pubblica i suoi piani e si rivolge a strutture da 1 a 30 camere; Cloudbeds fa un preventivo per ogni struttura e pubblica un'API con oltre 400 partner di integrazione. Se ti servono integrazioni tue o un ostello con molti posti letto, vale la pena fare una demo di Cloudbeds; se vuoi una distribuzione semplice e supportata da SiteMinder, Little Hotelier va bene."
+    a: "Entrambi vanno bene per hotel indipendenti e B&B. Little Hotelier pubblica i suoi piani e si rivolge a strutture da 1 a 30 camere; Cloudbeds fa un preventivo per ogni struttura e pubblica un'API con oltre 400 partner di integrazione. Se ti servono integrazioni tue o un ostello con molti posti letto, vale la pena chiedere una demo di Cloudbeds; se vuoi una distribuzione semplice e supportata da SiteMinder, Little Hotelier va bene."
   - q: "Cosa perdo se lascio Little Hotelier?"
     a: "Soprattutto lo storico. I dati degli ospiti vengono mascherati 180 giorni dopo il check-out e le prenotazioni più vecchie escono dalla ricerca del channel manager dopo 548 giorni, quindi esporta prenotazioni, elenchi ospiti e PDF delle fatture prima di cambiare. Piani tariffari e collegamenti ai canali vanno ricostruiti nel nuovo sistema."
   - q: "Quali alternative hanno un server MCP per gli assistenti AI?"
     a: "Nessuna delle sei di questo confronto menzionava un server MCP per i dati della struttura nella documentazione per sviluppatori quando abbiamo controllato, il 3 ottobre 2026. Cloudbeds offre un server MCP per la sua documentazione per sviluppatori e Apaleo ha lanciato un server MCP nel 2025."
 ---
 
-Per un piccolo hotel, B&B o ostello, le alternative a Little Hotelier più vicine sono **Cloudbeds** (tutto in uno, prezzo su preventivo) e **Beds24** (si paga per unità, molto configurabile), con **Mews** per hotel più grandi che hanno uno staff. Se la tua struttura è fatta soprattutto di appartamenti o case vacanza, guarda **Lodgify**, **Smoobu** o **Hostaway**. Tutti e sei pubblicano un'API, cosa che Little Hotelier non offre per le tue prenotazioni. Prima di cambiare, esporta lo storico: Little Hotelier maschera i dati degli ospiti 180 giorni dopo il check-out.
+Per un piccolo hotel, B&B o ostello, le alternative a Little Hotelier più vicine sono **Cloudbeds** (tutto in uno, prezzo su preventivo) e **Beds24** (si paga per unità, molto configurabile), e **Mews** per hotel più grandi, con personale. Se la tua struttura è fatta soprattutto di appartamenti o case vacanza, guarda **Lodgify**, **Smoobu** o **Hostaway**. Tutti e sei pubblicano un'API, cosa che Little Hotelier non offre per le tue prenotazioni. Prima di cambiare, esporta lo storico: Little Hotelier maschera i dati degli ospiti 180 giorni dopo il check-out.
 
 Ogni prezzo e funzione qui sotto è stato verificato sui siti dei fornitori il **3 ottobre 2026**. I prezzi cambiano, quindi conferma prima di firmare.
 
@@ -72,7 +72,7 @@ La sostituzione più diretta per un hotel o un ostello. Cloudbeds dichiara [ness
 
 ### Mews
 
-Pensato per hotel che gestiscono più delle sole camere: ristorante, servizi prenotabili, un team alla reception. Mews è [a prezzo per camera](https://www.mews.com/en/pricing) (le cifre mostrate sono per una struttura da 10 camere) e offre un'API aperta con oltre 1.000 integrazioni nel marketplace. Per un B&B da 6 camere è probabilmente più sistema di quanto ti serva.
+Pensato per hotel che gestiscono più delle sole camere: ristorante, servizi prenotabili, un team alla reception. Mews è [a prezzo per camera](https://www.mews.com/en/pricing) (le cifre mostrate sono per una struttura da 10 camere) e offre un'API aperta con oltre 1.000 integrazioni nel marketplace. Per un B&B da 6 camere è probabilmente un sistema più complesso del necessario.
 
 ### Beds24
 
@@ -88,7 +88,7 @@ Questi tre sono pensati per gli affitti vacanza. Vanno bene se la tua struttura 
 
 ## Quando Little Hotelier resta la scelta giusta
 
-Cambiare costa tempo: ricostruire le tariffe, ricollegare ogni canale, riaddestrare il personale. Little Hotelier resta una scelta solida quando:
+Cambiare costa tempo: ricostruire le tariffe, ricollegare ogni canale, rifare la formazione del personale. Little Hotelier resta una scelta solida quando:
 
 - hai **fino a 30 camere** e vuoi un solo fornitore per PMS, channel manager e motore di prenotazione
 - ti affidi al **channel manager di SiteMinder** e ad add-on come Demand Plus o Hotel Metasearch
@@ -100,7 +100,7 @@ Cambiare costa tempo: ricostruire le tariffe, ricollegare ogni canale, riaddestr
 - **Lo storico degli ospiti.** I dati degli ospiti vengono mascherati [180 giorni dopo il check-out](https://helpcentre.littlehotelier.com/en/articles/8673959-search-and-view-a-reservation) e la ricerca del channel manager arriva solo a 548 giorni indietro. Esporta prima prenotazioni ed elenchi ospiti.
 - **I numeri di telefono.** Il CSV delle prenotazioni li esclude "per motivi di sicurezza", quindi un'esportazione di massa non li porta con sé.
 - **Le fatture.** Scarica tutti i PDF che devi conservare. Su **Reports → Operational → Invoices** della piattaforma più recente puoi scaricarli come ZIP; c'è anche [una guida per scaricare tutte le fatture in una volta](/blog/download-all-little-hotelier-invoices).
-- **Il lavoro di configurazione.** Tipi di camera, piani tariffari, restrizioni e collegamenti ai canali vanno ricostruiti e ogni OTA va ricollegata nel giorno del passaggio.
+- **Il lavoro di configurazione.** Tipologie di camera, piani tariffari, restrizioni e collegamenti ai canali vanno ricostruiti e ogni OTA va ricollegata nel giorno del passaggio.
 
 ::screenshot{src="/images/scripts/full-width-reservation-table/to.png" alt="Pagina Reservations classica di Little Hotelier in spagnolo con filtri per data, il pulsante Search, 36 prenotazioni trovate e il link Export" caption="Prima di cambiare: cerca un periodo nella pagina Reservations ed esportalo con Export, mese per mese."}
 ::
@@ -112,12 +112,12 @@ Molte lacune si colmano senza spostare le prenotazioni:
 1. **L'App Store.** App per check-in, messaggistica, upselling e revenue si collegano al tuo account esistente. Leggi [le migliori integrazioni per Little Hotelier](/blog/little-hotelier-integrations).
 2. **Impostazioni che forse non usi ancora.** Una tariffa minima della struttura, piani tariffari per le notti isolate, il report di housekeeping e le passkey sono tutti già integrati. Leggi [i trucchi e le funzioni nascoste di Little Hotelier](/blog/little-hotelier-tips).
 3. **Userscript gratuiti.** Prezzi nel calendario, commissioni di Booking.com nella prenotazione e tabelle più larghe, gratis per sempre, dalla [pagina degli script per il browser](/tools/ui).
-4. **Una dashboard aggiuntiva.** Hotelier Tools, che sviluppiamo noi, aggiunge fatturazione in blocco, controlli automatici prima dell'arrivo e un'API per i tuoi dati sopra Little Hotelier. È indipendente (non affiliato né approvato da SiteMinder o Little Hotelier), si collega con il tuo login di Little Hotelier ed è gratuito per tutti gli hotel fino all'inizio della fatturazione, il 10 gennaio 2027.
+4. **Una dashboard aggiuntiva.** Hotelier Tools, che sviluppiamo noi, aggiunge a Little Hotelier la fatturazione in blocco, i controlli automatici prima dell'arrivo e un'API per i tuoi dati. È indipendente (non affiliato né approvato da SiteMinder o Little Hotelier), si collega con il tuo login di Little Hotelier ed è gratuito per tutti gli hotel fino all'inizio della fatturazione, il 10 gennaio 2027.
 
 ## Riepilogo
 
 - **Hotel o ostello che ha superato Little Hotelier:** chiedi preventivi a Cloudbeds e, se hai personale e ristorazione, a Mews.
 - **Budget ridotto e tempo per configurare:** Beds24.
 - **Appartamenti o case vacanza:** Lodgify, Smoobu o Hostaway.
-- **Soddisfatto del nucleo ma senza alcuni extra:** resta, e aggiungi app, script o uno strato API.
+- **Soddisfatto delle funzioni di base, ma ti mancano degli extra:** resta, e aggiungi app, script o un livello API.
 - Qualunque cosa tu scelga, **esporta ora i tuoi dati**, prima che i dati degli ospiti vengano mascherati.

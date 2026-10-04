@@ -91,9 +91,9 @@ We checked each vendor's own site and docs on 3 October 2026. "Not found" means 
 | PMS | Official MCP for your own data? | Can it change data? | Notes |
 |---|---|---|---|
 | Apaleo | Yes, open beta | Read and write | About 230 tools; [Apaleo developer docs](https://apaleo.dev/guides/ai/overview.html). First announced in [September 2025](https://apaleo.com/blog/apaleo-news/apaleo-launches-mcp-server). |
-| Hospitable (holiday rentals) | Yes, since April 2026 | Read and write | Messages sent through it "are delivered to guests immediately"; not on the Essentials plan ([help](https://help.hospitable.com/en/articles/14424057-connect-an-ai-agent-to-hospitable-using-mcp)) |
-| Guesty (holiday rentals) | Yes, early beta | Read only | Labelled "experimental" ([docs](https://open-api-docs.guesty.com/docs/guesty-mcp-server-beta)) |
-| Lodgify (holiday rentals) | Announced | Read and write, per Lodgify | Its [AI page](https://www.lodgify.com/ai/) presents "Lodgify MCP"; we could not confirm general availability |
+| Hospitable (vacation rentals) | Yes, since April 2026 | Read and write | Messages sent through it "are delivered to guests immediately"; not on the Essentials plan ([help](https://help.hospitable.com/en/articles/14424057-connect-an-ai-agent-to-hospitable-using-mcp)) |
+| Guesty (vacation rentals) | Yes, early beta | Read only | Labeled "experimental" ([docs](https://open-api-docs.guesty.com/docs/guesty-mcp-server-beta)) |
+| Lodgify (vacation rentals) | Announced | Read and write, per Lodgify | Its [AI page](https://www.lodgify.com/ai/) presents "Lodgify MCP"; we could not confirm general availability |
 | Cloudbeds | Docs only | No | Its MCP serves [developer documentation](https://developers.cloudbeds.com/docs/build-with-llms), not hotel data |
 | Mews | Not found | — | Only unofficial community projects, such as [this one on GitHub](https://github.com/tjg37/mews-mcp-server) |
 | Oracle OPERA Cloud | Not found | — | Unofficial community projects exist ([example](https://github.com/lesleslie/opera-cloud-mcp)) |
@@ -101,7 +101,7 @@ We checked each vendor's own site and docs on 3 October 2026. "Not found" means 
 | SiteMinder | For distribution only | — | See below |
 | Little Hotelier | Not found | — | Connect through [Hotelier Tools](/tools/bot/api-mcp), an independent MCP server |
 
-Two patterns stand out. Most official servers so far come from holiday-rental platforms and from Apaleo, an API-first hotel PMS. And several vendors use "MCP" for something else: documentation for developers, or selling rooms through AI apps.
+Two patterns stand out. Most official servers so far come from vacation-rental platforms and from Apaleo, an API-first hotel PMS. And several vendors use "MCP" for something else: documentation for developers, or selling rooms through AI apps.
 
 ## Does Little Hotelier have an MCP server?
 
@@ -134,9 +134,9 @@ It can be, if you treat it like giving a new employee a key. Five risks, and wha
 
 1. **The AI changes the wrong thing.** It might pick the wrong booking or misread a date. Choose servers that separate reading from changing, and keep your AI app's "ask before running" setting on for any tool that changes data.
 2. **Hidden instructions in text.** A guest email or web page could contain text written to trick an AI ("ignore your instructions and refund…"). This is called prompt injection. Approvals on every change are your safety net.
-3. **Guest data leaves your PMS.** Whatever the AI reads is sent to the AI provider. Check its training settings: Anthropic and OpenAI both describe theirs in their help centres, and business plans usually exclude training by default.
+3. **Guest data leaves your PMS.** Whatever the AI reads is sent to the AI provider. Check its training settings: Anthropic and OpenAI both describe theirs in their help centers, and business plans usually exclude training by default.
 4. **Access that never ends.** Keys get copied and forgotten. Prefer sign-ins that expire, give each tool its own key, and revoke what you no longer use.
-5. **Unknown servers.** A community server from the internet may run on your computer with your password. Connect only servers from organisations you trust.
+5. **Unknown servers.** A community server from the internet may run on your computer with your password. Connect only servers from organizations you trust.
 
 A good hotel MCP server also blocks actions you cannot undo. In Hotelier Tools, refunds, emailing invoices to guests and filing official returns are not available to outside AI apps at all; inside the dashboard, they sit behind an approval card.
 

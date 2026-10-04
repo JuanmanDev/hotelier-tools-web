@@ -18,7 +18,7 @@ faq:
   - q: "Does the INE survey need my guests' passport or DNI numbers?"
     a: "No. The INE asks for totals: how many guests arrived and how many nights they stayed, grouped by country of residence or Spanish region, plus rooms, rates and staff. No ID numbers, names or addresses are sent. Guest identity data goes to SES.Hospedajes, which is a separate obligation."
   - q: "Does the INE survey use the guest's nationality or where they live?"
-    a: "Where they live. The INE classifies travellers by place of residence: Spanish residents by region and everyone else by country. A German citizen who lives in Valencia counts as a Valencia resident, so make sure the guest's address country and province are filled in."
+    a: "Where they live. The INE classifies travelers by place of residence: Spanish residents by region and everyone else by country. A German citizen who lives in Valencia counts as a Valencia resident, so make sure the guest's address country and province are filled in."
   - q: "Can I use this for tourist apartments or rural houses?"
     a: "Apartments, campsites, rural houses and albergues answer their own INE questionnaires. Hotelier Tools builds the hotel survey (HOT) for hotel-type establishments such as hotels, hostales and pensiones."
   - q: "Is Hotelier Tools an official INE or Little Hotelier product?"
@@ -35,7 +35,7 @@ Facts below come from the INE's [2025 hotel survey methodology](https://www.ine.
 
 ## What is the INE hotel occupancy survey?
 
-Its official name is the **Encuesta de Ocupación en Alojamientos Turísticos** (tourist accommodation occupancy survey). The hotel part is the **Encuesta de Ocupación Hotelera (EOH)**. The INE uses it to publish monthly figures on travellers, overnight stays, occupancy and hotel jobs for Spain, each region and the main tourist areas.
+Its official name is the **Encuesta de Ocupación en Alojamientos Turísticos** (tourist accommodation occupancy survey). The hotel part is the **Encuesta de Ocupación Hotelera (EOH)**. The INE uses it to publish monthly figures on travelers, overnight stays, occupancy and hotel jobs for Spain, each region and the main tourist areas.
 
 It covers every *establecimiento hotelero*: hotel, aparthotel, motel, **hostal**, **pensión**, fonda and casa de huéspedes. Tourist apartments, campsites, rural houses and *albergues* (hostels) have their own questionnaires in the same family ([INE: hospitality and tourism statistics](https://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&cid=1254735576863)).
 

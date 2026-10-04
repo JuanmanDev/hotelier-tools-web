@@ -1,7 +1,7 @@
 ---
 title: "Checkliste Rezeption Hotel für Little Hotelier: 8 Probleme vor der Anreise erkennen"
-seoTitle: "Checkliste Rezeption Hotel: tägliche Prüfung mit Little Hotelier"
-description: "Tägliche Checkliste für die Rezeption mit Little Hotelier: 8 Reservierungsprobleme vor der Anreise, wo Sie jedes finden und wie Sie fünf davon automatisieren."
+seoTitle: "Checkliste Rezeption Hotel: täglich mit Little Hotelier"
+description: "Tägliche Checkliste für die Rezeption mit Little Hotelier: 8 Reservierungsprobleme vor der Anreise, wo Sie sie finden und wie Sie fünf automatisieren."
 date: 2026-10-03
 category: operations
 tags: [front desk, checklist, check-in, automation, little hotelier]
@@ -12,31 +12,31 @@ cover: /images/blog/demo/en/automated-checks-lifecycle.webp
 coverAlt: "Seite Automated Checks in Hotelier Tools: wie die Prüfungen in vier Schritten funktionieren, ein Hinweis Nothing runs any check yet, der Before they arrive vorschlägt, und The journey of a reservation durch ihre fünf Phasen"
 faq:
   - q: "Was sollte eine Hotelrezeption jeden Tag prüfen?"
-    a: "Bei den Anreisen von heute und morgen: ein zugewiesenes Zimmer, bezahlter Saldo, gültige Karte, ein Ausweisdokument, eine Anschrift, die richtige Personenzahl, eine Ankunftszeit und kein Treffer auf Ihrer Liste \"nicht erneut buchen\". Bei den heutigen Abreisen: der Saldo und alles, was die Rechnung braucht."
+    a: "Bei den Anreisen von heute und morgen: ein zugewiesenes Zimmer, bezahlter Saldo, gültige Karte, ein Ausweisdokument, eine Anschrift, die richtige Personenzahl, eine Ankunftszeit und kein Treffer auf Ihrer Sperrliste. Bei den heutigen Abreisen: der Saldo und alles, was die Rechnung braucht."
   - q: "Wie finde ich Buchungen ohne Zimmer in Little Hotelier?"
     a: "Öffnen Sie Front Desk > Reservations, filtern Sie nach Check-in-Datum und achten Sie auf eine leere Spalte Room. Der Kalender zeigt oben außerdem einen Zähler für nicht zugewiesene Buchungen."
   - q: "Wie oft können die automatischen Prüfungen laufen?"
     a: "Jede Prüfaufgabe hat ihren eigenen Zeitplan. Die empfohlenen laufen einmal am Tag, und eine Aufgabe kann höchstens einmal pro Stunde laufen, weil jeder Lauf sich in Little Hotelier anmeldet."
   - q: "Ändert oder storniert Hotelier Tools meine Reservierungen?"
-    a: "Nein. Die Prüfungen lösen nur Alarme aus. Die einzige Ausnahme ist der automatische Check-out, der in Little Hotelier schreibt und ausgeschaltet ist, bis Sie ihn einschalten."
+    a: "Nein. Die Prüfungen geben nur Warnungen aus. Die einzige Ausnahme ist der automatische Check-out, der in Little Hotelier schreibt und ausgeschaltet ist, bis Sie ihn einschalten."
   - q: "Kann ich diese Checkliste ausdrucken?"
     a: "Ja. Kopieren Sie die Tabelle in diesem Leitfaden in ein Dokument oder exportieren Sie die gefilterten Anreisen aus Front Desk > Reservations als CSV und drucken Sie diese."
   - q: "Gehört Hotelier Tools zu Little Hotelier?"
-    a: "Nein. Es ist ein unabhängiges Dashboard und steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von beiden nicht empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hotels."
+    a: "Nein. Es ist ein unabhängiges Dashboard, steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hotels."
 ---
 
-Prüfen Sie jeden Tag bei den Anreisen von heute und morgen acht Dinge: ein zugewiesenes Zimmer, bezahlter Saldo, gültige Karte, ein Ausweisdokument, eine Anschrift, die richtige Personenzahl, eine Ankunftszeit und kein Treffer auf Ihrer Liste "nicht erneut buchen". In Little Hotelier passen die meisten auf einen Bildschirm: **Front Desk > Reservations**, nach Check-in-Datum gefiltert. Hotelier Tools führt fünf der acht automatisch zu fünf Zeitpunkten des Aufenthalts aus und mailt Ihnen nur, was behoben werden muss.
+Prüfen Sie jeden Tag bei den Anreisen von heute und morgen acht Dinge: ein zugewiesenes Zimmer, bezahlter Saldo, gültige Karte, ein Ausweisdokument, eine Anschrift, die richtige Personenzahl, eine Ankunftszeit und kein Treffer auf Ihrer Sperrliste. In Little Hotelier passen die meisten auf einen Bildschirm: **Front Desk > Reservations**, nach Check-in-Datum gefiltert. Hotelier Tools prüft fünf der acht automatisch zu fünf Zeitpunkten des Aufenthalts und schickt Ihnen per E-Mail nur, was behoben werden muss.
 
 ## Die 8 Reservierungsprobleme, die Sie vor der Anreise eines Gastes erkennen sollten
 
 1. **Kein Zimmer zugewiesen.** Eine Buchung ohne Zimmernummer übersieht man leicht, bis der Gast an der Rezeption steht.
 2. **Offener Saldo.** Sie wollen vor der Anreise wissen, ob Sie kassieren, eine Anzahlung nachfordern oder einen Zahlungslink senden.
-3. **Ungültige Karte bei einer Booking.com-Buchung.** Booking.com gibt dem Gast eine Frist, die Karte zu aktualisieren. Finden Sie es spät, kostet Sie das Optionen.
+3. **Ungültige Karte bei einer Booking.com-Buchung.** Booking.com gibt dem Gast eine Frist, die Karte zu aktualisieren. Bemerken Sie es zu spät, bleiben Ihnen weniger Möglichkeiten.
 4. **Fehlendes Ausweisdokument.** Viele Länder verlangen es für die Gästemeldung. Siehe [Meldepflicht für Gäste nach Land](/blog/guest-registration-rules-by-country).
 5. **Fehlende Anschrift oder fehlendes Land.** Nötig für die Meldung, für amtliche Statistiken wie Spaniens INE-Erhebung und für eine korrekte Rechnung.
 6. **Falsche Personenzahl.** Null Erwachsene oder zwei Gäste in einer Buchung für vier können Meldung, Frühstück und eine pro Person erhobene Kurtaxe durcheinanderbringen.
 7. **Keine Ankunftszeit.** Späte Anreisen und Self-Check-in brauchen am Vortag einen Plan.
-8. **Ein Gast, von dem Sie nicht wollten, dass er wiederkommt.** Besser, Sie wissen es vor der Anreise. Siehe [Sperrliste für Gäste rechtssicher führen](/blog/hotel-do-not-rent-list).
+8. **Ein Gast, den Sie nicht wieder aufnehmen wollten.** Besser, Sie wissen es vor der Anreise. Siehe [Sperrliste für Gäste rechtssicher führen](/blog/hotel-do-not-rent-list).
 
 Kopieren Sie diese Tabelle als Ihre druckbare Checkliste:
 
@@ -49,7 +49,7 @@ Kopieren Sie diese Tabelle als Ihre druckbare Checkliste:
 | Anschrift und Land | Reservierung > Reiter **Details** und **Guests** | Ja |
 | Personenzahl | Spalte **Occupants** in Reservations | Nein |
 | Ankunftszeit | Spalte **ETA** in Reservations | Nein |
-| Treffer auf der Liste "nicht erneut buchen" | Ihre eigene Liste | Ja |
+| Treffer auf der Sperrliste | Ihre eigene Liste | Ja |
 
 ## So prüfen Sie sie in Little Hotelier, ohne jede Buchung zu öffnen
 
@@ -60,11 +60,11 @@ Kopieren Sie diese Tabelle als Ihre druckbare Checkliste:
 
 Quelle: [Run and export reservations information](https://helpcentre.littlehotelier.com/en/articles/8673668-run-and-export-reservations-information).
 
-Ausweisdokumente und Anschriften sind der langsame Teil. Sie stehen in den Reitern **Details** und **Guests** jeder Reservierung ([Help Center](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)), Sie müssen also jede Anreise öffnen.
+Ausweisdokumente und Anschriften sind der langsame Teil. Sie stehen in den Reitern **Details** und **Guests** jeder Reservierung ([Hilfecenter](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)), Sie müssen also jede Anreise öffnen.
 
 ### Ungültige Booking.com-Karten
 
-Öffnen Sie in Little Hotelier die Buchung unter **Channel Manager > Reservations**, gehen Sie zum Reiter **Manage Reservation** und klicken Sie auf **Report payment card as invalid to Booking.com** ([Help Center](https://helpcentre.littlehotelier.com/en/articles/9303299-report-a-booking-com-reservation-as-a-no-show-or-payment-invalid)).
+Öffnen Sie in Little Hotelier die Buchung unter **Channel Manager > Reservations**, gehen Sie zum Reiter **Manage Reservation** und klicken Sie auf **Report payment card as invalid to Booking.com** ([Hilfecenter](https://helpcentre.littlehotelier.com/en/articles/9303299-report-a-booking-com-reservation-as-a-no-show-or-payment-invalid)).
 
 Stand Oktober 2026 hat der Gast dann 24 Stunden, die Karte zu aktualisieren. Bei Buchungen innerhalb von 48 Stunden vor dem Check-in sind es 12 Stunden oder bis 15 Uhr am Anreisetag, je nachdem, was zuerst eintritt. Tut er es nicht, können Sie bis 15 Uhr (Ihrer Ortszeit) am Anreisetag stornieren ([Booking.com Partner Hub](https://partner.booking.com/en-us/help/policies-payments/guest-payments/handling-invalid-credit-cards)). Deshalb gehören Karten auf die Liste für den Vorabend. Komplette Anleitung: [Booking.com Kreditkarte ungültig oder No-Show](/blog/booking-com-invalid-card-no-show).
 
@@ -76,10 +76,10 @@ Stand Oktober 2026 hat der Gast dann 24 Stunden, die Karte zu aktualisieren. Bei
 
 Manche Probleme brauchen Zeit zur Behebung (eine Karte, ein Zimmer), andere lassen sich erst prüfen, wenn der Gast vor Ihnen steht (der Ausweis). Hotelier Tools teilt den Aufenthalt in fünf Zeitpunkte, jeder mit eigener geplanter Aufgabe:
 
-| Zeitpunkt | Welche Reservierungen es liest | Was es prüft |
+| Zeitpunkt | Welche Reservierungen gelesen werden | Was geprüft wird |
 |---|---|---|
-| Nach einer Buchung | Gestern und heute gebucht | Zimmer, Ausweis, Anschrift, Liste "nicht erneut buchen" |
-| Vor der Anreise | Check-in von heute bis 7 Tage im Voraus (1 bis 60, Ihre Wahl) | Zimmer, Zahlung, Liste "nicht erneut buchen" |
+| Nach einer Buchung | Gestern und heute gebucht | Zimmer, Ausweis, Anschrift, Sperrliste |
+| Vor der Anreise | Check-in von heute bis 7 Tage im Voraus (1 bis 60, Ihre Wahl) | Zimmer, Zahlung, Sperrliste |
 | Bei der Anreise | Check-in heute | Ausweis, Anschrift, Zimmer |
 | Während des Aufenthalts | Check-in in den letzten 7 Tagen (anpassbar) | Ausweis, Anschrift |
 | Bei der Abreise | Check-out heute | Ausweis, Anschrift, Saldo |
@@ -89,8 +89,8 @@ Eine einfache Regel: Zimmer, Zahlungen und Karten am Vorabend, Ausweis und Ansch
 ## So automatisieren Sie die Checkliste mit Hotelier Tools
 
 1. Registrieren Sie sich bei [dashboard.hotelier.tools](https://dashboard.hotelier.tools/register) und verbinden Sie Little Hotelier unter **Credentials**.
-2. Öffnen Sie **Automated Checks** (`/automated-checks`). Läuft noch nichts, schlägt die Seite vor, mit **Before they arrive** zu beginnen: Es erkennt einen Aufenthalt ohne Zimmer, solange noch Zeit zum Zuweisen ist.
-3. Öffnen Sie einen Zeitpunkt, schalten Sie seine Prüfungen ein oder aus und klicken Sie auf **Save and activate task**. Das erstellt die geplante Aufgabe mit dem empfohlenen Zeitplan, zum Beispiel jede Nacht um 23:30 für "After a booking is made".
+2. Öffnen Sie **Automated Checks** (`/automated-checks`). Läuft noch nichts, schlägt die Seite vor, mit **Before they arrive** zu beginnen: Damit erkennen Sie einen Aufenthalt ohne Zimmer, solange noch Zeit zum Zuweisen bleibt.
+3. Öffnen Sie einen Zeitpunkt, schalten Sie seine Prüfungen ein oder aus und klicken Sie auf **Save and activate task**. Das erstellt die geplante Aufgabe mit dem empfohlenen Zeitplan, zum Beispiel jede Nacht um 23:30 für „After a booking is made“.
 4. Probleme erscheinen unter **Issues** (`/automated-checks/issues`), nach Reservierung gruppiert. Filtern Sie nach offenen Problemen, Prüfart oder Aufenthaltsdaten.
 5. Beheben Sie die Reservierung in Little Hotelier und klicken Sie dann auf **Verify**. Die Prüfungen laufen für genau diese Reservierung erneut, und das Problem schließt sich, sobald es behoben ist.
 
@@ -114,14 +114,14 @@ Jeder Lauf sendet **eine Berichts-E-Mail pro Aufgabe**, in der Sprache, die Sie 
 
 - **Sie warnen nur.** Keine Prüfung bearbeitet, storniert oder belastet eine Buchung. Die Ausnahme ist der optionale **automatische Check-out**, der in Little Hotelier schreibt und standardmäßig aus ist.
 - **Höchstens einmal pro Stunde je Aufgabe.** Jeder Lauf meldet sich in Little Hotelier an, daher beträgt das Mindestintervall 60 Minuten.
-- **Sie pausieren sicher.** Läuft Ihr Passwort für Little Hotelier ab, pausieren geplante Aufgaben von selbst, statt es erneut zu versuchen, was Ihr Konto vor einer Sperre schützt. Das Dashboard zeigt "Automated jobs are paused", bis Sie das neue Passwort unter **Credentials** speichern oder auf **Check now & resume** klicken.
+- **Sie pausieren sicher.** Läuft Ihr Passwort für Little Hotelier ab, pausieren geplante Aufgaben von selbst, statt es erneut zu versuchen, was Ihr Konto vor einer Sperre schützt. Das Dashboard zeigt „Automated jobs are paused“, bis Sie das neue Passwort unter **Credentials** speichern oder auf **Check now & resume** klicken.
 - **Drei Prüfungen bleiben manuell.** Karten, Personenzahl und Ankunftszeiten werden nicht automatisch geprüft, lassen Sie sie also auf Ihrer Morgenliste.
 
-Jede Aufgabe steht unter **Cron Jobs** (`/cron`) und jeder Lauf unter **Run History** (`/cron-logs`). Die Funktion ist in Beta. Mehr zur Planung auf der Seite [Automations](/tools/bot/automations) und die komplette Funktion unter [Automated checks](/tools/bot/automated-checks).
+Jede Aufgabe steht unter **Cron Jobs** (`/cron`) und jeder Lauf unter **Run History** (`/cron-logs`). Die Funktion ist in der Beta-Phase. Mehr zur Planung auf der Seite [Automations](/tools/bot/automations) und die komplette Funktion unter [Automated checks](/tools/bot/automated-checks).
 
 ## Zusammenfassung
 
-- Prüfen Sie vor jeder Anreise acht Dinge: Zimmer, Saldo, Karte, Ausweis, Anschrift, Personenzahl, Ankunftszeit und Ihre Liste "nicht erneut buchen".
+- Prüfen Sie vor jeder Anreise acht Dinge: Zimmer, Saldo, Karte, Ausweis, Anschrift, Personenzahl, Ankunftszeit und Ihre Sperrliste.
 - In Little Hotelier zeigt die Liste **Reservations**, nach Check-in-Datum gefiltert, vier davon auf einen Blick. Ausweis und Anschrift erfordern, jede Reservierung zu öffnen.
-- Hotelier Tools prüft Zimmer, Zahlung, Ausweis, Anschrift und die Liste "nicht erneut buchen" zu fünf Zeitpunkten des Aufenthalts, listet Probleme unter **Issues** und mailt einen Bericht.
+- Hotelier Tools prüft Zimmer, Zahlung, Ausweis, Anschrift und die Sperrliste zu fünf Zeitpunkten des Aufenthalts, listet Probleme unter **Issues** auf und verschickt einen Bericht per E-Mail.
 - Beginnen Sie mit **Before they arrive** und ergänzen Sie dann die anderen Zeitpunkte.

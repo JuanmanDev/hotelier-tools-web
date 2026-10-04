@@ -21,7 +21,7 @@ faq:
   - q: "Is an unofficial API like Hotelier Tools safe and allowed?"
     a: "Hotelier Tools signs in with your own Little Hotelier login, stores it encrypted (AES-256-GCM) and can only do what that login can do in the Little Hotelier web app. It is not an official SiteMinder integration, so if you are unsure, check your own agreement with SiteMinder. You can revoke every key at any time."
   - q: "Does Little Hotelier have an MCP server for AI assistants?"
-    a: "Not one for owners as of October 2026. SiteMinder's AI work in Demand Plus is about travellers finding and booking your rooms in ChatGPT and Claude. To ask an AI about your own bookings, you need an independent MCP server such as the one in Hotelier Tools."
+    a: "Not one for owners as of October 2026. SiteMinder's AI work in Demand Plus is about travelers finding and booking your rooms in ChatGPT and Claude. To ask an AI about your own bookings, you need an independent MCP server such as the one in Hotelier Tools."
   - q: "Can I test the API without risking real data?"
     a: "There is no public sandbox key. Start with read-only calls (reservations, prices, room types). They change nothing in Little Hotelier. Calls that write, such as generating an invoice, create real documents."
 ---
@@ -82,7 +82,7 @@ Hotelier Tools is not affiliated with or endorsed by SiteMinder or Little Hoteli
 You need a Hotelier Tools account (sign up at [dashboard.hotelier.tools/register](https://dashboard.hotelier.tools/register)) with Little Hotelier connected on **Credentials**. The property owner has API access by default.
 
 1. Open **Developer → API & MCP → API Keys** (`/developer/api-keys`).
-2. Under "Generate a new key", type a name you will recognise later, such as `sheets-export`, and press **Generate key**.
+2. Under "Generate a new key", type a name you will recognize later, such as `sheets-export`, and press **Generate key**.
 3. Copy the key straight away. The page warns: "Copy this key now — it will not be shown again." Keys start with `htk_`.
 
 ::screenshot{src="/images/blog/demo/en/api-key-generated-masked.webp" alt="API keys page right after generating a key: the green Key generated box with the one-time key masked and a copy button, the new Blog integration key under Active keys with a Revoke button, and an API key created toast" caption="Copy the key from the green box straight away: it is shown only once. Name each key after what will use it, so you know which one to revoke later." path="/developer/api-keys"}
@@ -200,7 +200,7 @@ List calls return JSON like `{ "success": true, "count": 2, "data": [ … ] }`. 
 
 ## Next steps
 
-- If you build software for many hotels, apply for SiteMinder's partner programme and SMX.
+- If you build software for many hotels, apply for SiteMinder's partner program and SMX.
 - If you only need your own property's data, create a Hotelier Tools key at `/developer/api-keys` and call `/reservations`.
 - Export guest data you need to keep before Little Hotelier masks it at 180 days.
 - Everything the API and MCP server offer is on the [API & MCP feature page](/tools/bot/api-mcp).

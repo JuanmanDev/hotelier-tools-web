@@ -13,7 +13,7 @@ coverAlt: "Hotelier Tools MCP setup guide with the What is MCP? explanation and 
 featured: true
 faq:
   - q: "Which Claude plans can add a custom connector?"
-    a: "As of October 2026, Anthropic lists custom connectors on the Free, Pro, Max, Team and Enterprise plans. Free accounts can add one custom connector. On Team and Enterprise, an Owner adds it for the organisation and each member then connects with their own login."
+    a: "As of October 2026, Anthropic lists custom connectors on the Free, Pro, Max, Team and Enterprise plans. Free accounts can add one custom connector. On Team and Enterprise, an Owner adds it for the organization and each member then connects with their own login."
   - q: "Does the Little Hotelier connection work in the Claude mobile app?"
     a: "Yes. Once you connect it on claude.ai or in Claude Desktop, Anthropic says it is also available in Claude for iOS and Android. Adding new custom connectors from your phone is still in beta, so set it up on a computer."
   - q: "How do I disconnect Claude or rotate access?"
@@ -78,7 +78,7 @@ Most people should use the sign-in above. An API key is useful when you want acc
 ::screenshot{src="/images/blog/demo/en/api-key-generated-masked.webp" alt="API keys page right after generating a key: green Key generated box saying Copy this key now, it will not be shown again, with the key masked and a copy button, the new Blog integration key in Active keys next to another key, each with Revoke, and an API key created notice" caption="Create a key, or revoke one, on the API Keys page. The full key is shown only once." path="/developer/api-keys"}
 ::
 
-**On claude.ai**, some organisations see a **Request headers** section in the connector dialog. Anthropic marks it as beta and only available to a limited set of organisations. If you have it, choose **No sign-in**, add the `authorization` header and enter `Bearer htk_YOUR_API_KEY` (with the word Bearer and a space).
+**On claude.ai**, some organizations see a **Request headers** section in the connector dialog. Anthropic marks it as beta and only available to a limited set of organizations. If you have it, choose **No sign-in**, add the `authorization` header and enter `Bearer htk_YOUR_API_KEY` (with the word Bearer and a space).
 
 **In Claude Desktop**, the config file (**Settings → Developer → Edit Config**) is meant for servers that run on your own computer. Anthropic's docs say remote servers are added [through Connectors](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp). The Hotelier Tools MCP Setup page shows a `url` + `headers` snippet; if Claude Desktop ignores it, the usual workaround is the free community bridge [mcp-remote](https://github.com/punkpeye/mcp-remote), which needs [Node.js](https://nodejs.org) installed. This is a typical configuration that we have not tested in every Claude Desktop version:
 
@@ -151,7 +151,7 @@ The Hotelier Tools MCP server offers Claude more than 100 hotel tools, always li
 
 **It can read:** reservations and guests, payments, invoices and invoice readiness, rates and availability, competitor prices and price recommendations with their reasons, automated-check issues, the do-not-rebook list, the waitlist, scheduled tasks and the property facts read from Little Hotelier.
 
-**It can change, when Claude calls the tool:** reservation details (first a proposal with before/after, then an apply step that needs `confirmed: true`), payment records, enrolment for the [invoice at checkout](/blog/send-invoice-to-guest-at-checkout), prices from the recommendations, channel stop sell, waitlist entries and scheduled tasks.
+**It can change, when Claude calls the tool:** reservation details (first a proposal with before/after, then an apply step that needs `confirmed: true`), payment records, enrollment for the [invoice at checkout](/blog/send-invoice-to-guest-at-checkout), prices from the recommendations, channel stop sell, waitlist entries and scheduled tasks.
 
 **It cannot** do anything irreversible: those tools are blocked for Claude and every other outside client. For example, it cannot:
 

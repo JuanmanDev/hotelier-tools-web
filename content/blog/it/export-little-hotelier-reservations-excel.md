@@ -23,7 +23,7 @@ faq:
     a: "Filtra per canale nei report del Channel Manager, oppure esporta tutto e filtra il riferimento della prenotazione in Excel. I riferimenti che iniziano con BDC sono Booking.com, EXP Expedia, ABB Airbnb, AGO Agoda, HWL Hostelworld e LH la tua reception o il tuo booking engine."
 ---
 
-Apri **Reservations**, imposta le date, premi **Search**, poi **Export**: Little Hotelier scarica un file CSV che si apre in Excel o Google Sheets. Fallo con regolarità, perché Little Hotelier maschera i dati personali degli ospiti **180 giorni dopo il check-out** e l'esportazione non include mai i numeri di telefono. Se vuoi una copia che si costruisce da sola ogni mese, leggi gli stessi dati tramite un'API.
+Apri **Reservations**, imposta le date, premi **Search**, poi **Export**: Little Hotelier scarica un file CSV che si apre in Excel o Google Sheets. Fallo con regolarità, perché Little Hotelier maschera i dati personali degli ospiti **180 giorni dopo il check-out** e l'esportazione non include mai i numeri di telefono. Se vuoi una copia che si aggiorna da sola ogni mese, leggi gli stessi dati tramite un'API.
 
 ## Perché esportare prima che i dati degli ospiti vengano mascherati
 
@@ -34,7 +34,7 @@ Vale la pena conoscere altri due limiti:
 - La ricerca prenotazioni del channel manager trova solo le prenotazioni "created or checked out within the last 548 days" (create o con check-out negli ultimi 548 giorni).
 - Una volta mascherati, nessuna esportazione né API può riportare indietro i dati.
 
-Quindi, se ti servono i dati degli ospiti per fatture, un elenco di ospiti che tornano, una contestazione o le tue statistiche, esportali finché ci sono. Conserva solo ciò che hai un motivo di conservare e tieni i file in un posto con accesso controllato: contengono dati personali.
+Quindi, se ti servono i dati degli ospiti per fatture, un elenco di ospiti abituali, una contestazione o le tue statistiche, esportali finché ci sono. Conserva solo ciò che hai un motivo di conservare e tieni i file in un posto con accesso controllato: contengono dati personali.
 
 ::callout{type="info" title="Due versioni di Little Hotelier"}
 Gli account creati da maggio 2025 (o aggiornati) usano la nuova **platform**, con un [centro assistenza separato](https://help-platform.littlehotelier.com/en/). Gli account più vecchi usano la versione **classic**. I passaggi qui sotto riportano entrambi i percorsi di menu.
@@ -43,7 +43,7 @@ Gli account creati da maggio 2025 (o aggiornati) usano la nuova **platform**, co
 ## Come esportare le prenotazioni da Little Hotelier in Excel
 
 1. Apri **Reservations**. Nella versione classic: **My Apps → Front Desk → Reservations**.
-2. Imposta **Date type** (**Check-in date**, **Check-out date** o **Booked on date**), poi **Date from** e **Date to**. Un mese di calendario è una buona unità.
+2. Imposta **Date type** (**Check-in date**, **Check-out date** o **Booked on date**), poi **Date from** e **Date to**. Un mese di calendario è un buon intervallo.
 3. Scegli uno **Status** se vuoi: **All**, **Confirmed**, **Checked-in**, **Checked-out** o **Cancelled**.
 4. Clicca su **Search**.
 5. Clicca su **Export**. Il file si scarica come `.csv`. Sulla nuova platform, Little Hotelier chiede il codice MFA o la passkey prima delle esportazioni di prenotazioni, ospiti, pagamenti, ricavi e fatture.
@@ -76,7 +76,7 @@ La maggior parte dei report ha un pulsante **Export** che produce un CSV. I perc
 |---|---|---|
 | Guests | Reports → Operational → Guests | Gli ospiti che hanno soggiornato, per intervallo di date |
 | Invoices | Reports → Operational → Invoices | Elenco fatture in CSV, PDF in uno ZIP |
-| Accounting | Reports → Operational → Accounting | Fatture finalizzate, impostate per Xero e QuickBooks |
+| Accounting | Reports → Operational → Accounting | Fatture definitive, impostate per Xero e QuickBooks |
 | Revenue (7 viste) | Reports → Strategic → Revenue | Riepilogo, tipologia di camera, camera, piano tariffario, canale, imposte, extra |
 | Channel manager | Channel Manager → Reports | Riepilogo prenotazioni, soggiorni per camera, check-in, resa dei canali |
 | Booking engine | Direct Booking → Reports | Prenotazioni con dispositivo usato e consenso GDPR |
@@ -84,11 +84,11 @@ La maggior parte dei report ha un pulsante **Export** che produce un CSV. I perc
 
 Fonti: [Getting started with Reports](https://help-platform.littlehotelier.com/en/articles/10813931-getting-started-with-reports), [Invoice report](https://help-platform.littlehotelier.com/en/articles/14390737-how-to-run-an-invoice-report), [Accounting export](https://help-platform.littlehotelier.com/en/articles/10472787-export-invoices-marked-as-final), [Revenue reports](https://helpcentre.littlehotelier.com/en/articles/8884214-revenue-reports).
 
-Un consiglio: l'esportazione del ricavo **Summary** ha una colonna "Rate per night", una riga per notte. È il modo più rapido per vedere a che prezzo è stata venduta ogni notte di un soggiorno lungo.
+Un consiglio: l'esportazione **Summary** del report Revenue ha una colonna "Rate per night", una riga per notte. È il modo più rapido per vedere a che prezzo è stata venduta ogni notte di un soggiorno lungo.
 
-## Come aprire il CSV in Excel senza accenti rovinati
+## Come aprire il CSV in Excel senza problemi con gli accenti
 
-Se nomi come "José" diventano "JosÃ©", Excel ha indovinato la codifica sbagliata. Importa il file invece di fare doppio clic:
+Se nomi come "José" diventano "JosÃ©", Excel ha scelto la codifica sbagliata. Importa il file invece di fare doppio clic:
 
 1. In Excel vai su **Dati → Da testo/CSV** (**Data → From Text/CSV** nelle versioni in inglese) e scegli il file ([i passaggi di Microsoft](https://support.microsoft.com/en-us/office/import-or-export-text-txt-or-csv-files-5250ac4c-663c-47ce-937b-339e391393ba)).
 2. Imposta **Origine file** su **65001: Unicode (UTF-8)** e **Delimitatore** su **Virgola**.
@@ -96,12 +96,12 @@ Se nomi come "José" diventano "JosÃ©", Excel ha indovinato la codifica sbagli
 
 In Google Sheets usa **File → Importa → Carica** e lascia il separatore su automatico. Sheets legge correttamente l'UTF-8.
 
-## Un elenco di ospiti che tornano: cosa puoi esportare e cosa ti serve
+## Un elenco di ospiti abituali: cosa puoi esportare e cosa ti serve
 
 Il CSV delle prenotazioni contiene nomi, email e indirizzi, quanto basta per un ringraziamento o un'email di "torna a trovarci". Prima di inviare qualsiasi cosa, controlla chi ha acconsentito a ricevere tue comunicazioni:
 
 - L'esportazione del **report del booking engine** ha una colonna **GDPR consent**. Little Hotelier dice che è compilata quando l'ospite ha dato il consenso e vuota quando non l'ha dato ([fonte](https://helpcentre.littlehotelier.com/en/articles/8673818-run-and-export-reports)).
-- Se usi Guest Engagement, **Guest engagement → Guests → Mailchimp export** invia gli ospiti a una lista Mailchimp. Tutti gli ospiti vengono esportati "regardless of GDPR consent status", con lo stato di opt-in indicato, quindi filtra su quello ([fonte](https://help-platform.littlehotelier.com/en/articles/8051434-connect-guest-engagement-to-mailchimp)).
+- Se usi Guest Engagement, **Guest engagement → Guests → Mailchimp export** invia gli ospiti a una lista Mailchimp. Tutti gli ospiti vengono esportati "regardless of GDPR consent status", con lo stato di opt-in indicato, quindi filtra in base a quello ([fonte](https://help-platform.littlehotelier.com/en/articles/8051434-connect-guest-engagement-to-mailchimp)).
 
 Le regole sul marketing cambiano da paese a paese. Scrivi via email solo agli ospiti che hanno dato il consenso, a meno che tu non abbia confermato con un consulente che si applica un'altra base giuridica.
 
@@ -110,7 +110,7 @@ Le regole sul marketing cambiano da paese a paese. Scrivi via email solo agli os
 Little Hotelier non ha una chiave API per le tue prenotazioni (i dettagli sono in [Little Hotelier ha un'API?](/blog/little-hotelier-api)). Hotelier Tools, una dashboard indipendente, si collega con il tuo login Little Hotelier e ti dà un'API REST e un server MCP per gli assistenti AI. Non è affiliato né approvato da SiteMinder o Little Hotelier ed è gratuito per ogni struttura fino all'inizio della fatturazione, il 10 gennaio 2027.
 
 ::callout{type="warning" title="Un'API non può smascherare i dati"}
-Hotelier Tools legge ciò che Little Hotelier conserva ancora. Le prenotazioni con più di 180 giorni dal check-out tornano mascherate anche tramite l'API. Automatizza l'esportazione adesso, così cattura ogni mese mentre i dati sono completi.
+Hotelier Tools legge ciò che Little Hotelier conserva ancora. Le prenotazioni con più di 180 giorni dal check-out tornano mascherate anche tramite l'API. Automatizza l'esportazione adesso, così salvi ogni mese finché i dati sono ancora completi.
 ::
 
 Per prima cosa crea una chiave: **Developer → API & MCP → API Keys** (`/developer/api-keys`), scrivi un nome, premi **Generate key** e copiala. La pagina la mostra una sola volta.
@@ -129,7 +129,7 @@ Per prima cosa crea una chiave: **Developer → API & MCP → API Keys** (`/deve
 
 ### Google Sheets, aggiornato ogni mese
 
-Questo Apps Script aggiunge una scheda con le prenotazioni del mese scorso (per data di check-in) a ogni esecuzione.
+Questo Apps Script aggiunge un foglio con le prenotazioni del mese scorso (per data di check-in) a ogni esecuzione.
 
 1. In un nuovo foglio Google apri **Estensioni → Apps Script**.
 2. In **Impostazioni progetto** aggiungi una proprietà dello script chiamata `HT_API_KEY` con la tua chiave `htk_…`. Così la chiave resta fuori dal codice.

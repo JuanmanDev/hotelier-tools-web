@@ -1,7 +1,7 @@
 ---
-title: "Booking.com tarjeta de crédito no válida o no-show: qué hacer paso a paso"
-seoTitle: "Booking tarjeta no válida o no-show: qué hacer (2026)"
-description: "Marca la tarjeta como no válida, da 24 horas al huésped y cancela sin comisión. Más plazos de no-show, tarjetas virtuales rechazadas y cómo detectarlo antes."
+title: "Booking.com: tarjeta de crédito no válida o no-show, qué hacer paso a paso"
+seoTitle: "Booking: tarjeta no válida o no-show, qué hacer (2026)"
+description: "Marca la tarjeta como no válida, da 24 horas al huésped y cancela sin comisión. Plazos de no-show, tarjetas virtuales rechazadas y cómo detectarlo antes."
 date: 2026-10-03
 category: operations
 tags: [booking.com, no-show, payments, little hotelier, automated checks]
@@ -25,21 +25,21 @@ faq:
     a: "No. Sus comprobaciones automáticas solo avisan: señalan un saldo pendiente antes de la llegada y decides tú qué hacer. Hotelier Tools es independiente y se conecta con el acceso a Little Hotelier de tu propio hotel."
 ---
 
-Marca la tarjeta como no válida en la extranet de Booking.com, en la app Pulse o en el Channel Manager de Little Hotelier. El huésped tiene entonces 24 horas para enviar otra tarjeta (12 horas si reservó en las 48 horas previas al check-in) y, si no lo hace, puedes cancelar sin pagar comisión. Para un huésped que no llega, marca el no-show entre la medianoche de la fecha de check-in y las 48 horas siguientes a la salida prevista, y decide si cobras o perdonas la penalización.
+Marca la tarjeta como no válida en la extranet de Booking.com, en la app Pulse o en el Channel Manager de Little Hotelier. El huésped tiene entonces 24 horas para enviar otra tarjeta (12 horas si reservó en las 48 horas previas al check-in) y, si no lo hace, puedes cancelar sin pagar comisión. Para un huésped que no llega, marca el no-show entre la medianoche de la fecha de check-in y las 48 horas siguientes a la salida prevista, y decide si cobras la penalización o renuncias a ella.
 
-Los pasos y plazos de abajo se han contrastado con la ayuda para socios de Booking.com (Partner Help) a octubre de 2026.
+Los pasos y plazos de abajo se han contrastado con la ayuda para partners de Booking.com (Partner Help) a fecha de octubre de 2026.
 
 ## Primero: ¿quién cobra el pago?
 
 Lo que puedes hacer depende de cómo paga el huésped:
 
-- **Tienes la tarjeta del huésped** (cobras tú el pago). Se aplican los pasos de las tres secciones siguientes.
-- **Booking.com cobró el pago online** y te paga con una tarjeta virtual (VCC) o por transferencia. No hay ninguna tarjeta que marcar como no válida; si la tarjeta virtual se rechaza, mira la sección de tarjeta virtual más abajo.
+- **Tienes la tarjeta del huésped** (el cobro lo haces tú). Se aplican los pasos de las tres secciones siguientes.
+- **Booking.com cobró online al huésped** y te paga con una tarjeta virtual (VCC) o por transferencia. No hay ninguna tarjeta que marcar como no válida; si la tarjeta virtual se rechaza, mira la sección de tarjeta virtual más abajo.
 - **Smart Pay-at-Property** (Payments by Booking.com en el EEE y en algunas otras regiones, para reservas no prepagadas). Booking.com valida la tarjeta por su cuenta y da al huésped 24 horas para sustituirla. No puedes marcar tú la tarjeta como no válida; Booking.com te avisa cuando puedes cancelar ([Partner Help: Handling invalid credit cards](https://partner.booking.com/en-us/help/payments-payouts-invoices/guest-payments/handling-invalid-credit-cards), en inglés).
 
 ## Cómo marcar una tarjeta de Booking.com como no válida
 
-Hazlo en cuanto falle un cobro o una validación. El reloj del huésped solo empieza a correr cuando la marcas.
+Hazlo en cuanto falle un cobro o una validación. El plazo del huésped solo empieza a contar cuando la marcas.
 
 ### En la extranet
 
@@ -59,7 +59,7 @@ Hazlo en cuanto falle un cobro o una validación. El reloj del huésped solo emp
 2. Abre la reserva de Booking.com y haz clic en la pestaña **Manage Reservation**.
 3. Haz clic en **Report payment card as invalid to Booking.com**. Una ventana verde lo confirma; una roja significa que debes comprobarlo en la extranet ([centro de ayuda de Little Hotelier](https://helpcentre.littlehotelier.com/en/articles/9303299-report-a-booking-com-reservation-as-a-no-show-or-payment-invalid)).
 
-Booking.com envía entonces un email y un SMS al huésped pidiéndole los datos de una tarjeta nueva, y te escribe cuando los actualiza. Anota en las notas de la reserva lo que intentaste (fecha, importe, motivo del rechazo): le sirve a quien esté después en recepción.
+Booking.com envía entonces un email y un SMS al huésped pidiéndole los datos de una tarjeta nueva, y te avisa por email cuando los actualiza. Anota en las notas de la reserva lo que intentaste (fecha, importe, motivo del rechazo): le servirá a quien esté en el siguiente turno de recepción.
 
 ## ¿Cuánto tiempo tiene el huésped para actualizar la tarjeta?
 
@@ -101,23 +101,23 @@ Una tarjeta de crédito virtual es una Mastercard digital temporal que Booking.c
 
 | Mensaje o síntoma | Qué hacer |
 |---|---|
-| "Can't be authorized prior to activation date" | La tarjeta aún no está activa. Comprueba la fecha de activación en la página Reservations de la extranet. |
-| "Insufficient funds" | Estás cobrando más de lo que tiene la tarjeta. Puede que los impuestos por persona estén excluidos: cóbraselos al huésped. |
+| «Can't be authorized prior to activation date» | La tarjeta aún no está activa. Comprueba la fecha de activación en la página Reservations de la extranet. |
+| «Insufficient funds» | Estás cobrando más de lo que tiene la tarjeta. Puede que los impuestos por persona estén excluidos: cóbraselos al huésped. |
 | CVC o fecha de caducidad no válidos | Vuelve a introducirlos con cuidado. |
-| "Invalid merchant" | Tu terminal debe estar registrado como proveedor de alojamiento. Llama a tu proveedor de pagos. |
+| «Invalid merchant» | Tu terminal (TPV) debe estar dado de alta como proveedor de alojamiento. Llama a tu proveedor de pagos. |
 | Bloqueo de seguridad | Demasiados intentos fallidos. Inténtalo de nuevo en 24–48 horas. |
 
-Nunca hagas una preautorización sobre una tarjeta virtual. Si la hiciste, liquida el importe con el código de autorización, o cancela la autorización y vuelve a cobrar. ¿Sigue rechazada? Pregunta a tu proveedor de pagos por el código de rechazo y escribe después a Booking.com desde el buzón de la extranet.
+Nunca hagas una preautorización sobre una tarjeta virtual. Si la hiciste, liquida el importe con el código de autorización, o cancela la autorización y vuelve a cobrar. ¿Sigue rechazada? Pregunta a tu proveedor de pagos por el código de rechazo y escribe después a Booking.com desde la bandeja de entrada (Inbox) de la extranet.
 
-## Cómo marcar un no-show y cobrar (o perdonar) la penalización
+## Cómo marcar un no-show y cobrar la penalización (o renunciar a ella)
 
-Un no-show es un huésped que no ha llegado a medianoche de la fecha de check-in prevista. Puedes marcarlo desde la medianoche de la fecha de check-in hasta 48 horas después de la salida prevista ([Marking guest no-shows](https://partner.booking.com/en-us/help/reservations/manage-reservations/marking-guest-no-shows-your-property)).
+Un no-show es un huésped que no ha llegado a la medianoche del día de llegada previsto. Puedes marcarlo desde la medianoche de la fecha de check-in hasta 48 horas después de la salida prevista ([Marking guest no-shows](https://partner.booking.com/en-us/help/reservations/manage-reservations/marking-guest-no-shows-your-property)).
 
 **En la extranet:**
 
 1. Haz clic en **Reservations** y abre la reserva.
 2. En **Reservation actions**, selecciona **Mark as a no-show**.
-3. Responde a "Would you like to waive the no-show fee for this reservation?" con **Yes, waive fee** o **No, charge fee**.
+3. Responde a «Would you like to waive the no-show fee for this reservation?» con **Yes, waive fee** o **No, charge fee**.
 4. Haz clic en **Mark as a no-show** para confirmar.
 
 **En Pulse:** **Bookings** > busca la reserva > **Mark as a no-show** > **Yes**.
@@ -127,9 +127,9 @@ Un no-show es un huésped que no ha llegado a medianoche de la fecha de check-in
 Lo que te cuesta:
 
 - **Penalización cobrada:** pagas comisión sobre la penalización.
-- **Penalización perdonada y marcada a tiempo:** sin comisión.
-- **No marcado en las 48 horas siguientes al check-out:** comisión completa sobre la reserva original.
-- **Con Payments by Booking.com:** Booking.com intenta cobrar la penalización de las reservas no prepagadas y te la abona; si no puede, perdona la comisión. Donde cobra penalizaciones por no-show en reservas con cancelación gratuita, márcalos en los cuatro días naturales siguientes al check-in ([Payments by Booking.com](https://partner.booking.com/en-us/help/payments-payouts-invoices/payments-bookingcom/joining-payments-bookingcom)).
+- **Penalización anulada y no-show marcado a tiempo:** sin comisión.
+- **No-show sin marcar en las 48 horas siguientes a la salida prevista:** comisión completa sobre la reserva original.
+- **Con Payments by Booking.com:** Booking.com intenta cobrar la penalización de las reservas no prepagadas y te la abona; si no puede, no te cobra la comisión. Donde cobra penalizaciones por no-show en reservas con cancelación gratuita, márcalos en los cuatro días naturales siguientes al check-in ([Payments by Booking.com](https://partner.booking.com/en-us/help/payments-payouts-invoices/payments-bookingcom/joining-payments-bookingcom)).
 
 ## Cómo detectar problemas de pago antes de que llegue el huésped
 
@@ -154,18 +154,18 @@ La comprobación **A la salida** vuelve a mirar el saldo en el check-out. Las co
 La rutina diaria completa está en [el checklist de recepción: 8 problemas que detectar antes de la llegada](/blog/hotel-front-desk-checklist-automation), y cada comprobación está en la [página de comprobaciones automáticas](/tools/bot/automated-checks). Hotelier Tools es gratis para todos los hoteles hasta que empiece el cobro el 10 de enero de 2027.
 
 ::callout{type="info" title="Herramienta independiente"}
-Hotelier Tools no está afiliado ni respaldado por Booking.com, SiteMinder ni Little Hotelier. Se conecta con el acceso a Little Hotelier de tu propio hotel.
+Hotelier Tools no está afiliado a Booking.com, a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo. Se conecta con el acceso a Little Hotelier de tu propio hotel.
 ::
 
 ### ¿Debes añadir al huésped a una lista de «no volver a alojar»?
 
 Si un huésped se fue sin pagar, o no paraba de dar tarjetas que fallaban, quizá no quieras que vuelva. En **Incidencias**, pulsa **No volver a alojar…** en su reserva, elige al huésped, una gravedad (como **No volver a aceptar**) y un motivo objetivo. A partir de entonces, una reserva nueva que coincida genera una alerta.
 
-Solo avisa. Nunca cancela ni rechaza una reserva: decide una persona. Un nombre por sí solo nunca da coincidencia; hace falta el mismo número de documento, el email exacto o un teléfono cuyos últimos 8 dígitos coincidan (o un nombre más la misma nacionalidad o fecha de nacimiento). Mantén los motivos objetivos. Más en [cómo llevar una lista negra de huéspedes dentro de la ley](/blog/hotel-do-not-rent-list).
+Solo avisa. Nunca cancela ni rechaza una reserva: decide una persona. Un nombre por sí solo nunca da coincidencia; hace falta el mismo número de documento, el email exacto o un teléfono cuyos últimos 8 dígitos coincidan (o un nombre más la misma nacionalidad o fecha de nacimiento). Mantén los motivos objetivos. Más en [cómo llevar una lista negra de huéspedes respetando la ley](/blog/hotel-do-not-rent-list).
 
 ## Resumen
 
 - Si falla la tarjeta: márcala como no válida (extranet, Pulse o la pestaña **Manage Reservation** de Little Hotelier). El huésped tiene 24 horas, 12 si reservó tarde y 2 en reservas de última hora de 10 o más noches.
 - Sin tarjeta válida: cancela a través de Booking.com, sin comisión. O envía antes una solicitud de pago.
-- El huésped no vino: marca el no-show en las 48 horas siguientes a la salida prevista y cobra o perdona la penalización.
+- El huésped no vino: marca el no-show en las 48 horas siguientes a la salida prevista y cobra la penalización o renuncia a ella.
 - Detéctalo pronto: deja que una comprobación programada liste cada llegada que aún debe dinero, días antes de que llegue.

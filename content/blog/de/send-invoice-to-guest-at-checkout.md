@@ -18,7 +18,7 @@ faq:
   - q: "Warum bis zum Check-out mit der Rechnung warten?"
     a: "Weil die Beträge erst dann endgültig sind. Extras, Zahlungen und Datumsänderungen kommen oft während des Aufenthalts, und eine zu früh ausgestellte Rechnung muss mit einer Gutschrift oder einer neuen Rechnung korrigiert werden."
   - q: "Sieht der Gast Hotelier Tools in der E-Mail?"
-    a: "Nein. Hotelier Tools bittet Little Hotelier, die Rechnung zu senden, sie geht also über Ihre eigene E-Mail-Vorlage und Ihren eigenen Absender von Little Hotelier raus, genau als würden Sie selbst auf Email > Invoice klicken."
+    a: "Nein. Hotelier Tools bittet Little Hotelier, die Rechnung zu senden, sie wird also mit Ihrer eigenen E-Mail-Vorlage und Ihrem eigenen Absender aus Little Hotelier versendet, genau als würden Sie selbst auf Email > Invoice klicken."
   - q: "Was, wenn der Gast keine E-Mail-Adresse in der Buchung hat?"
     a: "Little Hotelier sendet die Rechnung an die primäre Kontakt-E-Mail der Reservierung, ohne sie gibt es keinen Empfänger. Invoice on Leave meldet einen vergangenen Aufenthalt ohne Gäste-E-Mail, statt es jeden Tag erneut zu versuchen, sodass Sie die Rechnung drucken oder den Gast um eine Adresse bitten können."
 ---
@@ -53,11 +53,11 @@ Richten Sie Ihr Layout einmal in Little Hotelier unter **Front Desk > Setup > Gu
 
 ## So senden Sie eine Rechnung aus Little Hotelier per E-Mail (von Hand)
 
-1. Stellen Sie sicher, dass der Aufenthalt beendet ist: Setzen Sie auf dem Tab **Details** der Reservierung den Status auf **Checked-out** und prüfen Sie den Saldo.
-2. Gehen Sie zum Tab **Invoices** und klicken Sie auf **Generate invoice**.
+1. Stellen Sie sicher, dass der Aufenthalt beendet ist: Setzen Sie im Reiter **Details** der Reservierung den Status auf **Checked-out** und prüfen Sie den Saldo.
+2. Gehen Sie zum Reiter **Invoices** und klicken Sie auf **Generate invoice**.
 3. Klicken Sie auf **Email** und wählen Sie **Invoice**. Little Hotelier sendet sie an die primäre Kontakt-E-Mail der Reservierung.
 
-Sie können auch **Email invoice** ankreuzen, wenn Sie **Record Payment** erfassen. Bearbeiten Sie die Reservierung danach, zeigt der Tab Invoices **Invoice is outdated**. Klicken Sie darauf, um eine korrigierte Rechnung zu erzeugen, und senden Sie diese per E-Mail. Quellen: [Gästerechnung erzeugen, drucken und per E-Mail senden](https://helpcentre.littlehotelier.com/en/articles/8673812-generate-print-and-email-a-guest-invoice) und [Eine Zahlung erfassen](https://helpcentre.littlehotelier.com/en/articles/9743295-record-a-payment-or-refund-for-a-reservation).
+Sie können auch **Email invoice** ankreuzen, wenn Sie **Record Payment** erfassen. Bearbeiten Sie die Reservierung danach, zeigt der Reiter Invoices **Invoice is outdated**. Klicken Sie darauf, um eine korrigierte Rechnung zu erzeugen, und senden Sie diese per E-Mail. Quellen: [Gästerechnung erzeugen, drucken und per E-Mail senden](https://helpcentre.littlehotelier.com/en/articles/8673812-generate-print-and-email-a-guest-invoice) und [Eine Zahlung erfassen](https://helpcentre.littlehotelier.com/en/articles/9743295-record-a-payment-or-refund-for-a-reservation).
 
 Zum Drucken klicken Sie auf **Print** und wählen **Invoice**. Das kostenlose Skript [Extra Invoice Print Button](/tools/ui/extra-invoice-print-button) ergänzt einen direkten Link, damit Sie das Menü überspringen:
 
@@ -72,7 +72,7 @@ Der Haken: Es ist ein manueller Schritt für jeden Gast. Die automatischen Gäst
 
 1. Öffnen Sie **Invoice on Leave** (`/invoice-on-leave`). Wenn das Banner sagt, dass es noch keine Aufgabe gibt, klicken Sie auf **Create the daily task (16:00, after check-out)**.
 2. Eine Rechnung wird nur für einen Aufenthalt ausgestellt, der in Little Hotelier **checked out** ist. Wenn Ihr Team Gäste vor 16:00 Uhr nicht von Hand auscheckt, nutzen Sie die Karte **Automatic check-out** und klicken auf **Create the daily task (15:05)**. Sie schließt die Abreisen des Tages in Little Hotelier und bleibt aus, bis Sie sie anlegen.
-3. Suchen Sie die Reservierung und schalten Sie dafür Auto-Invoice ein. Die Filter **Enrolled** und **Not enrolled** zeigen, wo jeder Aufenthalt steht. Sie können einen Gast eintragen, der noch im Haus ist: Die Rechnung geht beim ersten Lauf nach seiner Abreise raus.
+3. Suchen Sie die Reservierung und schalten Sie dafür Auto-Invoice ein. Die Filter **Enrolled** und **Not enrolled** zeigen, wo jeder Aufenthalt steht. Sie können einen Gast eintragen, der noch im Haus ist: Die Rechnung wird beim ersten Lauf nach seiner Abreise versendet.
 4. Nach dem Check-out bittet die tägliche Aufgabe Little Hotelier, die Rechnung zu erzeugen, und Little Hotelier sendet sie per E-Mail mit Ihrer eigenen Vorlage und Ihrem eigenen Absender.
 5. Unter **Pending invoices to send** (`/invoice-on-leave/scheduled`) sehen Sie, was in der Warteschlange ist, heute fällig, überfällig oder schon in Rechnung gestellt.
 
@@ -83,25 +83,25 @@ Sie brauchen sie sofort? Jede Zeile hat eine Aktion „process now“, die diese
 
 ### Was es sicher macht
 
-- **Die Markierung lebt in Little Hotelier.** Die Anmeldung wird als Tag in den Notizen der Reservierung in Little Hotelier gespeichert, Ihr Team sieht sie dort also.
+- **Die Markierung liegt in Little Hotelier.** Die Vormerkung wird als Tag in den Notizen der Reservierung in Little Hotelier gespeichert, Ihr Team sieht sie dort also.
 - **Kein doppeltes Senden.** Ein zweiter Tag markiert „Rechnung gesendet“ und wird erst geschrieben, nachdem Little Hotelier die E-Mail angenommen hat. Bereits abgerechnete Aufenthalte lassen sich nicht erneut eintragen.
-- **Dieselbe Vorprüfung wie bei der Sammelrechnung.** Eine Firmenrechnung ohne Steuernummer oder Steueranschrift oder mit fehlerhafter Steuernummer wird abgelehnt, statt halbfertig gesendet zu werden.
+- **Dieselbe Vorprüfung wie bei der Massenerstellung von Rechnungen.** Eine Firmenrechnung ohne Steuernummer oder Rechnungsanschrift oder mit fehlerhafter Steuernummer wird abgelehnt, statt halbfertig gesendet zu werden.
 - **Nachholen und Grenzen.** Die tägliche Aufgabe schaut 8 Tage zurück, um verpasste Läufe nachzuholen, und liest bis zu 100 Check-outs pro Lauf. Ein vergangener Aufenthalt ohne Gäste-E-Mail wird einmal gemeldet, nicht jeden Tag erneut versucht.
 
-::callout{type="info" title="Unabhängiges Werkzeug"}
-Hotelier Tools ist weder mit SiteMinder oder Little Hotelier verbunden noch von ihnen empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hotels, und die Rechnung ist das eigene Dokument von Little Hotelier.
+::callout{type="info" title="Unabhängiges Tool"}
+Hotelier Tools steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hotels, und die Rechnung ist das eigene Dokument von Little Hotelier.
 ::
 
 ::demo-cta{path="/invoice-on-leave"}
 ::
 
-## In welcher Sprache geht die Rechnung raus?
+## In welcher Sprache wird die Rechnung versendet?
 
 Legen Sie das einmal unter **Settings > Invoices** (`/settings/invoices`) fest: **From the guest's country** (das Land in der Adresse des Gastes bestimmt die Sprache) oder **Always the same language**. Fehlt das Land oder passt es nicht, gilt Ihre **Fallback language**.
 
 ## Der Gast braucht sie auf den Namen einer Firma oder nach der Abreise
 
-**Bevor die Rechnung existiert:** Tragen Sie Firmenname, Steuernummer bzw. USt-IdNr. und Steueranschrift in den Gästedaten der Reservierung in Little Hotelier ein. Hotelier Tools weigert sich, eine Firmenrechnung auszustellen, solange Steuernummer oder Steueranschrift fehlen oder fehlerhaft sind, sodass nichts Halbfertiges beim Gast ankommt.
+**Bevor die Rechnung existiert:** Tragen Sie Firmenname, Steuernummer bzw. USt-IdNr. und Rechnungsanschrift in den Gästedaten der Reservierung in Little Hotelier ein. Hotelier Tools weigert sich, eine Firmenrechnung auszustellen, solange Steuernummer oder Rechnungsanschrift fehlen oder fehlerhaft sind, sodass nichts Halbfertiges beim Gast ankommt.
 
 **Nachdem sie ausgestellt wurde:** Bearbeiten Sie die Daten in Little Hotelier und nutzen Sie dann **Invoice is outdated**, um eine korrigierte Rechnung zu erzeugen. Haben Sie sie schon als final markiert, klicken Sie auf **Cancel invoice** und dann erneut auf **Generate invoice** ([Hilfecenter](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). In Spanien mit VeriFactu wird eine finalisierte Rechnung über **Rectify invoice** geändert ([Hilfecenter](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)).
 
@@ -111,7 +111,7 @@ Wenn Rechnungsanfragen per Booking.com-Nachricht zu Ihnen kommen, lesen Sie [Boo
 
 ## Wie sende ich eine Rechnung erneut?
 
-Öffnen Sie die Reservierung und nutzen Sie erneut **Email > Invoice**. Ein Tipp zum Zeitpunkt: Sobald eine Rechnung **als final markiert** ist, bietet Little Hotelier dafür kein Print oder Email mehr an. Senden Sie sie zuerst und finalisieren Sie danach, oder laden Sie das PDF später aus dem Invoice-Bericht herunter.
+Öffnen Sie die Reservierung und nutzen Sie erneut **Email > Invoice**. Ein Tipp zum Zeitpunkt: Sobald eine Rechnung **als final markiert** ist, bietet Little Hotelier dafür kein Print oder Email mehr an. Senden Sie sie zuerst und finalisieren Sie danach, oder laden Sie das PDF später aus dem Invoice report herunter.
 
 ::callout{type="tip" title="Gäste, die per Überweisung zahlen"}
 Das Skript [Bank Transfer Email Button](/tools/ui/bank-transfer-email-button) ergänzt eine Schaltfläche, die Ihre Bankdaten aus der Reservierung per E-Mail versendet. Es ist noch nicht veröffentlicht und wird für jeden Betrieb auf Anfrage eingerichtet.
@@ -121,5 +121,5 @@ Das Skript [Bank Transfer Email Button](/tools/ui/bank-transfer-email-button) er
 
 - Die Unterkunft, nicht Booking.com, muss dem Gast die Rechnung stellen.
 - In Little Hotelier: **Invoices > Generate invoice**, dann **Email > Invoice**, am besten nach dem Check-out.
-- **Invoice on Leave** von Hotelier Tools sendet sie nach dem Check-out automatisch, mit Ihrer eigenen Little-Hotelier-Vorlage, mit Prüfungen auf Firmendaten und Duplikate.
+- **Invoice on Leave** von Hotelier Tools sendet sie nach dem Check-out automatisch, mit Ihrer eigenen Little-Hotelier-Vorlage und mit Prüfungen auf Firmendaten und Duplikate.
 - Am Quartalsende [laden Sie alle Ihre Rechnungen auf einmal herunter](/blog/download-all-little-hotelier-invoices). Alles, was die Rechnungsfunktion kann, steht auf der [Seite Invoicing](/tools/bot/invoicing).

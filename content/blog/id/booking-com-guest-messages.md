@@ -14,7 +14,7 @@ faq:
   - q: "Mengapa pesan Booking.com saya tidak muncul di extranet?"
     a: "Mungkin channel manager Anda yang menangani pesan tamu. Di Extranet, buka Connection management: fungsi yang ditandai hijau dikelola di platform penyedia Anda, seperti Messaging hub milik Little Hotelier. Periksa juga apakah pengguna extranet Anda punya izin yang sesuai."
   - q: "Bisakah saya menjadwalkan pesan ke tamu Booking.com?"
-    a: "Bisa. Di Extranet atau Pulse, buka Property > Messaging preferences > Template scheduler lalu kaitkan template dengan satu tahap: saat pemesanan, satu minggu, tiga hari, atau satu hari sebelum kedatangan, pada hari kedatangan, atau satu hari sebelum keberangkatan."
+    a: "Bisa. Di Extranet atau Pulse, buka Property > Messaging preferences > Template scheduler lalu kaitkan template dengan satu tahap: saat tamu memesan, satu minggu, tiga hari, atau satu hari sebelum kedatangan, pada hari kedatangan, atau satu hari sebelum keberangkatan."
   - q: "Bagaimana saya tahu sebuah pesan benar-benar dari Booking.com?"
     a: "Email Booking.com selalu berasal dari alamat berakhiran @booking.com, dan tautannya mengarah ke alamat berakhiran .booking.com. Waspadai permintaan mendesak yang tidak pernah diberitahukan sebelumnya: Booking.com menyatakan tidak pernah membuatnya tanpa komunikasi terlebih dahulu."
   - q: "Mengapa reservasi Booking.com baru tidak menampilkan nomor telepon di Little Hotelier?"
@@ -121,7 +121,7 @@ Lindungi juga tamu Anda:
 **Inbox** Hotelier Tools (`/messaging`, alpha) menempatkan pesan Booking.com dan Guest Q&A berdampingan dengan WhatsApp dan email Anda, dengan reservasi di samping setiap percakapan dan balasan yang disusun AI untuk Anda periksa.
 
 1. Hubungkan Booking.com sekali di **Credentials > Booking.com extranet** (`/credentials/booking-extranet`) dengan username partner, kata sandi, dan faktor kedua Anda (Pulse, SMS, atau panggilan telepon). Sesi disimpan terenkripsi untuk properti Anda. Booking.com mungkin sesekali meminta verifikasi ulang; wizard menanganinya.
-2. Secara opsional hubungkan kotak surat Anda (Google, Microsoft, atau akun IMAP/SMTP mana pun) dan [WhatsApp](/blog/whatsapp-little-hotelier).
+2. Jika mau, hubungkan juga akun email Anda (Google, Microsoft, atau akun IMAP/SMTP mana pun) dan [WhatsApp](/blog/whatsapp-little-hotelier).
 3. Buka **Inbox** dan filter dengan **Booking.com**. Thread Booking.com otomatis terhubung ke reservasinya.
 4. Baca draf dan rencana AI, edit, atau minta asisten privat di sebelah kanan untuk mencari sesuatu di Little Hotelier.
 
@@ -133,7 +133,7 @@ Dua batasan yang jujur:
 - **Untuk Booking.com, AI tidak pernah mengirim apa pun sendiri.** Dan mengirim balasan Anda kembali ke Booking.com dari inbox belum kami janjikan: salin draf yang sudah disetujui ke Extranet atau Pulse.
 - **Layanan ini memakai sesi extranet Anda sendiri.** Hotelier Tools masuk sebagai Anda, karena API pesan Booking.com hanya terbuka untuk mitra konektivitas. Dashboard sendiri mencatat bahwa ketentuan mitra Booking.com membatasi akses extranet otomatis, dan bahwa Connectivity API tetap menjadi jalur yang didukung jika Anda memilikinya.
 
-Dua pesan permintaan invoice baku dari Booking.com dikenali tanpa AI sama sekali: inbox menawarkan untuk mendaftarkan menginap itu agar invoice-nya dikirim saat check-out (lihat [mengirim invoice otomatis saat check-out](/blog/send-invoice-to-guest-at-checkout)).
+Dua pesan permintaan invoice baku dari Booking.com dikenali tanpa AI sama sekali: inbox menawarkan untuk mendaftarkan masa inap itu agar invoice-nya dikirim saat check-out (lihat [mengirim invoice otomatis saat check-out](/blog/send-invoice-to-guest-at-checkout)).
 
 ### Pilih seberapa jauh AI boleh bertindak
 
@@ -157,9 +157,9 @@ AI menjawab tamu hanya dari apa yang Anda berikan, ditambah kartu properti Anda.
 
 1. Di bawah **Pages and text the AI may quote**, pilih **FAQ page (URL)** atau **Plain text**, lalu klik **Add source**. Tugas terjadwal bisa membaca ulang halaman itu setiap jam.
 2. Isi **House notes** dengan apa pun yang tidak ada di halaman itu: wifi, jam check-in dan check-out, parkir, tips lokal. Klik **Save notes**.
-3. Di **Settings > Property & AI knowledge** (`/settings/property`), tekan **Read from Little Hotelier** untuk mengimpor alamat, kebijakan, tipe kamar, dan extra Anda, lalu **Save**.
+3. Di **Settings > Property & AI knowledge** (`/settings/property`), tekan **Read from Little Hotelier** untuk mengimpor alamat, kebijakan, tipe kamar, dan extras Anda, lalu **Save**.
 
-Layanan yang belum Anda daftarkan dijawab sebagai "akan dikonfirmasi", bukan "ya". Setiap pesan yang dibaca dan didrafkan AI memakai kredit AI, yang ditampilkan di **AI credits** (`/messaging/credits`).
+Layanan yang belum Anda daftarkan dijawab sebagai "akan dikonfirmasi", bukan "ya". Setiap pesan yang dibaca AI dan dibuatkan drafnya memakai kredit AI, yang ditampilkan di **AI credits** (`/messaging/credits`).
 
 ::screenshot{src="/images/blog/demo/en/guest-messaging-faq-knowledge.webp" alt="Halaman FAQ and knowledge: satu sumber FAQ page sudah ditambahkan, opsi FAQ page (URL) dan Plain text dengan tombol Add source, serta House notes yang terisi (dalam bahasa Spanyol) berisi jam check-in dan check-out, harga sarapan, resepsionis 24 jam, dan wifi gratis" caption="AI hanya mengutip halaman FAQ, catatan, dan kartu properti Anda." path="/messaging/faq"}
 ::
@@ -175,7 +175,7 @@ Hotelier Tools tidak berafiliasi dengan atau didukung oleh Booking.com, SiteMind
 
 ## Ringkasan
 
-- Jawab saat bepergian lewat Pulse, dan biarkan template, pesan terjadwal, dan balasan otomatis menangani pertanyaan rutin.
+- Balas dari mana saja lewat Pulse, dan biarkan template, pesan terjadwal, dan balasan otomatis menangani pertanyaan rutin.
 - Tandai thread yang tidak perlu dijawab sebagai **No reply needed**, dan jaga jawaban Guest Q&A tetap singkat dan layak dibaca publik.
 - Anggap setiap pesan "Booking.com" yang bukan dari @booking.com, atau berisi tautan di luar .booking.com, sebagai penipuan. Aktifkan Messaging security settings.
 - Untuk satu inbox dengan WhatsApp dan email, pakai Messaging hub Little Hotelier atau inbox Hotelier Tools, tempat AI membuat draf dan manusia yang mengirim.

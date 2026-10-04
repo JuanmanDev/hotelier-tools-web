@@ -12,7 +12,7 @@ cover: /images/scripts/full-width-reservation-table/to.png
 coverAlt: "Página Reservas de Little Hotelier (interfaz en español) ampliada al ancho completo de la pantalla por el script Tabla de Reservas a Todo Ancho: filtros de búsqueda, el botón Buscar, 36 reservas encontradas y el enlace Exportar"
 faq:
   - q: "¿Cómo evito que Little Hotelier me pida el código MFA a cada rato?"
-    a: "Little Hotelier lo pide de nuevo cada 30 días, cuando cambias de navegador o de dispositivo y antes de acciones sensibles. La forma más rápida es una passkey (Mi cuenta, Passkeys, Crear passkey) o aprobar con la app móvil de Little Hotelier, que muestra un número que debe coincidir en vez de un código."
+    a: "Little Hotelier lo pide de nuevo cada 30 días, cuando cambias de navegador o de dispositivo y antes de acciones sensibles. La forma más rápida es una passkey (My account, Passkeys, Create passkey) o aprobar con la app móvil de Little Hotelier, que muestra un número que debe coincidir en vez de un código."
   - q: "¿Cómo evito que se cierre la sesión de Little Hotelier por inactividad?"
     a: "En los artículos del centro de ayuda que revisamos no hay ningún ajuste para eso. El userscript gratuito Actualización Automática por Inactividad recarga la página tras 10 minutos sin actividad, para que vuelvas a una pantalla actualizada y no a una caducada."
   - q: "¿Puedo ver los precios de las habitaciones en el calendario de Little Hotelier?"
@@ -83,7 +83,7 @@ La dirección empieza por `direct-book.com/properties/` en Europa, África, Orie
 
 ### 11. Informa de una tarjeta no válida o un no-show de Booking.com sin entrar en la extranet
 
-Abre la reserva de Booking.com en el channel manager y ve a la pestaña **Manage Reservation**. Desde ahí puedes informar de que la tarjeta no es válida, pedir a Booking.com que cancele por tarjeta no válida, o marcar un no-show y elegir si renuncias a la tarifa ([guía](https://helpcentre.littlehotelier.com/en/articles/9303299-report-a-booking-com-reservation-as-a-no-show-or-payment-invalid)). Los plazos están en [tarjeta no válida o no-show en Booking.com: qué hacer](/blog/booking-com-invalid-card-no-show).
+Abre la reserva de Booking.com en el channel manager y ve a la pestaña **Manage Reservation**. Desde ahí puedes informar de que la tarjeta no es válida, pedir a Booking.com que cancele por tarjeta no válida, o marcar un no-show y elegir si renuncias a la penalización ([guía](https://helpcentre.littlehotelier.com/en/articles/9303299-report-a-booking-com-reservation-as-a-no-show-or-payment-invalid)). Los plazos están en [tarjeta no válida o no-show en Booking.com: qué hacer](/blog/booking-com-invalid-card-no-show).
 
 ### 12. Asegúrate de que los huéspedes de Booking.com reciben tus correos
 
@@ -138,18 +138,18 @@ Todos los scripts, con imágenes del antes y el después, están en la [página 
 
 ## Dos trucos si usas el panel de Hotelier Tools
 
-Hotelier Tools es un panel independiente que funciona junto a Little Hotelier, con el propio acceso de tu alojamiento a Little Hotelier. No está afiliado ni respaldado por SiteMinder ni por Little Hotelier, y es gratis para todos los hoteles hasta que empiece el cobro el 10 de enero de 2027.
+Hotelier Tools es un panel independiente que funciona junto a Little Hotelier, con el propio acceso de tu alojamiento a Little Hotelier. No está afiliado a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo, y es gratis para todos los hoteles hasta que empiece el cobro el 10 de enero de 2027.
 
 ### 19. Pulsa Ctrl+K para encontrar lo que sea
 
-**Ctrl+K** (**Cmd+K** en Mac) busca páginas, entradas de la lista de espera, tareas programadas y conversaciones. Ignora los acentos y entiende palabras en inglés y en español para lo mismo: «lista de espera» encuentra la Availability Queue.
+**Ctrl+K** (**Cmd+K** en Mac) busca páginas, entradas de la lista de espera, tareas programadas y conversaciones. Ignora los acentos y entiende palabras en inglés y en español para lo mismo: «waitlist», por ejemplo, encuentra la lista de espera.
 
 ::screenshot{src="/images/blog/demo/es/global-search-waitlist.webp" alt="Buscador global abierto con Ctrl+K sobre el panel de Hotelier Tools, con la consulta lista de espera y páginas coincidentes como Formulario público de lista de espera, Lista de espera, Historial, Lista de no volver a alojar y Facturas programadas, cada una con su sección" caption="Escribe una palabra y salta directo a la página que necesitas." path="/"}
 ::
 
 ### 20. Deja que una revisión nocturna encuentre los documentos que faltan antes de que lleguen los huéspedes
 
-Las **comprobaciones automáticas** leen las próximas reservas y marcan lo que de otro modo descubrirías en recepción: sin habitación asignada, documento de identidad o dirección que faltan, un saldo pendiente o un huésped de tu lista de «no volver a alojar». Los problemas aparecen en una sola página de incidencias, y cada ejecución envía un correo de informe. Mira [la lista de comprobaciones diarias de recepción](/blog/hotel-front-desk-checklist-automation).
+Las **comprobaciones automáticas** leen las próximas reservas y marcan lo que de otro modo descubrirías en recepción: sin habitación asignada, documento de identidad o dirección que faltan, un saldo pendiente o un huésped de tu lista «no volver a alojar». Los problemas aparecen en una sola página de incidencias, y cada ejecución envía un correo de informe. Mira [el checklist diario de recepción](/blog/hotel-front-desk-checklist-automation).
 
 ::demo-cta{path="/automated-checks/issues"}
 ::

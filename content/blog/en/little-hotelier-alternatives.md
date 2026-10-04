@@ -21,7 +21,7 @@ faq:
     a: "None of the six in this comparison mentioned an MCP server for property data in their developer docs when we checked on 3 October 2026. Cloudbeds offers an MCP server for its developer documentation, and Apaleo launched an MCP server in 2025."
 ---
 
-For a small hotel, B&B or hostel, the closest Little Hotelier alternatives are **Cloudbeds** (all-in-one, priced by quote) and **Beds24** (pay per unit, very configurable), with **Mews** for larger hotels with a team. If your property is mostly apartments or holiday homes, look at **Lodgify**, **Smoobu** or **Hostaway**. All six publish an API, which Little Hotelier does not offer for your own reservations. Before you switch, export your history: Little Hotelier masks guest details 180 days after check-out.
+For a small hotel, B&B or hostel, the closest Little Hotelier alternatives are **Cloudbeds** (all-in-one, priced by quote) and **Beds24** (pay per unit, very configurable), with **Mews** for larger hotels with a team. If your property is mostly apartments or vacation homes, look at **Lodgify**, **Smoobu** or **Hostaway**. All six publish an API, which Little Hotelier does not offer for your own reservations. Before you switch, export your history: Little Hotelier masks guest details 180 days after check-out.
 
 Every price and feature below was checked on the vendors' own sites on **3 October 2026**. Prices change, so confirm before you sign.
 
@@ -29,7 +29,7 @@ Every price and feature below was checked on the vendors' own sites on **3 Octob
 
 Yes. Little Hotelier is SiteMinder's software for small properties: its website is published by SiteMinder Limited, and SiteMinder's [developer guide](https://developer.siteminder.com/smx-api/additional-resources/reference-tables/property-publishers) lists it among "SiteMinder's own products". Its channel manager is SiteMinder's.
 
-According to its [pricing page](https://www.littlehotelier.com/pricing/), Little Hotelier specialises "in software for properties with 1-30 rooms". As of October 2026:
+According to its [pricing page](https://www.littlehotelier.com/pricing/), Little Hotelier specializes "in software for properties with 1-30 rooms". As of October 2026:
 
 - **Basics:** channel manager, booking engine, calendar and mobile app, with a **1% booking fee** on top of the monthly price (their example: $1,000 of bookings in a month adds $10).
 - **Pro:** everything in Basics plus competitor rate and rate parity insights, phone support and an onboarding specialist.
@@ -58,7 +58,7 @@ Two structural limits matter if you plan to grow your tools around it:
 | [Cloudbeds](https://www.cloudbeds.com/pricing/) | Independent hotels, hostels, B&Bs, groups | Tiered plans, by quote | [Yes](https://developers.cloudbeds.com/) |
 | [Mews](https://www.mews.com/en/pricing) | Hotels with staff, F&B, more rooms | Per room, by quote | [Yes](https://docs.mews.com/) |
 | [Beds24](https://beds24.com/pricing.html) | Owners who like to configure everything | Pay as you go, from €15.50 a month | [Yes](https://beds24.com/api/v2/) |
-| [Lodgify](https://www.lodgify.com/pricing/) | Holiday rentals with a direct-booking site | Four plans, 0% booking fee | [Yes](https://docs.lodgify.com/) |
+| [Lodgify](https://www.lodgify.com/pricing/) | Vacation rentals with a direct-booking site | Four plans, 0% booking fee | [Yes](https://docs.lodgify.com/) |
 | [Smoobu](https://www.smoobu.com/en/pricing/) | Apartments and small rental portfolios | Per unit, from €28 a month for one | [Yes](https://docs.smoobu.com/) |
 | [Hostaway](https://www.hostaway.com/pricing/) | Vacation rental managers | By quote, by number of listings | [Yes](https://api.hostaway.com/documentation) |
 
@@ -80,7 +80,7 @@ The budget, do-it-yourself option. Beds24 charges [from €15.50 a month](https:
 
 ### Lodgify, Smoobu and Hostaway
 
-These three are built for holiday rentals. They fit if your property is apartments or houses rather than hotel rooms.
+These three are built for vacation rentals. They fit if your property is apartments or houses rather than hotel rooms.
 
 - **Lodgify:** strong on direct-booking websites. Plans from Basic to Ultimate, a 0% booking fee and a [7-day free trial](https://www.lodgify.com/pricing/).
 - **Smoobu:** simple and per unit, [from €28 a month](https://www.smoobu.com/en/pricing/) for one unit and from €9.60 per extra unit, with a 14-day free trial. Its Flex plan swaps the prepaid fee for a 0.9% booking fee.
@@ -118,6 +118,6 @@ Many gaps can be closed without moving your bookings:
 
 - **Hotel or hostel outgrowing Little Hotelier:** get quotes from Cloudbeds and, if you have staff and F&B, Mews.
 - **Tight budget and time to configure:** Beds24.
-- **Apartments or holiday homes:** Lodgify, Smoobu or Hostaway.
+- **Apartments or vacation homes:** Lodgify, Smoobu or Hostaway.
 - **Happy with the core but missing extras:** stay, and add apps, scripts or an API layer.
 - Whatever you choose, **export your data now**, before guest details are masked.

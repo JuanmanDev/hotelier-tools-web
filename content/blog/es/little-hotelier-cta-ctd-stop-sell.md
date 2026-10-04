@@ -20,7 +20,7 @@ faq:
   - q: "¿Por qué mi restricción no aparece en Booking.com o Airbnb?"
     a: "No todas las tarifas de canal aceptan todas las restricciones. En la cuadrícula de inventario de Little Hotelier, un guion en la celda de un canal significa que ese canal no admite esa actualización, y las actualizaciones más allá de la ventana máxima de reserva de un canal no se sincronizan. Mira la configuración de la tarifa del canal en Channel Manager para ver qué tipos de actualización admite."
   - q: "¿Hotelier Tools cambia las restricciones por su cuenta?"
-    a: "No. Las políticas de restricciones se proponen noche a noche en la página de Recomendaciones y no se escribe nada hasta que las aplicas. El piloto automático solo escribe estancias mínimas si lo permites por separado, y nunca toca el stop sell de los canales. Hotelier Tools es independiente y no está afiliado ni respaldado por SiteMinder ni por Little Hotelier."
+    a: "No. Las políticas de restricciones se proponen noche a noche en la página de Recomendaciones y no se escribe nada hasta que las aplicas. El piloto automático solo escribe estancias mínimas si lo permites por separado, y nunca toca el stop sell de los canales. Hotelier Tools es independiente: no está afiliado a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo."
 ---
 
 En Little Hotelier, **CTA** (*closed to arrival*, cerrado a la llegada) significa que los huéspedes no pueden hacer el check-in ese día, y **CTD** (*closed to departure*, cerrado a la salida) que no pueden hacer el check-out ese día. La **estancia mínima** es el número mínimo de noches que se puede reservar una habitación. Un **stop sell** cierra una tarifa a la venta en una fecha mientras tus habitaciones siguen en el inventario. Todo se configura por tarifa de habitación en **Front Desk > Inventory**, fecha a fecha o con **Bulk Update**.
@@ -29,7 +29,7 @@ En Little Hotelier, **CTA** (*closed to arrival*, cerrado a la llegada) signific
 |---|---|---|
 | **CTA** (cerrado a la llegada) | «Los huéspedes no pueden hacer el check-in este día.» Los que llegaron antes pueden seguir alojados. | Obligar a llegar el viernes en un fin de semana con mucha demanda. |
 | **CTD** (cerrado a la salida) | «Los huéspedes no pueden hacer el check-out este día.» Pueden alojarse esa noche, pero no irse ese día. | Mantener unido un fin de semana. |
-| **Estancia mínima** (min LOS) | Noches mínimas (o máximas) que debe tener una reserva (Min/Max Stay). | Dos noches en fines de semana de eventos. |
+| **Estancia mínima** (min LOS) | «Noches mínimas o máximas por las que debe reservarse una habitación» (Min/Max Stay). | Dos noches en fines de semana de eventos. |
 | **Estancia máxima** | La reserva más larga que se acepta. | Poco habitual en hoteles pequeños. |
 | **Stop sell** | La tarifa queda cerrada a la venta ese día, en todos los canales o solo en algunos. Se llama **Close Channels** en Front Desk y **Stop Sell** en Channel Manager. | Cerrar una fecha rápido: obras, un bloqueo del propietario, un canal que quieres pausar. |
 
@@ -72,7 +72,7 @@ Los stop sell de Channel Manager no funcionan mientras **Close Channels** esté 
 | Tu número de habitaciones | Sin cambios | Se reduce para ese tipo de habitación | Sin cambios |
 | Sirve para | Cerrar rápido, por canal | Habitaciones realmente fuera de servicio | Dar forma a las estancias |
 
-Un **Room Closure** (**Front Desk > Calendar**) «reduce la disponibilidad enviada a los canales para el tipo de habitación cerrado. No aplica un stop sell» ([cierres de habitación](https://helpcentre.littlehotelier.com/en/articles/8674039-create-and-manage-room-closures)).
+Un cierre de habitación (**Room Closure**, en **Front Desk > Calendar**) «reduce la disponibilidad enviada a los canales para el tipo de habitación cerrado. No aplica un stop sell» ([cierres de habitación](https://helpcentre.littlehotelier.com/en/articles/8674039-create-and-manage-room-closures)).
 
 ## Cómo poner CTA, CTD y estancia mínima en Little Hotelier
 

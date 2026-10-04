@@ -133,7 +133,7 @@ Two honest limits:
 - **For Booking.com, the AI never sends anything on its own.** And sending your reply back to Booking.com from the inbox isn't something we promise yet: copy the approved draft into the Extranet or Pulse.
 - **It uses your own extranet session.** Hotelier Tools signs in as you, because Booking.com's messaging API is only open to connectivity partners. The dashboard itself notes that Booking.com's partner terms restrict automated extranet access, and that the Connectivity API remains the supported route where you have it.
 
-Booking.com's two fixed invoice-request messages are recognised without any AI: the inbox offers to enrol the stay for its invoice at checkout (see [sending the invoice automatically at checkout](/blog/send-invoice-to-guest-at-checkout)).
+Booking.com's two fixed invoice-request messages are recognized without any AI: the inbox offers to enroll the stay for its invoice at checkout (see [sending the invoice automatically at checkout](/blog/send-invoice-to-guest-at-checkout)).
 
 ### Choose how much the AI may do
 
@@ -141,7 +141,7 @@ On **Channels** (`/messaging/channels`), each connected account has a reply mode
 
 | Mode | What happens |
 |---|---|
-| **Off** | Messages are collected and shown. Nothing is analysed or sent. |
+| **Off** | Messages are collected and shown. Nothing is analyzed or sent. |
 | **Draft** (default) | The AI prepares a reply and a plan. Nothing happens until you approve it. |
 | **Automatic reply** | The AI sends its reply after a delay. It can never change a reservation. |
 | **Autonomous** | The AI replies and can also add a note or set the arrival time on a verified booking, without approval. Review it several times a day. |

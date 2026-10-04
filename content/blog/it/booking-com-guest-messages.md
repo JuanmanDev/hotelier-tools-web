@@ -1,5 +1,5 @@
 ---
-title: "Messaggi Booking.com agli ospiti: come gestirli senza vivere nell'extranet"
+title: "Messaggi Booking.com agli ospiti: come gestirli senza stare sempre nell'extranet"
 seoTitle: "Messaggi Booking.com: gestirli senza extranet"
 description: "Pulse, template, messaggi programmati e risposte automatiche, come riconoscere i messaggi falsi di Booking.com e un'unica inbox con WhatsApp ed email."
 date: 2026-10-03
@@ -54,7 +54,7 @@ Tutti e tre si trovano in **Property > Messaging preferences**, nell'Extranet o 
 3. Aggiungi una lingua e delle immagini, se ti servono, poi clicca su **Continue**.
 4. Dagli un **Template name** e un **Template topic**, e clicca su **Save template**.
 
-Usa lo stesso nome di template per ogni versione linguistica. Booking.com invia poi la lingua dell'ospite e, in mancanza, torna alla tua lingua predefinita. Non si possono allegare PDF e codici QR, e ogni link (per esempio il tuo check-in online) deve prima essere approvato in **Security settings**.
+Usa lo stesso nome di template per ogni versione linguistica. Booking.com invia poi la versione nella lingua dell'ospite e, se manca, quella nella tua lingua predefinita. Non si possono allegare PDF e codici QR, e ogni link (per esempio il tuo check-in online) deve prima essere approvato in **Security settings**.
 
 Un template pre-arrivo che puoi adattare (sostituisci le parentesi con i blocchi informativi di Booking.com):
 
@@ -70,11 +70,11 @@ A presto!
 
 ### Messaggi programmati
 
-Apri la scheda **Template scheduler**, clicca su **Schedule a template**, scegli quando partire e quale template, poi **Add to schedule**. Le fasi sono: quando un ospite prenota, una settimana prima dell'arrivo, tre giorni prima, un giorno prima, il giorno dell'arrivo e un giorno prima della partenza. I template inviati compaiono nella tua inbox.
+Apri la scheda **Template scheduler**, clicca su **Schedule a template**, scegli quando inviarlo e quale template usare, poi **Add to schedule**. Le fasi sono: quando un ospite prenota, una settimana prima dell'arrivo, tre giorni prima, un giorno prima, il giorno dell'arrivo e un giorno prima della partenza. I template inviati compaiono nella tua inbox.
 
 ### Risposte automatiche
 
-Nella scheda **Automatic replies**, apri le impostazioni di un argomento, spuntalo, scegli la risposta, abbina un template con **Select template** e **Save**. Le richieste che rientrano nella tua politica ricevono un'accettazione automatica; per quelle che ne escono, abbini la risposta a un template. L'ospite la riceve via email e nella chat.
+Nella scheda **Automatic replies**, apri le impostazioni di un argomento, spuntalo, scegli la risposta, abbina un template con **Select template** e **Save**. Le richieste in linea con le tue condizioni ricevono un'accettazione automatica; per quelle che non lo sono, abbini la risposta a un template. L'ospite la riceve via email e nella chat.
 
 ### Help me reply e traduzione
 
@@ -82,11 +82,11 @@ La chat dell'Extranet ha un pulsante **Help me reply** che suggerisce un templat
 
 ## Rispondere in fretta conta?
 
-Sì. Il centro assistenza di Little Hotelier segnala che Booking.com tiene un punteggio interno di risposta che misura quanto in fretta rispondi. Quando un messaggio non richiede risposta ("Grazie, ci vediamo venerdì!"), segnalo come **No reply needed**: chiude la finestra di risposta di 24 ore, così quella conversazione non pesa su di te ([Messaging hub FAQ](https://helpcentre.littlehotelier.com/en/articles/9525840-messaging-hub-frequently-asked-questions)).
+Sì. Il centro assistenza di Little Hotelier segnala che Booking.com tiene un punteggio interno di risposta che misura quanto in fretta rispondi. Quando un messaggio non richiede risposta ("Grazie, ci vediamo venerdì!"), contrassegnalo come **No reply needed**: chiude la finestra di risposta di 24 ore, così quella conversazione non ti penalizza ([Messaging hub FAQ](https://helpcentre.littlehotelier.com/en/articles/9525840-messaging-hub-frequently-asked-questions)).
 
-## Come rispondere a Guest Q&A (le domande prima della prenotazione)
+## Come rispondere alle Guest Q&A (le domande prima della prenotazione)
 
-Guest Q&A permette alle persone di farti domande prima di prenotare. Le tue risposte vengono pubblicate sulla pagina della struttura dopo la moderazione. Gli altri ospiti possono votarle, così le più utili compaiono per prime ([Partner Help: Guest Q&A](https://partner.booking.com/en-us/help/property-page/general-info/guest-qa-feature)).
+Con Guest Q&A i potenziali ospiti possono farti domande prima di prenotare. Le tue risposte vengono pubblicate sulla pagina della struttura dopo la moderazione. Gli altri ospiti possono votarle, così le più utili compaiono per prime ([Partner Help: Guest Q&A](https://partner.booking.com/en-us/help/property-page/general-info/guest-qa-feature)).
 
 Puoi eliminare le risposte superate o rispondere in privato quando la domanda è personale. Per disattivare la funzione, vai nella scheda **Inbox** dell'Extranet, **Questions for your property**, **Guest Q&A preferences**. Le domande che tornano di continuo (parcheggio, check-in tardivo, animali) vanno anche nella descrizione della struttura.
 
@@ -114,11 +114,11 @@ Proteggi anche i tuoi ospiti:
 
 - **Attiva le Messaging security settings** (**Property > Messaging preferences > Security settings**, con l'autenticazione a due fattori). Elenca gli indirizzi email e i link autorizzati a raggiungere gli ospiti: le email da altri indirizzi non arrivano e gli altri link vengono rimossi ([Messaging security](https://partner.booking.com/en-us/help/account-and-login/security/understanding-messaging-security-settings)). Se Booking.com rileva attività sospette sul tuo account, disattiva i link nei tuoi messaggi.
 - **Sappi dove sono i numeri di telefono.** Dal 28 settembre 2026 Booking.com non invia più i numeri di telefono degli ospiti ai channel manager ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Usa **Show phone number** nell'Extranet o in Pulse.
-- **Spiega agli ospiti come chiederai i soldi**, come nell'ultima riga del template qui sopra.
+- **Spiega agli ospiti come chiederai i pagamenti**, come nell'ultima riga del template qui sopra.
 
 ## Il modo più veloce: Booking.com, WhatsApp ed email in un'unica inbox
 
-L'**Inbox** di Hotelier Tools (`/messaging`, alpha) mette i messaggi di Booking.com e Guest Q&A accanto a WhatsApp ed email, con la prenotazione accanto a ogni conversazione e una risposta preparata dall'AI da controllare.
+L'**Inbox** di Hotelier Tools (`/messaging`, alpha) mette i messaggi di Booking.com e Guest Q&A accanto a WhatsApp ed email, con la prenotazione abbinata a ogni conversazione e una risposta preparata dall'AI che controlli tu.
 
 1. Collega Booking.com una sola volta in **Credentials > Booking.com extranet** (`/credentials/booking-extranet`) con nome utente partner, password e secondo fattore (Pulse, SMS o chiamata). La sessione viene conservata cifrata per la tua struttura. Booking.com può chiederti ogni tanto di verificare di nuovo; la procedura guidata se ne occupa.
 2. Se vuoi, collega la tua casella email (Google, Microsoft o qualsiasi account IMAP/SMTP) e [WhatsApp](/blog/whatsapp-little-hotelier).
@@ -128,12 +128,12 @@ L'**Inbox** di Hotelier Tools (`/messaging`, alpha) mette i messaggi di Booking.
 ::screenshot{src="/images/blog/demo/en/guest-inbox-ai-plan-late-arrival.webp" alt="Inbox ospiti con una conversazione WhatsApp aperta: il messaggio dell'ospite su un arrivo tardivo in spagnolo, la prenotazione associata con identità verificata e pagata, il piano dell'AI in bozza con il motivo e una risposta modificabile, e il pannello privato Assistant sulla destra" caption="Ogni conversazione mostra la prenotazione, una bozza dell'AI che aspetta te e un assistente privato che l'ospite non vede mai." path="/messaging"}
 ::
 
-Due limiti, con sincerità:
+Due limiti da conoscere:
 
-- **Per Booking.com l'AI non invia mai nulla da sola.** E rimandare la tua risposta a Booking.com direttamente dall'inbox non è ancora qualcosa che promettiamo: copia la bozza approvata nell'Extranet o in Pulse.
+- **Per Booking.com l'AI non invia mai nulla da sola.** E l'invio della risposta a Booking.com direttamente dall'inbox non è ancora garantito: copia la bozza approvata nell'Extranet o in Pulse.
 - **Usa la tua sessione dell'extranet.** Hotelier Tools accede come te, perché l'API di messaggistica di Booking.com è aperta solo ai partner di connettività. La dashboard stessa segnala che i termini per i partner di Booking.com limitano l'accesso automatizzato all'extranet e che la Connectivity API resta la via supportata dove ce l'hai.
 
-I due messaggi fissi di Booking.com con cui l'ospite chiede la fattura vengono riconosciuti senza alcuna AI: l'inbox propone di iscrivere il soggiorno alla fattura al check-out (vedi [inviare la fattura automaticamente al check-out](/blog/send-invoice-to-guest-at-checkout)).
+I due messaggi fissi di Booking.com con cui l'ospite chiede la fattura vengono riconosciuti senza alcuna AI: l'inbox propone di programmare la fattura al check-out per quel soggiorno (vedi [inviare la fattura automaticamente al check-out](/blog/send-invoice-to-guest-at-checkout)).
 
 ### Scegli quanto può fare l'AI
 
@@ -146,7 +146,7 @@ In **Channels** (`/messaging/channels`) ogni account collegato ha una modalità 
 | **Automatic reply** | L'AI invia la risposta dopo un'attesa. Non può mai modificare una prenotazione. |
 | **Autonomous** | L'AI risponde e può anche aggiungere una nota o impostare l'orario di arrivo su una prenotazione verificata, senza approvazione. Controllala più volte al giorno. |
 
-Qualunque cosa scelga, le conversazioni di Booking.com restano inviate da una persona. L'AI per gli ospiti non ha alcuno strumento: restituisce un piano scelto da un elenco chiuso (inviare un messaggio, segnalare allo staff, aggiungere una nota alla prenotazione, impostare l'orario di arrivo) e non può mai cancellare, cambiare date né toccare i pagamenti. Vede una prenotazione solo quando il mittente è verificato, e una conversazione di Booking.com conta come verificata.
+Qualunque modalità tu scelga, sulle conversazioni di Booking.com l'invio resta sempre a una persona. L'AI per gli ospiti non ha alcuno strumento: restituisce un piano scelto da un elenco chiuso (inviare un messaggio, segnalare allo staff, aggiungere una nota alla prenotazione, impostare l'orario di arrivo) e non può mai cancellare, cambiare date né toccare i pagamenti. Vede una prenotazione solo quando il mittente è verificato, e una conversazione di Booking.com conta come verificata.
 
 ::screenshot{src="/images/blog/demo/en/guest-messaging-reply-modes-menu.webp" alt="Pagina Messaging Channels con il menu When a guest writes aperto sulla connessione WhatsApp: Off (collect only), Draft (I approve everything, selezionato), Automatic reply (no reservation changes) e Autonomous (replies and changes reservations)" caption="Scegli una modalità di risposta per ogni account, qui mostrata per WhatsApp. Draft, la predefinita, aspetta te." path="/messaging/channels"}
 ::
@@ -176,6 +176,6 @@ Hotelier Tools non è affiliato né approvato da Booking.com, SiteMinder o Littl
 ## Riepilogo
 
 - Rispondi in mobilità con Pulse e lascia che template, messaggi programmati e risposte automatiche coprano le domande di routine.
-- Segna come **No reply needed** le conversazioni che non richiedono risposta e tieni brevi le risposte di Guest Q&A, pensando a un pubblico.
+- Segna come **No reply needed** le conversazioni che non richiedono risposta e tieni le risposte alle Guest Q&A brevi e adatte a essere lette da tutti.
 - Considera una truffa qualsiasi messaggio "Booking.com" che non arrivi da @booking.com o che abbia link fuori da .booking.com. Attiva le Messaging security settings.
 - Per un'unica inbox con WhatsApp ed email, usa il Messaging hub di Little Hotelier o l'inbox di Hotelier Tools, dove l'AI prepara le bozze e una persona le invia.

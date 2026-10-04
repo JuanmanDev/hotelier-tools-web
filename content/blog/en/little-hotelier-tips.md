@@ -33,7 +33,7 @@ Accounts created since May 2025 (or upgraded) use the newer Little Hotelier **pl
 
 ### 1. Read the calendar at a glance
 
-Choose a **14 or 28 day** view from the drop-down. In the 14-day view, `<`, `<<` and `<<<` move 1, 7 and 14 days; **View today** jumps back. Colours tell the status: orange confirmed, green checked in, grey checked out, blue unallocated, red room closure. A **red triangle** in the corner means money is still owed ([calendar guide](https://help-platform.littlehotelier.com/en/articles/10397723-getting-started-with-calendar)).
+Choose a **14 or 28 day** view from the drop-down. In the 14-day view, `<`, `<<` and `<<<` move 1, 7 and 14 days; **View today** jumps back. Colors tell the status: orange confirmed, green checked in, gray checked out, blue unallocated, red room closure. A **red triangle** in the corner means money is still owed ([calendar guide](https://help-platform.littlehotelier.com/en/articles/10397723-getting-started-with-calendar)).
 
 ### 2. Use the Unallocated row to fit one more booking
 
@@ -114,7 +114,7 @@ These free [userscripts](/tools/ui) run in your browser with the Tampermonkey ex
 
 [Prices Display](/tools/ui/prices-display) reads your rates from the inventory page and shows them under each room type in the calendar, so you can quote a price on the phone without switching screens.
 
-::screenshot{src="/images/scripts/prices-display/to.png" alt="Little Hotelier calendar in Spanish with a 7-day view, bookings in green, orange and grey, and each room type's nightly price shown in large figures under its rooms" caption="With Prices Display, each room type's nightly rate sits right under its rooms."}
+::screenshot{src="/images/scripts/prices-display/to.png" alt="Little Hotelier calendar in Spanish with a 7-day view, bookings in green, orange and gray, and each room type's nightly price shown in large figures under its rooms" caption="With Prices Display, each room type's nightly rate sits right under its rooms."}
 ::
 
 ### 16. Stop coming back to a stale page

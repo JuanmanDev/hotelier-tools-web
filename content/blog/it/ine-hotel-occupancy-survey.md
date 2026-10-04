@@ -45,9 +45,9 @@ Non tutti gli hotel. L'INE estrae un campione casuale per provincia, categoria e
 
 Se sei selezionato, l'INE ti scrive con un **numero d'ordine** (*número de orden*, spesso indicato come "NOrden") e una password per il suo portale. Quel messaggio ti dice che l'indagine ora riguarda te.
 
-## L'indagine INE è obbligatoria? Quanto costa la multa?
+## L'indagine INE è obbligatoria? A quanto ammonta la multa?
 
-Sì, una volta selezionato. Il questionario riporta la dicitura *"Estadística de cumplimentación obligatoria"* (statistica a compilazione obbligatoria). La legge spagnola sulla statistica (Ley 12/1989, LFEP) stabilisce che chi risponde deve farlo "con veridicità, esattezza, completezza e nei termini stabiliti" (articolo 10.2). Le leggi 4/1990 e 13/1996 rendono obbligatoria questa indagine.
+Sì, una volta che sei stato selezionato. Il questionario riporta la dicitura *"Estadística de cumplimentación obligatoria"* (statistica a compilazione obbligatoria). La legge spagnola sulla statistica (Ley 12/1989, LFEP) stabilisce che chi risponde deve farlo "con veridicità, esattezza, completezza e nei termini stabiliti" (articolo 10.2). Le leggi 4/1990 e 13/1996 rendono obbligatoria questa indagine.
 
 Le multe riportate nel modulo INE (articolo 51 LFEP):
 
@@ -70,7 +70,7 @@ Gli esempi derivano dall'articolo 50 della [Ley 12/1989 (BOE)](https://www.boe.e
 | *Personal ocupado* | Personale del mese: non retribuito, retribuito fisso, retribuito temporaneo | Buste paga, non Little Hotelier |
 | *ADR por tipo de cliente* | Tariffa media giornaliera e quota di camere per tipo di cliente | Tariffe e canale di prenotazione |
 
-Tre dettagli mettono in difficoltà molti:
+Tre dettagli su cui molti sbagliano:
 
 - **Residenza, non nazionalità.** L'INE raggruppa gli ospiti in base a dove vivono: i residenti in Spagna per regione (il file XML usa la provincia), tutti gli altri per paese. Un cittadino francese che vive a Málaga conta come Málaga.
 - **L'ADR ha regole precise.** L'INE vuole la tariffa di una camera doppia, solo pernottamento (senza colazione né pensione), al lordo delle commissioni e senza IVA. La suddivide in nove tipi di cliente: tour operator tradizionale, agenzia di viaggi tradizionale, aziende, privati, gruppi, prenotazione diretta sul tuo sito, tour operator online, agenzia di viaggi online e altri.
@@ -101,7 +101,7 @@ Tre abitudini risolvono quasi tutto:
 
 1. Compila paese e provincia al check-in, dal documento dell'ospite o con una domanda veloce.
 2. Installa lo userscript gratuito [Easy Save Province and Country](/tools/ui/easy-save-province-country). Quando clicchi sul campo provincia, mostra l'elenco delle province spagnole e, scegliendone una, imposta il paese su Spagna.
-3. Lascia che i [controlli automatici](/tools/bot/automated-checks) segnalino le prenotazioni senza paese o provincia dopo la prenotazione, all'arrivo e al check-out, quando l'ospite è ancora lì per chiedere.
+3. Lascia che i [controlli automatici](/tools/bot/automated-checks) segnalino le prenotazioni senza paese o provincia dopo la prenotazione, all'arrivo e al check-out, quando l'ospite è ancora in struttura e puoi chiederglieli.
 
 ::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Scheda ospite di Little Hotelier con l'elenco delle province spagnole di Easy Save Province and Country aperto sotto il campo Province/Region" caption="Lo userscript gratuito trasforma il campo provincia in un elenco a scelta e imposta il paese al posto tuo."}
 ::
@@ -142,7 +142,7 @@ Premi **Validate for the INE**, poi **Preview XML** per vedere esattamente cosa 
 ::
 
 ::callout{type="note" title="Provarlo nella demo"}
-La demo pubblica ha un hotel fittizio con un report INE salvato. L'invio all'INE è disattivato, quindi nulla arriva all'INE, e non devi mai inserire credenziali IRIA reali.
+La demo pubblica ha un hotel fittizio con un report INE salvato. L'invio all'INE è disattivato, quindi nulla arriva all'INE, e non devi mai inserirvi credenziali IRIA reali.
 ::
 
 ::demo-cta{path="/reports/guest-origins"}
