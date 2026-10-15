@@ -18,10 +18,16 @@ for (let i = 0; i < 40; i++) {
 
 const sitemaps = await locs(`${SITE}/sitemap_index.xml`)
 const urls = [...new Set((await Promise.all(sitemaps.map(locs))).flat())]
-const res = await fetch('https://api.indexnow.org/indexnow', {
+const submit = () => fetch('https://api.indexnow.org/indexnow', {
   method: 'POST',
   headers: { 'content-type': 'application/json; charset=utf-8' },
   body: JSON.stringify({ host: new URL(SITE).host, key: KEY, keyLocation: `${SITE}/${KEY}.txt`, urlList: urls })
 })
+// A key IndexNow has not verified yet answers 403 for a few minutes; try again before giving up
+let res = await submit()
+for (let i = 0; res.status === 403 && i < 3; i++) {
+  await new Promise(r => setTimeout(r, 60000))
+  res = await submit()
+}
 console.log(`IndexNow: submitted ${urls.length} URLs, HTTP ${res.status}`)
 if (!res.ok && res.status !== 202) process.exit(1)
