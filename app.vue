@@ -7,14 +7,9 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
-const { setStructuredData } = useSEO()
-
-// Global head configuration with proper language handling
+// The page language (html lang, hreflang) comes from @nuxtjs/i18n and useSEO();
+// Organization and WebSite structured data come from nuxt-schema-org (nuxt.config.ts)
 useHead({
-  htmlAttrs: {
-    lang: computed(() => locale.value === 'es' ? 'es' : 'en')
-  },
   link: [
     {
       rel: 'icon',
@@ -22,11 +17,5 @@ useHead({
       href: '/favicon.svg'
     }
   ]
-})
-
-// Set organization structured data globally
-onMounted(() => {
-  setStructuredData('Organization')
-  setStructuredData('WebSite')
 })
 </script>

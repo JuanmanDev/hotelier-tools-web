@@ -6,6 +6,7 @@ date: 2026-10-03
 category: tips
 tags: [pms, comparison, alternatives, little hotelier, cloudbeds]
 keywords: [little hotelier alternativen, little hotelier erfahrungen, little hotelier kosten, little hotelier vs cloudbeds, hotelsoftware für kleine hotels, hotel pms vergleich, little hotelier vs lodgify, little hotelier kündigen]
+feature: dashboard
 cover: /images/blog/demo/en/dashboard-overview.webp
 coverAlt: "Startseite des Hotelier-Tools-Dashboards für das Demo-Haus Hotel Demo Sol: eine Karte Open AI chat, ein Hinweis, dass zwei Kanäle für Gästenachrichten Aufmerksamkeit brauchen, und Statuskacheln für Little Hotelier, Booking.com, AI knowledge und die Preisstadt"
 faq:

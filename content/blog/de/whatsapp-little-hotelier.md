@@ -145,6 +145,8 @@ Die Business-Richtlinie von WhatsApp besagt, dass Sie nur Personen kontaktieren 
 - Nutzen Sie die Nummer nur für den Aufenthalt. Marketing braucht eine eigene Einwilligung.
 - Nennen Sie WhatsApp in Ihrer Datenschutzerklärung und hören Sie auf, wenn ein Gast es verlangt.
 
+Siehe auch: [der Little-Hotelier-Leitfaden](/blog/little-hotelier-tips), [der KI-Assistent für die Rezeption](/blog/ai-assistant-hotel-front-desk), [eine Warteliste für ausgebuchte Termine](/blog/hotel-waitlist-sold-out-dates), [ungültige Karten und No-Shows bei Booking.com](/blog/booking-com-invalid-card-no-show).
+
 ## Zusammenfassung
 
 - Der **Messaging hub** (Add-on Guest Engagement) ist die hauseigene Option von Little Hotelier mit offizieller API: gemeinsamer Posteingang, verknüpfte Reservierung, Vorlagen, Meta-Gebühren für Nachrichten, die Sie beginnen.

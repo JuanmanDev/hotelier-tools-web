@@ -69,7 +69,7 @@ Little Hotelier ก็มีตัวเลือกในตัวเช่น�
 
 ถ้าคุณใช้ Chekin อยู่ สคริปต์ฟรี **Chekin Connection** จะแสดงสถานะเช็คอินของ Chekin ภายในหน้าการจองของ Little Hotelier: พบแขกกี่คน เบอร์โทร และเลขเอกสารยืนยันตัวตน พร้อมปุ่มคัดลอกเอกสารเข้าไปในการจองเพื่อใช้ในใบแจ้งหนี้
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="การจองใน Little Hotelier ภาษาสเปนที่มีแผง Chekin: สถานะพบแขก 1 คน ตารางชื่อ เบอร์โทร และเอกสารประจำตัว และปุ่ม Use document กับ View in Chekin" caption="สคริปต์ฟรี Chekin Connection แสดงข้อมูลเช็คอินโดยไม่ต้องออกจากหน้าการจอง"}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="การจองใน Little Hotelier ภาษาสเปนที่มีแผง Chekin: สถานะพบแขก 1 คน ตารางชื่อ เบอร์โทร และเอกสารประจำตัว และปุ่ม Use document กับ View in Chekin" caption="สคริปต์ฟรี Chekin Connection แสดงข้อมูลเช็คอินโดยไม่ต้องออกจากหน้าการจอง"}
 ::
 
 ติดตั้งได้จาก [Chekin Connection](/tools/ui/show-chekin) และ[คู่มือการติดตั้ง](/tools/ui/instructions)ใช้เวลาไม่กี่นาที
@@ -126,6 +126,8 @@ Hotelier Tools เติมช่องว่างนี้ด้วย REST AP
 ::
 
 ชุดสคริปต์ทั้งหมดอยู่ที่[หน้าส่วนขยายเบราว์เซอร์](/chrome-extensions) และ[ส่วนขยาย Chrome ฟรีสำหรับ Little Hotelier](/blog/little-hotelier-chrome-extensions)อธิบายแต่ละตัว
+
+อ่านเพิ่มเติม: [คู่มือ Little Hotelier](/blog/little-hotelier-tips), [ทางเลือกอื่นแทน Little Hotelier](/blog/little-hotelier-alternatives)
 
 ## ขั้นตอนถัดไป
 

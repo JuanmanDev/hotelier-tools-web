@@ -127,15 +127,8 @@ const showLangNotice = computed(() => {
 })
 
 // SEO
-useHead({
-  title: t('contact.hero.title') + ' ' + t('contact.hero.span') + ' - Hotelier Tools',
-  meta: [
-    {
-      name: 'description',
-      content: t('contact.hero.subtitle')
-    }
-  ]
-})
+const { setSEO } = useSEO()
+setSEO('contact')
 
 // Support options
 const supportOptions = [

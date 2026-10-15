@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [ses hospedajes, spain, compliance, guest registration, little hotelier]
 keywords: [ses hospedajes, ses hospedajes en français, ses hospedajes little hotelier, fiche de police Espagne hôtel, parte de viajeros, ses hospedajes datos obligatorios, enregistrement des voyageurs Espagne]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "Réglages When they arrive dans Hotelier Tools avec les contrôles ID / passport (police register), Physical room assignment et Address and origin validation activés, chacun avec ce qu'il peut et ne peut pas faire"
@@ -127,7 +128,7 @@ La double saisie arrive quand le même client est saisi dans Little Hotelier, pu
 
 Le userscript gratuit [Chekin Connection](/tools/ui/show-chekin) ajoute un panneau Chekin à la réservation dans Little Hotelier. Vous voyez d'un coup d'œil si les clients se sont enregistrés, avec leurs noms, téléphones et numéros de document, et vous pouvez copier le numéro du document dans la réservation, par exemple pour la facture. Tant que personne ne s'est enregistré, il affiche le lien d'enregistrement avec des boutons pour l'ouvrir, le copier, l'envoyer par e-mail ou par WhatsApp. Vous devez être connecté à Chekin dans le même navigateur. C'est un script indépendant, non créé par Chekin ni par Little Hotelier. Guide d'installation : [comment installer les userscripts](/tools/ui/instructions).
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Réservation Little Hotelier avec le panneau Chekin : un client trouvé, avec nom, téléphone et numéro de document, et les boutons Use document et View in Chekin" caption="Le panneau Chekin dans la réservation Little Hotelier, avec le document du client prêt à l'emploi."}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="Réservation Little Hotelier avec le panneau Chekin : un client trouvé, avec nom, téléphone et numéro de document, et les boutons Use document et View in Chekin" caption="Le panneau Chekin dans la réservation Little Hotelier, avec le document du client prêt à l'emploi."}
 ::
 
 ### Repérer les pièces d'identité manquantes avant l'arrivée

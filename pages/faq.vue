@@ -46,15 +46,14 @@
 
 <script setup>
 const { t } = useI18n()
-const { setSEO, setStructuredData, setBreadcrumbs, setFAQStructuredData } = useSEO()
+const { setSEO, setBreadcrumbs, setFAQStructuredData } = useSEO()
 const localePath = useLocalePath()
 
 // Set SEO metadata for FAQ page
 setSEO('faq')
 
-// Set structured data and breadcrumbs
-onMounted(() => {
-  // Set FAQ structured data using proper translation keys
+// Structured data and breadcrumbs, rendered on the server
+{
   const faqItems = [
     {
       question: t('documentation.faq.items.security.label'),
@@ -110,7 +109,7 @@ onMounted(() => {
   
   setBreadcrumbs([
     { name: t('nav.home'), url: '/' },
-    { name: 'FAQ', url: '/faq' }
+    { name: t('seo.pages.faq.title'), url: '/faq' }
   ])
-})
+}
 </script>

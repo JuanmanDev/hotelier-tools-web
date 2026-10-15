@@ -198,6 +198,8 @@ curl -X POST "https://dashboard.hotelier.tools/api/v1/methods/getReservationsByD
 - **ผู้ช่วย AI** คีย์เดียวกันใช้กับ MCP server ของ Hotelier Tools (`https://dashboard.hotelier.tools/api/mcp`) ได้ ซึ่งมีเครื่องมือด้านโรงแรมกว่า 100 รายการให้ Claude, ChatGPT, Cursor หรือ VS Code ใช้ เริ่มจาก[MCP server คืออะไร](/blog/what-is-mcp-server-hotels) แล้ว[เชื่อมต่อ Claude](/blog/connect-claude-to-little-hotelier) หรือตั้งค่า [Claude Code, Cursor และ VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode)
 - **เชื่อมเครื่องมือต่างๆ เข้าด้วยกัน** ถ้าไม่มีแอปใน App Store ที่ตรงความต้องการ สคริปต์เล็กๆ ก็ย้ายข้อมูลระหว่าง Little Hotelier กับเครื่องมืออื่นที่คุณใช้ได้ เปรียบเทียบตัวเลือกใน[การเชื่อมต่อ Little Hotelier ที่ดีที่สุด](/blog/little-hotelier-integrations)
 
+อ่านเพิ่มเติม: [ทางเลือกอื่นแทน Little Hotelier](/blog/little-hotelier-alternatives)
+
 ## ขั้นตอนถัดไป
 
 - หากคุณสร้างซอฟต์แวร์ให้โรงแรมหลายแห่ง ให้สมัครโปรแกรมพันธมิตรของ SiteMinder และใช้ SMX

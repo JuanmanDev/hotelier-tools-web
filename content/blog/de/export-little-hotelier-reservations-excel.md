@@ -181,6 +181,8 @@ Der Assistent liest Ihre Reservierungen über den MCP-Server und gibt die Tabell
 ::demo-cta{path="/methods"}
 ::
 
+Siehe auch: [Little-Hotelier-Integrationen](/blog/little-hotelier-integrations), [alle Rechnungen auf einmal herunterladen](/blog/download-all-little-hotelier-invoices), [die INE-Belegungsstatistik](/blog/ine-hotel-occupancy-survey).
+
 ## Zusammenfassung
 
 - **Von Hand:** **Reservations → Search → Export** liefert eine CSV mit Gästenamen, E-Mail-Adressen und Anschriften, aber ohne Telefonnummern.

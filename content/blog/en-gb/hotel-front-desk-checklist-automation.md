@@ -119,6 +119,8 @@ Every run sends **one report email per job**, in the language you set for that j
 
 Every task is listed under **Cron Jobs** (`/cron`) and every run under **Run History** (`/cron-logs`). The feature is in beta. More on scheduling on the [Automations page](/tools/bot/automations), and the full feature on [Automated checks](/tools/bot/automated-checks).
 
+See also: [the Little Hotelier guide](/blog/little-hotelier-tips), [the AI assistant for the front desk](/blog/ai-assistant-hotel-front-desk), [a waitlist for sold-out dates](/blog/hotel-waitlist-sold-out-dates).
+
 ## Summary
 
 - Check eight things before each arrival: room, balance, card, ID, address, guest count, arrival time and your do-not-rebook list.

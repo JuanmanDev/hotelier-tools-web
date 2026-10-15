@@ -26,6 +26,27 @@ Página web oficial de Hotelier Tools - Herramientas especializadas para hoteles
 - **TypeScript**: Soporte completo
 - **Deploy**: Vercel
 
+## 🔍 SEO
+
+El SEO del sitio se audita con **[Claude SEO](https://github.com/AgriciDaniel/claude-seo)** ([claude-seo.md](https://claude-seo.md)), un plugin de [Claude Code](https://claude.com/claude-code) de AgriciDaniel que analiza el sitio con subagentes especializados (técnico, contenido, schema, sitemap, rendimiento, visual, GEO/IA, agentes, SXO, clusters y backlinks) y devuelve un informe con puntuación y un plan de acción priorizado.
+
+```bash
+# Dentro de Claude Code, con el plugin instalado
+/claude-seo:seo setup                            # crea su entorno Python aislado y Chromium (una vez)
+/claude-seo:seo audit https://hotelier.tools/    # auditoría completa
+/claude-seo:seo page https://hotelier.tools/blog/little-hotelier-api   # una sola página
+/claude-seo:seo drift baseline https://hotelier.tools/                 # foto para comparar tras cada despliegue
+```
+
+La última auditoría (15 de octubre de 2026, puntuación 70/100) y su seguimiento están en [`hotelier.tools-audit/`](hotelier.tools-audit/):
+
+- [Informe completo](hotelier.tools-audit/FULL-AUDIT-REPORT.md)
+- [Plan de acción y estado de cada punto](hotelier.tools-audit/ACTION-PLAN.md)
+- [Hallazgos por área](hotelier.tools-audit/findings/) y [capturas](hotelier.tools-audit/screenshots/)
+- [Datos estructurados del informe](hotelier.tools-audit/audit-data.json)
+
+Tras cada despliegue a `main`, la acción [IndexNow](.github/workflows/indexnow.yml) avisa a Bing y otros buscadores de las URLs del sitemap (`scripts/indexnow.mjs`).
+
 ## 📦 Instalación
 
 ```bash

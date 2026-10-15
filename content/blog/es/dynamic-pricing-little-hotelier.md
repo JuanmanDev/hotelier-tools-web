@@ -153,6 +153,8 @@ Solo escribe estancias mínimas si lo permites aparte, y **nunca** cambia el sto
 3. Aplica a mano durante unas semanas. Revisa el historial de precios.
 4. Solo entonces plantéate el piloto automático, con un horizonte corto y los emails de cambios activados.
 
+Guías relacionadas: [la guía de Little Hotelier](/blog/little-hotelier-tips), [mostrar precios en el calendario](/tools/ui/prices-display).
+
 ## Resumen
 
 - Los precios dinámicos de un hotel pequeño son unas pocas decisiones constantes: ocupación, competidores comparables, eventos, antelación, un mínimo y un máximo.

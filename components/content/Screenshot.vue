@@ -5,7 +5,7 @@
         <span class="w-2.5 h-2.5 rounded-full bg-rose-400" />
         <span class="w-2.5 h-2.5 rounded-full bg-amber-400" />
         <span class="w-2.5 h-2.5 rounded-full bg-emerald-400" />
-        <span class="ml-3 flex-1 truncate rounded-md bg-white dark:bg-gray-900 px-2 py-0.5 text-[11px] text-gray-500 dark:text-gray-400">{{ urlLabel }}</span>
+        <span class="ml-3 flex-1 truncate rounded-md bg-white dark:bg-gray-900 px-2 py-0.5 text-xs text-gray-500 dark:text-gray-400">{{ urlLabel }}</span>
       </div>
       <img
         :src="src"

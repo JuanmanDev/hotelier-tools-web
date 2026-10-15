@@ -152,6 +152,8 @@ Hotelier Tools ตรวจจับรูปแบบวันในสัป�
 ::demo-cta{path="/pricing/settings/restrictions"}
 ::
 
+อ่านเพิ่มเติม: [ค่าคอมมิชชัน Booking.com](/blog/booking-com-commission), [รายการรอสำหรับวันที่เต็ม](/blog/hotel-waitlist-sold-out-dates)
+
 ## สรุป
 
 - **CTA** ปิดรับเช็คอินในวันนั้น **CTD** ปิดรับเช็คเอาท์ **จำนวนคืนขั้นต่ำ** กำหนดความยาวการจองที่สั้นที่สุด และ **stop sell** ปิดขายราคาห้องโดยคงจำนวนห้องไว้

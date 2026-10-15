@@ -154,6 +154,8 @@ MCP lui-même est gratuit : c'est un standard ouvert. Vous payez les éléments
 ::demo-cta{path="/chat"}
 ::
 
+À lire aussi : [le guide Little Hotelier](/blog/little-hotelier-tips).
+
 ## Résumé
 
 - Un serveur MCP est un menu d'outils qu'un assistant IA peut utiliser dans votre logiciel, fondé sur un standard ouvert d'Anthropic, désormais placé sous l'égide de la Linux Foundation.

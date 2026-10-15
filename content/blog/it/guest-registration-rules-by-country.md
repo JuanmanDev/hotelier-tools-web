@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [guest registration, compliance, id, police, little hotelier]
 keywords: [alloggiati web, comunicazione ospiti questura, alloggiati web polizia di stato, registrazione ospiti hotel documento, perché gli hotel chiedono il passaporto, schedina alloggiati]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "Controlli When they arrive in Hotelier Tools: ID / passport (police register), assegnazione fisica della camera e validazione di indirizzo e provenienza attivati, con ciò che ogni controllo può e non può fare"
@@ -114,7 +115,7 @@ A ottobre 2026 il sito dell'Immigration Bureau non si caricava dall'Europa, quin
 
 La prenotazione di Little Hotelier ha una scheda **Guests** con un modulo per ogni ospite. Oltre a nome, email e telefono ci sono il genere, un secondo cognome e, sotto la freccia di espansione, il tipo di documento, il numero del documento, la nazionalità, la data di rilascio, la data di scadenza, la data di nascita e un indirizzo completo con paese, città, provincia e CAP ([modificare una prenotazione](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)). Aggiungi i compagni di viaggio come ospiti aggiuntivi.
 
-::screenshot{src="/images/scripts/easy-save-province-country/from.png" alt="Scheda Guests di una prenotazione di Little Hotelier in spagnolo con nome, cognomi, tipo di documento, numero del documento, nazionalità, date di rilascio e di scadenza, data di nascita e campi dell'indirizzo" caption="La scheda Guests ha già i campi che la maggior parte delle regole di registrazione richiede (interfaccia in spagnolo)."}
+::screenshot{src="/images/scripts/easy-save-province-country/from.webp" alt="Scheda Guests di una prenotazione di Little Hotelier in spagnolo con nome, cognomi, tipo di documento, numero del documento, nazionalità, date di rilascio e di scadenza, data di nascita e campi dell'indirizzo" caption="La scheda Guests ha già i campi che la maggior parte delle regole di registrazione richiede (interfaccia in spagnolo)."}
 ::
 
 Tre modi per compilarli senza riscrivere tutto:
@@ -123,7 +124,7 @@ Tre modi per compilarli senza riscrivere tutto:
 2. **Un partner di check-in.** [Chekin](https://helpcentre.littlehotelier.com/en/articles/8674162-connecting-to-chekin) si collega tramite l'App Store e comunica alla polizia in molti paesi, tra cui Spagna, Italia, Portogallo, Francia, Germania e Thailandia. Se lo usi, lo userscript gratuito [Chekin Connection](/tools/ui/show-chekin) mostra la registrazione di ogni ospite dentro la prenotazione di Little Hotelier.
 3. **Alla reception.** Per gli ospiti spagnoli, lo userscript gratuito [Easy Save Province and Country](/tools/ui/easy-save-province-country) trasforma il campo della provincia in un elenco di province spagnole e imposta il paese su Spagna quando ne scegli una.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Scheda Guests di Little Hotelier con l'elenco delle province spagnole di Easy Save Province and Country aperto sotto il campo Province/Region" caption="Scegli la provincia da un elenco e il paese si compila da solo."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="Scheda Guests di Little Hotelier con l'elenco delle province spagnole di Easy Save Province and Country aperto sotto il campo Province/Region" caption="Scegli la provincia da un elenco e il paese si compila da solo."}
 ::
 
 ### Individua i documenti mancanti prima della scadenza
@@ -132,6 +133,8 @@ In diversi paesi comunicare dati incompleti o in ritardo è già di per sé un'i
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+Guide correlate: [la guida a Little Hotelier](/blog/little-hotelier-tips).
 
 ## Riepilogo
 

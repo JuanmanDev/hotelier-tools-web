@@ -7,7 +7,10 @@
     "documentation": "Documentation",
     "contact": "Contact",
     "search": "Rechercher",
-    "blog": "Guides"
+    "blog": "Guides",
+    "toggleTheme": "Changer de thème",
+    "openMenu": "Ouvrir le menu",
+    "language": "Changer de langue"
   },
   "search": {
     "placeholder": "Rechercher des outils, documentation et contenu...",
@@ -40,18 +43,6 @@
         "secure": "Sécurisé et fiable",
         "support": "Support Rapide",
         "easy": "Facile à utiliser"
-      },
-      "cards": {
-        "extensions": {
-          "title": "Scripts de Navigateur Web",
-          "description": "Améliorez l'interface de Little Hotelier directement dans votre navigateur. Rend l'utilisation du web beaucoup plus facile sans modifications majeures et complètement gratuit.",
-          "button": "Voir les Améliorations"
-        },
-        "automations": {
-          "title": "Automatisations Avancées",
-          "description": "Un bot effectuera des tâches avancées qui économisent le temps de révision et préviennent les erreurs, évitant l'insatisfaction des clients et les plaintes possibles.",
-          "button": "Voir les Automatisations"
-        }
       }
     },
     "animation": {
@@ -176,40 +167,9 @@
       }
     },
     "features": {
-      "title": "Pourquoi choisir Hotelier Tools ?",
-      "subtitle": "Fonctionnalités qui font la différence dans votre gestion hôtelière",
-      "chrome": {
-        "title": "Scripts Web pour Navigateurs",
-        "description": "Améliorez l'interface de Little Hotelier directement dans votre navigateur",
-        "view_extensions": "Voir les Extensions",
-        "benefits": [
-          "Tableaux pleine largeur",
-          "Calculateur de commissions",
-          "Meilleure visualisation des données",
-          "Interface optimisée"
-        ]
-      },
       "automation": {
         "title": "Automatisations",
-        "description": "Tâches automatiques qui économisent du temps et réduisent les erreurs",
-        "see_more": "Voir plus d'automatisations",
-        "benefits": [
-          "Check-out automatique",
-          "Validation des paiements",
-          "Gestion des factures",
-          "Surveillance des réservations"
-        ]
-      },
-      "notifications": {
-        "title": "Notifications",
-        "description": "Restez informé de tout ce qui se passe dans votre hôtel",
-        "check_available": "Vérifier les notifications disponibles",
-        "benefits": [
-          "Alertes en temps réel",
-          "Emails automatiques",
-          "Tableau de bord centralisé",
-          "Rapports détaillés"
-        ]
+        "description": "Tâches automatiques qui économisent du temps et réduisent les erreurs"
       }
     },
     "testimonials": {
@@ -238,53 +198,32 @@
       ]
     },
     "stats": {
-      "title": "Les résultats parlent d'eux-mêmes",
-      "subtitle": "Découvrez l'impact de nos outils",
-      "error_reduction": "Réduction des erreurs",
-      "time_saved": "Temps économisé quotidiennement",
-      "conversion_increase": "Augmentation de la conversion",
-      "monitoring": "Surveillance continue"
+      "title": "Hotelier Tools en chiffres",
+      "subtitle": "Comptés à partir de ce que ce site publie aujourd'hui, sans estimation.",
+      "scripts": "Scripts gratuits pour navigateur",
+      "guides": "Guides pratiques",
+      "languages": "Langues",
+      "features": "Fonctionnalités du tableau de bord"
     },
     "cta": {
       "title": "Prêt à optimiser votre hôtel ?",
       "subtitle": "Rejoignez les hôtels qui améliorent déjà leur gestion avec nos outils",
-      "start_now": "Commencer Maintenant",
-      "talk_sales": "Parler aux Ventes"
+      "start_now": "Commencer Maintenant"
     }
   },
   "tools": {
     "hero": {
       "title": "Outils pour {span}",
       "span": "Little Hotelier",
-      "subtitle": "Découvrez notre collection complète d'outils conçus spécifiquement pour optimiser votre gestion hôtelière avec Little Hotelier de Siteminder."
+      "subtitle": "Un tableau de bord pour toute la réception et des scripts gratuits pour navigateur, tous deux conçus pour Little Hotelier de SiteMinder. Des outils indépendants, sans lien avec SiteMinder."
     },
     "showcase": {
-      "title": "Nos Outils",
-      "subtitle": "Découvrez les outils qui vont révolutionner votre gestion hôtelière",
+      "title": "Nos outils",
+      "subtitle": "Un tableau de bord pour toute la réception, et des scripts gratuits qui accélèrent Little Hotelier dans votre navigateur.",
       "categories": {
         "all": "Tous",
         "chrome_extension": "Scripts Web pour Navigateurs",
         "automation": "Automatisations"
-      },
-      "card": {
-        "features": "Fonctionnalités principales :",
-        "more_features": "+{count} fonctionnalités supplémentaires",
-        "actions": {
-          "use_now": "Utiliser Maintenant",
-          "beta": "Bêta",
-          "coming_soon": "Bientôt Disponible"
-        }
-      },
-      "cta": {
-        "title": "Besoin d'un outil personnalisé ?",
-        "description": "Contactez-nous pour développer des solutions spécifiques à votre hôtel",
-        "button": "Contact"
-      },
-      "status": {
-        "available": "Disponible",
-        "beta": "Bêta",
-        "coming_soon": "Bientôt Disponible",
-        "unknown": "Inconnu"
       },
       "tools": {
         "ui_enhancer": {
@@ -479,6 +418,22 @@
             "Notifications de champs manquants"
           ]
         }
+      },
+      "dashboard": {
+        "name": "Tableau de bord Hotelier Tools",
+        "description": "Une application web qui se connecte à votre compte Little Hotelier et à Booking.com. Factures, vérifications, prix, messages des clients, rapports et plus encore, au même endroit."
+      },
+      "scripts": {
+        "name": "Scripts gratuits pour Little Hotelier dans votre navigateur",
+        "description": "Des scripts Tampermonkey open source qui accélèrent Little Hotelier dans Chrome, Edge et Firefox. Chacun règle un petit désagrément de la réception, et ils sont gratuits.",
+        "benefits": [
+          "Tableaux pleine largeur et calendrier compact",
+          "Prix affichés directement dans le calendrier",
+          "Commissions Booking.com sur chaque réservation",
+          "Une mise en page adaptée aux écrans tactiles"
+        ],
+        "cta": "Voir les scripts gratuits",
+        "install_guide": "Comment les installer"
       }
     },
     "categories": {
@@ -617,7 +572,7 @@
       "urgent": {
         "title": "Support Urgent",
         "description": "Pour les problèmes critiques affectant le fonctionnement de votre hôtel",
-        "response": "Réponse immédiate"
+        "response": "Réponse rapide pendant les heures d'assistance"
       },
       "consulting": {
         "title": "Conseil Technique",
@@ -688,7 +643,8 @@
         "title": "Première utilisation de Hotelier Tools ?",
         "recommendation": "Si c'est votre première utilisation de nos outils, nous recommandons de commencer par les scripts d'amélioration web car ils sont plus faciles à installer et utiliser.",
         "view_scripts": "Voir les scripts disponibles",
-        "view_automations": "Voir les automatisations disponibles"
+        "view_automations": "Voir les automatisations disponibles",
+        "description": "Nous recommandons de commencer par les scripts d'amélioration web, car ils sont plus faciles à installer et offrent des avantages immédiats."
       }
     },
     "web_scripts": {
@@ -699,7 +655,23 @@
         "chrome": "Chrome : Compatibilité complète",
         "edge": "Edge : Compatibilité complète",
         "firefox": "Firefox : Compatibilité complète",
-        "safari": "Safari : Compatibilité complète"
+        "safari": "Safari : Compatibilité complète",
+        "desktop": {
+          "title": "Navigateurs de bureau",
+          "browsers": [
+            "Chrome (recommandé)",
+            "Microsoft Edge",
+            "Mozilla Firefox",
+            "Safari",
+            "Opera"
+          ]
+        },
+        "mobile": {
+          "title": "Navigateurs mobiles",
+          "standard": "Chrome/Safari mobile standard",
+          "kiwi": "Kiwi Browser (Android)",
+          "complex_config": "*Configuration plus complexe"
+        }
       },
       "tampermonkey_requirement": {
         "title": "Exigence Tampermonkey",
@@ -885,9 +857,80 @@
               "url": "/contact"
             }
           ]
+        },
+        "script_updates": {
+          "label": "Comment mettre à jour les scripts d'amélioration web ?",
+          "content": "Dans le panneau d'administration de Tampermonkey, vous recevrez une notification pour mettre à jour les scripts, mais vous pouvez toujours copier et coller la dernière version depuis le dépôt.",
+          "links": [
+            {
+              "text": "Guide de mise à jour",
+              "url": "/tools/ui/instructions"
+            },
+            {
+              "text": "Voir les derniers scripts",
+              "url": "/tools/ui"
+            }
+          ]
+        },
+        "automation_permissions": {
+          "label": "De quelles permissions les automatisations ont-elles besoin ?",
+          "content": "Les automatisations ne nécessitent que des permissions limitées de lecture et d'écriture sur votre compte Little Hotelier. Nous ne demandons jamais de permissions administratives complètes et n'accédons qu'aux données minimales nécessaires.",
+          "links": [
+            {
+              "text": "Voir la documentation",
+              "url": "/documentation"
+            },
+            {
+              "text": "Nous contacter pour plus de détails",
+              "url": "/contact"
+            }
+          ]
+        },
+        "disable_automation": {
+          "label": "Puis-je désactiver temporairement une automatisation ?",
+          "content": "Oui, vous pouvez mettre en pause n'importe quelle automatisation en contactant notre support. Nous travaillons sur un panneau de contrôle qui vous permettra de gérer toutes vos automatisations. Vous pouvez aussi désactiver l'utilisateur fourni et les automatisations cesseront de fonctionner.",
+          "links": [
+            {
+              "text": "Contacter le support",
+              "url": "/contact"
+            },
+            {
+              "text": "Gestion des automatisations",
+              "url": "/tools/bot"
+            }
+          ]
+        },
+        "pricing": {
+          "label": "Quel est le prix des outils ?",
+          "content": "Le tableau de bord est gratuit pour tous les hôtels jusqu'au 9 janvier 2027. La facturation commence le 10 janvier 2027, et les hôtels qui l'essaient en 2026 paient 50 € par mois pendant toute l'année 2027. Les scripts de navigateur restent gratuits.",
+          "links": [
+            {
+              "text": "Voir les outils gratuits",
+              "url": "/tools/ui"
+            },
+            {
+              "text": "Consulter les tarifs",
+              "url": "/contact"
+            }
+          ]
+        },
+        "data_privacy": {
+          "label": "À quelles données accédez-vous et comment les protégez-vous ?",
+          "content": "Nous n'accédons qu'aux données minimales nécessaires à chaque fonction. Nous ne stockons pas d'informations sensibles sur les clients ni d'informations financières. Toutes les données sont traitées de manière sécurisée.",
+          "links": [
+            {
+              "text": "Voir la documentation",
+              "url": "/documentation"
+            },
+            {
+              "text": "Nous contacter pour plus d'informations",
+              "url": "/contact"
+            }
+          ]
         }
       }
-    }
+    },
+    "permissions_alt": "Écran des autorisations utilisateur dans Little Hotelier"
   },
   "footer": {
     "description": "Optimisez votre gestion hôtelière avec des outils spécifiquement conçus pour Little Hotelier de Siteminder.",
@@ -1042,19 +1085,19 @@
         "ogDescription": "Apprenez comment installer et utiliser nos outils de gestion hôtelière avec des guides étape par étape et de la documentation."
       },
       "contact": {
-        "title": "Contactez-Nous - Support Hotelier Tools",
+        "title": "Contact et assistance",
         "description": "Entrez en contact avec notre équipe de support pour de l'aide avec les outils de gestion hôtelière, le support technique ou les demandes commerciales.",
         "ogTitle": "Contact Support Hotelier Tools",
         "ogDescription": "Contactez notre équipe de support pour de l'aide avec les outils de gestion hôtelière et l'assistance technique."
       },
       "faq": {
-        "title": "Questions Fréquemment Posées - Hotelier Tools",
+        "title": "Questions Fréquemment Posées",
         "description": "Trouvez des réponses aux questions courantes sur nos outils de gestion hôtelière, l'installation, la tarification et le support technique.",
         "ogTitle": "FAQ - Hotelier Tools",
         "ogDescription": "Obtenez des réponses aux questions fréquemment posées sur nos outils de gestion hôtelière et services."
       },
       "marketing": {
-        "title": "Outils Marketing Hôteliers - Boostez Vos Réservations Directes | Hotelier Tools",
+        "title": "Outils Marketing Hôteliers - Boostez Vos Réservations Directes",
         "description": "Découvrez les stratégies et outils marketing pour augmenter les réservations directes de votre hôtel. Réduisez les commissions OTA et améliorez la rentabilité avec nos solutions spécialisées.",
         "ogTitle": "Outils Marketing Hôteliers - Boostez les Réservations Directes",
         "ogDescription": "Augmentez les réservations directes et réduisez la dépendance aux OTA avec nos outils et stratégies marketing hôteliers spécialisés."
@@ -1064,6 +1107,22 @@
         "description": "Guides pas à pas pour les hôtels sous Little Hotelier : utiliser une API, connecter Claude ou ChatGPT via MCP, télécharger les factures, automatiser contrôles, prix et messages.",
         "ogTitle": "Guides et tutoriels Little Hotelier",
         "ogDescription": "Des tutoriels pratiques pour Little Hotelier, avec des captures d’une démo réelle."
+      },
+      "uiScripts": {
+        "title": "Scripts Tampermonkey gratuits pour Little Hotelier",
+        "description": "Scripts Tampermonkey gratuits qui améliorent Little Hotelier : calendrier compact, commissions Booking.com, tableaux pleine largeur, impression des factures plus rapide, et plus encore. Installation en un clic.",
+        "ogTitle": "Scripts de navigateur gratuits pour Little Hotelier",
+        "ogDescription": "De petites améliorations gratuites pour les écrans Little Hotelier que vous utilisez chaque jour."
+      },
+      "uiScript": {
+        "title": "{name} pour Little Hotelier (script gratuit)",
+        "description": "{name} : un script Tampermonkey gratuit pour Little Hotelier. Découvrez ce qu'il change et installez-le en un clic."
+      },
+      "uiInstructions": {
+        "title": "Installer les scripts Tampermonkey pour Little Hotelier",
+        "description": "Guide pas à pas pour installer les scripts Tampermonkey gratuits de Hotelier Tools pour Little Hotelier. Ajoutez Tampermonkey, copiez le code et enregistrez.",
+        "ogTitle": "Comment installer les scripts pour Little Hotelier",
+        "ogDescription": "Installez Tampermonkey et les scripts gratuits de Hotelier Tools pour Little Hotelier en quelques minutes, avec des captures de chaque étape."
       }
     }
   },
@@ -1225,7 +1284,7 @@
   "platform": {
     "pause": "Mettre le diaporama en pause",
     "play": "Reprendre le diaporama",
-    "title": "Tout ce dont votre réception a besoin, dans un seul tableau de bord",
+    "title": "Tout ce dont votre réception Little Hotelier a besoin, dans un seul tableau de bord",
     "subtitle": "Hotelier Tools se connecte à Little Hotelier et Booking.com. Factures, vérifications, prix, messages des clients et rapports officiels se gèrent tout seuls, et vous validez ce qui compte vraiment.",
     "open_dashboard": "Ouvrir le tableau de bord",
     "status": {
@@ -1585,7 +1644,12 @@
       "text": "Factures, vérifications, prix, messages des clients et rapports INE pour Little Hotelier. Gratuit jusqu'au 10 janvier 2027.",
       "features": "Voir toutes les fonctionnalités"
     },
-    "learn_more": "En savoir plus"
+    "learn_more": "En savoir plus",
+    "home_overview": {
+      "title": "Commencez la journée sur un seul écran",
+      "description": "Connectez-vous et voyez ce qui est connecté, ce qui tourne et qui arrive ensuite. Trouvez n'importe quelle page en tapant ce qu'il vous faut. La page du tableau de bord propose la visite complète."
+    },
+    "sent_by": "Envoyé par Hotelier Tools"
   },
   "pricing": {
     "title": "Gratuit jusqu'au {date}",
@@ -1703,5 +1767,96 @@
         "description": "De petits changements qui rendent Little Hotelier plus rapide au quotidien."
       }
     }
+  },
+  "instructions": {
+    "hero": {
+      "title": "Instructions",
+      "title_span": "d'installation",
+      "subtitle": "Guide pas à pas pour installer et configurer les scripts d'amélioration web pour Little Hotelier"
+    },
+    "overview": {
+      "title": "De quoi avez-vous besoin ?",
+      "browser_title": "Navigateur compatible",
+      "browser_text": "Chrome, Edge, Firefox, Safari ou Opera",
+      "time_title": "Durée estimée",
+      "time_text": "5 à 10 minutes par script"
+    },
+    "step1": {
+      "title": "Installer Tampermonkey",
+      "intro_1": "Tampermonkey est l'extension qui permet d'exécuter des scripts personnalisés dans votre navigateur.",
+      "intro_2": "Choisissez la version standard, et non la version bêta ou legacy.",
+      "go_to_site": "Rendez-vous sur le site de Tampermonkey et choisissez la version correspondant à votre navigateur ; cela devrait se faire automatiquement.",
+      "download_button": "Télécharger Tampermonkey",
+      "new_tab_note": "Le site s'ouvrira dans un nouvel onglet. Suivez les instructions d'installation de votre navigateur.",
+      "alt_site": "Page de téléchargement de Tampermonkey",
+      "browser_store": "Selon votre navigateur, vous devrez cliquer sur Ajouter à Chrome, Ajouter à Firefox, etc.",
+      "alt_chrome_store": "Tampermonkey sur le Chrome Web Store",
+      "alt_edge_store": "Tampermonkey sur la boutique de modules complémentaires de Microsoft Edge",
+      "confirm": "Confirmez l'installation et attendez que l'extension soit ajoutée à votre navigateur.",
+      "alt_confirm": "Message du navigateur demandant de confirmer l'installation de Tampermonkey"
+    },
+    "step2": {
+      "title": "Choisir un script d'amélioration",
+      "text": "Rendez-vous sur notre page de scripts et choisissez celui que vous souhaitez installer.",
+      "alt": "Liste des scripts disponibles",
+      "button": "Voir les scripts disponibles"
+    },
+    "step3": {
+      "title": "Copier le code du script",
+      "text": "Une fois le script choisi, cliquez sur « Voir le code du script sur GitHub pour le copier » et copiez tout le code.",
+      "alt": "Page du script sur GitHub avec le code visible",
+      "tip_title": "Conseil important",
+      "tip_text": "Veillez à copier tout le code, de la première à la dernière ligne. Il est recommandé d'utiliser le bouton Copy Raw file."
+    },
+    "step4": {
+      "title": "Créer un nouveau script dans Tampermonkey",
+      "text": "Ouvrez Tampermonkey depuis l'icône de votre navigateur et créez un nouveau script.",
+      "alt_menu": "Menu de Tampermonkey avec l'option de création d'un nouveau script",
+      "option1_title": "Option 1 : depuis l'icône",
+      "option1_text": "Cliquez sur l'icône de Tampermonkey → « Create a new script »",
+      "option2_title": "Option 2 : depuis le tableau de bord",
+      "option2_text": "Ouvrez le tableau de bord de Tampermonkey → onglet « Scripts » → « + »",
+      "editor_text": "Un éditeur s'ouvrira, dans lequel vous pourrez coller le code du script.",
+      "alt_editor": "Éditeur de Tampermonkey avec le modèle d'un nouveau script"
+    },
+    "step5": {
+      "title": "Coller et enregistrer le script",
+      "text_1": "Remplacez le code du modèle par le script copié, puis enregistrez.",
+      "text_2": "Vous pouvez utiliser Ctrl+A pour tout sélectionner, Ctrl+V pour coller et Ctrl+S pour enregistrer.",
+      "alert_title": "Les raccourcis clavier facilitent la tâche",
+      "alert_text": "Vous pouvez utiliser Ctrl+A pour tout sélectionner, Ctrl+V pour coller et Ctrl+S pour enregistrer.",
+      "select_title": "1. Tout sélectionner",
+      "select_text": "Ctrl+A pour sélectionner",
+      "paste_title": "2. Coller le code",
+      "paste_text": "Ctrl+V pour coller",
+      "save_title": "3. Enregistrer",
+      "save_text": "Ctrl+S ou bouton d'enregistrement",
+      "alt_pasted": "Éditeur de Tampermonkey avec le code du script collé",
+      "saved_text": "Vérifiez que le script est bien enregistré dans Tampermonkey.",
+      "alt_saved": "Menu Fichier de Tampermonkey avec l'option Enregistrer"
+    },
+    "step6": {
+      "title": "C'est prêt ! Rechargez Little Hotelier",
+      "text": "Rechargez la page de Little Hotelier et profitez des améliorations.",
+      "alt": "Little Hotelier avec les améliorations appliquées",
+      "success_title": "Félicitations !",
+      "success_text": "Le script devrait fonctionner. Si vous ne voyez aucun changement, vérifiez que le script est activé dans Tampermonkey."
+    },
+    "help": {
+      "title": "Besoin d'aide ?",
+      "text": "Si vous avez des questions ou rencontrez des problèmes pendant l'installation, n'hésitez pas à nous contacter.",
+      "contact": "Contacter le support",
+      "faq": "Voir la foire aux questions",
+      "repo": "Voir le dépôt de code des scripts sur GitHub pour signaler des erreurs"
+    }
+  },
+  "legal": {
+    "nav": {
+      "about": "À propos",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation"
+    },
+    "updated": "Dernière mise à jour : {date}",
+    "related": "En savoir plus sur Hotelier Tools"
   }
 }

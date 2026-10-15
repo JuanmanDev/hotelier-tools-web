@@ -181,6 +181,8 @@ The assistant reads your reservations through the MCP server and returns the tab
 ::demo-cta{path="/methods"}
 ::
 
+See also: [Little Hotelier integrations](/blog/little-hotelier-integrations), [downloading all your invoices at once](/blog/download-all-little-hotelier-invoices), [the INE occupancy survey](/blog/ine-hotel-occupancy-survey).
+
 ## Summary
 
 - **By hand:** **Reservations → Search → Export** gives a CSV with guest names, emails and addresses, but no phone numbers.

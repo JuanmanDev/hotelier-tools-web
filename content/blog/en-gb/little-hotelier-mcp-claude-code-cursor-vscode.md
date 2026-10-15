@@ -298,6 +298,8 @@ Coding agents are good at running tools quickly, which is exactly why you should
 ::demo-cta{path="/developer/mcp-setup"}
 ::
 
+See also: [the AI assistant for the front desk](/blog/ai-assistant-hotel-front-desk).
+
 ## Next steps
 
 - Not a developer? [Connect Claude](/blog/connect-claude-to-little-hotelier) or [ChatGPT](/blog/connect-chatgpt-to-little-hotelier) in the browser instead.

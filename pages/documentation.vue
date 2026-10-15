@@ -283,7 +283,7 @@
                   </div>
 
                   <div class="mb-6">
-                    <img src="/images/config/permissions.png" alt="Permisos de usuario en Little Hotelier" class="w-full rounded-lg shadow-md" />
+                    <img src="/images/config/permissions.webp" :alt="t('documentation.permissions_alt')" class="w-full rounded-lg shadow-md" />
                   </div>
 
                   <p class="text-gray-600 dark:text-gray-300 mb-6">
@@ -373,14 +373,8 @@ const { t, tm, rt } = useI18n()
 const localePath = useLocalePath()
 
 // SEO metadata
-definePageMeta({
-  title: 'Documentation - Hotelier Tools'
-})
-
-// Head management
-useHead({
-  title: computed(() => `${t('documentation.hero.title')} ${t('documentation.hero.span')}`)
-})
+const { setSEO } = useSEO()
+setSEO('documentation')
 
 // Reactive state - using a simple reactive approach
 let activeSection = ref('getting-started')

@@ -152,6 +152,8 @@ L'autopilota non cambia mai lo stop sell e scrive i soggiorni minimi solo se lo 
 ::demo-cta{path="/pricing/settings/restrictions"}
 ::
 
+Guide correlate: [la commissione di Booking.com](/blog/booking-com-commission), [una lista d'attesa per le date esaurite](/blog/hotel-waitlist-sold-out-dates).
+
 ## Riepilogo
 
 - **CTA** blocca i check-in in una data, **CTD** i check-out, il **soggiorno minimo** fissa la prenotazione più breve e lo **stop sell** chiude la tariffa alla vendita mantenendo il numero di camere.

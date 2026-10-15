@@ -114,7 +114,7 @@ Estes [userscripts](/tools/ui) gratuitos funcionam no seu navegador com a extens
 
 O [Prices Display](/tools/ui/prices-display) lê as suas tarifas da página de inventário e mostra-as sob cada tipo de quarto no calendário, para dar um preço ao telefone sem mudar de página.
 
-::screenshot{src="/images/scripts/prices-display/to.png" alt="Calendário do Little Hotelier em espanhol com vista de 7 dias, reservas em verde, laranja e cinzento, e o preço por noite de cada tipo de quarto em algarismos grandes sob os seus quartos" caption="Com o Prices Display, a tarifa por noite de cada tipo de quarto fica mesmo por baixo dos seus quartos."}
+::screenshot{src="/images/scripts/prices-display/to.webp" alt="Calendário do Little Hotelier em espanhol com vista de 7 dias, reservas em verde, laranja e cinzento, e o preço por noite de cada tipo de quarto em algarismos grandes sob os seus quartos" caption="Com o Prices Display, a tarifa por noite de cada tipo de quarto fica mesmo por baixo dos seus quartos."}
 ::
 
 ### 16. Deixe de voltar a uma página desatualizada
@@ -153,6 +153,8 @@ As **Automated checks** leem as próximas reservas e assinalam o que de outro mo
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+Guias relacionados: [o que é um servidor MCP](/blog/what-is-mcp-server-hotels), [preços dinâmicos no Little Hotelier](/blog/dynamic-pricing-little-hotelier), [baixar todas as faturas de uma vez](/blog/download-all-little-hotelier-invoices), [regras de registo de hóspedes por país](/blog/guest-registration-rules-by-country), [usar o WhatsApp com o Little Hotelier](/blog/whatsapp-little-hotelier), [alternativas ao Little Hotelier](/blog/little-hotelier-alternatives), [o painel do Hotelier Tools](/tools/bot/dashboard), [as automatizações do Hotelier Tools](/tools/bot/automations).
 
 ## Resumo
 

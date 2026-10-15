@@ -103,7 +103,7 @@ Drei Gewohnheiten lösen das meiste:
 2. Installieren Sie das kostenlose Userscript [Easy Save Province and Country](/tools/ui/easy-save-province-country). Wenn Sie in das Feld für die Provinz klicken, erscheint eine Liste der spanischen Provinzen, und die Auswahl setzt das Land auf Spanien.
 3. Lassen Sie [automatische Prüfungen](/tools/bot/automated-checks) Reservierungen mit fehlendem Land oder fehlender Provinz melden, nach der Buchung, bei der Anreise und beim Check-out, solange der Gast noch da ist und Sie nachfragen können.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Reiter Guests in Little Hotelier mit der Liste spanischer Provinzen von Easy Save Province and Country unter dem Feld Province/Region" caption="Das kostenlose Userscript macht aus dem Provinzfeld eine Auswahlliste und setzt das Land für Sie."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="Reiter Guests in Little Hotelier mit der Liste spanischer Provinzen von Easy Save Province and Country unter dem Feld Province/Region" caption="Das kostenlose Userscript macht aus dem Provinzfeld eine Auswahlliste und setzt das Land für Sie."}
 ::
 
 ## Der schnellere Weg: der INE-Bericht direkt aus Little Hotelier

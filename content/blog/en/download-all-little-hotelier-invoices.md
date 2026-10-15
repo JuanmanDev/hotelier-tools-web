@@ -136,6 +136,8 @@ In Spain this feeds your VAT return ([modelo 303](https://sede.agenciatributaria
 
 Developers can also fetch invoice PDFs one by one through the [Hotelier Tools REST API](/blog/little-hotelier-api). And if your accountant wants reservation data too, see [how to export reservations to Excel](/blog/export-little-hotelier-reservations-excel).
 
+See also: [the Little Hotelier guide](/blog/little-hotelier-tips), [Little Hotelier integrations](/blog/little-hotelier-integrations).
+
 ## Summary
 
 - Little Hotelier's **Invoice report** zips the PDFs of invoices that already exist; the **Accounting report** exports finalized invoices as a CSV for Xero or QuickBooks.

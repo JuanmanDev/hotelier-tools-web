@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [guest registration, compliance, id, police, little hotelier]
 keywords: [hotel check in id requirements, why do hotels scan your passport, guest registration hotel police, alloggiati web, meldeschein hotel, fiche de police hotel, siba alojamento local, tm30 hotel]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "When they arrive checks in Hotelier Tools: ID / passport (police register), physical room assignment and address and origin validation switched on, with what each check can and cannot do"
@@ -114,7 +115,7 @@ The Immigration Bureau's site could not be loaded from Europe in October 2026, s
 
 Little Hotelier's reservation has a **Guests** tab with a form for each guest. Besides name, email and phone, it has gender, a second surname, and, under the expand arrow, the ID document type, ID number, nationality, issue date, expiry date, date of birth and a full address with country, city, state and postcode ([edit a reservation](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)). Add companions as extra guests.
 
-::screenshot{src="/images/scripts/easy-save-province-country/from.png" alt="Little Hotelier reservation Guests tab in Spanish with name, surnames, ID document type, ID number, nationality, issue and expiry dates, date of birth and address fields" caption="The Guests tab already has the fields most registration rules ask for (Spanish interface shown)."}
+::screenshot{src="/images/scripts/easy-save-province-country/from.webp" alt="Little Hotelier reservation Guests tab in Spanish with name, surnames, ID document type, ID number, nationality, issue and expiry dates, date of birth and address fields" caption="The Guests tab already has the fields most registration rules ask for (Spanish interface shown)."}
 ::
 
 Three ways to fill them without retyping:
@@ -123,7 +124,7 @@ Three ways to fill them without retyping:
 2. **A check-in partner.** [Chekin](https://helpcentre.littlehotelier.com/en/articles/8674162-connecting-to-chekin) connects through the App Store and reports to the police in many countries, including Spain, Italy, Portugal, France, Germany and Thailand. If you use it, the free [Chekin Connection](/tools/ui/show-chekin) userscript shows each guest's registration inside the Little Hotelier reservation.
 3. **At the desk.** For Spanish guests, the free [Easy Save Province and Country](/tools/ui/easy-save-province-country) userscript turns the province field into a list of Spanish provinces and sets the country to Spain when you pick one.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Little Hotelier Guests tab with the Easy Save Province and Country list of Spanish provinces open under the Province/Region field" caption="Pick the province from a list and the country fills itself."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="Little Hotelier Guests tab with the Easy Save Province and Country list of Spanish provinces open under the Province/Region field" caption="Pick the province from a list and the country fills itself."}
 ::
 
 ### Catch missing IDs before the deadline
@@ -132,6 +133,8 @@ Incomplete or late data is an offence in itself in several countries; in Spain, 
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+See also: [the Little Hotelier guide](/blog/little-hotelier-tips).
 
 ## Summary
 

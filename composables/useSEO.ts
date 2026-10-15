@@ -4,6 +4,7 @@
  */
 export const useSEO = () => {
   const { t, locale, locales } = useI18n()
+  const localePath = useLocalePath()
   const route = useRoute()
   const runtimeConfig = useRuntimeConfig()
 
@@ -13,6 +14,24 @@ export const useSEO = () => {
   const getBaseUrl = () => {
     // Use runtime config for client-side compatibility
     return runtimeConfig.public.baseUrl || 'https://hotelier.tools'
+  }
+
+  /**
+   * Language tag of a configured locale (nuxt.config.ts i18n `language`), e.g. 'en-US', 'en-GB', 'es'.
+   * Used for hreflang, inLanguage and og:locale so the page head, the sitemap and the structured
+   * data all name each language the same way.
+   */
+  const languageOf = (code: string = locale.value) => {
+    const found = (locales.value as Array<string | { code: string, language?: string }>)
+      .find(l => typeof l !== 'string' && l.code === code)
+    return (typeof found === 'object' && found.language) || code
+  }
+
+  // Open Graph wants language_TERRITORY; locales without a region get their usual one
+  const OG_TERRITORY: Record<string, string> = { es: 'ES', fr: 'FR', de: 'DE', id: 'ID', it: 'IT', pt: 'PT', th: 'TH' }
+  const ogLocaleOf = (code: string = locale.value) => {
+    const [lang, region] = languageOf(code).split('-')
+    return `${lang}_${region ?? OG_TERRITORY[lang] ?? lang.toUpperCase()}`
   }
 
   /**
@@ -61,7 +80,7 @@ export const useSEO = () => {
     const localeCodes = customData?.alternates
       ?? (locales.value as Array<string | { code: string }>).map(l => typeof l === 'string' ? l : l.code)
     const alternateLinks = [
-      ...localeCodes.map(code => ({ rel: 'alternate', hreflang: code, href: localizedUrl(code) })),
+      ...localeCodes.map(code => ({ rel: 'alternate', hreflang: languageOf(code), href: localizedUrl(code) })),
       ...(localeCodes.includes('en') ? [{ rel: 'alternate', hreflang: 'x-default', href: localizedUrl('en') }] : [])
     ]
 
@@ -77,7 +96,7 @@ export const useSEO = () => {
       ogType: customData?.ogType ?? 'website',
       ogUrl: canonical,
       ogSiteName: siteName,
-      ogLocale: locale.value.replace('-', '_'),
+      ogLocale: ogLocaleOf(),
       ...(customData?.ogImage ? { ogImage: customData.ogImage } : {}),
       
       // Twitter
@@ -85,7 +104,6 @@ export const useSEO = () => {
       twitterTitle: ogTitle,
       twitterDescription: ogDescription,
       ...(customData?.ogImage ? { twitterImage: customData.ogImage } : {}),
-      twitterSite: '@hoteliertools',
       
       // Robots
       robots: customData?.noindex ? 'noindex,nofollow' : 'index,follow',
@@ -93,7 +111,7 @@ export const useSEO = () => {
       // Additional meta
       author: 'Hotelier Tools',
       copyright: `© ${new Date().getFullYear()} Hotelier Tools`,
-      language: locale.value
+      language: languageOf()
     })
 
     // Share card generated for this page at build time (components/OgImage/Feature.vue)
@@ -117,149 +135,56 @@ export const useSEO = () => {
         ...alternateLinks
       ],
       htmlAttrs: {
-        lang: locale.value
+        lang: languageOf()
       }
     })
   }
 
   /**
-   * Generate structured data for the current page
+   * Structured data for the current page. Built with nuxt-schema-org so it renders on the server,
+   * joins the site's @graph and points at the site identity (nuxt.config.ts schemaOrg.identity).
    */
-  const setStructuredData = (type: 'Organization' | 'WebSite' | 'Article' | 'Product', data?: any) => {
-    const baseUrl = getBaseUrl()
-    
-    let structuredData: any = {
-      '@context': 'https://schema.org'
+  const setStructuredData = (type: 'Article' | 'Product', data?: any) => {
+    if (type === 'Article') {
+      useSchemaOrg([defineArticle({
+        headline: data?.title,
+        description: data?.description,
+        ...(data?.datePublished ? { datePublished: data.datePublished } : {}),
+        ...(data?.dateModified ? { dateModified: data.dateModified } : {}),
+        inLanguage: languageOf()
+      })])
+      return
     }
-
-    switch (type) {
-      case 'Organization':
-        structuredData = {
-          ...structuredData,
-          '@type': 'Organization',
-          name: t('seo.site.name'),
-          description: t('seo.site.description'),
-          url: baseUrl,
-          logo: `${baseUrl}/logo.png`,
-          sameAs: [
-            'https://twitter.com/hoteliertools'
-          ],
-          contactPoint: {
-            '@type': 'ContactPoint',
-            contactType: 'Customer Service',
-            availableLanguage: ['English', 'Spanish']
-          }
-        }
-        break
-        
-      case 'WebSite':
-        structuredData = {
-          ...structuredData,
-          '@type': 'WebSite',
-          name: t('seo.site.name'),
-          description: t('seo.site.description'),
-          url: baseUrl,
-          inLanguage: locale.value === 'es' ? 'es-ES' : 'en-US',
-          potentialAction: {
-            '@type': 'SearchAction',
-            target: `${baseUrl}/search?q={search_term_string}`,
-            'query-input': 'required name=search_term_string'
-          }
-        }
-        break
-        
-      case 'Article':
-        structuredData = {
-          ...structuredData,
-          '@type': 'Article',
-          headline: data?.title || t(`seo.pages.${route.name}.title`),
-          description: data?.description || t(`seo.pages.${route.name}.description`),
-          author: {
-            '@type': 'Organization',
-            name: 'Hotelier Tools'
-          },
-          publisher: {
-            '@type': 'Organization',
-            name: 'Hotelier Tools',
-            logo: {
-              '@type': 'ImageObject',
-              url: `${baseUrl}/logo.png`
-            }
-          },
-          datePublished: data?.datePublished || new Date().toISOString(),
-          dateModified: data?.dateModified || new Date().toISOString(),
-          inLanguage: locale.value === 'es' ? 'es-ES' : 'en-US'
-        }
-        break
-        
-      case 'Product':
-        structuredData = {
-          ...structuredData,
-          '@type': 'SoftwareApplication',
-          name: data?.name || t('seo.site.name'),
-          description: data?.description || t('seo.site.description'),
-          applicationCategory: 'BusinessApplication',
-          operatingSystem: 'Web Browser',
-          offers: {
-            '@type': 'Offer',
-            price: '0',
-            priceCurrency: 'USD',
-            availability: 'https://schema.org/InStock'
-          },
-          aggregateRating: data?.rating && {
-            '@type': 'AggregateRating',
-            ratingValue: data.rating.value,
-            reviewCount: data.rating.count
-          }
-        }
-        break
-    }
-
-    // Apply structured data
-    useSchemaOrg(structuredData)
+    useSchemaOrg([defineSoftwareApp({
+      name: data?.name || t('seo.site.name'),
+      description: data?.description || t('seo.site.description'),
+      applicationCategory: data?.applicationCategory ?? 'BusinessApplication',
+      operatingSystem: data?.operatingSystem ?? 'Web',
+      ...(data?.url ? { url: data.url } : {}),
+      ...(data?.featureList ? { featureList: data.featureList } : {}),
+      inLanguage: languageOf(),
+      offers: data?.offers ?? { price: 0, priceCurrency: 'EUR' }
+    })])
   }
 
   /**
-   * Generate breadcrumb structured data
+   * Breadcrumb structured data; urls are unprefixed app paths and get the current language
    */
   const setBreadcrumbs = (items: Array<{ name: string, url: string }>) => {
-    const baseUrl = getBaseUrl()
-    
-    const breadcrumbItems = items.map((item, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      name: item.name,
-      item: `${baseUrl}${item.url}`
-    }))
-
-    useSchemaOrg({
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: breadcrumbItems
-    })
+    useSchemaOrg([defineBreadcrumb({
+      itemListElement: items.map(item => ({ name: item.name, item: `${getBaseUrl()}${localePath(item.url)}` }))
+    })])
   }
 
   /**
-   * Set FAQ structured data
+   * Question and answer pairs; nuxt-schema-org turns the page into an FAQPage that lists them
    */
   const setFAQStructuredData = (faqs: Array<{ question: string, answer: string }>) => {
-    const faqData = faqs.map(faq => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer
-      }
-    }))
-
-    useSchemaOrg({
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: faqData
-    })
+    useSchemaOrg(faqs.map(faq => defineQuestion({ name: faq.question, acceptedAnswer: faq.answer })))
   }
 
   return {
+    languageOf,
     setSEO,
     setStructuredData,
     setBreadcrumbs,

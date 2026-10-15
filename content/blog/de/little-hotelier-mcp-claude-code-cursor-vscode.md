@@ -298,6 +298,8 @@ Coding-Agenten führen Werkzeuge schnell aus, und genau deshalb sollten Sie sie 
 ::demo-cta{path="/developer/mcp-setup"}
 ::
 
+Siehe auch: [der KI-Assistent für die Rezeption](/blog/ai-assistant-hotel-front-desk).
+
 ## Nächste Schritte
 
 - Kein Entwickler? [Verbinden Sie Claude](/blog/connect-claude-to-little-hotelier) oder [ChatGPT](/blog/connect-chatgpt-to-little-hotelier) stattdessen im Browser.

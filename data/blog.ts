@@ -49,10 +49,28 @@ export interface BlogListItem {
   meta: BlogMeta
 }
 
-/** Guides that only matter in some markets and are not written in every language (Spain-only topics) */
-export const BLOG_MISSING_LOCALES: Record<string, string[]> = {
-  'ine-hotel-occupancy-survey': ['id', 'th'],
-  'ses-hospedajes-little-hotelier': ['id', 'th']
+/** Guides not written in every language yet; links to them in those languages open the English version */
+export const BLOG_MISSING_LOCALES: Record<string, string[]> = {}
+
+/** Person who writes and reviews the guides (see /about) */
+export const AUTHOR_NAME = 'Juan Manuel Béc.'
+
+/** Hub guide of each topic cluster; listed before the other guides of a feature */
+export const BLOG_HUB_SLUGS = [
+  'what-is-mcp-server-hotels',
+  'little-hotelier-integrations',
+  'download-all-little-hotelier-invoices',
+  'hotel-front-desk-checklist-automation',
+  'dynamic-pricing-little-hotelier',
+  'whatsapp-little-hotelier',
+  'guest-registration-rules-by-country',
+  'little-hotelier-tips'
+]
+
+/** Guides that explain a feature but name another one in `feature:` (frontmatter takes a single slug).
+ *  Keyed by feature slug (data/platform.ts); shown after the feature's own guides. */
+export const FEATURE_RELATED_GUIDES: Record<string, string[]> = {
+  automations: ['hotel-front-desk-checklist-automation', 'send-invoice-to-guest-at-checkout', 'hotel-waitlist-sold-out-dates']
 }
 
 /** Slug of an article from its content path: /blog/<locale>/<slug> */

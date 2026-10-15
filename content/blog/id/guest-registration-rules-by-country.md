@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [guest registration, compliance, id, police, little hotelier]
 keywords: [wajib lapor tamu asing, apoa imigrasi hotel, lapor tamu asing penginapan, pendaftaran tamu hotel per negara, check in hotel paspor, alloggiati web, tm30 hotel]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "Pengecekan When they arrive di Hotelier Tools: ID / passport (police register), physical room assignment, serta validasi alamat dan asal diaktifkan, beserta apa yang bisa dan tidak bisa dilakukan tiap pengecekan"
@@ -114,7 +115,7 @@ Situs Biro Imigrasi tidak bisa dimuat dari Eropa pada Oktober 2026, jadi konfirm
 
 Reservasi di Little Hotelier punya tab **Guests** dengan formulir untuk setiap tamu. Selain nama, email, dan telepon, formulir itu memuat jenis kelamin, nama belakang kedua, dan, di balik panah untuk membuka detail, jenis dokumen ID, nomor ID, kewarganegaraan, tanggal terbit, tanggal kedaluwarsa, tanggal lahir, dan alamat lengkap dengan negara, kota, provinsi, dan kode pos ([edit reservasi](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)). Tambahkan teman perjalanan sebagai tamu tambahan.
 
-::screenshot{src="/images/scripts/easy-save-province-country/from.png" alt="Tab Guests reservasi Little Hotelier dalam bahasa Spanyol dengan kolom nama, nama belakang, jenis dokumen ID, nomor ID, kewarganegaraan, tanggal terbit dan kedaluwarsa, tanggal lahir, dan alamat" caption="Tab Guests sudah punya kolom yang diminta sebagian besar aturan pendaftaran (antarmuka bahasa Spanyol)."}
+::screenshot{src="/images/scripts/easy-save-province-country/from.webp" alt="Tab Guests reservasi Little Hotelier dalam bahasa Spanyol dengan kolom nama, nama belakang, jenis dokumen ID, nomor ID, kewarganegaraan, tanggal terbit dan kedaluwarsa, tanggal lahir, dan alamat" caption="Tab Guests sudah punya kolom yang diminta sebagian besar aturan pendaftaran (antarmuka bahasa Spanyol)."}
 ::
 
 Tiga cara mengisinya tanpa mengetik ulang:
@@ -123,7 +124,7 @@ Tiga cara mengisinya tanpa mengetik ulang:
 2. **Mitra check-in.** [Chekin](https://helpcentre.littlehotelier.com/en/articles/8674162-connecting-to-chekin) terhubung lewat App Store dan melapor ke kepolisian di banyak negara, termasuk Spanyol, Italia, Portugal, Prancis, Jerman, dan Thailand. Jika Anda memakainya, userscript gratis [Chekin Connection](/tools/ui/show-chekin) menampilkan pendaftaran setiap tamu di dalam reservasi Little Hotelier.
 3. **Di front desk.** Untuk tamu Spanyol, userscript gratis [Easy Save Province and Country](/tools/ui/easy-save-province-country) mengubah kolom provinsi menjadi daftar provinsi Spanyol dan mengatur negara ke Spanyol saat Anda memilih satu.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Tab Guests Little Hotelier dengan daftar provinsi Spanyol dari Easy Save Province and Country terbuka di bawah kolom Province/Region" caption="Pilih provinsi dari daftar dan negaranya terisi sendiri."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="Tab Guests Little Hotelier dengan daftar provinsi Spanyol dari Easy Save Province and Country terbuka di bawah kolom Province/Region" caption="Pilih provinsi dari daftar dan negaranya terisi sendiri."}
 ::
 
 ### Deteksi ID yang kosong sebelum batas waktu
@@ -132,6 +133,8 @@ Data yang tidak lengkap atau terlambat merupakan pelanggaran tersendiri di beber
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+Panduan terkait: [panduan Little Hotelier](/blog/little-hotelier-tips).
 
 ## Ringkasan
 

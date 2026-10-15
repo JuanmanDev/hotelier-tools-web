@@ -1,0 +1,362 @@
+{
+  "summary": {
+    "health_score": 70,
+    "business_type": "SaaS (B2B tooling for Little Hotelier hotels) + publisher (guides blog, 9 locales)",
+    "top_findings": [
+      "~170 URLs inherit Spanish fallback title/description and have no hreflang (/tools/ui/*, /chrome-extensions, /documentation, /marketing)",
+      "No About/Privacy/Terms pages, no named author; contact form references missing privacy policy",
+      "Homepage stats server-render as 0% / 0h (StatsSection.vue)",
+      "/favicon.ico and /logo.png return 404 (referenced in head + Organization schema)",
+      "Unclaimed 'little hotelier chrome extension' SERP slot; homepage never mentions Chrome"
+    ],
+    "quick_wins": [
+      "Add favicon.ico + logo.png to public/",
+      "Server-render final stat values",
+      "Fix title defects (double space, duplicated brand)",
+      "Translate seo.site.description; derive og:locale/inLanguage from iso",
+      "Declare only /sitemap_index.xml"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 72,
+      "what_works": [
+        "Prerendered HTML, real 404s",
+        "Self-canonicals, reciprocal hreflang on blog/bot pages",
+        "Immutable /_nuxt caching, TTFB ~24ms"
+      ],
+      "findings": [
+        {
+          "title": "Spanish fallback metadata + no hreflang on ~170 URLs",
+          "severity": "High",
+          "description": "Pages without setSEO() inherit nuxt.config.ts app.head Spanish defaults",
+          "recommendation": "Call setSEO()+useLocaleHead() per page; neutral English fallback"
+        },
+        {
+          "title": "favicon.ico and logo.png 404",
+          "severity": "High",
+          "description": "Referenced in head and Organization logo",
+          "recommendation": "Add files or repoint references"
+        },
+        {
+          "title": "Thin security headers",
+          "severity": "Medium",
+          "description": "Only HSTS sent",
+          "recommendation": "Add headers block in vercel.json"
+        },
+        {
+          "title": "Malformed og:locale",
+          "severity": "Medium",
+          "description": "'en', 'en_gb'",
+          "recommendation": "Use locale iso code"
+        },
+        {
+          "title": "Sitemap hreflang inconsistent",
+          "severity": "Medium",
+          "description": "Mixed en/en-US; en-GB missing on ~35 URLs/locale",
+          "recommendation": "Single scheme in @nuxtjs/sitemap i18n config"
+        },
+        {
+          "title": "No IndexNow",
+          "severity": "Medium",
+          "description": "No key file",
+          "recommendation": "Add key + deploy ping"
+        },
+        {
+          "title": "Missing/uniform lastmod",
+          "severity": "Medium",
+          "description": "38/63 URLs lack lastmod",
+          "recommendation": "Use git/content dates"
+        },
+        {
+          "title": "Duplicate sitemap declaration, 307",
+          "severity": "Low",
+          "description": "robots lists sitemap.xml + sitemap_index.xml",
+          "recommendation": "Declare index only"
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 62,
+      "what_works": [
+        "25 answer-first, well-sourced guides x 9 locales",
+        "Native-quality ES/DE translations",
+        "Affiliation disclaimer"
+      ],
+      "findings": [
+        {
+          "title": "No About/Privacy/Terms, no named author",
+          "severity": "High",
+          "description": "/about, /privacy, /terms 404; Organization-only author",
+          "recommendation": "Publish trust pages, Person author with bio"
+        },
+        {
+          "title": "Homepage stats render 0%",
+          "severity": "High",
+          "description": "StatsSection.vue ref([0,0,0,0])",
+          "recommendation": "SSR final values; source or remove claims"
+        },
+        {
+          "title": "Thin /tools/ui script pages",
+          "severity": "High",
+          "description": "55-102 words each",
+          "recommendation": "Expand to 300+ words or consolidate + noindex"
+        },
+        {
+          "title": "Spanish copy on English URLs",
+          "severity": "Medium",
+          "description": "/chrome-extensions H1, /tools/ui/instructions",
+          "recommendation": "Move to i18n"
+        },
+        {
+          "title": "Uniform guide dates",
+          "severity": "Medium",
+          "description": "225 URLs dated 2026-10-03",
+          "recommendation": "Real update dates + reviewer"
+        },
+        {
+          "title": "Feature pages ~8% unique",
+          "severity": "Medium",
+          "description": "60/734 unique words on /tools/bot/dashboard",
+          "recommendation": "Add 200-400 unique words"
+        },
+        {
+          "title": "Anonymous testimonials",
+          "severity": "Medium",
+          "description": "2/3 anonymous",
+          "recommendation": "Named testimonials or case study"
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 64,
+      "what_works": [
+        "Single H1 per page",
+        "Descriptive guide titles"
+      ],
+      "findings": [
+        {
+          "title": "Duplicate/Spanish titles",
+          "severity": "High",
+          "description": "Same title on ~170 URLs",
+          "recommendation": "See Technical #1"
+        },
+        {
+          "title": "Title defects",
+          "severity": "Low",
+          "description": "'Contact  our team', duplicated brand on /faq /marketing /contact",
+          "recommendation": "Edit seo.pages.* locale keys"
+        },
+        {
+          "title": "Orphan / weakly linked posts",
+          "severity": "Medium",
+          "description": "little-hotelier-alternatives 0 inbound in-body links",
+          "recommendation": "Link plan in findings/cluster.md"
+        },
+        {
+          "title": "Internal cannibalization (Chrome extensions)",
+          "severity": "Medium",
+          "description": "/chrome-extensions vs /tools/ui vs blog post",
+          "recommendation": "Merge catalogs, 301, assign keyword owner"
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 68,
+      "what_works": [
+        "nuxt-schema-org @graph",
+        "Per-locale WebSite translationOfWork",
+        "BlogPosting + BreadcrumbList on posts"
+      ],
+      "findings": [
+        {
+          "title": "Duplicate Organization nodes",
+          "severity": "High",
+          "description": "#identity and #organization",
+          "recommendation": "Single identity with ImageObject logo, sameAs"
+        },
+        {
+          "title": "Page blocks outside graph",
+          "severity": "High",
+          "description": "No @id, inline publisher copies",
+          "recommendation": "useSchemaOrg defineArticle/defineBreadcrumb"
+        },
+        {
+          "title": "Wrong inLanguage / Spanish description",
+          "severity": "Medium",
+          "description": "Non-es locales mapped to en-US",
+          "recommendation": "Use iso code; translate"
+        },
+        {
+          "title": "Thin SoftwareApplication",
+          "severity": "Medium",
+          "description": "Currency mismatch, no image/provider, price 0",
+          "recommendation": "See findings/schema.md"
+        },
+        {
+          "title": "FAQPage present (retired rich result)",
+          "severity": "Info",
+          "description": "/faq FAQPage lacks mainEntity",
+          "recommendation": "Populate or type as WebPage; no removal needed"
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 87,
+      "what_works": [
+        "CLS 0",
+        "TTFB ~24ms",
+        "Desktop 99-100"
+      ],
+      "findings": [
+        {
+          "title": "Mobile LCP 3.2-3.5s (lab)",
+          "severity": "Medium",
+          "description": "LCP = hero text; render-blocking CSS + hydration",
+          "recommendation": "inlineStyles, lazy hydration"
+        },
+        {
+          "title": "JS weight 250-315KB",
+          "severity": "Medium",
+          "description": "26 scripts, bootup 400-660ms",
+          "recommendation": "Lazy-hydrate animations"
+        },
+        {
+          "title": "Runtime icon fetch, unused font module",
+          "severity": "Low",
+          "description": "api.iconify.design; @nuxtjs/google-fonts",
+          "recommendation": "clientBundle; remove module"
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 70,
+      "what_works": [
+        "All AI crawlers allowed, SSR",
+        "Good llms.txt",
+        "Guides are model citation sources",
+        "Agent-UX 91-97"
+      ],
+      "findings": [
+        {
+          "title": "Weak brand/authority signals",
+          "severity": "High",
+          "description": "No third-party mentions found",
+          "recommendation": "Directories, MCP registries, YouTube demos"
+        },
+        {
+          "title": "Entity ambiguity",
+          "severity": "High",
+          "description": "No About; inconsistent brand spellings",
+          "recommendation": "About page, standardise 'Hotelier Tools'"
+        },
+        {
+          "title": "/tools/bot/api-mcp thin intro",
+          "severity": "Medium",
+          "description": "36-word 'what it does'",
+          "recommendation": "Answer-first definition + facts"
+        },
+        {
+          "title": "Unnamed interactive elements",
+          "severity": "Medium",
+          "description": "3 on /contact, 1 in layout",
+          "recommendation": "aria-labels"
+        },
+        {
+          "title": "No api-catalog",
+          "severity": "Low",
+          "description": "/.well-known/api-catalog 404",
+          "recommendation": "Optional RFC 9727 linkset"
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 84,
+      "what_works": [
+        "No missing alt",
+        "WebP + lazy loading",
+        "Dimensions set"
+      ],
+      "findings": [
+        {
+          "title": "No long-term image caching",
+          "severity": "Low",
+          "description": "max-age=0",
+          "recommendation": "immutable cache in vercel.json"
+        },
+        {
+          "title": "Leftover PNGs",
+          "severity": "Low",
+          "description": "to.png 95KB",
+          "recommendation": "Convert to WebP/AVIF"
+        },
+        {
+          "title": "Oversized card images",
+          "severity": "Low",
+          "description": "286x178 rendered from 56-65KB",
+          "recommendation": "srcset/thumbnails"
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Per-page SEO + hreflang on template-less pages",
+          "Fix favicon/logo 404",
+          "SSR homepage stats",
+          "Merge Organization + i18n metadata",
+          "Title defects",
+          "Sitemap hygiene"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "About/Privacy/Terms + named author",
+          "Mobile LCP < 2.5s",
+          "Expand/consolidate /tools/ui pages",
+          "Feature-page uniqueness + homepage refresh",
+          "Mobile UX + security headers",
+          "Internal linking fixes"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Chrome Web Store listing",
+          "Directory + MCP registry listings",
+          "Off-site mentions",
+          "Gap content (VERI*FACTU, pricing, vs Cloudbeds, reports, automations)",
+          "Schema completion",
+          "llms.txt / api-catalog / IndexNow"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Connect Google APIs, Bing WMT, Moz",
+          "Drift baseline after Phase 1",
+          "Quarterly re-audit"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}

@@ -298,6 +298,8 @@ Os agentes de programação são bons a executar ferramentas depressa, e é exat
 ::demo-cta{path="/developer/mcp-setup"}
 ::
 
+Guias relacionados: [o assistente de IA para a receção](/blog/ai-assistant-hotel-front-desk).
+
 ## Próximos passos
 
 - Não é programador? [Conecte o Claude](/blog/connect-claude-to-little-hotelier) ou o [ChatGPT](/blog/connect-chatgpt-to-little-hotelier) no navegador.

@@ -114,7 +114,7 @@ These free [userscripts](/tools/ui) run in your browser with the Tampermonkey ex
 
 [Prices Display](/tools/ui/prices-display) reads your rates from the inventory page and shows them under each room type in the calendar, so you can quote a price on the phone without switching screens.
 
-::screenshot{src="/images/scripts/prices-display/to.png" alt="Little Hotelier calendar in Spanish with a 7-day view, bookings in green, orange and grey, and each room type's nightly price shown in large figures under its rooms" caption="With Prices Display, each room type's nightly rate sits right under its rooms."}
+::screenshot{src="/images/scripts/prices-display/to.webp" alt="Little Hotelier calendar in Spanish with a 7-day view, bookings in green, orange and grey, and each room type's nightly price shown in large figures under its rooms" caption="With Prices Display, each room type's nightly rate sits right under its rooms."}
 ::
 
 ### 16. Stop coming back to a stale page
@@ -153,6 +153,8 @@ Hotelier Tools is an independent dashboard that works next to Little Hotelier, u
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+See also: [what an MCP server is](/blog/what-is-mcp-server-hotels), [dynamic pricing on Little Hotelier](/blog/dynamic-pricing-little-hotelier), [downloading all your invoices at once](/blog/download-all-little-hotelier-invoices), [guest registration rules by country](/blog/guest-registration-rules-by-country), [using WhatsApp with Little Hotelier](/blog/whatsapp-little-hotelier), [Little Hotelier alternatives](/blog/little-hotelier-alternatives), [the Hotelier Tools dashboard](/tools/bot/dashboard), [Hotelier Tools automations](/tools/bot/automations).
 
 ## Summary
 

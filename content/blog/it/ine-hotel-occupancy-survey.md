@@ -103,7 +103,7 @@ Tre abitudini risolvono quasi tutto:
 2. Installa lo userscript gratuito [Easy Save Province and Country](/tools/ui/easy-save-province-country). Quando clicchi sul campo provincia, mostra l'elenco delle province spagnole e, scegliendone una, imposta il paese su Spagna.
 3. Lascia che i [controlli automatici](/tools/bot/automated-checks) segnalino le prenotazioni senza paese o provincia dopo la prenotazione, all'arrivo e al check-out, quando l'ospite è ancora in struttura e puoi chiederglieli.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Scheda ospite di Little Hotelier con l'elenco delle province spagnole di Easy Save Province and Country aperto sotto il campo Province/Region" caption="Lo userscript gratuito trasforma il campo provincia in un elenco a scelta e imposta il paese al posto tuo."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="Scheda ospite di Little Hotelier con l'elenco delle province spagnole di Easy Save Province and Country aperto sotto il campo Province/Region" caption="Lo userscript gratuito trasforma il campo provincia in un elenco a scelta e imposta il paese al posto tuo."}
 ::
 
 ## Il modo più veloce: il report INE direttamente da Little Hotelier

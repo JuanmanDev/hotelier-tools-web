@@ -173,6 +173,8 @@ Alles, was der Posteingang kann, steht auf der Seite [Guest inbox](/tools/bot/gu
 Hotelier Tools steht in keiner Verbindung zu Booking.com, SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen. Es verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Hotels und Ihrem eigenen Booking.com-Extranet-Login.
 ::
 
+Siehe auch: [der KI-Assistent für die Rezeption](/blog/ai-assistant-hotel-front-desk), [eine Liste nicht zu vermietender Gäste](/blog/hotel-do-not-rent-list).
+
 ## Zusammenfassung
 
 - Antworten Sie unterwegs in Pulse und lassen Sie Vorlagen, geplante Nachrichten und automatische Antworten die Routinefragen abdecken.

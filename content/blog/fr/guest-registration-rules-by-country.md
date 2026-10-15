@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [guest registration, compliance, id, police, little hotelier]
 keywords: [fiche de police hôtel obligatoire, fiche individuelle de police, fiche de police hôtel france, enregistrement en ligne hôtel, pourquoi les hôtels demandent le passeport, alloggiati web, meldeschein hôtel, tm30 hôtel]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "Contrôles When they arrive dans Hotelier Tools : pièce d'identité / passeport (registre de police), attribution physique de la chambre et validation de l'adresse et de l'origine activés, avec ce que chaque contrôle peut et ne peut pas faire"
@@ -114,7 +115,7 @@ Le site du Bureau de l'immigration n'a pas pu être chargé depuis l'Europe en o
 
 La réservation Little Hotelier comporte un onglet **Guests** avec un formulaire pour chaque client. Outre le nom, l'e-mail et le téléphone, il comporte le sexe, un second nom de famille et, sous la flèche de déploiement, le type de pièce d'identité, son numéro, la nationalité, les dates de délivrance et d'expiration, la date de naissance et une adresse complète avec pays, ville, région et code postal ([modifier une réservation](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)). Ajoutez les accompagnants comme clients supplémentaires.
 
-::screenshot{src="/images/scripts/easy-save-province-country/from.png" alt="Onglet Guests d'une réservation Little Hotelier en espagnol avec nom, prénoms, type de pièce d'identité, numéro, nationalité, dates de délivrance et d'expiration, date de naissance et champs d'adresse" caption="L'onglet Guests contient déjà les champs que demandent la plupart des règles d'enregistrement (interface en espagnol)."}
+::screenshot{src="/images/scripts/easy-save-province-country/from.webp" alt="Onglet Guests d'une réservation Little Hotelier en espagnol avec nom, prénoms, type de pièce d'identité, numéro, nationalité, dates de délivrance et d'expiration, date de naissance et champs d'adresse" caption="L'onglet Guests contient déjà les champs que demandent la plupart des règles d'enregistrement (interface en espagnol)."}
 ::
 
 Trois façons de les remplir sans tout ressaisir :
@@ -123,7 +124,7 @@ Trois façons de les remplir sans tout ressaisir :
 2. **Un partenaire d'enregistrement en ligne.** [Chekin](https://helpcentre.littlehotelier.com/en/articles/8674162-connecting-to-chekin) se connecte via l'App Store et déclare à la police dans de nombreux pays, dont l'Espagne, l'Italie, le Portugal, la France, l'Allemagne et la Thaïlande. Si vous l'utilisez, le userscript gratuit [Chekin Connection](/tools/ui/show-chekin) affiche l'enregistrement de chaque client dans la réservation Little Hotelier.
 3. **À la réception.** Pour les clients espagnols, le userscript gratuit [Easy Save Province and Country](/tools/ui/easy-save-province-country) transforme le champ province en liste des provinces espagnoles et renseigne automatiquement le pays (Espagne) quand vous en choisissez une.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Onglet Guests de Little Hotelier avec la liste Easy Save Province and Country des provinces espagnoles ouverte sous le champ Province/Region" caption="Choisissez la province dans une liste et le pays se remplit tout seul."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="Onglet Guests de Little Hotelier avec la liste Easy Save Province and Country des provinces espagnoles ouverte sous le champ Province/Region" caption="Choisissez la province dans une liste et le pays se remplit tout seul."}
 ::
 
 ### Repérer les pièces d'identité manquantes avant l'échéance
@@ -132,6 +133,8 @@ Des données incomplètes ou tardives constituent à elles seules une infraction
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+À lire aussi : [le guide Little Hotelier](/blog/little-hotelier-tips).
 
 ## Résumé
 

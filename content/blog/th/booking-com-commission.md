@@ -6,6 +6,7 @@ date: 2026-10-03
 category: tips
 tags: [booking.com, commission, little hotelier, userscript, vat]
 keywords: [ค่าคอมมิชชั่น booking com, ค่าคอมมิชชั่น booking com กี่ %, ค่าคอมมิชชั่น booking com หัก ณ ที่จ่าย, booking com commission, booking.com genius commission, คำนวณค่าคอมมิชชั่น booking]
+feature: dynamic-pricing
 demoPath: /
 cover: /images/scripts/show-booking-commissions/to.png
 coverAlt: "สรุปการจองใน Little Hotelier (หน้าจอภาษาสเปน) ที่มีค่าคอมมิชชั่น Booking.com ค่าธรรมเนียมการชำระเงิน และยอดสุทธิโดยประมาณ เพิ่มเข้ามาด้วยสคริปต์ฟรี"
@@ -156,6 +157,8 @@ Genius และส่วนลดของช่องทางอื่นๆ 
 ::
 
 ระบบราคาส่วนที่เหลือ (ราคาคู่แข่ง กฎ อีเวนต์ในพื้นที่) อธิบายไว้ใน [dynamic pricing สำหรับโรงแรมขนาดเล็กบน Little Hotelier](/blog/dynamic-pricing-little-hotelier) และ[หน้า Dynamic pricing](/tools/bot/dynamic-pricing) แดชบอร์ดใช้ฟรีสำหรับทุกโรงแรมจนกว่าจะเริ่มเรียกเก็บเงินในวันที่ 10 มกราคม 2027 ส่วนสคริปต์บนเบราว์เซอร์ยังคงฟรี
+
+อ่านเพิ่มเติม: [CTA/CTD และ stop-sell](/blog/little-hotelier-cta-ctd-stop-sell)
 
 ## สรุป
 

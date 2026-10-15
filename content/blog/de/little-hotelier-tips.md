@@ -114,7 +114,7 @@ Diese kostenlosen [Userscripts](/tools/ui) laufen mit der Erweiterung Tampermonk
 
 [Prices Display](/tools/ui/prices-display) liest Ihre Preise von der Inventarseite und zeigt sie im Kalender unter jedem Zimmertyp an, sodass Sie am Telefon einen Preis nennen können, ohne den Bildschirm zu wechseln.
 
-::screenshot{src="/images/scripts/prices-display/to.png" alt="Little-Hotelier-Kalender auf Spanisch mit 7-Tage-Ansicht, Buchungen in Grün, Orange und Grau und dem Nachtpreis jedes Zimmertyps in großen Ziffern unter seinen Zimmern" caption="Mit Prices Display steht der Nachtpreis jedes Zimmertyps direkt unter seinen Zimmern."}
+::screenshot{src="/images/scripts/prices-display/to.webp" alt="Little-Hotelier-Kalender auf Spanisch mit 7-Tage-Ansicht, Buchungen in Grün, Orange und Grau und dem Nachtpreis jedes Zimmertyps in großen Ziffern unter seinen Zimmern" caption="Mit Prices Display steht der Nachtpreis jedes Zimmertyps direkt unter seinen Zimmern."}
 ::
 
 ### 16. Nicht mehr zu einer veralteten Seite zurückkehren
@@ -153,6 +153,8 @@ Hotelier Tools ist ein unabhängiges Dashboard, das neben Little Hotelier arbeit
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+Siehe auch: [was ein MCP-Server ist](/blog/what-is-mcp-server-hotels), [dynamische Preise in Little Hotelier](/blog/dynamic-pricing-little-hotelier), [alle Rechnungen auf einmal herunterladen](/blog/download-all-little-hotelier-invoices), [Meldepflichten für Gäste nach Land](/blog/guest-registration-rules-by-country), [WhatsApp mit Little Hotelier nutzen](/blog/whatsapp-little-hotelier), [Alternativen zu Little Hotelier](/blog/little-hotelier-alternatives), [das Hotelier-Tools-Dashboard](/tools/bot/dashboard), [die Hotelier-Tools-Automatisierungen](/tools/bot/automations).
 
 ## Zusammenfassung
 

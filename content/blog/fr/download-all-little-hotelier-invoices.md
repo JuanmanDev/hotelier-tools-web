@@ -136,6 +136,8 @@ En Espagne, cela alimente la déclaration de TVA ([modelo 303](https://sede.agen
 
 Les développeurs peuvent aussi récupérer les factures PDF une par une via l'[API REST de Hotelier Tools](/blog/little-hotelier-api). Et si votre comptable veut aussi les données de réservation, lisez [comment exporter les réservations vers Excel](/blog/export-little-hotelier-reservations-excel).
 
+À lire aussi : [le guide Little Hotelier](/blog/little-hotelier-tips), [les intégrations de Little Hotelier](/blog/little-hotelier-integrations).
+
 ## Résumé
 
 - Le **rapport Invoices** de Little Hotelier zippe les PDF des factures qui existent déjà ; le **rapport Accounting** exporte les factures définitives en CSV pour Xero ou QuickBooks.

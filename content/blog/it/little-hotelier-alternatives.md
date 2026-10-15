@@ -6,6 +6,7 @@ date: 2026-10-03
 category: tips
 tags: [pms, comparison, alternatives, little hotelier, cloudbeds]
 keywords: [little hotelier alternative, little hotelier recensioni, little hotelier vs cloudbeds, little hotelier prezzo, little hotelier siteminder, miglior gestionale hotel piccoli, little hotelier vs lodgify, gestionale b&b]
+feature: dashboard
 cover: /images/blog/demo/en/dashboard-overview.webp
 coverAlt: "Dashboard iniziale di Hotelier Tools per la struttura demo Hotel Demo Sol: una scheda Open AI chat, un avviso che due canali di messaggistica con gli ospiti richiedono attenzione e riquadri di stato per Little Hotelier, Booking.com, conoscenza AI e città dei prezzi"
 faq:

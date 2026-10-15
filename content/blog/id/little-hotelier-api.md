@@ -198,6 +198,8 @@ Panggilan daftar mengembalikan JSON seperti `{ "success": true, "count": 2, "dat
 - **Asisten AI.** Key yang sama bekerja dengan MCP server Hotelier Tools (`https://dashboard.hotelier.tools/api/mcp`), yang memberi Claude, ChatGPT, Cursor, atau VS Code lebih dari 100 tool hotel. Mulailah dengan [apa itu MCP server](/blog/what-is-mcp-server-hotels), lalu [hubungkan Claude](/blog/connect-claude-to-little-hotelier) atau siapkan [Claude Code, Cursor, dan VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode).
 - **Penghubung antar-tool.** Jika tidak ada aplikasi App Store, skrip kecil dapat memindahkan data antara Little Hotelier dan sisa sistem Anda. Bandingkan opsinya di [integrasi Little Hotelier terbaik](/blog/little-hotelier-integrations).
 
+Panduan terkait: [alternatif Little Hotelier](/blog/little-hotelier-alternatives).
+
 ## Langkah berikutnya
 
 - Jika Anda membuat software untuk banyak hotel, daftarlah ke program mitra SiteMinder dan SMX.

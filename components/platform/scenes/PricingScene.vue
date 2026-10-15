@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="grid grid-cols-7 gap-2 sm:gap-3 mt-2">
-      <span v-for="(label, i) in dayLabels" :key="i" class="text-center text-[11px] text-gray-500 dark:text-gray-400 capitalize">{{ label }}</span>
+      <span v-for="(label, i) in dayLabels" :key="i" class="text-center text-xs text-gray-500 dark:text-gray-400 capitalize">{{ label }}</span>
     </div>
 
     <div class="ht-rise mt-4 flex flex-wrap items-center gap-3 rounded-xl p-3 bg-gray-50 dark:bg-gray-800/60" style="--d: 1.8s">

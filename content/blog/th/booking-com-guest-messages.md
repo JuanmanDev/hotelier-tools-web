@@ -174,6 +174,8 @@ AI ตอบแขกจากข้อมูลที่คุณให้แ�
 Hotelier Tools ไม่มีความเกี่ยวข้องหรือได้รับการรับรองจาก Booking.com, SiteMinder หรือ Little Hotelier เชื่อมต่อด้วยบัญชี Little Hotelier ของโรงแรมคุณเอง และบัญชี Extranet ของ Booking.com ของคุณเอง
 ::
 
+อ่านเพิ่มเติม: [ผู้ช่วย AI สำหรับแผนกต้อนรับ](/blog/ai-assistant-hotel-front-desk), [รายชื่อแขกที่ไม่รับ](/blog/hotel-do-not-rent-list)
+
 ## สรุป
 
 - ตอบได้ทุกที่ใน Pulse และให้เทมเพลต ข้อความตั้งเวลา และตอบอัตโนมัติจัดการคำถามประจำ

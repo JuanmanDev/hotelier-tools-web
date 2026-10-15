@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [guest registration, compliance, id, police, little hotelier]
 keywords: [meldeschein hotel pflicht, digitaler meldeschein hotel, meldeschein hotel abgeschafft, meldeschein hotel ausländische gäste, online check in hotel personalausweis, warum hotel ausweis kopieren, alloggiati web, tm30 hotel]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "Prüfungen When they arrive in Hotelier Tools: ID / passport (police register), physical room assignment und address and origin validation eingeschaltet, mit dem, was jede Prüfung kann und nicht kann"
@@ -114,7 +115,7 @@ Die Website des Immigration Bureau ließ sich im Oktober 2026 aus Europa nicht l
 
 Die Reservierung in Little Hotelier hat einen Reiter **Guests** mit einem Formular für jeden Gast. Neben Name, E-Mail und Telefon enthält es Geschlecht, einen zweiten Nachnamen und, unter dem Erweiterungspfeil, Ausweisart, Ausweisnummer, Staatsangehörigkeit, Ausstellungs- und Ablaufdatum, Geburtsdatum und eine vollständige Anschrift mit Land, Ort, Bundesland und Postleitzahl ([Reservierung bearbeiten](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)). Mitreisende fügen Sie als weitere Gäste hinzu.
 
-::screenshot{src="/images/scripts/easy-save-province-country/from.png" alt="Reiter Guests einer Reservierung in Little Hotelier auf Spanisch mit Feldern für Name, Nachnamen, Ausweisart, Ausweisnummer, Staatsangehörigkeit, Ausstellungs- und Ablaufdatum, Geburtsdatum und Anschrift" caption="Der Reiter Guests hat bereits die Felder, die die meisten Meldevorschriften verlangen (spanische Oberfläche)."}
+::screenshot{src="/images/scripts/easy-save-province-country/from.webp" alt="Reiter Guests einer Reservierung in Little Hotelier auf Spanisch mit Feldern für Name, Nachnamen, Ausweisart, Ausweisnummer, Staatsangehörigkeit, Ausstellungs- und Ablaufdatum, Geburtsdatum und Anschrift" caption="Der Reiter Guests hat bereits die Felder, die die meisten Meldevorschriften verlangen (spanische Oberfläche)."}
 ::
 
 Drei Wege, die Felder ohne Abtippen zu füllen:
@@ -123,7 +124,7 @@ Drei Wege, die Felder ohne Abtippen zu füllen:
 2. **Ein Check-in-Partner.** [Chekin](https://helpcentre.littlehotelier.com/en/articles/8674162-connecting-to-chekin) verbindet sich über den App Store und meldet in vielen Ländern an die Polizei, darunter Spanien, Italien, Portugal, Frankreich, Deutschland und Thailand. Nutzen Sie es, zeigt das kostenlose Userscript [Chekin Connection](/tools/ui/show-chekin) die Registrierung jedes Gastes in der Little-Hotelier-Reservierung an.
 3. **An der Rezeption.** Für spanische Gäste verwandelt das kostenlose Userscript [Easy Save Province and Country](/tools/ui/easy-save-province-country) das Feld für die Provinz in eine Liste spanischer Provinzen und setzt das Land auf Spanien, wenn Sie eine wählen.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Reiter Guests in Little Hotelier mit der geöffneten Liste spanischer Provinzen von Easy Save Province and Country unter dem Feld Province/Region" caption="Wählen Sie die Provinz aus einer Liste, und das Land füllt sich von selbst."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="Reiter Guests in Little Hotelier mit der geöffneten Liste spanischer Provinzen von Easy Save Province and Country unter dem Feld Province/Region" caption="Wählen Sie die Provinz aus einer Liste, und das Land füllt sich von selbst."}
 ::
 
 ### Fehlende Ausweisdaten vor der Frist erkennen
@@ -132,6 +133,8 @@ Unvollständige oder verspätete Daten sind in mehreren Ländern bereits für si
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+Siehe auch: [der Little-Hotelier-Leitfaden](/blog/little-hotelier-tips).
 
 ## Zusammenfassung
 

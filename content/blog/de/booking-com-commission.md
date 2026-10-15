@@ -6,6 +6,7 @@ date: 2026-10-03
 category: tips
 tags: [booking.com, commission, little hotelier, userscript, vat]
 keywords: [booking provision hotel, booking provision höhe, booking.com provision umsatzsteuer, booking.com provision rechner, booking genius provision, booking.com zahlungsgebühr]
+feature: dynamic-pricing
 demoPath: /
 cover: /images/scripts/show-booking-commissions/to.png
 coverAlt: "Reservierungsübersicht in Little Hotelier (spanische Oberfläche) mit Booking.com-Provision, Zahlungsgebühr und ungefährem Netto, ergänzt durch ein kostenloses Skript"
@@ -154,6 +155,8 @@ Genius und andere Kanalrabatte verändern, was ein Gast zahlt, und damit, was Si
 ::
 
 Wie der Rest der Preis-Engine funktioniert (Mitbewerberpreise, Regeln, lokale Veranstaltungen), erklären der Leitfaden [dynamische Preise für kleine Hotels mit Little Hotelier](/blog/dynamic-pricing-little-hotelier) und die Seite [Dynamic pricing](/tools/bot/dynamic-pricing). Das Dashboard ist für jedes Hotel kostenlos, bis die Abrechnung am 10. Januar 2027 beginnt. Die Browser-Skripte bleiben kostenlos.
+
+Siehe auch: [CTA/CTD und Stop-Sell](/blog/little-hotelier-cta-ctd-stop-sell).
 
 ## Zusammenfassung
 

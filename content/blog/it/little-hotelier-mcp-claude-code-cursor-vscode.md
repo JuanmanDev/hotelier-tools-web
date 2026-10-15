@@ -298,6 +298,8 @@ Gli agenti di programmazione sono bravi a eseguire strumenti in fretta, ed è es
 ::demo-cta{path="/developer/mcp-setup"}
 ::
 
+Guide correlate: [l'assistente IA per la reception](/blog/ai-assistant-hotel-front-desk).
+
 ## Prossimi passi
 
 - Non sei uno sviluppatore? [Collega Claude](/blog/connect-claude-to-little-hotelier) o [ChatGPT](/blog/connect-chatgpt-to-little-hotelier) direttamente dal browser.

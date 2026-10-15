@@ -154,6 +154,8 @@ MCP selbst ist kostenlos, denn es ist ein offener Standard. Kosten entstehen fü
 ::demo-cta{path="/chat"}
 ::
 
+Siehe auch: [der Little-Hotelier-Leitfaden](/blog/little-hotelier-tips).
+
 ## Zusammenfassung
 
 - Ein MCP-Server ist ein Menü von Werkzeugen, die ein KI-Assistent in Ihrer Software nutzen kann, auf Basis eines offenen Standards von Anthropic, der heute unter der Linux Foundation geführt wird.

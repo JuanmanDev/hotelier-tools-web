@@ -152,6 +152,8 @@ The autopilot never changes stop sell, and it writes minimum stays only if you a
 ::demo-cta{path="/pricing/settings/restrictions"}
 ::
 
+See also: [Booking.com commission](/blog/booking-com-commission), [a waitlist for sold-out dates](/blog/hotel-waitlist-sold-out-dates).
+
 ## Summary
 
 - **CTA** stops check-ins on a date, **CTD** stops check-outs, **minimum stay** sets the shortest booking, and **stop sell** closes the rate for sale while keeping your room count.

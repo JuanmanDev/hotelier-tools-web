@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [guest registration, compliance, id, police, little hotelier]
 keywords: [parte de viajeros ses hospedajes, es legal pedir dni hotel, registro de viajeros hoteles, por qué piden el pasaporte en un hotel, alloggiati web, meldeschein hotel, fiche de police hôtel, siba alojamento local]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/es/automated-checks-moment-on-arrival.webp
 coverAlt: "Comprobaciones A la llegada en Hotelier Tools: DNI / Pasaporte (Registro policial), asignación de habitación física y validación de dirección y procedencia activadas, con lo que cada comprobación puede y no puede hacer"
@@ -116,7 +117,7 @@ La web de la Oficina de Inmigración no se pudo cargar desde Europa en octubre d
 
 La reserva de Little Hotelier tiene una pestaña **Huéspedes** (Guests) con un formulario para cada huésped. Además del nombre, el email y el teléfono, tiene sexo, segundo apellido y, al desplegar la flecha, el tipo de documento de identidad, el número, la nacionalidad, la fecha de expedición, la de caducidad, la fecha de nacimiento y una dirección completa con país, ciudad, provincia o estado y código postal ([editar una reserva](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)). Añade a los acompañantes como huéspedes adicionales.
 
-::screenshot{src="/images/scripts/easy-save-province-country/from.png" alt="Pestaña Huéspedes de una reserva de Little Hotelier en español con nombre, apellidos, tipo de documento de identidad, número, nacionalidad, fechas de expedición y caducidad, fecha de nacimiento y campos de dirección" caption="La pestaña Huéspedes ya tiene los campos que piden la mayoría de las normas de registro (interfaz en español)."}
+::screenshot{src="/images/scripts/easy-save-province-country/from.webp" alt="Pestaña Huéspedes de una reserva de Little Hotelier en español con nombre, apellidos, tipo de documento de identidad, número, nacionalidad, fechas de expedición y caducidad, fecha de nacimiento y campos de dirección" caption="La pestaña Huéspedes ya tiene los campos que piden la mayoría de las normas de registro (interfaz en español)."}
 ::
 
 Tres formas de rellenarlos sin volver a teclear:
@@ -125,7 +126,7 @@ Tres formas de rellenarlos sin volver a teclear:
 2. **Un partner de check-in.** [Chekin](https://helpcentre.littlehotelier.com/en/articles/8674162-connecting-to-chekin) se conecta a través de la App Store y comunica a la policía en muchos países, entre ellos España, Italia, Portugal, Francia, Alemania y Tailandia. Si lo usas, el userscript gratuito [Conexión con Chekin](/tools/ui/show-chekin) muestra el registro de cada huésped dentro de la reserva de Little Hotelier.
 3. **En recepción.** Para huéspedes españoles, el userscript gratuito [Guardado Fácil de Provincia y País](/tools/ui/easy-save-province-country) convierte el campo de provincia en un desplegable de provincias españolas y rellena España como país al elegir una.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Pestaña Huéspedes de Little Hotelier con la lista de provincias españolas del userscript Guardado Fácil de Provincia y País abierta bajo el campo Provincia/Región" caption="Elige la provincia de una lista y el país se rellena solo."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="Pestaña Huéspedes de Little Hotelier con la lista de provincias españolas del userscript Guardado Fácil de Provincia y País abierta bajo el campo Provincia/Región" caption="Elige la provincia de una lista y el país se rellena solo."}
 ::
 
 ### Detecta los documentos que faltan antes del plazo
@@ -134,6 +135,8 @@ En varios países, enviar datos incompletos o fuera de plazo ya es una infracci�
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+Guías relacionadas: [la guía de Little Hotelier](/blog/little-hotelier-tips).
 
 ## Resumen
 

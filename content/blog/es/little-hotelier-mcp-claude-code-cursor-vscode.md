@@ -298,6 +298,8 @@ Los agentes de programación son buenos ejecutando herramientas rápido, y por e
 ::demo-cta{path="/developer/mcp-setup"}
 ::
 
+Guías relacionadas: [el asistente de IA para recepción](/blog/ai-assistant-hotel-front-desk).
+
 ## Próximos pasos
 
 - ¿No eres programador? [Conecta Claude](/blog/connect-claude-to-little-hotelier) o [ChatGPT](/blog/connect-chatgpt-to-little-hotelier) desde el navegador.

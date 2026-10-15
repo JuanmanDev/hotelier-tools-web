@@ -177,6 +177,8 @@ O Hotelier Tools não é afiliado à SiteMinder nem ao Little Hotelier, nem tem 
 ::demo-cta{path="/chat"}
 ::
 
+Guias relacionados: [mensagens de hóspedes do Booking.com](/blog/booking-com-guest-messages), [a automatização da checklist da receção](/blog/hotel-front-desk-checklist-automation).
+
 ## Resumo
 
 - Um assistente de IA é seguro na receção quando lê à vontade e **pergunta antes de cada alteração**.

@@ -7,7 +7,10 @@
     "documentation": "Dokumentasi",
     "contact": "Kontak",
     "search": "Cari",
-    "blog": "Panduan"
+    "blog": "Panduan",
+    "toggleTheme": "Ganti tema",
+    "openMenu": "Buka menu",
+    "language": "Ganti bahasa"
   },
   "search": {
     "placeholder": "Cari alat, dokumentasi dan konten...",
@@ -40,18 +43,6 @@
         "secure": "Aman dan terpercaya",
         "support": "Dukungan Cepat",
         "easy": "Mudah digunakan"
-      },
-      "cards": {
-        "extensions": {
-          "title": "Skrip Browser Web",
-          "description": "Tingkatkan antarmuka Little Hotelier langsung di browser Anda. Membuat penggunaan web jauh lebih mudah tanpa modifikasi besar dan sepenuhnya gratis.",
-          "button": "Lihat Peningkatan"
-        },
-        "automations": {
-          "title": "Otomatisasi Lanjutan",
-          "description": "Bot akan melakukan tugas-tugas lanjutan yang menghemat waktu review dan mencegah kesalahan, menghindari ketidakpuasan pelanggan dan kemungkinan keluhan.",
-          "button": "Lihat Otomatisasi"
-        }
       }
     },
     "animation": {
@@ -176,40 +167,9 @@
       }
     },
     "features": {
-      "title": "Mengapa memilih Hotelier Tools?",
-      "subtitle": "Fitur yang membuat perbedaan dalam manajemen hotel Anda",
-      "chrome": {
-        "title": "Skrip Web untuk Browser",
-        "description": "Tingkatkan antarmuka Little Hotelier langsung di browser Anda",
-        "view_extensions": "Lihat Ekstensi",
-        "benefits": [
-          "Tabel lebar penuh",
-          "Kalkulator komisi",
-          "Visualisasi data yang lebih baik",
-          "Antarmuka yang dioptimalkan"
-        ]
-      },
       "automation": {
         "title": "Otomatisasi",
-        "description": "Tugas otomatis yang menghemat waktu dan mengurangi kesalahan",
-        "see_more": "Lihat lebih banyak otomatisasi",
-        "benefits": [
-          "Check-out otomatis",
-          "Validasi pembayaran",
-          "Manajemen faktur",
-          "Pemantauan reservasi"
-        ]
-      },
-      "notifications": {
-        "title": "Notifikasi",
-        "description": "Tetap terinformasi tentang segala hal yang terjadi di hotel Anda",
-        "check_available": "Periksa notifikasi yang tersedia",
-        "benefits": [
-          "Peringatan waktu nyata",
-          "Email otomatis",
-          "Dashboard terpusat",
-          "Laporan terperinci"
-        ]
+        "description": "Tugas otomatis yang menghemat waktu dan mengurangi kesalahan"
       }
     },
     "testimonials": {
@@ -238,53 +198,32 @@
       ]
     },
     "stats": {
-      "title": "Hasil berbicara untuk diri mereka sendiri",
-      "subtitle": "Temukan dampak dari alat kami",
-      "error_reduction": "Pengurangan kesalahan",
-      "time_saved": "Waktu yang dihemat setiap hari",
-      "conversion_increase": "Peningkatan konversi",
-      "monitoring": "Pemantauan berkelanjutan"
+      "title": "Hotelier Tools dalam angka",
+      "subtitle": "Dihitung dari apa yang dipublikasikan situs ini hari ini, bukan perkiraan.",
+      "scripts": "Skrip browser gratis",
+      "guides": "Panduan praktis",
+      "languages": "Bahasa",
+      "features": "Fitur dashboard"
     },
     "cta": {
       "title": "Siap mengoptimalkan hotel Anda?",
       "subtitle": "Bergabunglah dengan hotel yang sudah meningkatkan manajemen mereka dengan alat kami",
-      "start_now": "Mulai Sekarang",
-      "talk_sales": "Bicara dengan Penjualan"
+      "start_now": "Mulai Sekarang"
     }
   },
   "tools": {
     "hero": {
       "title": "Alat untuk {span}",
       "span": "Little Hotelier",
-      "subtitle": "Temukan koleksi lengkap alat kami yang dirancang khusus untuk mengoptimalkan manajemen hotel Anda dengan Little Hotelier dari Siteminder."
+      "subtitle": "Dashboard untuk seluruh resepsionis dan skrip browser gratis, keduanya dibuat untuk Little Hotelier dari SiteMinder. Alat independen, tidak berafiliasi dengan SiteMinder."
     },
     "showcase": {
       "title": "Alat Kami",
-      "subtitle": "Temukan alat yang akan merevolusi manajemen hotel Anda",
+      "subtitle": "Dashboard untuk seluruh resepsionis, dan skrip gratis yang membuat Little Hotelier lebih cepat di browser Anda.",
       "categories": {
         "all": "Semua",
         "chrome_extension": "Skrip Web untuk Browser",
         "automation": "Otomatisasi"
-      },
-      "card": {
-        "features": "Fitur utama:",
-        "more_features": "+{count} fitur lainnya",
-        "actions": {
-          "use_now": "Gunakan Sekarang",
-          "beta": "Beta",
-          "coming_soon": "Segera Hadir"
-        }
-      },
-      "cta": {
-        "title": "Butuh alat khusus?",
-        "description": "Hubungi kami untuk mengembangkan solusi spesifik untuk hotel Anda",
-        "button": "Kontak"
-      },
-      "status": {
-        "available": "Tersedia",
-        "beta": "Beta",
-        "coming_soon": "Segera Hadir",
-        "unknown": "Tidak Diketahui"
       },
       "tools": {
         "ui_enhancer": {
@@ -479,6 +418,22 @@
             "Notifikasi field yang hilang"
           ]
         }
+      },
+      "dashboard": {
+        "name": "Dashboard Hotelier Tools",
+        "description": "Aplikasi web yang terhubung ke akun Little Hotelier Anda dan ke Booking.com. Faktur, pemeriksaan, harga, pesan tamu, laporan, dan lainnya, semuanya di satu tempat."
+      },
+      "scripts": {
+        "name": "Skrip gratis untuk Little Hotelier di browser Anda",
+        "description": "Skrip Tampermonkey open source yang membuat Little Hotelier lebih cepat di Chrome, Edge, dan Firefox. Masing-masing mengatasi gangguan kecil di meja resepsionis, dan semuanya gratis.",
+        "benefits": [
+          "Tabel selebar layar dan kalender ringkas",
+          "Harga langsung terlihat di kalender",
+          "Komisi Booking.com di setiap reservasi",
+          "Tampilan yang berfungsi baik di layar sentuh"
+        ],
+        "cta": "Lihat skrip gratis",
+        "install_guide": "Cara memasangnya"
       }
     },
     "categories": {
@@ -617,7 +572,7 @@
       "urgent": {
         "title": "Dukungan Mendesak",
         "description": "Untuk masalah kritis yang mempengaruhi operasi hotel Anda",
-        "response": "Respons segera"
+        "response": "Respons cepat selama jam dukungan"
       },
       "consulting": {
         "title": "Konsultasi Teknis",
@@ -688,7 +643,8 @@
         "title": "Pertama kali menggunakan Hotelier Tools?",
         "recommendation": "Jika ini pertama kali Anda menggunakan alat kami, kami merekomendasikan memulai dengan skrip peningkatan web karena lebih mudah diinstal dan digunakan.",
         "view_scripts": "Lihat skrip yang tersedia",
-        "view_automations": "Lihat otomatisasi yang tersedia"
+        "view_automations": "Lihat otomatisasi yang tersedia",
+        "description": "Kami menyarankan memulai dengan skrip peningkatan web, karena lebih mudah diinstal dan memberikan manfaat langsung."
       }
     },
     "web_scripts": {
@@ -699,7 +655,23 @@
         "chrome": "Chrome: Kompatibilitas penuh",
         "edge": "Edge: Kompatibilitas penuh",
         "firefox": "Firefox: Kompatibilitas penuh",
-        "safari": "Safari: Kompatibilitas penuh"
+        "safari": "Safari: Kompatibilitas penuh",
+        "desktop": {
+          "title": "Browser desktop",
+          "browsers": [
+            "Chrome (disarankan)",
+            "Microsoft Edge",
+            "Mozilla Firefox",
+            "Safari",
+            "Opera"
+          ]
+        },
+        "mobile": {
+          "title": "Browser mobile",
+          "standard": "Chrome/Safari mobile standar",
+          "kiwi": "Kiwi Browser (Android)",
+          "complex_config": "*Konfigurasi lebih kompleks"
+        }
       },
       "tampermonkey_requirement": {
         "title": "Persyaratan Tampermonkey",
@@ -885,9 +857,80 @@
               "url": "/contact"
             }
           ]
+        },
+        "script_updates": {
+          "label": "Bagaimana cara memperbarui skrip peningkatan web?",
+          "content": "Di panel administrasi Tampermonkey Anda akan mendapatkan notifikasi untuk memperbarui skrip, meskipun Anda selalu dapat menyalin dan menempelkan versi terbaru dari repositori.",
+          "links": [
+            {
+              "text": "Panduan pembaruan",
+              "url": "/tools/ui/instructions"
+            },
+            {
+              "text": "Lihat skrip terbaru",
+              "url": "/tools/ui"
+            }
+          ]
+        },
+        "automation_permissions": {
+          "label": "Izin apa yang dibutuhkan otomatisasi?",
+          "content": "Otomatisasi hanya memerlukan izin baca dan tulis terbatas pada akun Little Hotelier Anda. Kami tidak pernah meminta izin administratif penuh dan hanya mengakses data minimum yang diperlukan.",
+          "links": [
+            {
+              "text": "Lihat dokumentasi",
+              "url": "/documentation"
+            },
+            {
+              "text": "Hubungi kami untuk detail",
+              "url": "/contact"
+            }
+          ]
+        },
+        "disable_automation": {
+          "label": "Bisakah saya menonaktifkan otomatisasi untuk sementara?",
+          "content": "Ya, Anda dapat menjeda otomatisasi apa pun dengan menghubungi dukungan kami. Kami sedang mengembangkan panel kontrol untuk mengelola semua otomatisasi Anda. Anda juga dapat menonaktifkan pengguna yang diberikan, dan otomatisasi akan berhenti berfungsi.",
+          "links": [
+            {
+              "text": "Hubungi dukungan",
+              "url": "/contact"
+            },
+            {
+              "text": "Manajemen otomatisasi",
+              "url": "/tools/bot"
+            }
+          ]
+        },
+        "pricing": {
+          "label": "Berapa harga alat-alat ini?",
+          "content": "Dasbor gratis untuk semua hotel hingga 9 Januari 2027. Penagihan dimulai pada 10 Januari 2027, dan hotel yang mencobanya pada 2026 membayar 50 € per bulan sepanjang 2027. Skrip browser tetap gratis.",
+          "links": [
+            {
+              "text": "Lihat alat gratis",
+              "url": "/tools/ui"
+            },
+            {
+              "text": "Lihat harga",
+              "url": "/contact"
+            }
+          ]
+        },
+        "data_privacy": {
+          "label": "Data apa yang Anda akses dan bagaimana Anda melindunginya?",
+          "content": "Kami hanya mengakses data minimum yang diperlukan untuk setiap fungsi. Kami tidak menyimpan informasi sensitif tamu maupun keuangan. Semua data diproses dengan aman.",
+          "links": [
+            {
+              "text": "Lihat dokumentasi",
+              "url": "/documentation"
+            },
+            {
+              "text": "Hubungi kami untuk informasi lebih lanjut",
+              "url": "/contact"
+            }
+          ]
         }
       }
-    }
+    },
+    "permissions_alt": "Layar izin pengguna di Little Hotelier"
   },
   "footer": {
     "description": "Optimalkan manajemen hotel Anda dengan alat yang dirancang khusus untuk Little Hotelier dari Siteminder.",
@@ -1042,19 +1085,19 @@
         "ogDescription": "Pelajari cara menginstal dan menggunakan alat manajemen hotel kami dengan panduan langkah demi langkah dan dokumentasi."
       },
       "contact": {
-        "title": "Hubungi Kami - Dukungan Hotelier Tools",
+        "title": "Kontak dan Dukungan",
         "description": "Hubungi tim dukungan kami untuk bantuan dengan alat manajemen hotel, dukungan teknis, atau pertanyaan bisnis.",
         "ogTitle": "Kontak Dukungan Hotelier Tools",
         "ogDescription": "Hubungi tim dukungan kami untuk bantuan dengan alat manajemen hotel dan bantuan teknis."
       },
       "faq": {
-        "title": "Pertanyaan yang Sering Diajukan - Hotelier Tools",
+        "title": "Pertanyaan yang Sering Diajukan",
         "description": "Temukan jawaban untuk pertanyaan umum tentang alat manajemen hotel kami, instalasi, harga, dan dukungan teknis.",
         "ogTitle": "FAQ - Hotelier Tools",
         "ogDescription": "Dapatkan jawaban untuk pertanyaan yang sering diajukan tentang alat manajemen hotel dan layanan kami."
       },
       "marketing": {
-        "title": "Alat Marketing Hotel - Tingkatkan Pemesanan Langsung Anda | Hotelier Tools",
+        "title": "Alat Marketing Hotel - Tingkatkan Pemesanan Langsung Anda",
         "description": "Temukan strategi dan alat marketing untuk meningkatkan pemesanan langsung hotel Anda. Kurangi komisi OTA dan tingkatkan profitabilitas dengan solusi khusus kami.",
         "ogTitle": "Alat Marketing Hotel - Tingkatkan Pemesanan Langsung",
         "ogDescription": "Tingkatkan pemesanan langsung dan kurangi ketergantungan OTA dengan alat dan strategi marketing hotel khusus kami."
@@ -1064,6 +1107,22 @@
         "description": "Panduan langkah demi langkah untuk hotel yang memakai Little Hotelier: memakai API, menghubungkan Claude atau ChatGPT lewat MCP, mengunduh invoice, mengotomatiskan pengecekan, harga, dan pesan tamu.",
         "ogTitle": "Panduan dan tutorial Little Hotelier",
         "ogDescription": "Panduan praktis Little Hotelier, dengan tangkapan layar dari demo langsung."
+      },
+      "uiScripts": {
+        "title": "Skrip Tampermonkey gratis untuk Little Hotelier",
+        "description": "Skrip Tampermonkey gratis yang menyempurnakan Little Hotelier: kalender ringkas, komisi Booking.com, tabel lebar penuh, cetak faktur lebih cepat, dan lainnya. Pasang dengan satu klik.",
+        "ogTitle": "Skrip browser gratis untuk Little Hotelier",
+        "ogDescription": "Peningkatan kecil dan gratis untuk layar Little Hotelier yang Anda gunakan setiap hari."
+      },
+      "uiScript": {
+        "title": "{name} untuk Little Hotelier (skrip gratis)",
+        "description": "{name}: skrip Tampermonkey gratis untuk Little Hotelier. Lihat apa yang diubahnya dan pasang dengan satu klik."
+      },
+      "uiInstructions": {
+        "title": "Cara menginstal skrip Tampermonkey untuk Little Hotelier",
+        "description": "Panduan langkah demi langkah untuk menginstal skrip Tampermonkey gratis dari Hotelier Tools untuk Little Hotelier. Pasang Tampermonkey, salin kode, lalu simpan.",
+        "ogTitle": "Cara menginstal skrip untuk Little Hotelier",
+        "ogDescription": "Instal Tampermonkey dan skrip gratis Hotelier Tools untuk Little Hotelier dalam beberapa menit, lengkap dengan tangkapan layar tiap langkah."
       }
     }
   },
@@ -1225,7 +1284,7 @@
   "platform": {
     "pause": "Jeda tayangan",
     "play": "Lanjutkan tayangan",
-    "title": "Semua yang dibutuhkan resepsionis Anda, dalam satu dashboard",
+    "title": "Semua yang dibutuhkan resepsionis Little Hotelier Anda, dalam satu dashboard",
     "subtitle": "Hotelier Tools terhubung dengan Little Hotelier dan Booking.com. Faktur, pemeriksaan, harga, pesan tamu, dan laporan resmi berjalan secara otomatis, dan Anda tinggal menyetujui hal-hal yang penting.",
     "open_dashboard": "Buka dashboard",
     "status": {
@@ -1585,7 +1644,12 @@
       "text": "Faktur, pemeriksaan, harga, pesan tamu, dan laporan INE untuk Little Hotelier. Gratis sampai 10 Januari 2027.",
       "features": "Lihat semua fitur"
     },
-    "learn_more": "Selengkapnya"
+    "learn_more": "Selengkapnya",
+    "home_overview": {
+      "title": "Mulai hari Anda dari satu layar",
+      "description": "Masuk dan lihat apa yang terhubung, apa yang sedang berjalan, dan siapa yang tiba berikutnya. Temukan halaman apa pun dengan mengetik yang Anda butuhkan. Halaman dashboard berisi tur lengkapnya."
+    },
+    "sent_by": "Dikirim oleh Hotelier Tools"
   },
   "pricing": {
     "title": "Gratis sampai {date}",
@@ -1703,5 +1767,96 @@
         "description": "Perubahan kecil yang membuat Little Hotelier lebih cepat dipakai setiap hari."
       }
     }
+  },
+  "instructions": {
+    "hero": {
+      "title": "Petunjuk",
+      "title_span": "Instalasi",
+      "subtitle": "Panduan langkah demi langkah untuk menginstal dan mengatur skrip peningkatan web untuk Little Hotelier"
+    },
+    "overview": {
+      "title": "Apa yang Anda butuhkan?",
+      "browser_title": "Browser yang kompatibel",
+      "browser_text": "Chrome, Edge, Firefox, Safari, atau Opera",
+      "time_title": "Perkiraan waktu",
+      "time_text": "5-10 menit per skrip"
+    },
+    "step1": {
+      "title": "Instal Tampermonkey",
+      "intro_1": "Tampermonkey adalah ekstensi yang memungkinkan Anda menjalankan skrip kustom di browser Anda.",
+      "intro_2": "Pilih versi reguler, bukan versi beta atau legacy.",
+      "go_to_site": "Buka situs web Tampermonkey dan pilih versi untuk browser Anda. Seharusnya ini dilakukan secara otomatis.",
+      "download_button": "Unduh Tampermonkey",
+      "new_tab_note": "Situs akan terbuka di tab baru. Ikuti petunjuk instalasi untuk browser Anda.",
+      "alt_site": "Halaman unduhan Tampermonkey",
+      "browser_store": "Tergantung browser Anda, Anda perlu mengeklik Tambahkan ke Chrome, Tambahkan ke Firefox, dan seterusnya.",
+      "alt_chrome_store": "Tampermonkey di Chrome Web Store",
+      "alt_edge_store": "Tampermonkey di toko add-on Microsoft Edge",
+      "confirm": "Konfirmasikan instalasi dan tunggu hingga ekstensi ditambahkan ke browser Anda.",
+      "alt_confirm": "Permintaan browser untuk mengonfirmasi instalasi Tampermonkey"
+    },
+    "step2": {
+      "title": "Pilih skrip peningkatan",
+      "text": "Buka halaman skrip kami dan pilih skrip yang ingin Anda instal.",
+      "alt": "Daftar skrip yang tersedia",
+      "button": "Lihat skrip yang tersedia"
+    },
+    "step3": {
+      "title": "Salin kode skrip",
+      "text": "Setelah memilih skrip, klik “Lihat kode skrip di GitHub untuk menyalinnya” lalu salin seluruh kode.",
+      "alt": "Halaman skrip di GitHub dengan kode yang terlihat",
+      "tip_title": "Tips penting",
+      "tip_text": "Pastikan Anda menyalin seluruh kode, dari baris pertama hingga terakhir. Sebaiknya gunakan tombol Copy Raw file."
+    },
+    "step4": {
+      "title": "Buat skrip baru di Tampermonkey",
+      "text": "Buka Tampermonkey dari ikon browser Anda lalu buat skrip baru.",
+      "alt_menu": "Menu Tampermonkey dengan opsi untuk membuat skrip baru",
+      "option1_title": "Opsi 1: Dari ikon",
+      "option1_text": "Klik ikon Tampermonkey → “Create a new script”",
+      "option2_title": "Opsi 2: Dari dasbor",
+      "option2_text": "Buka dasbor Tampermonkey → tab “Scripts” → “+”",
+      "editor_text": "Ini akan membuka editor tempat Anda dapat menempelkan kode skrip.",
+      "alt_editor": "Editor Tampermonkey dengan templat skrip baru"
+    },
+    "step5": {
+      "title": "Tempel dan simpan skrip",
+      "text_1": "Ganti kode templat dengan skrip yang telah Anda salin, lalu simpan.",
+      "text_2": "Anda dapat menggunakan Ctrl+A untuk memilih semua, Ctrl+V untuk menempel, dan Ctrl+S untuk menyimpan.",
+      "alert_title": "Anda bisa melakukannya dengan mudah menggunakan pintasan keyboard",
+      "alert_text": "Anda dapat menggunakan Ctrl+A untuk memilih semua, Ctrl+V untuk menempel, dan Ctrl+S untuk menyimpan.",
+      "select_title": "1. Pilih semua",
+      "select_text": "Ctrl+A untuk memilih",
+      "paste_title": "2. Tempel kode",
+      "paste_text": "Ctrl+V untuk menempel",
+      "save_title": "3. Simpan",
+      "save_text": "Ctrl+S atau tombol simpan",
+      "alt_pasted": "Editor Tampermonkey dengan kode skrip yang sudah ditempel",
+      "saved_text": "Pastikan skrip sudah tersimpan di Tampermonkey.",
+      "alt_saved": "Menu File Tampermonkey dengan opsi Save"
+    },
+    "step6": {
+      "title": "Selesai! Muat ulang Little Hotelier",
+      "text": "Muat ulang halaman Little Hotelier dan nikmati peningkatannya.",
+      "alt": "Little Hotelier dengan peningkatan yang sudah diterapkan",
+      "success_title": "Selamat!",
+      "success_text": "Skrip seharusnya sudah berfungsi. Jika Anda tidak melihat perubahan, periksa apakah skrip telah diaktifkan di Tampermonkey."
+    },
+    "help": {
+      "title": "Butuh bantuan?",
+      "text": "Jika Anda memiliki pertanyaan atau mengalami masalah selama instalasi, jangan ragu untuk menghubungi kami.",
+      "contact": "Hubungi dukungan",
+      "faq": "Lihat pertanyaan yang sering diajukan",
+      "repo": "Lihat repositori kode skrip di GitHub untuk melaporkan kesalahan"
+    }
+  },
+  "legal": {
+    "nav": {
+      "about": "Tentang",
+      "privacy": "Kebijakan Privasi",
+      "terms": "Ketentuan Penggunaan"
+    },
+    "updated": "Terakhir diperbarui: {date}",
+    "related": "Selengkapnya tentang Hotelier Tools"
   }
 }

@@ -6,6 +6,7 @@ date: 2026-10-03
 category: tips
 tags: [booking.com, commission, little hotelier, userscript, vat]
 keywords: [commissione booking percentuale, commissione booking b&b, commissione booking affitti brevi, commissione booking iva, calcolatore commissione booking, commissione booking genius]
+feature: dynamic-pricing
 demoPath: /
 cover: /images/scripts/show-booking-commissions/to.png
 coverAlt: "Riepilogo di una prenotazione in Little Hotelier (interfaccia in spagnolo) con la commissione di Booking.com, la commissione di pagamento e il netto approssimativo aggiunti da uno script gratuito"
@@ -154,6 +155,8 @@ Genius e altri sconti per canale cambiano quello che paga l'ospite, e quindi que
 ::
 
 Il resto del motore dei prezzi (prezzi dei concorrenti, regole, eventi locali) è spiegato in [prezzi dinamici per piccoli hotel su Little Hotelier](/blog/dynamic-pricing-little-hotelier) e nella [pagina Dynamic pricing](/tools/bot/dynamic-pricing). La dashboard è gratuita per ogni struttura fino all'inizio della fatturazione, il 10 gennaio 2027; gli script per il browser restano gratuiti.
+
+Guide correlate: [CTA/CTD e stop-sell](/blog/little-hotelier-cta-ctd-stop-sell).
 
 ## Riepilogo
 

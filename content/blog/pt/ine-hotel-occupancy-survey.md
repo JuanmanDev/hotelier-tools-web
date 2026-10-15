@@ -103,7 +103,7 @@ Três hábitos resolvem a maior parte:
 2. Instale o userscript gratuito [Easy Save Province and Country](/tools/ui/easy-save-province-country). Ao clicar no campo da província, mostra uma lista das províncias de Espanha, e ao escolher uma, o país muda para Espanha.
 3. Deixe as [verificações automáticas](/tools/bot/automated-checks) sinalizar as reservas sem país ou província depois da reserva, à chegada e no check-out, enquanto o hóspede ainda está no hotel e pode responder.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Separador do hóspede no Little Hotelier com a lista de províncias espanholas do Easy Save Province and Country aberta por baixo do campo Province/Region" caption="O userscript gratuito transforma o campo da província numa lista de escolha e define o país por você."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="Separador do hóspede no Little Hotelier com a lista de províncias espanholas do Easy Save Province and Country aberta por baixo do campo Province/Region" caption="O userscript gratuito transforma o campo da província numa lista de escolha e define o país por você."}
 ::
 
 ## A forma mais rápida: o relatório do INE direto do Little Hotelier

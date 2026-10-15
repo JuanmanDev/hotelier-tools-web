@@ -136,6 +136,8 @@ Di Spanyol, ini menjadi bahan laporan PPN Anda ([modelo 303](https://sede.agenci
 
 Developer juga bisa mengambil PDF invoice satu per satu lewat [REST API Hotelier Tools](/blog/little-hotelier-api). Dan jika akuntan Anda juga menginginkan data reservasi, lihat [cara mengekspor reservasi ke Excel](/blog/export-little-hotelier-reservations-excel).
 
+Panduan terkait: [panduan Little Hotelier](/blog/little-hotelier-tips), [integrasi Little Hotelier](/blog/little-hotelier-integrations).
+
 ## Ringkasan
 
 - **Invoice report** Little Hotelier meng-ZIP PDF invoice yang sudah ada; **Accounting report** mengekspor invoice final sebagai CSV untuk Xero atau QuickBooks.

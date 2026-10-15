@@ -5,13 +5,13 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
           <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Instrucciones de
+            {{ $t('instructions.hero.title') }}
             <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              Instalación
+              {{ $t('instructions.hero.title_span') }}
             </span>
           </h1>
           <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Guía paso a paso para instalar y configurar los scripts de mejora web para Little Hotelier
+            {{ $t('instructions.hero.subtitle') }}
           </p>
         </div>
       </div>
@@ -27,7 +27,7 @@
               <div class="flex items-center">
                 <UIcon name="i-heroicons-information-circle" class="w-6 h-6 mr-3 text-blue-600" />
                 <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
-                  ¿Qué necesitas?
+                  {{ $t('instructions.overview.title') }}
                 </h2>
               </div>
             </template>
@@ -36,16 +36,16 @@
               <div class="flex items-start space-x-3">
                 <UIcon name="i-heroicons-computer-desktop" class="w-6 h-6 text-green-600 mt-1" />
                 <div>
-                  <h3 class="font-semibold text-gray-900 dark:text-white">Navegador compatible</h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-300">Chrome, Edge, Firefox, Safari u Opera</p>
+                  <h3 class="font-semibold text-gray-900 dark:text-white">{{ $t('instructions.overview.browser_title') }}</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">{{ $t('instructions.overview.browser_text') }}</p>
                 </div>
               </div>
               
               <div class="flex items-start space-x-3">
                 <UIcon name="i-heroicons-clock" class="w-6 h-6 text-blue-600 mt-1" />
                 <div>
-                  <h3 class="font-semibold text-gray-900 dark:text-white">Tiempo estimado</h3>
-                  <p class="text-sm text-gray-600 dark:text-gray-300">5-10 minutos por script</p>
+                  <h3 class="font-semibold text-gray-900 dark:text-white">{{ $t('instructions.overview.time_title') }}</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">{{ $t('instructions.overview.time_text') }}</p>
                 </div>
               </div>
             </div>
@@ -59,21 +59,21 @@
                 <div class="flex items-center">
                   <UBadge label="1" color="blue" variant="solid" class="mr-3" />
                   <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                    Instalar Tampermonkey
+                    {{ $t('instructions.step1.title') }}
                   </h3>
                 </div>
               </template>
               
               <div class="space-y-4">
                 <p class="text-gray-600 dark:text-gray-300">
-                  Tampermonkey es la extensión que permite ejecutar scripts personalizados en tu navegador.
+                  {{ $t('instructions.step1.intro_1') }}
                   <br />
-                  Selecciona la versión normal, no la beta o legacy.
+                  {{ $t('instructions.step1.intro_2') }}
                 </p>
 
                 
                 <p class="text-gray-600 dark:text-gray-300">
-                  Ve a la web de tamperMonkey y selecciona la versión para tu navegador, debería hacerlo automáticamente.
+                  {{ $t('instructions.step1.go_to_site') }}
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-3">
@@ -83,54 +83,54 @@
                     icon="i-heroicons-arrow-top-right-on-square"
                     size="lg"
                   >
-                    Descargar Tampermonkey
+                    {{ $t('instructions.step1.download_button') }}
                   </UButton>
                   
                   <UAlert
                     icon="i-heroicons-information-circle"
                     
                     variant="subtle"
-                    description="Se abrirá en una nueva pestaña. Sigue las instrucciones de instalación de tu navegador."
+                    :description="$t('instructions.step1.new_tab_note')"
                     class="flex-1"
                   />
                 </div>
                 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                   <img
-                    src="/images/ui/tampermonkeyPage.png" 
-                    alt="Página de descarga de Tampermonkey" 
+                    src="/images/ui/tampermonkeyPage.webp" 
+                    :alt="$t('instructions.step1.alt_site')" 
                     class="w-full rounded-lg shadow-md mb-4" 
                   />
                 </div>
 
                 <p class="text-gray-600 dark:text-gray-300">
-                  Depnde de tu navegador tendrás que hacer click en Aañadir a Chrome, Añadir a Firefox, etc.
+                  {{ $t('instructions.step1.browser_store') }}
                 </p>
 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                   <img
-                    src="/images/ui/tamperMonkeyChromeWebStore.png" 
-                    alt="Página de descarga de Tampermonkey" 
+                    src="/images/ui/tamperMonkeyChromeWebStore.webp" 
+                    :alt="$t('instructions.step1.alt_chrome_store')" 
                     class="w-full rounded-lg shadow-md mb-4" 
                   />
                 </div>
                 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                   <img
-                    src="/images/ui/tamperMonkeyEdgeStore.png" 
-                    alt="Página de descarga de Tampermonkey" 
+                    src="/images/ui/tamperMonkeyEdgeStore.webp" 
+                    :alt="$t('instructions.step1.alt_edge_store')" 
                     class="w-full rounded-lg shadow-md mb-4" 
                   />
                 </div>
 
                 <p class="text-gray-600 dark:text-gray-300">
-                  Confirma la instalación y espera a que se añada la extensión a tu navegador.
+                  {{ $t('instructions.step1.confirm') }}
                 </p>
                 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                   <img
-                    src="/images/ui/chromeAskInstallExtension.png" 
-                    alt="Página de descarga de Tampermonkey" 
+                    src="/images/ui/chromeAskInstallExtension.webp" 
+                    :alt="$t('instructions.step1.alt_confirm')" 
                     class="w-full rounded-lg shadow-md mb-4" 
                   />
                 </div>
@@ -143,26 +143,26 @@
                 <div class="flex items-center">
                   <UBadge label="2" color="blue" variant="solid" class="mr-3" />
                   <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                    Seleccionar script de mejora
+                    {{ $t('instructions.step2.title') }}
                   </h3>
                 </div>
               </template>
               
               <div class="space-y-4">
                 <p class="text-gray-600 dark:text-gray-300">
-                  Ve a nuestra página de scripts y selecciona el que quieras instalar.
+                  {{ $t('instructions.step2.text') }}
                 </p>
                 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                   <img
-                    src="/images/ui/scripts.png" 
-                    alt="Lista de scripts disponibles" 
+                    src="/images/ui/scripts.webp" 
+                    :alt="$t('instructions.step2.alt')" 
                     class="w-full rounded-lg shadow-md mb-4" 
                   />
                 </div>
                 
                 <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;instructions&quot;,&quot;target&quot;:&quot;localePath('/tools/ui')&quot;}" :to="localePath('/tools/ui')" icon="i-heroicons-arrow-right" size="lg">
-                  Ver scripts disponibles
+                  {{ $t('instructions.step2.button') }}
                 </UButton>
               </div>
             </UCard>
@@ -173,20 +173,20 @@
                 <div class="flex items-center">
                   <UBadge label="3" color="blue" variant="solid" class="mr-3" />
                   <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                    Copiar código del script
+                    {{ $t('instructions.step3.title') }}
                   </h3>
                 </div>
               </template>
               
               <div class="space-y-4">
                 <p class="text-gray-600 dark:text-gray-300">
-                  Una vez seleccionado el script, haz clic en "Ver script" y copia todo el código.
+                  {{ $t('instructions.step3.text') }}
                 </p>
                 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                   <img
                     src="/images/ui/githubCode.png" 
-                    alt="Página del script con código visible" 
+                    :alt="$t('instructions.step3.alt')" 
                     class="w-full rounded-lg shadow-md mb-4" 
                   />
                 </div>
@@ -195,8 +195,8 @@
                   icon="i-heroicons-document-duplicate"
                   
                   variant="subtle"
-                  title="Tip importante"
-                  description="Asegúrate de copiar todo el código, desde la primera línea hasta la última. Es recomendable usar el botón de Copy Raw file."
+                  :title="$t('instructions.step3.tip_title')"
+                  :description="$t('instructions.step3.tip_text')"
                 />
               </div>
             </UCard>
@@ -207,56 +207,56 @@
                 <div class="flex items-center">
                   <UBadge label="4" color="blue" variant="solid" class="mr-3" />
                   <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                    Crear nuevo script en Tampermonkey
+                    {{ $t('instructions.step4.title') }}
                   </h3>
                 </div>
               </template>
               
               <div class="space-y-4">
                 <p class="text-gray-600 dark:text-gray-300">
-                  Abre Tampermonkey desde el icono de tu navegador y crea un nuevo script.
+                  {{ $t('instructions.step4.text') }}
                 </p>
                 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                   <img
-                    src="/images/ui/tamperMonkeyMenu.png" 
-                    alt="Panel de Tampermonkey con opción de crear script" 
+                    src="/images/ui/tamperMonkeyMenu.webp" 
+                    :alt="$t('instructions.step4.alt_menu')" 
                     class="w-full rounded-lg shadow-md mb-4" 
                   />
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div class="space-y-2">
-                    <h4 class="font-semibold text-gray-900 dark:text-white">Opción 1: Desde el icono</h4>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">{{ $t('instructions.step4.option1_title') }}</h4>
                     <p class="text-sm text-gray-600 dark:text-gray-300">
-                      Haz clic en el icono de Tampermonkey → "Create a mew script"
+                      {{ $t('instructions.step4.option1_text') }}
                     </p>
                   </div>
                 
                   <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                     <img
-                      src="/images/ui/tamperMonkey.png" 
-                      alt="Panel de Tampermonkey con opción de crear script" 
+                      src="/images/ui/tamperMonkey.webp" 
+                      :alt="$t('instructions.step4.alt_editor')" 
                       class="w-full rounded-lg shadow-md mb-4" 
                     />
                   </div>
                     
                   <div class="space-y-2">
-                    <h4 class="font-semibold text-gray-900 dark:text-white">Opción 2: Desde el tablero</h4>
+                    <h4 class="font-semibold text-gray-900 dark:text-white">{{ $t('instructions.step4.option2_title') }}</h4>
                     <p class="text-sm text-gray-600 dark:text-gray-300">
-                      Ve al tablero de Tampermonkey → Pestaña "Scripts" → "+"
+                      {{ $t('instructions.step4.option2_text') }}
                     </p>
                   </div>
                 </div>
 
                 <p class="text-gray-600 dark:text-gray-300">
-                  Esto abrirá un editor donde podrás pegar el código del script.
+                  {{ $t('instructions.step4.editor_text') }}
                 </p>
                 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                   <img
-                    src="/images/ui/tamperMonkey.png" 
-                    alt="Editor de Tampermonkey con código pegado" 
+                    src="/images/ui/tamperMonkey.webp" 
+                    :alt="$t('instructions.step4.alt_editor')" 
                     class="w-full rounded-lg shadow-md mb-4" 
                   />
                 </div>
@@ -270,25 +270,25 @@
                 <div class="flex items-center">
                   <UBadge label="5" color="blue" variant="solid" class="mr-3" />
                   <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                    Pegar y guardar el script
+                    {{ $t('instructions.step5.title') }}
                   </h3>
                 </div>
               </template>
               
               <div class="space-y-4">
                 <p class="text-gray-600 dark:text-gray-300">
-                  Reemplaza el código de plantilla con el script copiado y guarda.
+                  {{ $t('instructions.step5.text_1') }}
                   <br />
-                  Puedes usar Ctrl+A para seleccionar todo, Ctrl+V para pegar y Ctrl+S para guardar.
+                  {{ $t('instructions.step5.text_2') }}
                 </p>
                 
                 <UAlert
                   icon="i-heroicons-document-duplicate"
                   variant="subtle"
-                  title="Puedes hacerlo fácilmente con comandos de teclado"
+                  :title="$t('instructions.step5.alert_title')"
                 >
                   <template #description>
-                    Puedes usar Ctrl+A para seleccionar todo, Ctrl+V para pegar y Ctrl+S para guardar.
+                    {{ $t('instructions.step5.alert_text') }}
                   </template>
                 </UAlert>
                 
@@ -296,44 +296,44 @@
                   <UCard>
                     <div class="text-center">
                       <UIcon name="i-heroicons-document-duplicate" class="w-8 h-8 mx-auto text-blue-600 mb-2" />
-                      <h5 class="font-semibold text-sm">1. Seleccionar todo</h5>
-                      <p class="text-xs text-gray-600 dark:text-gray-300">Ctrl+A para seleccionar</p>
+                      <h5 class="font-semibold text-sm">{{ $t('instructions.step5.select_title') }}</h5>
+                      <p class="text-xs text-gray-600 dark:text-gray-300">{{ $t('instructions.step5.select_text') }}</p>
                     </div>
                   </UCard>
                   
                   <UCard>
                     <div class="text-center">
                       <UIcon name="i-heroicons-clipboard" class="w-8 h-8 mx-auto text-green-600 mb-2" />
-                      <h5 class="font-semibold text-sm">2. Pegar código</h5>
-                      <p class="text-xs text-gray-600 dark:text-gray-300">Ctrl+V para pegar</p>
+                      <h5 class="font-semibold text-sm">{{ $t('instructions.step5.paste_title') }}</h5>
+                      <p class="text-xs text-gray-600 dark:text-gray-300">{{ $t('instructions.step5.paste_text') }}</p>
                     </div>
                   </UCard>
                   
                   <UCard>
                     <div class="text-center">
                       <UIcon name="i-heroicons-check" class="w-8 h-8 mx-auto text-purple-600 mb-2" />
-                      <h5 class="font-semibold text-sm">3. Guardar</h5>
-                      <p class="text-xs text-gray-600 dark:text-gray-300">Ctrl+S o botón guardar</p>
+                      <h5 class="font-semibold text-sm">{{ $t('instructions.step5.save_title') }}</h5>
+                      <p class="text-xs text-gray-600 dark:text-gray-300">{{ $t('instructions.step5.save_text') }}</p>
                     </div>
                   </UCard>
                 </div>
 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                   <img
-                    src="/images/ui/tamperMonkeyCodePasted.png" 
-                    alt="Editor de Tampermonkey con código pegado" 
+                    src="/images/ui/tamperMonkeyCodePasted.webp" 
+                    :alt="$t('instructions.step5.alt_pasted')" 
                     class="w-full rounded-lg shadow-md mb-4" 
                   />
                 </div>
 
                 <p class="text-gray-600 dark:text-gray-300">
-                  Asegúrate de que el script esté guardado en Tampermonkey.
+                  {{ $t('instructions.step5.saved_text') }}
                 </p>
 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                   <img
-                    src="/images/ui/tamperMonkeySave.png" 
-                    alt="Editor de Tampermonkey con código pegado" 
+                    src="/images/ui/tamperMonkeySave.webp" 
+                    :alt="$t('instructions.step5.alt_saved')" 
                     class="w-full rounded-lg shadow-md mb-4" 
                   />
                 </div>
@@ -347,20 +347,20 @@
                 <div class="flex items-center">
                   <UBadge label="6" color="green" variant="solid" class="mr-3" />
                   <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                    ¡Listo! Recarga Little Hotelier
+                    {{ $t('instructions.step6.title') }}
                   </h3>
                 </div>
               </template>
               
               <div class="space-y-4">
                 <p class="text-gray-600 dark:text-gray-300">
-                  Recarga la página de Little Hotelier y disfruta de las mejoras.
+                  {{ $t('instructions.step6.text') }}
                 </p>
                 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                   <img
-                    src="/images/scripts/add-button-check-front-desk/to.png"
-                    alt="Little Hotelier con mejoras aplicadas"
+                    src="/images/scripts/add-button-check-front-desk/to.webp"
+                    :alt="$t('instructions.step6.alt')"
                     class="w-full rounded-lg shadow-md mb-4"
                   />
                 </div>
@@ -369,8 +369,8 @@
                   icon="i-heroicons-check-circle"
                   
                   variant="subtle"
-                  title="¡Felicidades!"
-                  description="El script debería estar funcionando. Si no ves cambios, verifica que el script esté habilitado en Tampermonkey."
+                  :title="$t('instructions.step6.success_title')"
+                  :description="$t('instructions.step6.success_text')"
                 />
               </div>
             </UCard>
@@ -382,28 +382,28 @@
               <div class="flex items-center">
                 <UIcon name="i-heroicons-question-mark-circle" class="w-6 h-6 mr-3 text-amber-600" />
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                  ¿Necesitas ayuda?
+                  {{ $t('instructions.help.title') }}
                 </h3>
               </div>
             </template>
             
             <div class="space-y-4">
               <p class="text-gray-600 dark:text-gray-300">
-                Si tienes alguna pregunta o encuentras problemas durante la instalación, no dudes en contactarnos.
+                {{ $t('instructions.help.text') }}
               </p>
               
               <div class="flex flex-col sm:flex-row gap-3">
                 <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;instructions&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}" :to="localePath('/contact')" icon="i-heroicons-envelope" size="lg">
-                  Contactar soporte
+                  {{ $t('instructions.help.contact') }}
                 </UButton>
                 
                 <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;instructions&quot;,&quot;target&quot;:&quot;localePath('/faq')&quot;}" :to="localePath('/faq')" variant="outline" icon="i-heroicons-question-mark-circle" size="lg">
-                  Ver preguntas frecuentes
+                  {{ $t('instructions.help.faq') }}
                 </UButton>
               </div>
 
               <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;instructions&quot;,&quot;target&quot;:&quot;https://github.com/JuanmanDev/TampermonkeyLittleHotelier&quot;}" to="https://github.com/JuanmanDev/TampermonkeyLittleHotelier" variant="outline" icon="i-heroicons-code-bracket-square" size="lg">
-                Ver repositorio de codigo de los scripts en github para notificar errores
+                {{ $t('instructions.help.repo') }}
               </UButton>
             </div>
           </UCard>
@@ -416,13 +416,6 @@
 <script setup>
 const localePath = useLocalePath()
 
-// SEO metadata
-definePageMeta({
-  title: 'Instrucciones de Instalación - Hotelier Tools'
-})
-
-useSeoMeta({
-  title: 'Instrucciones de Instalación - Scripts de Mejora Web',
-  description: 'Guía paso a paso para instalar y configurar los scripts de mejora web de Hotelier Tools para Little Hotelier. Instrucciones detalladas con imágenes.'
-})
+const { setSEO } = useSEO()
+setSEO('uiInstructions')
 </script>

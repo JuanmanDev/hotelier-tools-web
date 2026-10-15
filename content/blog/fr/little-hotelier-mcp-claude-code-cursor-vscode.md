@@ -298,6 +298,8 @@ Les agents de code exécutent les outils très vite, ce qui est précisément la
 ::demo-cta{path="/developer/mcp-setup"}
 ::
 
+À lire aussi : [l'assistant IA pour la réception](/blog/ai-assistant-hotel-front-desk).
+
 ## Prochaines étapes
 
 - Vous n'êtes pas développeur ? [Connectez plutôt Claude](/blog/connect-claude-to-little-hotelier) ou [ChatGPT](/blog/connect-chatgpt-to-little-hotelier) dans le navigateur.

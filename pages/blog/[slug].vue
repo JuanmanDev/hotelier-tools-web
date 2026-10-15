@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="doc"
-    class="ht-accent"
+    class="ht-accent ht-blog-page"
     :style="accentVars(category.accent)"
     data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;blog-slug&quot;,&quot;path&quot;:&quot;pages/blog/[slug].vue&quot;}"
   >
@@ -38,8 +38,8 @@
               {{ t('blog.reading_time', { n: minutes }) }}
             </span>
             <span class="inline-flex items-center gap-1.5">
-              <UIcon name="i-heroicons-building-office-2" class="w-4 h-4" />
-              Hotelier Tools
+              <UIcon name="i-heroicons-user-circle" class="w-4 h-4" />
+              <NuxtLink :to="localePath('/about')" rel="author" class="hover:underline">{{ AUTHOR_NAME }}</NuxtLink>
             </span>
           </div>
         </div>
@@ -103,7 +103,7 @@
           <div v-if="otherLocales.length" class="max-w-3xl mt-6 text-sm text-gray-600 dark:text-gray-400">
             <span class="mr-2">{{ t('blog.other_languages') }}</span>
             <template v-for="(l, i) in otherLocales" :key="l.code">
-              <NuxtLink :to="switchLocalePath(l.code)" :hreflang="l.code" class="underline underline-offset-4 hover:text-gray-900 dark:hover:text-white">{{ l.name }}</NuxtLink><span v-if="i < otherLocales.length - 1">, </span>
+              <NuxtLink :to="switchLocalePath(l.code)" :hreflang="languageOf(l.code)" class="underline underline-offset-4 hover:text-gray-900 dark:hover:text-white">{{ l.name }}</NuxtLink><span v-if="i < otherLocales.length - 1">, </span>
             </template>
           </div>
         </article>
@@ -162,7 +162,7 @@
 </template>
 
 <script setup lang="ts">
-import { categoryById, readingMinutes, blogSlug, BLOG_MISSING_LOCALES, type BlogMeta } from '~/data/blog'
+import { categoryById, readingMinutes, blogSlug, BLOG_MISSING_LOCALES, AUTHOR_NAME, type BlogMeta } from '~/data/blog'
 import { featureBySlug, accentVars, ACCENTS, DEMO_URL } from '~/data/platform'
 import HeroSection from '~/components/HeroSection.vue'
 import BlogCard from '~/components/blog/BlogCard.vue'
@@ -172,7 +172,7 @@ const route = useRoute()
 const { t, locale, locales } = useI18n()
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
-const { setSEO } = useSEO()
+const { setSEO, setBreadcrumbs, setFAQStructuredData, languageOf } = useSEO()
 const runtimeConfig = useRuntimeConfig()
 
 const slug = String(route.params.slug)
@@ -254,40 +254,26 @@ useSeoMeta({
 })
 
 const isoDate = (d?: string) => d ? String(d).slice(0, 10) : undefined
-const graph: Record<string, unknown>[] = [
-  {
-    '@type': 'BlogPosting',
-    headline: doc.value.title,
-    description: doc.value.description,
-    inLanguage: locale.value,
-    datePublished: isoDate(meta.value.date),
-    dateModified: isoDate(meta.value.updated ?? meta.value.date),
-    mainEntityOfPage: pageUrl.value,
-    url: pageUrl.value,
-    ...(meta.value.cover ? { image: `${baseUrl}${meta.value.cover}` } : {}),
-    keywords: meta.value.keywords?.join(', '),
-    articleSection: t(`blog.categories.${category.value.id}.name`),
-    author: { '@type': 'Organization', name: 'Hotelier Tools', url: baseUrl },
-    publisher: { '@type': 'Organization', name: 'Hotelier Tools', url: baseUrl }
-  },
-  {
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: t('nav.home'), item: `${baseUrl}${localePath('/')}` },
-      { '@type': 'ListItem', position: 2, name: t('nav.blog'), item: `${baseUrl}${localePath('/blog')}` },
-      { '@type': 'ListItem', position: 3, name: doc.value.title, item: pageUrl.value }
-    ]
-  }
-]
+useSchemaOrg([defineArticle({
+  '@type': 'BlogPosting',
+  headline: doc.value.title,
+  description: doc.value.description,
+  inLanguage: languageOf(),
+  datePublished: isoDate(meta.value.date),
+  dateModified: isoDate(meta.value.updated ?? meta.value.date),
+  ...(meta.value.cover ? { image: `${baseUrl}${meta.value.cover}` } : {}),
+  keywords: meta.value.keywords,
+  articleSection: t(`blog.categories.${category.value.id}.name`),
+  author: { '@type': 'Person', name: AUTHOR_NAME, url: `${baseUrl}${localePath('/about')}` }
+})])
+setBreadcrumbs([
+  { name: t('nav.home'), url: '/' },
+  { name: t('nav.blog'), url: '/blog' },
+  { name: doc.value.title, url: `/blog/${slug}` }
+])
 if (meta.value.faq?.length) {
-  graph.push({
-    '@type': 'FAQPage',
-    mainEntity: meta.value.faq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
-  })
+  setFAQStructuredData(meta.value.faq.map(f => ({ question: f.q, answer: f.a })))
 }
-useHead({
-  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }) }]
-})
 
 // Highlight the section being read in the table of contents
 const activeId = ref('')

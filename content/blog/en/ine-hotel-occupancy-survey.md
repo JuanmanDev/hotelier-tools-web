@@ -103,7 +103,7 @@ Three habits fix most of it:
 2. Install the free [Easy Save Province and Country](/tools/ui/easy-save-province-country) userscript. When you click the province field, it shows a list of Spain's provinces, and picking one sets the country to Spain.
 3. Let [automated checks](/tools/bot/automated-checks) flag reservations with a missing country or province after booking, on arrival and at check-out, while the guest is still there to ask.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Little Hotelier guest tab with the Easy Save Province and Country list of Spanish provinces open under the Province/Region field" caption="The free userscript turns the province field into a pick list and sets the country for you."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="Little Hotelier guest tab with the Easy Save Province and Country list of Spanish provinces open under the Province/Region field" caption="The free userscript turns the province field into a pick list and sets the country for you."}
 ::
 
 ## The faster way: the INE report straight from Little Hotelier

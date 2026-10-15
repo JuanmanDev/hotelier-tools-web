@@ -145,6 +145,8 @@ Kebijakan Bisnis WhatsApp menyatakan Anda hanya boleh menghubungi orang yang tel
 - Pakai nomor hanya untuk masa inap mereka. Pemasaran memerlukan izinnya sendiri.
 - Sebutkan di pemberitahuan privasi Anda bahwa Anda memakai WhatsApp, dan berhenti jika tamu memintanya.
 
+Panduan terkait: [panduan Little Hotelier](/blog/little-hotelier-tips), [asisten AI untuk resepsionis](/blog/ai-assistant-hotel-front-desk), [daftar tunggu untuk tanggal penuh](/blog/hotel-waitlist-sold-out-dates), [kartu tidak valid dan no-show Booking.com](/blog/booking-com-invalid-card-no-show).
+
 ## Ringkasan
 
 - **Messaging hub** (add-on Guest Engagement) adalah opsi bawaan Little Hotelier yang memakai API resmi: inbox bersama, reservasi tertaut, template, biaya Meta untuk pesan yang Anda mulai.

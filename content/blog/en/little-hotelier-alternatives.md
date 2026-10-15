@@ -6,6 +6,7 @@ date: 2026-10-03
 category: tips
 tags: [pms, comparison, alternatives, little hotelier, cloudbeds]
 keywords: [little hotelier alternatives, little hotelier vs cloudbeds, little hotelier reviews complaints, little hotelier pricing, is little hotelier part of siteminder, best pms for small hotels, little hotelier vs lodgify]
+feature: dashboard
 cover: /images/blog/demo/en/dashboard-overview.webp
 coverAlt: "Hotelier Tools home dashboard for the demo property Hotel Demo Sol: an Open AI chat card, a notice that two guest-messaging channels need attention, and status tiles for Little Hotelier, Booking.com, AI knowledge and the pricing city"
 faq:

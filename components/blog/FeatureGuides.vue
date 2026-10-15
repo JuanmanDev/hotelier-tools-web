@@ -15,6 +15,8 @@
 <script setup lang="ts">
 // Articles about one dashboard feature, shown on its landing page
 import BlogCard from '~/components/blog/BlogCard.vue'
+import { BLOG_HUB_SLUGS, FEATURE_RELATED_GUIDES, blogSlug } from '~/data/blog'
+import type { BlogListItem } from '~/data/blog'
 
 const props = defineProps<{ feature: string, name: string }>()
 
@@ -22,5 +24,19 @@ const { t } = useI18n()
 const localePath = useLocalePath()
 const { data } = await useBlogPosts()
 
-const guides = computed(() => (data.value ?? []).filter(p => p.meta.feature === props.feature).slice(0, 6))
+// Hub guides first, then featured ones, then the rest of the feature's guides (newest first),
+// then guides about this feature that are filed under another one
+const rank = (p: BlogListItem) => {
+  if (p.meta.feature !== props.feature) return 3
+  if (BLOG_HUB_SLUGS.includes(blogSlug(p.path))) return 0
+  return p.meta.featured ? 1 : 2
+}
+
+const guides = computed(() => {
+  const related = FEATURE_RELATED_GUIDES[props.feature] ?? []
+  return (data.value ?? [])
+    .filter(p => p.meta.feature === props.feature || related.includes(blogSlug(p.path)))
+    .sort((a, b) => rank(a) - rank(b))
+    .slice(0, 8)
+})
 </script>

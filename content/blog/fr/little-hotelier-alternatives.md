@@ -6,6 +6,7 @@ date: 2026-10-03
 category: tips
 tags: [pms, comparison, alternatives, little hotelier, cloudbeds]
 keywords: [little hotelier avis, alternative little hotelier, little hotelier vs cloudbeds, little hotelier tarif, little hotelier siteminder, meilleur pms petit hôtel, logiciel gestion petit hotel]
+feature: dashboard
 cover: /images/blog/demo/en/dashboard-overview.webp
 coverAlt: "Tableau de bord d'accueil de Hotelier Tools pour l'établissement de démonstration Hotel Demo Sol : une carte Open AI chat (ouvrir le chat IA), un avertissement indiquant que deux canaux de messagerie client demandent votre attention et des tuiles d'état pour Little Hotelier, Booking.com, la base de connaissances IA et la ville de tarification"
 faq:

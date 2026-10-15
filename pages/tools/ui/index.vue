@@ -19,7 +19,7 @@
           <img
             v-if="script.meta.images?.after"
             :src="script.meta.images.after"
-            alt="after"
+            :alt="`${script.title}: ${$t('tools.ui.after')}`"
             class="max-h-44 w-full sm:w-1/2 rounded object-cover border border-gray-200 dark:border-gray-700 flex-shrink-0"
             :style="'view-transition-name: ui-features-after-'+ script.path.split('/').pop()"
           />
@@ -46,7 +46,14 @@
 </template>
 
 <script setup lang="ts">
-const { locale } = useI18n()
+const { t, locale } = useI18n()
+const { setSEO, setBreadcrumbs } = useSEO()
+
+setSEO('uiScripts')
+setBreadcrumbs([
+  { name: t('nav.home'), url: '/' },
+  { name: t('seo.pages.uiScripts.ogTitle'), url: '/tools/ui' }
+])
 
 // get current url
 let currentUrl = useRoute().fullPath;

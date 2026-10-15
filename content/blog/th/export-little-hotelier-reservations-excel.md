@@ -181,6 +181,8 @@ API คืนการจองได้สูงสุด 100 รายกา�
 ::demo-cta{path="/methods"}
 ::
 
+อ่านเพิ่มเติม: [การเชื่อมต่อของ Little Hotelier](/blog/little-hotelier-integrations), [ดาวน์โหลดใบแจ้งหนี้ทั้งหมดในครั้งเดียว](/blog/download-all-little-hotelier-invoices)
+
 ## สรุป
 
 - **ด้วยมือ:** **Reservations → Search → Export** ได้ CSV ที่มีชื่อ อีเมล และที่อยู่ของแขก แต่ไม่มีเบอร์โทรศัพท์

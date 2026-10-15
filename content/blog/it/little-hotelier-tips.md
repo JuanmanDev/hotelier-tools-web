@@ -114,7 +114,7 @@ Questi [userscript](/tools/ui) gratuiti girano nel tuo browser con l'estensione 
 
 [Prices Display](/tools/ui/prices-display) legge le tue tariffe dalla pagina Inventory e le mostra sotto ogni tipologia di camera nel calendario, così puoi dare un prezzo al telefono senza cambiare schermata.
 
-::screenshot{src="/images/scripts/prices-display/to.png" alt="Calendario di Little Hotelier in spagnolo con vista a 7 giorni, prenotazioni in verde, arancione e grigio e il prezzo per notte di ogni tipologia di camera in cifre grandi sotto le sue camere" caption="Con Prices Display, la tariffa per notte di ogni tipologia di camera sta proprio sotto le sue camere."}
+::screenshot{src="/images/scripts/prices-display/to.webp" alt="Calendario di Little Hotelier in spagnolo con vista a 7 giorni, prenotazioni in verde, arancione e grigio e il prezzo per notte di ogni tipologia di camera in cifre grandi sotto le sue camere" caption="Con Prices Display, la tariffa per notte di ogni tipologia di camera sta proprio sotto le sue camere."}
 ::
 
 ### 16. Smetti di tornare a una pagina scaduta
@@ -153,6 +153,8 @@ Gli **Automated checks** leggono le prossime prenotazioni e segnalano ciò che a
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+Guide correlate: [cos'è un server MCP](/blog/what-is-mcp-server-hotels), [i prezzi dinamici su Little Hotelier](/blog/dynamic-pricing-little-hotelier), [scaricare tutte le fatture in una volta](/blog/download-all-little-hotelier-invoices), [le regole di registrazione degli ospiti per paese](/blog/guest-registration-rules-by-country), [usare WhatsApp con Little Hotelier](/blog/whatsapp-little-hotelier), [le alternative a Little Hotelier](/blog/little-hotelier-alternatives), [la dashboard di Hotelier Tools](/tools/bot/dashboard), [le automazioni di Hotelier Tools](/tools/bot/automations).
 
 ## Riepilogo
 

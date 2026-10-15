@@ -173,6 +173,8 @@ Todo lo que hace la bandeja está en la [página de la bandeja de huéspedes](/t
 Hotelier Tools no está afiliado a Booking.com, a SiteMinder ni a Little Hotelier, ni cuenta con su respaldo. Se conecta con el acceso a Little Hotelier de tu propio hotel y con tu propio acceso a la extranet de Booking.com.
 ::
 
+Guías relacionadas: [el asistente de IA para recepción](/blog/ai-assistant-hotel-front-desk), [una lista de no alquilar](/blog/hotel-do-not-rent-list).
+
 ## Resumen
 
 - Responde sobre la marcha en Pulse y deja que las plantillas, los mensajes programados y las respuestas automáticas cubran las preguntas de rutina.

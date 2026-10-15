@@ -119,6 +119,8 @@ Ogni esecuzione invia **un'email di report per attività**, nella lingua che imp
 
 Ogni attività è elencata in **Cron Jobs** (`/cron`) e ogni esecuzione in **Run History** (`/cron-logs`). La funzione è in beta. Maggiori informazioni sulla pianificazione nella [pagina Automations](/tools/bot/automations) e sull'intera funzione in [Automated checks](/tools/bot/automated-checks).
 
+Guide correlate: [la guida a Little Hotelier](/blog/little-hotelier-tips), [l'assistente IA per la reception](/blog/ai-assistant-hotel-front-desk), [una lista d'attesa per le date esaurite](/blog/hotel-waitlist-sold-out-dates).
+
 ## Riepilogo
 
 - Controlla otto cose prima di ogni arrivo: camera, saldo, carta, documento, indirizzo, numero di ospiti, orario di arrivo e la tua lista do-not-rebook.

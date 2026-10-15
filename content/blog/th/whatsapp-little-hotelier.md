@@ -149,6 +149,8 @@ Hotelier Tools ไม่ได้มีส่วนเกี่ยวข้อ�
 - ใช้หมายเลขเฉพาะเรื่องการเข้าพักของแขก การตลาดต้องขออนุญาตแยกต่างหาก
 - แจ้งในนโยบายความเป็นส่วนตัวว่าคุณใช้ WhatsApp และหยุดส่งเมื่อแขกขอ
 
+อ่านเพิ่มเติม: [คู่มือ Little Hotelier](/blog/little-hotelier-tips), [ผู้ช่วย AI สำหรับแผนกต้อนรับ](/blog/ai-assistant-hotel-front-desk), [รายการรอสำหรับวันที่เต็ม](/blog/hotel-waitlist-sold-out-dates), [บัตรไม่ถูกต้องและ no-show บน Booking.com](/blog/booking-com-invalid-card-no-show)
+
 ## สรุป
 
 - **Messaging hub** (ส่วนเสริม Guest Engagement) คือตัวเลือกในตัวของ Little Hotelier ที่ใช้ API อย่างเป็นทางการ ได้แก่ กล่องข้อความร่วม เชื่อมกับการจอง มีเทมเพลต และเสียค่าบริการให้ Meta สำหรับข้อความที่คุณเริ่มก่อน

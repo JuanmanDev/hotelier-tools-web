@@ -69,7 +69,7 @@ Little Hotelier juga punya opsi bawaan. Dengan add-on **Guest Engagement**, form
 
 Jika Anda memakai Chekin, userscript gratis **Chekin Connection** menampilkan status check-in Chekin di dalam reservasi Little Hotelier: tamu yang ditemukan, nomor telepon, dan nomor ID, dengan tombol untuk menyalin dokumen ke reservasi untuk invoice.
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Reservasi Little Hotelier dalam bahasa Spanyol dengan panel Chekin: status ditemukan 1 tamu, tabel berisi nama, telepon, dan dokumen ID, serta tombol Use document dan View in Chekin" caption="Skrip gratis Chekin Connection menampilkan data check-in tanpa meninggalkan reservasi."}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="Reservasi Little Hotelier dalam bahasa Spanyol dengan panel Chekin: status ditemukan 1 tamu, tabel berisi nama, telepon, dan dokumen ID, serta tombol Use document dan View in Chekin" caption="Skrip gratis Chekin Connection menampilkan data check-in tanpa meninggalkan reservasi."}
 ::
 
 Pasang dari [Chekin Connection](/tools/ui/show-chekin); [panduan pemasangan](/tools/ui/instructions) hanya butuh beberapa menit.
@@ -126,6 +126,8 @@ Sebagian kekurangan tidak butuh integrasi, hanya tampilan yang lebih baik. [User
 ::
 
 Seluruh set ada di [halaman ekstensi browser](/chrome-extensions), dan [ekstensi Chrome gratis untuk Little Hotelier](/blog/little-hotelier-chrome-extensions) menjelaskan masing-masingnya.
+
+Panduan terkait: [panduan Little Hotelier](/blog/little-hotelier-tips), [alternatif Little Hotelier](/blog/little-hotelier-alternatives).
 
 ## Langkah berikutnya
 

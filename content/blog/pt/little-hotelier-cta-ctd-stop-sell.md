@@ -152,6 +152,8 @@ O piloto automático nunca altera o stop sell, e só escreve estadias mínimas s
 ::demo-cta{path="/pricing/settings/restrictions"}
 ::
 
+Guias relacionados: [a comissão do Booking.com](/blog/booking-com-commission), [uma lista de espera para datas esgotadas](/blog/hotel-waitlist-sold-out-dates).
+
 ## Resumo
 
 - **CTA** impede check-ins numa data, **CTD** impede check-outs, a **estadia mínima** fixa a reserva mais curta e o **stop sell** fecha a tarifa à venda mantendo a contagem de quartos.

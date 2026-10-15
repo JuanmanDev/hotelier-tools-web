@@ -41,7 +41,7 @@
             <span class="text-xs text-gray-500 dark:text-gray-400 shrink-0">{{ mail.time }}</span>
           </span>
           <span class="block text-sm text-gray-800 dark:text-gray-200 line-clamp-2">{{ mail.subject[lang] }}</span>
-          <span class="mt-1 inline-block text-[11px] rounded-full px-2 py-0.5" :class="mail.kind === 'guest' ? 'bg-teal-50 text-teal-700 dark:bg-teal-500/10 dark:text-teal-300' : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300'">
+          <span class="mt-1 inline-block text-xs rounded-full px-2 py-0.5" :class="mail.kind === 'guest' ? 'bg-teal-50 text-teal-700 dark:bg-teal-500/10 dark:text-teal-300' : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300'">
             {{ mail.kind === 'guest' ? t('emails.to_guest') : t('emails.to_hotel') }}
           </span>
         </button>
@@ -83,7 +83,7 @@
                   <div v-else-if="block.type === 'stats'" class="grid grid-cols-3 gap-2 sm:gap-3">
                     <div v-for="card in block.cards" :key="card.value + card.label.en" class="rounded-xl border p-3 text-center" :class="statClass[card.tone ?? 'neutral']">
                       <span class="block text-2xl sm:text-3xl font-extrabold leading-tight" :class="statNum[card.tone ?? 'neutral']">{{ card.value }}</span>
-                      <span class="block text-[11px] sm:text-xs text-gray-600 dark:text-gray-300">{{ card.label[lang] }}</span>
+                      <span class="block text-xs sm:text-xs text-gray-600 dark:text-gray-300">{{ card.label[lang] }}</span>
                     </div>
                   </div>
 
@@ -97,7 +97,7 @@
                       <tbody>
                         <tr v-for="(row, r) in block.rows" :key="r" class="border-b border-gray-100 dark:border-gray-800 align-top" :class="row.level ? rowTint[row.level] : ''">
                           <td v-if="row.level" class="py-2.5 pr-3 whitespace-nowrap">
-                            <span class="inline-block rounded-md px-1.5 py-0.5 text-[10px] font-bold" :class="badge[row.level]">{{ row.level === 'warning' ? 'WARN' : row.level.toUpperCase() }}</span>
+                            <span class="inline-block rounded-md px-1.5 py-0.5 text-xs font-bold" :class="badge[row.level]">{{ row.level === 'warning' ? 'WARN' : row.level.toUpperCase() }}</span>
                           </td>
                           <td v-for="(cell, c) in row.cells" :key="c" class="py-2.5 pr-3" :class="c === 0 && !row.level ? 'whitespace-nowrap' : ''">
                             <span :class="c === 0 ? 'font-semibold' : ''">{{ typeof cell === 'string' ? cell : cell[lang] }}</span>
@@ -123,7 +123,7 @@
                   </div>
                 </template>
               </div>
-              <p class="bg-gray-50 dark:bg-gray-950 px-6 py-3 text-center text-[11px] text-gray-400">Sent by Hotelier Tools</p>
+              <p class="bg-gray-50 dark:bg-gray-950 px-6 py-3 text-center text-xs text-gray-400">{{ t('platform.sent_by') }}</p>
             </div>
 
             <p class="mt-4 text-xs text-gray-500 dark:text-gray-400">{{ t('emails.note') }}</p>

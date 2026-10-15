@@ -177,6 +177,8 @@ Hotelier Tools steht in keiner Verbindung zu SiteMinder oder Little Hotelier und
 ::demo-cta{path="/chat"}
 ::
 
+Siehe auch: [Gästenachrichten von Booking.com](/blog/booking-com-guest-messages), [Rezeptions-Checklisten automatisieren](/blog/hotel-front-desk-checklist-automation).
+
 ## Zusammenfassung
 
 - Ein KI-Assistent ist an der Rezeption sicher, wenn er frei liest und **vor jeder Änderung fragt**.

@@ -177,6 +177,8 @@ Hotelier Tools is not affiliated with or endorsed by SiteMinder or Little Hoteli
 ::demo-cta{path="/chat"}
 ::
 
+See also: [Booking.com guest messages](/blog/booking-com-guest-messages), [front desk checklist automation](/blog/hotel-front-desk-checklist-automation).
+
 ## Summary
 
 - An AI assistant is safe at the front desk when it reads freely and **asks before every change**.

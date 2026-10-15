@@ -119,6 +119,8 @@ Jeder Lauf sendet **eine Berichts-E-Mail pro Aufgabe**, in der Sprache, die Sie 
 
 Jede Aufgabe steht unter **Cron Jobs** (`/cron`) und jeder Lauf unter **Run History** (`/cron-logs`). Die Funktion ist in der Beta-Phase. Mehr zur Planung auf der Seite [Automations](/tools/bot/automations) und die komplette Funktion unter [Automated checks](/tools/bot/automated-checks).
 
+Siehe auch: [der Little-Hotelier-Leitfaden](/blog/little-hotelier-tips), [der KI-Assistent für die Rezeption](/blog/ai-assistant-hotel-front-desk), [eine Warteliste für ausgebuchte Termine](/blog/hotel-waitlist-sold-out-dates).
+
 ## Zusammenfassung
 
 - Prüfen Sie vor jeder Anreise acht Dinge: Zimmer, Saldo, Karte, Ausweis, Anschrift, Personenzahl, Ankunftszeit und Ihre Sperrliste.

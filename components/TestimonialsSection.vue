@@ -63,7 +63,7 @@
                 </a>
               </div>
               <div class="flex items-center">
-                <UIcon name="i-heroicons-quote-left" class="w-8 h-8 text-blue-200 dark:text-blue-800" />
+                <UIcon name="i-heroicons-chat-bubble-bottom-center-text" class="w-8 h-8 text-blue-200 dark:text-blue-800" />
               </div>
             </div>
           </div>

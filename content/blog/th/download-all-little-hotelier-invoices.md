@@ -136,6 +136,8 @@ Hotelier Tools ไม่ได้มีส่วนเกี่ยวข้อ�
 
 นักพัฒนายังดึง PDF ใบแจ้งหนี้ได้ทีละใบผ่าน [Hotelier Tools REST API](/blog/little-hotelier-api) ได้ และถ้านักบัญชีอยากได้ข้อมูลการจองด้วย ดู [วิธีส่งออกการจองเป็น Excel](/blog/export-little-hotelier-reservations-excel)
 
+อ่านเพิ่มเติม: [คู่มือ Little Hotelier](/blog/little-hotelier-tips), [การเชื่อมต่อของ Little Hotelier](/blog/little-hotelier-integrations)
+
 ## สรุป
 
 - **Invoice report** ของ Little Hotelier รวม PDF ของใบที่มีอยู่แล้วเป็น ZIP ส่วน **Accounting report** ส่งออกใบ final เป็น CSV สำหรับ Xero หรือ QuickBooks

@@ -173,6 +173,8 @@ Everything the inbox does is on the [Guest inbox page](/tools/bot/guest-inbox). 
 Hotelier Tools is not affiliated with or endorsed by Booking.com, SiteMinder or Little Hotelier. It connects with your hotel's own Little Hotelier login and your own Booking.com extranet login.
 ::
 
+See also: [the AI assistant for the front desk](/blog/ai-assistant-hotel-front-desk), [a do-not-rent list](/blog/hotel-do-not-rent-list).
+
 ## Summary
 
 - Answer on the go in Pulse, and let templates, scheduled messages and automatic replies cover the routine questions.

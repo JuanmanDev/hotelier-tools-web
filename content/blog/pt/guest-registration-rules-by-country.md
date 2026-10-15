@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [guest registration, compliance, id, police, little hotelier]
 keywords: [siba alojamento local, aima boletim de alojamento, boletim sef alojamento local, fnrh digital, fnrh digital é obrigatório, fnrh digital como funciona, registo de hóspedes hotel, registro de hóspedes hotel]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "Verificações When they arrive no Hotelier Tools: ID / passaporte (registo policial), atribuição física de quarto e validação de endereço e origem ligadas, com o que cada verificação pode e não pode fazer"
@@ -114,7 +115,7 @@ O site do Immigration Bureau não abria a partir da Europa em outubro de 2026, p
 
 A reserva do Little Hotelier tem um separador (aba) **Guests** com um formulário para cada hóspede. Além de nome, e-mail e telefone, tem sexo, um segundo apelido e, sob a seta de expansão, o tipo de documento de identificação, o número, a nacionalidade, a data de emissão, a data de validade, a data de nascimento e um endereço completo com país, cidade, estado e código postal ([editar uma reserva](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)). Adicione os acompanhantes como hóspedes adicionais.
 
-::screenshot{src="/images/scripts/easy-save-province-country/from.png" alt="Separador Guests de uma reserva do Little Hotelier, em espanhol, com nome, apelidos, tipo de documento, número, nacionalidade, datas de emissão e validade, data de nascimento e campos de endereço" caption="O separador Guests já tem os campos que a maioria das regras de registo pede (interface em espanhol)."}
+::screenshot{src="/images/scripts/easy-save-province-country/from.webp" alt="Separador Guests de uma reserva do Little Hotelier, em espanhol, com nome, apelidos, tipo de documento, número, nacionalidade, datas de emissão e validade, data de nascimento e campos de endereço" caption="O separador Guests já tem os campos que a maioria das regras de registo pede (interface em espanhol)."}
 ::
 
 Três formas de os preencher sem voltar a digitar:
@@ -123,7 +124,7 @@ Três formas de os preencher sem voltar a digitar:
 2. **Um parceiro de check-in.** O [Chekin](https://helpcentre.littlehotelier.com/en/articles/8674162-connecting-to-chekin) conecta-se pela App Store e comunica os dados à polícia em muitos países, incluindo Espanha, Itália, Portugal, França, Alemanha e Tailândia. Se o usar, o userscript gratuito [Chekin Connection](/tools/ui/show-chekin) mostra o registo de cada hóspede dentro da reserva do Little Hotelier.
 3. **Na receção / recepção.** Para hóspedes espanhóis, o userscript gratuito [Easy Save Province and Country](/tools/ui/easy-save-province-country) transforma o campo da província numa lista de províncias espanholas e define o país como Espanha quando você escolhe uma.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Separador Guests do Little Hotelier com a lista de províncias espanholas do Easy Save Province and Country aberta sob o campo Province/Region" caption="Escolha a província numa lista e o país preenche-se sozinho."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="Separador Guests do Little Hotelier com a lista de províncias espanholas do Easy Save Province and Country aberta sob o campo Province/Region" caption="Escolha a província numa lista e o país preenche-se sozinho."}
 ::
 
 ### Encontre os documentos que faltam antes do prazo
@@ -132,6 +133,8 @@ Dados incompletos ou enviados fora do prazo já são, por si só, uma infração
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+Guias relacionados: [o guia do Little Hotelier](/blog/little-hotelier-tips).
 
 ## Resumo
 

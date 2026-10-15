@@ -153,6 +153,8 @@ Autopilot menulis minimum stay hanya jika Anda mengizinkannya secara terpisah, d
 3. Terapkan secara manual selama beberapa minggu. Periksa log harga.
 4. Baru setelah itu pertimbangkan autopilot, dengan horizon pendek dan email perubahan tetap aktif.
 
+Panduan terkait: [panduan Little Hotelier](/blog/little-hotelier-tips), [menampilkan harga di kalender](/tools/ui/prices-display).
+
 ## Ringkasan
 
 - Dynamic pricing untuk hotel kecil adalah beberapa keputusan yang konsisten: okupansi, kompetitor sejenis, acara, lead time, harga minimum dan maksimum.

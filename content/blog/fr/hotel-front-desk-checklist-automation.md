@@ -119,6 +119,8 @@ Chaque exécution envoie **un e-mail de rapport par tâche**, dans la langue que
 
 Chaque tâche est listée sous **Cron Jobs** (`/cron`) et chaque exécution sous **Run History** (`/cron-logs`). La fonctionnalité est en bêta. Plus de détails sur la programmation sur la [page Automatisations](/tools/bot/automations), et sur la fonctionnalité complète sur la [page Contrôles automatiques](/tools/bot/automated-checks).
 
+À lire aussi : [le guide Little Hotelier](/blog/little-hotelier-tips), [l'assistant IA pour la réception](/blog/ai-assistant-hotel-front-desk), [une liste d'attente pour les dates complètes](/blog/hotel-waitlist-sold-out-dates).
+
 ## Résumé
 
 - Contrôlez huit points avant chaque arrivée : chambre, solde, carte, pièce d'identité, adresse, nombre de clients, heure d'arrivée et votre liste do-not-rebook.

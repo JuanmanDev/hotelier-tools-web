@@ -220,7 +220,17 @@ import ErrorDetectionShowcase from '~/components/animation/ErrorDetectionShowcas
 import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
 
 // I18n composable
+const { t } = useI18n()
 const localePath = useLocalePath()
+
+// SEO metadata
+const { setSEO } = useSEO()
+setSEO('incompleteReservations', {
+  title: t('marketing.detect_incomplete_reservation.header.title'),
+  description: t('marketing.detect_incomplete_reservation.header.subtitle'),
+  ogTitle: t('marketing.detect_incomplete_reservation.header.title'),
+  ogDescription: t('marketing.detect_incomplete_reservation.header.subtitle')
+})
 
 // Dark mode composable
 const colorMode = useColorMode()

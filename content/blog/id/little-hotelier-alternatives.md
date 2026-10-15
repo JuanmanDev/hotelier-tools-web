@@ -6,6 +6,7 @@ date: 2026-10-03
 category: tips
 tags: [pms, comparison, alternatives, little hotelier, cloudbeds]
 keywords: [alternatif little hotelier, little hotelier vs cloudbeds, little hotelier harga, little hotelier vs siteminder, little hotelier adalah, aplikasi manajemen hotel gratis, pms hotel apa saja]
+feature: dashboard
 cover: /images/blog/demo/en/dashboard-overview.webp
 coverAlt: "Dashboard beranda Hotelier Tools untuk properti demo Hotel Demo Sol: kartu Open AI chat untuk membuka chat AI, pemberitahuan bahwa dua channel pesan tamu perlu perhatian, dan kotak status untuk Little Hotelier, Booking.com, pengetahuan AI, dan kota acuan harga"
 faq:

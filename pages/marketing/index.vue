@@ -70,31 +70,15 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const localePath = useLocalePath()
-const { setSEO, setStructuredData, setBreadcrumbs } = useSEO()
+const { setSEO, setBreadcrumbs } = useSEO()
 
-// Custom SEO configuration for marketing page
-setSEO('marketing', {
-  title: 'Hotel Marketing Tools - Boost Your Direct Bookings | Hotelier Tools',
-  description: 'Discover marketing strategies and tools to increase direct bookings for your hotel. Reduce OTA commissions and improve profitability with our specialized solutions.',
-  ogTitle: 'Hotel Marketing Tools - Boost Direct Bookings',
-  ogDescription: 'Reduce OTA commissions and increase direct bookings with our specialized hotel marketing tools and strategies.',
-  keywords: 'hotel marketing, direct bookings, OTA commission reduction, hotel revenue optimization, booking engine optimization'
-})
+// SEO metadata, translated in i18n/locales (seo.pages.marketing)
+setSEO('marketing')
 
-// Set structured data for this marketing page
-onMounted(() => {
-  setStructuredData('Article', {
-    title: 'Hotel Marketing Tools - Boost Your Direct Bookings',
-    description: 'Comprehensive guide and tools for increasing direct bookings and reducing dependency on OTAs',
-    datePublished: '2024-01-15T00:00:00Z',
-    dateModified: new Date().toISOString()
-  })
-  
-  setBreadcrumbs([
-    { name: t('nav.home'), url: '/' },
-    { name: 'Marketing', url: '/marketing' }
-  ])
-})
+setBreadcrumbs([
+  { name: t('nav.home'), url: '/' },
+  { name: t('seo.pages.marketing.ogTitle'), url: '/marketing' }
+])
 
 const marketingFeatures = [
   {

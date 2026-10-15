@@ -114,7 +114,7 @@ MFA เป็นข้อบังคับ และ Little Hotelier ขอใ�
 
 [Prices Display](/tools/ui/prices-display) อ่านราคาจากหน้า inventory และแสดงใต้ประเภทห้องแต่ละแถวในปฏิทิน คุณจึงบอกราคาทางโทรศัพท์ได้โดยไม่ต้องสลับหน้าจอ
 
-::screenshot{src="/images/scripts/prices-display/to.png" alt="ปฏิทินของ Little Hotelier ภาษาสเปนมุมมอง 7 วัน การจองสีเขียว ส้ม และเทา และราคาต่อคืนของแต่ละประเภทห้องแสดงเป็นตัวเลขใหญ่ใต้ห้องของประเภทนั้น" caption="ด้วย Prices Display ราคาต่อคืนของแต่ละประเภทห้องอยู่ใต้ห้องของประเภทนั้นพอดี"}
+::screenshot{src="/images/scripts/prices-display/to.webp" alt="ปฏิทินของ Little Hotelier ภาษาสเปนมุมมอง 7 วัน การจองสีเขียว ส้ม และเทา และราคาต่อคืนของแต่ละประเภทห้องแสดงเป็นตัวเลขใหญ่ใต้ห้องของประเภทนั้น" caption="ด้วย Prices Display ราคาต่อคืนของแต่ละประเภทห้องอยู่ใต้ห้องของประเภทนั้นพอดี"}
 ::
 
 ### 16. ไม่ต้องกลับมาเจอหน้าที่ค้าง
@@ -153,6 +153,8 @@ Hotelier Tools เป็นแดชบอร์ดอิสระที่ท�
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+อ่านเพิ่มเติม: [MCP server คืออะไร](/blog/what-is-mcp-server-hotels), [การตั้งราคาแบบไดนามิกบน Little Hotelier](/blog/dynamic-pricing-little-hotelier), [ดาวน์โหลดใบแจ้งหนี้ทั้งหมดในครั้งเดียว](/blog/download-all-little-hotelier-invoices), [กฎการลงทะเบียนแขกแยกตามประเทศ](/blog/guest-registration-rules-by-country), [การใช้ WhatsApp กับ Little Hotelier](/blog/whatsapp-little-hotelier), [ทางเลือกอื่นแทน Little Hotelier](/blog/little-hotelier-alternatives), [แดชบอร์ด Hotelier Tools](/tools/bot/dashboard), [ระบบอัตโนมัติของ Hotelier Tools](/tools/bot/automations)
 
 ## สรุป
 

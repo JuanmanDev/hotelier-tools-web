@@ -119,6 +119,8 @@ Setiap kali berjalan, tugas mengirim **satu email laporan**, dalam bahasa yang A
 
 Setiap tugas terdaftar di **Cron Jobs** (`/cron`) dan setiap eksekusinya di **Run History** (`/cron-logs`). Fitur ini dalam beta. Selengkapnya tentang penjadwalan di [halaman Automations](/tools/bot/automations), dan fitur lengkapnya di [Automated checks](/tools/bot/automated-checks).
 
+Panduan terkait: [panduan Little Hotelier](/blog/little-hotelier-tips), [asisten AI untuk resepsionis](/blog/ai-assistant-hotel-front-desk), [daftar tunggu untuk tanggal penuh](/blog/hotel-waitlist-sold-out-dates).
+
 ## Ringkasan
 
 - Periksa delapan hal sebelum setiap kedatangan: kamar, saldo, kartu, ID, alamat, jumlah tamu, jam kedatangan, dan daftar do-not-rebook Anda.

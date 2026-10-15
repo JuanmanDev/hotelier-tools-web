@@ -1,0 +1,27 @@
+name: IndexNow
+
+# After a push that changes what the site shows, ask IndexNow search engines to recrawl it.
+# Vercel deploys main on its own; the script waits until the new build is live.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'pages/**'
+      - 'components/**'
+      - 'i18n/**'
+      - 'data/**'
+  workflow_dispatch:
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Wait for the deploy, then submit the sitemap URLs
+        run: |
+          sleep 120
+          node scripts/indexnow.mjs

@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [ses hospedajes, spain, compliance, guest registration, little hotelier]
 keywords: [ses hospedajes, ses hospedajes in english, ses hospedajes little hotelier, parte de viajeros, ses hospedajes datos obligatorios, ses hospedajes servicio web, como registrar viajeros ses hospedajes]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "When they arrive settings in Hotelier Tools with the ID / passport (police register), Physical room assignment and Address and origin validation checks switched on, each with what it can and cannot do"
@@ -125,7 +126,7 @@ Double work happens when the same guest is typed into Little Hotelier and again 
 
 The free [Chekin Connection](/tools/ui/show-chekin) userscript adds a Chekin panel to the reservation in Little Hotelier. You see at a glance whether guests have registered, with their names, phones and document numbers, and you can copy the document number into the reservation, for example for the invoice. When nobody has registered yet, it shows the guest registration link with buttons to open, copy, email or WhatsApp it. You need to be signed in to Chekin in the same browser. It is an independent script, not made by Chekin or Little Hotelier. Install guide: [how to install the userscripts](/tools/ui/instructions).
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Little Hotelier reservation with the Chekin panel: one guest found, with name, phone and document number, and the Use document and View in Chekin buttons" caption="The Chekin panel inside the Little Hotelier reservation, with the guest's document ready to use."}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="Little Hotelier reservation with the Chekin panel: one guest found, with name, phone and document number, and the Use document and View in Chekin buttons" caption="The Chekin panel inside the Little Hotelier reservation, with the guest's document ready to use."}
 ::
 
 ### Flag missing IDs before arrival

@@ -298,6 +298,8 @@ Agen pemrograman pandai menjalankan tool dengan cepat, dan itulah alasan mengapa
 ::demo-cta{path="/developer/mcp-setup"}
 ::
 
+Panduan terkait: [asisten AI untuk resepsionis](/blog/ai-assistant-hotel-front-desk).
+
 ## Langkah berikutnya
 
 - Bukan developer? [Hubungkan Claude](/blog/connect-claude-to-little-hotelier) atau [ChatGPT](/blog/connect-chatgpt-to-little-hotelier) lewat browser saja.

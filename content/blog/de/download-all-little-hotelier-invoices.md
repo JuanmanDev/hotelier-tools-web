@@ -136,6 +136,8 @@ In Spanien fließt das in Ihre Umsatzsteuererklärung ein ([modelo 303](https://
 
 Entwickler können Rechnungs-PDFs auch einzeln über die [REST-API von Hotelier Tools](/blog/little-hotelier-api) abrufen. Und wenn Ihr Steuerberater auch Reservierungsdaten möchte, lesen Sie [Reservierungen nach Excel exportieren](/blog/export-little-hotelier-reservations-excel).
 
+Siehe auch: [der Little-Hotelier-Leitfaden](/blog/little-hotelier-tips), [Little-Hotelier-Integrationen](/blog/little-hotelier-integrations).
+
 ## Zusammenfassung
 
 - Der **Invoice report** von Little Hotelier packt die PDFs bereits vorhandener Rechnungen in ein ZIP, der **Accounting report** exportiert abgeschlossene Rechnungen als CSV für Xero oder QuickBooks.

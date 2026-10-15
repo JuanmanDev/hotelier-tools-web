@@ -145,6 +145,8 @@ A Business Policy do WhatsApp diz que só pode contactar pessoas que lhe deram o
 - Use o número só para a estadia. O marketing precisa da sua própria autorização.
 - Indique na sua política de privacidade que usa o WhatsApp e pare quando um hóspede o pedir.
 
+Guias relacionados: [o guia do Little Hotelier](/blog/little-hotelier-tips), [o assistente de IA para a receção](/blog/ai-assistant-hotel-front-desk), [uma lista de espera para datas esgotadas](/blog/hotel-waitlist-sold-out-dates), [cartões inválidos e no-shows no Booking.com](/blog/booking-com-invalid-card-no-show).
+
 ## Resumo
 
 - O **Messaging hub** (extra Guest Engagement) é a opção nativa do Little Hotelier com a API oficial: caixa de entrada comum, reserva associada, modelos, taxas da Meta pelas mensagens que você inicia.

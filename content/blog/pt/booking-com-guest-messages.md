@@ -173,6 +173,8 @@ Tudo o que a caixa de entrada faz está na [página Guest inbox](/tools/bot/gues
 O Hotelier Tools é independente: não é afiliado ao Booking.com, à SiteMinder nem ao Little Hotelier, nem tem o aval deles. Conecta-se com o login do Little Hotelier do seu próprio hotel e com o seu próprio login da extranet do Booking.com.
 ::
 
+Guias relacionados: [o assistente de IA para a receção](/blog/ai-assistant-hotel-front-desk), [uma lista de hóspedes a não aceitar](/blog/hotel-do-not-rent-list).
+
 ## Resumo
 
 - Responda de qualquer lugar pelo Pulse e deixe que modelos, mensagens agendadas e respostas automáticas cubram as perguntas de rotina.

@@ -15,7 +15,7 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div 
           v-for="(stat, index) in stats"
           :key="stat.label"
@@ -34,18 +34,35 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+import { platformSlides } from '~/data/platform'
+
+const { t, locales } = useI18n()
 
 const statsSection = ref<HTMLElement>()
-const animatedValues = ref<number[]>([0, 0, 0, 0])
 const hasAnimated = ref(false)
 
-const stats = [
-  { value: 95, suffix: '%', label: 'home.stats.error_reduction' },
-  { value: 3, suffix: 'h', label: 'home.stats.time_saved' },
-  { value: 15, suffix: '%', label: 'home.stats.conversion_increase' },
-  { value: 24, suffix: '/7', label: 'home.stats.monitoring' }
-]
+// Every figure is counted from what this site publishes, so none of them can drift from the truth:
+// - scripts and guides: the markdown files in content/scripts/en and content/blog/en
+// - languages: the locales registered in nuxt.config.ts
+// - dashboard features: the entries of platformSlides in data/platform.ts
+const { data: counts } = await useAsyncData('home-stats-counts', async () => {
+  const [scripts, guides] = await Promise.all([
+    queryCollection('content').where('path', 'LIKE', '/scripts/en/%').count(),
+    queryCollection('content').where('path', 'LIKE', '/blog/en/%').count()
+  ])
+  return { scripts, guides }
+})
+
+const stats = computed(() => [
+  { value: counts.value?.scripts ?? 0, suffix: '', label: 'home.stats.scripts' },
+  { value: counts.value?.guides ?? 0, suffix: '', label: 'home.stats.guides' },
+  { value: locales.value.length, suffix: '', label: 'home.stats.languages' },
+  { value: platformSlides.length, suffix: '', label: 'home.stats.features' }
+].filter(stat => stat.value > 0))
+
+// The server-rendered HTML carries the real figures, so search engines and visitors without
+// JavaScript never see zeros; the count-up only replays in the browser
+const animatedValues = ref<number[]>(stats.value.map(stat => stat.value))
 
 const animateNumber = (targetValue: number, index: number, duration: number = 2000) => {
   const startTime = Date.now()
@@ -76,7 +93,7 @@ const startAnimation = () => {
   if (hasAnimated.value) return
   
   hasAnimated.value = true
-  stats.forEach((stat, index) => {
+  stats.value.forEach((stat, index) => {
     // Add a small delay between each number animation
     setTimeout(() => {
       animateNumber(stat.value, index)
@@ -86,7 +103,11 @@ const startAnimation = () => {
 
 onMounted(() => {
   if (!statsSection.value) return
-  
+
+  // Already on screen when the page loads: keep the final figures instead of resetting them
+  if (statsSection.value.getBoundingClientRect().top < window.innerHeight) return
+  animatedValues.value = stats.value.map(() => 0)
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {

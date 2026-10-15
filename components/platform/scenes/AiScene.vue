@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <div class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 flex items-center gap-2 text-[11px] text-gray-500 dark:text-gray-400">
+    <div class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
       {{ $t('platform.scenes.ai.voice') }}
       <span class="ht-ring w-9 h-9 rounded-full grid place-items-center text-white" :style="{ background: 'var(--accent)', '--d': '0.4s' }">
         <UIcon name="i-heroicons-microphone" class="w-4 h-4" />

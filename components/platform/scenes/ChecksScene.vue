@@ -7,10 +7,10 @@
       <ol class="relative grid grid-cols-5">
         <li v-for="(step, i) in steps" :key="step" class="flex flex-col items-center text-center gap-2">
           <span
-            class="ht-pop ht-ring w-7 h-7 rounded-full grid place-items-center text-[11px] font-semibold text-white"
+            class="ht-pop ht-ring w-7 h-7 rounded-full grid place-items-center text-xs font-semibold text-white"
             :style="{ background: 'var(--accent)', '--d': `${0.2 + i * 0.16}s` }"
           >{{ i + 1 }}</span>
-          <span class="text-[11px] leading-tight text-gray-600 dark:text-gray-300 px-1">{{ $t(`platform.scenes.checks.steps.${step}`) }}</span>
+          <span class="text-xs leading-tight text-gray-600 dark:text-gray-300 px-1">{{ $t(`platform.scenes.checks.steps.${step}`) }}</span>
         </li>
       </ol>
     </div>

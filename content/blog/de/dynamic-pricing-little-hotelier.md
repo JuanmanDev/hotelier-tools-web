@@ -153,6 +153,8 @@ Mindestaufenthalte setzt er nur, wenn Sie das gesondert erlauben, und den Stop-S
 3. Übernehmen Sie die Preise einige Wochen lang von Hand. Prüfen Sie das Preisprotokoll.
 4. Erst dann sollten Sie den Autopiloten in Betracht ziehen, mit kurzem Zeitraum und eingeschalteten Änderungs-E-Mails.
 
+Siehe auch: [der Little-Hotelier-Leitfaden](/blog/little-hotelier-tips), [Preise im Kalender anzeigen](/tools/ui/prices-display).
+
 ## Zusammenfassung
 
 - Dynamische Preise für ein kleines Hotel sind wenige konsequente Entscheidungen: Auslastung, vergleichbare Mitbewerber, Events, Vorlaufzeit, ein Mindest- und ein Höchstpreis.

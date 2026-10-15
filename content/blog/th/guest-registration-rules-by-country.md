@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [guest registration, compliance, id, police, little hotelier]
 keywords: [แจ้งที่พักคนต่างด้าว ตม.30 ออนไลน์, tm30 แจ้งที่พัก, tm30 โรงแรม, tm30 คือ, ลงทะเบียนแขกโรงแรม, ทำไมโรงแรมสแกนพาสปอร์ต, alloggiati web, siba alojamento local]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "การตรวจช่วง When they arrive ใน Hotelier Tools: เปิดการตรวจ ID / passport (police register), physical room assignment และ address and origin validation ไว้ พร้อมคำอธิบายว่าแต่ละการตรวจทำอะไรได้และไม่ได้"
@@ -114,7 +115,7 @@ faq:
 
 การจองใน Little Hotelier มีแท็บ **Guests** พร้อมฟอร์มของแขกแต่ละคน นอกจากชื่อ อีเมล และโทรศัพท์ ยังมีเพศ นามสกุลที่สอง และเมื่อกดลูกศรขยายจะมีประเภทเอกสาร เลขที่เอกสาร สัญชาติ วันออกเอกสาร วันหมดอายุ วันเกิด และที่อยู่เต็มพร้อมประเทศ เมือง รัฐ และรหัสไปรษณีย์ ([edit a reservation](https://helpcentre.littlehotelier.com/en/articles/8673701-edit-a-reservation)) ผู้ร่วมเดินทางให้เพิ่มเป็นแขกอีกคน
 
-::screenshot{src="/images/scripts/easy-save-province-country/from.png" alt="แท็บ Guests ของการจองใน Little Hotelier ภาษาสเปน มีช่องชื่อ นามสกุล ประเภทเอกสาร เลขที่เอกสาร สัญชาติ วันออกและวันหมดอายุ วันเกิด และที่อยู่" caption="แท็บ Guests มีช่องที่กฎการลงทะเบียนส่วนใหญ่ต้องการอยู่แล้ว (แสดงหน้าจอภาษาสเปน)"}
+::screenshot{src="/images/scripts/easy-save-province-country/from.webp" alt="แท็บ Guests ของการจองใน Little Hotelier ภาษาสเปน มีช่องชื่อ นามสกุล ประเภทเอกสาร เลขที่เอกสาร สัญชาติ วันออกและวันหมดอายุ วันเกิด และที่อยู่" caption="แท็บ Guests มีช่องที่กฎการลงทะเบียนส่วนใหญ่ต้องการอยู่แล้ว (แสดงหน้าจอภาษาสเปน)"}
 ::
 
 สามวิธีที่ช่วยกรอกโดยไม่ต้องพิมพ์ซ้ำ
@@ -123,7 +124,7 @@ faq:
 2. **แอปพาร์ตเนอร์ด้านเช็คอิน** [Chekin](https://helpcentre.littlehotelier.com/en/articles/8674162-connecting-to-chekin) เชื่อมต่อผ่าน App Store และแจ้งข้อมูลต่อตำรวจได้ในหลายประเทศ รวมถึงสเปน อิตาลี โปรตุเกส ฝรั่งเศส เยอรมนี และไทย ถ้าคุณใช้ Chekin อยู่ สคริปต์ (userscript) ฟรี [Chekin Connection](/tools/ui/show-chekin) จะแสดงสถานะการลงทะเบียนของแขกแต่ละคนในหน้าการจองของ Little Hotelier
 3. **ที่แผนกต้อนรับ** สำหรับแขกชาวสเปน สคริปต์ฟรี [Easy Save Province and Country](/tools/ui/easy-save-province-country) จะเปลี่ยนช่องจังหวัดให้เป็นรายการจังหวัดของสเปน และตั้งประเทศเป็นสเปนให้เมื่อคุณเลือกจังหวัด
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="แท็บ Guests ของ Little Hotelier ที่เปิดรายการจังหวัดสเปนจาก Easy Save Province and Country ใต้ช่อง Province/Region" caption="เลือกจังหวัดจากรายการ แล้วระบบจะกรอกประเทศให้เอง"}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="แท็บ Guests ของ Little Hotelier ที่เปิดรายการจังหวัดสเปนจาก Easy Save Province and Country ใต้ช่อง Province/Region" caption="เลือกจังหวัดจากรายการ แล้วระบบจะกรอกประเทศให้เอง"}
 ::
 
 ### ตรวจหาข้อมูลเอกสารที่ขาดก่อนถึงกำหนดส่ง
@@ -132,6 +133,8 @@ faq:
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+อ่านเพิ่มเติม: [คู่มือ Little Hotelier](/blog/little-hotelier-tips)
 
 ## สรุป
 

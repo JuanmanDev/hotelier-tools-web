@@ -6,6 +6,7 @@ date: 2026-10-03
 category: tips
 tags: [booking.com, commission, little hotelier, userscript, vat]
 keywords: [commission booking pourcentage, commission booking 2026, calculatrice commission booking, calcul commission booking hôtel, commission booking tva, commission booking genius]
+feature: dynamic-pricing
 demoPath: /
 cover: /images/scripts/show-booking-commissions/to.png
 coverAlt: "Récapitulatif d'une réservation Little Hotelier (interface en espagnol) avec la commission Booking.com, les frais de paiement et le net approximatif ajoutés par un script gratuit"
@@ -154,6 +155,8 @@ Genius et les autres remises par canal modifient ce que paie un client, donc ce 
 ::
 
 Le reste du moteur de tarification (prix des concurrents, règles, événements locaux) est expliqué dans [tarification dynamique pour petits hôtels avec Little Hotelier](/blog/dynamic-pricing-little-hotelier) et sur la [page Tarification dynamique](/tools/bot/dynamic-pricing). Le tableau de bord est gratuit pour tous les hôtels jusqu'au début de la facturation, le 10 janvier 2027 ; les scripts de navigateur restent gratuits.
+
+À lire aussi : [CTA/CTD et stop-sell](/blog/little-hotelier-cta-ctd-stop-sell).
 
 ## Résumé
 

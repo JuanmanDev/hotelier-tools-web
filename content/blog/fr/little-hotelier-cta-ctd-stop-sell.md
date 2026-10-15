@@ -152,6 +152,8 @@ Le pilote automatique ne modifie jamais le stop sell, et il n'écrit des séjour
 ::demo-cta{path="/pricing/settings/restrictions"}
 ::
 
+À lire aussi : [la commission Booking.com](/blog/booking-com-commission), [une liste d'attente pour les dates complètes](/blog/hotel-waitlist-sold-out-dates).
+
 ## Résumé
 
 - **CTA** bloque les arrivées à une date, **CTD** les départs, le **séjour minimum** fixe la réservation la plus courte, et **stop sell** ferme le tarif à la vente en conservant votre nombre de chambres.

@@ -7,7 +7,7 @@ category: tips
 tags: [chrome extension, tampermonkey, userscripts, little hotelier, productivity]
 keywords: [estensione chrome little hotelier, tampermonkey script, userscript chrome, little hotelier prezzi calendario, little hotelier tabelle a larghezza piena, little hotelier commissioni booking.com]
 demoPath: /
-cover: /images/scripts/prices-display/to.png
+cover: /images/scripts/prices-display/to.webp
 coverAlt: "Calendario di Little Hotelier (interfaccia in spagnolo) con il prezzo di ogni notte sotto ogni tipologia di camera, aggiunto dallo script Prices Display"
 faq:
   - q: "Questi script li ha creati Little Hotelier?"
@@ -57,7 +57,7 @@ Questi script sono pubblicati da Hotelier Tools, che non è affiliato né approv
 
 Se il pulsante non funziona, copia il codice da GitHub, scegli **Create a new script…** nel menu di Tampermonkey, incollalo e salva con Ctrl+S. La [guida all'installazione](/tools/ui/instructions) mostra ogni passaggio con immagini, e [tutti gli script sono elencati qui](/chrome-extensions).
 
-::screenshot{src="/images/ui/tamperMonkeyMenu.png" alt="Menu di Tampermonkey in Chrome con le voci Enabled, Create a new script e Dashboard" caption="Il menu di Tampermonkey: attiva o disattiva gli script, creane uno a mano o apri la Dashboard per rimuoverne uno." width="624" height="645"}
+::screenshot{src="/images/ui/tamperMonkeyMenu.webp" alt="Menu di Tampermonkey in Chrome con le voci Enabled, Create a new script e Dashboard" caption="Il menu di Tampermonkey: attiva o disattiva gli script, creane uno a mano o apri la Dashboard per rimuoverne uno." width="624" height="645"}
 ::
 
 Per rimuovere uno script, clicca sull'icona di Tampermonkey e disattivalo, oppure apri **Dashboard** ed eliminalo.
@@ -102,7 +102,7 @@ Vuoi che la fattura parta senza nemmeno un clic? Leggi [come inviare la fattura 
 - [Easy Save Province and Country](/tools/ui/easy-save-province-country): per le strutture in Spagna, un elenco delle province spagnole nel campo provincia. Sceglierne una imposta il paese su Spagna e i campi nome e cognome vuoti ricevono un trattino basso.
 - [Update Number Adults](/tools/ui/update-number-adults): i nuovi moduli di prenotazione partono con 2 adulti invece di 0, evitando di salvare una prenotazione senza adulti.
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Prenotazione di Little Hotelier (interfaccia in spagnolo) con un pannello Chekin che elenca un ospite registrato, il numero del documento e un pulsante Use document" caption="Le registrazioni Chekin dentro la prenotazione di Little Hotelier." width="1484" height="831"}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="Prenotazione di Little Hotelier (interfaccia in spagnolo) con un pannello Chekin che elenca un ospite registrato, il numero del documento e un pulsante Use document" caption="Le registrazioni Chekin dentro la prenotazione di Little Hotelier." width="1484" height="831"}
 ::
 
 ### Comodità di ogni giorno: ricaricamenti, tablet e scorciatoie
@@ -124,6 +124,8 @@ Gli script cambiano ciò che vedi mentre sei davanti allo schermo. Non possono l
 
 ::demo-cta{path="/"}
 ::
+
+Guide correlate: [le alternative a Little Hotelier](/blog/little-hotelier-alternatives).
 
 ## Riepilogo
 

@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [ses hospedajes, spain, compliance, guest registration, little hotelier]
 keywords: [ses hospedajes, ses hospedajes como registrar viajeros, parte de viajeros, ses hospedajes datos obligatorios, ses hospedajes servicio web, ses hospedajes booking, ses hospedajes little hotelier]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/es/automated-checks-moment-on-arrival.webp
 coverAlt: "Ajustes de A la llegada en Hotelier Tools con las comprobaciones DNI / Pasaporte (Registro policial), Asignación de habitación física y Validación de dirección y procedencia activadas, cada una con lo que puede y no puede hacer"
@@ -125,7 +126,7 @@ El doble trabajo aparece cuando el mismo huésped se teclea en Little Hotelier y
 
 El userscript gratuito [Conexión con Chekin](/tools/ui/show-chekin) añade un panel de Chekin a la reserva en Little Hotelier. Ves de un vistazo si los huéspedes ya se han registrado, con sus nombres, teléfonos y números de documento, y puedes copiar el número de documento en la reserva, por ejemplo para la factura. Cuando nadie se ha registrado todavía, muestra el enlace de registro del huésped con botones para abrirlo, copiarlo, enviarlo por email o por WhatsApp. Necesitas haber iniciado sesión en Chekin en el mismo navegador. Es un script independiente: no es de Chekin ni de Little Hotelier. Guía de instalación: [cómo instalar los userscripts](/tools/ui/instructions).
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Reserva de Little Hotelier con el panel de Chekin: un huésped encontrado, con nombre, teléfono y número de documento, y los botones Utilizar Documento y Ver en Chekin" caption="El panel de Chekin dentro de la reserva de Little Hotelier, con el documento del huésped listo para usar."}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="Reserva de Little Hotelier con el panel de Chekin: un huésped encontrado, con nombre, teléfono y número de documento, y los botones Utilizar Documento y Ver en Chekin" caption="El panel de Chekin dentro de la reserva de Little Hotelier, con el documento del huésped listo para usar."}
 ::
 
 ### Detecta los documentos que faltan antes de la llegada

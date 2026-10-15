@@ -181,6 +181,8 @@ L'assistant lit vos réservations via le serveur MCP et renvoie le tableau. N'ou
 ::demo-cta{path="/methods"}
 ::
 
+À lire aussi : [les intégrations de Little Hotelier](/blog/little-hotelier-integrations), [télécharger toutes vos factures d'un coup](/blog/download-all-little-hotelier-invoices), [l'enquête d'occupation de l'INE](/blog/ine-hotel-occupancy-survey).
+
 ## Résumé
 
 - **À la main :** **Reservations → Search → Export** donne un CSV avec les noms, les e-mails et les adresses des clients, mais sans numéros de téléphone.

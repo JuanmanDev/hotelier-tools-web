@@ -9,6 +9,9 @@
       <UFormField :label="t('contact.form.name')" name="name" required class="space-y-3">
         <UInput
           v-model="contactForm.name"
+          name="name"
+          autocomplete="name"
+          required
           :placeholder="t('contact.form.placeholders.name')"
           icon="i-heroicons-user"
           size="lg"
@@ -21,6 +24,9 @@
         <UInput
           v-model="contactForm.email"
           type="email"
+          name="email"
+          autocomplete="email"
+          required
           :placeholder="t('contact.form.placeholders.email')"
           icon="i-heroicons-envelope"
           size="lg"
@@ -33,6 +39,8 @@
         <UInput
           v-model="contactForm.phone"
           type="tel"
+          name="phone"
+          autocomplete="tel"
           :placeholder="t('contact.form.placeholders.phone')"
           icon="i-heroicons-phone"
           size="lg"
@@ -44,6 +52,8 @@
       <UFormField :label="t('contact.form.hotel_name')" name="hotelName" class="space-y-3">
         <UInput
           v-model="contactForm.hotelName"
+          name="hotelName"
+          autocomplete="organization"
           :placeholder="t('contact.form.placeholders.hotel')"
           icon="i-heroicons-building-office-2"
           size="lg"
@@ -55,6 +65,7 @@
       <UFormField :label="t('contact.form.subject')" name="subject" required class="space-y-3">
         <USelect
           v-model="contactForm.subject"
+          :aria-label="t('contact.form.subject')"
           :items="subjectOptions"
           :placeholder="t('contact.form.placeholders.subject')"
           size="lg"
@@ -66,6 +77,8 @@
       <UFormField :label="t('contact.form.message')" name="message" required class="space-y-3">
         <UTextarea
           v-model="contactForm.message"
+          name="message"
+          required
           :placeholder="t('contact.form.placeholders.message')"
           :rows="6"
           size="lg"
@@ -79,10 +92,12 @@
           <UCheckbox
             v-model="contactForm.acceptPrivacy"
             name="acceptPrivacy"
+            :aria-label="t('contact.form.privacy')"
             class="mt-1"
           />
           <label class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
             {{ t('contact.form.privacy') }}
+            (<NuxtLink :to="localePath('/privacy')" target="_blank" class="underline underline-offset-2 hover:text-gray-900 dark:hover:text-white">{{ t('legal.nav.privacy') }}</NuxtLink>)
           </label>
         </div>
       </UFormField>
@@ -107,6 +122,7 @@
 <script setup lang="ts">
 // Internationalization
 const { t } = useI18n()
+const localePath = useLocalePath()
 
 // Form state
 const contactForm = reactive({

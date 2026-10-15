@@ -153,6 +153,8 @@ It writes minimum stays only if you separately allow it, and it **never** change
 3. Apply by hand for a few weeks. Check the pricing log.
 4. Only then consider the autopilot, with a short horizon and the change emails on.
 
+See also: [the Little Hotelier guide](/blog/little-hotelier-tips), [showing prices in the calendar](/tools/ui/prices-display).
+
 ## Summary
 
 - Dynamic pricing for a small hotel is a few consistent decisions: occupancy, comparable competitors, events, lead time, a floor and a ceiling.

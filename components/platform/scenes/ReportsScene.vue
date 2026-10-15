@@ -15,7 +15,7 @@
     <div class="grid grid-cols-2 gap-3 mt-5">
       <div v-for="(stat, i) in stats" :key="stat.key" class="ht-rise rounded-xl bg-gray-50 dark:bg-gray-800/60 p-3" :style="{ '--d': `${1 + i * 0.15}s` }">
         <span class="block font-display text-2xl font-semibold tabular-nums text-gray-900 dark:text-white">{{ stat.value }}</span>
-        <span class="block text-[11px] text-gray-500 dark:text-gray-400">{{ $t(`platform.scenes.reports.${stat.key}`) }}</span>
+        <span class="block text-xs text-gray-500 dark:text-gray-400">{{ $t(`platform.scenes.reports.${stat.key}`) }}</span>
       </div>
     </div>
 

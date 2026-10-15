@@ -152,6 +152,8 @@ Der Autopilot ändert nie den Stop-Sell und setzt Mindestaufenthalte nur, wenn S
 ::demo-cta{path="/pricing/settings/restrictions"}
 ::
 
+Siehe auch: [die Booking.com-Provision](/blog/booking-com-commission), [eine Warteliste für ausgebuchte Termine](/blog/hotel-waitlist-sold-out-dates).
+
 ## Zusammenfassung
 
 - **CTA** sperrt Anreisen an einem Datum, **CTD** sperrt Abreisen, der **Mindestaufenthalt** legt die kürzeste Buchung fest, und ein **Stop-Sell** nimmt die Rate aus dem Verkauf, ohne Ihre Zimmerzahl zu ändern.

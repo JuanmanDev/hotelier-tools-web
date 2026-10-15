@@ -53,31 +53,20 @@ import FeatureRequest from '~/components/FeatureRequest.vue'
 import FeatureGrid from '~/components/platform/FeatureGrid.vue'
 
 const { t } = useI18n()
-const { setSEO, setBreadcrumbs } = useSEO()
+const { setSEO, setStructuredData, setBreadcrumbs } = useSEO()
 
 setSEO('features')
 
-useHead({
-  script: [{
-    type: 'application/ld+json',
-    innerHTML: JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Hotelier Tools',
-      applicationCategory: 'BusinessApplication',
-      operatingSystem: 'Web',
-      url: DASHBOARD_URL,
-      description: t('features.subtitle'),
-      featureList: platformSlides.map(f => t(`platform.slides.${f.id}.short`)),
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }
-    })
-  }]
+setStructuredData('Product', {
+  name: 'Hotelier Tools',
+  description: t('features.subtitle'),
+  url: DASHBOARD_URL,
+  featureList: platformSlides.map(f => t(`platform.slides.${f.id}.short`)),
+  offers: { price: 0, priceCurrency: 'EUR', priceValidUntil: '2027-01-10' }
 })
 
-onMounted(() => {
-  setBreadcrumbs([
-    { name: t('nav.home'), url: '/' },
-    { name: t('nav.features'), url: '/tools/bot' }
-  ])
-})
+setBreadcrumbs([
+  { name: t('nav.home'), url: '/' },
+  { name: t('nav.features'), url: '/tools/bot' }
+])
 </script>

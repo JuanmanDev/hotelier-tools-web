@@ -154,6 +154,8 @@ MCP server สำหรับโรงแรมที่ดียังบล็
 ::demo-cta{path="/chat"}
 ::
 
+อ่านเพิ่มเติม: [คู่มือ Little Hotelier](/blog/little-hotelier-tips)
+
 ## สรุป
 
 - MCP server คือเมนูเครื่องมือที่ผู้ช่วย AI ใช้ทำงานในซอฟต์แวร์ของคุณ สร้างบนมาตรฐานเปิดของ Anthropic ที่ตอนนี้อยู่ภายใต้ Linux Foundation

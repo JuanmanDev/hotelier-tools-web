@@ -76,14 +76,15 @@
                     </UBadge>
                   </div>
 
+                  <!-- On the home page the overview slide is a short teaser; the full text lives on /tools/bot/dashboard -->
                   <h3 class="font-display text-2xl lg:text-4xl font-semibold tracking-tight text-gray-900 dark:text-white mb-3">
-                    {{ t(`platform.slides.${slide.id}.title`) }}
+                    {{ teaser ? t('platform.home_overview.title') : t(`platform.slides.${slide.id}.title`) }}
                   </h3>
                   <p class="text-base lg:text-lg text-gray-700 dark:text-gray-300 mb-6 max-w-prose">
-                    {{ t(`platform.slides.${slide.id}.description`) }}
+                    {{ teaser ? t('platform.home_overview.description') : t(`platform.slides.${slide.id}.description`) }}
                   </p>
 
-                  <ul class="grid gap-3" :class="slide.items.length > 4 ? '2xl:grid-cols-2 2xl:gap-x-6' : ''">
+                  <ul v-if="!teaser" class="grid gap-3" :class="slide.items.length > 4 ? '2xl:grid-cols-2 2xl:gap-x-6' : ''">
                     <li v-for="item in slide.items" :key="item.id" class="flex items-start gap-3">
                       <UIcon
                         :name="item.status === 'soon' ? 'i-heroicons-clock' : 'i-heroicons-check'"
@@ -260,7 +261,7 @@
 import { platformSlides, statusBadgeColor, statusText, accentVars, demoUrl, DASHBOARD_URL, DEMO_URL, type FeatureStatus } from '~/data/platform'
 import { scenes } from './scenes'
 
-withDefaults(defineProps<{ hero?: boolean }>(), { hero: false })
+const props = withDefaults(defineProps<{ hero?: boolean }>(), { hero: false })
 
 const { t } = useI18n()
 const localePath = useLocalePath()
@@ -275,6 +276,7 @@ const mod = (i: number) => ((i % count) + count) % count
 const active = ref(0)
 const cycle = ref(0)
 const slide = computed(() => platformSlides[active.value]!)
+const teaser = computed(() => props.hero && slide.value.id === 'overview')
 const accentStyle = computed(() => accentVars(slide.value.accent))
 
 // How many tabs sit on each side of the current one; the rail wraps around endlessly

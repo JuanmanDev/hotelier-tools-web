@@ -153,6 +153,8 @@ Só escreve estadias mínimas se o permitir em separado, e **nunca** altera o st
 3. Aplique à mão durante algumas semanas. Consulte o histórico de preços.
 4. Só então considere o piloto automático, com um horizonte curto e os e-mails de alteração ativados.
 
+Guias relacionados: [o guia do Little Hotelier](/blog/little-hotelier-tips), [mostrar preços no calendário](/tools/ui/prices-display).
+
 ## Resumo
 
 - A tarifa dinâmica num hotel pequeno é um punhado de decisões consistentes: ocupação, concorrentes comparáveis, eventos, antecedência, um mínimo e um máximo.

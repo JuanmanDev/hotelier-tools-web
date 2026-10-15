@@ -13,44 +13,9 @@
               </template>
             </i18n-t>
           </h1>
-          <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12">
+          <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             {{ $t('tools.hero.subtitle') }}
           </p>
-
-          <!-- Hero Cards -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <!-- Chrome Extensions Card -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700">
-              <div class="flex items-center justify-center w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-xl mx-auto mb-6">
-                <UIcon name="i-simple-icons-googlechrome" class="w-8 h-8 text-blue-600 dark:text-blue-400" />
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                {{ $t('home.hero.cards.extensions.title') }}
-              </h3>
-              <p class="text-gray-600 dark:text-gray-300 mb-6">
-                {{ $t('home.hero.cards.extensions.description') }}
-              </p>
-              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/tools/ui')&quot;}" :to="localePath('/tools/ui')" color="primary" class="w-full">
-                {{ $t('home.hero.cards.extensions.button') }}
-              </UButton>
-            </div>
-
-            <!-- Automations Card -->
-            <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700">
-              <div class="flex items-center justify-center w-16 h-16 bg-indigo-100 dark:bg-indigo-900 rounded-xl mx-auto mb-6">
-                <UIcon name="i-heroicons-cog-6-tooth" class="w-8 h-8 text-indigo-600 dark:text-indigo-400" />
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                {{ $t('home.hero.cards.automations.title') }}
-              </h3>
-              <p class="text-gray-600 dark:text-gray-300 mb-6">
-                {{ $t('home.hero.cards.automations.description') }}
-              </p>
-              <UButton data-umami-click="{&quot;name&quot;:&quot;click_ubutton&quot;,&quot;file&quot;:&quot;index&quot;,&quot;target&quot;:&quot;localePath('/tools/bot')&quot;}" :to="localePath('/tools/bot')" color="primary" class="w-full">
-                {{ $t('home.hero.cards.automations.button') }}
-              </UButton>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -66,24 +31,14 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
-const localePath = useLocalePath()
-const { setSEO, setStructuredData, setBreadcrumbs } = useSEO()
+const { setSEO, setBreadcrumbs } = useSEO()
 
 // Set SEO metadata for tools page
 setSEO('tools')
 
-// Set structured data and breadcrumbs
-onMounted(() => {
-  setStructuredData('Product', {
-    name: t('seo.site.name'),
-    description: t('seo.pages.tools.description')
-  })
-  
-  setBreadcrumbs([
-    { name: t('nav.home'), url: '/' },
-    { name: t('nav.tools'), url: '/tools' }
-  ])
-})
+setBreadcrumbs([
+  { name: t('nav.home'), url: '/' },
+  { name: t('nav.tools'), url: '/tools' }
+])
 
-const faqItems = computed(() => t('tools.faq.items'))
 </script>

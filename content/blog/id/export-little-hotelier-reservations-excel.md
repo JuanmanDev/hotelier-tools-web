@@ -181,6 +181,8 @@ Asisten membaca reservasi Anda lewat server MCP dan mengembalikan tabelnya. Inga
 ::demo-cta{path="/methods"}
 ::
 
+Panduan terkait: [integrasi Little Hotelier](/blog/little-hotelier-integrations), [mengunduh semua faktur sekaligus](/blog/download-all-little-hotelier-invoices), [survei okupansi INE](/blog/ine-hotel-occupancy-survey).
+
 ## Ringkasan
 
 - **Manual:** **Reservations → Search → Export** menghasilkan CSV berisi nama tamu, email, dan alamat, tetapi tanpa nomor telepon.

@@ -69,7 +69,7 @@ Little Hotelier propose aussi une option native. Avec l'option **Guest Engagemen
 
 Si vous utilisez Chekin, le userscript gratuit **Chekin Connection** affiche l'état de l'enregistrement Chekin dans la réservation Little Hotelier : clients trouvés, numéros de téléphone et numéros de pièce d'identité, avec un bouton pour copier le numéro de document dans la réservation, en vue de la facture.
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Réservation Little Hotelier en espagnol avec un panneau Chekin : statut found 1 guest, un tableau avec nom, téléphone et pièce d'identité, et les boutons Use document et View in Chekin" caption="Le script gratuit Chekin Connection affiche les données d'enregistrement sans quitter la réservation."}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="Réservation Little Hotelier en espagnol avec un panneau Chekin : statut found 1 guest, un tableau avec nom, téléphone et pièce d'identité, et les boutons Use document et View in Chekin" caption="Le script gratuit Chekin Connection affiche les données d'enregistrement sans quitter la réservation."}
 ::
 
 Installez-le depuis [Chekin Connection](/tools/ui/show-chekin) ; le [guide d'installation](/tools/ui/instructions) prend quelques minutes.
@@ -126,6 +126,8 @@ Certains manques n'exigent pas une intégration, juste un meilleur écran. Les [
 ::
 
 L'ensemble des scripts est sur la [page des extensions de navigateur](/chrome-extensions), et notre guide des [extensions Chrome gratuites pour Little Hotelier](/blog/little-hotelier-chrome-extensions) les présente un par un.
+
+À lire aussi : [le guide Little Hotelier](/blog/little-hotelier-tips), [les alternatives à Little Hotelier](/blog/little-hotelier-alternatives).
 
 ## Prochaines étapes
 

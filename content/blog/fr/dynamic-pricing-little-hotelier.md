@@ -153,6 +153,8 @@ Il n'écrit les séjours minimum que si vous l'autorisez séparément, et il ne 
 3. Appliquez à la main pendant quelques semaines. Consultez le journal des prix.
 4. Ensuite seulement, envisagez le pilote automatique, avec un horizon court et les e-mails de modification activés.
 
+À lire aussi : [le guide Little Hotelier](/blog/little-hotelier-tips), [afficher les tarifs dans le calendrier](/tools/ui/prices-display).
+
 ## Résumé
 
 - La tarification dynamique pour un petit hôtel, ce sont quelques décisions cohérentes : occupation, concurrents comparables, événements, délai de réservation, un plancher et un plafond.

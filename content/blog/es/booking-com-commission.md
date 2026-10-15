@@ -6,6 +6,7 @@ date: 2026-10-03
 category: tips
 tags: [booking.com, commission, little hotelier, userscript, vat]
 keywords: [cuánto cobra booking de comisión, comisión booking españa, cuánto cobra booking a los propietarios, comisión booking iva, comisión genius booking, calculadora comisión booking]
+feature: dynamic-pricing
 demoPath: /
 cover: /images/scripts/show-booking-commissions/to.png
 coverAlt: "Resumen de una reserva de Little Hotelier (interfaz en español) con la comisión de Booking.com, el cargo por pago y el neto aproximado añadidos por un script gratuito"
@@ -154,6 +155,8 @@ Genius y otros descuentos de canal cambian lo que paga el huésped y, por tanto,
 ::
 
 El resto del motor de precios (precios de la competencia, reglas, eventos locales) se explica en [precios dinámicos para hoteles pequeños en Little Hotelier](/blog/dynamic-pricing-little-hotelier) y en la [página de precios dinámicos](/tools/bot/dynamic-pricing). El panel es gratis para todos los hoteles hasta que empiece el cobro el 10 de enero de 2027; los scripts del navegador siguen siendo gratis.
+
+Guías relacionadas: [CTA/CTD y stop-sell](/blog/little-hotelier-cta-ctd-stop-sell).
 
 ## Resumen
 

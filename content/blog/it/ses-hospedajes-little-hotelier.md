@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [ses hospedajes, spain, compliance, guest registration, little hotelier]
 keywords: [ses hospedajes, ses hospedajes cos'è, ses hospedajes little hotelier, parte de viajeros, ses hospedajes dati obbligatori, ses hospedajes servicio web, registrazione ospiti spagna]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "Impostazioni When they arrive in Hotelier Tools con i controlli ID / passport (police register), Physical room assignment e Address and origin validation attivi, ciascuno con ciò che può e non può fare"
@@ -125,7 +126,7 @@ Il doppio lavoro nasce quando i dati dello stesso ospite vengono inseriti in Lit
 
 Lo userscript gratuito [Chekin Connection](/tools/ui/show-chekin) aggiunge un pannello Chekin alla prenotazione in Little Hotelier. Vedi a colpo d'occhio se gli ospiti si sono registrati, con nomi, telefoni e numeri di documento, e puoi copiare il numero di documento nella prenotazione, per esempio per la fattura. Quando nessuno si è ancora registrato, mostra il link di registrazione degli ospiti con pulsanti per aprirlo, copiarlo, inviarlo per email o su WhatsApp. Devi aver effettuato l'accesso a Chekin nello stesso browser. È uno script indipendente, non creato da Chekin né da Little Hotelier. Guida all'installazione: [come installare gli userscript](/tools/ui/instructions).
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Prenotazione di Little Hotelier con il pannello Chekin: un ospite trovato, con nome, telefono e numero di documento, e i pulsanti Use document e View in Chekin" caption="Il pannello Chekin dentro la prenotazione di Little Hotelier, con il documento dell'ospite pronto da usare."}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="Prenotazione di Little Hotelier con il pannello Chekin: un ospite trovato, con nome, telefono e numero di documento, e i pulsanti Use document e View in Chekin" caption="Il pannello Chekin dentro la prenotazione di Little Hotelier, con il documento dell'ospite pronto da usare."}
 ::
 
 ### Segnala i documenti mancanti prima dell'arrivo

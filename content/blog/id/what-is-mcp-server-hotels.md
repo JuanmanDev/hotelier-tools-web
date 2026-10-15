@@ -154,6 +154,8 @@ MCP sendiri gratis: ini standar terbuka. Anda membayar bagian-bagian di sekitarn
 ::demo-cta{path="/chat"}
 ::
 
+Panduan terkait: [panduan Little Hotelier](/blog/little-hotelier-tips).
+
 ## Ringkasan
 
 - MCP server adalah menu tool yang dapat dipakai asisten AI di software Anda, dibangun di atas standar terbuka dari Anthropic, kini berada di bawah Linux Foundation.

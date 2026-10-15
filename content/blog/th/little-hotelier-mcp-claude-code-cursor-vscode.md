@@ -298,6 +298,8 @@ function syncArrivals() {
 ::demo-cta{path="/developer/mcp-setup"}
 ::
 
+อ่านเพิ่มเติม: [ผู้ช่วย AI สำหรับแผนกต้อนรับ](/blog/ai-assistant-hotel-front-desk)
+
 ## ขั้นตอนถัดไป
 
 - ไม่ใช่นักพัฒนา? [เชื่อมต่อ Claude](/blog/connect-claude-to-little-hotelier) หรือ [ChatGPT](/blog/connect-chatgpt-to-little-hotelier) ในเบราว์เซอร์แทน

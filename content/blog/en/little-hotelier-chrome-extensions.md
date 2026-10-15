@@ -7,7 +7,7 @@ category: tips
 tags: [chrome extension, tampermonkey, userscripts, little hotelier, productivity]
 keywords: [little hotelier chrome extension, tampermonkey scripts, userscript chrome, little hotelier calendar prices, little hotelier full width, little hotelier booking.com commission]
 demoPath: /
-cover: /images/scripts/prices-display/to.png
+cover: /images/scripts/prices-display/to.webp
 coverAlt: "Little Hotelier calendar (Spanish interface) with each night's price shown under every room type, added by the Prices Display script"
 faq:
   - q: "Are these scripts made by Little Hotelier?"
@@ -57,7 +57,7 @@ These scripts are published by Hotelier Tools, which is not affiliated with or e
 
 If the button doesn't work, copy the code from GitHub, choose **Create a new script…** in the Tampermonkey menu, paste it and save with Ctrl+S. The [installation guide](/tools/ui/instructions) shows every step with pictures, and [all scripts are listed here](/chrome-extensions).
 
-::screenshot{src="/images/ui/tamperMonkeyMenu.png" alt="Tampermonkey menu in Chrome showing Enabled, Create a new script and Dashboard" caption="The Tampermonkey menu: switch scripts on or off, create one by hand, or open the Dashboard to remove one." width="624" height="645"}
+::screenshot{src="/images/ui/tamperMonkeyMenu.webp" alt="Tampermonkey menu in Chrome showing Enabled, Create a new script and Dashboard" caption="The Tampermonkey menu: switch scripts on or off, create one by hand, or open the Dashboard to remove one." width="624" height="645"}
 ::
 
 To remove a script, click the Tampermonkey icon and switch it off, or open **Dashboard** and delete it.
@@ -102,7 +102,7 @@ Want the invoice to go out without any click? See [how to send the invoice autom
 - [Easy Save Province and Country](/tools/ui/easy-save-province-country): for properties in Spain, a list of Spanish provinces on the province field. Picking one sets the country to Spain, and empty name and surname fields get an underscore.
 - [Update Number Adults](/tools/ui/update-number-adults): new reservation forms start at 2 adults instead of 0, which avoids saving a booking with no adults.
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Little Hotelier reservation (Spanish interface) with a Chekin panel listing one registered guest, the document number and a Use document button" caption="Chekin registrations inside the Little Hotelier reservation." width="1484" height="831"}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="Little Hotelier reservation (Spanish interface) with a Chekin panel listing one registered guest, the document number and a Use document button" caption="Chekin registrations inside the Little Hotelier reservation." width="1484" height="831"}
 ::
 
 ### Everyday comfort: reloads, tablets and shortcuts
@@ -124,6 +124,8 @@ Scripts change what you see while you're in front of the screen. They can't work
 
 ::demo-cta{path="/"}
 ::
+
+See also: [Little Hotelier alternatives](/blog/little-hotelier-alternatives).
 
 ## Summary
 

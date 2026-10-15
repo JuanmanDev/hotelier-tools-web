@@ -264,3 +264,14 @@ html {
 .ht-code { border-radius: 0.85rem; overflow: hidden; background: var(--color-gray-50); box-shadow: inset 0 0 0 1px var(--color-gray-200); }
 .dark .ht-code { background: #0d1117; box-shadow: inset 0 0 0 1px var(--color-gray-800); }
 .ht-code pre { margin: 0; padding: 1rem 1.1rem; overflow-x: auto; font-size: 0.85rem; line-height: 1.65; background: transparent !important; }
+
+/* Accessibility: touch targets, overflow guards */
+.ht-blog-page { overflow-x: clip; }
+.ht-article :not(pre) > code { overflow-wrap: anywhere; word-break: break-word; }
+.ht-article pre { overflow-x: auto; max-width: 100%; }
+@media (max-width: 767px) {
+  .ht-touch { min-width: 44px; min-height: 44px; justify-content: center; }
+  .ht-footer-link { display: inline-flex; align-items: center; min-height: 44px; }
+  .ht-footer ul { margin-top: 0; }
+  .ht-footer ul.space-y-2 > li + li { margin-top: 0; }
+}

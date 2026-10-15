@@ -177,6 +177,8 @@ Hotelier Tools tidak berafiliasi dengan atau didukung oleh SiteMinder maupun Lit
 ::demo-cta{path="/chat"}
 ::
 
+Panduan terkait: [pesan tamu Booking.com](/blog/booking-com-guest-messages), [otomatisasi daftar periksa resepsionis](/blog/hotel-front-desk-checklist-automation).
+
 ## Ringkasan
 
 - Asisten AI aman di front desk jika ia membaca dengan bebas dan **bertanya sebelum setiap perubahan**.

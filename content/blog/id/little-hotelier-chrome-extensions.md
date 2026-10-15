@@ -7,7 +7,7 @@ category: tips
 tags: [chrome extension, tampermonkey, userscripts, little hotelier, productivity]
 keywords: [ekstensi chrome little hotelier, little hotelier chrome extension, tampermonkey scripts, userscript chrome, little hotelier calendar prices, little hotelier booking.com commission]
 demoPath: /
-cover: /images/scripts/prices-display/to.png
+cover: /images/scripts/prices-display/to.webp
 coverAlt: "Kalender Little Hotelier (antarmuka bahasa Spanyol) dengan harga setiap malam di bawah tiap tipe kamar, ditambahkan oleh skrip Prices Display"
 faq:
   - q: "Apakah skrip ini dibuat oleh Little Hotelier?"
@@ -57,7 +57,7 @@ Skrip ini diterbitkan oleh Hotelier Tools, yang tidak berafiliasi dengan atau di
 
 Jika tombolnya tidak berfungsi, salin kode dari GitHub, pilih **Create a new script…** di menu Tampermonkey, tempel, lalu simpan dengan Ctrl+S. [Panduan pemasangan](/tools/ui/instructions) menunjukkan setiap langkah dengan gambar, dan [semua skrip terdaftar di sini](/chrome-extensions).
 
-::screenshot{src="/images/ui/tamperMonkeyMenu.png" alt="Menu Tampermonkey di Chrome yang menampilkan Enabled, Create a new script, dan Dashboard" caption="Menu Tampermonkey: nyalakan atau matikan skrip, buat satu secara manual, atau buka Dashboard untuk menghapusnya." width="624" height="645"}
+::screenshot{src="/images/ui/tamperMonkeyMenu.webp" alt="Menu Tampermonkey di Chrome yang menampilkan Enabled, Create a new script, dan Dashboard" caption="Menu Tampermonkey: nyalakan atau matikan skrip, buat satu secara manual, atau buka Dashboard untuk menghapusnya." width="624" height="645"}
 ::
 
 Untuk menghapus skrip, klik ikon Tampermonkey dan matikan, atau buka **Dashboard** lalu hapus.
@@ -102,7 +102,7 @@ Ingin invoice terkirim tanpa klik sama sekali? Lihat [cara mengirim invoice otom
 - [Easy Save Province and Country](/tools/ui/easy-save-province-country): untuk properti di Spanyol, daftar provinsi Spanyol pada kolom provinsi. Memilih satu akan mengatur negara ke Spanyol, dan kolom nama serta nama belakang yang kosong diisi garis bawah.
 - [Update Number Adults](/tools/ui/update-number-adults): formulir reservasi baru dimulai dengan 2 dewasa, bukan 0, sehingga Anda tidak menyimpan reservasi tanpa orang dewasa.
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Reservasi Little Hotelier (antarmuka bahasa Spanyol) dengan panel Chekin yang mencantumkan satu tamu terdaftar, nomor dokumen, dan tombol Use document" caption="Registrasi Chekin di dalam reservasi Little Hotelier." width="1484" height="831"}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="Reservasi Little Hotelier (antarmuka bahasa Spanyol) dengan panel Chekin yang mencantumkan satu tamu terdaftar, nomor dokumen, dan tombol Use document" caption="Registrasi Chekin di dalam reservasi Little Hotelier." width="1484" height="831"}
 ::
 
 ### Kenyamanan sehari-hari: muat ulang, tablet, dan pintasan
@@ -124,6 +124,8 @@ Skrip mengubah apa yang Anda lihat selama Anda ada di depan layar. Skrip tidak b
 
 ::demo-cta{path="/"}
 ::
+
+Panduan terkait: [alternatif Little Hotelier](/blog/little-hotelier-alternatives).
 
 ## Ringkasan
 

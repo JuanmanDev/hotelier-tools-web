@@ -114,7 +114,7 @@ Dan satu kebiasaan yang layak dibangun: ekspor reservasi Anda setiap bulan. Data
 
 [Prices Display](/tools/ui/prices-display) membaca tarif Anda dari halaman inventory dan menampilkannya di bawah setiap tipe kamar di kalender, sehingga Anda bisa menyebutkan harga lewat telepon tanpa berpindah layar.
 
-::screenshot{src="/images/scripts/prices-display/to.png" alt="Kalender Little Hotelier dalam bahasa Spanyol dengan tampilan 7 hari, reservasi berwarna hijau, oranye, dan abu-abu, dan harga per malam setiap tipe kamar dalam angka besar di bawah kamarnya" caption="Dengan Prices Display, tarif per malam setiap tipe kamar tepat berada di bawah kamarnya."}
+::screenshot{src="/images/scripts/prices-display/to.webp" alt="Kalender Little Hotelier dalam bahasa Spanyol dengan tampilan 7 hari, reservasi berwarna hijau, oranye, dan abu-abu, dan harga per malam setiap tipe kamar dalam angka besar di bawah kamarnya" caption="Dengan Prices Display, tarif per malam setiap tipe kamar tepat berada di bawah kamarnya."}
 ::
 
 ### 16. Berhenti kembali ke halaman yang usang
@@ -153,6 +153,8 @@ Hotelier Tools adalah dashboard independen yang bekerja di samping Little Hoteli
 
 ::demo-cta{path="/automated-checks/issues"}
 ::
+
+Panduan terkait: [apa itu server MCP](/blog/what-is-mcp-server-hotels), [harga dinamis di Little Hotelier](/blog/dynamic-pricing-little-hotelier), [mengunduh semua faktur sekaligus](/blog/download-all-little-hotelier-invoices), [aturan registrasi tamu per negara](/blog/guest-registration-rules-by-country), [memakai WhatsApp dengan Little Hotelier](/blog/whatsapp-little-hotelier), [alternatif Little Hotelier](/blog/little-hotelier-alternatives), [dasbor Hotelier Tools](/tools/bot/dashboard), [otomatisasi Hotelier Tools](/tools/bot/automations).
 
 ## Ringkasan
 

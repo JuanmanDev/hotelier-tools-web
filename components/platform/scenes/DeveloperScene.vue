@@ -1,6 +1,6 @@
 <template>
   <PlatformWindow path="/developer/rest-api">
-    <pre class="rounded-xl bg-gray-950 text-gray-200 text-[11px] sm:text-xs leading-relaxed p-4 overflow-hidden font-mono"><code><span
+    <pre class="rounded-xl bg-gray-950 text-gray-200 text-xs sm:text-xs leading-relaxed p-4 overflow-hidden font-mono"><code><span
       v-for="(line, i) in lines"
       :key="i"
       class="ht-fade block whitespace-pre"

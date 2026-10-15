@@ -35,6 +35,7 @@
       v-else-if="filteredFaqItems.length > 0"
       :items="filteredFaqItems" 
       type="multiple"
+      :unmount-on-hide="false"
       v-model="opennedItems"
     >
       <template #default="{ item, index, open }">

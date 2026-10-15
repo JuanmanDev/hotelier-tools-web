@@ -7,7 +7,7 @@ category: tips
 tags: [chrome extension, tampermonkey, userscripts, little hotelier, productivity]
 keywords: [ส่วนขยาย chrome little hotelier, little hotelier chrome extension, tampermonkey scripts, userscript chrome, little hotelier calendar prices, little hotelier booking.com commission]
 demoPath: /
-cover: /images/scripts/prices-display/to.png
+cover: /images/scripts/prices-display/to.webp
 coverAlt: "ปฏิทินของ Little Hotelier (หน้าจอภาษาสเปน) ที่แสดงราคาต่อคืนใต้ประเภทห้องทุกแถว ซึ่งเพิ่มเข้ามาโดยสคริปต์ Prices Display"
 faq:
   - q: "สคริปต์เหล่านี้ทำโดย Little Hotelier หรือเปล่า?"
@@ -57,7 +57,7 @@ Tampermonkey เป็นส่วนขยายเบราว์เซอร�
 
 ถ้าปุ่มใช้ไม่ได้ ให้คัดลอกโค้ดจาก GitHub เลือก **Create a new script…** ในเมนู Tampermonkey วางโค้ด แล้วบันทึกด้วย Ctrl+S [คู่มือการติดตั้ง](/tools/ui/instructions)มีรูปประกอบทุกขั้นตอน และ[รายการสคริปต์ทั้งหมดอยู่ที่นี่](/chrome-extensions)
 
-::screenshot{src="/images/ui/tamperMonkeyMenu.png" alt="เมนู Tampermonkey ใน Chrome แสดง Enabled, Create a new script และ Dashboard" caption="เมนู Tampermonkey: เปิดหรือปิดสคริปต์ สร้างสคริปต์เอง หรือเปิด Dashboard เพื่อลบสคริปต์" width="624" height="645"}
+::screenshot{src="/images/ui/tamperMonkeyMenu.webp" alt="เมนู Tampermonkey ใน Chrome แสดง Enabled, Create a new script และ Dashboard" caption="เมนู Tampermonkey: เปิดหรือปิดสคริปต์ สร้างสคริปต์เอง หรือเปิด Dashboard เพื่อลบสคริปต์" width="624" height="645"}
 ::
 
 หากต้องการลบสคริปต์ ให้คลิกไอคอน Tampermonkey แล้วปิดสคริปต์ หรือเปิด **Dashboard** แล้วลบ
@@ -102,7 +102,7 @@ Tampermonkey เป็นส่วนขยายเบราว์เซอร�
 - [Easy Save Province and Country](/tools/ui/easy-save-province-country): สำหรับที่พักในสเปน มีรายชื่อจังหวัดของสเปนในช่องจังหวัด เมื่อเลือกแล้วประเทศจะถูกตั้งเป็นสเปน และช่องชื่อกับนามสกุลที่ว่างจะถูกใส่เครื่องหมายขีดล่าง
 - [Update Number Adults](/tools/ui/update-number-adults): แบบฟอร์มการจองใหม่เริ่มที่ผู้ใหญ่ 2 คนแทน 0 เพื่อไม่ให้บันทึกการจองที่ไม่มีผู้ใหญ่
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="การจองใน Little Hotelier (หน้าจอภาษาสเปน) ที่มีแผง Chekin แสดงแขกที่ลงทะเบียนแล้ว 1 คน เลขเอกสาร และปุ่ม Use document" caption="การลงทะเบียน Chekin ภายในการจองของ Little Hotelier" width="1484" height="831"}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="การจองใน Little Hotelier (หน้าจอภาษาสเปน) ที่มีแผง Chekin แสดงแขกที่ลงทะเบียนแล้ว 1 คน เลขเอกสาร และปุ่ม Use document" caption="การลงทะเบียน Chekin ภายในการจองของ Little Hotelier" width="1484" height="831"}
 ::
 
 ### ความสะดวกในแต่ละวัน: รีโหลด แท็บเล็ต และทางลัด
@@ -124,6 +124,8 @@ Tampermonkey เป็นส่วนขยายเบราว์เซอร�
 
 ::demo-cta{path="/"}
 ::
+
+อ่านเพิ่มเติม: [ทางเลือกอื่นแทน Little Hotelier](/blog/little-hotelier-alternatives)
 
 ## สรุป
 

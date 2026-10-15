@@ -6,6 +6,7 @@ date: 2026-10-03
 category: tips
 tags: [booking.com, commission, little hotelier, userscript, vat]
 keywords: [komisi booking.com berapa persen, komisi booking com untuk hotel, kalkulator komisi booking com, cara bayar komisi booking com, komisi genius booking.com, biaya pembayaran booking.com]
+feature: dynamic-pricing
 demoPath: /
 cover: /images/scripts/show-booking-commissions/to.png
 coverAlt: "Ringkasan reservasi Little Hotelier (antarmuka bahasa Spanyol) dengan komisi Booking.com, biaya pembayaran, dan perkiraan pendapatan bersih yang ditambahkan oleh skrip gratis"
@@ -154,6 +155,8 @@ Genius dan diskon channel lainnya mengubah yang dibayar tamu, dan karena itu yan
 ::
 
 Bagian lain dari mesin harga (harga kompetitor, aturan, acara lokal) dijelaskan di [dynamic pricing untuk hotel kecil di Little Hotelier](/blog/dynamic-pricing-little-hotelier) dan di [halaman Dynamic pricing](/tools/bot/dynamic-pricing). Dashboard gratis untuk setiap hotel sampai penagihan dimulai pada 10 Januari 2027; skrip browser tetap gratis.
+
+Panduan terkait: [CTA/CTD dan stop-sell](/blog/little-hotelier-cta-ctd-stop-sell).
 
 ## Ringkasan
 

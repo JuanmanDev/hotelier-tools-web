@@ -153,6 +153,8 @@ Scrive i soggiorni minimi solo se lo consenti separatamente e **non** cambia mai
 3. Applica a mano per qualche settimana. Controlla il registro dei prezzi.
 4. Solo dopo valuta l'autopilota, con un orizzonte breve e le email delle modifiche attive.
 
+Guide correlate: [la guida a Little Hotelier](/blog/little-hotelier-tips), [mostrare i prezzi nel calendario](/tools/ui/prices-display).
+
 ## Riepilogo
 
 - I prezzi dinamici per un piccolo hotel sono poche decisioni coerenti: occupazione, concorrenti simili, eventi, anticipo di prenotazione, un minimo e un massimo.

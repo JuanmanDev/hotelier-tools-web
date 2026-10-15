@@ -6,6 +6,7 @@ date: 2026-10-03
 category: tips
 tags: [booking.com, commission, little hotelier, userscript, vat]
 keywords: [how much commission does booking.com take, booking com commission rates for hotels, booking com commission calculator, booking.com commission vat, booking.com genius commission, booking.com payment fee]
+feature: dynamic-pricing
 demoPath: /
 cover: /images/scripts/show-booking-commissions/to.png
 coverAlt: "Little Hotelier reservation summary (Spanish interface) with the Booking.com commission, payment fee and approximate net added by a free script"
@@ -154,6 +155,8 @@ Genius and other channel discounts change what a guest pays, and so what you kee
 ::
 
 The rest of the pricing engine (competitor prices, rules, local events) is explained in [dynamic pricing for small hotels on Little Hotelier](/blog/dynamic-pricing-little-hotelier) and on the [Dynamic pricing page](/tools/bot/dynamic-pricing). The dashboard is free for every hotel until billing starts on 10 January 2027; the browser scripts stay free.
+
+See also: [CTA/CTD and stop-sell rules](/blog/little-hotelier-cta-ctd-stop-sell).
 
 ## Summary
 

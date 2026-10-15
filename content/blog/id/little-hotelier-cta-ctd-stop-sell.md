@@ -152,6 +152,8 @@ Autopilot tidak pernah mengubah stop sell, dan hanya menulis minimum stay jika A
 ::demo-cta{path="/pricing/settings/restrictions"}
 ::
 
+Panduan terkait: [komisi Booking.com](/blog/booking-com-commission), [daftar tunggu untuk tanggal penuh](/blog/hotel-waitlist-sold-out-dates).
+
 ## Ringkasan
 
 - **CTA** menghentikan check-in pada suatu tanggal, **CTD** menghentikan check-out, **minimum stay** menetapkan masa inap terpendek, dan **stop sell** menutup tarif untuk dijual sambil mempertahankan jumlah kamar Anda.

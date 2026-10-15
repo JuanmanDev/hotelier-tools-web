@@ -103,7 +103,7 @@ Tres hábitos lo arreglan casi todo:
 2. Instala el userscript gratuito [Guardado Fácil de Provincia y País](/tools/ui/easy-save-province-country). Al hacer clic en el campo de provincia, muestra la lista de provincias de España, y al elegir una pone España como país.
 3. Deja que las [comprobaciones automáticas](/tools/bot/automated-checks) avisen de las reservas sin país o sin provincia tras la reserva, a la llegada y a la salida, mientras el huésped sigue en el alojamiento y puedes preguntarle.
 
-::screenshot{src="/images/scripts/easy-save-province-country/to.png" alt="Pestaña Huéspedes de una reserva en Little Hotelier con la lista de provincias españolas del userscript Guardado Fácil de Provincia y País abierta bajo el campo Provincia/Región" caption="El userscript gratuito convierte el campo de provincia en un desplegable y rellena el país por ti."}
+::screenshot{src="/images/scripts/easy-save-province-country/to.webp" alt="Pestaña Huéspedes de una reserva en Little Hotelier con la lista de provincias españolas del userscript Guardado Fácil de Provincia y País abierta bajo el campo Provincia/Región" caption="El userscript gratuito convierte el campo de provincia en un desplegable y rellena el país por ti."}
 ::
 
 ## La forma más rápida: el informe del INE directo desde Little Hotelier

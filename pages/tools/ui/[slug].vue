@@ -4,14 +4,14 @@
     <section v-if="doc.meta.images?.before || doc.meta.images?.after" class="max-w-7xl mx-auto mb-8 w-full">
       <div class="flex items-center justify-center gap-0 w-full">
         <div v-if="doc.meta.images?.before" class="flex-1 text-center">
-          <img :src="doc.meta.images.before" alt="before" class="object-cover w-full h-96 rounded shadow-lg border border-gray-200 dark:border-gray-700" />
+          <img :src="doc.meta.images.before" :alt="`${doc.title}: ${$t('tools.ui.before')}`" class="object-cover w-full h-96 rounded shadow-lg border border-gray-200 dark:border-gray-700" />
           <div class="text-sm text-gray-500 mt-2 font-medium">{{ $t('tools.ui.before') }}</div>
         </div>
         <div v-if="doc.meta.images?.before && doc.meta.images?.after" class="flex-shrink-0">
           <UIcon name="i-heroicons-chevron-right" class="w-16 h-16 text-gray-400" />
         </div>
         <div v-if="doc.meta.images?.after" class="flex-1 text-center">
-          <img :src="doc.meta.images.after" alt="after" class="object-cover w-full h-96 rounded shadow-lg border border-gray-200 dark:border-gray-700" 
+          <img :src="doc.meta.images.after" :alt="`${doc.title}: ${$t('tools.ui.after')}`" class="object-cover w-full h-96 rounded shadow-lg border border-gray-200 dark:border-gray-700" 
             :style="'view-transition-name: ui-features-after-'+ route.params.slug"
           />
           <div class="text-sm text-gray-500 mt-2 font-medium">{{ $t('tools.ui.after') }}</div>
@@ -90,8 +90,9 @@ import 'vue3-carousel/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 const route = useRoute()
-const { locale } = useI18n()
+const { t, locale } = useI18n()
 const localePath = useLocalePath()
+const { setSEO, setStructuredData, setBreadcrumbs } = useSEO()
 
 const { data: doc, refresh } = await useAsyncData(
   () => `ui-script-${route.params.slug}-${locale.value}`,
@@ -110,6 +111,31 @@ if (!doc.value) {
   const newLocal = `/scripts/${locale.value}/${route.params.slug}`
   throw createError({ statusCode: 404, statusMessage: 'Script not found' + ' - ' + newLocal })
 }
+
+// Every script exists in every language (content/scripts/<locale>/), so the default alternates apply
+const scriptDescription = doc.value.description || t('seo.pages.uiScript.description', { name: doc.value.title })
+setSEO('uiScript', {
+  title: t('seo.pages.uiScript.title', { name: doc.value.title }),
+  description: scriptDescription,
+  ogTitle: doc.value.title,
+  ogDescription: scriptDescription,
+  og: { eyebrow: t('seo.pages.uiScripts.ogTitle') }
+})
+
+// A free userscript that runs in the browser through Tampermonkey
+setStructuredData('Product', {
+  name: doc.value.title,
+  description: scriptDescription,
+  applicationCategory: 'BrowserApplication',
+  operatingSystem: 'Chrome, Edge, Firefox (Tampermonkey)',
+  url: doc.value.meta.github,
+  offers: { price: 0, priceCurrency: 'EUR' }
+})
+setBreadcrumbs([
+  { name: t('nav.home'), url: '/' },
+  { name: t('seo.pages.uiScripts.ogTitle'), url: '/tools/ui' },
+  { name: doc.value.title, url: `/tools/ui/${route.params.slug}` }
+])
 
 const carouselConfig = {
   itemsToShow: 2.5,

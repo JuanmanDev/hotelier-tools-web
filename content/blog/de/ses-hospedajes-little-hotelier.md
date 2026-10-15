@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [ses hospedajes, spain, compliance, guest registration, little hotelier]
 keywords: [ses hospedajes, ses hospedajes deutsch, ses hospedajes little hotelier, parte de viajeros, ses hospedajes pflichtangaben, ses hospedajes anmelden, gästemeldung spanien hotel]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "Einstellungen When they arrive in Hotelier Tools mit den eingeschalteten Prüfungen ID / passport (police register), Physical room assignment und Address and origin validation, jeweils mit dem, was sie können und was nicht"
@@ -125,7 +126,7 @@ Doppelte Arbeit entsteht, wenn derselbe Gast in Little Hotelier und noch einmal 
 
 Das kostenlose Userscript [Chekin Connection](/tools/ui/show-chekin) fügt der Reservierung in Little Hotelier ein Chekin-Panel hinzu. Sie sehen auf einen Blick, ob sich Gäste registriert haben, mit Namen, Telefonnummern und Dokumentnummern, und können die Dokumentnummer in die Reservierung kopieren, zum Beispiel für die Rechnung. Hat sich noch niemand registriert, zeigt es den Registrierungslink für Gäste mit Schaltflächen zum Öffnen, Kopieren und Senden per E-Mail oder WhatsApp. Sie müssen im selben Browser bei Chekin angemeldet sein. Das Skript ist unabhängig und stammt weder von Chekin noch von Little Hotelier. Installationsanleitung: [So installieren Sie die Userscripts](/tools/ui/instructions).
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Little-Hotelier-Reservierung mit dem Chekin-Panel: ein gefundener Gast mit Name, Telefonnummer und Dokumentnummer sowie den Schaltflächen Use document und View in Chekin" caption="Das Chekin-Panel in der Little-Hotelier-Reservierung, mit dem Dokument des Gastes zur direkten Verwendung."}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="Little-Hotelier-Reservierung mit dem Chekin-Panel: ein gefundener Gast mit Name, Telefonnummer und Dokumentnummer sowie den Schaltflächen Use document und View in Chekin" caption="Das Chekin-Panel in der Little-Hotelier-Reservierung, mit dem Dokument des Gastes zur direkten Verwendung."}
 ::
 
 ### Fehlende Ausweise vor der Anreise erkennen

@@ -119,6 +119,8 @@ Cada ejecución envía **un email de informe por tarea**, en el idioma que fijes
 
 Cada tarea figura en **Tareas programadas** (`/cron`) y cada ejecución en **Historial de ejecuciones** (`/cron-logs`). La función está en beta. Más sobre la programación en la [página de automatizaciones](/tools/bot/automations), y la función completa en [Comprobaciones automáticas](/tools/bot/automated-checks).
 
+Guías relacionadas: [la guía de Little Hotelier](/blog/little-hotelier-tips), [el asistente de IA para recepción](/blog/ai-assistant-hotel-front-desk), [una lista de espera para fechas agotadas](/blog/hotel-waitlist-sold-out-dates).
+
 ## Resumen
 
 - Revisa ocho cosas antes de cada llegada: habitación, saldo, tarjeta, documento, dirección, número de huéspedes, hora de llegada y tu lista «no volver a alojar».

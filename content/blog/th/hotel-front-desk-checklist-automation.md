@@ -119,6 +119,8 @@ faq:
 
 ทุกงานแสดงอยู่ใน **Cron Jobs** (`/cron`) และทุกการรันอยู่ใน **Run History** (`/cron-logs`) ฟีเจอร์นี้ยังอยู่ในช่วงเบต้า ดูเรื่องการตั้งเวลาเพิ่มเติมที่[หน้า Automations](/tools/bot/automations) และรายละเอียดฟีเจอร์ทั้งหมดที่หน้า [Automated checks](/tools/bot/automated-checks)
 
+อ่านเพิ่มเติม: [คู่มือ Little Hotelier](/blog/little-hotelier-tips), [ผู้ช่วย AI สำหรับแผนกต้อนรับ](/blog/ai-assistant-hotel-front-desk), [รายการรอสำหรับวันที่เต็ม](/blog/hotel-waitlist-sold-out-dates)
+
 ## สรุป
 
 - ตรวจแปดเรื่องก่อนแขกมาถึงทุกครั้ง: ห้อง ยอดค้างชำระ บัตร เอกสาร ที่อยู่ จำนวนแขก เวลามาถึง และรายชื่อแขกที่ไม่รับอีก

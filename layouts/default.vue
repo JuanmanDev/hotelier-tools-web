@@ -67,7 +67,7 @@
               color="gray"
               variant="ghost"
               :aria-label="$t('nav.search')"
-              class="hidden sm:flex"
+              class="ht-touch hidden sm:flex"
               @click="openSearch"
             >
               <span class="sr-only sm:not-sr-only ml-2">{{ $t('nav.search') }}</span>
@@ -83,6 +83,8 @@
                 color="gray"
                 variant="ghost"
                 size="sm"
+                class="ht-touch"
+                :aria-label="$t('nav.language')"
               >
                 <UIcon name="i-heroicons-globe-alt" class="h-4 w-4" />
                 <UIcon name="i-heroicons-chevron-down-20-solid" class="ml-1" />
@@ -94,7 +96,8 @@
                 size="sm"
                 color="gray"
                 variant="ghost"
-                aria-label="Toggle theme"
+                :aria-label="$t('nav.toggleTheme')"
+                class="ht-touch"
                 @click="toggleColorMode"
               />
             </ClientOnly>
@@ -105,8 +108,8 @@
               size="sm"
               color="gray"
               variant="ghost"
-              class="xl:hidden"
-              aria-label="Open menu"
+              class="ht-touch xl:hidden"
+              :aria-label="$t('nav.openMenu')"
               @click="isMenuOpen = !isMenuOpen"
             />
           </div>
@@ -193,7 +196,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+    <footer class="ht-footer bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
           <!-- Company Info -->
@@ -214,6 +217,7 @@
                 to="https://github.com/JuanmanDev/hotelier-tools-web"
                 target="_blank"
                 aria-label="GitHub"
+                class="ht-touch"
               />
             </div>
           </div>
@@ -225,7 +229,7 @@
             </h3>
             <ul class="space-y-2">
               <li v-for="f in platformSlides" :key="f.slug">
-                <NuxtLink :to="localePath(`/tools/bot/${f.slug}`)" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" :data-umami-click="`{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;/tools/bot/${f.slug}&quot;}`">
+                <NuxtLink :to="localePath(`/tools/bot/${f.slug}`)" class="ht-footer-link text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" :data-umami-click="`{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;/tools/bot/${f.slug}&quot;}`">
                   {{ $t(`platform.slides.${f.id}.short`) }}
                 </NuxtLink>
               </li>
@@ -239,32 +243,32 @@
             </h3>
             <ul class="space-y-2">
               <li>
-                <a data-umami-click="{&quot;name&quot;:&quot;click_a&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;https://dashboard.hotelier.tools/&quot;}" href="https://dashboard.hotelier.tools/" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <a data-umami-click="{&quot;name&quot;:&quot;click_a&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;https://dashboard.hotelier.tools/&quot;}" href="https://dashboard.hotelier.tools/" target="_blank" rel="noopener" class="ht-footer-link text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   Dashboard
                 </a>
               </li>
               <li>
-                <a data-umami-click="{&quot;name&quot;:&quot;click_a&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;https://demo.hotelier.tools/&quot;}" href="https://demo.hotelier.tools/" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <a data-umami-click="{&quot;name&quot;:&quot;click_a&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;https://demo.hotelier.tools/&quot;}" href="https://demo.hotelier.tools/" target="_blank" rel="noopener" class="ht-footer-link text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('nav.demo') }}
                 </a>
               </li>
               <li>
-                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/blog')&quot;}" :to="localePath('/blog')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/blog')&quot;}" :to="localePath('/blog')" class="ht-footer-link text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('nav.blog') }}
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}" :to="localePath('/tools')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/tools')&quot;}" :to="localePath('/tools')" class="ht-footer-link text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('nav.tools') }}
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/documentation')&quot;}" :to="localePath('/documentation')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/documentation')&quot;}" :to="localePath('/documentation')" class="ht-footer-link text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('nav.documentation') }}
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}" :to="localePath('/contact')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/contact')&quot;}" :to="localePath('/contact')" class="ht-footer-link text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('nav.contact') }}
                 </NuxtLink>
               </li>
@@ -278,13 +282,28 @@
             </h3>
             <ul class="space-y-2">
               <li>
-                <a data-umami-click="{&quot;name&quot;:&quot;click_a&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;mailto:JuanmaDeveloper+hotelierTools@outlook.com&quot;}" href="mailto:JuanmaDeveloper+hotelierTools@outlook.com" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <a data-umami-click="{&quot;name&quot;:&quot;click_a&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;mailto:JuanmaDeveloper+hotelierTools@outlook.com&quot;}" href="mailto:JuanmaDeveloper+hotelierTools@outlook.com" class="ht-footer-link text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('footer.email') }}
                 </a>
               </li>
               <li>
-                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/faq')&quot;}" :to="localePath('/faq')" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/faq')&quot;}" :to="localePath('/faq')" class="ht-footer-link text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                   {{ $t('footer.faq') }}
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/about')&quot;}" :to="localePath('/about')" class="ht-footer-link text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                  {{ $t('legal.nav.about') }}
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/privacy')&quot;}" :to="localePath('/privacy')" class="ht-footer-link text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                  {{ $t('legal.nav.privacy') }}
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink data-umami-click="{&quot;name&quot;:&quot;click_nuxtlink&quot;,&quot;file&quot;:&quot;default&quot;,&quot;target&quot;:&quot;localePath('/terms')&quot;}" :to="localePath('/terms')" class="ht-footer-link text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                  {{ $t('legal.nav.terms') }}
                 </NuxtLink>
               </li>
             </ul>

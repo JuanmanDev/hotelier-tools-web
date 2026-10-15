@@ -173,6 +173,8 @@ Semua yang dilakukan inbox ada di [halaman Guest inbox](/tools/bot/guest-inbox).
 Hotelier Tools tidak berafiliasi dengan atau didukung oleh Booking.com, SiteMinder, maupun Little Hotelier. Layanan ini terhubung memakai login Little Hotelier hotel Anda sendiri dan login extranet Booking.com Anda sendiri.
 ::
 
+Panduan terkait: [asisten AI untuk resepsionis](/blog/ai-assistant-hotel-front-desk), [daftar tamu yang tidak boleh menyewa](/blog/hotel-do-not-rent-list).
+
 ## Ringkasan
 
 - Balas dari mana saja lewat Pulse, dan biarkan template, pesan terjadwal, dan balasan otomatis menangani pertanyaan rutin.

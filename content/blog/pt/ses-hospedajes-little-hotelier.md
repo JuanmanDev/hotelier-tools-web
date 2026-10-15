@@ -6,6 +6,7 @@ date: 2026-10-03
 category: compliance
 tags: [ses hospedajes, spain, compliance, guest registration, little hotelier]
 keywords: [ses hospedajes, ses hospedajes português, ses hospedajes little hotelier, parte de viajeros, como registrar viajeros ses hospedajes, ses hospedajes dados obrigatórios, registo de hóspedes espanha]
+feature: automated-checks
 demoPath: /
 cover: /images/blog/demo/en/automated-checks-moment-on-arrival.webp
 coverAlt: "Configurações When they arrive no Hotelier Tools com as verificações ID / passport (police register), Physical room assignment e Address and origin validation ativadas, cada uma com o que pode e não pode fazer"
@@ -125,7 +126,7 @@ O trabalho duplicado acontece quando o mesmo hóspede é digitado no Little Hote
 
 O userscript gratuito [Chekin Connection](/tools/ui/show-chekin) acrescenta um painel do Chekin à reserva no Little Hotelier. Vê de relance se os hóspedes já se registaram, com os seus nomes, telefones e números de documento, e pode copiar o número do documento para a reserva, por exemplo para a fatura / nota fiscal. Quando ninguém se registou ainda, mostra o link de registo do hóspede com botões para a abrir, copiar, enviar por e-mail ou por WhatsApp. Precisa de ter sessão iniciada no Chekin no mesmo navegador. É um script independente, não feito pelo Chekin nem pelo Little Hotelier. Guia de instalação: [como instalar os userscripts](/tools/ui/instructions).
 
-::screenshot{src="/images/scripts/show-chekin/to.png" alt="Reserva do Little Hotelier com o painel do Chekin: um hóspede encontrado, com nome, telefone e número de documento, e os botões Use document e View in Chekin" caption="O painel do Chekin dentro da reserva do Little Hotelier, com o documento do hóspede pronto a usar."}
+::screenshot{src="/images/scripts/show-chekin/to.webp" alt="Reserva do Little Hotelier com o painel do Chekin: um hóspede encontrado, com nome, telefone e número de documento, e os botões Use document e View in Chekin" caption="O painel do Chekin dentro da reserva do Little Hotelier, com o documento do hóspede pronto a usar."}
 ::
 
 ### Sinalize documentos em falta antes da chegada

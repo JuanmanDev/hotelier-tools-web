@@ -198,6 +198,8 @@ List calls return JSON like `{ "success": true, "count": 2, "data": [ … ] }`. 
 - **AI assistants.** The same key works with the Hotelier Tools MCP server (`https://dashboard.hotelier.tools/api/mcp`), which gives Claude, ChatGPT, Cursor or VS Code more than 100 hotel tools. Start with [what an MCP server is](/blog/what-is-mcp-server-hotels), then [connect Claude](/blog/connect-claude-to-little-hotelier) or set up [Claude Code, Cursor and VS Code](/blog/little-hotelier-mcp-claude-code-cursor-vscode).
 - **Glue between tools.** Where no App Store app exists, a small script can move data between Little Hotelier and the rest of your stack. Compare options in [the best Little Hotelier integrations](/blog/little-hotelier-integrations).
 
+See also: [Little Hotelier alternatives](/blog/little-hotelier-alternatives).
+
 ## Next steps
 
 - If you build software for many hotels, apply for SiteMinder's partner programme and SMX.

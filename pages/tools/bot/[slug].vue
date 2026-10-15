@@ -102,6 +102,18 @@
       </ul>
     </section>
 
+    <!-- How the feature works, what it needs and its limits (content/features/<locale>/<slug>.md) -->
+    <section v-if="details" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-24">
+      <div class="max-w-3xl">
+        <h2 class="font-display text-2xl lg:text-4xl font-semibold tracking-tight text-gray-900 dark:text-white mb-8">
+          {{ details.title }}
+        </h2>
+        <div class="ht-article">
+          <ContentRenderer :value="details" />
+        </div>
+      </div>
+    </section>
+
     <EmailExamples :feature="feature.id" />
 
     <FeatureGuides :feature="feature.slug" :name="name" />
@@ -133,9 +145,9 @@ import EmailExamples from '~/components/platform/EmailExamples.vue'
 import FeatureGuides from '~/components/blog/FeatureGuides.vue'
 
 const route = useRoute()
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const localePath = useLocalePath()
-const { setSEO, setBreadcrumbs } = useSEO()
+const { setSEO, setStructuredData, setBreadcrumbs } = useSEO()
 
 // Old bot pages moved to their feature page
 const legacy = LEGACY_BOT_SLUGS[String(route.params.slug)]
@@ -147,6 +159,18 @@ const feature = computed(() => featureBySlug(String(route.params.slug)))
 if (!feature.value && !legacy) {
   throw createError({ statusCode: 404, statusMessage: 'Feature not found', fatal: true })
 }
+
+// The feature explained in depth; English when the reader's language has no version yet
+const { data: details } = await useAsyncData(
+  () => `feature-details-${route.params.slug}-${locale.value}`,
+  async () => {
+    const slug = feature.value?.slug
+    if (!slug) return null
+    return await queryCollection('content').path(`/features/${locale.value}/${slug}`).first()
+      ?? await queryCollection('content').path(`/features/en/${slug}`).first()
+  },
+  { watch: [locale] }
+)
 
 const name = computed(() => feature.value ? t(`platform.slides.${feature.value.id}.short`) : '')
 const title = computed(() => t('features.seo_feature_title', { name: name.value }))
@@ -168,29 +192,18 @@ if (feature.value) {
   })
 
   // Describes the feature as part of the Hotelier Tools web application
-  useHead({
-    script: [{
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'SoftwareApplication',
-        name: `Hotelier Tools: ${name.value}`,
-        applicationCategory: 'BusinessApplication',
-        operatingSystem: 'Web',
-        url: DASHBOARD_URL,
-        description: description.value,
-        featureList: feature.value!.items.map(i => t(`platform.slides.${feature.value!.id}.items.${i.id}.name`)),
-        offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }
-      })
-    }]
+  setStructuredData('Product', {
+    name: `Hotelier Tools: ${name.value}`,
+    description: description.value,
+    url: DASHBOARD_URL,
+    featureList: feature.value!.items.map(i => t(`platform.slides.${feature.value!.id}.items.${i.id}.name`)),
+    offers: { price: 0, priceCurrency: 'EUR', priceValidUntil: '2027-01-10' }
   })
 
-  onMounted(() => {
-    setBreadcrumbs([
-      { name: t('nav.home'), url: '/' },
-      { name: t('nav.features'), url: '/tools/bot' },
-      { name: name.value, url: `/tools/bot/${feature.value!.slug}` }
-    ])
-  })
+  setBreadcrumbs([
+    { name: t('nav.home'), url: '/' },
+    { name: t('nav.features'), url: '/tools/bot' },
+    { name: name.value, url: `/tools/bot/${feature.value!.slug}` }
+  ])
 }
 </script>

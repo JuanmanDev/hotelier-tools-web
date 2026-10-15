@@ -13,11 +13,11 @@
         <div v-for="(night, i) in nights" :key="i" class="relative h-20 rounded-lg overflow-hidden text-center">
           <!-- Full at first, then each night frees up in turn -->
           <div class="absolute inset-0 flex flex-col items-center justify-center bg-red-50 text-red-700 dark:bg-red-500/10 dark:text-red-300">
-            <span class="text-[11px] capitalize">{{ night }}</span>
+            <span class="text-xs capitalize">{{ night }}</span>
             <span class="text-xs font-semibold">{{ $t('platform.scenes.waitlist.full') }}</span>
           </div>
           <div class="ht-fade absolute inset-0 flex flex-col items-center justify-center text-white" :style="{ background: 'var(--accent)', '--d': `${0.8 + i * 0.45}s` }">
-            <span class="text-[11px] capitalize opacity-90">{{ night }}</span>
+            <span class="text-xs capitalize opacity-90">{{ night }}</span>
             <span class="text-xs font-semibold">{{ $t('platform.scenes.waitlist.free') }}</span>
           </div>
         </div>

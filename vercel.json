@@ -1,11 +1,104 @@
 {
   "version": 2,
   "redirects": [
-    { "source": "/tools/bot/:old(checkout|payments|guests|unconfirmed)", "destination": "/tools/bot/automated-checks", "permanent": true },
-    { "source": "/:locale(en-gb|es|fr|de|id|it|pt|th)/tools/bot/:old(checkout|payments|guests|unconfirmed)", "destination": "/:locale/tools/bot/automated-checks", "permanent": true },
-    { "source": "/tools/bot/prices", "destination": "/tools/bot/dynamic-pricing", "permanent": true },
-    { "source": "/:locale(en-gb|es|fr|de|id|it|pt|th)/tools/bot/prices", "destination": "/:locale/tools/bot/dynamic-pricing", "permanent": true },
-    { "source": "/tools/bot/invoices", "destination": "/tools/bot/invoicing", "permanent": true },
-    { "source": "/:locale(en-gb|es|fr|de|id|it|pt|th)/tools/bot/invoices", "destination": "/:locale/tools/bot/invoicing", "permanent": true }
+    {
+      "source": "/tools/bot/:old(checkout|payments|guests|unconfirmed)",
+      "destination": "/tools/bot/automated-checks",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(en-gb|es|fr|de|id|it|pt|th)/tools/bot/:old(checkout|payments|guests|unconfirmed)",
+      "destination": "/:locale/tools/bot/automated-checks",
+      "permanent": true
+    },
+    {
+      "source": "/tools/bot/prices",
+      "destination": "/tools/bot/dynamic-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(en-gb|es|fr|de|id|it|pt|th)/tools/bot/prices",
+      "destination": "/:locale/tools/bot/dynamic-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/tools/bot/invoices",
+      "destination": "/tools/bot/invoicing",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(en-gb|es|fr|de|id|it|pt|th)/tools/bot/invoices",
+      "destination": "/:locale/tools/bot/invoicing",
+      "permanent": true
+    },
+    {
+      "source": "/chrome-extensions",
+      "destination": "/tools/ui",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(en-gb|es|fr|de|id|it|pt|th)/chrome-extensions",
+      "destination": "/:locale/tools/ui",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap_index.xml",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/(favicon.ico|favicon.svg|logo.png)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/api-catalog",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/linkset+json; profile=\"https://www.rfc-editor.org/info/rfc9727\""
+        }
+      ]
+    }
   ]
 }

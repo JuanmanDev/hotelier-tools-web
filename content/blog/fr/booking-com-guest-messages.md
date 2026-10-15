@@ -173,6 +173,8 @@ Tout ce que fait la boîte de réception est décrit sur la [page Messagerie cli
 Hotelier Tools n'est ni affilié à Booking.com, SiteMinder ou Little Hotelier, ni approuvé par eux. Il se connecte avec les identifiants Little Hotelier de votre hôtel et vos propres identifiants de l'extranet Booking.com.
 ::
 
+À lire aussi : [l'assistant IA pour la réception](/blog/ai-assistant-hotel-front-desk), [une liste de clients à ne pas accepter](/blog/hotel-do-not-rent-list).
+
 ## Résumé
 
 - Répondez depuis Pulse où que vous soyez, et laissez les modèles, les messages programmés et les réponses automatiques couvrir les questions courantes.

@@ -136,6 +136,8 @@ Em Espanha, isto serve de base à declaração de IVA ([modelo 303](https://sede
 
 Os programadores / desenvolvedores também podem obter os PDF das faturas um a um através da [API REST do Hotelier Tools](/blog/little-hotelier-api). E se o seu contabilista também quiser os dados das reservas, veja [como exportar reservas para Excel](/blog/export-little-hotelier-reservations-excel).
 
+Guias relacionados: [o guia do Little Hotelier](/blog/little-hotelier-tips), [integrações do Little Hotelier](/blog/little-hotelier-integrations).
+
 ## Resumo
 
 - O relatório **Invoice** do Little Hotelier compacta em ZIP os PDF das faturas que já existem; o relatório **Accounting** exporta as faturas finalizadas como CSV para Xero ou QuickBooks.

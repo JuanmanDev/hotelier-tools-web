@@ -83,7 +83,7 @@ import DashboardBanner from '~/components/DashboardBanner.vue'
 import FeatureRequest from '~/components/FeatureRequest.vue'
 
 const { t, locale } = useI18n()
-const { setSEO } = useSEO()
+const { setSEO, languageOf } = useSEO()
 const runtimeConfig = useRuntimeConfig()
 const localePath = useLocalePath()
 
@@ -126,7 +126,7 @@ useHead({
       name: t('blog.title'),
       description: t('blog.subtitle'),
       url: `${baseUrl}${localePath('/blog')}`,
-      inLanguage: locale.value,
+      inLanguage: languageOf(),
       publisher: { '@type': 'Organization', name: 'Hotelier Tools', url: baseUrl },
       blogPost: posts.value.map(p => ({
         '@type': 'BlogPosting',

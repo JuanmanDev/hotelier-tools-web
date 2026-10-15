@@ -40,7 +40,7 @@
         <UIcon :name="file.icon" class="w-7 h-7 shrink-0" :style="{ color: 'var(--accent)' }" />
         <span class="min-w-0">
           <span class="block text-xs font-medium text-gray-900 dark:text-white truncate">{{ file.name }}</span>
-          <span class="block text-[11px] text-gray-500 dark:text-gray-400">{{ file.size }}</span>
+          <span class="block text-xs text-gray-500 dark:text-gray-400">{{ file.size }}</span>
         </span>
       </div>
     </div>
