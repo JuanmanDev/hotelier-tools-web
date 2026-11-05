@@ -9,8 +9,8 @@ tags: [expedia, expedia collect, pembayaran, kartu virtual, partner central, oto
 keywords: [expedia collect payment request, cara dibayar expedia collect, minta pembayaran expedia, kapan menagih kartu virtual expedia, expedia collect belum dibayar, pembayaran expedia partner central, expedia collect vs hotel collect, kartu virtual expedia kedaluwarsa, pencairan dana expedia]
 feature: automated-checks
 demoPath: /credentials/expedia-extranet
-cover: /images/blog/demo/en/expedia-collect-checkout-check.webp
-coverAlt: "Pemeriksaan When they leave di Hotelier Tools dengan pemeriksaan Expedia Collect payment dalam keadaan nonaktif: memeriksa di Partner Central apakah pembayaran sudah diminta saat tamu pergi, menautkan ke riwayat pembayaran Expedia, dan menyatakan tidak pernah meminta ulang untuk masa inap yang ditolak Expedia serta tidak menagih kartu virtual"
+cover: /images/blog/demo/en/expedia-collect-payments-states.webp
+coverAlt: "Kartu Expedia Collect payments di Hotelier Tools untuk check-out 7 Okt sampai 5 Nov 2026: chip All 7, To request 2 (€224.08), Refused by Expedia 1, Check in Partner Central 1, Requested 1, Reconciled by Expedia 1 dan Cancelled 1, serta tujuh masa inap demo dengan jumlah, status, siapa yang meminta (Check at check-out atau Demo Manager) dan queue ID Expedia, di atas tombol Request payment"
 featured: true
 faq:
   - q: "Berapa lama waktu saya untuk meminta pembayaran reservasi Expedia Collect?"
@@ -121,7 +121,7 @@ Setiap masa inap mendapat satu status, dengan chip yang menyaring daftar:
 
 Centang masa inapnya, atau pakai kotak pilih semua, lalu tekan **Request payment for N stays**. Setelah Anda konfirmasi, Hotelier Tools mengirim satu permintaan untuk semuanya, permintaan **Create Invoice** yang sama dengan di Partner Central. Setiap masa inap diklaim lebih dulu, sehingga tidak pernah terkirim dua kali. **Details** menampilkan apa kata Expedia tentang suatu masa inap dan riwayat permintaannya.
 
-::screenshot{src="/images/blog/demo/en/expedia-collect-payments-card.webp" alt="Halaman Expedia Partner Central di Hotelier Tools: kartu Expedia Collect payments dengan tautan Payments history dan catatan Connect Expedia above to see them, kartu Request Expedia Collect payments automatically bertanda Not configured yet dengan tombol Every day at 09:30, Choose, dan Run now, serta daftar How it works" caption="Expedia tidak terhubung di demo, jadi kartu pembayarannya kosong. Setelah terhubung, kartu ini mencantumkan setiap masa inap dan statusnya; kartu di bawahnya menjadwalkan permintaan." path="/credentials/expedia-extranet"}
+::screenshot{src="/images/blog/demo/en/expedia-collect-payments-states.webp" alt="Kartu Expedia Collect payments di Hotelier Tools untuk check-out 7 Okt sampai 5 Nov 2026: chip All 7, To request 2 (€224.08), Refused by Expedia 1, Check in Partner Central 1, Requested 1, Reconciled by Expedia 1 dan Cancelled 1, serta tujuh masa inap demo dengan jumlah, status, siapa yang meminta (Check at check-out atau Demo Manager) dan queue ID Expedia, di atas tombol Request payment" caption="Setiap masa inap Expedia pada tanggal yang Anda pilih, dengan posisi uangnya. Centang yang ingin diminta dan minta sekaligus." path="/credentials/expedia-extranet"}
 ::
 
 ### 3. Biarkan berjalan terjadwal
@@ -137,6 +137,9 @@ Di **Automatic Expedia payment requests** (`/credentials/expedia-extranet/automa
 
 Yang tidak pernah dilakukannya: login ke Partner Central, meminta dua kali untuk satu masa inap, meminta untuk masa inap yang dibayar dengan kartu virtual atau belum check-out, atau meminta lagi untuk masa inap yang ditolak atau tidak dijawab Expedia. Semua itu diserahkan ke manusia, dan log-nya menyebutkannya satu per satu.
 
+::screenshot{src="/images/blog/demo/en/expedia-collect-preview-run.webp" alt="Detail eksekusi tugas Request Expedia Collect payments pada 5 Nov 2026, bertanda Success, dengan ringkasan hasil: Preview, nothing sent: 1 stay would be requested from Expedia (54.08 EUR): EXP-2570209049. 2 stays Expedia refused or did not answer before are left for a person" caption="Dalam mode preview, setiap eksekusi mencatat masa inap mana yang akan diminta dan tidak mengirim apa pun. Masa inap yang ditolak Expedia diserahkan ke manusia." path="/credentials/expedia-extranet/automatic-requests"}
+::
+
 Sudah menjalankan pemeriksaan **When they leave**? Pemeriksaan **Expedia Collect payment** di sana memperingatkan jumlah yang belum diminta. Dengan perbaikan **Request the payment from Expedia (asks Expedia for money)** diaktifkan, pemeriksaan ini mengirim permintaan saat tamu pergi. Keduanya bisa aktif bersamaan: satu masa inap hanya diklaim sekali.
 
 ::screenshot{src="/images/blog/demo/en/expedia-collect-checkout-check.webp" alt="Halaman pemeriksaan When they leave: pemeriksaan Address and origin validation dan Automatic check-out, lalu pemeriksaan Expedia Collect payment dalam keadaan nonaktif, dengan apa yang bisa dilakukannya (memperingatkan jumlah yang belum diminta dan, jika perbaikannya aktif, meminta ke Expedia sekali per masa inap) dan apa yang tidak dilakukannya (meminta lagi untuk masa inap yang ditolak, menagih kartu virtual)" caption="Momen check-out bisa meminta ke Expedia untuk setiap masa inap saat tamu pergi, sekali per masa inap." path="/automated-checks/moment/at_checkout"}
@@ -145,6 +148,9 @@ Sudah menjalankan pemeriksaan **When they leave**? Pemeriksaan **Expedia Collect
 ### 4. Pantau riwayatnya
 
 **Expedia payments** (`/automated-checks/expedia-payments`) adalah buku catatan setiap permintaan yang dibuat dari Hotelier Tools: oleh orang, tugas terjadwal, pemeriksaan check-out, asisten, atau API. Saring berdasarkan status, **Who asked**, dan tanggal check-out, lalu buka satu baris untuk melihat setiap klaim dan setiap jawaban Expedia. **Ask again** mencoba ulang masa inap yang ditolak Expedia. Untuk masa inap tanpa jawaban, Anda lebih dulu mencentang **I checked Partner Central and these stays are not there**, karena meminta dua kali bisa berarti dibayar dua kali.
+
+::screenshot{src="/images/blog/demo/en/expedia-collect-payments-history.webp" alt="Halaman riwayat Expedia payments: filter Search, Who asked dan tanggal check-out, chip Requested 12, Refused by Expedia 1, Check in Partner Central 1 dan Sending 0, tombol Ask again, dan daftar permintaan: Lucas Alvarez ditolak Expedia karena jumlahnya tidak cocok dengan reservasi, Chiara Larsen diminta dengan queue ID, Sean Bianchi tanpa jawaban yang bisa dibaca sehingga perlu dicek di Partner Central, dan masa inap yang diminta oleh pemeriksaan saat check-out" caption="Setiap permintaan yang dibuat dari Hotelier Tools, siapa yang meminta, dan apa jawaban Expedia. Masa inap yang ditolak atau tidak dijawab bisa diminta lagi." path="/automated-checks/expedia-payments"}
+::
 
 Pada reservasi Expedia (`EXP-` diikuti kode konfirmasi), bagian **Payments** di reservasi punya panel **Expedia payment** dengan tombol **Check with Expedia**, dan tautan yang membuka kartu pembayaran dengan masa inap itu sudah tercentang.
 
@@ -156,7 +162,7 @@ Anda juga bisa bertanya ke asisten AI di dashboard, atau ke Claude dan ChatGPT l
 - **Status pembayaran hanya diikuti untuk permintaan dari sini.** Sejak rilis 1.71 (November 2026), Hotelier Tools membaca halaman **Statements and invoices** di Partner Central (12 bulan terakhir) dan menampilkan permintaan sebagai **Reconciled by Expedia** (diterima, pembayaran tertunda) atau **Paid by Expedia** (dengan tanggal dan jumlahnya), juga di panel Expedia pada reservasi. Permintaan yang belum muncul di halaman itu tetap **Requested**.
 - **Tidak pernah menagih kartu virtual.** Masa inap tersebut tampil sebagai **Virtual card**: tagih di mesin EDC Anda.
 - **Memakai sesi Partner Central Anda sendiri.** Ketentuan mitra Expedia membatasi akses otomatis ke Partner Central. Hotelier Tools login sebagai pengguna Anda, tidak pernah sendiri, dan tidak ada yang dibagikan antarproperti.
-- **Expedia tidak terhubung di demo**, jadi demo menampilkan kartunya tetapi tanpa masa inap Expedia.
+- **Demo memakai Partner Central simulasi.** Masa inap Expedia di sana menampilkan setiap status, dan permintaan yang Anda kirim di sana hanya diterima di memori: tidak ada yang sampai ke Expedia.
 
 ::demo-cta{path="/credentials/expedia-extranet"}
 ::

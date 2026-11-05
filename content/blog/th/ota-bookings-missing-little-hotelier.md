@@ -3,6 +3,7 @@ title: "การจอง Booking.com หรือ Expedia ไม่เข้�
 seoTitle: "การจอง Booking.com หรือ Expedia ไม่เข้า Little Hotelier"
 description: "ทำไมการจองจาก OTA ไม่เข้า Little Hotelier ตรวจสถานะการส่งได้ที่ไหน ปกป้องห้องอย่างไร และรับการแจ้งเตือนเมื่อมีการจองหายไป"
 date: 2026-10-29
+updated: 2026-11-05
 category: operations
 tags: [booking.com, expedia, channel manager, โอเวอร์บุ๊ก, little hotelier, siteminder]
 keywords: [การจอง booking.com ไม่เข้า little hotelier, การจอง expedia ไม่เข้า channel manager, little hotelier การจองหาย, siteminder reservation delivery failed, booking.com การจองไม่เข้า pms, channel manager โอเวอร์บุ๊ก, resend pms message little hotelier, การจองหายจาก channel manager, ห้องโอเวอร์บุ๊ก booking.com]
@@ -85,6 +86,9 @@ faq:
 
 แต่ละรอบอ่านการจองที่เกิดวันนี้และแขกที่จะมาถึงใน 14 วันข้างหน้า รวมถึงการจองใน Little Hotelier การจอง Expedia ถูกจับคู่ด้วยรหัสยืนยัน (`EXP-` ตามด้วยหมายเลข) ซึ่งเป็นรหัสเดียวกับที่ Little Hotelier เก็บไว้
 
+::screenshot{src="/images/blog/demo/en/ota-missing-expedia-alert-run.webp" alt="รายละเอียดรอบการทำงานของ checkExpediaReservationsInLh วันที่ 1 พ.ย. 2026 เวลา 11:30 สถานะ Success พร้อมสรุปผล: Expedia → Little Hotelier: 1 of 6 bookings in scope are NOT in Little Hotelier: 2570106574. Alert emailed for 1 booking missing for over 30 minutes: 2570106574" caption="แต่ละรอบบอกว่าเทียบการจองไปกี่รายการ และรายการไหนหายไป การแจ้งเตือนส่งเพียงครั้งเดียว" path="/cron-logs"}
+::
+
 ### แจ้งครั้งเดียวต่อการจอง ไม่ใช่ทุก 15 นาที
 
 การส่งการจองมักใช้เวลาไม่กี่นาที การอ่านครั้งเดียวจึงไม่พอ ทุกการจองที่หายไปจะถูกบันทึกลงสมุดบันทึก:
@@ -93,6 +97,11 @@ faq:
 - **แจ้งครั้งเดียว** อีเมลถูกจองสิทธิ์ไว้ก่อนส่ง สองรอบจึงส่งซ้ำกันไม่ได้ ถ้าอีเมลไม่ถึงใครเลย สิทธิ์จะถูกปล่อยและรอบถัดไปจะลองใหม่
 - **แจ้งอีกครั้งเมื่อแก้แล้ว** เมื่อการจองปรากฏใน Little Hotelier หรือ OTA ยกเลิก หรือการเข้าพักสิ้นสุดแล้ว คุณจะได้อีเมล "no longer missing" (ไม่หายแล้ว) หนึ่งฉบับ
 - **ไม่บอกว่าปกติทั้งที่ไม่รู้** ถ้าอ่านรายการได้ไม่ครบ รอบนั้นจะล้มเหลวและแจ้งให้ทราบ ไม่มีอะไรถูกนับว่าตรวจแล้ว
+
+เดโมแสดงเหตุการณ์ครบหนึ่งรอบในประวัติการทำงานของการตรวจ Expedia: การจองที่เห็นว่าหายไปครั้งแรก การแจ้งเตือน 30 นาทีต่อมา และเมื่อการจองเข้า Little Hotelier แล้ว ก็มีบันทึก "no longer missing" (ไม่หายแล้ว)
+
+::screenshot{src="/images/blog/demo/en/ota-missing-expedia-check-runs.webp" alt="ประวัติการทำงานที่กรองเฉพาะงาน Check Expedia reservations are in Little Hotelier มีสามรอบที่สำเร็จในวันที่ 1 พ.ย. 2026: เวลา 10:59 การจอง 2570106574 เป็นหนึ่งใน 6 รายการในขอบเขตที่ไม่อยู่ใน Little Hotelier เวลา 11:29 การจองเดิมพร้อม Alert emailed และเวลา 12:44 การจองทั้ง 6 รายการอยู่ใน Little Hotelier และ 1 การจองจากการแจ้งเตือนก่อนหน้าไม่หายแล้ว" caption="เหตุการณ์เดียวในสามรอบ: เห็นว่าหายไป แจ้งเตือนครั้งเดียวหลัง 30 นาที แล้วรายงานว่าแก้แล้ว" path="/cron-logs"}
+::
 
 การตรวจ Expedia ยังบันทึกสถานะและวันที่ที่ไม่ตรงกัน (เช่น ยกเลิกใน Expedia แต่ยังใช้งานอยู่ใน Little Hotelier) และการจองที่ไม่มีห้อง รายการเหล่านี้แสดงในสรุปของรอบนั้นใต้ **Run History** (`/cron-logs`)
 

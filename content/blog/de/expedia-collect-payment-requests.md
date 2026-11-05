@@ -9,8 +9,8 @@ tags: [expedia, expedia collect, zahlungen, virtuelle karte, partner central, au
 keywords: [expedia collect zahlung anfordern, expedia collect geld bekommen, expedia virtuelle kreditkarte belasten, expedia zahlt nicht, expedia partner central zahlungen, expedia collect hotel collect unterschied, expedia automatische auszahlung, expedia virtuelle karte abgelaufen, expedia collect rechnung erstellen]
 feature: automated-checks
 demoPath: /credentials/expedia-extranet
-cover: /images/blog/demo/en/expedia-collect-checkout-check.webp
-coverAlt: "Prüfungen beim Check-out in Hotelier Tools mit der ausgeschalteten Prüfung Expedia Collect payment: Sie prüft in Partner Central beim Abreisen des Gastes, ob die Zahlung angefordert wurde, verlinkt den Zahlungsverlauf von Expedia und fragt bei einem von Expedia abgelehnten Aufenthalt nie erneut nach und belastet keine virtuellen Karten"
+cover: /images/blog/demo/en/expedia-collect-payments-states.webp
+coverAlt: "Karte Expedia Collect payments in Hotelier Tools für Abreisen vom 7. Oktober bis 5. November 2026: die Chips All 7, To request 2 (224,08 €), Refused by Expedia 1, Check in Partner Central 1, Requested 1, Reconciled by Expedia 1 und Cancelled 1, sieben Demo-Aufenthalte mit Betrag, Status, wer angefordert hat (Check at check-out oder Demo Manager) und Expedia-Queue-IDs, darüber die Schaltfläche Request payment"
 featured: true
 faq:
   - q: "Wie lange habe ich Zeit, die Zahlung für eine Expedia-Collect-Buchung anzufordern?"
@@ -121,7 +121,7 @@ Jeder Aufenthalt bekommt einen Status, mit einem Chip, der die Liste filtert:
 
 Haken Sie die Aufenthalte an oder nutzen Sie das Kästchen zum Auswählen aller und drücken Sie **Request payment for N stays**. Nach Ihrer Bestätigung sendet Hotelier Tools eine einzige Anforderung für alle, dieselbe **Create Invoice**-Anforderung wie Partner Central. Jeder Aufenthalt wird vorher reserviert, sodass er nie zweimal gesendet wird. **Details** zeigt, was Expedia zu einem Aufenthalt sagt, und den Verlauf der Anforderung.
 
-::screenshot{src="/images/blog/demo/en/expedia-collect-payments-card.webp" alt="Seite Expedia Partner Central in Hotelier Tools: die Karte Expedia Collect payments mit einem Link Payments history und dem Hinweis Connect Expedia above to see them, darunter die Karte Request Expedia Collect payments automatically mit dem Status Not configured yet, den Schaltflächen Every day at 09:30, Choose und Run now und einer Liste How it works" caption="In der Demo ist Expedia nicht verbunden, deshalb ist die Zahlungskarte leer. Nach dem Verbinden listet sie jeden Aufenthalt mit seinem Status; die Karte darunter plant die Anforderungen." path="/credentials/expedia-extranet"}
+::screenshot{src="/images/blog/demo/en/expedia-collect-payments-states.webp" alt="Karte Expedia Collect payments in Hotelier Tools für Abreisen vom 7. Oktober bis 5. November 2026: die Chips All 7, To request 2 (224,08 €), Refused by Expedia 1, Check in Partner Central 1, Requested 1, Reconciled by Expedia 1 und Cancelled 1, sieben Demo-Aufenthalte mit Betrag, Status, wer angefordert hat (Check at check-out oder Demo Manager) und Expedia-Queue-IDs, darüber die Schaltfläche Request payment" caption="Jeder Expedia-Aufenthalt im gewählten Zeitraum und wo sein Geld steht. Haken Sie die anzufordernden an und fordern Sie sie in einem Schritt an." path="/credentials/expedia-extranet"}
 ::
 
 ### 3. Nach Zeitplan laufen lassen
@@ -137,6 +137,9 @@ Drücken Sie auf **Automatic Expedia payment requests** (`/credentials/expedia-e
 
 Was sie nie tut: sich bei Partner Central anmelden, für einen Aufenthalt zweimal anfordern, einen per virtueller Karte bezahlten oder noch nicht abgereisten Aufenthalt anfordern, oder einen Aufenthalt erneut anfordern, den Expedia abgelehnt oder nicht beantwortet hat. Diese bleiben für eine Person liegen, und das Protokoll des Laufs nennt sie.
 
+::screenshot{src="/images/blog/demo/en/expedia-collect-preview-run.webp" alt="Details des Laufs der Aufgabe Request Expedia Collect payments am 5. November 2026, Status Success, mit der Ergebniszusammenfassung: Preview, nothing sent: 1 stay would be requested from Expedia (54.08 EUR): EXP-2570209049. 2 stays Expedia refused or did not answer before are left for a person" caption="Im Modus Preview schreibt jeder Lauf, welche Aufenthalte er anfordern würde, und sendet nichts. Die von Expedia abgelehnten Aufenthalte bleiben für eine Person liegen." path="/credentials/expedia-extranet/automatic-requests"}
+::
+
 Nutzen Sie bereits die Prüfungen **When they leave** (beim Check-out)? Deren Prüfung **Expedia Collect payment** warnt vor einem noch nicht angeforderten Betrag. Ist die Korrektur **Request the payment from Expedia (asks Expedia for money)** eingeschaltet, sendet sie die Anforderung, sobald der Gast abreist. Beides kann gleichzeitig aktiv sein: Ein Aufenthalt wird nur einmal reserviert.
 
 ::screenshot{src="/images/blog/demo/en/expedia-collect-checkout-check.webp" alt="Seite der Prüfungen When they leave: die Prüfungen Address and origin validation und Automatic check-out, dann die ausgeschaltete Prüfung Expedia Collect payment mit dem, was sie kann (vor einem noch nicht angeforderten Betrag warnen und mit eingeschalteter Korrektur Expedia einmal pro Aufenthalt fragen) und was sie nicht tut (einen abgelehnten Aufenthalt erneut anfordern, virtuelle Karten belasten)" caption="Der Check-out-Moment kann Expedia bei jeder Abreise um Zahlung bitten, einmal pro Aufenthalt." path="/automated-checks/moment/at_checkout"}
@@ -145,6 +148,9 @@ Nutzen Sie bereits die Prüfungen **When they leave** (beim Check-out)? Deren Pr
 ### 4. Den Verlauf verfolgen
 
 **Expedia payments** (`/automated-checks/expedia-payments`) ist das Register jeder Anforderung aus Hotelier Tools: von einer Person, der geplanten Aufgabe, der Check-out-Prüfung, einem Assistenten oder der API. Filtern Sie nach Status, **Who asked** und Abreisedaten, und öffnen Sie eine Zeile, um jede Reservierung und jede Antwort von Expedia zu sehen. **Ask again** wiederholt die Aufenthalte, die Expedia abgelehnt hat. Bei einem Aufenthalt ohne Antwort haken Sie zuerst **I checked Partner Central and these stays are not there** an, denn doppelt anzufordern könnte bedeuten, doppelt bezahlt zu werden.
+
+::screenshot{src="/images/blog/demo/en/expedia-collect-payments-history.webp" alt="Verlaufsseite Expedia payments: die Filter Search, Who asked und Abreisedatum, die Chips Requested 12, Refused by Expedia 1, Check in Partner Central 1 und Sending 0, eine Schaltfläche Ask again und die Anforderungen: Lucas Alvarez von Expedia abgelehnt, weil der Betrag nicht zur Reservierung passte, Chiara Larsen angefordert mit Queue-ID, Sean Bianchi ohne lesbare Antwort, in Partner Central zu prüfen, und von der Prüfung beim Check-out angeforderte Aufenthalte" caption="Jede Anforderung aus Hotelier Tools, wer angefordert hat und was Expedia geantwortet hat. Abgelehnte und unbeantwortete Aufenthalte lassen sich erneut anfordern." path="/automated-checks/expedia-payments"}
+::
 
 Bei einer Expedia-Buchung (`EXP-` gefolgt vom Bestätigungscode) hat der Bereich **Payments** der Reservierung ein Panel **Expedia payment** mit **Check with Expedia** und einen Link, der die Zahlungskarte mit diesem Aufenthalt angehakt öffnet.
 
@@ -156,7 +162,7 @@ Sie können auch den KI-Assistenten des Dashboards fragen, oder Claude und ChatG
 - **Ob bezahlt wurde, verfolgt es nur für Anforderungen von hier.** Seit Version 1.71 (November 2026) liest Hotelier Tools die Seite **Statements and invoices** in Partner Central (die letzten 12 Monate) und zeigt eine Anforderung als **Reconciled by Expedia** (akzeptiert, Zahlung ausstehend) oder **Paid by Expedia** (mit Datum und Betrag), auch im Expedia-Bereich der Reservierung. Eine Anforderung, die dort noch nicht steht, bleibt **Requested**.
 - **Es belastet nie virtuelle Karten.** Diese Aufenthalte erscheinen als **Virtual card**: Belasten Sie sie an Ihrem Terminal.
 - **Es nutzt Ihre eigene Partner-Central-Sitzung.** Die Partnerbedingungen von Expedia schränken automatisierten Zugriff auf Partner Central ein. Hotelier Tools meldet sich als Ihr Nutzer an, nie von selbst, und zwischen Häusern wird nichts geteilt.
-- **In der Demo ist Expedia nicht verbunden**, deshalb zeigt die Demo die Karten, aber keine Expedia-Aufenthalte.
+- **Die Demo nutzt ein simuliertes Partner Central.** Ihre Expedia-Aufenthalte zeigen jeden Status, und eine dort gesendete Anforderung wird nur im Speicher angenommen: Nichts erreicht Expedia.
 
 ::demo-cta{path="/credentials/expedia-extranet"}
 ::

@@ -3,6 +3,7 @@ title: "Tamu meminta tanggal yang belum bisa Anda jual? Simpan antrean permintaa
 seoTitle: "Permintaan ketersediaan hotel: jangan sampai ada yang hilang"
 description: "Tamu menanyakan tanggal penuh atau belum bertarif, lalu emailnya tenggelam. Catat di log, atau biarkan antrean memeriksa dan membalas saat ada kamar."
 date: 2026-11-05
+updated: 2026-11-05
 category: operations
 tags: [availability, waitlist, enquiries, little hotelier, group requests, direct booking]
 keywords: [tamu tanya kamar tanggal belum tersedia, cara mencatat permintaan kamar hotel, follow up permintaan ketersediaan hotel, template log permintaan tamu hotel, notifikasi tamu saat kamar tersedia, tarif belum dibuka booking engine hotel, permintaan kamar rombongan hotel penuh, waiting list hotel tanggal mendatang]
@@ -101,6 +102,9 @@ Kecocokan partial yang tidak berubah dilaporkan sekali, bukan pada setiap putara
 ### Email atau WhatsApp, untuk tamu dan untuk Anda
 
 Tamu bisa diberi tahu lewat email, WhatsApp, atau keduanya, dan properti lewat channel-nya sendiri. Pesan WhatsApp dikirim dari nomor Anda yang terhubung ([WhatsApp dengan Little Hotelier](/blog/whatsapp-little-hotelier)); nomor telepon harus menyertakan kode negara, dan Hotelier Tools tidak pernah menebaknya. Biarkan **Property email** kosong untuk memakai alamat notifikasi akun Anda. Email tamu ditulis dalam bahasa yang Anda pilih di **Guest's language**, dan pada pesan **available** email itu menyertakan tautan pemesanan langsung dengan tanggal dan jumlah kamar yang sudah terisi. **History** (`/availability-watch/history`) menyimpan pesan persis yang dikirim setiap permintaan.
+
+::screenshot{src="/images/blog/demo/en/availability-queue-history.webp" alt="Halaman Waiting list history: penghitung 1 fulfilled, 1 expired, 1 cancelled dan 3 with a message, lalu Closed entries: Pierre Dubois fulfilled, kamar kosong dan sudah diumumkan (AVAILABLE Doble Superior ×3, told guest/email, hotel/email) dengan tombol What was sent; Lucas Moreau expired karena masa inapnya dimulai sebelum ada kamar yang kosong; Sean Murphy cancelled oleh resepsionis karena tamu memesan tanggal lain lewat telepon" caption="Setiap permintaan yang ditutup tetap tercatat, dengan pesan persis yang diterima tamu." path="/availability-watch/history"}
+::
 
 ### Permintaan yang masuk lewat inbox
 

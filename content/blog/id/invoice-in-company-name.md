@@ -3,6 +3,7 @@ title: "Cara membuat invoice atas nama perusahaan, bukan tamu, di Little Hotelie
 seoTitle: "Invoice atas nama perusahaan, bukan tamu, di Little Hotelier"
 description: "Cara mencantumkan nama dan nomor pajak perusahaan di invoice Little Hotelier, isi wajib invoice lengkap, dan cara tamu mengirim data invoice sendiri."
 date: 2026-10-27
+updated: 2026-11-05
 category: invoicing
 tags: [invoice, invoice perusahaan, little hotelier, booking.com, data tamu, check-out]
 keywords: [invoice little hotelier atas nama perusahaan, cara membuat invoice hotel atas nama perusahaan, invoice hotel nama perusahaan, ganti nama di invoice hotel, tamu minta invoice dengan data perusahaan, tamu booking.com minta invoice perusahaan, invoice hotel untuk agen perjalanan, little hotelier invoice npwp]
@@ -151,6 +152,11 @@ Pahami batasannya sebelum memakainya:
 - **Semua penerbit berbagi penomoran invoice Anda** di Little Hotelier. Di Spanyol, setiap penerbit biasanya memerlukan serinya sendiri. Tanyakan ke akuntan Anda terlebih dahulu.
 - **Selama beberapa detik, Little Hotelier memakai data penerbit lain.** Proses malam opsional (disarankan pukul 02.30) menerbitkan invoice ini saat tidak ada orang lain yang membuat invoice.
 - Invoice yang sudah diterbitkan tetap memakai penerbitnya. Koreksi dilakukan dengan nota kredit di Little Hotelier.
+
+Demo sudah punya penerbit kedua yang siap pakai: **Sol Experiencias S.L.**, perusahaan tur fiktif milik hotel, menerbitkan invoice untuk masa inap paket. Kartunya menghitung dua masa inap yang sudah ditagihkan atas namanya dan dua yang menunggu invoice.
+
+::screenshot{src="/images/blog/demo/en/invoice-issuers-sol-experiencias.webp" alt="Invoices in another name, The configuration now: Invoice issuer per reservation On, Invoice title and logo Off, Night run Off, Little Hotelier menampilkan data properti sendiri; penerbit milik properti Hotel Demo Sol di samping penerbit Paquetes con excursión (#INVOICE_ISSUER:EXS7#) untuk Sol Experiencias S.L. dengan 2 waiting dan 2 invoiced; proses malam yang belum dikonfigurasi; dan Reservations using another issuer, dengan Tomas Demir dan Hannah Marino menunggu invoice serta Camila Okafor dan Lucia Costa yang sudah ditagihkan" caption="Setiap penerbit mencantumkan masa inap yang diberi tag-nya: sudah ditagihkan atas namanya, atau menunggu invoice." path="/invoices/issuers"}
+::
 
 ::demo-cta{path="/invoice-on-leave/links"}
 ::

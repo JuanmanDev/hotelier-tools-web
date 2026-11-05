@@ -3,13 +3,14 @@ title: "Una dirección de email del hotel para facturas de proveedores y accesos
 seoTitle: "Email del hotel para facturas de proveedores y accesos"
 description: "Dale a tu hotel una dirección privada solo de recepción para las facturas de proveedores y una por cada acceso a un portal. Sin contraseña IMAP."
 date: 2026-11-01
+updated: 2026-11-05
 category: operations
 tags: [email, facturas de proveedores, little hotelier, booking.com, expedia, seguridad]
 keywords: [email para facturas de proveedores, dirección de correo para facturas hotel, buzón de facturas hotel, email solo para recibir facturas, reenviar facturas al email de contabilidad, email para usuario little hotelier, email para usuario extranet booking.com, correo de facturas recibidas]
 feature: dashboard
 demoPath: /credentials
-cover: /images/blog/demo/es/supplier-invoices-mailbox-settings.webp
-coverAlt: "Ajustes de Facturas recibidas: la tarjeta Sugerencias con Sugerir facturas que no han llegado activado y 24 meses de historial, y la tarjeta Buzones con reservas@example.com conectado, Leer en busca de facturas activado, INBOX como carpeta que se lee, una primera revisión que mira 120 días atrás y las listas No leer nunca el correo de y Leer siempre el correo de vacías"
+cover: /images/blog/demo/es/hotel-email-invoice-address.webp
+coverAlt: "Tarjeta Dirección para facturas en Hotelier Tools con la dirección inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid es el dominio de ejemplo de la demo), los botones Copiar y Nueva dirección, y Correo reciente: un email de pedido Retenido para revisar porque No traía ningún archivo de factura, un cambio de datos bancarios retenido porque Parece un fraude: no se ha importado nada, y la factura HE-2026/1102 de Horno Ejemplo, Importado; debajo, Añadir un correo a mano con Subir un archivo .eml y la tarea Leer el buzón del alojamiento, En pausa"
 faq:
   - q: "¿Qué es una dirección de email solo de recepción para un hotel?"
     a: "Una dirección que solo recibe correo y nunca envía. En Hotelier Tools cada alojamiento puede tener la suya, como inv-7k2m9qx4hp@in.hotelier.tools para las facturas de proveedores. Lo que llega ahí entra en la cuenta de ese alojamiento, sin contraseña IMAP ni inicio de sesión de Microsoft."
@@ -74,6 +75,9 @@ También puedes reenviar a la dirección las facturas que ya tienes. Hotelier To
 
 ¿Necesitas una dirección nueva, por ejemplo tras una oleada de spam? Pulsa **Nueva dirección**. La antigua sigue recibiendo durante 30 días, con una nota en cada mensaje que indica que llegó a una dirección retirada, y después deja de hacerlo.
 
+::screenshot{src="/images/blog/demo/es/hotel-email-invoice-address.webp" alt="Tarjeta Dirección para facturas en Hotelier Tools con la dirección inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid es el dominio de ejemplo de la demo), los botones Copiar y Nueva dirección, y Correo reciente: un email de pedido Retenido para revisar porque No traía ningún archivo de factura, un cambio de datos bancarios retenido porque Parece un fraude: no se ha importado nada, y la factura HE-2026/1102 de Horno Ejemplo, Importado; debajo, Añadir un correo a mano con Subir un archivo .eml y la tarea Leer el buzón del alojamiento, En pausa" caption="Los proveedores escriben a una sola dirección privada. Cada mensaje muestra qué se hizo con él, y lo sospechoso espera a una persona." path="/settings/received-invoices"}
+::
+
 ## ¿Qué pasa con el correo enviado a la dirección para facturas?
 
 Cada mensaje se trata como no fiable:
@@ -110,6 +114,9 @@ Cuando esté construido, una invitación solo se aceptará si es para el número
 ## ¿Dónde encuentro todas mis direcciones?
 
 **Credenciales** (`/credentials`) termina con **Direcciones del buzón del hotel**: la dirección para facturas y las tres direcciones de acceso, cada una con su estado (por ejemplo **Esperando la invitación** o **Activo**) y un enlace **Abrir** a la página que la gestiona. La lista es solo de lectura.
+
+::screenshot{src="/images/blog/demo/es/hotel-email-address-list.webp" alt="Direcciones del buzón del hotel, al final de la página Credenciales: Facturas de proveedores inv-qqxyc2dsnf@in.hotel-demo.invalid, Activo; Acceso a Little Hotelier lh-dwfenz3etz@ y Acceso a Booking.com bk-59k2nwybrt@, Esperando la invitación; y Acceso a Expedia, Aún sin crear, cada una con un enlace Abrir (in.hotel-demo.invalid es el dominio de ejemplo de la demo)" caption="Todas las direcciones del alojamiento en una lista, cada una con su estado y un enlace a la página que la gestiona." path="/credentials"}
+::
 
 Se aplican dos reglas de visibilidad:
 

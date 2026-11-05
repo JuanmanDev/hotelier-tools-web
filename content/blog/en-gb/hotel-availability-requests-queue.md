@@ -3,6 +3,7 @@ title: "Guest asked for dates you can't sell yet? Keep an availability request q
 seoTitle: "Hotel availability requests: never lose one again"
 description: "Guests ask for dates that are full or not priced yet, and the email gets buried. Keep a request log, or let a queue check and reply once a room is free."
 date: 2026-11-05
+updated: 2026-11-05
 category: operations
 tags: [availability, waitlist, enquiries, little hotelier, group requests, direct booking]
 keywords: [guest asked for dates not available yet hotel, hotel availability request follow up, how to track room requests hotel, hotel enquiry log template, notify guest when room available, hotel rates not loaded yet booking engine, group room request hotel sold out, hotel waiting list for future dates]
@@ -101,6 +102,9 @@ A partial match that doesn't change is reported once, not on every run, and the 
 ### Email or WhatsApp, for the guest and for you
 
 The guest can be told by email, WhatsApp or both, and the property on its own channels. WhatsApp messages go out from your connected number ([WhatsApp with Little Hotelier](/blog/whatsapp-little-hotelier)); a phone number must include its country code, and Hotelier Tools never guesses one. Leave **Property email** empty to use your account's notification address. The guest's email is written in the language you pick under **Guest's language**, and on an **available** message it carries a direct booking link with the dates and number of rooms already filled in. **History** (`/availability-watch/history`) keeps the exact message each request sent.
+
+::screenshot{src="/images/blog/demo/en/availability-queue-history.webp" alt="Waiting list history page: counters of 1 fulfilled, 1 expired, 1 cancelled and 3 with a message, then Closed entries: Pierre Dubois fulfilled, a room came free and was announced (AVAILABLE Doble Superior ×3, told guest/email, hotel/email) with a What was sent button; Lucas Moreau expired because the stay started before anything freed up; Sean Murphy cancelled by reception because the guest booked other dates by phone" caption="Every closed request stays on record, with the exact message the guest received." path="/availability-watch/history"}
+::
 
 ### Requests that arrive in the inbox
 

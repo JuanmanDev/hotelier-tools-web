@@ -3,6 +3,7 @@ title: "Little Hotelier payment links: how to send one, collect deposits and rem
 seoTitle: "Little Hotelier payment link and payment reminders"
 description: "Send a payment request from Little Hotelier, set deposits, and remind unpaid guests automatically, without chasing money already paid on Booking.com."
 date: 2026-10-28
+updated: 2026-11-05
 category: invoicing
 tags: [payments, payment link, little hotelier, siteminder pay, deposits, automation]
 keywords: [little hotelier payment link, little hotelier send payment request, little hotelier pay payment request, siteminder pay payment link, hotel payment reminder email, remind guest to pay balance before arrival, little hotelier deposit, little hotelier ota paid booking.com prepaid]
@@ -96,6 +97,9 @@ Hotelier Tools' **Payment reminders** (`/automated-checks/payments`, part of the
 - **Told when it's paid.** Each run follows the links its reminders sent. When one is paid, the team gets a "payments received" email (if the rule tells the team).
 
 To test one reminder, **Send now…** sends it to a single booking whatever its day. Everything sent is listed under **Activity**: when, booking, guest or team, status, outstanding amount and the link's state (**Waiting for payment**, **Paid**, **Expired**, **Cancelled**).
+
+::screenshot{src="/images/blog/demo/en/payment-reminders-activity.webp" alt="Payment reminders page with two rules switched on: Prepago reservas directas — 7 días antes (7 days before check-in, Reminder + link; last 30 days 3 sent, 1 failed) and Saldo pendiente — 2 días antes (2 days before check-in, SiteMinder Pay and Team; 11 sent, 1 failed), each with its daily 10:00 task running; then the Activity table with reminders to guests and team summaries, sent with SiteMinder Pay links Waiting for payment or Expired, and one failed because SiteMinder Pay did not confirm it emailed the guest" caption="Two rules on their own daily schedule, and a record of every reminder with the state of its payment link." path="/automated-checks/payments"}
+::
 
 ### Prepaid stays are handled for you
 

@@ -3,6 +3,7 @@ title: "Come intestare la fattura a un'azienda invece che all'ospite in Little H
 seoTitle: "Fattura intestata a un'azienda in Little Hotelier"
 description: "Ragione sociale e partita IVA di un'azienda su una fattura Little Hotelier, cosa serve in una fattura completa e come gli ospiti inviano i propri dati."
 date: 2026-10-27
+updated: 2026-11-05
 category: invoicing
 tags: [fatture, fattura aziendale, little hotelier, booking.com, dati ospite, check-out]
 keywords: [little hotelier fattura intestata azienda, fattura hotel intestata a un'azienda, intestare fattura albergo a società, cambiare intestatario fattura hotel, ospite chiede fattura con dati aziendali, fattura booking.com intestata azienda, fattura hotel agenzia di viaggi, fattura con partita iva hotel]
@@ -151,6 +152,11 @@ Conosci i limiti prima di usarlo:
 - **Tutti gli emittenti condividono la tua numerazione delle fatture** in Little Hotelier. In Spagna ogni emittente di norma ha bisogno di una propria serie. Verifica prima con il tuo commercialista.
 - **Per qualche secondo, Little Hotelier riporta l'altro emittente.** Un'esecuzione notturna facoltativa (consigliata alle 02:30) emette queste fatture quando nessun altro sta fatturando.
 - Una fattura già emessa mantiene il suo emittente. Una correzione è una nota di credito in Little Hotelier.
+
+La demo ha già un secondo emittente configurato: **Sol Experiencias S.L.**, la società di escursioni inventata dell'hotel, fattura i soggiorni con pacchetto. La sua scheda conta due soggiorni fatturati a suo nome e due in attesa della fattura.
+
+::screenshot{src="/images/blog/demo/en/invoice-issuers-sol-experiencias.webp" alt="Invoices in another name, The configuration now: Invoice issuer per reservation On, Invoice title and logo Off, Night run Off, Little Hotelier che mostra i dati della struttura; l'emittente della struttura Hotel Demo Sol accanto all'emittente Paquetes con excursión (#INVOICE_ISSUER:EXS7#) per Sol Experiencias S.L. con 2 in attesa e 2 fatturati; l'esecuzione notturna non ancora configurata; e Reservations using another issuer, con Tomas Demir e Hannah Marino in attesa della fattura e Camila Okafor e Lucia Costa fatturati" caption="Ogni emittente elenca i soggiorni con il suo tag: già fatturati a suo nome o in attesa della fattura." path="/invoices/issuers"}
+::
 
 ::demo-cta{path="/invoice-on-leave/links"}
 ::

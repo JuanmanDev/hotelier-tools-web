@@ -3,6 +3,7 @@ title: "How to add a user to Little Hotelier (and give a tool its own login inst
 seoTitle: "How to add a user to Little Hotelier, step by step"
 description: "Add a team member or an integration user in Little Hotelier, set permissions and MFA, and connect tools with a dedicated user instead of your password."
 date: 2026-11-05
+updated: 2026-11-05
 category: tips
 tags: [little hotelier, users, permissions, mfa, passkeys, security]
 keywords: [how to add a user to little hotelier, little hotelier add user, little hotelier user permissions, little hotelier manage users, little hotelier mfa setup, little hotelier activation email expired, little hotelier integration user, give staff access little hotelier, little hotelier passkey]
@@ -126,7 +127,10 @@ You can give this user fewer permissions, but Hotelier Tools says plainly that s
 ### MFA and passkeys on the Advanced user
 
 - **When Little Hotelier starts requiring MFA**, Hotelier Tools enrolls an authenticator on the Advanced user by itself, stores the secret encrypted and answers the code from then on. It never does this on your Simple login, because a secret only the app holds would lock you out of your own account. If it's needed by hand, the account panel has **Set up two-step verification**.
-- **A server-held passkey (beta).** **Passkeys and two-step verification** (`/credentials/passkeys`) can add a passkey to the Advanced user (**Add passkey**, then **Test passkey**). Scheduled sign-ins try it first: it works even when the password has expired and skips the code step. The owner can **Download passkey** to keep a copy. Adding or testing it is one sign-in to Little Hotelier.
+- **A server-held passkey (beta).** **Passkeys and two-step verification** (`/credentials/passkeys`) can add a passkey to the Advanced user (**Add passkey**, then **Test passkey**). Scheduled sign-ins try it first: it works even when the password has expired and skips the code step. Once one is stored, the button reads **Replace passkey**. The owner can **Download passkey** to keep a copy. Adding or testing it is one sign-in to Little Hotelier.
+
+::screenshot{src="/images/blog/demo/en/add-user-lh-passkeys.webp" alt="Passkeys and two-step verification page (beta): the Little Hotelier passkey (advanced login) card, Stored and On, for bot-demo-sol@example.com with its creation date, ES256 algorithm, site auth0.siteminder.com, credential and passkey IDs and last sign-in, and Replace passkey, Test passkey and Download passkey buttons; below, Authenticator codes (TOTP) with Advanced login Stored and Simple login None" caption="The Advanced user holds a passkey and an authenticator secret, so scheduled sign-ins don't stop at a code." path="/credentials/passkeys"}
+::
 
 ### To remove it
 
@@ -141,6 +145,9 @@ Here is exactly where it stands, as of 5 November 2026:
 - **Built:** the address (**Get the login address**, after you enter your Little Hotelier property number), the login's states (**Waiting for the invitation**, **Active**, **Paused**, **Retired**), **Retire this login**, and the safety rules. Security alerts are forwarded to the owner and never clicked.
 - **Not built yet:** reading and accepting Little Hotelier's invitation. No real invitation has been captured, so **every message to the login address is held for a person**, and nothing in it is opened. The card says this itself.
 - **What a person does today:** use the activation-link steps above.
+
+::screenshot{src="/images/blog/demo/en/add-user-lh-login-address.webp" alt="Advanced account page with the Hotelier Tools as a user in Little Hotelier card, Waiting for the invitation: a warning that reading Little Hotelier's invitations automatically is not available yet, the login address lh-dwfenz3etz@in.hotel-demo.invalid (the demo's placeholder domain) with Copy, Little Hotelier property number 90210, Read sign-in codes off, Retire this login, and under Mail to this login the invitation You have been invited to Hotel Demo Sol on Little Hotelier, held for review" caption="The invitation reaches the login address and waits for a person. Nothing in it is followed yet." path="/credentials/hotelier-advanced"}
+::
 
 ## Your colleagues: Hotelier Tools team accounts
 

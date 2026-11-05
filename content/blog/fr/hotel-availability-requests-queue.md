@@ -3,6 +3,7 @@ title: "Un client demande des dates que vous ne pouvez pas encore vendre ? Tene
 seoTitle: "Demandes de disponibilité hôtel : n'en perdez plus"
 description: "Des clients demandent des dates complètes ou pas encore tarifées, et l'e-mail se perd. Tenez un registre, ou laissez une file vérifier et répondre."
 date: 2026-11-05
+updated: 2026-11-05
 category: operations
 tags: [disponibilités, liste d'attente, demandes, little hotelier, groupes, réservation directe]
 keywords: [client demande dates pas encore ouvertes hôtel, suivi demande de disponibilité hôtel, registre des demandes de réservation hôtel, prévenir client chambre disponible, tarifs pas encore chargés moteur de réservation, demande de groupe hôtel complet, liste d'attente hôtel dates futures, demande agence de voyage chambres hôtel, little hotelier disponibilités]
@@ -101,6 +102,9 @@ Une correspondance partielle qui ne change pas n'est signalée qu'une fois, pas 
 ### E-mail ou WhatsApp, pour le client et pour vous
 
 Le client peut être prévenu par e-mail, WhatsApp ou les deux, et l'établissement sur ses propres canaux. Les messages WhatsApp partent de votre numéro connecté ([WhatsApp avec Little Hotelier](/blog/whatsapp-little-hotelier)) ; un numéro de téléphone doit inclure l'indicatif du pays, et Hotelier Tools n'en devine jamais un. Laissez **Property email** vide pour utiliser l'adresse de notification de votre compte. L'e-mail au client est rédigé dans la langue choisie sous **Guest's language**, et un message **available** contient un lien de réservation directe avec les dates et le nombre de chambres déjà remplis. **History** (`/availability-watch/history`) conserve le message exact envoyé par chaque demande.
+
+::screenshot{src="/images/blog/demo/en/availability-queue-history.webp" alt="Page Waiting list history : compteurs 1 fulfilled, 1 expired, 1 cancelled et 3 with a message, puis Closed entries : Pierre Dubois, fulfilled, une chambre s'est libérée et a été annoncée (AVAILABLE Doble Superior ×3, told guest/email, hotel/email), avec un bouton What was sent ; Lucas Moreau, expired, car le séjour a commencé avant qu'une chambre se libère ; Sean Murphy, cancelled par la réception, car le client a réservé d'autres dates par téléphone" caption="Chaque demande close reste consignée, avec le message exact reçu par le client." path="/availability-watch/history"}
+::
 
 ### Les demandes qui arrivent dans la boîte de réception
 

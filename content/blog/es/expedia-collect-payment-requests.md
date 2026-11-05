@@ -9,8 +9,8 @@ tags: [expedia, expedia collect, pagos, tarjeta virtual, partner central, automa
 keywords: [cobrar expedia collect, solicitar pago a expedia, expedia collect no me paga, tarjeta virtual expedia cuándo cobrar, expedia partner central pagos, expedia collect vs hotel collect, pagos automáticos expedia, tarjeta virtual expedia caducada, cuánto tarda expedia en pagar]
 feature: automated-checks
 demoPath: /credentials/expedia-extranet
-cover: /images/blog/demo/es/expedia-collect-checkout-check.webp
-coverAlt: "Comprobaciones A la salida de Hotelier Tools con la comprobación Cobro Expedia Collect desactivada: mira en Partner Central si el pago se ha pedido cuando el huésped se va, enlaza al historial de pagos de Expedia y avisa de que nunca vuelve a pedir una estancia que Expedia rechazó ni cobra tarjetas virtuales"
+cover: /images/blog/demo/es/expedia-collect-payments-states.webp
+coverAlt: "Tarjeta Pagos de Expedia Collect en Hotelier Tools para salidas del 7 oct al 5 nov de 2026: chips Todas 7, Por pedir 2 · 224,08 €, Rechazada por Expedia 1, Comprobar en Partner Central 1, Pedida 1, Conciliada por Expedia 1 y Cancelada 1, y siete estancias de demostración con importe, estado, quién la pidió en la columna Pedida desde aquí (Comprobación al irse o Demo Manager (Una persona)) e ID de cola de Expedia, encima del botón Pedir el pago de 0 estancias (0,00 €)"
 featured: true
 faq:
   - q: "¿Cuánto tiempo tengo para solicitar el pago de una reserva de Expedia Collect?"
@@ -121,7 +121,7 @@ Cada estancia tiene un estado, con una etiqueta que filtra la lista:
 
 Marca las estancias, o usa la casilla de seleccionar todo, y pulsa **Pedir el pago de N estancias**. Cuando confirmas, Hotelier Tools envía una sola solicitud para todas, la misma solicitud **Create Invoice** que hace Partner Central. Cada estancia se reserva antes de enviarse, así que nunca se envía dos veces. **Detalles** muestra lo que dice Expedia de una estancia y el historial de la solicitud.
 
-::screenshot{src="/images/blog/demo/es/expedia-collect-payments-card.webp" alt="Página Expedia Partner Central en Hotelier Tools: la tarjeta Pagos de Expedia Collect con un enlace al Historial de pagos y el aviso Conecta Expedia arriba para verlas, la tarjeta Pedir los pagos de Expedia Collect automáticamente marcada como Sin configurar con los botones Cada día a las 09:30, Elegir y Ejecutar ahora, y una lista Cómo funciona" caption="En la demo Expedia no está conectado, así que la tarjeta de pagos está vacía. Una vez conectado, lista cada estancia con su estado; la tarjeta de abajo programa las solicitudes." path="/credentials/expedia-extranet"}
+::screenshot{src="/images/blog/demo/es/expedia-collect-payments-states.webp" alt="Tarjeta Pagos de Expedia Collect en Hotelier Tools para salidas del 7 oct al 5 nov de 2026: chips Todas 7, Por pedir 2 · 224,08 €, Rechazada por Expedia 1, Comprobar en Partner Central 1, Pedida 1, Conciliada por Expedia 1 y Cancelada 1, y siete estancias de demostración con importe, estado, quién la pidió en la columna Pedida desde aquí (Comprobación al irse o Demo Manager (Una persona)) e ID de cola de Expedia, encima del botón Pedir el pago de 0 estancias (0,00 €)" caption="Cada estancia de Expedia en las fechas que elijas, con el punto en que está su dinero. Marca las que quieras pedir y pídelas de una vez." path="/credentials/expedia-extranet"}
 ::
 
 ### 3. Déjalo funcionar de forma programada
@@ -137,6 +137,9 @@ En **Peticiones de pago automáticas a Expedia** (`/credentials/expedia-extranet
 
 Lo que nunca hace: iniciar sesión en Partner Central, pedir dos veces una estancia, pedir una estancia pagada con tarjeta virtual o que aún no ha salido, ni volver a pedir una estancia que Expedia rechazó o no respondió. Esas quedan para una persona, y el registro de la ejecución las nombra.
 
+::screenshot{src="/images/blog/demo/es/expedia-collect-preview-run.webp" alt="Detalle de la ejecución de la tarea requestExpediaCollectPayments del 5 de noviembre de 2026, Correcta, con el Resumen del resultado en inglés: Preview, nothing sent: 1 stay would be requested from Expedia (54.08 EUR): EXP-2570209049. 2 stays Expedia refused or did not answer before are left for a person" caption="En vista previa, cada ejecución escribe qué estancias pediría y no envía nada. Las estancias que Expedia rechazó quedan para una persona." path="/credentials/expedia-extranet/automatic-requests"}
+::
+
 ¿Ya usas las comprobaciones **A la salida**? Su comprobación **Cobro Expedia Collect** avisa de un importe que aún no se ha pedido. Con la corrección **Pedir el pago a Expedia (pide dinero a Expedia)** activada, envía la solicitud cuando el huésped se va. Puedes tener las dos activas: cada estancia se reserva una sola vez.
 
 ::screenshot{src="/images/blog/demo/es/expedia-collect-checkout-check.webp" alt="Página de comprobaciones A la salida: las comprobaciones Validación de dirección y procedencia y Check-out automático, y después la comprobación Cobro Expedia Collect, desactivada, con lo que puede hacer (avisar de un importe aún no pedido y, con su corrección activada, pedirlo a Expedia una vez por estancia) y lo que no hace (volver a pedir una estancia rechazada, cobrar tarjetas virtuales)" caption="El momento de la salida puede pedir a Expedia cada estancia cuando el huésped se va, una vez por estancia." path="/automated-checks/moment/at_checkout"}
@@ -145,6 +148,9 @@ Lo que nunca hace: iniciar sesión en Partner Central, pedir dos veces una estan
 ### 4. Sigue el historial
 
 **Pagos de Expedia** (`/automated-checks/expedia-payments`) es el registro de todas las solicitudes hechas desde Hotelier Tools: por una persona, por la tarea programada, por la comprobación de salida, por un asistente o por la API. Filtra por estado, por **Quién lo pidió** y por fechas de salida, y abre una fila para ver cada reserva de envío y cada respuesta de Expedia. **Volver a pedir** reintenta las estancias que Expedia rechazó. Para una estancia sin respuesta, primero marcas **He mirado en Partner Central y estas estancias no están**, porque pedirla dos veces podría significar cobrarla dos veces.
+
+::screenshot{src="/images/blog/demo/es/expedia-collect-payments-history.webp" alt="Página Historial de pagos de Expedia: filtros Buscar, Quién lo pidió, Salida desde y Salida hasta, chips Pedido 12, Rechazado por Expedia 1, Comprobar en Partner Central 1 y Enviando 0, un botón Volver a pedir y las solicitudes: Lucas Alvarez rechazado por Expedia porque el importe no coincide con la reserva, Chiara Larsen pedido por Una persona con su ID de cola de Expedia, Sean Bianchi sin una respuesta legible, para comprobar en Partner Central, y estancias pedidas por la Comprobación al irse" caption="Cada solicitud hecha desde Hotelier Tools, quién la pidió y qué contestó Expedia. Las estancias rechazadas o sin respuesta se pueden volver a pedir." path="/automated-checks/expedia-payments"}
+::
 
 En una reserva de Expedia (`EXP-` seguido del código de confirmación), la sección **Pagos** de la reserva tiene un panel **Pago de Expedia** con **Consultar a Expedia**, y un enlace que abre la tarjeta de pagos con esa estancia marcada.
 
@@ -156,7 +162,7 @@ También puedes preguntar al asistente de IA del panel, o a Claude y ChatGPT a t
 - **Solo sigue el pago de las solicitudes hechas desde aquí.** Desde la versión 1.71 (noviembre de 2026), Hotelier Tools lee la página **Statements and invoices** de Partner Central (los últimos 12 meses) y muestra una solicitud como **Conciliada por Expedia** (aceptada, pago pendiente) o **Pagada por Expedia** (con la fecha y el importe), también en el panel de Expedia de la reserva. Una solicitud que aún no aparece en esa página sigue como **Pedida**.
 - **Nunca cobra tarjetas virtuales.** Esas estancias aparecen como **Tarjeta virtual**: cóbralas en tu TPV.
 - **Usa tu propia sesión de Partner Central.** Las condiciones para partners de Expedia restringen el acceso automatizado a Partner Central. Hotelier Tools inicia sesión como tu usuario, nunca por su cuenta, y no se comparte nada entre alojamientos.
-- **En la demo Expedia no está conectado**, así que la demo muestra las tarjetas pero ninguna estancia de Expedia.
+- **La demo usa un Partner Central simulado.** Sus estancias de Expedia muestran todos los estados, y una solicitud que envíes ahí solo se acepta en memoria: no llega nada a Expedia.
 
 ::demo-cta{path="/credentials/expedia-extranet"}
 ::

@@ -3,6 +3,7 @@ title: "Rechnung auf eine Firma statt auf den Gast ausstellen in Little Hotelier
 seoTitle: "Hotelrechnung auf Firma statt Gast in Little Hotelier"
 description: "Firmenname und Steuernummer auf eine Little-Hotelier-Rechnung setzen, was eine vollständige Rechnung braucht und wie Gäste ihre Daten selbst senden."
 date: 2026-10-27
+updated: 2026-11-05
 category: invoicing
 tags: [rechnungen, firmenrechnung, little hotelier, booking.com, gästedaten, check-out]
 keywords: [little hotelier rechnung firmenname, hotelrechnung auf firma ausstellen, hotelrechnung auf andere person, name auf hotelrechnung ändern, gast möchte rechnung auf firma, booking.com rechnung auf firma, hotelrechnung pflichtangaben firma, factura completa hotel empresa, hotelrechnung reisebüro]
@@ -151,6 +152,11 @@ Kennen Sie die Grenzen, bevor Sie es nutzen:
 - **Alle Aussteller teilen sich Ihre Rechnungsnummerierung** in Little Hotelier. In Spanien braucht normalerweise jeder Aussteller seine eigene Serie. Klären Sie das zuerst mit Ihrem Steuerberater.
 - **Für einige Sekunden trägt Little Hotelier den anderen Aussteller.** Ein optionaler Nachtlauf (empfohlen um 02:30 Uhr) stellt diese Rechnungen aus, wenn sonst niemand Rechnungen erstellt.
 - Eine bereits ausgestellte Rechnung behält ihren Aussteller. Eine Korrektur ist eine Gutschrift in Little Hotelier.
+
+In der Demo ist bereits ein zweiter Aussteller eingerichtet: **Sol Experiencias S.L.**, das erfundene Ausflugsunternehmen des Hotels, rechnet die Pauschalaufenthalte ab. Seine Karte zählt zwei auf seinen Namen abgerechnete Aufenthalte und zwei, die noch auf ihre Rechnung warten.
+
+::screenshot{src="/images/blog/demo/en/invoice-issuers-sol-experiencias.webp" alt="Invoices in another name, The configuration now: Invoice issuer per reservation On, Invoice title and logo Off, Night run Off, Little Hotelier mit den eigenen Daten der Unterkunft; der eigene Aussteller der Unterkunft Hotel Demo Sol neben dem Aussteller Paquetes con excursión (#INVOICE_ISSUER:EXS7#) für Sol Experiencias S.L. mit 2 wartenden und 2 abgerechneten Aufenthalten; der Nachtlauf noch nicht eingerichtet; und Reservations using another issuer, mit Tomas Demir und Hannah Marino, die auf die Rechnung warten, sowie Camila Okafor und Lucia Costa, abgerechnet" caption="Jeder Aussteller listet die mit ihm markierten Aufenthalte: schon auf seinen Namen abgerechnet oder noch ohne Rechnung." path="/invoices/issuers"}
+::
 
 ::demo-cta{path="/invoice-on-leave/links"}
 ::

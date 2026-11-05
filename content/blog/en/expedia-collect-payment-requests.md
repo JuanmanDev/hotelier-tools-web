@@ -9,8 +9,8 @@ tags: [expedia, expedia collect, payments, virtual card, partner central, automa
 keywords: [expedia collect payment request, how to get paid by expedia collect, request payment from expedia group, expedia virtual card when to charge, expedia collect not paid, expedia partner central payments, expedia collect vs hotel collect, expedia automatic payouts, expedia virtual card expired]
 feature: automated-checks
 demoPath: /credentials/expedia-extranet
-cover: /images/blog/demo/en/expedia-collect-checkout-check.webp
-coverAlt: "When they leave checks in Hotelier Tools with the Expedia Collect payment check, switched off: it checks in Partner Central whether the payment was requested as the guest leaves, links to the Expedia payments history, and says it never asks again for a stay Expedia refused and does not charge virtual cards"
+cover: /images/blog/demo/en/expedia-collect-payments-states.webp
+coverAlt: "Expedia Collect payments card in Hotelier Tools for check-outs from Oct 7 to Nov 5, 2026: chips All 7, To request 2 (€224.08), Refused by Expedia 1, Check in Partner Central 1, Requested 1, Reconciled by Expedia 1 and Cancelled 1, and seven demo stays with amount, state, who asked (Check at check-out or Demo Manager) and Expedia queue IDs, above the Request payment button"
 featured: true
 faq:
   - q: "How long do I have to request payment for an Expedia Collect booking?"
@@ -121,7 +121,7 @@ Each stay gets one state, with a chip that filters the list:
 
 Tick the stays, or use the select-all box, and press **Request payment for N stays**. After you confirm, Hotelier Tools sends one request for all of them, the same **Create Invoice** request as Partner Central. Each stay is claimed first, so it is never sent twice. **Details** shows what Expedia says about a stay and the request's history.
 
-::screenshot{src="/images/blog/demo/en/expedia-collect-payments-card.webp" alt="Expedia Partner Central page in Hotelier Tools: the Expedia Collect payments card with a Payments history link and the note Connect Expedia above to see them, the Request Expedia Collect payments automatically card marked Not configured yet with Every day at 09:30, Choose and Run now buttons, and a How it works list" caption="Expedia isn't connected in the demo, so the payments card is empty. Once connected it lists every stay and its state; the card below schedules the requests." path="/credentials/expedia-extranet"}
+::screenshot{src="/images/blog/demo/en/expedia-collect-payments-states.webp" alt="Expedia Collect payments card in Hotelier Tools for check-outs from Oct 7 to Nov 5, 2026: chips All 7, To request 2 (€224.08), Refused by Expedia 1, Check in Partner Central 1, Requested 1, Reconciled by Expedia 1 and Cancelled 1, and seven demo stays with amount, state, who asked (Check at check-out or Demo Manager) and Expedia queue IDs, above the Request payment button" caption="Every Expedia stay in the dates you pick, with where its money stands. Tick the ones to request and ask for them in one go." path="/credentials/expedia-extranet"}
 ::
 
 ### 3. Let it run on a schedule
@@ -137,6 +137,9 @@ On **Automatic Expedia payment requests** (`/credentials/expedia-extranet/automa
 
 What it never does: sign in to Partner Central, ask twice for a stay, ask for a stay paid by virtual card or not checked out yet, or ask again for a stay Expedia refused or didn't answer. Those are left for a person, and the run log names them.
 
+::screenshot{src="/images/blog/demo/en/expedia-collect-preview-run.webp" alt="Run details of requestExpediaCollectPayments, the Request Expedia Collect payments task, on Nov 5, 2026, marked Success, with the result summary: Preview, nothing sent: 1 stay would be requested from Expedia (54.08 EUR): EXP-2570209049. 2 stays Expedia refused or did not answer before are left for a person" caption="In preview, each run writes which stays it would request and sends nothing. The stays Expedia refused are left for a person." path="/credentials/expedia-extranet/automatic-requests"}
+::
+
 Already running the **When they leave** checks? Its **Expedia Collect payment** check warns about an amount not requested yet. With the fix **Request the payment from Expedia (asks Expedia for money)** switched on, it sends the request as the guest leaves. Both can be on: a stay is claimed only once.
 
 ::screenshot{src="/images/blog/demo/en/expedia-collect-checkout-check.webp" alt="When they leave checks page: the Address and origin validation and Automatic check-out checks, then the Expedia Collect payment check, switched off, with what it can do (warn about an amount not requested yet and, with its fix on, ask Expedia once per stay) and what it does not do (ask again for a refused stay, charge virtual cards)" caption="The check-out moment can ask Expedia for each stay as the guest leaves, once per stay." path="/automated-checks/moment/at_checkout"}
@@ -145,6 +148,9 @@ Already running the **When they leave** checks? Its **Expedia Collect payment** 
 ### 4. Follow up on the history
 
 **Expedia payments** (`/automated-checks/expedia-payments`) is the ledger of every request made from Hotelier Tools: by a person, the scheduled task, the check-out check, an assistant or the API. Filter by status, **Who asked** and check-out dates, and open a row to see each claim and each Expedia answer. **Ask again** retries the stays Expedia refused. For a stay with no answer, you first tick **I checked Partner Central and these stays are not there**, because asking twice could mean being paid twice.
+
+::screenshot{src="/images/blog/demo/en/expedia-collect-payments-history.webp" alt="Expedia payments history page: Search, Who asked and check-out date filters, chips Requested 12, Refused by Expedia 1, Check in Partner Central 1 and Sending 0, an Ask again button, and the requests: Lucas Alvarez refused by Expedia because the amount did not match the reservation, Chiara Larsen requested with a queue ID, Sean Bianchi with no readable answer to check in Partner Central, and stays requested by the check at check-out" caption="Every request made from Hotelier Tools, who asked and what Expedia answered. Refused and unanswered stays can be asked again." path="/automated-checks/expedia-payments"}
+::
 
 On an Expedia booking (`EXP-` followed by the confirmation code), the reservation's **Payments** section has an **Expedia payment** panel with **Check with Expedia**, and a link that opens the payments card with that stay ticked.
 
@@ -156,7 +162,7 @@ You can also ask the dashboard's AI assistant, or Claude and ChatGPT through the
 - **Paid or not is followed only for requests made here.** Since release 1.71 (November 2026), Hotelier Tools reads Partner Central's **Statements and invoices** page (the last 12 months) and shows a request as **Reconciled by Expedia** (accepted, payment pending) or **Paid by Expedia** (with the date and amount), also in the reservation's Expedia panel. A request not on that page yet stays **Requested**.
 - **It never charges virtual cards.** Those stays show as **Virtual card**: charge them on your terminal.
 - **It uses your own Partner Central session.** Expedia's partner terms restrict automated access to Partner Central. Hotelier Tools signs in as your user, never on its own, and nothing is shared between properties.
-- **Expedia isn't connected in the demo**, so the demo shows the cards but no Expedia stays.
+- **The demo uses a simulated Partner Central.** Its Expedia stays show every state, and a request you send there is accepted in memory only: nothing reaches Expedia.
 
 ::demo-cta{path="/credentials/expedia-extranet"}
 ::

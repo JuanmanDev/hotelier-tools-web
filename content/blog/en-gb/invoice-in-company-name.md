@@ -3,6 +3,7 @@ title: "How to invoice a company instead of the guest in Little Hotelier (and le
 seoTitle: "Invoice a company instead of the guest in Little Hotelier"
 description: "Put a company's name and tax ID on a Little Hotelier invoice, what a full invoice needs, and how guests can send their own invoice details."
 date: 2026-10-27
+updated: 2026-11-05
 category: invoicing
 tags: [invoices, company invoice, little hotelier, booking.com, guest details, checkout]
 keywords: [little hotelier invoice company name, how to invoice a company instead of the guest hotel, hotel invoice in company name, change name on hotel invoice, guest asks for invoice with company details, booking.com guest wants invoice for company, factura completa hotel empresa, hotel invoice travel agency]
@@ -151,6 +152,11 @@ Know the limits before you use it:
 - **Every issuer shares your invoice numbering** in Little Hotelier. In Spain each issuer normally needs its own series. Check with your accountant first.
 - **For a few seconds, Little Hotelier carries the other issuer.** An optional night run (recommended at 02:30) issues these invoices when nobody else is invoicing.
 - An invoice already issued keeps its issuer. A correction is a credit note in Little Hotelier.
+
+The demo has a second issuer already set up: **Sol Experiencias S.L.**, the hotel's invented tour company, invoices the package stays. Its card counts two stays invoiced in its name and two waiting for their invoice.
+
+::screenshot{src="/images/blog/demo/en/invoice-issuers-sol-experiencias.webp" alt="Invoices in another name, The configuration now: Invoice issuer per reservation On, Invoice title and logo Off, Night run Off, Little Hotelier showing the property's own details; the property's own issuer Hotel Demo Sol next to the issuer Paquetes con excursión (#INVOICE_ISSUER:EXS7#) for Sol Experiencias S.L. with 2 waiting and 2 invoiced; the night run not configured yet; and Reservations using another issuer, with Tomas Demir and Hannah Marino waiting for the invoice and Camila Okafor and Lucia Costa invoiced" caption="Each issuer lists the stays tagged with it: already invoiced in its name, or waiting for their invoice." path="/invoices/issuers"}
+::
 
 ::demo-cta{path="/invoice-on-leave/links"}
 ::

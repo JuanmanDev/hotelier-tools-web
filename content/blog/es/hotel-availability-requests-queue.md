@@ -3,6 +3,7 @@ title: "¿Un huésped pide fechas que aún no puedes vender? Lleva una cola de s
 seoTitle: "Solicitudes de disponibilidad en hotel: no pierdas ninguna"
 description: "Los huéspedes piden fechas llenas o aún sin precio y el email se pierde. Lleva un registro, o deja que una cola revise y avise cuando haya habitación."
 date: 2026-11-05
+updated: 2026-11-05
 category: operations
 tags: [disponibilidad, lista de espera, consultas, little hotelier, solicitudes de grupo, reserva directa]
 keywords: [huésped pide fechas no disponibles hotel, seguimiento solicitudes de disponibilidad hotel, registro de consultas de reserva hotel, avisar al huésped cuando haya habitación libre, tarifas sin cargar motor de reservas hotel, solicitud de grupo hotel completo, lista de espera hotel fechas futuras, little hotelier lista de espera]
@@ -101,6 +102,9 @@ Una coincidencia parcial que no cambia se comunica una vez, no en cada ejecució
 ### Email o WhatsApp, para el huésped y para ti
 
 Al huésped se le puede avisar por email, WhatsApp o ambos, y al alojamiento por sus propios canales. Los mensajes de WhatsApp salen desde tu número conectado ([WhatsApp con Little Hotelier](/blog/whatsapp-little-hotelier)); el teléfono debe llevar el prefijo del país, y Hotelier Tools nunca se lo inventa. Deja vacío **Email del alojamiento** para usar la dirección de notificaciones de tu cuenta. El email al huésped se escribe en el idioma que elijas en **Idioma del huésped** y, en un mensaje de **disponible**, lleva un enlace de reserva directa con las fechas y el número de habitaciones ya rellenos. **Historial** (`/availability-watch/history`) guarda el mensaje exacto que envió cada solicitud.
+
+::screenshot{src="/images/blog/demo/es/availability-queue-history.webp" alt="Página Historial de la lista de espera: contadores de 1 Cumplidas, 1 Caducadas, 1 Canceladas y 3 Con mensaje, y después Entradas cerradas: Pierre Dubois, cumplida, se liberó una habitación y se avisó (AVAILABLE Doble Superior ×3, told guest/email, hotel/email) con un botón Qué se envió; Lucas Moreau, caducada, porque la estancia empezó antes de que se liberara nada; Sean Murphy, cancelada por el alojamiento porque el huésped reservó otras fechas por teléfono" caption="Cada solicitud cerrada queda registrada, con el mensaje exacto que recibió el huésped." path="/availability-watch/history"}
+::
 
 ### Solicitudes que llegan a la bandeja
 

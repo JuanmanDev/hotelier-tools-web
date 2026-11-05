@@ -3,6 +3,7 @@ title: "Um hóspede pediu datas que ainda não pode vender? Mantenha uma fila de
 seoTitle: "Pedidos de disponibilidade no hotel: não perca nenhum"
 description: "Os hóspedes pedem datas cheias ou ainda sem preço e o e-mail perde-se. Mantenha um registo de pedidos ou deixe uma fila verificar e responder."
 date: 2026-11-05
+updated: 2026-11-05
 category: operations
 tags: [availability, waitlist, enquiries, little hotelier, group requests, direct booking]
 keywords: [pedido de disponibilidade hotel, hóspede pede datas sem disponibilidade, registo de pedidos de reserva hotel, avisar hóspede quando houver quarto livre, tarifas ainda não carregadas motor de reservas, pedido de grupo hotel esgotado, lista de espera hotel datas futuras, fila de espera reservas little hotelier]
@@ -101,6 +102,9 @@ Uma correspondência parcial que não muda é comunicada uma vez, não em cada e
 ### E-mail ou WhatsApp, para o hóspede e para você
 
 O hóspede pode ser avisado por e-mail, WhatsApp ou ambos, e a propriedade pelos seus próprios canais. As mensagens de WhatsApp saem do seu número conectado ([WhatsApp com o Little Hotelier](/blog/whatsapp-little-hotelier)); um número de telefone tem de incluir o indicativo do país, e o Hotelier Tools nunca o adivinha. Deixe **Property email** vazio para usar o endereço de notificações da sua conta. O e-mail do hóspede é escrito no idioma que escolher em **Guest's language** e, numa mensagem **available**, leva um link de reserva direta com as datas e o número de quartos já preenchidos. **History** (`/availability-watch/history`) guarda a mensagem exata que cada pedido enviou.
+
+::screenshot{src="/images/blog/demo/en/availability-queue-history.webp" alt="Página Waiting list history: contadores com 1 fulfilled, 1 expired, 1 cancelled e 3 with a message, e depois Closed entries: Pierre Dubois, fulfilled, um quarto ficou livre e foi anunciado (AVAILABLE Doble Superior ×3, aviso ao hóspede por e-mail e ao hotel por e-mail) com um botão What was sent; Lucas Moreau, expired, porque a estadia começou antes de algo ficar livre; Sean Murphy, cancelled pela receção porque o hóspede reservou outras datas por telefone" caption="Cada pedido fechado fica registado, com a mensagem exata que o hóspede recebeu." path="/availability-watch/history"}
+::
 
 ### Pedidos que chegam à caixa de entrada
 

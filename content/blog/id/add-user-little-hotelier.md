@@ -3,6 +3,7 @@ title: "Cara menambahkan pengguna di Little Hotelier (dan memberi tool login sen
 seoTitle: "Tambah pengguna di Little Hotelier, langkah demi langkah"
 description: "Tambahkan anggota tim atau pengguna integrasi di Little Hotelier, atur izin dan MFA, dan hubungkan tool dengan pengguna khusus, bukan kata sandi Anda."
 date: 2026-11-05
+updated: 2026-11-05
 category: tips
 tags: [little hotelier, pengguna, izin, mfa, passkey, keamanan]
 keywords: [cara menambahkan user di little hotelier, tambah user little hotelier, izin user little hotelier, kelola user little hotelier, cara setting mfa little hotelier, email aktivasi little hotelier kedaluwarsa, user integrasi little hotelier, akses staf little hotelier, passkey little hotelier]
@@ -126,7 +127,10 @@ Anda bisa memberi pengguna ini izin yang lebih sedikit, tetapi Hotelier Tools me
 ### MFA dan passkey pada pengguna Advanced
 
 - **Saat Little Hotelier mulai mewajibkan MFA**, Hotelier Tools mendaftarkan autentikator pada pengguna Advanced dengan sendirinya, menyimpan secret-nya terenkripsi, dan sejak itu menjawab kodenya. Ini tidak pernah dilakukan pada login Simple Anda, karena secret yang hanya dipegang aplikasi akan mengunci Anda dari akun Anda sendiri. Jika perlu dilakukan manual, panel akun punya **Set up two-step verification**.
-- **Passkey yang disimpan di server (beta).** **Passkeys and two-step verification** (`/credentials/passkeys`) bisa menambahkan passkey ke pengguna Advanced (**Add passkey**, lalu **Test passkey**). Login terjadwal mencobanya lebih dulu: passkey tetap bekerja meski kata sandi sudah kedaluwarsa dan melewati langkah kode. Pemilik bisa memakai **Download passkey** untuk menyimpan salinan. Menambahkan atau mengujinya berarti satu kali login ke Little Hotelier.
+- **Passkey yang disimpan di server (beta).** **Passkeys and two-step verification** (`/credentials/passkeys`) bisa menambahkan passkey ke pengguna Advanced (**Add passkey**, lalu **Test passkey**). Login terjadwal mencobanya lebih dulu: passkey tetap bekerja meski kata sandi sudah kedaluwarsa dan melewati langkah kode. Setelah passkey tersimpan, tombolnya bertuliskan **Replace passkey**. Pemilik bisa memakai **Download passkey** untuk menyimpan salinan. Menambahkan atau mengujinya berarti satu kali login ke Little Hotelier.
+
+::screenshot{src="/images/blog/demo/en/add-user-lh-passkeys.webp" alt="Halaman Passkeys and two-step verification (beta): kartu Little Hotelier passkey (advanced login), Stored dan On, untuk bot-demo-sol@example.com dengan tanggal pembuatannya, algoritma ES256, situs auth0.siteminder.com, ID kredensial dan passkey, login terakhir, serta tombol Replace passkey, Test passkey dan Download passkey; di bawahnya, Authenticator codes (TOTP) dengan Advanced login Stored dan Simple login None" caption="Pengguna Advanced menyimpan passkey dan secret autentikator, jadi login terjadwal tidak terhenti di kode." path="/credentials/passkeys"}
+::
 
 ### Untuk menghapusnya
 
@@ -141,6 +145,9 @@ Inilah posisi persisnya per 5 November 2026:
 - **Sudah dibangun:** alamatnya (**Get the login address**, setelah Anda memasukkan nomor properti Little Hotelier Anda), status login (**Waiting for the invitation**, **Active**, **Paused**, **Retired**), **Retire this login**, dan aturan keamanannya. Peringatan keamanan diteruskan ke pemilik dan tidak pernah diklik.
 - **Belum dibangun:** membaca dan menerima undangan Little Hotelier. Belum ada undangan asli yang pernah ditangkap, jadi **setiap pesan ke alamat login ditahan untuk manusia**, dan tidak ada isinya yang dibuka. Kartunya sendiri menyebutkan hal ini.
 - **Yang dilakukan manusia saat ini:** pakai langkah tautan aktivasi di atas.
+
+::screenshot{src="/images/blog/demo/en/add-user-lh-login-address.webp" alt="Halaman Advanced account dengan kartu Hotelier Tools as a user in Little Hotelier, Waiting for the invitation: peringatan bahwa membaca undangan Little Hotelier secara otomatis belum tersedia, alamat login lh-dwfenz3etz@in.hotel-demo.invalid (domain placeholder demo) dengan Copy, nomor properti Little Hotelier 90210, Read sign-in codes nonaktif, Retire this login, dan di bawah Mail to this login undangan You have been invited to Hotel Demo Sol on Little Hotelier, ditahan untuk ditinjau" caption="Undangan sampai ke alamat login dan menunggu manusia. Belum ada isinya yang diikuti." path="/credentials/hotelier-advanced"}
+::
 
 ## Rekan kerja Anda: akun tim Hotelier Tools
 

@@ -3,6 +3,7 @@ title: "Como faturar a uma empresa em vez de ao hóspede no Little Hotelier (e d
 seoTitle: "Faturar a uma empresa em vez do hóspede no Little Hotelier"
 description: "Ponha o nome e o número fiscal de uma empresa numa fatura do Little Hotelier, o que deve ter uma fatura completa e como os hóspedes enviam os seus dados."
 date: 2026-10-27
+updated: 2026-11-05
 category: invoicing
 tags: [faturas, fatura de empresa, little hotelier, booking.com, dados do hóspede, check-out]
 keywords: [fatura em nome da empresa hotel, little hotelier fatura empresa, fatura com nif da empresa alojamento, alterar nome na fatura do hotel, hóspede pede fatura com dados da empresa, booking fatura em nome da empresa, nota fiscal em nome da empresa hospedagem, fatura agência de viagens hotel]
@@ -151,6 +152,11 @@ Conheça os limites antes de o usar:
 - **Todos os emissores partilham a sua numeração de faturas** no Little Hotelier. Em Espanha, cada emissor precisa normalmente da sua própria série. Fale primeiro com o seu contabilista.
 - **Durante alguns segundos, o Little Hotelier tem os dados do outro emissor.** Uma execução noturna opcional (recomendada às 02:30) emite estas faturas quando mais ninguém está a faturar.
 - Uma fatura já emitida mantém o seu emissor. Uma correção é uma nota de crédito no Little Hotelier.
+
+A demo já tem um segundo emissor configurado: a **Sol Experiencias S.L.**, a empresa de excursões inventada do hotel, fatura as estadias com pacote. O seu cartão conta duas estadias faturadas em seu nome e duas à espera da fatura.
+
+::screenshot{src="/images/blog/demo/en/invoice-issuers-sol-experiencias.webp" alt="Invoices in another name, The configuration now: Invoice issuer per reservation On, Invoice title and logo Off, Night run Off, o Little Hotelier com os dados da própria propriedade; o emissor da própria propriedade, Hotel Demo Sol, ao lado do emissor Paquetes con excursión (#INVOICE_ISSUER:EXS7#) da Sol Experiencias S.L. com 2 à espera e 2 faturadas; a execução noturna ainda não configurada; e Reservations using another issuer, com Tomas Demir e Hannah Marino à espera da fatura e Camila Okafor e Lucia Costa faturadas" caption="Cada emissor lista as estadias marcadas com ele: já faturadas em seu nome ou à espera da fatura." path="/invoices/issuers"}
+::
 
 ::demo-cta{path="/invoice-on-leave/links"}
 ::

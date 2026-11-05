@@ -3,13 +3,14 @@ title: "Une adresse e-mail d'hôtel pour les factures fournisseurs et les accès
 seoTitle: "Adresse e-mail d'hôtel pour factures fournisseurs et accès"
 description: "Une adresse privée de réception seule pour les factures fournisseurs, et une par accès aux portails. Sans mot de passe IMAP, rien de partagé entre hôtels."
 date: 2026-11-01
+updated: 2026-11-05
 category: operations
 tags: [e-mail, factures fournisseurs, little hotelier, booking.com, expedia, sécurité]
 keywords: [adresse e-mail pour factures fournisseurs, adresse mail dédiée factures hôtel, boîte mail factures fournisseurs, adresse e-mail réception seule, transférer factures au comptable par mail, adresse e-mail utilisateur little hotelier, adresse e-mail utilisateur extranet booking.com, centraliser factures fournisseurs hôtel]
 feature: dashboard
 demoPath: /credentials
-cover: /images/blog/demo/en/supplier-invoices-mailbox-settings.webp
-coverAlt: "Réglages Received invoices : la carte Suggestions avec Suggest invoices that have not arrived activé et 24 mois d'historique, et la carte Mailboxes avec reservas@example.com connectée, Read for invoices activé, INBOX comme dossier à lire, un premier balayage sur 120 jours, et les listes Never read mail from et Always read mail from vides"
+cover: /images/blog/demo/en/hotel-email-invoice-address.webp
+coverAlt: "Carte Invoice address de Hotelier Tools avec l'adresse inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid est le domaine fictif de la démo), les boutons Copy et New address, et Recent mail : un e-mail de commande retenu pour vérification faute de fichier de facture joint, un changement de coordonnées bancaires retenu car il ressemble à une fraude, et la facture HE-2026/1102 de Horno Ejemplo importée ; en dessous, Upload an .eml file et la tâche Read the hotel mailbox en pause"
 faq:
   - q: "Qu'est-ce qu'une adresse e-mail de réception seule pour un hôtel ?"
     a: "Une adresse qui reçoit du courrier et n'en envoie jamais. Dans Hotelier Tools, chaque établissement peut avoir la sienne, par exemple inv-7k2m9qx4hp@in.hotelier.tools pour les factures fournisseurs. Ce qui y arrive va sur le compte de cet établissement, sans mot de passe IMAP ni connexion Microsoft."
@@ -74,6 +75,9 @@ Vous pouvez aussi transférer à l'adresse les factures que vous avez déjà. Ho
 
 Besoin d'une nouvelle adresse, par exemple après une vague de spam ? Appuyez sur **New address**. L'ancienne continue de recevoir pendant 30 jours, avec une note sur chaque message indiquant qu'il est arrivé à une adresse retirée, puis elle s'arrête.
 
+::screenshot{src="/images/blog/demo/en/hotel-email-invoice-address.webp" alt="Carte Invoice address de Hotelier Tools avec l'adresse inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid est le domaine fictif de la démo), les boutons Copy et New address, et Recent mail : un e-mail de commande retenu pour vérification faute de fichier de facture joint, un changement de coordonnées bancaires retenu car il ressemble à une fraude, et la facture HE-2026/1102 de Horno Ejemplo importée ; en dessous, Upload an .eml file et la tâche Read the hotel mailbox en pause" caption="Les fournisseurs écrivent à une seule adresse privée. Chaque message indique ce qu'il est devenu, et tout ce qui est suspect attend une personne." path="/settings/received-invoices"}
+::
+
 ## Que devient le courrier envoyé à l'adresse des factures ?
 
 Chaque message est traité comme non fiable :
@@ -110,6 +114,9 @@ Vous préférez votre propre adresse ? L'option **Where the portal writes to th
 ## Où trouver toutes mes adresses ?
 
 **Credentials** (`/credentials`) se termine par **Hotel mailbox addresses** : l'adresse de factures et les trois adresses d'accès, chacune avec son état (par exemple **Waiting for the invitation** ou **Active**) et un lien **Open** vers la page qui la gère. La liste est en lecture seule.
+
+::screenshot{src="/images/blog/demo/en/hotel-email-address-list.webp" alt="Hotel mailbox addresses en bas de la page Credentials : Supplier invoices inv-qqxyc2dsnf@in.hotel-demo.invalid marquée Active, l'accès Little Hotelier lh-dwfenz3etz@ et l'accès Booking.com bk-59k2nwybrt@ marqués Waiting for the invitation, et l'accès Expedia Not created yet, chacun avec un lien Open (in.hotel-demo.invalid est le domaine fictif de la démo)" caption="Toutes les adresses de l'établissement dans une seule liste, chacune avec son état et un lien vers la page qui la gère." path="/credentials"}
+::
 
 Deux règles de visibilité s'appliquent :
 

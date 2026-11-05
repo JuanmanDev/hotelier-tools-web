@@ -3,6 +3,7 @@ title: "Cómo facturar a una empresa en lugar de al huésped en Little Hotelier 
 seoTitle: "Facturar a una empresa y no al huésped en Little Hotelier"
 description: "Pon el nombre y el NIF de una empresa en una factura de Little Hotelier, qué debe llevar una factura completa y cómo pueden enviar sus datos los huéspedes."
 date: 2026-10-27
+updated: 2026-11-05
 category: invoicing
 tags: [facturas, factura a empresa, little hotelier, booking.com, datos del huésped, check-out]
 keywords: [factura a nombre de empresa hotel, little hotelier factura empresa, cómo facturar a una empresa en vez de al huésped, cambiar nombre en factura de hotel, huésped pide factura con datos de empresa, factura completa hotel empresa, booking huésped quiere factura a nombre de empresa, factura simplificada hotel 400 euros, factura hotel agencia de viajes]
@@ -151,6 +152,11 @@ Conoce los límites antes de usarlo:
 - **Todos los emisores comparten tu numeración de facturas** en Little Hotelier. En España, cada emisor necesita normalmente su propia serie. Consúltalo antes con tu gestor.
 - **Durante unos segundos, Little Hotelier lleva los datos del otro emisor.** Una ejecución nocturna opcional (recomendada a las 02:30) emite estas facturas cuando nadie más está facturando.
 - Una factura ya emitida conserva su emisor. Una corrección es una factura rectificativa en Little Hotelier.
+
+La demo ya tiene un segundo emisor configurado: **Sol Experiencias S.L.**, la empresa de excursiones inventada del hotel, factura las estancias con paquete. Su tarjeta cuenta dos estancias facturadas a su nombre y dos esperando la factura.
+
+::screenshot{src="/images/blog/demo/es/invoice-issuers-sol-experiencias.webp" alt="Facturas a otro nombre, La configuración ahora: Emisor de factura por reserva Activado, Título y logo de la factura Desactivado, Tanda nocturna Desactivado, Little Hotelier ahora mismo con Los datos del alojamiento; El emisor del establecimiento, Hotel Demo Sol, junto al emisor Paquetes con excursión (#INVOICE_ISSUER:EXS7#) de Sol Experiencias S.L. con 2 pendientes y 2 facturadas; Facturas a otro nombre, de noche, Sin configurar; y Reservas con otro emisor, con Tomas Demir y Hannah Marino Esperando la factura y Camila Okafor y Lucia Costa Facturadas" caption="Cada emisor lista las estancias que llevan su etiqueta: ya facturadas a su nombre o esperando su factura." path="/invoices/issuers"}
+::
 
 ::demo-cta{path="/invoice-on-leave/links"}
 ::

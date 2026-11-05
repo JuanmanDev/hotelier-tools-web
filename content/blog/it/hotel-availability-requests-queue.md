@@ -3,6 +3,7 @@ title: "Un ospite chiede date che non puoi ancora vendere? Tieni una coda delle 
 seoTitle: "Richieste di disponibilità in hotel: non perderne più una"
 description: "Gli ospiti chiedono date piene o ancora senza prezzi e l'email si perde. Tieni un registro delle richieste o lascia che una coda controlli e risponda."
 date: 2026-11-05
+updated: 2026-11-05
 category: operations
 tags: [disponibilità, lista d'attesa, richieste, little hotelier, gruppi, prenotazione diretta]
 keywords: [richiesta disponibilità hotel, ospite chiede date non ancora disponibili, avvisare ospite quando si libera una camera, registro richieste hotel, lista d'attesa hotel date future, richiesta gruppo hotel al completo, tariffe non ancora caricate booking engine, gestire richieste di disponibilità b&b, little hotelier disponibilità]
@@ -101,6 +102,9 @@ Una corrispondenza parziale che non cambia viene segnalata una volta, non a ogni
 ### Email o WhatsApp, per l'ospite e per te
 
 L'ospite può essere avvisato via email, WhatsApp o entrambi, e la struttura sui propri canali. I messaggi WhatsApp partono dal numero che hai collegato ([WhatsApp con Little Hotelier](/blog/whatsapp-little-hotelier)); un numero di telefono deve includere il prefisso internazionale, e Hotelier Tools non lo indovina mai. Lascia vuoto **Property email** per usare l'indirizzo di notifica del tuo account. L'email all'ospite è scritta nella lingua che scegli in **Guest's language** e, in un messaggio **available**, contiene un link di prenotazione diretta con le date e il numero di camere già compilati. **History** (`/availability-watch/history`) conserva il messaggio esatto inviato da ogni richiesta.
+
+::screenshot{src="/images/blog/demo/en/availability-queue-history.webp" alt="Pagina Waiting list history: i contatori 1 Fulfilled, 1 Expired, 1 Cancelled e 3 With a message, poi Closed entries: Pierre Dubois fulfilled, una camera si è liberata ed è stata annunciata (AVAILABLE Doble Superior ×3, told guest/email, hotel/email), con un pulsante What was sent; Lucas Moreau expired perché il soggiorno è iniziato prima che si liberasse qualcosa; Sean Murphy cancelled dalla reception perché l'ospite ha prenotato altre date per telefono" caption="Ogni richiesta chiusa resta registrata, con il messaggio esatto che l'ospite ha ricevuto." path="/availability-watch/history"}
+::
 
 ### Le richieste che arrivano nella inbox
 

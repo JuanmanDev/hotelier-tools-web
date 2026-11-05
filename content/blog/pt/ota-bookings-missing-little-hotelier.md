@@ -3,6 +3,7 @@ title: "Reserva do Booking.com ou da Expedia que não aparece no Little Hotelier
 seoTitle: "Reserva Booking.com ou Expedia em falta no Little Hotelier?"
 description: "Porque uma reserva de uma OTA não chega ao Little Hotelier, onde ver o estado de entrega, como proteger o quarto e como ser avisado quando falta uma."
 date: 2026-10-29
+updated: 2026-11-05
 category: operations
 tags: [booking.com, expedia, channel manager, overbooking, little hotelier, siteminder]
 keywords: [reserva booking não aparece no little hotelier, reserva expedia não chegou ao channel manager, little hotelier reserva em falta, siteminder reserva não entregue, reserva booking não aparece no pms, overbooking channel manager, reenviar reserva little hotelier, reserva booking não chegou ao channel manager, como evitar overbooking hotel]
@@ -85,6 +86,9 @@ Verificar à mão funciona quando já sabe que falta uma reserva. O difícil é 
 
 Cada execução lê as reservas feitas hoje e as chegadas dos próximos 14 dias, e as reservas do Little Hotelier. As reservas da Expedia são associadas pelo seu código de confirmação (`EXP-` mais o número), o mesmo código que o Little Hotelier guarda.
 
+::screenshot{src="/images/blog/demo/en/ota-missing-expedia-alert-run.webp" alt="Detalhes da execução de checkExpediaReservationsInLh a 1 de novembro de 2026 às 11:30, marcada como Success, com o resumo do resultado: Expedia → Little Hotelier: 1 of 6 bookings in scope are NOT in Little Hotelier: 2570106574. Alert emailed for 1 booking missing for over 30 minutes: 2570106574" caption="Cada execução diz quantas reservas comparou e qual falta. O aviso é enviado uma só vez." path="/cron-logs"}
+::
+
 ### Um aviso por reserva, não um a cada 15 minutos
 
 A entrega demora habitualmente alguns minutos, por isso uma leitura nunca chega. Cada reserva em falta entra num registo:
@@ -93,6 +97,11 @@ A entrega demora habitualmente alguns minutos, por isso uma leitura nunca chega.
 - **Avisa uma vez.** O e-mail é reservado antes de ser enviado, por isso duas execuções não o podem enviar as duas. Se o e-mail não chegou a ninguém, a reserva do envio é libertada e a execução seguinte tenta de novo.
 - **Avisa de novo quando se resolve.** Quando a reserva aparece no Little Hotelier, ou a OTA a cancela, ou a estadia termina, recebe um e-mail de "já não está em falta".
 - **Sem falsos "tudo bem".** Se uma lista não pôde ser lida por completo, a execução falha e di-lo. Nada conta como verificado.
+
+A demo mostra um episódio completo no histórico de execuções da verificação da Expedia: uma reserva vista em falta pela primeira vez, o aviso 30 minutos depois e, quando a reserva chegou ao Little Hotelier, a nota de "já não está em falta".
+
+::screenshot{src="/images/blog/demo/en/ota-missing-expedia-check-runs.webp" alt="Run History filtrado pela tarefa Check Expedia reservations are in Little Hotelier, com três execuções bem-sucedidas a 1 de novembro de 2026: às 10:59 a reserva 2570106574 é uma das 6 do período que não estão no Little Hotelier, às 11:29 a mesma reserva com Alert emailed, e às 12:44 as 6 reservas estão no Little Hotelier e 1 reserva de um aviso anterior já não está em falta" caption="Um episódio em três execuções: vista em falta, um só aviso ao fim de 30 minutos e depois dada como resolvida." path="/cron-logs"}
+::
 
 A verificação da Expedia também regista diferenças de estado e de datas (cancelada na Expedia mas ativa no Little Hotelier, por exemplo) e reservas sem quarto. Aparecem no resumo da execução em **Run History** (`/cron-logs`).
 

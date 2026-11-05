@@ -3,6 +3,7 @@ title: "Ajouter un utilisateur dans Little Hotelier (et donner à un outil son p
 seoTitle: "Ajouter un utilisateur dans Little Hotelier, étape par étape"
 description: "Ajoutez un collègue ou un utilisateur d'intégration dans Little Hotelier, réglez droits et MFA, et connectez vos outils sans partager votre mot de passe."
 date: 2026-11-05
+updated: 2026-11-05
 category: tips
 tags: [little hotelier, utilisateurs, droits, mfa, passkeys, sécurité]
 keywords: [ajouter un utilisateur little hotelier, little hotelier créer un utilisateur, droits utilisateur little hotelier, gérer les utilisateurs little hotelier, little hotelier authentification à deux facteurs, little hotelier e-mail d'activation expiré, utilisateur d'intégration little hotelier, donner accès au personnel little hotelier, little hotelier clé d'accès passkey]
@@ -126,7 +127,10 @@ Vous pouvez donner moins de droits à cet utilisateur, mais Hotelier Tools prév
 ### MFA et passkeys sur l'utilisateur Advanced
 
 - **Quand Little Hotelier commence à exiger la MFA**, Hotelier Tools inscrit lui-même une application d'authentification sur l'utilisateur Advanced, stocke le secret chiffré et répond au code à partir de là. Il ne le fait jamais sur votre identifiant Simple, car un secret détenu uniquement par l'application vous bloquerait hors de votre propre compte. S'il faut le faire à la main, le panneau du compte propose **Set up two-step verification**.
-- **Une passkey détenue par le serveur (bêta).** **Passkeys and two-step verification** (`/credentials/passkeys`) peut ajouter une passkey à l'utilisateur Advanced (**Add passkey**, puis **Test passkey**). Les connexions programmées l'essaient en premier : elle fonctionne même quand le mot de passe a expiré et évite l'étape du code. Le propriétaire peut **Download passkey** pour en garder une copie. L'ajouter ou la tester représente une connexion à Little Hotelier.
+- **Une passkey détenue par le serveur (bêta).** **Passkeys and two-step verification** (`/credentials/passkeys`) peut ajouter une passkey à l'utilisateur Advanced (**Add passkey**, puis **Test passkey**). Les connexions programmées l'essaient en premier : elle fonctionne même quand le mot de passe a expiré et évite l'étape du code. Une fois une passkey enregistrée, le bouton devient **Replace passkey**. Le propriétaire peut **Download passkey** pour en garder une copie. L'ajouter ou la tester représente une connexion à Little Hotelier.
+
+::screenshot{src="/images/blog/demo/en/add-user-lh-passkeys.webp" alt="Page Passkeys and two-step verification (bêta) : la carte Little Hotelier passkey (advanced login), Stored et On, pour bot-demo-sol@example.com avec sa date de création, l'algorithme ES256, le site auth0.siteminder.com, les identifiants credential et passkey et la dernière connexion, et les boutons Replace passkey, Test passkey et Download passkey ; en dessous, Authenticator codes (TOTP) avec Advanced login Stored et Simple login None" caption="L'utilisateur Advanced détient une passkey et un secret d'authentification : les connexions programmées ne s'arrêtent pas à un code." path="/credentials/passkeys"}
+::
 
 ### Pour le supprimer
 
@@ -141,6 +145,9 @@ Voici exactement où en sont les choses au 5 novembre 2026 :
 - **Développé :** l'adresse (**Get the login address**, après avoir saisi votre numéro d'établissement Little Hotelier), les états de l'accès (**Waiting for the invitation**, **Active**, **Paused**, **Retired**), **Retire this login**, et les règles de sécurité. Les alertes de sécurité sont transférées au propriétaire et jamais cliquées.
 - **Pas encore développé :** la lecture et l'acceptation de l'invitation de Little Hotelier. Aucune vraie invitation n'a encore été capturée, donc **chaque message envoyé à l'adresse d'accès est retenu pour une personne**, et rien n'y est ouvert. La carte le dit elle-même.
 - **Ce qu'une personne fait aujourd'hui :** suivre les étapes du lien d'activation ci-dessus.
+
+::screenshot{src="/images/blog/demo/en/add-user-lh-login-address.webp" alt="Page Advanced account avec la carte Hotelier Tools as a user in Little Hotelier, Waiting for the invitation : un avertissement indiquant que la lecture automatique des invitations de Little Hotelier n'est pas encore disponible, l'adresse d'accès lh-dwfenz3etz@in.hotel-demo.invalid (le domaine fictif de la démo) avec Copy, le numéro d'établissement Little Hotelier 90210, Read sign-in codes désactivé, Retire this login et, sous Mail to this login, l'invitation You have been invited to Hotel Demo Sol on Little Hotelier, retenue pour vérification" caption="L'invitation arrive à l'adresse d'accès et attend une personne. Rien de ce qu'elle contient n'est encore suivi." path="/credentials/hotelier-advanced"}
+::
 
 ## Vos collègues : les comptes d'équipe Hotelier Tools
 

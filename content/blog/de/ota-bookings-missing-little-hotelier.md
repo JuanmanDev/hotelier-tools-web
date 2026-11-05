@@ -3,6 +3,7 @@ title: "Booking.com- oder Expedia-Reservierung fehlt in Little Hotelier: Ursache
 seoTitle: "Booking.com- oder Expedia-Buchung fehlt in Little Hotelier?"
 description: "Warum eine OTA-Buchung nie in Little Hotelier ankommt, wo Sie den Zustellstatus prüfen, wie Sie das Zimmer schützen und wie Sie eine Warnung erhalten."
 date: 2026-10-29
+updated: 2026-11-05
 category: operations
 tags: [booking.com, expedia, channel manager, überbuchung, little hotelier, siteminder]
 keywords: [booking.com buchung nicht in little hotelier, expedia buchung nicht im channel manager, little hotelier reservierung fehlt, siteminder reservierung nicht übertragen, booking.com reservierung nicht im pms, überbuchung channel manager, reservierung erneut an little hotelier senden, booking.com buchung fehlt im channel manager]
@@ -85,6 +86,9 @@ Von Hand prüfen funktioniert, sobald Sie wissen, dass eine Buchung fehlt. Das S
 
 Jeder Lauf liest die heute gemachten Buchungen und die Anreisen der nächsten 14 Tage sowie die Reservierungen in Little Hotelier. Expedia-Buchungen werden über ihren Bestätigungscode zugeordnet (`EXP-` plus die Nummer), denselben Code, den Little Hotelier speichert.
 
+::screenshot{src="/images/blog/demo/en/ota-missing-expedia-alert-run.webp" alt="Details des Laufs von checkExpediaReservationsInLh am 1. November 2026 um 11:30, Status Success, mit der Ergebniszusammenfassung: Expedia → Little Hotelier: 1 of 6 bookings in scope are NOT in Little Hotelier: 2570106574. Alert emailed for 1 booking missing for over 30 minutes: 2570106574" caption="Jeder Lauf sagt, wie viele Buchungen er verglichen hat und welche fehlt. Die Warnung geht einmal hinaus." path="/cron-logs"}
+::
+
 ### Eine Warnung pro Buchung, nicht eine alle 15 Minuten
 
 Die Zustellung dauert regelmäßig ein paar Minuten, eine einzelne Abfrage reicht also nie. Jede fehlende Buchung kommt in ein Register:
@@ -93,6 +97,11 @@ Die Zustellung dauert regelmäßig ein paar Minuten, eine einzelne Abfrage reich
 - **Einmal gemeldet.** Die E-Mail wird vor dem Versand vorgemerkt, sodass nicht zwei Läufe sie beide senden können. Hat die E-Mail niemanden erreicht, wird die Vormerkung aufgehoben, und der nächste Lauf versucht es erneut.
 - **Noch einmal gemeldet, wenn es behoben ist.** Taucht die Buchung in Little Hotelier auf, storniert die OTA sie oder ist der Aufenthalt vorbei, bekommen Sie eine E-Mail „fehlt nicht mehr“.
 - **Keine falsche Entwarnung.** Konnte eine Liste nicht vollständig gelesen werden, schlägt der Lauf fehl und sagt das. Nichts gilt als geprüft.
+
+Die Demo zeigt eine ganze Episode im Laufverlauf der Expedia-Prüfung: eine Buchung, die zum ersten Mal als fehlend erkannt wird, die Warnung 30 Minuten später und, sobald die Buchung in Little Hotelier angekommen ist, den Hinweis „fehlt nicht mehr“.
+
+::screenshot{src="/images/blog/demo/en/ota-missing-expedia-check-runs.webp" alt="Laufverlauf gefiltert auf den Job Check Expedia reservations are in Little Hotelier, mit drei erfolgreichen Läufen am 1. November 2026: um 10:59 ist die Buchung 2570106574 eine von 6 im Zeitraum, die nicht in Little Hotelier ist, um 11:29 dieselbe Buchung mit Alert emailed, und um 12:44 sind alle 6 Buchungen in Little Hotelier und 1 Buchung aus einer früheren Warnung fehlt nicht mehr" caption="Eine Episode in drei Läufen: als fehlend erkannt, einmal nach 30 Minuten gemeldet, dann als behoben gemeldet." path="/cron-logs"}
+::
 
 Die Expedia-Prüfung notiert außerdem Abweichungen bei Status und Daten (zum Beispiel bei Expedia storniert, in Little Hotelier aber aktiv) und Buchungen ohne Zimmer. Diese stehen in der Zusammenfassung des Laufs unter **Run History** (Laufverlauf, `/cron-logs`).
 

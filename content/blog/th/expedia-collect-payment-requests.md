@@ -9,8 +9,8 @@ tags: [expedia, expedia collect, การชำระเงิน, บัตร
 keywords: [expedia collect payment request, expedia collect รับเงินยังไง, ขอเงินจาก expedia, บัตรเสมือน expedia รูดเมื่อไหร่, expedia collect ไม่ได้รับเงิน, expedia partner central payments, expedia collect กับ hotel collect ต่างกันยังไง, expedia virtual card หมดอายุ, expedia automatic payouts]
 feature: automated-checks
 demoPath: /credentials/expedia-extranet
-cover: /images/blog/demo/en/expedia-collect-checkout-check.webp
-coverAlt: "การตรวจตอนแขกออกใน Hotelier Tools พร้อมการตรวจ Expedia Collect payment ที่ปิดอยู่ ซึ่งตรวจใน Partner Central ว่าขอเงินแล้วหรือยังตอนแขกออก มีลิงก์ไปประวัติการชำระเงินของ Expedia และระบุว่าจะไม่ขอซ้ำสำหรับการเข้าพักที่ Expedia ปฏิเสธ และไม่รูดบัตรเสมือน"
+cover: /images/blog/demo/en/expedia-collect-payments-states.webp
+coverAlt: "การ์ด Expedia Collect payments ใน Hotelier Tools สำหรับการเช็คเอาท์ 7 ต.ค. ถึง 5 พ.ย. 2026: ชิป All 7, To request 2 (€224.08), Refused by Expedia 1, Check in Partner Central 1, Requested 1, Reconciled by Expedia 1 และ Cancelled 1 และการเข้าพักตัวอย่างเจ็ดรายการพร้อมยอดเงิน สถานะ ผู้ขอ (Check at check-out หรือ Demo Manager) และ queue ID ของ Expedia เหนือปุ่ม Request payment"
 featured: true
 faq:
   - q: "ฉันมีเวลานานแค่ไหนในการขอเงินสำหรับการจอง Expedia Collect"
@@ -121,7 +121,7 @@ Hotelier Tools เชื่อมต่อกับบัญชี Partner Centr
 
 ติ๊กเลือกการเข้าพัก หรือใช้ช่องเลือกทั้งหมด แล้วกด **Request payment for N stays** หลังคุณยืนยัน Hotelier Tools จะส่งคำขอเดียวสำหรับทุกรายการ ซึ่งเป็นคำขอ **Create Invoice** แบบเดียวกับใน Partner Central แต่ละการเข้าพักจะถูกจองสิทธิ์ (claim) ก่อน จึงไม่มีทางส่งซ้ำ **Details** แสดงสิ่งที่ Expedia บอกเกี่ยวกับการเข้าพักนั้นและประวัติของคำขอ
 
-::screenshot{src="/images/blog/demo/en/expedia-collect-payments-card.webp" alt="หน้า Expedia Partner Central ใน Hotelier Tools: การ์ด Expedia Collect payments พร้อมลิงก์ Payments history และข้อความ Connect Expedia above to see them การ์ด Request Expedia Collect payments automatically ที่ระบุว่า Not configured yet พร้อมปุ่ม Every day at 09:30, Choose และ Run now และรายการ How it works" caption="ในเดโมไม่ได้เชื่อมต่อ Expedia การ์ดการชำระเงินจึงว่าง เมื่อเชื่อมต่อแล้วจะแสดงทุกการเข้าพักและสถานะ การ์ดด้านล่างใช้ตั้งเวลาส่งคำขอ" path="/credentials/expedia-extranet"}
+::screenshot{src="/images/blog/demo/en/expedia-collect-payments-states.webp" alt="การ์ด Expedia Collect payments ใน Hotelier Tools สำหรับการเช็คเอาท์ 7 ต.ค. ถึง 5 พ.ย. 2026: ชิป All 7, To request 2 (€224.08), Refused by Expedia 1, Check in Partner Central 1, Requested 1, Reconciled by Expedia 1 และ Cancelled 1 และการเข้าพักตัวอย่างเจ็ดรายการพร้อมยอดเงิน สถานะ ผู้ขอ (Check at check-out หรือ Demo Manager) และ queue ID ของ Expedia เหนือปุ่ม Request payment" caption="ทุกการเข้าพักจาก Expedia ในช่วงวันที่คุณเลือก พร้อมสถานะเงินของแต่ละรายการ ติ๊กรายการที่จะขอแล้วส่งคำขอในครั้งเดียว" path="/credentials/expedia-extranet"}
 ::
 
 ### 3. ให้ทำงานตามเวลาที่ตั้งไว้
@@ -137,6 +137,9 @@ Hotelier Tools เชื่อมต่อกับบัญชี Partner Centr
 
 สิ่งที่ไม่ทำเด็ดขาด: เข้าสู่ระบบ Partner Central เอง ขอซ้ำสำหรับการเข้าพักเดียวกัน ขอเงินการเข้าพักที่จ่ายด้วยบัตรเสมือนหรือยังไม่เช็คเอาท์ หรือขอใหม่สำหรับการเข้าพักที่ Expedia ปฏิเสธหรือไม่ตอบ รายการเหล่านี้เหลือไว้ให้คน และบันทึกของรอบนั้นจะระบุชื่อไว้
 
+::screenshot{src="/images/blog/demo/en/expedia-collect-preview-run.webp" alt="รายละเอียดรอบการทำงานของงาน Request Expedia Collect payments วันที่ 5 พ.ย. 2026 สถานะ Success พร้อมสรุปผล: Preview, nothing sent: 1 stay would be requested from Expedia (54.08 EUR): EXP-2570209049. 2 stays Expedia refused or did not answer before are left for a person" caption="ในโหมดพรีวิว แต่ละรอบจะเขียนว่าจะขอเงินการเข้าพักใดบ้างโดยไม่ส่งอะไร การเข้าพักที่ Expedia ปฏิเสธจะเหลือไว้ให้คน" path="/credentials/expedia-extranet/automatic-requests"}
+::
+
 ใช้การตรวจ **When they leave** (ตอนแขกออก) อยู่แล้ว? การตรวจ **Expedia Collect payment** ในนั้นจะเตือนเมื่อมียอดที่ยังไม่ได้ขอ หากเปิดการแก้ไข **Request the payment from Expedia (asks Expedia for money)** ไว้ ระบบจะส่งคำขอตอนแขกออก เปิดทั้งสองอย่างพร้อมกันได้: แต่ละการเข้าพักถูก claim เพียงครั้งเดียว
 
 ::screenshot{src="/images/blog/demo/en/expedia-collect-checkout-check.webp" alt="หน้าการตรวจ When they leave: การตรวจ Address and origin validation และ Automatic check-out ตามด้วยการตรวจ Expedia Collect payment ที่ปิดอยู่ พร้อมสิ่งที่ทำได้ (เตือนยอดที่ยังไม่ได้ขอ และเมื่อเปิดการแก้ไข จะขอ Expedia ครั้งเดียวต่อการเข้าพัก) และสิ่งที่ไม่ทำ (ขอใหม่สำหรับการเข้าพักที่ถูกปฏิเสธ รูดบัตรเสมือน)" caption="ช่วงเช็คเอาท์สามารถขอเงินจาก Expedia ให้แต่ละการเข้าพักตอนแขกออก ครั้งเดียวต่อการเข้าพัก" path="/automated-checks/moment/at_checkout"}
@@ -145,6 +148,9 @@ Hotelier Tools เชื่อมต่อกับบัญชี Partner Centr
 ### 4. ติดตามประวัติ
 
 **Expedia payments** (`/automated-checks/expedia-payments`) คือสมุดบันทึกของทุกคำขอที่ส่งจาก Hotelier Tools: โดยคน งานตั้งเวลา การตรวจตอนเช็คเอาท์ ผู้ช่วย AI หรือ API กรองตามสถานะ **Who asked** และวันเช็คเอาท์ แล้วเปิดแถวเพื่อดูแต่ละการ claim และแต่ละคำตอบของ Expedia **Ask again** ส่งใหม่สำหรับการเข้าพักที่ Expedia ปฏิเสธ สำหรับการเข้าพักที่ไม่มีคำตอบ คุณต้องติ๊ก **I checked Partner Central and these stays are not there** ก่อน เพราะการขอสองครั้งอาจหมายถึงได้เงินซ้ำสองครั้ง
+
+::screenshot{src="/images/blog/demo/en/expedia-collect-payments-history.webp" alt="หน้าประวัติ Expedia payments: ตัวกรอง Search, Who asked และวันเช็คเอาท์ ชิป Requested 12, Refused by Expedia 1, Check in Partner Central 1 และ Sending 0 ปุ่ม Ask again และรายการคำขอ: Lucas Alvarez ถูก Expedia ปฏิเสธเพราะยอดไม่ตรงกับการจอง Chiara Larsen ขอแล้วพร้อม queue ID Sean Bianchi ไม่มีคำตอบที่อ่านได้ ต้องตรวจใน Partner Central และการเข้าพักที่ขอโดยการตรวจตอนเช็คเอาท์" caption="ทุกคำขอที่ส่งจาก Hotelier Tools ใครเป็นผู้ขอ และ Expedia ตอบว่าอะไร การเข้าพักที่ถูกปฏิเสธหรือไม่มีคำตอบขอใหม่ได้" path="/automated-checks/expedia-payments"}
+::
 
 ในการจองของ Expedia (`EXP-` ตามด้วยรหัสยืนยัน) ส่วน **Payments** ของการจองจะมีแผง **Expedia payment** พร้อมปุ่ม **Check with Expedia** และลิงก์ที่เปิดการ์ดการชำระเงินโดยติ๊กการเข้าพักนั้นไว้ให้
 
@@ -156,7 +162,7 @@ Hotelier Tools เชื่อมต่อกับบัญชี Partner Centr
 - **ติดตามการจ่ายเงินเฉพาะคำขอที่ส่งจากที่นี่** ตั้งแต่รุ่น 1.71 (พฤศจิกายน 2026) Hotelier Tools อ่านหน้า **Statements and invoices** ใน Partner Central (12 เดือนล่าสุด) และแสดงคำขอเป็น **Reconciled by Expedia** (รับแล้ว รอจ่ายเงิน) หรือ **Paid by Expedia** (พร้อมวันที่และยอดเงิน) รวมถึงในแผง Expedia ของการจอง คำขอที่ยังไม่อยู่ในหน้านั้นจะยังเป็น **Requested**
 - **ไม่รูดบัตรเสมือนเด็ดขาด** การเข้าพักเหล่านั้นแสดงเป็น **Virtual card**: ให้รูดที่เครื่องรูดบัตรของคุณ
 - **ใช้เซสชัน Partner Central ของคุณเอง** ข้อกำหนดพาร์ตเนอร์ของ Expedia จำกัดการเข้าถึง Partner Central แบบอัตโนมัติ Hotelier Tools เข้าสู่ระบบในนามผู้ใช้ของคุณ ไม่เคยเข้าเอง และไม่มีอะไรแชร์ข้ามที่พัก
-- **ในเดโมไม่ได้เชื่อมต่อ Expedia** เดโมจึงแสดงการ์ดแต่ไม่มีการเข้าพักจาก Expedia
+- **เดโมใช้ Partner Central จำลอง** การเข้าพักจาก Expedia ในเดโมแสดงครบทุกสถานะ และคำขอที่คุณส่งในเดโมจะถูกรับไว้ในหน่วยความจำเท่านั้น: ไม่มีอะไรไปถึง Expedia
 
 ::demo-cta{path="/credentials/expedia-extranet"}
 ::

@@ -3,6 +3,7 @@ title: "Liens de paiement Little Hotelier : en envoyer un, encaisser des acompt
 seoTitle: "Lien de paiement Little Hotelier et relances de paiement"
 description: "Envoyez un lien de paiement Little Hotelier, gérez les acomptes et relancez les impayés automatiquement, sans réclamer ce que Booking.com a déjà encaissé."
 date: 2026-10-28
+updated: 2026-11-05
 category: invoicing
 tags: [paiements, lien de paiement, little hotelier, siteminder pay, acomptes, automatisation]
 keywords: [lien de paiement little hotelier, demande de paiement little hotelier, little hotelier pay demande de paiement, siteminder pay lien de paiement, e-mail de relance de paiement hôtel, relancer un client pour le solde avant l'arrivée, acompte little hotelier, réservation prépayée booking.com little hotelier, little hotelier ota paid]
@@ -96,6 +97,9 @@ Les **Payment reminders** (relances de paiement, `/automated-checks/payments`, q
 - **Prévenu quand c'est payé.** Chaque exécution suit les liens envoyés par ses relances. Quand l'un d'eux est payé, l'équipe reçoit un e-mail « payments received » (paiements reçus), si la règle prévient l'équipe.
 
 Pour tester une relance, **Send now…** l'envoie à une seule réservation, quel que soit son jour. Tout ce qui est envoyé est listé sous **Activity** : date, réservation, client ou équipe, statut, montant dû et état du lien (**Waiting for payment**, **Paid**, **Expired**, **Cancelled**).
+
+::screenshot{src="/images/blog/demo/en/payment-reminders-activity.webp" alt="Page Payment reminders avec deux règles activées : Prepago reservas directas — 7 días antes (7 jours avant l'arrivée, Reminder + link ; sur les 30 derniers jours, 3 envoyées et 1 en échec) et Saldo pendiente — 2 días antes (2 jours avant l'arrivée, SiteMinder Pay et Team ; 11 envoyées et 1 en échec), chacune avec sa tâche quotidienne de 10:00 en marche ; puis le tableau Activity avec les relances aux clients et les récapitulatifs pour l'équipe, envoyés avec des liens SiteMinder Pay Waiting for payment ou Expired, et une relance en échec car SiteMinder Pay n'a pas confirmé avoir envoyé l'e-mail au client" caption="Deux règles, chacune avec son horaire quotidien, et la trace de chaque relance avec l'état de son lien de paiement." path="/automated-checks/payments"}
+::
 
 ### Les séjours prépayés sont gérés pour vous
 

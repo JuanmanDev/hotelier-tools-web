@@ -3,6 +3,7 @@ title: "Tautan pembayaran Little Hotelier: cara mengirimnya, menagih deposit, da
 seoTitle: "Tautan pembayaran dan pengingat bayar di Little Hotelier"
 description: "Kirim permintaan pembayaran dari Little Hotelier, atur deposit, dan ingatkan otomatis tamu yang belum bayar, tanpa menagih yang sudah lunas di Booking.com."
 date: 2026-10-28
+updated: 2026-11-05
 category: invoicing
 tags: [pembayaran, tautan pembayaran, little hotelier, siteminder pay, deposit, otomatisasi]
 keywords: [little hotelier payment link, cara kirim tautan pembayaran little hotelier, little hotelier send payment request, little hotelier pay, siteminder pay payment link, email pengingat pembayaran hotel, mengingatkan tamu bayar sisa tagihan sebelum datang, deposit little hotelier, reservasi prepaid booking.com little hotelier]
@@ -96,6 +97,9 @@ Ambil contoh reservasi prepaid 2 malam yang diperpanjang di resepsionis dengan s
 - **Diberi tahu saat sudah dibayar.** Setiap eksekusi memantau tautan yang dikirim pengingatnya. Saat salah satunya dibayar, tim menerima email "payments received" (jika aturannya memberi tahu tim).
 
 Untuk menguji satu pengingat, **Send now…** mengirimnya ke satu reservasi, berapa pun harinya. Semua yang terkirim tercantum di **Activity**: waktu, reservasi, tamu atau tim, status, jumlah yang belum dibayar, dan status tautannya (**Waiting for payment**, **Paid**, **Expired**, **Cancelled**).
+
+::screenshot{src="/images/blog/demo/en/payment-reminders-activity.webp" alt="Halaman Payment reminders dengan dua aturan aktif: Prepago reservas directas — 7 días antes (7 hari sebelum check-in, Reminder + link; 30 hari terakhir 3 terkirim, 1 gagal) dan Saldo pendiente — 2 días antes (2 hari sebelum check-in, SiteMinder Pay dan Team; 11 terkirim, 1 gagal), masing-masing dengan tugas harian pukul 10.00 yang berjalan; lalu tabel Activity dengan pengingat ke tamu dan ringkasan untuk tim, terkirim dengan tautan SiteMinder Pay berstatus Waiting for payment atau Expired, dan satu yang gagal karena SiteMinder Pay tidak mengonfirmasi bahwa email sudah dikirim ke tamu" caption="Dua aturan dengan jadwal hariannya sendiri, dan catatan setiap pengingat beserta status tautan pembayarannya." path="/automated-checks/payments"}
+::
 
 ### Masa inap prepaid ditangani untuk Anda
 

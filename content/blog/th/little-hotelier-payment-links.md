@@ -3,6 +3,7 @@ title: "ลิงก์ชำระเงินใน Little Hotelier: วิธ
 seoTitle: "ลิงก์ชำระเงินและการเตือนชำระเงินใน Little Hotelier"
 description: "ส่งคำขอชำระเงินจาก Little Hotelier ตั้งเงินมัดจำ และเตือนแขกที่ยังไม่จ่ายอัตโนมัติ โดยไม่ทวงเงินที่แขกจ่ายบน Booking.com ไปแล้ว"
 date: 2026-10-28
+updated: 2026-11-05
 category: invoicing
 tags: [การชำระเงิน, ลิงก์ชำระเงิน, little hotelier, siteminder pay, เงินมัดจำ, ระบบอัตโนมัติ]
 keywords: [little hotelier payment link, ลิงก์ชำระเงิน little hotelier, ส่งคำขอชำระเงิน little hotelier, siteminder pay payment link, อีเมลเตือนชำระเงิน โรงแรม, เตือนแขกจ่ายยอดคงเหลือก่อนเข้าพัก, little hotelier เงินมัดจำ, ลิงก์รับชำระเงิน โรงแรม, booking.com prepaid ota paid little hotelier]
@@ -96,6 +97,9 @@ Little Hotelier มีตัวเลือกอัตโนมัติสอ�
 - **แจ้งเมื่อจ่ายแล้ว** แต่ละรอบติดตามลิงก์ที่การเตือนส่งไป เมื่อลิงก์ไหนได้รับการชำระ ทีมจะได้อีเมล "payments received" (ได้รับชำระแล้ว) (ถ้ากฎตั้งให้แจ้งทีม)
 
 ถ้าต้องการทดสอบการเตือนหนึ่งรายการ **Send now…** จะส่งถึงการจองหนึ่งรายการไม่ว่าจะเป็นวันไหน ทุกอย่างที่ส่งแสดงใน **Activity**: เวลา การจอง แขกหรือทีม สถานะ ยอดค้าง และสถานะของลิงก์ (**Waiting for payment**, **Paid**, **Expired**, **Cancelled**)
+
+::screenshot{src="/images/blog/demo/en/payment-reminders-activity.webp" alt="หน้า Payment reminders ที่เปิดกฎไว้สองข้อ: Prepago reservas directas — 7 días antes (7 วันก่อนเช็คอิน, Reminder + link; 30 วันล่าสุดส่งแล้ว 3 ล้มเหลว 1) และ Saldo pendiente — 2 días antes (2 วันก่อนเช็คอิน, SiteMinder Pay และ Team; ส่งแล้ว 11 ล้มเหลว 1) แต่ละกฎมีงานประจำวันเวลา 10:00 ทำงานอยู่ ตามด้วยตาราง Activity ที่มีการเตือนถึงแขกและสรุปถึงทีม ส่งพร้อมลิงก์ SiteMinder Pay สถานะ Waiting for payment หรือ Expired และหนึ่งรายการล้มเหลวเพราะ SiteMinder Pay ไม่ได้ยืนยันว่าส่งอีเมลถึงแขกแล้ว" caption="กฎสองข้อ แต่ละข้อมีเวลาทำงานประจำวันของตัวเอง และบันทึกของทุกการเตือนพร้อมสถานะของลิงก์ชำระเงิน" path="/automated-checks/payments"}
+::
 
 ### การเข้าพักที่จ่ายล่วงหน้า ระบบจัดการให้
 

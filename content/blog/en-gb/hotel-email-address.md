@@ -3,13 +3,14 @@ title: "A hotel email address for supplier invoices and portal logins: how recei
 seoTitle: "Hotel email address for supplier invoices and logins"
 description: "Give your hotel a private, receive-only address for supplier invoices and one per portal login. No IMAP password, nothing shared between hotels."
 date: 2026-11-01
+updated: 2026-11-05
 category: operations
 tags: [email, supplier invoices, little hotelier, booking.com, expedia, security]
 keywords: [hotel email address for invoices, dedicated email for supplier invoices, email address for accounts payable invoices, receive only email address, separate email for little hotelier user, email address for booking.com extranet user, forward invoices to accounting email, hotel invoice inbox]
 feature: dashboard
 demoPath: /credentials
-cover: /images/blog/demo/en/supplier-invoices-mailbox-settings.webp
-coverAlt: "Received invoices settings: the Suggestions card with Suggest invoices that have not arrived switched on and 24 months of history, and the Mailboxes card with reservas@example.com connected, Read for invoices switched on, INBOX as the folder to read, a first scan looking back 120 days, and empty Never read mail from and Always read mail from lists"
+cover: /images/blog/demo/en/hotel-email-invoice-address.webp
+coverAlt: "Invoice address card in Hotelier Tools with the address inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid is the demo's placeholder domain), Copy and New address buttons, and Recent mail: an order email held for review because no invoice file was attached, a bank-details change held because it looks like fraud, and invoice HE-2026/1102 from Horno Ejemplo imported; below, Upload an .eml file and the paused Read the hotel mailbox task"
 faq:
   - q: "What is a receive-only email address for a hotel?"
     a: "An address that only accepts mail and never sends any. In Hotelier Tools each property can get its own, such as inv-7k2m9qx4hp@in.hotelier.tools for supplier invoices. What arrives there lands in that property's account, without an IMAP password or a Microsoft sign-in."
@@ -74,6 +75,9 @@ You can also forward invoices you already have to the address. Hotelier Tools ro
 
 Need a fresh address, for example after a spam wave? Press **New address**. The old one keeps delivering for 30 days, with a note on each message that it came to a retired address, and then it stops.
 
+::screenshot{src="/images/blog/demo/en/hotel-email-invoice-address.webp" alt="Invoice address card in Hotelier Tools with the address inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid is the demo's placeholder domain), Copy and New address buttons, and Recent mail: an order email held for review because no invoice file was attached, a bank-details change held because it looks like fraud, and invoice HE-2026/1102 from Horno Ejemplo imported; below, Upload an .eml file and the paused Read the hotel mailbox task" caption="Suppliers write to one private address. Each message shows what happened to it, and anything suspicious waits for a person." path="/settings/received-invoices"}
+::
+
 ## What happens to mail sent to the invoice address?
 
 Every message is treated as untrusted:
@@ -110,6 +114,9 @@ Prefer your own address? The card's **Where the portal writes to this login** op
 ## Where do I find all my addresses?
 
 **Credentials** (`/credentials`) ends with **Hotel mailbox addresses**: the invoice address and the three login addresses, each with its state (for example **Waiting for the invitation** or **Active**) and an **Open** link to the page that manages it. The list is read-only.
+
+::screenshot{src="/images/blog/demo/en/hotel-email-address-list.webp" alt="Hotel mailbox addresses at the bottom of the Credentials page: Supplier invoices inv-qqxyc2dsnf@in.hotel-demo.invalid marked Active, the Little Hotelier login lh-dwfenz3etz@ and the Booking.com login bk-59k2nwybrt@ marked Waiting for the invitation, and the Expedia login Not created yet, each with an Open link (in.hotel-demo.invalid is the demo's placeholder domain)" caption="All of the property's addresses in one list, each with its state and a link to the page that manages it." path="/credentials"}
+::
 
 Two visibility rules apply:
 

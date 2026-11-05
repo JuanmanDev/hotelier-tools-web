@@ -3,6 +3,7 @@ title: "Como adicionar um utilizador no Little Hotelier (e dar a uma ferramenta 
 seoTitle: "Adicionar um utilizador no Little Hotelier, passo a passo"
 description: "Adicione um colaborador ou um utilizador de integração no Little Hotelier, defina permissões e MFA e conecte ferramentas sem partilhar a sua palavra-passe."
 date: 2026-11-05
+updated: 2026-11-05
 category: tips
 tags: [little hotelier, utilizadores, permissões, mfa, passkeys, segurança]
 keywords: [como adicionar utilizador little hotelier, little hotelier adicionar usuário, permissões de utilizador little hotelier, gerir utilizadores little hotelier, configurar mfa little hotelier, e-mail de ativação little hotelier expirado, utilizador de integração little hotelier, dar acesso a funcionários little hotelier, passkey little hotelier]
@@ -126,7 +127,10 @@ Pode dar menos permissões a este utilizador, mas o Hotelier Tools diz clarament
 ### MFA e passkeys no utilizador Advanced
 
 - **Quando o Little Hotelier começar a exigir MFA**, o Hotelier Tools regista sozinho um autenticador no utilizador Advanced, guarda o segredo encriptado e passa a responder ao código. Nunca faz isto no seu login Simple, porque um segredo que só a app tem deixá-lo-ia fora da sua própria conta. Se for preciso fazê-lo à mão, o painel da conta tem **Set up two-step verification**.
-- **Uma passkey guardada no servidor (beta).** **Passkeys and two-step verification** (`/credentials/passkeys`) pode adicionar uma passkey ao utilizador Advanced (**Add passkey** e depois **Test passkey**). Os inícios de sessão agendados tentam-na primeiro: funciona mesmo quando a palavra-passe expirou e salta o passo do código. O proprietário pode usar **Download passkey** para guardar uma cópia. Adicioná-la ou testá-la é um início de sessão no Little Hotelier.
+- **Uma passkey guardada no servidor (beta).** **Passkeys and two-step verification** (`/credentials/passkeys`) pode adicionar uma passkey ao utilizador Advanced (**Add passkey** e depois **Test passkey**). Os inícios de sessão agendados tentam-na primeiro: funciona mesmo quando a palavra-passe expirou e salta o passo do código. Depois de guardada uma, o botão passa a dizer **Replace passkey**. O proprietário pode usar **Download passkey** para guardar uma cópia. Adicioná-la ou testá-la é um início de sessão no Little Hotelier.
+
+::screenshot{src="/images/blog/demo/en/add-user-lh-passkeys.webp" alt="Página Passkeys and two-step verification (beta): o cartão Little Hotelier passkey (advanced login), Stored e On, para bot-demo-sol@example.com com a data de criação, o algoritmo ES256, o site auth0.siteminder.com, os IDs da credencial e da passkey e o último início de sessão, e os botões Replace passkey, Test passkey e Download passkey; por baixo, Authenticator codes (TOTP) com Advanced login Stored e Simple login None" caption="O utilizador Advanced tem uma passkey e um segredo de autenticação, por isso os inícios de sessão agendados não param num código." path="/credentials/passkeys"}
+::
 
 ### Para o remover
 
@@ -141,6 +145,9 @@ Eis o ponto exato em que está, a 5 de novembro de 2026:
 - **Feito:** o endereço (**Get the login address**, depois de introduzir o número da sua propriedade no Little Hotelier), os estados do login (**Waiting for the invitation**, **Active**, **Paused**, **Retired**), **Retire this login** e as regras de segurança. Os alertas de segurança são reencaminhados para o proprietário e nunca são clicados.
 - **Ainda por fazer:** ler e aceitar o convite do Little Hotelier. Ainda não foi capturado nenhum convite real, por isso **todas as mensagens para o endereço de login ficam retidas para uma pessoa**, e nada nelas é aberto. O próprio cartão diz isso.
 - **O que hoje faz uma pessoa:** usar os passos do link de ativação acima.
+
+::screenshot{src="/images/blog/demo/en/add-user-lh-login-address.webp" alt="Página da conta Advanced com o cartão Hotelier Tools as a user in Little Hotelier, em Waiting for the invitation: um aviso de que a leitura automática dos convites do Little Hotelier ainda não está disponível, o endereço de login lh-dwfenz3etz@in.hotel-demo.invalid (o domínio fictício da demo) com Copy, o número de propriedade no Little Hotelier 90210, Read sign-in codes desligado, Retire this login e, em Mail to this login, o convite You have been invited to Hotel Demo Sol on Little Hotelier, retido para revisão" caption="O convite chega ao endereço de login e espera por uma pessoa. Ainda não se segue nada do que contém." path="/credentials/hotelier-advanced"}
+::
 
 ## Os seus colegas: contas de equipa do Hotelier Tools
 

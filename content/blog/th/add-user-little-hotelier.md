@@ -3,6 +3,7 @@ title: "วิธีเพิ่มผู้ใช้ใน Little Hotelier (แ
 seoTitle: "วิธีเพิ่มผู้ใช้ใน Little Hotelier ทีละขั้นตอน"
 description: "เพิ่มพนักงานหรือผู้ใช้สำหรับระบบเชื่อมต่อใน Little Hotelier ตั้งสิทธิ์และ MFA และเชื่อมต่อเครื่องมือด้วยผู้ใช้เฉพาะแทนรหัสผ่านของคุณ"
 date: 2026-11-05
+updated: 2026-11-05
 category: tips
 tags: [little hotelier, ผู้ใช้, สิทธิ์การใช้งาน, mfa, passkey, ความปลอดภัย]
 keywords: [วิธีเพิ่มผู้ใช้ little hotelier, little hotelier add user, ตั้งสิทธิ์ผู้ใช้ little hotelier, little hotelier manage users, ตั้งค่า mfa little hotelier, อีเมลเปิดใช้งาน little hotelier หมดอายุ, ผู้ใช้สำหรับระบบเชื่อมต่อ little hotelier, ให้พนักงานเข้า little hotelier, little hotelier passkey]
@@ -126,7 +127,10 @@ Hotelier Tools มีการเชื่อมต่อสองแบบท�
 ### MFA และ passkey บนผู้ใช้ Advanced
 
 - **เมื่อ Little Hotelier เริ่มบังคับ MFA** Hotelier Tools จะลงทะเบียน authenticator ให้ผู้ใช้ Advanced เอง เก็บ secret แบบเข้ารหัส และตอบรหัสต่อจากนั้น ระบบไม่ทำแบบนี้กับล็อกอิน Simple ของคุณเด็ดขาด เพราะ secret ที่มีแค่แอปถือไว้จะทำให้คุณเข้าบัญชีตัวเองไม่ได้ หากต้องทำด้วยมือ แผงบัญชีมี **Set up two-step verification**
-- **passkey ที่เก็บบนเซิร์ฟเวอร์ (เบต้า)** **Passkeys and two-step verification** (`/credentials/passkeys`) เพิ่ม passkey ให้ผู้ใช้ Advanced ได้ (**Add passkey** แล้ว **Test passkey**) การเข้าสู่ระบบตามเวลาจะลองใช้ passkey ก่อน: ใช้ได้แม้รหัสผ่านหมดอายุแล้ว และข้ามขั้นตอนรหัสไป เจ้าของ **Download passkey** เก็บสำเนาไว้ได้ การเพิ่มหรือทดสอบคือการเข้าสู่ระบบ Little Hotelier หนึ่งครั้ง
+- **passkey ที่เก็บบนเซิร์ฟเวอร์ (เบต้า)** **Passkeys and two-step verification** (`/credentials/passkeys`) เพิ่ม passkey ให้ผู้ใช้ Advanced ได้ (**Add passkey** แล้ว **Test passkey**) การเข้าสู่ระบบตามเวลาจะลองใช้ passkey ก่อน: ใช้ได้แม้รหัสผ่านหมดอายุแล้ว และข้ามขั้นตอนรหัสไป เมื่อเก็บ passkey ไว้แล้ว ปุ่มจะเปลี่ยนเป็น **Replace passkey** (แทนที่ passkey) เจ้าของ **Download passkey** เก็บสำเนาไว้ได้ การเพิ่มหรือทดสอบคือการเข้าสู่ระบบ Little Hotelier หนึ่งครั้ง
+
+::screenshot{src="/images/blog/demo/en/add-user-lh-passkeys.webp" alt="หน้า Passkeys and two-step verification (เบต้า): การ์ด Little Hotelier passkey (advanced login) สถานะ Stored และ On ของ bot-demo-sol@example.com พร้อมวันที่สร้าง อัลกอริทึม ES256 ไซต์ auth0.siteminder.com รหัส credential และ passkey และการเข้าสู่ระบบครั้งล่าสุด และปุ่ม Replace passkey, Test passkey และ Download passkey ด้านล่างคือ Authenticator codes (TOTP) ที่ Advanced login เป็น Stored และ Simple login เป็น None" caption="ผู้ใช้ Advanced มีทั้ง passkey และ secret ของ authenticator การเข้าสู่ระบบตามเวลาจึงไม่ติดที่หน้าถามรหัส" path="/credentials/passkeys"}
+::
 
 ### หากต้องการลบออก
 
@@ -141,6 +145,9 @@ Hotelier Tools มีการเชื่อมต่อสองแบบท�
 - **ทำเสร็จแล้ว:** ที่อยู่ (**Get the login address** หลังคุณใส่หมายเลขที่พักใน Little Hotelier) สถานะของล็อกอิน (**Waiting for the invitation**, **Active**, **Paused**, **Retired**) **Retire this login** และกฎความปลอดภัย การแจ้งเตือนความปลอดภัยจะถูกส่งต่อให้เจ้าของและไม่ถูกคลิกเด็ดขาด
 - **ยังไม่เสร็จ:** การอ่านและตอบรับคำเชิญของ Little Hotelier ยังไม่เคยจับคำเชิญจริงได้ **ทุกข้อความที่ส่งถึงที่อยู่ล็อกอินจึงถูกพักไว้ให้คนจัดการ** และไม่มีอะไรในนั้นถูกเปิด การ์ดเองก็บอกไว้เช่นนี้
 - **สิ่งที่คนทำในวันนี้:** ใช้ขั้นตอนลิงก์เปิดใช้งานข้างบน
+
+::screenshot{src="/images/blog/demo/en/add-user-lh-login-address.webp" alt="หน้าบัญชี Advanced ที่มีการ์ด Hotelier Tools as a user in Little Hotelier สถานะ Waiting for the invitation: คำเตือนว่ายังอ่านคำเชิญของ Little Hotelier โดยอัตโนมัติไม่ได้ ที่อยู่ล็อกอิน lh-dwfenz3etz@in.hotel-demo.invalid (in.hotel-demo.invalid คือโดเมนสมมติของเดโม) พร้อมปุ่ม Copy หมายเลขที่พักใน Little Hotelier 90210 ตัวเลือก Read sign-in codes ที่ปิดอยู่ ปุ่ม Retire this login และใต้ Mail to this login มีคำเชิญ You have been invited to Hotel Demo Sol on Little Hotelier ที่ถูกพักไว้ให้ตรวจ" caption="คำเชิญมาถึงที่อยู่ล็อกอินและรอให้คนจัดการ ยังไม่มีอะไรในนั้นถูกเปิด" path="/credentials/hotelier-advanced"}
+::
 
 ## เพื่อนร่วมงานของคุณ: บัญชีทีมใน Hotelier Tools
 

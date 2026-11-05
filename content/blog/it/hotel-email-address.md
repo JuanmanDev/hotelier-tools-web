@@ -3,13 +3,14 @@ title: "Un indirizzo email dell'hotel per le fatture dei fornitori e i login dei
 seoTitle: "Indirizzo email hotel per fatture fornitori e login"
 description: "Dai al tuo hotel un indirizzo privato di sola ricezione per le fatture dei fornitori e uno per ogni login. Niente password IMAP, nulla condiviso tra hotel."
 date: 2026-11-01
+updated: 2026-11-05
 category: operations
 tags: [email, fatture fornitori, little hotelier, booking.com, expedia, sicurezza]
 keywords: [indirizzo email per fatture fornitori, email dedicata fatture passive, email per ricevere fatture hotel, indirizzo email solo ricezione, email separata utente little hotelier, email utente extranet booking.com, inoltrare fatture al commercialista email, casella fatture hotel]
 feature: dashboard
 demoPath: /credentials
-cover: /images/blog/demo/en/supplier-invoices-mailbox-settings.webp
-coverAlt: "Impostazioni Received invoices: la scheda Suggestions con Suggest invoices that have not arrived attivo e 24 mesi di storico, e la scheda Mailboxes con reservas@example.com collegata, Read for invoices attivo, INBOX come cartella da leggere, una prima scansione di 120 giorni indietro e gli elenchi Never read mail from e Always read mail from vuoti"
+cover: /images/blog/demo/en/hotel-email-invoice-address.webp
+coverAlt: "Scheda Invoice address in Hotelier Tools con l'indirizzo inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid è il dominio segnaposto della demo), i pulsanti Copy e New address, e Recent mail: un'email d'ordine trattenuta per revisione perché non c'era alcun file di fattura allegato, una modifica delle coordinate bancarie trattenuta perché sembra una frode e la fattura HE-2026/1102 di Horno Ejemplo importata; sotto, Upload an .eml file e l'attività Read the hotel mailbox in pausa"
 faq:
   - q: "Cos'è un indirizzo email di sola ricezione per un hotel?"
     a: "Un indirizzo che accetta solo posta e non ne invia mai. In Hotelier Tools ogni struttura può averne uno suo, come inv-7k2m9qx4hp@in.hotelier.tools per le fatture dei fornitori. Quello che arriva lì finisce nell'account di quella struttura, senza password IMAP né accesso Microsoft."
@@ -74,6 +75,9 @@ Puoi anche inoltrare all'indirizzo le fatture che hai già. Hotelier Tools smist
 
 Ti serve un indirizzo nuovo, per esempio dopo un'ondata di spam? Premi **New address**. Quello vecchio continua a consegnare per 30 giorni, con una nota su ogni messaggio che è arrivato a un indirizzo ritirato, poi smette.
 
+::screenshot{src="/images/blog/demo/en/hotel-email-invoice-address.webp" alt="Scheda Invoice address in Hotelier Tools con l'indirizzo inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid è il dominio segnaposto della demo), i pulsanti Copy e New address, e Recent mail: un'email d'ordine trattenuta per revisione perché non c'era alcun file di fattura allegato, una modifica delle coordinate bancarie trattenuta perché sembra una frode e la fattura HE-2026/1102 di Horno Ejemplo importata; sotto, Upload an .eml file e l'attività Read the hotel mailbox in pausa" caption="I fornitori scrivono a un unico indirizzo privato. Ogni messaggio mostra cosa ne è stato fatto, e tutto ciò che è sospetto aspetta una persona." path="/settings/received-invoices"}
+::
+
 ## Cosa succede alla posta inviata all'indirizzo per le fatture?
 
 Ogni messaggio viene trattato come non affidabile:
@@ -110,6 +114,9 @@ Preferisci il tuo indirizzo? L'opzione **Where the portal writes to this login**
 ## Dove trovo tutti i miei indirizzi?
 
 **Credentials** (`/credentials`) termina con **Hotel mailbox addresses**: l'indirizzo per le fatture e i tre indirizzi di login, ognuno con il suo stato (per esempio **Waiting for the invitation** o **Active**) e un link **Open** alla pagina che lo gestisce. L'elenco è in sola lettura.
+
+::screenshot{src="/images/blog/demo/en/hotel-email-address-list.webp" alt="Hotel mailbox addresses in fondo alla pagina Credentials: Supplier invoices inv-qqxyc2dsnf@in.hotel-demo.invalid segnato Active, il login Little Hotelier lh-dwfenz3etz@ e il login Booking.com bk-59k2nwybrt@ segnati Waiting for the invitation, e il login Expedia Not created yet, ognuno con un link Open (in.hotel-demo.invalid è il dominio segnaposto della demo)" caption="Tutti gli indirizzi della struttura in un unico elenco, ognuno con il suo stato e un link alla pagina che lo gestisce." path="/credentials"}
+::
 
 Valgono due regole di visibilità:
 

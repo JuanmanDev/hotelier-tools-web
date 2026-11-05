@@ -3,6 +3,7 @@ title: "Links de pagamento do Little Hotelier: como enviar um, cobrar sinais e l
 seoTitle: "Link de pagamento e lembretes no Little Hotelier"
 description: "Envie um pedido de pagamento a partir do Little Hotelier, defina sinais e lembre os hóspedes em dívida, sem cobrar de novo o que já pagaram no Booking.com."
 date: 2026-10-28
+updated: 2026-11-05
 category: invoicing
 tags: [pagamentos, link de pagamento, little hotelier, siteminder pay, sinais, automação]
 keywords: [link de pagamento little hotelier, pedido de pagamento little hotelier, little hotelier pay, siteminder pay link de pagamento, lembrete de pagamento hotel e-mail, lembrar hóspede de pagar antes da chegada, sinal reserva little hotelier, reserva pré-paga booking.com little hotelier, como enviar link de pagamento ao hóspede]
@@ -96,6 +97,9 @@ Os **Payment reminders** (lembretes de pagamento) do Hotelier Tools (`/automated
 - **Avisa quando é pago.** Cada execução acompanha os links enviados pelos seus lembretes. Quando um é pago, a equipa recebe um e-mail de "pagamentos recebidos" (se a regra avisar a equipa).
 
 Para testar um lembrete, **Send now…** envia-o a uma única reserva, seja qual for o dia. Tudo o que foi enviado fica listado em **Activity**: quando, reserva, hóspede ou equipa, estado, valor pendente e o estado do link (**Waiting for payment**, **Paid**, **Expired**, **Cancelled**).
+
+::screenshot{src="/images/blog/demo/en/payment-reminders-activity.webp" alt="Página Payment reminders com duas regras ligadas: Prepago reservas directas — 7 días antes (7 dias antes do check-in, Reminder + link; nos últimos 30 dias 3 enviados, 1 falhado) e Saldo pendiente — 2 días antes (2 dias antes do check-in, SiteMinder Pay e Team; 11 enviados, 1 falhado), cada uma com a sua tarefa diária das 10:00 a correr; depois a tabela Activity com lembretes a hóspedes e resumos para a equipa, enviados com links SiteMinder Pay em Waiting for payment ou Expired, e um falhado porque a SiteMinder Pay não confirmou que enviou o e-mail ao hóspede" caption="Duas regras, cada uma com o seu horário diário, e um registo de cada lembrete com o estado do seu link de pagamento." path="/automated-checks/payments"}
+::
 
 ### As estadias pré-pagas são tratadas automaticamente
 

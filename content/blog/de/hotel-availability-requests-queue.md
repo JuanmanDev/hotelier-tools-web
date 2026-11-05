@@ -3,6 +3,7 @@ title: "Gast fragt nach Terminen, die Sie noch nicht verkaufen können? Führen 
 seoTitle: "Verfügbarkeitsanfragen im Hotel: nie wieder eine verlieren"
 description: "Gäste fragen nach vollen oder noch nicht bepreisten Terminen, und die E-Mail geht unter. Führen Sie eine Liste oder lassen Sie eine Warteschlange prüfen."
 date: 2026-11-05
+updated: 2026-11-05
 category: operations
 tags: [verfügbarkeit, warteliste, anfragen, little hotelier, gruppenanfragen, direktbuchungen]
 keywords: [hotel verfügbarkeitsanfrage, hotel anfrage termine noch nicht buchbar, hotel anfragen verwalten, gast benachrichtigen wenn zimmer frei, hotel preise noch nicht eingepflegt, gruppenanfrage hotel ausgebucht, warteliste hotel zukünftige termine, anfrageliste hotel vorlage, verfügbarkeit little hotelier prüfen]
@@ -101,6 +102,9 @@ Ein Teiltreffer, der sich nicht ändert, wird einmal gemeldet, nicht bei jedem L
 ### E-Mail oder WhatsApp, für den Gast und für Sie
 
 Der Gast kann per E-Mail, WhatsApp oder beidem benachrichtigt werden, der Betrieb über seine eigenen Kanäle. WhatsApp-Nachrichten gehen von Ihrer verbundenen Nummer aus ([WhatsApp mit Little Hotelier](/blog/whatsapp-little-hotelier)). Eine Telefonnummer muss die Ländervorwahl enthalten, Hotelier Tools rät nie eine. Lassen Sie **Property email** leer, wird die Benachrichtigungsadresse Ihres Kontos verwendet. Die E-Mail an den Gast ist in der Sprache geschrieben, die Sie unter **Guest's language** wählen, und eine **available**-Nachricht enthält einen direkten Buchungslink, in dem Termine und Zimmerzahl schon ausgefüllt sind. **History** (`/availability-watch/history`) speichert für jede Anfrage die genaue Nachricht.
+
+::screenshot{src="/images/blog/demo/en/availability-queue-history.webp" alt="Verlaufsseite Waiting list history: Zähler mit 1 erfüllten, 1 abgelaufenen, 1 stornierten und 3 Einträgen mit Nachricht, dann Closed entries: Pierre Dubois erfüllt, ein Zimmer wurde frei und gemeldet (AVAILABLE Doble Superior ×3, Gast per E-Mail, Hotel per E-Mail informiert) mit einer Schaltfläche What was sent; Lucas Moreau abgelaufen, weil der Aufenthalt begann, bevor etwas frei wurde; Sean Murphy von der Rezeption storniert, weil der Gast telefonisch andere Termine gebucht hat" caption="Jede abgeschlossene Anfrage bleibt gespeichert, mit der genauen Nachricht, die der Gast bekommen hat." path="/availability-watch/history"}
+::
 
 ### Anfragen, die im Posteingang ankommen
 

@@ -3,6 +3,7 @@ title: "วิธีออกใบแจ้งหนี้ในนามบร
 seoTitle: "ออกใบแจ้งหนี้ในนามบริษัทแทนแขกใน Little Hotelier"
 description: "ใส่ชื่อบริษัทและเลขประจำตัวผู้เสียภาษีในใบแจ้งหนี้ของ Little Hotelier ใบแจ้งหนี้เต็มรูปต้องมีอะไร และวิธีให้แขกส่งข้อมูลออกใบแจ้งหนี้เอง"
 date: 2026-10-27
+updated: 2026-11-05
 category: invoicing
 tags: [ใบแจ้งหนี้, ใบแจ้งหนี้ในนามบริษัท, little hotelier, booking.com, ข้อมูลแขก, เช็คเอาท์]
 keywords: [little hotelier invoice ชื่อบริษัท, ออกใบแจ้งหนี้ในนามบริษัท โรงแรม, ใบกำกับภาษี โรงแรม ในนามบริษัท, เปลี่ยนชื่อในใบเสร็จ โรงแรม, แขกขอใบกำกับภาษีบริษัท, แขก booking.com ขอใบกำกับภาษี, little hotelier invoice company name, ใบแจ้งหนี้ โรงแรม บริษัทนำเที่ยว]
@@ -153,6 +154,11 @@ Hotelier Tools ทำงานบนบัญชี Little Hotelier ของค
 - **ผู้ออกทุกรายใช้เลขที่ใบแจ้งหนี้ชุดเดียวกับคุณ** ใน Little Hotelier ในสเปนผู้ออกแต่ละรายปกติต้องมีชุดเลขของตัวเอง ตรวจกับนักบัญชีก่อน
 - **ไม่กี่วินาทีที่ Little Hotelier ใช้ข้อมูลผู้ออกรายอื่น** งานรอบกลางคืนที่เลือกเปิดได้ (แนะนำเวลา 02:30) จะออกใบแจ้งหนี้เหล่านี้ตอนที่ไม่มีใครออกใบแจ้งหนี้อยู่
 - ใบแจ้งหนี้ที่ออกแล้วคงผู้ออกเดิมไว้ การแก้ไขทำด้วยใบลดหนี้ใน Little Hotelier
+
+ในเดโมมีผู้ออกรายที่สองตั้งค่าไว้แล้ว: **Sol Experiencias S.L.** บริษัททัวร์สมมติของโรงแรม ออกใบแจ้งหนี้ให้การเข้าพักแบบแพ็กเกจ การ์ดของผู้ออกรายนี้นับการเข้าพักที่ออกใบแจ้งหนี้ในชื่อของตนแล้วสองรายการ และที่รอใบแจ้งหนี้อีกสองรายการ
+
+::screenshot{src="/images/blog/demo/en/invoice-issuers-sol-experiencias.webp" alt="หน้า Invoices in another name ส่วน The configuration now: Invoice issuer per reservation เป็น On, Invoice title and logo เป็น Off, Night run เป็น Off และ Little Hotelier แสดงข้อมูลของที่พักเอง ผู้ออกของที่พักเอง Hotel Demo Sol อยู่ข้างผู้ออก Paquetes con excursión (#INVOICE_ISSUER:EXS7#) ของ Sol Experiencias S.L. ที่มี 2 waiting และ 2 invoiced งานรอบกลางคืนยังไม่ได้ตั้งค่า และ Reservations using another issuer ที่ Tomas Demir และ Hannah Marino รอใบแจ้งหนี้ ส่วน Camila Okafor และ Lucia Costa ออกใบแจ้งหนี้แล้ว" caption="ผู้ออกแต่ละรายแสดงการเข้าพักที่ติดแท็กของตน: ทั้งที่ออกใบแจ้งหนี้ในชื่อของตนแล้ว และที่ยังรอใบแจ้งหนี้" path="/invoices/issuers"}
+::
 
 ::demo-cta{path="/invoice-on-leave/links"}
 ::

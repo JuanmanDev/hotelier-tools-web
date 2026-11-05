@@ -3,13 +3,14 @@ title: "อีเมลโรงแรมสำหรับใบแจ้งห
 seoTitle: "อีเมลโรงแรมสำหรับใบแจ้งหนี้ซัพพลายเออร์และการล็อกอิน"
 description: "ให้โรงแรมมีอีเมลส่วนตัวแบบรับอย่างเดียวสำหรับใบแจ้งหนี้ซัพพลายเออร์ และพอร์ทัลละหนึ่งที่อยู่สำหรับล็อกอิน ไม่ต้องใช้รหัสผ่าน IMAP ไม่แชร์ข้ามโรงแรม"
 date: 2026-11-01
+updated: 2026-11-05
 category: operations
 tags: [อีเมล, ใบแจ้งหนี้ซัพพลายเออร์, little hotelier, booking.com, expedia, ความปลอดภัย]
 keywords: [อีเมลโรงแรมสำหรับรับใบแจ้งหนี้, อีเมลแยกสำหรับใบแจ้งหนี้ซัพพลายเออร์, อีเมลรับใบกำกับภาษี, receive only email address, อีเมลแยกสำหรับผู้ใช้ little hotelier, อีเมลผู้ใช้ booking.com extranet, ส่งต่อใบแจ้งหนี้ไปอีเมลบัญชี, hotel invoice inbox]
 feature: dashboard
 demoPath: /credentials
-cover: /images/blog/demo/en/supplier-invoices-mailbox-settings.webp
-coverAlt: "การตั้งค่า Received invoices: การ์ด Suggestions ที่เปิด Suggest invoices that have not arrived ไว้พร้อมประวัติ 24 เดือน และการ์ด Mailboxes ที่เชื่อมต่อ reservas@example.com เปิด Read for invoices ใช้ INBOX เป็นโฟลเดอร์ที่อ่าน สแกนครั้งแรกย้อนหลัง 120 วัน และรายการ Never read mail from และ Always read mail from ที่ว่างอยู่"
+cover: /images/blog/demo/en/hotel-email-invoice-address.webp
+coverAlt: "การ์ด Invoice address ใน Hotelier Tools พร้อมที่อยู่ inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid คือโดเมนสมมติของเดโม) ปุ่ม Copy และ New address และ Recent mail: อีเมลสั่งซื้อที่ถูกพักไว้ให้ตรวจเพราะไม่มีไฟล์ใบแจ้งหนี้แนบมา อีเมลขอเปลี่ยนข้อมูลบัญชีธนาคารที่ถูกพักไว้เพราะดูเหมือนการหลอกลวง และใบแจ้งหนี้ HE-2026/1102 จาก Horno Ejemplo ที่นำเข้าแล้ว ด้านล่างคือ Upload an .eml file และงาน Read the hotel mailbox ที่หยุดชั่วคราว"
 faq:
   - q: "อีเมลแบบรับอย่างเดียวของโรงแรมคืออะไร"
     a: "ที่อยู่ที่รับอีเมลได้อย่างเดียวและไม่เคยส่งออก ใน Hotelier Tools แต่ละที่พักมีที่อยู่ของตัวเองได้ เช่น inv-7k2m9qx4hp@in.hotelier.tools สำหรับใบแจ้งหนี้ซัพพลายเออร์ อีเมลที่ส่งมาจะเข้าบัญชีของที่พักนั้น โดยไม่ต้องใช้รหัสผ่าน IMAP หรือการเข้าสู่ระบบ Microsoft"
@@ -74,6 +75,9 @@ Hotelier Tools รองรับทั้งสองแบบ หากคุ�
 
 ต้องการที่อยู่ใหม่ เช่น หลังโดนสแปมจำนวนมาก? กด **New address** ที่อยู่เดิมยังรับอีเมลต่อไปอีก 30 วัน โดยแต่ละข้อความมีหมายเหตุว่าส่งมาที่ที่อยู่ที่เลิกใช้แล้ว จากนั้นจะหยุดรับ
 
+::screenshot{src="/images/blog/demo/en/hotel-email-invoice-address.webp" alt="การ์ด Invoice address ใน Hotelier Tools พร้อมที่อยู่ inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid คือโดเมนสมมติของเดโม) ปุ่ม Copy และ New address และ Recent mail: อีเมลสั่งซื้อที่ถูกพักไว้ให้ตรวจเพราะไม่มีไฟล์ใบแจ้งหนี้แนบมา อีเมลขอเปลี่ยนข้อมูลบัญชีธนาคารที่ถูกพักไว้เพราะดูเหมือนการหลอกลวง และใบแจ้งหนี้ HE-2026/1102 จาก Horno Ejemplo ที่นำเข้าแล้ว ด้านล่างคือ Upload an .eml file และงาน Read the hotel mailbox ที่หยุดชั่วคราว" caption="ซัพพลายเออร์ส่งอีเมลมาที่ที่อยู่ส่วนตัวที่เดียว แต่ละข้อความแสดงว่าเกิดอะไรขึ้นกับมัน และอะไรที่น่าสงสัยจะรอให้คนตรวจ" path="/settings/received-invoices"}
+::
+
 ## อีเมลที่ส่งมาที่อยู่ใบแจ้งหนี้จะเป็นอย่างไร
 
 ทุกข้อความถือว่าไม่น่าไว้วางใจไว้ก่อน:
@@ -110,6 +114,9 @@ Hotelier Tools รองรับทั้งสองแบบ หากคุ�
 ## หาที่อยู่ทั้งหมดของฉันได้ที่ไหน
 
 หน้า **Credentials** (ข้อมูลเข้าสู่ระบบ) (`/credentials`) ปิดท้ายด้วย **Hotel mailbox addresses**: ที่อยู่ใบแจ้งหนี้และที่อยู่ล็อกอินทั้งสาม แต่ละรายการมีสถานะ (เช่น **Waiting for the invitation** หรือ **Active**) และลิงก์ **Open** ไปยังหน้าที่จัดการที่อยู่นั้น รายการนี้อ่านได้อย่างเดียว
+
+::screenshot{src="/images/blog/demo/en/hotel-email-address-list.webp" alt="Hotel mailbox addresses ท้ายหน้า Credentials: Supplier invoices inv-qqxyc2dsnf@in.hotel-demo.invalid สถานะ Active ล็อกอิน Little Hotelier lh-dwfenz3etz@ และล็อกอิน Booking.com bk-59k2nwybrt@ สถานะ Waiting for the invitation และล็อกอิน Expedia สถานะ Not created yet แต่ละรายการมีลิงก์ Open (in.hotel-demo.invalid คือโดเมนสมมติของเดโม)" caption="ทุกที่อยู่ของที่พักในรายการเดียว แต่ละที่อยู่มีสถานะและลิงก์ไปยังหน้าที่จัดการ" path="/credentials"}
+::
 
 มีกฎการมองเห็นสองข้อ:
 

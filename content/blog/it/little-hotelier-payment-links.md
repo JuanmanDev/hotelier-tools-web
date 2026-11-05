@@ -3,6 +3,7 @@ title: "Link di pagamento in Little Hotelier: come inviarne uno, incassare capar
 seoTitle: "Link di pagamento e promemoria in Little Hotelier"
 description: "Invia richieste di pagamento da Little Hotelier, imposta caparre e sollecita in automatico chi deve pagare, senza chiedere quanto già pagato a Booking.com."
 date: 2026-10-28
+updated: 2026-11-05
 category: invoicing
 tags: [pagamenti, link di pagamento, little hotelier, siteminder pay, caparre, automazione]
 keywords: [link di pagamento little hotelier, little hotelier richiesta di pagamento, little hotelier pay payment request, siteminder pay link di pagamento, email promemoria pagamento hotel, sollecito pagamento saldo prima dell'arrivo, caparra little hotelier, prenotazione booking prepagata little hotelier saldo]
@@ -96,6 +97,9 @@ I **Payment reminders** (promemoria di pagamento) di Hotelier Tools (`/automated
 - **Avviso quando è pagato.** Ogni esecuzione segue i link inviati dai suoi promemoria. Quando uno viene pagato, il team riceve un'email "payments received" (pagamenti ricevuti), se la regola informa il team.
 
 Per provare un promemoria, **Send now…** lo invia a una singola prenotazione, qualunque sia il suo giorno. Tutto ciò che è stato inviato è elencato in **Activity**: quando, prenotazione, ospite o team, stato, importo da pagare e stato del link (**Waiting for payment**, **Paid**, **Expired**, **Cancelled**).
+
+::screenshot{src="/images/blog/demo/en/payment-reminders-activity.webp" alt="Pagina Payment reminders con due regole attive: Prepago reservas directas — 7 días antes (7 days before check-in, Reminder + link; negli ultimi 30 giorni 3 inviati, 1 fallito) e Saldo pendiente — 2 días antes (2 days before check-in, SiteMinder Pay e Team; 11 inviati, 1 fallito), ognuna con la sua attività giornaliera delle 10:00 in esecuzione; poi la tabella Activity con promemoria agli ospiti e riepiloghi al team, inviati con link SiteMinder Pay Waiting for payment o Expired, e uno fallito perché SiteMinder Pay non ha confermato di aver mandato l'email all'ospite" caption="Due regole, ognuna con la sua programmazione giornaliera, e un registro di ogni promemoria con lo stato del suo link di pagamento." path="/automated-checks/payments"}
+::
 
 ### I soggiorni prepagati sono gestiti per te
 

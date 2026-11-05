@@ -3,6 +3,7 @@ title: "Réservation Booking.com ou Expedia absente de Little Hotelier : causes
 seoTitle: "Réservation Booking.com/Expedia absente de Little Hotelier ?"
 description: "Pourquoi une réservation OTA n'arrive pas dans Little Hotelier, où voir son statut de livraison, comment protéger la chambre et être alerté à temps."
 date: 2026-10-29
+updated: 2026-11-05
 category: operations
 tags: [booking.com, expedia, channel manager, surréservation, little hotelier, siteminder]
 keywords: [réservation booking.com absente little hotelier, réservation expedia pas dans le channel manager, réservation manquante little hotelier, réservation non reçue channel manager, siteminder échec livraison réservation, surréservation channel manager, renvoyer une réservation little hotelier, réservation booking.com non synchronisée, overbooking booking.com que faire]
@@ -85,6 +86,9 @@ La vérification à la main fonctionne une fois que vous savez qu'une réservati
 
 Chaque exécution lit les réservations faites aujourd'hui et les arrivées des 14 prochains jours, ainsi que les réservations de Little Hotelier. Les réservations Expedia sont rapprochées par leur code de confirmation (`EXP-` suivi du numéro), le même code que celui enregistré par Little Hotelier.
 
+::screenshot{src="/images/blog/demo/en/ota-missing-expedia-alert-run.webp" alt="Détails de l'exécution de checkExpediaReservationsInLh le 1er nov. 2026 à 11:30, marquée Success, avec le résumé du résultat : Expedia → Little Hotelier: 1 of 6 bookings in scope are NOT in Little Hotelier: 2570106574. Alert emailed for 1 booking missing for over 30 minutes: 2570106574" caption="Chaque exécution indique combien de réservations elle a comparées et laquelle manque. L'alerte ne part qu'une fois." path="/cron-logs"}
+::
+
 ### Une alerte par réservation, pas une toutes les 15 minutes
 
 La livraison prend souvent quelques minutes : une seule lecture ne suffit donc jamais. Chaque réservation manquante entre dans un registre :
@@ -93,6 +97,11 @@ La livraison prend souvent quelques minutes : une seule lecture ne suffit donc 
 - **Un seul avertissement.** L'envoi de l'e-mail est verrouillé avant son départ : deux exécutions ne peuvent donc pas l'envoyer toutes les deux. Si l'e-mail n'a atteint personne, le verrou est levé et l'exécution suivante réessaie.
 - **Un nouvel avertissement quand c'est réglé.** Quand la réservation apparaît dans Little Hotelier, que l'OTA l'annule ou que le séjour est terminé, vous recevez un seul e-mail « no longer missing » (n'est plus manquante).
 - **Pas de faux feu vert.** Si une liste n'a pas pu être lue en entier, l'exécution échoue et le dit. Rien n'est compté comme vérifié.
+
+La démo montre un épisode complet dans l'historique des exécutions du contrôle Expedia : une réservation d'abord vue manquante, l'alerte 30 minutes plus tard puis, une fois la réservation arrivée dans Little Hotelier, la note « no longer missing ».
+
+::screenshot{src="/images/blog/demo/en/ota-missing-expedia-check-runs.webp" alt="Historique des exécutions filtré sur la tâche Check Expedia reservations are in Little Hotelier, avec trois exécutions réussies le 1er nov. 2026 : à 10:59, la réservation 2570106574 fait partie des 6 du périmètre absentes de Little Hotelier ; à 11:29, la même réservation avec Alert emailed ; à 12:44, les 6 réservations sont dans Little Hotelier et 1 réservation d'une alerte précédente n'est plus manquante" caption="Un épisode en trois exécutions : vue manquante, une seule alerte au bout de 30 minutes, puis signalée comme résolue." path="/cron-logs"}
+::
 
 Le contrôle Expedia relève aussi les écarts de statut et de dates (annulée sur Expedia mais active dans Little Hotelier, par exemple) et les réservations sans chambre. Ils apparaissent dans le résumé de l'exécution sous **Run History** (historique des exécutions, `/cron-logs`).
 

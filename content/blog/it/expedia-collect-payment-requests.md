@@ -9,8 +9,8 @@ tags: [expedia, expedia collect, pagamenti, carta virtuale, partner central, aut
 keywords: [expedia collect come funziona, richiesta pagamento expedia collect, expedia non mi ha pagato, carta virtuale expedia quando addebitare, carta virtuale expedia rifiutata, pagamenti expedia partner central, expedia collect vs hotel collect, fatturazione expedia collect hotel, expedia pagamenti automatici]
 feature: automated-checks
 demoPath: /credentials/expedia-extranet
-cover: /images/blog/demo/en/expedia-collect-checkout-check.webp
-coverAlt: "Controlli alla partenza in Hotelier Tools con il controllo Expedia Collect payment disattivato: verifica in Partner Central se il pagamento è stato richiesto quando l'ospite parte, rimanda allo storico dei pagamenti Expedia e precisa che non richiede mai di nuovo un soggiorno rifiutato da Expedia né addebita carte virtuali"
+cover: /images/blog/demo/en/expedia-collect-payments-states.webp
+coverAlt: "Scheda Expedia Collect payments in Hotelier Tools per i check-out dal 7 ottobre al 5 novembre 2026: i chip All 7, To request 2 (€224.08), Refused by Expedia 1, Check in Partner Central 1, Requested 1, Reconciled by Expedia 1 e Cancelled 1, e sette soggiorni demo con importo, stato, chi ha chiesto (Check at check-out o Demo Manager) e ID di coda Expedia, sopra il pulsante Request payment"
 featured: true
 faq:
   - q: "Quanto tempo ho per richiedere il pagamento di una prenotazione Expedia Collect?"
@@ -121,7 +121,7 @@ Ogni soggiorno ha uno stato, con un chip che filtra l'elenco:
 
 Spunta i soggiorni, o usa la casella per selezionarli tutti, e premi **Request payment for N stays**. Dopo la tua conferma, Hotelier Tools invia un'unica richiesta per tutti, la stessa richiesta **Create Invoice** di Partner Central. Ogni soggiorno viene prima riservato, così non viene mai inviato due volte. **Details** mostra cosa dice Expedia di un soggiorno e lo storico della richiesta.
 
-::screenshot{src="/images/blog/demo/en/expedia-collect-payments-card.webp" alt="Pagina Expedia Partner Central in Hotelier Tools: la scheda Expedia Collect payments con un link Payments history e la nota Connect Expedia above to see them, la scheda Request Expedia Collect payments automatically indicata come Not configured yet con i pulsanti Every day at 09:30, Choose e Run now, e un elenco How it works" caption="Nella demo Expedia non è collegato, quindi la scheda dei pagamenti è vuota. Una volta collegato elenca ogni soggiorno e il suo stato; la scheda sotto programma le richieste." path="/credentials/expedia-extranet"}
+::screenshot{src="/images/blog/demo/en/expedia-collect-payments-states.webp" alt="Scheda Expedia Collect payments in Hotelier Tools per i check-out dal 7 ottobre al 5 novembre 2026: i chip All 7, To request 2 (€224.08), Refused by Expedia 1, Check in Partner Central 1, Requested 1, Reconciled by Expedia 1 e Cancelled 1, e sette soggiorni demo con importo, stato, chi ha chiesto (Check at check-out o Demo Manager) e ID di coda Expedia, sopra il pulsante Request payment" caption="Ogni soggiorno Expedia nelle date che scegli, e a che punto è il suo pagamento. Spunta quelli da richiedere e chiedili tutti in una volta." path="/credentials/expedia-extranet"}
 ::
 
 ### 3. Lascialo girare in modo programmato
@@ -137,6 +137,9 @@ In **Automatic Expedia payment requests** (`/credentials/expedia-extranet/automa
 
 Cosa non fa mai: accedere a Partner Central, chiedere due volte lo stesso soggiorno, chiedere un soggiorno pagato con carta virtuale o con check-out non ancora avvenuto, o chiedere di nuovo un soggiorno che Expedia ha rifiutato o a cui non ha risposto. Questi restano a una persona, e il log dell'esecuzione li indica per nome.
 
+::screenshot{src="/images/blog/demo/en/expedia-collect-preview-run.webp" alt="Dettagli dell'esecuzione dell'attività Request Expedia Collect payments del 5 novembre 2026, segnata Success, con il riepilogo del risultato: Preview, nothing sent: 1 stay would be requested from Expedia (54.08 EUR): EXP-2570209049. 2 stays Expedia refused or did not answer before are left for a person" caption="In anteprima, ogni esecuzione scrive quali soggiorni richiederebbe e non invia nulla. I soggiorni rifiutati da Expedia restano a una persona." path="/credentials/expedia-extranet/automatic-requests"}
+::
+
 Usi già i controlli **When they leave** (alla partenza)? Il suo controllo **Expedia Collect payment** avvisa di un importo non ancora richiesto. Con la correzione **Request the payment from Expedia (asks Expedia for money)** attivata, invia la richiesta quando l'ospite parte. Possono essere attivi entrambi: un soggiorno viene riservato una sola volta.
 
 ::screenshot{src="/images/blog/demo/en/expedia-collect-checkout-check.webp" alt="Pagina dei controlli When they leave: i controlli Address and origin validation e Automatic check-out, poi il controllo Expedia Collect payment, disattivato, con cosa può fare (avvisare di un importo non ancora richiesto e, con la correzione attiva, chiedere a Expedia una volta per soggiorno) e cosa non fa (richiedere di nuovo un soggiorno rifiutato, addebitare carte virtuali)" caption="Il momento del check-out può chiedere a Expedia ogni soggiorno quando l'ospite parte, una volta per soggiorno." path="/automated-checks/moment/at_checkout"}
@@ -145,6 +148,9 @@ Usi già i controlli **When they leave** (alla partenza)? Il suo controllo **Exp
 ### 4. Segui lo storico
 
 **Expedia payments** (`/automated-checks/expedia-payments`) è il registro di ogni richiesta fatta da Hotelier Tools: da una persona, dall'attività programmata, dal controllo al check-out, da un assistente o dall'API. Filtra per stato, **Who asked** e date di check-out, e apri una riga per vedere ogni riserva e ogni risposta di Expedia. **Ask again** riprova i soggiorni che Expedia ha rifiutato. Per un soggiorno senza risposta devi prima spuntare **I checked Partner Central and these stays are not there**, perché chiedere due volte potrebbe significare essere pagati due volte.
+
+::screenshot{src="/images/blog/demo/en/expedia-collect-payments-history.webp" alt="Pagina dello storico Expedia payments: i filtri Search, Who asked e date di check-out, i chip Requested 12, Refused by Expedia 1, Check in Partner Central 1 e Sending 0, un pulsante Ask again e le richieste: Lucas Alvarez rifiutata da Expedia perché l'importo non corrispondeva alla prenotazione, Chiara Larsen richiesta con un ID di coda, Sean Bianchi senza una risposta leggibile, da verificare in Partner Central, e soggiorni richiesti dal controllo al check-out" caption="Ogni richiesta fatta da Hotelier Tools, chi l'ha chiesta e cosa ha risposto Expedia. I soggiorni rifiutati o senza risposta si possono richiedere di nuovo." path="/automated-checks/expedia-payments"}
+::
 
 Su una prenotazione Expedia (`EXP-` seguito dal codice di conferma), la sezione **Payments** della prenotazione ha un pannello **Expedia payment** con **Check with Expedia** e un link che apre la scheda dei pagamenti con quel soggiorno già spuntato.
 
@@ -156,7 +162,7 @@ Puoi anche chiedere all'assistente AI della dashboard, o a Claude e ChatGPT tram
 - **Il pagamento si segue solo per le richieste fatte da qui.** Dalla versione 1.71 (novembre 2026) Hotelier Tools legge la pagina **Statements and invoices** di Partner Central (gli ultimi 12 mesi) e mostra una richiesta come **Reconciled by Expedia** (accettata, pagamento in attesa) o **Paid by Expedia** (con data e importo), anche nel pannello Expedia della prenotazione. Una richiesta non ancora presente in quella pagina resta **Requested**.
 - **Non addebita mai carte virtuali.** Quei soggiorni compaiono come **Virtual card**: addebitali sul tuo POS.
 - **Usa la tua sessione di Partner Central.** I termini per i partner di Expedia limitano l'accesso automatizzato a Partner Central. Hotelier Tools accede come il tuo utente, mai da solo, e nulla viene condiviso tra strutture.
-- **Nella demo Expedia non è collegato**, quindi la demo mostra le schede ma nessun soggiorno Expedia.
+- **La demo usa un Partner Central simulato.** I suoi soggiorni Expedia mostrano ogni stato, e una richiesta inviata lì viene accettata solo in memoria: a Expedia non arriva nulla.
 
 ::demo-cta{path="/credentials/expedia-extranet"}
 ::

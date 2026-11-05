@@ -3,6 +3,7 @@ title: "Booking.com or Expedia reservation not showing in Little Hotelier: cause
 seoTitle: "Booking.com or Expedia booking not in Little Hotelier?"
 description: "Why an OTA booking never reaches Little Hotelier, where to check delivery status, how to protect the room, and how to get alerted when one goes missing."
 date: 2026-10-29
+updated: 2026-11-05
 category: operations
 tags: [booking.com, expedia, channel manager, overbooking, little hotelier, siteminder]
 keywords: [booking.com reservation not showing in little hotelier, expedia booking not in channel manager, little hotelier missing reservation, siteminder reservation delivery failed, booking.com reservation not in pms, channel manager overbooking, resend reservation to little hotelier, booking.com reservation missing from channel manager]
@@ -85,6 +86,9 @@ Checking by hand works once you know a booking is missing. The hard part is know
 
 Each run reads bookings made today and arrivals in the next 14 days, and Little Hotelier's reservations. Expedia bookings are matched by their confirmation code (`EXP-` plus the number), the same code Little Hotelier stores.
 
+::screenshot{src="/images/blog/demo/en/ota-missing-expedia-alert-run.webp" alt="Run details of checkExpediaReservationsInLh on Nov 1, 2026 at 11:30, marked Success, with the result summary: Expedia → Little Hotelier: 1 of 6 bookings in scope are NOT in Little Hotelier: 2570106574. Alert emailed for 1 booking missing for over 30 minutes: 2570106574" caption="Each run says how many bookings it compared and which one is missing. The alert goes out once." path="/cron-logs"}
+::
+
 ### One alert per booking, not one every 15 minutes
 
 Delivery routinely takes a few minutes, so one read is never enough. Every missing booking goes into a ledger:
@@ -93,6 +97,11 @@ Delivery routinely takes a few minutes, so one read is never enough. Every missi
 - **Told once.** The email is claimed before it is sent, so two runs can't both send it. If the email reached nobody, the claim is released and the next run tries again.
 - **Told again when it's fixed.** When the booking turns up in Little Hotelier, or the OTA cancels it, or the stay is over, you get one "no longer missing" email.
 - **No false all-clear.** If a list couldn't be fully read, the run fails and says so. Nothing is counted as checked.
+
+The demo shows a whole episode in the Expedia check's run history: a booking first seen missing, the alert 30 minutes later and, once the booking reached Little Hotelier, the "no longer missing" note.
+
+::screenshot{src="/images/blog/demo/en/ota-missing-expedia-check-runs.webp" alt="Run history filtered on the job Check Expedia reservations are in Little Hotelier, with three successful runs on Nov 1, 2026: at 10:59 booking 2570106574 is one of 6 in scope not in Little Hotelier, at 11:29 the same booking with Alert emailed, and at 12:44 all 6 bookings are in Little Hotelier and 1 booking from an earlier alert is no longer missing" caption="One episode in three runs: seen missing, alerted once after 30 minutes, then reported resolved." path="/cron-logs"}
+::
 
 The Expedia check also notes status and date mismatches (cancelled on Expedia but active in Little Hotelier, for example) and bookings without a room. These appear in the run's summary under **Run History** (`/cron-logs`).
 

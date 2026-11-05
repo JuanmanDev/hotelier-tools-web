@@ -3,6 +3,7 @@ title: "Reservasi Booking.com atau Expedia tidak muncul di Little Hotelier: peny
 seoTitle: "Reservasi Booking.com/Expedia tidak masuk Little Hotelier?"
 description: "Mengapa reservasi OTA tidak sampai ke Little Hotelier, di mana mengecek status pengirimannya, cara melindungi kamar, dan cara dapat peringatan saat hilang."
 date: 2026-10-29
+updated: 2026-11-05
 category: operations
 tags: [booking.com, expedia, channel manager, overbooking, little hotelier, siteminder]
 keywords: [reservasi booking.com tidak masuk little hotelier, booking expedia tidak masuk channel manager, reservasi hilang little hotelier, reservasi ota tidak masuk pms, siteminder reservation delivery failed, overbooking channel manager, cara kirim ulang reservasi ke little hotelier, reservasi booking.com tidak muncul di channel manager]
@@ -85,6 +86,9 @@ Mengecek secara manual berhasil kalau Anda sudah tahu ada reservasi yang hilang.
 
 Setiap kali berjalan, pengecekan membaca reservasi yang dibuat hari ini dan kedatangan dalam 14 hari ke depan, serta reservasi di Little Hotelier. Reservasi Expedia dicocokkan berdasarkan kode konfirmasinya (`EXP-` plus nomornya), kode yang sama yang disimpan Little Hotelier.
 
+::screenshot{src="/images/blog/demo/en/ota-missing-expedia-alert-run.webp" alt="Detail eksekusi checkExpediaReservationsInLh pada 1 Nov 2026 pukul 11.30, bertanda Success, dengan ringkasan hasil: Expedia → Little Hotelier: 1 of 6 bookings in scope are NOT in Little Hotelier: 2570106574. Alert emailed for 1 booking missing for over 30 minutes: 2570106574" caption="Setiap eksekusi menyebutkan berapa reservasi yang dibandingkan dan mana yang hilang. Peringatan dikirim sekali." path="/cron-logs"}
+::
+
 ### Satu peringatan per reservasi, bukan setiap 15 menit
 
 Pengiriman biasanya butuh beberapa menit, jadi satu kali pembacaan tidak pernah cukup. Setiap reservasi yang hilang masuk ke sebuah catatan:
@@ -93,6 +97,11 @@ Pengiriman biasanya butuh beberapa menit, jadi satu kali pembacaan tidak pernah 
 - **Diberi tahu sekali.** Email "diklaim" sebelum dikirim, jadi dua eksekusi tidak bisa sama-sama mengirimnya. Jika email tidak sampai ke siapa pun, klaimnya dilepas dan eksekusi berikutnya mencoba lagi.
 - **Diberi tahu lagi saat sudah beres.** Saat reservasi muncul di Little Hotelier, atau OTA membatalkannya, atau masa inapnya sudah lewat, Anda menerima satu email "no longer missing".
 - **Tidak ada "semua aman" palsu.** Jika suatu daftar tidak bisa dibaca sepenuhnya, eksekusi gagal dan menyatakannya. Tidak ada yang dihitung sebagai sudah dicek.
+
+Demo menampilkan satu episode utuh di riwayat eksekusi pengecekan Expedia: reservasi yang pertama kali terlihat hilang, peringatan 30 menit kemudian, dan, setelah reservasi sampai ke Little Hotelier, catatan "no longer missing".
+
+::screenshot{src="/images/blog/demo/en/ota-missing-expedia-check-runs.webp" alt="Run history yang disaring pada job Check Expedia reservations are in Little Hotelier, dengan tiga eksekusi berhasil pada 1 Nov 2026: pukul 10.59 reservasi 2570106574 adalah satu dari 6 dalam cakupan yang tidak ada di Little Hotelier, pukul 11.29 reservasi yang sama dengan Alert emailed, dan pukul 12.44 keenam reservasi sudah ada di Little Hotelier dan 1 reservasi dari peringatan sebelumnya no longer missing" caption="Satu episode dalam tiga eksekusi: terlihat hilang, diperingatkan sekali setelah 30 menit, lalu dilaporkan beres." path="/cron-logs"}
+::
 
 Pengecekan Expedia juga mencatat ketidakcocokan status dan tanggal (misalnya dibatalkan di Expedia tetapi masih aktif di Little Hotelier) serta reservasi tanpa kamar. Semua ini muncul di ringkasan eksekusi di **Run History** (`/cron-logs`).
 

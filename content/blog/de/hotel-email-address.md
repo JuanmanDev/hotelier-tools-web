@@ -3,13 +3,14 @@ title: "Eine Hotel-E-Mail-Adresse für Lieferantenrechnungen und Portal-Logins: 
 seoTitle: "Hotel-E-Mail-Adresse für Lieferantenrechnungen und Logins"
 description: "Geben Sie Ihrem Hotel eine private Empfangsadresse für Lieferantenrechnungen und eine pro Portal-Login. Kein IMAP-Passwort, nichts wird geteilt."
 date: 2026-11-01
+updated: 2026-11-05
 category: operations
 tags: [e-mail, lieferantenrechnungen, little hotelier, booking.com, expedia, sicherheit]
 keywords: [e-mail adresse für rechnungen hotel, eigene e-mail für eingangsrechnungen, rechnungseingang per e-mail, e-mail adresse nur empfangen, eigene e-mail für little hotelier benutzer, e-mail adresse booking.com extranet benutzer, rechnungen an buchhaltung weiterleiten, rechnungspostfach hotel]
 feature: dashboard
 demoPath: /credentials
-cover: /images/blog/demo/en/supplier-invoices-mailbox-settings.webp
-coverAlt: "Einstellungen Received invoices: die Karte Suggestions mit eingeschaltetem Suggest invoices that have not arrived und 24 Monaten Verlauf, und die Karte Mailboxes mit verbundenem reservas@example.com, eingeschaltetem Read for invoices, INBOX als zu lesendem Ordner, einem ersten Scan über 120 Tage zurück und leeren Listen Never read mail from und Always read mail from"
+cover: /images/blog/demo/en/hotel-email-invoice-address.webp
+coverAlt: "Karte Invoice address in Hotelier Tools mit der Adresse inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid ist die Platzhalter-Domain der Demo), den Schaltflächen Copy und New address und Recent mail: eine Bestell-E-Mail zur Prüfung zurückgehalten, weil keine Rechnungsdatei angehängt war, eine Änderung der Bankverbindung zurückgehalten, weil sie nach Betrug aussieht, und die importierte Rechnung HE-2026/1102 von Horno Ejemplo; darunter Upload an .eml file und die pausierte Aufgabe Read the hotel mailbox"
 faq:
   - q: "Was ist eine reine Empfangsadresse für ein Hotel?"
     a: "Eine Adresse, die nur E-Mails annimmt und nie welche sendet. In Hotelier Tools kann jedes Haus seine eigene bekommen, etwa inv-7k2m9qx4hp@in.hotelier.tools für Lieferantenrechnungen. Was dort ankommt, landet im Konto dieses Hauses, ohne IMAP-Passwort oder Microsoft-Anmeldung."
@@ -74,6 +75,9 @@ Sie können auch Rechnungen, die Sie schon haben, an die Adresse weiterleiten. H
 
 Brauchen Sie eine neue Adresse, etwa nach einer Spamwelle? Drücken Sie **New address**. Die alte stellt noch 30 Tage lang zu, mit einem Hinweis an jeder Nachricht, dass sie an eine ersetzte Adresse ging, und hört dann auf.
 
+::screenshot{src="/images/blog/demo/en/hotel-email-invoice-address.webp" alt="Karte Invoice address in Hotelier Tools mit der Adresse inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid ist die Platzhalter-Domain der Demo), den Schaltflächen Copy und New address und Recent mail: eine Bestell-E-Mail zur Prüfung zurückgehalten, weil keine Rechnungsdatei angehängt war, eine Änderung der Bankverbindung zurückgehalten, weil sie nach Betrug aussieht, und die importierte Rechnung HE-2026/1102 von Horno Ejemplo; darunter Upload an .eml file und die pausierte Aufgabe Read the hotel mailbox" caption="Lieferanten schreiben an eine private Adresse. Bei jeder Nachricht steht, was mit ihr passiert ist, und alles Verdächtige wartet auf eine Person." path="/settings/received-invoices"}
+::
+
 ## Was passiert mit E-Mails an die Rechnungsadresse?
 
 Jede Nachricht gilt als nicht vertrauenswürdig:
@@ -110,6 +114,9 @@ Lieber Ihre eigene Adresse? Mit der Option **Where the portal writes to this log
 ## Wo finde ich alle meine Adressen?
 
 **Credentials** (`/credentials`) endet mit **Hotel mailbox addresses**: der Rechnungsadresse und den drei Login-Adressen, jeweils mit Status (etwa **Waiting for the invitation** oder **Active**) und einem Link **Open** zur Seite, die sie verwaltet. Die Liste ist nur lesbar.
+
+::screenshot{src="/images/blog/demo/en/hotel-email-address-list.webp" alt="Hotel mailbox addresses unten auf der Seite Credentials: Supplier invoices inv-qqxyc2dsnf@in.hotel-demo.invalid mit Status Active, der Little-Hotelier-Login lh-dwfenz3etz@ und der Booking.com-Login bk-59k2nwybrt@ mit Status Waiting for the invitation und der Expedia-Login Not created yet, jeweils mit einem Link Open (in.hotel-demo.invalid ist die Platzhalter-Domain der Demo)" caption="Alle Adressen des Hauses in einer Liste, jede mit ihrem Status und einem Link zur Seite, die sie verwaltet." path="/credentials"}
+::
 
 Zwei Sichtbarkeitsregeln gelten:
 

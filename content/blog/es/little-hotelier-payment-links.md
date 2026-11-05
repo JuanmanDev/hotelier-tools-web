@@ -3,6 +3,7 @@ title: "Enlaces de pago en Little Hotelier: cómo enviar uno, cobrar depósitos 
 seoTitle: "Enlace de pago y recordatorios de pago en Little Hotelier"
 description: "Envía una solicitud de pago desde Little Hotelier, fija depósitos y recuerda el pago a los huéspedes sin reclamar lo que ya pagaron en Booking.com."
 date: 2026-10-28
+updated: 2026-11-05
 category: invoicing
 tags: [pagos, enlace de pago, little hotelier, siteminder pay, depósitos, automatización]
 keywords: [enlace de pago little hotelier, solicitud de pago little hotelier, enviar solicitud de pago little hotelier, little hotelier pay solicitud de pago, enlace de pago siteminder pay, email recordatorio de pago hotel, recordar al huésped el pago antes de la llegada, depósito little hotelier, reserva prepagada booking.com little hotelier, cobrar saldo pendiente huésped hotel]
@@ -96,6 +97,9 @@ Los **Recordatorios de pago** de Hotelier Tools (`/automated-checks/payments`, p
 - **Aviso cuando se paga.** Cada ejecución sigue los enlaces que enviaron sus recordatorios. Cuando se paga uno, el equipo recibe un email de «pagos recibidos» (si la regla avisa al equipo).
 
 Para probar un recordatorio, **Enviar ahora…** lo envía a una sola reserva, sea cual sea su día. Todo lo enviado aparece en **Actividad**: cuándo, reserva, huésped o equipo, estado, importe pendiente y el estado del enlace (**Esperando el pago**, **Pagado**, **Caducado**, **Cancelado**).
+
+::screenshot{src="/images/blog/demo/es/payment-reminders-activity.webp" alt="Página de recordatorios de pago con dos reglas activadas: Prepago reservas directas — 7 días antes (7 días antes de la llegada, Recordatorio + enlace; últimos 30 días: 3 enviados, 1 fallidos) y Saldo pendiente — 2 días antes (2 días antes de la llegada, SiteMinder Pay y Equipo; 11 enviados, 1 fallidos), cada una con su tarea diaria de las 10:00 Activa; después, la tabla Actividad con recordatorios a huéspedes y resúmenes al equipo, Enviado con enlaces de SiteMinder Pay Esperando el pago o Caducado, y uno Fallido porque SiteMinder Pay no confirmó que enviara el email al huésped" caption="Dos reglas, cada una con su propia programación diaria, y un registro de cada recordatorio con el estado de su enlace de pago." path="/automated-checks/payments"}
+::
 
 ### Las estancias prepagadas se gestionan por ti
 

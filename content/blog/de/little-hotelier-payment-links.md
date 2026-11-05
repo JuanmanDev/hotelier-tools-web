@@ -3,6 +3,7 @@ title: "Zahlungslinks in Little Hotelier: So senden Sie einen, ziehen Anzahlunge
 seoTitle: "Little Hotelier: Zahlungslink und Zahlungserinnerungen"
 description: "Zahlungsanfragen aus Little Hotelier senden, Anzahlungen einrichten, Gäste automatisch an Restbeträge erinnern, ohne bei Booking.com Bezahltes zu fordern."
 date: 2026-10-28
+updated: 2026-11-05
 category: invoicing
 tags: [zahlungen, zahlungslink, little hotelier, siteminder pay, anzahlungen, automatisierung]
 keywords: [little hotelier zahlungslink, little hotelier zahlungsanfrage senden, little hotelier pay zahlungsanfrage, siteminder pay zahlungslink, zahlungserinnerung hotel e-mail, gast an restzahlung vor anreise erinnern, little hotelier anzahlung, little hotelier ota paid booking.com vorausbezahlt]
@@ -96,6 +97,9 @@ Die **Payment reminders** (Zahlungserinnerungen, `/automated-checks/payments`, T
 - **Bescheid, wenn bezahlt wurde.** Jeder Lauf verfolgt die Links, die seine Erinnerungen gesendet haben. Wird einer bezahlt, bekommt das Team eine E-Mail „payments received“ (wenn die Regel das Team informiert).
 
 Um eine Erinnerung zu testen, sendet **Send now…** sie an eine einzelne Buchung, egal an welchem Tag. Alles Gesendete steht unter **Activity**: wann, Buchung, Gast oder Team, Status, offener Betrag und der Zustand des Links (**Waiting for payment**, **Paid**, **Expired**, **Cancelled**).
+
+::screenshot{src="/images/blog/demo/en/payment-reminders-activity.webp" alt="Seite Payment reminders mit zwei eingeschalteten Regeln: Prepago reservas directas — 7 días antes (7 Tage vor der Anreise, Erinnerung + Link; in den letzten 30 Tagen 3 gesendet, 1 fehlgeschlagen) und Saldo pendiente — 2 días antes (2 Tage vor der Anreise, SiteMinder Pay und Team; 11 gesendet, 1 fehlgeschlagen), jeweils mit ihrer täglichen Aufgabe um 10:00; dann die Tabelle Activity mit Erinnerungen an Gäste und Zusammenfassungen fürs Team, gesendet mit SiteMinder-Pay-Links im Zustand Waiting for payment oder Expired, und eine fehlgeschlagene, weil SiteMinder Pay nicht bestätigt hat, dass es dem Gast eine E-Mail geschickt hat" caption="Zwei Regeln mit eigenem täglichem Zeitplan und ein Protokoll jeder Erinnerung mit dem Zustand ihres Zahlungslinks." path="/automated-checks/payments"}
+::
 
 ### Vorausbezahlte Aufenthalte werden für Sie berücksichtigt
 

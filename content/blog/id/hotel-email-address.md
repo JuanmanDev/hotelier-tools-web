@@ -3,13 +3,14 @@ title: "Alamat email hotel untuk invoice pemasok dan login portal: cara kerja al
 seoTitle: "Alamat email hotel untuk invoice pemasok dan login portal"
 description: "Beri hotel Anda alamat privat khusus penerima untuk invoice pemasok, dan satu per login portal. Tanpa kata sandi IMAP, tidak ada yang dibagi antarhotel."
 date: 2026-11-01
+updated: 2026-11-05
 category: operations
 tags: [email, invoice pemasok, little hotelier, booking.com, expedia, keamanan]
 keywords: [alamat email hotel untuk invoice, email khusus invoice pemasok, email untuk tagihan pemasok hotel, alamat email hanya menerima, email terpisah untuk user little hotelier, email untuk user extranet booking.com, teruskan invoice ke email akuntansi, inbox invoice hotel]
 feature: dashboard
 demoPath: /credentials
-cover: /images/blog/demo/en/supplier-invoices-mailbox-settings.webp
-coverAlt: "Pengaturan Received invoices: kartu Suggestions dengan Suggest invoices that have not arrived aktif dan riwayat 24 bulan, serta kartu Mailboxes dengan reservas@example.com terhubung, Read for invoices aktif, INBOX sebagai folder yang dibaca, pemindaian pertama 120 hari ke belakang, dan daftar Never read mail from serta Always read mail from yang kosong"
+cover: /images/blog/demo/en/hotel-email-invoice-address.webp
+coverAlt: "Kartu Invoice address di Hotelier Tools dengan alamat inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid adalah domain placeholder demo), tombol Copy dan New address, serta Recent mail: email pesanan yang ditahan untuk ditinjau karena tidak ada file invoice terlampir, perubahan data rekening bank yang ditahan karena terlihat seperti penipuan, dan invoice HE-2026/1102 dari Horno Ejemplo yang diimpor; di bawahnya, Upload an .eml file dan tugas Read the hotel mailbox yang dijeda"
 faq:
   - q: "Apa itu alamat email khusus penerima untuk hotel?"
     a: "Alamat yang hanya menerima email dan tidak pernah mengirim. Di Hotelier Tools setiap properti bisa punya alamat sendiri, misalnya inv-7k2m9qx4hp@in.hotelier.tools untuk invoice pemasok. Yang masuk ke sana langsung tiba di akun properti itu, tanpa kata sandi IMAP atau login Microsoft."
@@ -74,6 +75,9 @@ Anda juga bisa meneruskan invoice yang sudah Anda punya ke alamat itu. Hotelier 
 
 Butuh alamat baru, misalnya setelah gelombang spam? Tekan **New address**. Alamat lama tetap menerima selama 30 hari, dengan catatan di setiap pesan bahwa pesan itu masuk ke alamat yang sudah dipensiunkan, lalu berhenti.
 
+::screenshot{src="/images/blog/demo/en/hotel-email-invoice-address.webp" alt="Kartu Invoice address di Hotelier Tools dengan alamat inv-qqxyc2dsnf@in.hotel-demo.invalid (in.hotel-demo.invalid adalah domain placeholder demo), tombol Copy dan New address, serta Recent mail: email pesanan yang ditahan untuk ditinjau karena tidak ada file invoice terlampir, perubahan data rekening bank yang ditahan karena terlihat seperti penipuan, dan invoice HE-2026/1102 dari Horno Ejemplo yang diimpor; di bawahnya, Upload an .eml file dan tugas Read the hotel mailbox yang dijeda" caption="Pemasok menulis ke satu alamat privat. Setiap pesan menunjukkan apa yang terjadi padanya, dan apa pun yang mencurigakan menunggu manusia." path="/settings/received-invoices"}
+::
+
 ## Apa yang terjadi pada email yang dikirim ke alamat invoice?
 
 Setiap pesan diperlakukan sebagai tidak tepercaya:
@@ -110,6 +114,9 @@ Lebih suka alamat Anda sendiri? Opsi **Where the portal writes to this login** d
 ## Di mana saya menemukan semua alamat saya?
 
 **Credentials** (`/credentials`) diakhiri dengan **Hotel mailbox addresses**: alamat invoice dan tiga alamat login, masing-masing dengan statusnya (misalnya **Waiting for the invitation** atau **Active**) dan tautan **Open** ke halaman yang mengelolanya. Daftar ini hanya-baca.
+
+::screenshot{src="/images/blog/demo/en/hotel-email-address-list.webp" alt="Hotel mailbox addresses di bagian bawah halaman Credentials: Supplier invoices inv-qqxyc2dsnf@in.hotel-demo.invalid bertanda Active, login Little Hotelier lh-dwfenz3etz@ dan login Booking.com bk-59k2nwybrt@ bertanda Waiting for the invitation, dan login Expedia Not created yet, masing-masing dengan tautan Open (in.hotel-demo.invalid adalah domain placeholder demo)" caption="Semua alamat properti dalam satu daftar, masing-masing dengan statusnya dan tautan ke halaman yang mengelolanya." path="/credentials"}
+::
 
 Ada dua aturan visibilitas:
 

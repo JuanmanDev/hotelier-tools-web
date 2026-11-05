@@ -3,6 +3,7 @@ title: "แขกขอวันที่ที่คุณยังขายไ
 seoTitle: "คำขอห้องว่างของโรงแรม: ไม่ให้หลุดอีกเลย"
 description: "แขกถามหาวันที่ห้องเต็มหรือยังไม่ได้ตั้งราคา แล้วอีเมลก็จมหายไป จดบันทึกคำขอไว้ หรือให้คิวช่วยตรวจและตอบแขกเมื่อมีห้องว่าง"
 date: 2026-11-05
+updated: 2026-11-05
 category: operations
 tags: [ห้องว่าง, waitlist, คำขอจองห้อง, little hotelier, กรุ๊ปทัวร์, direct booking]
 keywords: [แขกขอวันที่ยังไม่เปิดขาย โรงแรม, ติดตามคำขอห้องว่าง โรงแรม, บันทึกคำขอจองห้อง, แจ้งแขกเมื่อห้องว่าง, ยังไม่ได้ใส่ราคา booking engine, จองห้องกลุ่ม ห้องเต็ม, waiting list โรงแรม วันที่ล่วงหน้า, คิวรอห้องว่าง Little Hotelier]
@@ -101,6 +102,9 @@ partial ที่ไม่เปลี่ยนแปลงจะแจ้งเ
 ### อีเมลหรือ WhatsApp ทั้งสำหรับแขกและสำหรับคุณ
 
 แจ้งแขกได้ทางอีเมล WhatsApp หรือทั้งสองอย่าง ส่วนที่พักก็มีช่องทางของตัวเอง ข้อความ WhatsApp ส่งจากเบอร์ที่คุณเชื่อมต่อไว้ ([WhatsApp กับ Little Hotelier](/blog/whatsapp-little-hotelier)) เบอร์โทรต้องมีรหัสประเทศ และ Hotelier Tools ไม่เดารหัสให้ (ยังส่งทาง LINE ไม่ได้) เว้น **Property email** ไว้เพื่อใช้อีเมลแจ้งเตือนของบัญชีคุณ อีเมลถึงแขกจะเขียนเป็นภาษาที่คุณเลือกใน **Guest's language** และข้อความแบบ **available** จะมีลิงก์จองตรงที่กรอกวันที่และจำนวนห้องไว้ให้แล้ว หน้า **History** (`/availability-watch/history`) เก็บข้อความฉบับจริงที่แต่ละคำขอส่งออกไป
+
+::screenshot{src="/images/blog/demo/en/availability-queue-history.webp" alt="หน้า Waiting list history: ตัวนับ 1 fulfilled, 1 expired, 1 cancelled และ 3 with a message ตามด้วย Closed entries: Pierre Dubois สถานะ fulfilled มีห้องว่างและแจ้งไปแล้ว (AVAILABLE Doble Superior ×3, told guest/email, hotel/email) พร้อมปุ่ม What was sent; Lucas Moreau สถานะ expired เพราะการเข้าพักเริ่มก่อนจะมีห้องว่าง; Sean Murphy สถานะ cancelled โดยแผนกต้อนรับเพราะแขกจองวันอื่นทางโทรศัพท์" caption="ทุกคำขอที่ปิดแล้วยังเก็บไว้ พร้อมข้อความฉบับจริงที่แขกได้รับ" path="/availability-watch/history"}
+::
 
 ### คำขอที่เข้ามาทางกล่องข้อความ
 
