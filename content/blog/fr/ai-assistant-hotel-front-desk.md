@@ -155,7 +155,7 @@ Quel que soit l'outil, gardez ces points sous contrôle humain. Voici comment Ho
 
 Les réponses envoyées sans supervision sont aussi plafonnées : 4 par heure, 12 par jour et 3 d'affilée sans réponse du client.
 
-Vous voulez voir comment cela fonctionne en coulisses ? [Comment fonctionnent les agents IA d'un hôtel](/blog/how-hotel-ai-agents-work) explique le niveau de confiance de chaque agent, comment un message venu de Booking.com, WhatsApp ou par e-mail est relié à une seule réservation, et pourquoi une modification approuvée s'exécute sans l'IA.
+Vous voulez voir comment cela fonctionne en coulisses ? [Comment fonctionnent les agents IA d'un hôtel](/blog/how-hotel-ai-agents-work) explique le niveau de confiance de chaque agent, comment un message venu de Booking.com, WhatsApp ou par e-mail est relié à une seule réservation, et pourquoi une modification approuvée s'exécute sans l'IA.
 
 ## Rôles, confidentialité et coût
 
