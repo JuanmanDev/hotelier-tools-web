@@ -155,9 +155,11 @@ Qualunque strumento usi, tieni queste cose in mano a una persona. Ecco come Hote
 
 Le risposte senza supervisione hanno anche dei limiti di volume: 4 all'ora, 12 al giorno e 3 di fila senza risposta dell'ospite.
 
+Vuoi vedere come funziona dietro le quinte? [Come funzionano gli agenti AI per hotel](/blog/how-hotel-ai-agents-work) spiega il livello di fiducia di ogni agente, come un messaggio da Booking.com, WhatsApp o email viene legato a una sola prenotazione e perché una modifica approvata viene eseguita senza l'AI.
+
 ## Ruoli, privacy e costi
 
-**Ruoli.** Le richieste dell'assistente per lo staff le approva il titolare su `/staff`. Gli account di team con ruoli sono indicati come "soon" nella [pagina dell'assistente](/tools/bot/ai-assistant); sono pensati in modo che, per esempio, un login della reception possa vedere i prezzi ma non modificarli, e non possa eseguire un rimborso nemmeno con una scheda.
+**Ruoli.** Le richieste dell'assistente per lo staff le approva il titolare su `/staff`. Gli account di team con ruoli sono disponibili in **Settings > Team & roles** (Impostazioni > Team e ruoli, `/settings/team`): ogni persona accede con il proprio login e l'AI propone solo ciò che il ruolo di quella persona consente, quindi, per esempio, un login della reception può vedere i prezzi ma non modificarli, e non può eseguire un rimborso nemmeno con una scheda.
 
 **Privacy.** I login di Little Hotelier, Booking.com e della casella email sono conservati cifrati (AES-256-GCM). I messaggi degli ospiti e i dettagli delle prenotazioni vengono elaborati da un fornitore di AI quando l'assistente li legge. L'[accordo sul trattamento dei dati](https://dashboard.hotelier.tools/legal/dpa) e l'[informativa sulla privacy](https://dashboard.hotelier.tools/legal/privacy) spiegano cosa viene trattato.
 

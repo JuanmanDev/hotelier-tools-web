@@ -138,6 +138,8 @@ For Meta's official API, see Little Hotelier's Messaging hub in [WhatsApp with L
 
 Before anything goes out, a check blocks a reply that contains another booking's reference, or any long number when the sender isn't verified.
 
+For the full security model (what each AI agent may read and change, how senders are verified on every channel, and how a guest's message is kept from giving the AI orders), read [how hotel AI agents work](/blog/how-hotel-ai-agents-work).
+
 ### Step 3: choose how much the AI may do
 
 On **Channels** (`/messaging/channels`), each connected account has its own mode:

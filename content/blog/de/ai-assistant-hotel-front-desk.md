@@ -155,9 +155,11 @@ Egal welches Werkzeug Sie nutzen: Das hier bleibt bei einer Person. So setzt Hot
 
 Unbeaufsichtigte Antworten haben außerdem Mengenlimits: 4 pro Stunde, 12 pro Tag und 3 in Folge ohne Antwort des Gastes.
 
+Wie das unter der Haube funktioniert, erklärt [Wie KI-Agenten im Hotel arbeiten](/blog/how-hotel-ai-agents-work): die Vertrauensstufe jedes Agenten, wie eine Nachricht von Booking.com, WhatsApp oder per E-Mail genau einer Buchung zugeordnet wird und warum eine freigegebene Änderung ohne die KI ausgeführt wird.
+
 ## Rollen, Datenschutz und Kosten
 
-**Rollen.** Anfragen des Mitarbeiter-Assistenten gibt der Inhaber unter `/staff` frei. Teamkonten mit Rollen stehen auf der [Assistenten-Seite](/tools/bot/ai-assistant) als „soon“ (demnächst). Sie sind so gedacht, dass etwa ein Rezeptionslogin Preise sehen, aber nicht ändern kann und auch mit einer Karte keine Rückerstattung ausführen darf.
+**Rollen.** Anfragen des Mitarbeiter-Assistenten gibt der Inhaber unter `/staff` frei. Teamkonten mit Rollen gibt es unter **Settings > Team & roles** (Team und Rollen, `/settings/team`): Jede Person meldet sich mit ihrem eigenen Login an, und die KI schlägt nur vor, was die Rolle dieser Person erlaubt. So kann etwa ein Rezeptionslogin Preise sehen, aber nicht ändern und auch mit einer Karte keine Rückerstattung ausführen.
 
 **Datenschutz.** Logins für Little Hotelier, Booking.com und Postfächer werden verschlüsselt gespeichert (AES-256-GCM). Gästenachrichten und Buchungsdetails verarbeitet ein KI-Anbieter, wenn der Assistent sie liest. Der [Auftragsverarbeitungsvertrag](https://dashboard.hotelier.tools/legal/dpa) und die [Datenschutzerklärung](https://dashboard.hotelier.tools/legal/privacy) erklären, was verarbeitet wird.
 

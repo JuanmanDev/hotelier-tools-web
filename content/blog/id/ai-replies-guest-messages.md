@@ -138,6 +138,8 @@ Untuk API resmi Meta, lihat Messaging hub Little Hotelier di [WhatsApp dengan Li
 
 Sebelum apa pun dikirim, ada pemeriksaan yang memblokir balasan berisi referensi reservasi lain, atau nomor panjang apa pun jika pengirimnya belum terverifikasi.
 
+Untuk model keamanan lengkapnya (apa yang boleh dibaca dan diubah setiap agen AI, bagaimana pengirim diverifikasi di setiap channel, dan bagaimana pesan tamu dicegah memberi perintah kepada AI), baca [cara kerja agen AI hotel](/blog/how-hotel-ai-agents-work).
+
 ### Langkah 3: pilih seberapa banyak AI boleh bertindak
 
 Di **Channels** (`/messaging/channels`), setiap akun yang terhubung punya modenya sendiri:

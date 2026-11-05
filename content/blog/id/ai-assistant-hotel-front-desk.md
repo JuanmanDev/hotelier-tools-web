@@ -155,9 +155,11 @@ Apa pun tool yang Anda pakai, serahkan hal-hal ini kepada manusia. Berikut cara 
 
 Balasan tanpa pengawasan juga punya batas volume: 4 per jam, 12 per hari, dan 3 berturut-turut tanpa jawaban dari tamu.
 
+Ingin tahu cara kerjanya di balik layar? [Cara kerja agen AI hotel](/blog/how-hotel-ai-agents-work) menjelaskan tingkat kepercayaan setiap agen, bagaimana pesan dari Booking.com, WhatsApp, atau email dikaitkan dengan satu reservasi, dan mengapa perubahan yang sudah disetujui dijalankan tanpa AI.
+
 ## Peran, privasi, dan biaya
 
-**Peran.** Permintaan dari asisten staf disetujui pemilik di `/staff`. Akun tim dengan peran tercantum "segera hadir" di [halaman asisten](/tools/bot/ai-assistant); fitur itu dirancang agar, misalnya, login front desk bisa melihat harga tetapi tidak bisa mengubahnya, dan tidak bisa menjalankan refund meskipun dengan kartu.
+**Peran.** Permintaan dari asisten staf disetujui pemilik di `/staff`. Akun tim dengan peran sudah tersedia di **Settings > Team & roles** (`/settings/team`): setiap orang masuk dengan login sendiri, dan AI hanya mengusulkan apa yang diizinkan oleh peran orang tersebut. Jadi, misalnya, login front desk bisa melihat harga tetapi tidak bisa mengubahnya, dan tidak bisa menjalankan refund meskipun dengan kartu.
 
 **Privasi.** Login Little Hotelier, Booking.com, dan akun email disimpan terenkripsi (AES-256-GCM). Pesan tamu dan detail reservasi diproses oleh penyedia AI saat asisten membacanya. [Perjanjian pemrosesan data](https://dashboard.hotelier.tools/legal/dpa) dan [pemberitahuan privasi](https://dashboard.hotelier.tools/legal/privacy) menjelaskan apa yang diproses.
 

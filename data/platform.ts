@@ -120,7 +120,7 @@ export const platformSlides: PlatformSlide[] = [
       { id: 'chat', status: 'beta' },
       { id: 'approvals', status: 'beta' },
       { id: 'staff', status: 'alpha' },
-      { id: 'teams', status: 'soon' }
+      { id: 'teams', status: 'beta' }
     ]
   },
   {

@@ -138,6 +138,8 @@ Para la API oficial de Meta, mira el Messaging hub de Little Hotelier en [WhatsA
 
 Antes de que salga nada, una comprobación bloquea la respuesta que contenga la referencia de otra reserva, o cualquier número largo cuando el remitente no está verificado.
 
+Para el modelo de seguridad completo (qué puede leer y cambiar cada agente de IA, cómo se verifica al remitente en cada canal y cómo se evita que el mensaje de un huésped le dé órdenes a la IA), lee [cómo funcionan los agentes de IA de un hotel](/blog/how-hotel-ai-agents-work).
+
 ### Paso 3: elige cuánto puede hacer la IA
 
 En **Canales** (`/messaging/channels`), cada cuenta conectada tiene su propio modo:

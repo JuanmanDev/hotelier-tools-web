@@ -138,6 +138,8 @@ Pour l'API officielle de Meta, voir le Messaging hub de Little Hotelier dans [Wh
 
 Avant tout envoi, un contrôle bloque une réponse qui contient la référence d'une autre réservation, ou un long numéro quel qu'il soit si l'expéditeur n'est pas vérifié.
 
+Pour le modèle de sécurité complet (ce que chaque agent IA peut lire et modifier, comment les expéditeurs sont vérifiés sur chaque canal, et comment on empêche le message d'un client de donner des ordres à l'IA), lisez [comment fonctionnent les agents IA d'un hôtel](/blog/how-hotel-ai-agents-work).
+
 ### Étape 3 : choisissez ce que l'IA a le droit de faire
 
 Sur **Channels** (`/messaging/channels`), chaque compte connecté a son propre mode :

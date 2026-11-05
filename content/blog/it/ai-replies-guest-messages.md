@@ -138,6 +138,8 @@ Per l'API ufficiale di Meta, vedi il Messaging hub di Little Hotelier in [WhatsA
 
 Prima di ogni invio, un controllo blocca una risposta che contiene il riferimento di un'altra prenotazione, o qualsiasi numero lungo quando il mittente non è verificato.
 
+Per il modello di sicurezza completo (cosa può leggere e modificare ogni agente AI, come vengono verificati i mittenti su ogni canale e come si impedisce che il messaggio di un ospite dia ordini all'AI), leggi [come funzionano gli agenti AI per hotel](/blog/how-hotel-ai-agents-work).
+
 ### Passo 3: scegli quanto può fare l'AI
 
 In **Channels** (`/messaging/channels`) ogni account collegato ha una sua modalità:

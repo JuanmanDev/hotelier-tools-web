@@ -138,6 +138,8 @@ Für die offizielle API von Meta lesen Sie über den Messaging hub von Little Ho
 
 Bevor etwas hinausgeht, blockiert eine Prüfung jede Antwort, die die Referenz einer anderen Buchung enthält, oder irgendeine lange Zahl, wenn der Absender nicht verifiziert ist.
 
+Das vollständige Sicherheitsmodell (was jeder KI-Agent lesen und ändern darf, wie Absender auf jedem Kanal verifiziert werden und wie verhindert wird, dass die Nachricht eines Gastes der KI Befehle gibt) lesen Sie in [Wie KI-Agenten im Hotel arbeiten](/blog/how-hotel-ai-agents-work).
+
 ### Schritt 3: Legen Sie fest, wie viel die KI darf
 
 Unter **Channels** (`/messaging/channels`) hat jedes verbundene Konto seinen eigenen Modus:

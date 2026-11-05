@@ -155,9 +155,11 @@ Seja qual for a ferramenta, deixe estas coisas com uma pessoa. Veja como o Hotel
 
 As respostas sem supervisão também têm limites de volume: 4 por hora, 12 por dia e 3 seguidas sem resposta do hóspede.
 
+Quer ver como isto funciona por dentro? [Como funcionam os agentes de IA de um hotel](/blog/how-hotel-ai-agents-work) explica o nível de confiança de cada agente, como uma mensagem do Booking.com, WhatsApp ou e-mail fica associada a uma única reserva e porque uma alteração aprovada é executada sem a IA.
+
 ## Funções, privacidade e custo
 
-**Funções.** Os pedidos do assistente para funcionários são aprovados pelo proprietário em `/staff`. As contas de funcionários com funções aparecem como "em breve" na [página do assistente](/tools/bot/ai-assistant); foram pensadas para que, por exemplo, o login da receção possa ver preços mas não alterá-los, e não possa fazer um reembolso nem com um cartão.
+**Funções.** Os pedidos do assistente para funcionários são aprovados pelo proprietário em `/staff`. As contas de equipa com funções já estão disponíveis em **Settings > Team & roles** (definições > equipa e funções, `/settings/team`): cada pessoa entra com o seu próprio login, e a IA só propõe o que a função dessa pessoa permite, para que, por exemplo, o login da receção possa ver preços mas não alterá-los, e não possa fazer um reembolso nem com um cartão.
 
 **Privacidade.** Os logins do Little Hotelier, do Booking.com e da caixa de correio ficam guardados encriptados (AES-256-GCM). As mensagens dos hóspedes e os dados das reservas são processados por um fornecedor de IA quando o assistente os lê. O [acordo de tratamento de dados](https://dashboard.hotelier.tools/legal/dpa) e o [aviso de privacidade](https://dashboard.hotelier.tools/legal/privacy) explicam o que é processado.
 

@@ -155,9 +155,11 @@ Whatever tool you use, keep these with a person. Here is how Hotelier Tools enfo
 
 Unattended replies also have volume caps: 4 per hour, 12 per day, and 3 in a row with no answer from the guest.
 
+Want to see how this works under the hood? [How hotel AI agents work](/blog/how-hotel-ai-agents-work) explains each agent's trust level, how a message from Booking.com, WhatsApp or email is tied to one booking, and why an approved change runs without the AI.
+
 ## Roles, privacy and cost
 
-**Roles.** Requests from the staff assistant are approved by the owner on `/staff`. Team accounts with roles are listed as "soon" on the [assistant page](/tools/bot/ai-assistant); they are designed so that, for example, a front-desk login can see prices but not change them, and cannot run a refund even with a card.
+**Roles.** Requests from the staff assistant are approved by the owner on `/staff`. Team accounts with roles are available under **Settings > Team & roles** (`/settings/team`): each person signs in with their own login, and the AI only proposes what that person's role allows, so, for example, a front-desk login can see prices but not change them, and cannot run a refund even with a card.
 
 **Privacy.** Little Hotelier, Booking.com and mailbox logins are stored encrypted (AES-256-GCM). Guest messages and booking details are processed by an AI provider when the assistant reads them. The [data processing agreement](https://dashboard.hotelier.tools/legal/dpa) and [privacy notice](https://dashboard.hotelier.tools/legal/privacy) explain what is processed.
 
