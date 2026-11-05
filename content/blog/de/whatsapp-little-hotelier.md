@@ -115,6 +115,8 @@ Wenn Sie die offizielle API brauchen, ist der Messaging hub die richtige Wahl. W
 ::screenshot{src="/images/blog/demo/en/guest-inbox.webp" alt="Gäste-Posteingang von Hotelier Tools mit den Filtern All, WhatsApp, Email und Booking.com, vier WhatsApp- und E-Mail-Unterhaltungen, jeweils mit dem Vermerk draft, und einem gelben Hinweis, dass WhatsApp per Webhook ankommt und die erzeugte URL für das Ereignis message in die WAHA-Sitzung eingefügt werden muss" caption="WhatsApp, E-Mail und Booking.com in einer Liste, jeweils mit einem KI-Entwurf. Kommt nichts an, prüfen Sie die Webhook-URL in Ihrer WAHA-Sitzung." path="/messaging"}
 ::
 
+Das Panel **WhatsApp session** auf derselben Zugangsdaten-Seite zeigt den QR-Code zum Koppeln (scannen Sie ihn auf dem Hoteltelefon unter **Einstellungen > Verknüpfte Geräte**), richtet mit **Connect webhook** den Webhook für Sie ein und kann mit **Import history** frühere Chats bis zum letzten Jahr als Kontext importieren: Nichts Importiertes wird analysiert oder beantwortet. Fotos, Sprachnachrichten und Dokumente erscheinen im Verlauf, Ihre Antworten können Dateien und Sprachnachrichten enthalten, und jede benannte Signatur unter **Signatures** (`/messaging/signatures`) hat ihre eigene WhatsApp-Version. Wie die KI jede Antwort aufbaut, lesen Sie in [KI-Antworten auf Gästenachrichten](/blog/ai-replies-guest-messages).
+
 ### Was die KI auf WhatsApp darf
 
 - **Sie sieht eine Buchung nur, wenn der Absender verifiziert ist.** Auf WhatsApp muss die Nummer mindestens in den letzten 8 Ziffern mit dem Telefon der Reservierung übereinstimmen. Passen zwei Gäste, sieht sie keinen von beiden. Bei Booking.com-Gästen tragen Sie die Telefonnummer in die Little-Hotelier-Reservierung ein, damit der Chat zugeordnet werden kann.

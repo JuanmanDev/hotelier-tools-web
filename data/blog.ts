@@ -70,7 +70,11 @@ export const BLOG_HUB_SLUGS = [
 /** Guides that explain a feature but name another one in `feature:` (frontmatter takes a single slug).
  *  Keyed by feature slug (data/platform.ts); shown after the feature's own guides. */
 export const FEATURE_RELATED_GUIDES: Record<string, string[]> = {
-  automations: ['hotel-front-desk-checklist-automation', 'send-invoice-to-guest-at-checkout', 'hotel-waitlist-sold-out-dates']
+  automations: ['hotel-front-desk-checklist-automation', 'send-invoice-to-guest-at-checkout', 'hotel-waitlist-sold-out-dates', 'expedia-collect-payment-requests', 'ota-bookings-missing-little-hotelier'],
+  invoicing: ['expedia-collect-payment-requests', 'little-hotelier-payment-links'],
+  'ai-assistant': ['ai-replies-guest-messages'],
+  'guest-inbox': ['hotel-email-address'],
+  'api-mcp': ['add-user-little-hotelier']
 }
 
 /** Slug of an article from its content path: /blog/<locale>/<slug> */

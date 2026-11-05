@@ -134,6 +134,8 @@ Rutinitas singkat yang menghindari sebagian besar email tindak lanjut:
 
 Di Spanyol, ini menjadi bahan laporan PPN Anda ([modelo 303](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml)). Jika Anda memakai VeriFactu, Little Hotelier memfinalisasi invoice dengan mengirimkannya sendiri ke AEAT ([pusat bantuan](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)). Hotelier Tools tidak punya fitur VeriFactu sendiri, jadi biarkan langkah itu di Little Hotelier. Di negara mana pun yang mewajibkan e-invoicing, anggap ZIP ini sebagai salinan untuk arsip Anda dan periksa aturannya dengan akuntan Anda.
 
+Akuntan Anda juga akan meminta separuh lainnya: invoice yang dikirim pemasok kepada Anda, seperti laundry, listrik, dan komisi OTA. Halaman **Received invoices** di Hotelier Tools mengumpulkannya dari kotak masuk Anda atau dari alamat invoice privat, menunggu Anda memeriksa satu per satu, lalu mengekspor kuartalnya sebagai ZIP beserta CSV. Lihat [cara mengumpulkan invoice pemasok lewat email](/blog/supplier-invoices-by-email).
+
 Developer juga bisa mengambil PDF invoice satu per satu lewat [REST API Hotelier Tools](/blog/little-hotelier-api). Dan jika akuntan Anda juga menginginkan data reservasi, lihat [cara mengekspor reservasi ke Excel](/blog/export-little-hotelier-reservations-excel).
 
 Panduan terkait: [panduan Little Hotelier](/blog/little-hotelier-tips), [integrasi Little Hotelier](/blog/little-hotelier-integrations).

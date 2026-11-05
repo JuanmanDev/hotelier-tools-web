@@ -105,7 +105,7 @@ Atur sekali di **Settings > Invoices** (`/settings/invoices`): **From the guest'
 
 **Setelah invoice diterbitkan:** edit detailnya di Little Hotelier, lalu gunakan **Invoice is outdated** untuk membuat invoice yang sudah dikoreksi. Jika Anda sudah menandainya sebagai final, klik **Cancel invoice**, lalu **Generate invoice** lagi ([pusat bantuan](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). Di Spanyol dengan VeriFactu, invoice final diubah lewat **Rectify invoice** ([pusat bantuan](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)).
 
-Tautan pribadi tempat tamu mengisi data perusahaan mereka sendiri sedang dikembangkan, dan belum tersedia.
+Tamu juga bisa mengetik data perusahaan mereka sendiri: guest invoice links dari Hotelier Tools memberi setiap tamu halaman pribadi untuk menambahkan perusahaan, nomor pajak, dan alamat, serta meminta invoice saat check-out. Lihat [cara membuat invoice atas nama perusahaan, bukan tamu](/blog/invoice-in-company-name).
 
 Jika permintaan invoice masuk lewat pesan Booking.com, lihat [cara mengelola pesan tamu Booking.com](/blog/booking-com-guest-messages).
 

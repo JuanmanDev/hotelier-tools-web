@@ -90,6 +90,8 @@ faq:
 - **Allowlist ของ Booking.com** Booking.com บล็อกอีเมลและลิงก์จากระบบที่คุณไม่ได้อนุมัติ เพิ่มโดเมนของ Little Hotelier ที่ **Property > Messaging preferences > Security settings** ใน Extranet ไม่เช่นนั้นคำขอจะไม่ถึงแขก ([วิธีทำ](https://helpcentre.littlehotelier.com/en/articles/12046627-add-little-hotelier-to-your-booking-com-e-mail-allowlist))
 - **เบอร์โทรศัพท์** ตั้งแต่ 28 กันยายน 2026 Booking.com ไม่ส่งเบอร์โทรของแขกให้ channel manager อีกต่อไป การจองใหม่จาก Booking.com จึงเข้ามาใน Little Hotelier โดยไม่มีเบอร์ ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)) คัดลอกจาก Extranet ด้วย **Show phone number** ในรายละเอียดการจอง
 
+ถ้าต้องการส่งลิงก์นั้นโดยไม่ต้องเปิด Little Hotelier หรือให้ระบบเตือนแขกที่ยังไม่จ่ายโดยอัตโนมัติในวันที่คุณเลือก ดู[ลิงก์ชำระเงินและการแจ้งเตือนใน Little Hotelier](/blog/little-hotelier-payment-links)
+
 สคริปต์ฟรี [Update Payment Link Button](/tools/ui/update-payment-link-button) ช่วยให้ปุ่มคำขอชำระเงินมีป้ายชื่อที่ชัดเจนขึ้น และเพิ่มเบอร์โทรจากการจองลงในคำขอ
 
 ::screenshot{src="/images/scripts/update-payment-link-button/to.png" alt="สรุปการจองใน Little Hotelier (หน้าจอภาษาสเปน) ที่ปุ่มคำขอชำระเงินเปลี่ยนเป็นข้อความ Cobrar con tarjeta por correo electronico (Email)" caption="สคริปต์ Update Payment Link Button เปลี่ยนชื่อปุ่มคำขอชำระเงิน (Generate Payment Link ในภาษาอังกฤษ) และส่งเบอร์โทรของแขกไปด้วย" width="618" height="484"}
@@ -108,6 +110,8 @@ faq:
 | ระบบล็อกเพื่อความปลอดภัย | ตัดบัตรไม่ผ่านหลายครั้งเกินไป ลองใหม่อีกครั้งใน 24-48 ชั่วโมง |
 
 อย่า pre-authorize บัตรเสมือน ถ้าเผลอทำไปแล้ว ให้ปิดยอด (settle) ด้วยรหัสอนุมัติ (authorization code) หรือยกเลิกการ pre-authorize แล้วตัดเงินใหม่ ถ้ายังถูกปฏิเสธ ให้ถามความหมายของรหัสปฏิเสธจากผู้ให้บริการชำระเงิน แล้วส่งข้อความหา Booking.com ผ่านกล่องข้อความใน Extranet
+
+Expedia ทำงานต่างออกไป กับ Expedia Collect แขกจ่ายเงินล่วงหน้าให้ Expedia และคุณจะได้เงินก็ต่อเมื่อรูดบัตรเสมือนของ Expedia หรือส่งคำขอชำระเงินใน Partner Central ภายใน 365 วันหลังเช็คเอาท์ ถ้าพลาด เงินจะค้างอยู่กับ Expedia ดู[วิธีรับเงินจากการจอง Expedia Collect](/blog/expedia-collect-payment-requests)
 
 ## วิธีแจ้ง no-show และเรียกเก็บ (หรือยกเว้น) ค่า no-show
 

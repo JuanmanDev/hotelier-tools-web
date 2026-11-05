@@ -151,6 +151,8 @@ Hotelier Tools is an independent dashboard that works next to Little Hotelier, u
 
 **Automated checks** read upcoming reservations and flag what you would otherwise find at the desk: no room assigned, missing ID document or address, an unpaid balance, or a guest on your do-not-rebook list. Problems land on one Issues page, and each run sends a report email. See [the daily front-desk checklist](/blog/hotel-front-desk-checklist-automation).
 
+Two more pages save time every morning. **Daily lists** print the day's arrivals, departures, in-house guests and housekeeping list in one click ([printable daily lists](/blog/little-hotelier-daily-lists)). The **Calendar** shows each room type's lowest rate above its rooms, and **New reservation** books a priced stay straight into Little Hotelier ([a faster reservation calendar](/blog/little-hotelier-reservation-calendar)).
+
 ::demo-cta{path="/automated-checks/issues"}
 ::
 

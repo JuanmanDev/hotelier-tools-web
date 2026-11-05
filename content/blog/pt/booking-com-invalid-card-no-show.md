@@ -90,6 +90,8 @@ Duas coisas a verificar:
 - **A lista de permitidos do Booking.com.** O Booking.com bloqueia e-mails e links de sistemas que você não aprovou. Adicione os domínios do Little Hotelier em **Property > Messaging preferences > Security settings** na Extranet, ou o pedido nunca chega ao hóspede ([como fazer](https://helpcentre.littlehotelier.com/en/articles/12046627-add-little-hotelier-to-your-booking-com-e-mail-allowlist)).
 - **O número de telefone.** Desde 28 de setembro de 2026, o Booking.com deixou de enviar os telefones dos hóspedes aos channel managers, por isso as novas reservas do Booking.com chegam ao Little Hotelier sem ele ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Copie-o da Extranet com **Show phone number** nos detalhes da reserva.
 
+Para enviar esse link sem abrir o Little Hotelier, ou para lembrar automaticamente os hóspedes que ainda não pagaram nos dias que escolher, veja [links de pagamento e lembretes do Little Hotelier](/blog/little-hotelier-payment-links).
+
 O script gratuito [Update Payment Link Button](/tools/ui/update-payment-link-button) dá ao botão de pedido de pagamento um nome mais claro e acrescenta ao pedido o telefone da reserva:
 
 ::screenshot{src="/images/scripts/update-payment-link-button/to.png" alt="Resumo de reserva do Little Hotelier (interface em espanhol) em que o botão de pedido de pagamento passa a dizer Cobrar con tarjeta por correo electronico (Email)" caption="O script Update Payment Link Button muda o nome do botão de pedido de pagamento (Generate Payment Link, em inglês) e passa o telefone do hóspede." width="618" height="484"}
@@ -108,6 +110,8 @@ Um cartão de crédito virtual é um Mastercard digital temporário que o Bookin
 | Bloqueio de segurança | Demasiadas tentativas falhadas. Tente novamente dentro de 24 a 48 horas. |
 
 Nunca pré-autorize um cartão virtual. Se o fez, liquide o valor com o código de autorização ou cancele a autorização e cobre de novo. Continua recusado? Pergunte ao seu prestador de pagamentos pelo código de recusa e depois escreva ao Booking.com a partir da caixa de entrada da Extranet.
+
+Na Expedia funciona de outra forma. Com o Expedia Collect, o hóspede paga antecipadamente à Expedia, e você só recebe quando cobra o cartão virtual da Expedia ou envia um pedido de pagamento no Partner Central até 365 dias após o check-out. Se não o fizer, o dinheiro fica com a Expedia. Veja [como receber as reservas Expedia Collect](/blog/expedia-collect-payment-requests).
 
 ## Como marcar um no-show e cobrar (ou dispensar) a taxa
 

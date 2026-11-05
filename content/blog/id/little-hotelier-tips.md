@@ -151,6 +151,8 @@ Hotelier Tools adalah dashboard independen yang bekerja di samping Little Hoteli
 
 **Automated checks** membaca reservasi mendatang dan menandai hal yang biasanya baru Anda temukan di front desk: belum ada kamar yang dialokasikan, dokumen ID atau alamat belum ada, saldo belum dibayar, atau tamu yang ada di daftar do-not-rebook Anda. Masalah masuk ke satu halaman Issues, dan setiap eksekusi mengirim email laporan. Lihat [checklist harian front desk](/blog/hotel-front-desk-checklist-automation).
 
+Dua halaman lagi menghemat waktu setiap pagi. **Daily lists** mencetak daftar kedatangan, keberangkatan, tamu yang menginap, dan housekeeping hari itu dengan satu klik ([daftar harian siap cetak](/blog/little-hotelier-daily-lists)). **Calendar** menampilkan tarif terendah setiap tipe kamar di atas kamar-kamarnya, dan **New reservation** memesan masa inap yang sudah dihitung harganya langsung ke Little Hotelier ([kalender reservasi yang lebih cepat](/blog/little-hotelier-reservation-calendar)).
+
 ::demo-cta{path="/automated-checks/issues"}
 ::
 

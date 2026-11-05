@@ -134,6 +134,8 @@ Eine kurze Routine, die die meisten Rückfragen vermeidet:
 
 In Spanien fließt das in Ihre Umsatzsteuererklärung ein ([modelo 303](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml)). Nutzen Sie VeriFactu, schließt Little Hotelier Rechnungen ab, indem es sie selbst an die AEAT übermittelt ([Hilfecenter](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)). Hotelier Tools hat keine eigene VeriFactu-Funktion; erledigen Sie diesen Schritt also in Little Hotelier. In jedem Land mit Pflicht zur E-Rechnung behandeln Sie das ZIP als Kopien für Ihre Unterlagen und klären die Regeln mit Ihrem Steuerberater.
 
+Ihr Steuerberater wird auch nach der anderen Hälfte fragen: den Rechnungen, die Ihnen Ihre Lieferanten geschickt haben, etwa für Wäscherei, Strom und OTA-Provision. Die Seite **Received invoices** (Eingangsrechnungen) von Hotelier Tools sammelt sie aus Ihrem Postfach oder über eine private Rechnungsadresse, wartet, bis Sie jede geprüft haben, und exportiert das Quartal ebenfalls als ZIP mit CSV. Siehe [Lieferantenrechnungen per E-Mail sammeln](/blog/supplier-invoices-by-email).
+
 Entwickler können Rechnungs-PDFs auch einzeln über die [REST-API von Hotelier Tools](/blog/little-hotelier-api) abrufen. Und wenn Ihr Steuerberater auch Reservierungsdaten möchte, lesen Sie [Reservierungen nach Excel exportieren](/blog/export-little-hotelier-reservations-excel).
 
 Siehe auch: [der Little-Hotelier-Leitfaden](/blog/little-hotelier-tips), [Little-Hotelier-Integrationen](/blog/little-hotelier-integrations).

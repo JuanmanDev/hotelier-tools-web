@@ -90,6 +90,8 @@ Two things to check:
 - **Booking.com's allowlist.** Booking.com blocks emails and links from systems you haven't approved. Add Little Hotelier's domains under **Property > Messaging preferences > Security settings** in the Extranet, or the request never reaches the guest ([how to](https://helpcentre.littlehotelier.com/en/articles/12046627-add-little-hotelier-to-your-booking-com-e-mail-allowlist)).
 - **The phone number.** Since 28 September 2026, Booking.com no longer sends guest phone numbers to channel managers, so new Booking.com bookings reach Little Hotelier without one ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Copy it from the Extranet with **Show phone number** in the reservation details.
 
+To send that link without opening Little Hotelier, or to remind unpaid guests automatically on the days you choose, see [Little Hotelier payment links and reminders](/blog/little-hotelier-payment-links).
+
 The free [Update Payment Link Button](/tools/ui/update-payment-link-button) script gives the payment request button a clearer label and adds the phone number from the reservation to the request:
 
 ::screenshot{src="/images/scripts/update-payment-link-button/to.png" alt="Little Hotelier reservation summary (Spanish interface) where the payment request button now reads Cobrar con tarjeta por correo electronico (Email)" caption="The Update Payment Link Button script renames the payment request button (Generate Payment Link in English) and passes the guest's phone number." width="618" height="484"}
@@ -107,7 +109,9 @@ A virtual credit card is a temporary digital Mastercard that Booking.com uses to
 | "Invalid merchant" | Your terminal must be registered as an accommodation provider. Call your payment provider. |
 | Security lock | Too many failed attempts. Try again in 24–48 hours. |
 
-Never pre-authorize a virtual card. If you did, settle the amount with the authorisation code, or cancel the authorisation and charge it again. Still declined? Ask your payment provider about the decline code, then write to Booking.com from the Extranet inbox.
+Never pre-authorise a virtual card. If you did, settle the amount with the authorisation code, or cancel the authorisation and charge it again. Still declined? Ask your payment provider about the decline code, then write to Booking.com from the Extranet inbox.
+
+Expedia works differently. With Expedia Collect, the guest prepays Expedia, and you're only paid when you charge Expedia's virtual card or send a payment request in Partner Central within 365 days of check-out. Miss it and the money stays with Expedia. See [how to get paid for Expedia Collect bookings](/blog/expedia-collect-payment-requests).
 
 ## How to mark a no-show and charge (or waive) the fee
 

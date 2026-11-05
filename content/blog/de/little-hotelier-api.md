@@ -73,6 +73,8 @@ So funktioniert es, einfach erklärt:
 - Hotelier Tools nutzt dann dieselben Web-Endpunkte wie die Little-Hotelier-Web-App. Es kann lesen und tun, was dieser Login kann, nicht mehr.
 - Ihre Skripte rufen Hotelier Tools mit einem API-Schlüssel auf, und Hotelier Tools spricht mit Little Hotelier.
 
+Statt Ihres persönlichen Logins können Sie Hotelier Tools einen eigenen Little-Hotelier-Nutzer geben, mit eigenem Passwort und eigener Zwei-Faktor-Verifizierung, den Sie jederzeit deaktivieren können, ohne den Zugang anderer anzutasten. Siehe [einen Nutzer in Little Hotelier hinzufügen](/blog/add-user-little-hotelier).
+
 ::callout{type="note" title="Unabhängig, nicht offiziell"}
 Hotelier Tools steht in keiner Verbindung zu SiteMinder oder Little Hotelier und wird von ihnen weder unterstützt noch empfohlen. Es ist keine offizielle SiteMinder-API und verbindet sich mit dem eigenen Little-Hotelier-Login Ihres Betriebs. Das Dashboard ist für jedes Hotel kostenlos, bis die Abrechnung am 10. Januar 2027 beginnt.
 ::

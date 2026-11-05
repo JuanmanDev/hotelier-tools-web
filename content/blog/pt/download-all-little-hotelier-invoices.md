@@ -134,6 +134,8 @@ Uma rotina curta que evita a maior parte dos e-mails com perguntas:
 
 Em Espanha, isto serve de base à declaração de IVA ([modelo 303](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml)). Se usa o VeriFactu, é o próprio Little Hotelier que finaliza as faturas ao enviá-las à AEAT ([centro de ajuda](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)). O Hotelier Tools não tem uma funcionalidade VeriFactu própria, por isso mantenha esse passo no Little Hotelier. Em qualquer país com faturação eletrónica obrigatória, trate o ZIP como cópias para o seu arquivo e confirme as regras com o seu contabilista.
 
+O seu contabilista também vai pedir a outra metade: as faturas que os seus fornecedores lhe enviaram, como a lavandaria, a eletricidade e a comissão das OTA. A página **Received invoices** (faturas recebidas) do Hotelier Tools recolhe-as da sua caixa de correio ou de um endereço de faturas privado, espera que você reveja cada uma e exporta o trimestre num ZIP, também com um CSV. Veja [como receber as faturas de fornecedores por e-mail](/blog/supplier-invoices-by-email).
+
 Os programadores / desenvolvedores também podem obter os PDF das faturas um a um através da [API REST do Hotelier Tools](/blog/little-hotelier-api). E se o seu contabilista também quiser os dados das reservas, veja [como exportar reservas para Excel](/blog/export-little-hotelier-reservations-excel).
 
 Guias relacionados: [o guia do Little Hotelier](/blog/little-hotelier-tips), [integrações do Little Hotelier](/blog/little-hotelier-integrations).

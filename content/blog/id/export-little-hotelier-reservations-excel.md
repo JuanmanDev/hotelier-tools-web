@@ -86,6 +86,8 @@ Sumber: [Getting started with Reports](https://help-platform.littlehotelier.com/
 
 Tips: ekspor pendapatan **Summary** punya kolom "Rate per night", satu baris per malam. Ini cara tercepat untuk melihat harga jual setiap malam dari masa inap yang panjang.
 
+Butuh lembar cetak untuk pagi ini, bukan spreadsheet? Laporan **Check-in** dan **Housekeeping** bisa langsung dicetak, dan [daftar kedatangan, keberangkatan, dan housekeeping siap cetak](/blog/little-hotelier-daily-lists) menjelaskan isi daftar pagi yang baik serta cara mencetak keempatnya dengan satu klik.
+
 ## Cara membuka CSV di Excel tanpa huruf beraksen yang rusak
 
 Jika nama seperti "José" berubah menjadi "JosÃ©", Excel salah menebak encoding. Impor file itu, jangan klik dua kali:

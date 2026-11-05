@@ -117,6 +117,8 @@ Cada execução envia **um e-mail de relatório por tarefa**, no idioma que defi
 - **Param em segurança.** Se a sua palavra-passe / senha do Little Hotelier expirar, as tarefas agendadas ficam em pausa sozinhas em vez de tentarem de novo, o que protege a sua conta de um bloqueio. O dashboard mostra "Automated jobs are paused" até você guardar a palavra-passe nova em **Credentials** ou clicar em **Check now & resume**.
 - **Três verificações ficam manuais.** Cartões, número de hóspedes e horas de chegada não são verificados automaticamente, por isso mantenha-os na sua lista da manhã.
 
+Há dois problemas que ficam fora da lista de oito pontos, porque começam antes de a reserva chegar até você. Uma reserva do Booking.com ou da Expedia que nunca chegou ao Little Hotelier deixa o quarto à venda: veja [o que fazer quando falta uma reserva de uma OTA](/blog/ota-bookings-missing-little-hotelier). E para um saldo por pagar, um link de pagamento com lembretes agendados poupa o telefonema: veja [links de pagamento e lembretes do Little Hotelier](/blog/little-hotelier-payment-links).
+
 Cada tarefa está listada em **Cron Jobs** (`/cron`) e cada execução em **Run History** (`/cron-logs`). A funcionalidade está em beta. Mais sobre agendamento na [página Automations](/tools/bot/automations), e a funcionalidade completa em [Automated checks](/tools/bot/automated-checks).
 
 Guias relacionados: [o guia do Little Hotelier](/blog/little-hotelier-tips), [o assistente de IA para a receção](/blog/ai-assistant-hotel-front-desk), [uma lista de espera para datas esgotadas](/blog/hotel-waitlist-sold-out-dates).

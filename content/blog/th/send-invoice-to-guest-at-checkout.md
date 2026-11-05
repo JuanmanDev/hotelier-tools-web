@@ -107,7 +107,7 @@ Hotelier Tools ไม่ได้มีส่วนเกี่ยวข้อ�
 
 **หลังออกใบไปแล้ว:** แก้ข้อมูลใน Little Hotelier แล้วใช้ **Invoice is outdated** เพื่อสร้างใบแจ้งหนี้ฉบับแก้ไข ถ้าคุณทำเครื่องหมายเป็น final ไปแล้ว ให้คลิก **Cancel invoice** แล้วกด **Generate invoice** อีกครั้ง ([ศูนย์ช่วยเหลือ](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)) ในสเปนที่ใช้ VeriFactu ใบแจ้งหนี้ที่ finalise แล้วต้องแก้ผ่าน **Rectify invoice** ([ศูนย์ช่วยเหลือ](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu))
 
-ลิงก์ส่วนตัวสำหรับให้แขกกรอกข้อมูลบริษัทเองกำลังอยู่ระหว่างพัฒนา และยังไม่เปิดให้ใช้งาน
+แขกยังพิมพ์ข้อมูลบริษัทเองได้ด้วย: ลิงก์ใบแจ้งหนี้สำหรับแขกของ Hotelier Tools ให้แขกแต่ละคนมีหน้าส่วนตัวสำหรับเพิ่มชื่อบริษัท เลขประจำตัวผู้เสียภาษี และที่อยู่ และขอใบแจ้งหนี้ตอนเช็คเอาท์ ดู[วิธีออกใบแจ้งหนี้ในนามบริษัทแทนแขก](/blog/invoice-in-company-name)
 
 ถ้าแขกขอใบแจ้งหนี้ผ่านข้อความของ Booking.com ดู[วิธีจัดการข้อความแขกจาก Booking.com](/blog/booking-com-guest-messages)
 

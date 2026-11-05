@@ -105,7 +105,7 @@ Set it once in **Settings > Invoices** (`/settings/invoices`): **From the guest'
 
 **After it was issued:** edit the details in Little Hotelier, then use **Invoice is outdated** to generate a corrected invoice. If you had already marked it as final, click **Cancel invoice**, then **Generate invoice** again ([help centre](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). In Spain with VeriFactu, a finalized invoice is changed through **Rectify invoice** ([help centre](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)).
 
-A private link where guests fill in their own company details is in development, and not available yet.
+Guests can also type their own company details: Hotelier Tools' guest invoice links give each guest a private page to add the company, tax ID and address, and to ask for the invoice at checkout. See [how to invoice a company instead of the guest](/blog/invoice-in-company-name).
 
 If invoice requests reach you through Booking.com messages, see [how to manage Booking.com guest messages](/blog/booking-com-guest-messages).
 

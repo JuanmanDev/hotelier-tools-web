@@ -8,7 +8,7 @@ export default defineNuxtPlugin((nuxtApp) => {
           const target = entry.target as HTMLElement;
           const dataStr = target.getAttribute('data-umami-view');
           
-          let trackData = { section_name: 'unknown_element' };
+          let trackData: Record<string, string | number | boolean> = { section_name: 'unknown_element' };
           if (dataStr) {
             try {
               const parsed = JSON.parse(dataStr);
@@ -19,9 +19,8 @@ export default defineNuxtPlugin((nuxtApp) => {
             }
           }
           
-          if (typeof umTrackEvent === 'function') {
-            umTrackEvent('section_view', trackData).catch(() => {});
-          }
+          const ctx = pageContext(window.location.pathname);
+          trackEvent('section_view', { ...trackData, page: ctx.medium, slug: ctx.campaign, locale: ctx.locale });
           
           if (observer) observer.unobserve(target);
         }

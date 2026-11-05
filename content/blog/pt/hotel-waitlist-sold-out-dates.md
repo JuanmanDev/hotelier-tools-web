@@ -104,6 +104,8 @@ O que deve saber:
 
 Na época alta, verifique com mais frequência do que uma vez por noite: com uma verificação noturna, um quarto que fica livre às 9:00 só é oferecido à 01:00 e pode já não estar disponível.
 
+Nem todos os pedidos são para noites esgotadas. Um hóspede pode pedir datas a que ainda não deu preço, ou uma agência pode querer mais quartos do que os que tem. A mesma fila trata os dois casos: as noites fechadas contam como não reserváveis até as abrir, e uma correspondência parcial só chega a você. Veja [como manter uma fila de pedidos de disponibilidade](/blog/hotel-availability-requests-queue).
+
 ### Como a lista de espera afeta os seus preços
 
 Cada grupo à espera de uma noite sobe em 3% a recomendação de preço dessa noite, até 12% por noite, na tarifa dinâmica do Hotelier Tools (alpha). Uma lista de espera cheia é um sinal de procura, e a recomendação reflete-o ([tarifa dinâmica para hotéis pequenos](/blog/dynamic-pricing-little-hotelier)).

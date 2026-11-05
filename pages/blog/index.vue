@@ -115,6 +115,18 @@ const visible = computed(() => {
 
 setSEO('blog', { og: { eyebrow: t('nav.blog') } })
 
+// What people look for in the guides, and whether we have it: searches with no result are the next guides to write
+let searchTimer: ReturnType<typeof setTimeout> | undefined
+watch([query, active], ([q, cat]) => {
+  clearTimeout(searchTimer)
+  const text = q.trim().toLocaleLowerCase(locale.value).slice(0, 60)
+  if (!text && !cat) return
+  searchTimer = setTimeout(() => {
+    trackEvent(text ? 'blog_search' : 'blog_filter', { query: text, category: cat || 'all', results: visible.value.length, locale: locale.value, ...(text && !visible.value.length ? { no_results: true } : {}) })
+  }, 1200)
+})
+onBeforeUnmount(() => clearTimeout(searchTimer))
+
 // The list of guides, so search engines see every article from the index
 const baseUrl = runtimeConfig.public.baseUrl || 'https://hotelier.tools'
 useHead({

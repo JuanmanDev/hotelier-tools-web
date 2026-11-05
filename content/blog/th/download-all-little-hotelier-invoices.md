@@ -134,6 +134,8 @@ Hotelier Tools ไม่ได้มีส่วนเกี่ยวข้อ�
 
 ในสเปน ข้อมูลนี้ใช้ยื่นแบบภาษีมูลค่าเพิ่ม ([modelo 303](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml)) ถ้าคุณใช้ VeriFactu ตัว Little Hotelier จะ finalise ใบแจ้งหนี้ด้วยการส่งไปยัง AEAT เอง ([ศูนย์ช่วยเหลือ](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)) Hotelier Tools ไม่มีฟีเจอร์ VeriFactu ของตัวเอง จึงควรทำขั้นตอนนั้นใน Little Hotelier ส่วนในประเทศที่บังคับใช้ใบแจ้งหนี้อิเล็กทรอนิกส์ (e-invoicing) ให้ถือว่า ZIP เป็นสำเนาเก็บไว้เป็นหลักฐาน และตรวจสอบกฎกับนักบัญชีของคุณ
 
+นักบัญชีจะขออีกครึ่งหนึ่งด้วย: ใบแจ้งหนี้ที่ซัพพลายเออร์ส่งมาให้คุณ เช่น ค่าซักรีด ค่าไฟ และค่าคอมมิชชัน OTA หน้า **Received invoices** (ใบแจ้งหนี้ที่ได้รับ) ของ Hotelier Tools รวบรวมใบเหล่านี้จากกล่องอีเมลของคุณหรือจากที่อยู่ใบแจ้งหนี้ส่วนตัว รอให้คุณตรวจทีละใบ และส่งออกทั้งไตรมาสเป็น ZIP พร้อม CSV ด้วย ดู[วิธีรวบรวมใบแจ้งหนี้ซัพพลายเออร์ทางอีเมล](/blog/supplier-invoices-by-email)
+
 นักพัฒนายังดึง PDF ใบแจ้งหนี้ได้ทีละใบผ่าน [Hotelier Tools REST API](/blog/little-hotelier-api) ได้ และถ้านักบัญชีอยากได้ข้อมูลการจองด้วย ดู [วิธีส่งออกการจองเป็น Excel](/blog/export-little-hotelier-reservations-excel)
 
 อ่านเพิ่มเติม: [คู่มือ Little Hotelier](/blog/little-hotelier-tips), [การเชื่อมต่อของ Little Hotelier](/blog/little-hotelier-integrations)

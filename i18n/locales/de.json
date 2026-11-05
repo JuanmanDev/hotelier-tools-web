@@ -1316,6 +1316,18 @@
           "language": {
             "name": "Rechnungssprache",
             "text": "Rechnungen richten sich nach dem Land des Gastes oder nutzen immer die Sprache Ihrer Wahl."
+          },
+          "received": {
+            "name": "Lieferantenrechnungen",
+            "text": "Rechnungen aus E-Mails, Uploads und E-Rechnungen: gelesen, auf Duplikate und IBAN-Änderungen geprüft, pro Quartal exportiert."
+          },
+          "issuers": {
+            "name": "Rechnung auf einen anderen Namen",
+            "text": "Stellen Sie die Rechnung eines Aufenthalts auf eine Firma oder Agentur statt auf den Gast aus."
+          },
+          "guest_links": {
+            "name": "Rechnungslinks für Gäste",
+            "text": "Jeder Gast bekommt einen Link, um seine Rechnung mit eigenen Rechnungsdaten anzufordern."
           }
         }
       },
@@ -1339,6 +1351,18 @@
           "emails": {
             "name": "Berichte per E-Mail",
             "text": "Eine übersichtliche Zusammenfassung in Ihrem Posteingang, gut lesbar auf jedem Smartphone."
+          },
+          "expedia_collect": {
+            "name": "Expedia-Collect-Zahlungen",
+            "text": "Der Zahlungsstatus jedes Aufenthalts und automatische Zahlungsanforderungen an Expedia nach Zeitplan."
+          },
+          "ota_gaps": {
+            "name": "Fehlende OTA-Buchungen",
+            "text": "Eine Warnung, wenn eine Booking.com- oder Expedia-Buchung nie in Little Hotelier angekommen ist."
+          },
+          "payments": {
+            "name": "Zahlungslinks und Erinnerungen",
+            "text": "SiteMinder-Pay-Links und Erinnerungen, die bei vom Kanal bereits kassierten Aufenthalten entfallen."
           }
         }
       },
@@ -1370,6 +1394,10 @@
           "stop_sell": {
             "name": "Verkaufsstopp in SiteMinder",
             "text": "Öffnen oder sperren Sie Zimmer pro Nacht direkt in derselben Ansicht."
+          },
+          "promo_codes": {
+            "name": "Promo-Codes",
+            "text": "Promo-Codes Ihrer Buchungsmaschine im Dashboard, per API oder mit Ihrem KI-Assistenten anlegen und ändern."
           }
         }
       },
@@ -1405,6 +1433,14 @@
           "safety": {
             "name": "Sicher von Grund auf",
             "text": "Der Assistent spricht nur über die Buchung des verifizierten Gastes und ändert nie etwas ohne Sie."
+          },
+          "expedia": {
+            "name": "Expedia-Nachrichten",
+            "text": "Expedia-Partner-Central-Unterhaltungen neben WhatsApp, E-Mail und Booking.com, mit der Buchung verknüpft."
+          },
+          "signatures": {
+            "name": "Signaturen und Gedächtnis",
+            "text": "Benannte Signaturen pro Kanal und Antworten, die aus dem lernen, was Ihr Team wirklich gesendet hat."
           }
         }
       },
@@ -1531,6 +1567,18 @@
           "secure": {
             "name": "Sicherer Zugang",
             "text": "Anmeldung mit Passkey, und Ihre Passwörter werden verschlüsselt gespeichert."
+          },
+          "daily_lists": {
+            "name": "Tageslisten",
+            "text": "Anreisen, Abreisen, Hausgäste und Housekeeping, jeden Morgen druckfertig."
+          },
+          "reservations": {
+            "name": "Belegungsplan und neue Buchungen",
+            "text": "Ein schneller Belegungsplan und ein Buchungsformular, das Ihre Web-, Promo- und Booking.com-Preise vergleicht."
+          },
+          "hotel_mail": {
+            "name": "E-Mail-Adressen des Hotels",
+            "text": "Adressen nur für den Empfang: Lieferantenrechnungen kommen an, ohne ein Postfach-Passwort zu teilen."
           }
         }
       }
@@ -1748,7 +1796,7 @@
       },
       "guests": {
         "name": "Gästenachrichten",
-        "description": "WhatsApp, E-Mail und Booking.com an einem Ort, mit versandfertigen Antworten."
+        "description": "WhatsApp, E-Mail, Booking.com und Expedia an einem Ort, mit versandfertigen Antworten."
       },
       "compliance": {
         "name": "Berichte und Pflichten",
@@ -1758,7 +1806,10 @@
         "name": "Tipps und Tricks",
         "description": "Kleine Änderungen, die Little Hotelier im Alltag schneller machen."
       }
-    }
+    },
+    "kind": "Leitfaden",
+    "written_by": "Geschrieben von",
+    "reading_time_label": "Lesezeit"
   },
   "instructions": {
     "hero": {

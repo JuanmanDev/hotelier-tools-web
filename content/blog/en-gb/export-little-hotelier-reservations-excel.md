@@ -86,6 +86,8 @@ Sources: [Getting started with Reports](https://help-platform.littlehotelier.com
 
 Tip: the **Summary** revenue export has a "Rate per night" column, one row per night. It is the quickest way to see what each night of a long stay was sold at.
 
+Need a printed sheet for this morning rather than a spreadsheet? The **Check-in** and **Housekeeping** reports print directly, and [printable arrivals, departures and housekeeping lists](/blog/little-hotelier-daily-lists) shows what a good morning list contains and a one-click way to print all four.
+
 ## How to open the CSV in Excel without broken accents
 
 If names like "José" turn into "JosÃ©", Excel guessed the wrong encoding. Import the file instead of double-clicking it:

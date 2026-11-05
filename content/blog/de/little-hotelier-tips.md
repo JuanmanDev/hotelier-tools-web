@@ -151,6 +151,8 @@ Hotelier Tools ist ein unabhängiges Dashboard, das neben Little Hotelier arbeit
 
 **Automated checks** lesen kommende Reservierungen und markieren, was Sie sonst erst an der Rezeption bemerken würden: kein zugewiesenes Zimmer, fehlendes Ausweisdokument oder fehlende Adresse, ein offener Saldo oder ein Gast auf Ihrer Do-not-rebook-Liste. Probleme landen gesammelt auf der Seite Issues, und nach jedem Lauf kommt ein Bericht per E-Mail. Siehe [die tägliche Rezeptions-Checkliste](/blog/hotel-front-desk-checklist-automation).
 
+Zwei weitere Seiten sparen jeden Morgen Zeit. Die **Daily lists** (Tageslisten) drucken die Anreisen, Abreisen, Hausgäste und die Housekeeping-Liste des Tages mit einem Klick ([druckbare Tageslisten](/blog/little-hotelier-daily-lists)). Der **Calendar** (Kalender) zeigt die niedrigste Rate jedes Zimmertyps über seinen Zimmern, und **New reservation** (Neue Reservierung) bucht einen berechneten Aufenthalt direkt in Little Hotelier ([ein schnellerer Reservierungskalender](/blog/little-hotelier-reservation-calendar)).
+
 ::demo-cta{path="/automated-checks/issues"}
 ::
 

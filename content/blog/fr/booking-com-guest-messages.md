@@ -3,6 +3,7 @@ title: "Messagerie Booking.com : gérer les messages clients sans passer la jou
 seoTitle: "Messagerie Booking.com : gérer les messages sans l'extranet"
 description: "Messagerie Booking.com : Pulse, modèles, messages programmés, réponses automatiques, faux messages à repérer, et une boîte unique avec WhatsApp et e-mail."
 date: 2026-10-03
+updated: 2026-11-05
 category: guests
 tags: [booking.com, guest messages, inbox, templates, little hotelier]
 keywords: [messagerie booking, messagerie booking ne fonctionne pas, message booking whatsapp, messages programmés booking, modèle de message booking, réponses automatiques booking, faux messages booking]
@@ -116,6 +117,8 @@ Protégez aussi vos clients :
 - **Sachez où se trouvent les numéros de téléphone.** Depuis le 28 septembre 2026, Booking.com n'envoie plus les numéros de téléphone des clients aux channel managers ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Utilisez **Show phone number** dans l'Extranet ou dans Pulse.
 - **Indiquez aux clients comment vous leur demanderez un paiement**, comme dans la dernière ligne du modèle ci-dessus.
 
+Les faux e-mails des OTA ne sont qu'une des ruses. Les remboursements de trop-perçu, les « clients » qui envoient des documents ou une carte par lien, et les factures de fournisseurs avec de nouvelles coordonnées bancaires sont traités dans [comment repérer et bloquer les messages frauduleux à l'hôtel](/blog/hotel-scam-messages).
+
 ## La méthode rapide : Booking.com, WhatsApp et e-mail dans une seule boîte
 
 L'**Inbox** de Hotelier Tools (`/messaging`, alpha) réunit les messages Booking.com et les questions Guest Q&A avec votre WhatsApp et vos e-mails, affiche la réservation à côté de chaque conversation et propose une réponse rédigée par l'IA, que vous vérifiez.
@@ -125,12 +128,14 @@ L'**Inbox** de Hotelier Tools (`/messaging`, alpha) réunit les messages Booking
 3. Ouvrez **Inbox** et filtrez par **Booking.com**. Une conversation Booking.com est liée automatiquement à sa réservation.
 4. Lisez le brouillon et le plan de l'IA, modifiez-les, ou demandez à l'assistant privé à droite de chercher une information dans Little Hotelier.
 
+Les conversations Expedia peuvent rejoindre la même liste (bêta) : après avoir connecté Partner Central, appuyez sur **Switch on Expedia messages** sur **Channels**. La boîte de réception affiche le client et le dernier message de chaque conversation, et les réponses s'écrivent toujours dans Partner Central. Depuis la version 1.71 (novembre 2026), cette lecture fonctionne et les conversations Expedia arrivent ; si Expedia modifie encore sa requête, la page de connexion l'indique. Voir [comment gérer les messages clients Expedia](/blog/expedia-guest-messages).
+
 ::screenshot{src="/images/blog/demo/en/guest-inbox-ai-plan-late-arrival.webp" alt="Boîte de réception des clients avec une conversation WhatsApp ouverte : le message du client sur une arrivée tardive, en espagnol, la réservation associée marquée identity verified et paid, le plan de l'IA en brouillon avec le motif et une réponse modifiable, et le panneau Assistant privé à droite" caption="Chaque conversation affiche la réservation, un brouillon de l'IA qui vous attend et un assistant privé que le client ne voit jamais." path="/messaging"}
 ::
 
 Deux limites, en toute honnêteté :
 
-- **Pour Booking.com, l'IA n'envoie jamais rien toute seule.** Et renvoyer votre réponse à Booking.com depuis la boîte de réception, nous ne le promettons pas encore : copiez le brouillon approuvé dans l'Extranet ou dans Pulse.
+- **Pour Booking.com, l'IA n'envoie jamais rien toute seule.** Quand une personne appuie sur **Send**, la réponse est publiée dans la conversation Booking.com via votre propre session d'extranet. Si Booking.com refuse l'écriture (par exemple après vous avoir demandé de vous identifier à nouveau), la boîte de réception l'indique et garde votre brouillon, à coller dans l'Extranet ou dans Pulse.
 - **Hotelier Tools utilise votre propre session d'extranet.** Hotelier Tools se connecte comme vous, car l'API de messagerie de Booking.com n'est ouverte qu'aux partenaires de connectivité. Le tableau de bord lui-même précise que les conditions partenaires de Booking.com restreignent l'accès automatisé à l'extranet, et que la Connectivity API reste la voie prise en charge quand vous y avez accès.
 
 Les deux messages fixes de demande de facture de Booking.com sont reconnus sans aucune IA : la boîte de réception propose de programmer la facture au départ pour ce séjour (voir [envoyer la facture automatiquement au départ du client](/blog/send-invoice-to-guest-at-checkout)).

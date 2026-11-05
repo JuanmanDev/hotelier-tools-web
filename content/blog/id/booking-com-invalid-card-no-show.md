@@ -90,6 +90,8 @@ Dua hal yang perlu diperiksa:
 - **Allowlist Booking.com.** Booking.com memblokir email dan tautan dari sistem yang belum Anda setujui. Tambahkan domain Little Hotelier di **Property > Messaging preferences > Security settings** di Extranet, atau permintaan tidak akan pernah sampai ke tamu ([caranya](https://helpcentre.littlehotelier.com/en/articles/12046627-add-little-hotelier-to-your-booking-com-e-mail-allowlist)).
 - **Nomor telepon.** Sejak 28 September 2026, Booking.com tidak lagi mengirim nomor telepon tamu ke channel manager, sehingga reservasi Booking.com baru masuk ke Little Hotelier tanpa nomor ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Salin dari Extranet dengan **Show phone number** di detail reservasi.
 
+Untuk mengirim tautan itu tanpa membuka Little Hotelier, atau untuk mengingatkan tamu yang belum membayar secara otomatis pada hari yang Anda pilih, lihat [tautan pembayaran dan pengingat Little Hotelier](/blog/little-hotelier-payment-links).
+
 Skrip gratis [Update Payment Link Button](/tools/ui/update-payment-link-button) memberi tombol permintaan pembayaran label yang lebih jelas dan menambahkan nomor telepon dari reservasi ke permintaan tersebut:
 
 ::screenshot{src="/images/scripts/update-payment-link-button/to.png" alt="Ringkasan reservasi Little Hotelier (antarmuka bahasa Spanyol) dengan tombol permintaan pembayaran yang kini bertuliskan Cobrar con tarjeta por correo electronico (Email)" caption="Skrip Update Payment Link Button mengganti nama tombol permintaan pembayaran (Generate Payment Link dalam bahasa Inggris) dan meneruskan nomor telepon tamu." width="618" height="484"}
@@ -108,6 +110,8 @@ Virtual credit card adalah kartu Mastercard digital sementara yang dipakai Booki
 | Kunci keamanan | Terlalu banyak percobaan gagal. Coba lagi dalam 24 sampai 48 jam. |
 
 Jangan pernah melakukan pre-otorisasi pada virtual card. Jika sudah terlanjur, lakukan settlement jumlahnya dengan kode otorisasi, atau batalkan otorisasi lalu tagih lagi. Masih ditolak? Tanyakan kode penolakan kepada penyedia pembayaran Anda, lalu tulis ke Booking.com dari inbox Extranet.
+
+Expedia bekerja dengan cara berbeda. Dengan Expedia Collect, tamu membayar di muka ke Expedia, dan Anda baru dibayar setelah menagih kartu virtual Expedia atau mengirim payment request di Partner Central dalam 365 hari setelah check-out. Jika terlewat, uangnya tetap di Expedia. Lihat [cara dibayar untuk reservasi Expedia Collect](/blog/expedia-collect-payment-requests).
 
 ## Cara menandai no-show dan mengenakan (atau membebaskan) biayanya
 

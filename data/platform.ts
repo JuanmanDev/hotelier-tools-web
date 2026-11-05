@@ -32,7 +32,10 @@ export const platformSlides: PlatformSlide[] = [
       { id: 'glance', status: 'beta' },
       { id: 'search', status: 'beta' },
       { id: 'property', status: 'beta' },
-      { id: 'secure', status: 'beta' }
+      { id: 'secure', status: 'beta' },
+      { id: 'daily_lists', status: 'beta' },
+      { id: 'reservations', status: 'beta' },
+      { id: 'hotel_mail', status: 'alpha' }
     ]
   },
   {
@@ -47,7 +50,10 @@ export const platformSlides: PlatformSlide[] = [
       { id: 'on_leave', status: 'beta' },
       { id: 'preflight', status: 'stable' },
       { id: 'errors', status: 'stable' },
-      { id: 'language', status: 'stable' }
+      { id: 'language', status: 'stable' },
+      { id: 'received', status: 'beta' },
+      { id: 'issuers', status: 'beta' },
+      { id: 'guest_links', status: 'beta' }
     ]
   },
   {
@@ -61,7 +67,10 @@ export const platformSlides: PlatformSlide[] = [
       { id: 'lifecycle', status: 'beta' },
       { id: 'issues', status: 'beta' },
       { id: 'watchlist', status: 'beta' },
-      { id: 'emails', status: 'beta' }
+      { id: 'emails', status: 'beta' },
+      { id: 'expedia_collect', status: 'beta' },
+      { id: 'ota_gaps', status: 'beta' },
+      { id: 'payments', status: 'beta' }
     ]
   },
   {
@@ -77,7 +86,8 @@ export const platformSlides: PlatformSlide[] = [
       { id: 'rules', status: 'alpha' },
       { id: 'events', status: 'alpha' },
       { id: 'autopilot', status: 'alpha' },
-      { id: 'stop_sell', status: 'alpha' }
+      { id: 'stop_sell', status: 'alpha' },
+      { id: 'promo_codes', status: 'beta' }
     ]
   },
   {
@@ -94,7 +104,9 @@ export const platformSlides: PlatformSlide[] = [
       { id: 'reply_modes', status: 'alpha' },
       { id: 'knowledge', status: 'alpha' },
       { id: 'training', status: 'alpha' },
-      { id: 'safety', status: 'alpha' }
+      { id: 'safety', status: 'alpha' },
+      { id: 'expedia', status: 'alpha' },
+      { id: 'signatures', status: 'alpha' }
     ]
   },
   {

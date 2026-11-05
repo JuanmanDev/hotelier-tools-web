@@ -117,6 +117,8 @@ Every run sends **one report email per job**, in the language you set for that j
 - **They pause safely.** If your Little Hotelier password expires, scheduled jobs pause themselves instead of retrying, which protects your account from a lockout. The dashboard shows "Automated jobs are paused" until you save the new password on **Credentials** or press **Check now & resume**.
 - **Three checks stay manual.** Cards, guest counts and arrival times are not checked automatically, so keep them on your morning list.
 
+Two problems sit outside the eight-point list because they start before the booking reaches you. A Booking.com or Expedia booking that never arrived in Little Hotelier leaves the room on sale: see [what to do when an OTA booking is missing](/blog/ota-bookings-missing-little-hotelier). And for an unpaid balance, a payment link with scheduled reminders saves the phone call: see [Little Hotelier payment links and reminders](/blog/little-hotelier-payment-links).
+
 Every task is listed under **Cron Jobs** (`/cron`) and every run under **Run History** (`/cron-logs`). The feature is in beta. More on scheduling on the [Automations page](/tools/bot/automations), and the full feature on [Automated checks](/tools/bot/automated-checks).
 
 See also: [the Little Hotelier guide](/blog/little-hotelier-tips), [the AI assistant for the front desk](/blog/ai-assistant-hotel-front-desk), [a waitlist for sold-out dates](/blog/hotel-waitlist-sold-out-dates).

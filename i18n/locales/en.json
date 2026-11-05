@@ -1289,6 +1289,18 @@
           "language": {
             "name": "Invoice language",
             "text": "Invoices follow the guest's country, or always use the language you choose."
+          },
+          "received": {
+            "name": "Supplier invoices",
+            "text": "Invoices from mail, drops and e-invoices, read, checked for duplicates and IBAN changes, exported per quarter."
+          },
+          "issuers": {
+            "name": "Invoice in another name",
+            "text": "Issue a stay's invoice to a company or agency instead of the guest."
+          },
+          "guest_links": {
+            "name": "Guest invoice links",
+            "text": "Each guest gets a link to ask for an invoice with their own billing details."
           }
         }
       },
@@ -1312,6 +1324,18 @@
           "emails": {
             "name": "Email reports",
             "text": "A clear summary in your inbox, easy to read on any phone."
+          },
+          "expedia_collect": {
+            "name": "Expedia Collect payments",
+            "text": "Every stay's payment state, and automatic payment requests to Expedia on a schedule."
+          },
+          "ota_gaps": {
+            "name": "Missing OTA bookings",
+            "text": "An alert when a Booking.com or Expedia booking never reached Little Hotelier."
+          },
+          "payments": {
+            "name": "Payment links and reminders",
+            "text": "SiteMinder Pay links and reminders, skipped for stays the channel already collected."
           }
         }
       },
@@ -1343,6 +1367,10 @@
           "stop_sell": {
             "name": "Stop-sell in SiteMinder",
             "text": "Open or close rooms per night from the same screen."
+          },
+          "promo_codes": {
+            "name": "Promo codes",
+            "text": "Create and edit your booking engine's promo codes from the dashboard, the API or your AI assistant."
           }
         }
       },
@@ -1378,6 +1406,14 @@
           "safety": {
             "name": "Safe by design",
             "text": "The assistant only talks about the verified guest's own booking and never changes anything without you."
+          },
+          "expedia": {
+            "name": "Expedia messages",
+            "text": "Expedia Partner Central conversations next to WhatsApp, email and Booking.com, linked to the booking."
+          },
+          "signatures": {
+            "name": "Signatures and memory",
+            "text": "Named signatures per channel, and replies that learn from what your team actually sent."
           }
         }
       },
@@ -1504,6 +1540,18 @@
           "secure": {
             "name": "Secure access",
             "text": "Sign in with a passkey, and your passwords are stored encrypted."
+          },
+          "daily_lists": {
+            "name": "Daily lists",
+            "text": "Printable arrivals, departures, in-house and housekeeping lists for each morning."
+          },
+          "reservations": {
+            "name": "Calendar and new bookings",
+            "text": "A fast tape chart and a booking form that compares your web, promo and Booking.com prices."
+          },
+          "hotel_mail": {
+            "name": "Hotel email addresses",
+            "text": "Receive-only addresses for your hotel: supplier invoices arrive without sharing a mailbox password."
           }
         }
       }
@@ -1721,7 +1769,7 @@
       },
       "guests": {
         "name": "Guest messages",
-        "description": "WhatsApp, email and Booking.com conversations in one place, with replies ready to send."
+        "description": "WhatsApp, email, Booking.com and Expedia conversations in one place, with replies ready to send."
       },
       "compliance": {
         "name": "Reports and compliance",
@@ -1731,7 +1779,10 @@
         "name": "Tips and tricks",
         "description": "Small changes that make Little Hotelier faster to use every day."
       }
-    }
+    },
+    "kind": "Guide",
+    "written_by": "Written by",
+    "reading_time_label": "Reading time"
   },
   "instructions": {
     "hero": {

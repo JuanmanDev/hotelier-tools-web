@@ -117,6 +117,8 @@ faq:
 - **หยุดพักอย่างปลอดภัย** หากรหัสผ่าน Little Hotelier หมดอายุ งานตามเวลาจะหยุดเองแทนที่จะลองซ้ำ เพื่อป้องกันบัญชีคุณจากการถูกล็อก แดชบอร์ดจะแสดง "Automated jobs are paused" จนกว่าคุณจะบันทึกรหัสผ่านใหม่ที่ **Credentials** หรือกด **Check now & resume**
 - **สามรายการยังต้องตรวจเอง** บัตร จำนวนแขก และเวลามาถึงไม่ได้ตรวจอัตโนมัติ จึงควรเก็บไว้ในเช็คลิสต์ตอนเช้า
 
+มีสองปัญหาที่อยู่นอกรายการแปดข้อ เพราะเริ่มขึ้นก่อนที่การจองจะมาถึงคุณ การจองจาก Booking.com หรือ Expedia ที่ไม่เข้ามาใน Little Hotelier ทำให้ห้องยังเปิดขายอยู่: ดู[ต้องทำอย่างไรเมื่อการจองจาก OTA หายไป](/blog/ota-bookings-missing-little-hotelier) ส่วนยอดค้างชำระ ลิงก์ชำระเงินพร้อมการแจ้งเตือนตามกำหนดช่วยให้ไม่ต้องโทรตาม: ดู[ลิงก์ชำระเงินและการแจ้งเตือนใน Little Hotelier](/blog/little-hotelier-payment-links)
+
 ทุกงานแสดงอยู่ใน **Cron Jobs** (`/cron`) และทุกการรันอยู่ใน **Run History** (`/cron-logs`) ฟีเจอร์นี้ยังอยู่ในช่วงเบต้า ดูเรื่องการตั้งเวลาเพิ่มเติมที่[หน้า Automations](/tools/bot/automations) และรายละเอียดฟีเจอร์ทั้งหมดที่หน้า [Automated checks](/tools/bot/automated-checks)
 
 อ่านเพิ่มเติม: [คู่มือ Little Hotelier](/blog/little-hotelier-tips), [ผู้ช่วย AI สำหรับแผนกต้อนรับ](/blog/ai-assistant-hotel-front-desk), [รายการรอสำหรับวันที่เต็ม](/blog/hotel-waitlist-sold-out-dates)

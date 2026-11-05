@@ -151,6 +151,8 @@ Hotelier Tools est un tableau de bord indépendant qui fonctionne à côté de L
 
 Les **Automated checks** lisent les réservations à venir et signalent ce que vous découvririez sinon à la réception : pas de chambre attribuée, pièce d'identité ou adresse manquante, solde impayé, ou client figurant sur votre liste do-not-rebook. Les problèmes arrivent sur une page Issues unique, et chaque exécution envoie un e-mail de rapport. Voir [la checklist quotidienne de la réception](/blog/hotel-front-desk-checklist-automation).
 
+Deux autres pages font gagner du temps chaque matin. Les **Daily lists** (listes du jour) impriment en un clic les arrivées, les départs, les clients présents et la liste de ménage du jour ([les listes du jour à imprimer](/blog/little-hotelier-daily-lists)). Le **Calendar** affiche le tarif le plus bas de chaque type de chambre au-dessus de ses chambres, et **New reservation** enregistre directement dans Little Hotelier un séjour avec son prix ([un calendrier des réservations plus rapide](/blog/little-hotelier-reservation-calendar)).
+
 ::demo-cta{path="/automated-checks/issues"}
 ::
 

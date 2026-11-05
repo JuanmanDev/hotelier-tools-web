@@ -105,7 +105,7 @@ Configúralo una vez en **Ajustes > Facturas** (`/settings/invoices`): **Según 
 
 **Después de emitirla:** edita los datos en Little Hotelier y usa **Invoice is outdated** para generar una factura corregida. Si ya la habías marcado como final, haz clic en **Cancel invoice** y luego otra vez en **Generate invoice** ([centro de ayuda](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). En España con VeriFactu, una factura finalizada se modifica con **Rectify invoice** ([centro de ayuda](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)).
 
-Un enlace privado donde los huéspedes rellenen ellos mismos los datos de su empresa está en desarrollo y todavía no está disponible.
+Los huéspedes también pueden escribir ellos mismos los datos de su empresa: los enlaces de factura para huéspedes de Hotelier Tools dan a cada huésped una página privada para añadir la empresa, el NIF y la dirección, y para pedir la factura al hacer el check-out. Mira [cómo facturar a una empresa en lugar de al huésped](/blog/invoice-in-company-name).
 
 Si las peticiones de factura te llegan por mensajes de Booking.com, mira [cómo gestionar los mensajes de huéspedes de Booking.com](/blog/booking-com-guest-messages).
 

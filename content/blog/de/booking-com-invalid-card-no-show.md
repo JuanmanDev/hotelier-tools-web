@@ -90,6 +90,8 @@ Zwei Dinge sind zu prüfen:
 - **Die Allowlist von Booking.com.** Booking.com blockiert E-Mails und Links von Systemen, die Sie nicht freigegeben haben. Tragen Sie die Domains von Little Hotelier im Extranet unter **Property > Messaging preferences > Security settings** ein, sonst erreicht die Anfrage den Gast nie ([Anleitung](https://helpcentre.littlehotelier.com/en/articles/12046627-add-little-hotelier-to-your-booking-com-e-mail-allowlist)).
 - **Die Telefonnummer.** Seit dem 28. September 2026 sendet Booking.com keine Telefonnummern der Gäste mehr an Channel-Manager, neue Booking.com-Buchungen kommen also ohne Telefonnummer in Little Hotelier an ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Kopieren Sie sie im Extranet mit **Show phone number** in den Reservierungsdetails.
 
+Um diesen Link zu senden, ohne Little Hotelier zu öffnen, oder um Gäste mit offenem Betrag an den Tagen, die Sie wählen, automatisch zu erinnern, siehe [Zahlungslinks und Erinnerungen in Little Hotelier](/blog/little-hotelier-payment-links).
+
 Das kostenlose Skript [Update Payment Link Button](/tools/ui/update-payment-link-button) gibt der Schaltfläche für die Zahlungsanfrage eine klarere Beschriftung und übernimmt die Telefonnummer aus der Reservierung in die Anfrage:
 
 ::screenshot{src="/images/scripts/update-payment-link-button/to.png" alt="Reservierungsübersicht in Little Hotelier (spanische Oberfläche), in der die Schaltfläche für die Zahlungsanfrage jetzt Cobrar con tarjeta por correo electronico (Email) lautet" caption="Das Skript Update Payment Link Button benennt die Schaltfläche für die Zahlungsanfrage um (auf Englisch Generate Payment Link) und übergibt die Telefonnummer des Gastes." width="618" height="484"}
@@ -108,6 +110,8 @@ Eine virtuelle Kreditkarte ist eine temporäre digitale Mastercard, mit der Book
 | Sicherheitssperre | Zu viele fehlgeschlagene Versuche. Versuchen Sie es in 24 bis 48 Stunden erneut. |
 
 Führen Sie bei einer virtuellen Karte nie eine Vorautorisierung durch. Haben Sie es getan, begleichen Sie den Betrag mit dem Autorisierungscode oder stornieren Sie die Autorisierung und belasten die Karte erneut. Wird sie weiterhin abgelehnt? Fragen Sie Ihren Zahlungsdienstleister nach dem Ablehnungscode und schreiben Sie dann über den Posteingang des Extranets an Booking.com.
+
+Bei Expedia läuft es anders. Bei Expedia Collect zahlt der Gast im Voraus an Expedia, und Sie werden erst bezahlt, wenn Sie die virtuelle Karte von Expedia belasten oder innerhalb von 365 Tagen nach der Abreise eine Zahlungsanforderung in Partner Central senden. Verpassen Sie das, bleibt das Geld bei Expedia. Siehe [so werden Sie für Expedia-Collect-Buchungen bezahlt](/blog/expedia-collect-payment-requests).
 
 ## So markieren Sie einen No-Show und berechnen (oder erlassen) die Gebühr
 

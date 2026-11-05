@@ -3,6 +3,7 @@ title: "Integraciones de Little Hotelier en 2026: contabilidad, check-in, precio
 seoTitle: "Integraciones de Little Hotelier: las mejores en 2026"
 description: "Qué se conecta con Little Hotelier en 2026: exportación para Xero y QuickBooks, check-in con Chekin y Duve, precios, mensajería, IA y complementos gratis."
 date: 2026-10-03
+updated: 2026-11-05
 category: api
 tags: [integrations, app store, xero, chekin, little hotelier]
 keywords: [integraciones little hotelier, little hotelier app store, little hotelier xero, little hotelier chekin, little hotelier zapier, little hotelier motor de reservas wordpress]
@@ -95,6 +96,8 @@ Booking.com bloquea correos y enlaces de sistemas que no conoce. Little Hotelier
 ::
 
 Hotelier Tools también tiene una bandeja de huéspedes (alfa): WhatsApp, Gmail, Outlook o cualquier buzón IMAP y los mensajes de Booking.com en una sola lista, con respuestas redactadas por IA que aprueba una persona. Su conexión de WhatsApp usa una sesión de WhatsApp Web (WAHA), no la API oficial de Business. Compara las opciones en [WhatsApp con Little Hotelier](/blog/whatsapp-little-hotelier).
+
+Para Expedia, Hotelier Tools se conecta con tu propio acceso a Partner Central (beta). Puede pedir los pagos de Expedia Collect que Expedia te debe después de la salida, a mano o de forma programada. Desde la versión 1.71 (noviembre de 2026) la bandeja también muestra las conversaciones de Expedia (beta), y las respuestas siempre se quedan en Partner Central. Mira [solicitudes de pago de Expedia Collect](/blog/expedia-collect-payment-requests) y [mensajes de huéspedes de Expedia](/blog/expedia-guest-messages).
 
 ## Integraciones de IA y de API
 

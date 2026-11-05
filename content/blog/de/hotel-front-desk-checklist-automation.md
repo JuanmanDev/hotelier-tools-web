@@ -117,6 +117,8 @@ Jeder Lauf sendet **eine Berichts-E-Mail pro Aufgabe**, in der Sprache, die Sie 
 - **Sie pausieren sicher.** Läuft Ihr Passwort für Little Hotelier ab, pausieren geplante Aufgaben von selbst, statt es erneut zu versuchen, was Ihr Konto vor einer Sperre schützt. Das Dashboard zeigt „Automated jobs are paused“, bis Sie das neue Passwort unter **Credentials** speichern oder auf **Check now & resume** klicken.
 - **Drei Prüfungen bleiben manuell.** Karten, Personenzahl und Ankunftszeiten werden nicht automatisch geprüft, lassen Sie sie also auf Ihrer Morgenliste.
 
+Zwei Probleme stehen außerhalb der Liste mit acht Punkten, weil sie beginnen, bevor die Buchung bei Ihnen ankommt. Eine Booking.com- oder Expedia-Buchung, die nie in Little Hotelier angekommen ist, lässt das Zimmer im Verkauf: siehe [was zu tun ist, wenn eine OTA-Buchung fehlt](/blog/ota-bookings-missing-little-hotelier). Und bei einem offenen Saldo erspart ein Zahlungslink mit geplanten Erinnerungen den Anruf: siehe [Zahlungslinks und Erinnerungen in Little Hotelier](/blog/little-hotelier-payment-links).
+
 Jede Aufgabe steht unter **Cron Jobs** (`/cron`) und jeder Lauf unter **Run History** (`/cron-logs`). Die Funktion ist in der Beta-Phase. Mehr zur Planung auf der Seite [Automations](/tools/bot/automations) und die komplette Funktion unter [Automated checks](/tools/bot/automated-checks).
 
 Siehe auch: [der Little-Hotelier-Leitfaden](/blog/little-hotelier-tips), [der KI-Assistent für die Rezeption](/blog/ai-assistant-hotel-front-desk), [eine Warteliste für ausgebuchte Termine](/blog/hotel-waitlist-sold-out-dates).

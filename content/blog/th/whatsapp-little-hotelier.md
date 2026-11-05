@@ -119,6 +119,8 @@ WhatsApp เชื่อมเข้ากับ Hotelier Tools ผ่าน [WA
 ::screenshot{src="/images/blog/demo/en/guest-inbox.webp" alt="กล่องข้อความแขกของ Hotelier Tools ที่มีตัวกรอง All, WhatsApp, Email และ Booking.com บทสนทนา WhatsApp และอีเมล 4 รายการที่แต่ละรายการติดป้าย draft และข้อความแจ้งสีเหลืองว่า WhatsApp เข้ามาทาง webhook และต้องวาง URL ที่สร้างไว้ในเซสชัน WAHA สำหรับเหตุการณ์ message" caption="WhatsApp อีเมล และ Booking.com ในรายการเดียว แต่ละรายการมีร่างจาก AI ถ้าไม่มีข้อความเข้ามา ให้ตรวจ webhook URL ในเซสชัน WAHA ของคุณ" path="/messaging"}
 ::
 
+แผง **WhatsApp session** ในหน้า Credentials เดียวกันแสดง QR code สำหรับจับคู่ (สแกนจาก **Settings > Linked devices** บนมือถือของโรงแรม) ตั้ง webhook ให้คุณด้วย **Connect webhook** และ **Import history** (นำเข้าประวัติ) แชตเก่าย้อนหลังได้สูงสุดหนึ่งปีเพื่อใช้เป็นบริบท: สิ่งที่นำเข้าจะไม่ถูกวิเคราะห์หรือตอบ รูปภาพ ข้อความเสียง และเอกสารแสดงในเธรด คำตอบของคุณแนบไฟล์และข้อความเสียงได้ และลายเซ็นที่มีชื่อแต่ละแบบจาก **Signatures** (ลายเซ็น, `/messaging/signatures`) มีเวอร์ชัน WhatsApp ของตัวเอง วิธีที่ AI สร้างแต่ละคำตอบอธิบายไว้ใน[การตอบข้อความแขกด้วย AI](/blog/ai-replies-guest-messages)
+
 ### AI ทำอะไรได้บ้างบน WhatsApp
 
 - **AI เห็นการจองก็ต่อเมื่อยืนยันตัวผู้ส่งได้แล้ว** บน WhatsApp เบอร์ของผู้ส่งต้องตรงกับเบอร์โทรในการจองอย่างน้อย 8 หลักสุดท้าย ถ้าตรงกับแขกสองคน AI จะไม่เห็นการจองของใครเลย สำหรับแขกจาก Booking.com ให้เพิ่มเบอร์โทรในการจองของ Little Hotelier เพื่อให้จับคู่แชตได้

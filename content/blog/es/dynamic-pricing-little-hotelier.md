@@ -139,6 +139,10 @@ Solo escribe estancias mínimas si lo permites aparte, y **nunca** cambia el sto
 ::screenshot{src="/images/blog/demo/es/pricing-settings-autopilot.webp" alt="Página Piloto automático marcada como Desactivado: la tarea Ejecuciones del piloto automático sin configurar con un botón Cada 3 horas, Escritura de precios desatendida con el interruptor para dejar que el piloto escriba precios en Little Hotelier apagado, y protecciones de cambio máximo por noche del 20 %, no escribir nunca por debajo de 0 y mirar hacia delante 14 días" caption="El piloto automático está apagado hasta que activas la escritura de precios desatendida y programas sus ejecuciones." path="/pricing/settings/autopilot"}
 ::
 
+### Códigos promocionales en tu web
+
+Los códigos de descuento de tu propio motor de reservas cambian lo que pagan los huéspedes directos, así que forman parte del mismo cuadro. **Códigos promocionales** (`/pricing/promo-codes`) explica cada código en una frase y avisa cuando un código deja una noche por debajo de tu precio mínimo o se acumula con el descuento que ya aplicas. Mira [códigos promocionales en Little Hotelier](/blog/little-hotelier-promo-codes).
+
 ### El historial de precios: qué hizo cada cambio
 
 **Historial y resultados** (`/pricing-log`) lista cada tarifa escrita en Little Hotelier, por ti, por el piloto automático o por el asistente, con las habitaciones libres entonces y ahora. Tras una subida, estima los ingresos extra como habitaciones vendidas después del cambio por la diferencia. La página dice con claridad lo que esa estimación no puede saber, como si esas habitaciones se habrían vendido igual. Tómala como una guía, no como una prueba.

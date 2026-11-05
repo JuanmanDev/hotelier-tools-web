@@ -1324,6 +1324,18 @@
           "language": {
             "name": "Bahasa faktur",
             "text": "Faktur mengikuti negara tamu, atau selalu memakai bahasa pilihan Anda."
+          },
+          "received": {
+            "name": "Faktur pemasok",
+            "text": "Faktur dari email, unggahan, dan e-faktur: dibaca, dicek duplikat dan perubahan IBAN, diekspor per kuartal."
+          },
+          "issuers": {
+            "name": "Faktur atas nama lain",
+            "text": "Terbitkan faktur menginap atas nama perusahaan atau agen, bukan tamu."
+          },
+          "guest_links": {
+            "name": "Tautan faktur untuk tamu",
+            "text": "Setiap tamu mendapat tautan untuk meminta faktur dengan data penagihannya sendiri."
           }
         }
       },
@@ -1347,6 +1359,18 @@
           "emails": {
             "name": "Laporan lewat email",
             "text": "Ringkasan yang jelas langsung di kotak masuk Anda, mudah dibaca dari ponsel mana pun."
+          },
+          "expedia_collect": {
+            "name": "Pembayaran Expedia Collect",
+            "text": "Status pembayaran setiap masa inap, dan permintaan pembayaran otomatis ke Expedia sesuai jadwal."
+          },
+          "ota_gaps": {
+            "name": "Pemesanan OTA yang hilang",
+            "text": "Peringatan saat pemesanan Booking.com atau Expedia tidak pernah masuk ke Little Hotelier."
+          },
+          "payments": {
+            "name": "Tautan dan pengingat pembayaran",
+            "text": "Tautan SiteMinder Pay dan pengingat, dilewati untuk masa inap yang sudah dibayar lewat kanal."
           }
         }
       },
@@ -1378,6 +1402,10 @@
           "stop_sell": {
             "name": "Stop-sell di SiteMinder",
             "text": "Buka atau tutup kamar per malam dari layar yang sama."
+          },
+          "promo_codes": {
+            "name": "Kode promo",
+            "text": "Buat dan ubah kode promo mesin pemesanan Anda dari dasbor, API, atau asisten AI Anda."
           }
         }
       },
@@ -1413,6 +1441,14 @@
           "safety": {
             "name": "Aman sejak awal",
             "text": "Asisten hanya membahas pemesanan milik tamu yang terverifikasi dan tidak pernah mengubah apa pun tanpa Anda."
+          },
+          "expedia": {
+            "name": "Pesan Expedia",
+            "text": "Percakapan Expedia Partner Central di samping WhatsApp, email, dan Booking.com, tertaut ke pemesanannya."
+          },
+          "signatures": {
+            "name": "Tanda tangan dan memori",
+            "text": "Tanda tangan bernama per kanal, dan balasan yang belajar dari apa yang benar-benar dikirim tim Anda."
           }
         }
       },
@@ -1539,6 +1575,18 @@
           "secure": {
             "name": "Akses aman",
             "text": "Masuk dengan passkey, dan kata sandi Anda disimpan terenkripsi."
+          },
+          "daily_lists": {
+            "name": "Daftar harian",
+            "text": "Daftar kedatangan, keberangkatan, tamu menginap, dan housekeeping yang siap dicetak setiap pagi."
+          },
+          "reservations": {
+            "name": "Kalender dan pemesanan baru",
+            "text": "Tape chart yang cepat dan formulir pemesanan yang membandingkan harga web, promo, dan Booking.com Anda."
+          },
+          "hotel_mail": {
+            "name": "Alamat email hotel",
+            "text": "Alamat khusus penerimaan untuk hotel Anda: faktur pemasok masuk tanpa berbagi kata sandi kotak surat."
           }
         }
       }
@@ -1756,7 +1804,7 @@
       },
       "guests": {
         "name": "Pesan tamu",
-        "description": "WhatsApp, email, dan Booking.com di satu tempat, dengan balasan siap kirim."
+        "description": "WhatsApp, email, Booking.com, dan Expedia di satu tempat, dengan balasan siap kirim."
       },
       "compliance": {
         "name": "Laporan dan kepatuhan",
@@ -1766,7 +1814,10 @@
         "name": "Tips dan trik",
         "description": "Perubahan kecil yang membuat Little Hotelier lebih cepat dipakai setiap hari."
       }
-    }
+    },
+    "kind": "Panduan",
+    "written_by": "Ditulis oleh",
+    "reading_time_label": "Waktu baca"
   },
   "instructions": {
     "hero": {

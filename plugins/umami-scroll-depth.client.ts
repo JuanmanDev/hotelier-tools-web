@@ -1,37 +1,31 @@
+// How far down each page people read: one event per threshold per page view, with the page kind,
+// slug and language so guides can be compared with each other in Umami
 export default defineNuxtPlugin(() => {
+  const THRESHOLDS = [25, 50, 75, 90]
+  let tracked = new Set<number>()
+  let ticking = false
 
-  let maxScroll = 0;
-  let trackedDepths = new Set<number>();
+  const measure = () => {
+    ticking = false
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    if (docHeight <= 200) return
+    const scrolled = (window.scrollY / docHeight) * 100
+    for (const threshold of THRESHOLDS) {
+      if (scrolled >= threshold && !tracked.has(threshold)) {
+        tracked.add(threshold)
+        const ctx = pageContext(window.location.pathname)
+        trackEvent('scroll_depth', { depth: threshold, page: ctx.medium, slug: ctx.campaign, locale: ctx.locale })
+      }
+    }
+  }
 
   document.addEventListener('scroll', () => {
-    // Calculate scroll percentage
-    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    if (docHeight <= 0) return;
-    
-    const scrolled = (window.scrollY / docHeight) * 100;
-    if (scrolled > maxScroll) {
-      maxScroll = scrolled;
-    }
+    if (ticking) return
+    ticking = true
+    requestAnimationFrame(measure)
+  }, { passive: true })
 
-    // Check thresholds: 25, 50, 75, 100
-    const thresholds = [25, 50, 75, 100];
-    thresholds.forEach(threshold => {
-      if (maxScroll >= threshold && !trackedDepths.has(threshold)) {
-        trackedDepths.add(threshold);
-        if (typeof umTrackEvent === 'function') {
-          umTrackEvent('scroll_depth', {
-            depth_percentage: threshold,
-            path: window.location.pathname
-          }).catch(() => {});
-        }
-      }
-    });
-  }, { passive: true }); // Passive listener for performance
-
-  // Reset scroll depths on route change
-  const router = useRouter();
-  router.afterEach(() => {
-    maxScroll = 0;
-    trackedDepths.clear();
-  });
-});
+  useRouter().afterEach((to, from) => {
+    if (to.path !== from.path) tracked = new Set()
+  })
+})

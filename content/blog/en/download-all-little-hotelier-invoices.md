@@ -134,6 +134,8 @@ A short routine that avoids most follow-up emails:
 
 In Spain this feeds your VAT return ([modelo 303](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml)). If you use VeriFactu, Little Hotelier finalizes invoices by submitting them to the AEAT itself ([help centre](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)). Hotelier Tools has no VeriFactu feature of its own, so keep that step in Little Hotelier. In any country with mandatory e-invoicing, treat the ZIP as copies for your records and check the rules with your accountant.
 
+Your accountant will also ask for the other half: the invoices your suppliers sent you, such as laundry, electricity and OTA commission. Hotelier Tools' **Received invoices** page collects them from your mailbox or a private invoice address, waits for you to check each one, and exports the quarter as a ZIP with a CSV too. See [how to collect supplier invoices by email](/blog/supplier-invoices-by-email).
+
 Developers can also fetch invoice PDFs one by one through the [Hotelier Tools REST API](/blog/little-hotelier-api). And if your accountant wants reservation data too, see [how to export reservations to Excel](/blog/export-little-hotelier-reservations-excel).
 
 See also: [the Little Hotelier guide](/blog/little-hotelier-tips), [Little Hotelier integrations](/blog/little-hotelier-integrations).

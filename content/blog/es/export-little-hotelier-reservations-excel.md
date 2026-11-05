@@ -86,6 +86,8 @@ Fuentes: [Getting started with Reports](https://help-platform.littlehotelier.com
 
 Consejo: la exportación de ingresos **Summary** tiene una columna «Rate per night», con una fila por noche. Es la forma más rápida de ver a qué precio se vendió cada noche de una estancia larga.
 
+¿Necesitas una hoja impresa para esta mañana en lugar de una hoja de cálculo? Los informes **Check-in** y **Housekeeping** se imprimen directamente, y [listados imprimibles de llegadas, salidas y limpieza](/blog/little-hotelier-daily-lists) explica qué debe llevar un buen listado de la mañana y cómo imprimir los cuatro con un clic.
+
 ## Cómo abrir el CSV en Excel sin que se rompan los acentos
 
 Si nombres como «José» se convierten en «JosÃ©», Excel ha adivinado mal la codificación. Importa el archivo en lugar de hacerle doble clic:

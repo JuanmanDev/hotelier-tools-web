@@ -115,6 +115,8 @@ If you need the official API, Messaging hub is the right choice. If you mostly a
 ::screenshot{src="/images/blog/demo/en/guest-inbox.webp" alt="Hotelier Tools guest inbox with All, WhatsApp, Email and Booking.com filters, four WhatsApp and email conversations each marked draft, and a yellow notice that WhatsApp arrives by webhook and the generated URL must be pasted into the WAHA session for the message event" caption="WhatsApp, email and Booking.com in one list, each with an AI draft. If nothing arrives, check the webhook URL in your WAHA session." path="/messaging"}
 ::
 
+The **WhatsApp session** panel on the same credentials page shows the pairing QR code (scan it from **Settings > Linked devices** on the hotel phone), sets the webhook for you with **Connect webhook**, and can **Import history** of past chats, up to the last year, as context: nothing imported is analyzed or answered. Photos, voice notes and documents show in the thread, your replies can carry files and voice notes, and each named signature from **Signatures** (`/messaging/signatures`) has its own WhatsApp version. How the AI builds every reply is explained in [replying to guest messages with AI](/blog/ai-replies-guest-messages).
+
 ### What the AI may do on WhatsApp
 
 - **It only sees a booking when the sender is verified.** On WhatsApp, the number must match the reservation's phone on at least its last 8 digits. If two guests match, it sees neither. For Booking.com guests, add the phone to the Little Hotelier reservation so the chat can be matched.

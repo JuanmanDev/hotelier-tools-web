@@ -104,6 +104,8 @@ Yang perlu diketahui:
 
 Pada musim ramai, periksa lebih sering daripada sekali semalam: dengan pengecekan setiap malam, kamar yang kosong pukul 09.00 baru ditawarkan pukul 01.00, dan mungkin sudah hilang saat itu.
 
+Tidak semua permintaan untuk malam yang penuh. Tamu bisa meminta tanggal yang belum Anda beri tarif, atau agen menginginkan lebih banyak kamar daripada yang Anda punya. Antrean yang sama menangani keduanya: malam yang ditutup dihitung tidak bisa dipesan sampai Anda membukanya, dan kecocokan sebagian hanya sampai kepada Anda. Lihat [cara menyimpan antrean permintaan ketersediaan](/blog/hotel-availability-requests-queue).
+
 ### Bagaimana waiting list memengaruhi harga Anda
 
 Setiap pihak yang menunggu satu malam menaikkan rekomendasi harga malam itu sebesar 3%, hingga 12% per malam, di dynamic pricing Hotelier Tools (alpha). Waiting list yang penuh adalah sinyal permintaan, dan rekomendasi menunjukkannya ([dynamic pricing untuk hotel kecil](/blog/dynamic-pricing-little-hotelier)).

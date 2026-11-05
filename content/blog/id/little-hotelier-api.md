@@ -73,6 +73,8 @@ Cara kerjanya, dengan bahasa sederhana:
 - Hotelier Tools lalu memakai endpoint web yang sama dengan yang dipakai aplikasi web Little Hotelier. Ia hanya bisa membaca dan melakukan apa yang bisa dilakukan login tersebut, tidak lebih.
 - Skrip Anda memanggil Hotelier Tools dengan API key, dan Hotelier Tools berkomunikasi dengan Little Hotelier.
 
+Alih-alih login pribadi Anda, Anda bisa memberi Hotelier Tools pengguna Little Hotelier sendiri, dengan kata sandi dan verifikasi dua langkahnya sendiri, yang bisa Anda nonaktifkan kapan saja tanpa menyentuh akses orang lain. Lihat [cara menambahkan pengguna di Little Hotelier](/blog/add-user-little-hotelier).
+
 ::callout{type="note" title="Independen, bukan resmi"}
 Hotelier Tools tidak berafiliasi dengan atau didukung oleh SiteMinder maupun Little Hotelier. Ini bukan API resmi SiteMinder dan terhubung memakai login Little Hotelier milik properti Anda sendiri. Dashboard-nya gratis untuk setiap hotel sampai penagihan dimulai pada 10 Januari 2027.
 ::

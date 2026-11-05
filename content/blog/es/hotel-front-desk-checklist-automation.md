@@ -117,6 +117,8 @@ Cada ejecución envía **un email de informe por tarea**, en el idioma que fijes
 - **Se pausan con seguridad.** Si caduca tu contraseña de Little Hotelier, las tareas programadas se pausan solas en lugar de reintentar, lo que protege tu cuenta de un bloqueo. El panel muestra «Las tareas automáticas están en pausa» hasta que guardes la contraseña nueva en **Credenciales** o pulses **Comprobar ahora y reanudar**.
 - **Tres comprobaciones siguen siendo manuales.** Las tarjetas, el número de huéspedes y las horas de llegada no se comprueban automáticamente, así que mantenlas en tu lista de la mañana.
 
+Hay dos problemas que quedan fuera de la lista de ocho puntos, porque empiezan antes de que la reserva llegue a ti. Una reserva de Booking.com o Expedia que nunca llegó a Little Hotelier deja la habitación a la venta: mira [qué hacer cuando falta una reserva de una OTA](/blog/ota-bookings-missing-little-hotelier). Y para un saldo pendiente, un enlace de pago con recordatorios programados te ahorra la llamada: mira [enlaces de pago y recordatorios en Little Hotelier](/blog/little-hotelier-payment-links).
+
 Cada tarea figura en **Tareas programadas** (`/cron`) y cada ejecución en **Historial de ejecuciones** (`/cron-logs`). La función está en beta. Más sobre la programación en la [página de automatizaciones](/tools/bot/automations), y la función completa en [Comprobaciones automáticas](/tools/bot/automated-checks).
 
 Guías relacionadas: [la guía de Little Hotelier](/blog/little-hotelier-tips), [el asistente de IA para recepción](/blog/ai-assistant-hotel-front-desk), [una lista de espera para fechas agotadas](/blog/hotel-waitlist-sold-out-dates).

@@ -1324,6 +1324,18 @@
           "language": {
             "name": "Langue des factures",
             "text": "Les factures suivent le pays du client, ou utilisent toujours la langue que vous choisissez."
+          },
+          "received": {
+            "name": "Factures fournisseurs",
+            "text": "Factures reçues par e-mail, déposées ou électroniques : lues, contrôlées contre les doublons et les changements d’IBAN, exportées par trimestre."
+          },
+          "issuers": {
+            "name": "Facture à un autre nom",
+            "text": "Émettez la facture d’un séjour au nom d’une entreprise ou d’une agence plutôt que du client."
+          },
+          "guest_links": {
+            "name": "Liens de facture pour les clients",
+            "text": "Chaque client reçoit un lien pour demander sa facture avec ses propres coordonnées de facturation."
           }
         }
       },
@@ -1347,6 +1359,18 @@
           "emails": {
             "name": "Rapports par e-mail",
             "text": "Un résumé clair dans votre boîte de réception, facile à lire sur n'importe quel téléphone."
+          },
+          "expedia_collect": {
+            "name": "Paiements Expedia Collect",
+            "text": "L’état de paiement de chaque séjour, et des demandes de paiement automatiques à Expedia selon un calendrier."
+          },
+          "ota_gaps": {
+            "name": "Réservations OTA manquantes",
+            "text": "Une alerte quand une réservation Booking.com ou Expedia n’est jamais arrivée dans Little Hotelier."
+          },
+          "payments": {
+            "name": "Liens et rappels de paiement",
+            "text": "Liens SiteMinder Pay et rappels, ignorés pour les séjours déjà encaissés par le canal."
           }
         }
       },
@@ -1378,6 +1402,10 @@
           "stop_sell": {
             "name": "Fermeture des ventes dans SiteMinder",
             "text": "Ouvrez ou fermez les chambres nuit par nuit depuis le même écran."
+          },
+          "promo_codes": {
+            "name": "Codes promo",
+            "text": "Créez et modifiez les codes promo de votre moteur de réservation depuis le tableau de bord, l’API ou votre assistant IA."
           }
         }
       },
@@ -1413,6 +1441,14 @@
           "safety": {
             "name": "Sûr par conception",
             "text": "L'assistant ne parle que de la réservation du client vérifié et ne modifie jamais rien sans vous."
+          },
+          "expedia": {
+            "name": "Messages Expedia",
+            "text": "Les conversations Expedia Partner Central à côté de WhatsApp, de l’e-mail et de Booking.com, liées à la réservation."
+          },
+          "signatures": {
+            "name": "Signatures et mémoire",
+            "text": "Des signatures nommées par canal, et des réponses qui apprennent de ce que votre équipe a vraiment envoyé."
           }
         }
       },
@@ -1539,6 +1575,18 @@
           "secure": {
             "name": "Accès sécurisé",
             "text": "Connectez-vous avec une clé d'accès (passkey) et vos mots de passe sont stockés chiffrés."
+          },
+          "daily_lists": {
+            "name": "Listes du jour",
+            "text": "Arrivées, départs, clients présents et ménage, prêts à imprimer chaque matin."
+          },
+          "reservations": {
+            "name": "Planning et nouvelles réservations",
+            "text": "Un planning rapide et un formulaire de réservation qui compare vos prix web, promo et Booking.com."
+          },
+          "hotel_mail": {
+            "name": "Adresses e-mail de l’hôtel",
+            "text": "Des adresses en réception seule pour votre hôtel : les factures fournisseurs arrivent sans partager le mot de passe d’une boîte mail."
           }
         }
       }
@@ -1756,7 +1804,7 @@
       },
       "guests": {
         "name": "Messages clients",
-        "description": "WhatsApp, e-mail et Booking.com au même endroit, avec des réponses prêtes à envoyer."
+        "description": "WhatsApp, e-mail, Booking.com et Expedia au même endroit, avec des réponses prêtes à envoyer."
       },
       "compliance": {
         "name": "Rapports et obligations",
@@ -1766,7 +1814,10 @@
         "name": "Astuces",
         "description": "De petits changements qui rendent Little Hotelier plus rapide au quotidien."
       }
-    }
+    },
+    "kind": "Guide",
+    "written_by": "Rédigé par",
+    "reading_time_label": "Temps de lecture"
   },
   "instructions": {
     "hero": {

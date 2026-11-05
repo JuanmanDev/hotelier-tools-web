@@ -105,7 +105,7 @@ Legen Sie das einmal unter **Settings > Invoices** (`/settings/invoices`) fest: 
 
 **Nachdem sie ausgestellt wurde:** Bearbeiten Sie die Daten in Little Hotelier und nutzen Sie dann **Invoice is outdated**, um eine korrigierte Rechnung zu erzeugen. Haben Sie sie schon als final markiert, klicken Sie auf **Cancel invoice** und dann erneut auf **Generate invoice** ([Hilfecenter](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). In Spanien mit VeriFactu wird eine finalisierte Rechnung über **Rectify invoice** geändert ([Hilfecenter](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)).
 
-Ein privater Link, über den Gäste ihre Firmendaten selbst eintragen, ist in Entwicklung und noch nicht verfügbar.
+Gäste können ihre Firmendaten auch selbst eintragen: Die Rechnungslinks für Gäste von Hotelier Tools geben jedem Gast eine private Seite, auf der er Firma, Steuernummer bzw. USt-IdNr. und Adresse angibt und die Rechnung zum Check-out anfordert. Siehe [Rechnung auf eine Firma statt auf den Gast ausstellen](/blog/invoice-in-company-name).
 
 Wenn Rechnungsanfragen per Booking.com-Nachricht zu Ihnen kommen, lesen Sie [Booking.com-Gästenachrichten verwalten](/blog/booking-com-guest-messages).
 

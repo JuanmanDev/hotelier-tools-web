@@ -3,6 +3,7 @@ title: "Pesan tamu Booking.com: cara mengelolanya tanpa terus-menerus membuka ex
 seoTitle: "Pesan tamu Booking.com tanpa membuka extranet"
 description: "Pulse, template, pesan terjadwal, balasan otomatis, cara mengenali pesan palsu Booking.com, dan satu inbox untuk Booking.com, WhatsApp, dan email."
 date: 2026-10-03
+updated: 2026-11-05
 category: guests
 tags: [booking.com, guest messages, inbox, templates, little hotelier]
 keywords: [pesan tamu booking.com, pesan booking.com tidak muncul, pesan terjadwal booking com, template email booking com, balasan otomatis booking.com, pesan phishing booking.com, guest q&a booking.com]
@@ -116,6 +117,8 @@ Lindungi juga tamu Anda:
 - **Ketahui di mana nomor telepon berada.** Sejak 28 September 2026, Booking.com tidak lagi mengirim nomor telepon tamu ke channel manager ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Pakai **Show phone number** di Extranet atau Pulse.
 - **Beri tahu tamu bagaimana Anda akan meminta pembayaran**, seperti baris terakhir pada template di atas.
 
+Email OTA palsu hanyalah salah satu triknya. Refund kelebihan bayar, "tamu" yang mengirim dokumen atau kartu lewat tautan, dan invoice pemasok dengan rekening bank baru dibahas di [cara hotel mengenali dan menghentikan pesan penipuan](/blog/hotel-scam-messages).
+
 ## Cara yang lebih cepat: Booking.com, WhatsApp, dan email dalam satu inbox
 
 **Inbox** Hotelier Tools (`/messaging`, alpha) menempatkan pesan Booking.com dan Guest Q&A berdampingan dengan WhatsApp dan email Anda, dengan reservasi di samping setiap percakapan dan balasan yang disusun AI untuk Anda periksa.
@@ -125,12 +128,14 @@ Lindungi juga tamu Anda:
 3. Buka **Inbox** dan filter dengan **Booking.com**. Thread Booking.com otomatis terhubung ke reservasinya.
 4. Baca draf dan rencana AI, edit, atau minta asisten privat di sebelah kanan untuk mencari sesuatu di Little Hotelier.
 
+Percakapan Expedia bisa masuk ke daftar yang sama (beta): setelah menghubungkan Partner Central, tekan **Switch on Expedia messages** di **Channels**. Inbox menampilkan tamu dan pesan terakhir dari setiap percakapan, dan balasan tetap ditulis di Partner Central. Sejak rilis 1.71 (November 2026) pembacaan itu berfungsi dan thread Expedia sudah masuk; jika Expedia mengubah permintaannya lagi, halaman koneksinya menyatakan hal tersebut. Lihat [cara mengelola pesan tamu Expedia](/blog/expedia-guest-messages).
+
 ::screenshot{src="/images/blog/demo/en/guest-inbox-ai-plan-late-arrival.webp" alt="Inbox tamu dengan percakapan WhatsApp terbuka: pesan tamu tentang kedatangan larut malam dalam bahasa Spanyol, reservasi yang cocok bertanda identitas terverifikasi dan lunas, rencana AI berupa draf dengan alasan dan balasan yang bisa diedit, serta panel Assistant privat di sebelah kanan" caption="Setiap percakapan menampilkan reservasi, draf AI yang menunggu Anda, dan asisten privat yang tidak pernah dilihat tamu." path="/messaging"}
 ::
 
 Dua batasan yang jujur:
 
-- **Untuk Booking.com, AI tidak pernah mengirim apa pun sendiri.** Dan mengirim balasan Anda kembali ke Booking.com dari inbox belum kami janjikan: salin draf yang sudah disetujui ke Extranet atau Pulse.
+- **Untuk Booking.com, AI tidak pernah mengirim apa pun sendiri.** Saat staf menekan **Send**, balasan dikirim ke percakapan Booking.com lewat sesi extranet Anda sendiri. Jika Booking.com menolak pengiriman itu (misalnya setelah meminta Anda memverifikasi ulang), inbox memberi tahu Anda dan menyimpan draf Anda untuk ditempel di Extranet atau Pulse.
 - **Layanan ini memakai sesi extranet Anda sendiri.** Hotelier Tools masuk sebagai Anda, karena API pesan Booking.com hanya terbuka untuk mitra konektivitas. Dashboard sendiri mencatat bahwa ketentuan mitra Booking.com membatasi akses extranet otomatis, dan bahwa Connectivity API tetap menjadi jalur yang didukung jika Anda memilikinya.
 
 Dua pesan permintaan invoice baku dari Booking.com dikenali tanpa AI sama sekali: inbox menawarkan untuk mendaftarkan masa inap itu agar invoice-nya dikirim saat check-out (lihat [mengirim invoice otomatis saat check-out](/blog/send-invoice-to-guest-at-checkout)).

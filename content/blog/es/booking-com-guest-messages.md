@@ -3,6 +3,7 @@ title: "Mensajes automáticos de Booking.com: cómo gestionar los mensajes de hu
 seoTitle: "Mensajes automáticos y plantillas de Booking.com"
 description: "Pulse, plantillas, mensajes programados y respuestas automáticas, cómo detectar mensajes falsos de Booking.com y una sola bandeja con WhatsApp y email."
 date: 2026-10-03
+updated: 2026-11-05
 category: guests
 tags: [booking.com, guest messages, inbox, templates, little hotelier]
 keywords: [mensajes automáticos booking, plantillas mensajes booking, mensajes programados booking, booking mensajes falsos, booking mensajes no cargan, respuestas automáticas booking, preguntas de huéspedes booking]
@@ -116,6 +117,8 @@ Protege también a tus huéspedes:
 - **Ten claro dónde ver los teléfonos.** Desde el 28 de septiembre de 2026, Booking.com ya no envía los teléfonos de los huéspedes a los channel managers ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Usa **Show phone number** en la extranet o en Pulse.
 - **Cuéntales a los huéspedes cómo les pedirás dinero**, como en la última línea de la plantilla de arriba.
 
+Los emails falsos de las OTA son solo uno de los trucos. Los reembolsos por pagos de más, los «huéspedes» que envían documentos o tarjetas por enlace y las facturas de proveedores con datos bancarios nuevos se tratan en [cómo detectar y frenar los mensajes de estafa en un hotel](/blog/hotel-scam-messages).
+
 ## La forma más rápida: Booking.com, WhatsApp y email en una sola bandeja
 
 La **Bandeja** de Hotelier Tools (`/messaging`, alfa) junta los mensajes de Booking.com y Guest Q&A con tu WhatsApp y tu email, con la reserva al lado de cada conversación y una respuesta redactada por la IA para que la revises.
@@ -125,12 +128,14 @@ La **Bandeja** de Hotelier Tools (`/messaging`, alfa) junta los mensajes de Book
 3. Abre la **Bandeja** y filtra por **Booking.com**. Un hilo de Booking.com se vincula solo con su reserva.
 4. Lee el borrador y el plan de la IA, edítalo o pídele al asistente privado de la derecha que consulte algo en Little Hotelier.
 
+Las conversaciones de Expedia pueden sumarse a la misma lista (beta): después de conectar Partner Central, pulsa **Activar mensajes de Expedia** en **Canales**. La bandeja muestra el huésped y el último mensaje de cada conversación, y las respuestas se siguen escribiendo en Partner Central. Desde la versión 1.71 (noviembre de 2026) esa lectura funciona y los hilos de Expedia llegan; si Expedia vuelve a cambiar su petición, la página de conexión lo indica. Mira [cómo gestionar los mensajes de huéspedes de Expedia](/blog/expedia-guest-messages).
+
 ::screenshot{src="/images/blog/demo/es/guest-inbox-ai-plan-late-arrival.webp" alt="Bandeja de huéspedes con una conversación de WhatsApp abierta: el mensaje del huésped sobre una llegada tardía, la reserva asociada marcada como identidad verificada y pagada, el plan de la IA en borrador con el motivo y una respuesta editable, y el panel privado Asistente a la derecha" caption="Cada conversación muestra la reserva, un borrador de la IA esperándote y un asistente privado que el huésped nunca ve." path="/messaging"}
 ::
 
 Dos límites, con total honestidad:
 
-- **En Booking.com, la IA nunca envía nada por su cuenta.** Y todavía no garantizamos que tu respuesta llegue a Booking.com desde la bandeja: copia el borrador aprobado en la extranet o en Pulse.
+- **En Booking.com, la IA nunca envía nada por su cuenta.** Cuando una persona pulsa **Enviar**, la respuesta se publica en la conversación de Booking.com a través de tu propia sesión de la extranet. Si Booking.com rechaza el envío (por ejemplo, después de pedirte que vuelvas a verificar), la bandeja lo indica y guarda tu borrador para que lo pegues en la extranet o en Pulse.
 - **Usa tu propia sesión de la extranet.** Hotelier Tools entra como tú, porque la API de mensajería de Booking.com solo está abierta a los partners de conectividad. El propio panel avisa de que las condiciones para partners de Booking.com restringen el acceso automatizado a la extranet, y de que la Connectivity API sigue siendo la vía admitida cuando la tienes.
 
 Los dos mensajes fijos de Booking.com para pedir factura se reconocen sin IA: la bandeja te ofrece apuntar la estancia en **Factura a la salida** (mira [enviar la factura automáticamente al check-out](/blog/send-invoice-to-guest-at-checkout)).

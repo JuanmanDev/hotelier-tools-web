@@ -139,6 +139,10 @@ Autopilot menulis minimum stay hanya jika Anda mengizinkannya secara terpisah, d
 ::screenshot{src="/images/blog/demo/en/pricing-settings-autopilot.webp" alt="Halaman Autopilot bertanda Off: tugas Autopilot runs belum dikonfigurasi dengan tombol Run every 3 hours, Unattended price writes dengan tombol Let the autopilot write prices to Little Hotelier mati, serta pagar pengaman perubahan maksimum 20% per malam, tidak pernah menulis di bawah 0, dan melihat 14 hari ke depan" caption="Autopilot mati sampai Anda mengaktifkan penulisan harga tanpa pengawasan dan menjadwalkan prosesnya." path="/pricing/settings/autopilot"}
 ::
 
+### Kode promo di situs web Anda
+
+Kode diskon di booking engine Anda sendiri mengubah harga yang dibayar tamu langsung, jadi kode itu termasuk dalam gambaran yang sama. **Promo codes** (`/pricing/promo-codes`) menjelaskan setiap kode dalam satu kalimat dan memberi peringatan saat kode membuat suatu malam turun di bawah harga minimum Anda atau bertumpuk dengan diskon yang sudah Anda terapkan. Lihat [kode promo Little Hotelier](/blog/little-hotelier-promo-codes).
+
 ### Log harga: apa yang dihasilkan setiap perubahan
 
 **History & outcomes** (`/pricing-log`) mendaftar setiap tarif yang ditulis ke Little Hotelier, oleh Anda, autopilot, atau asisten, dengan sisa kamar saat itu dan sekarang. Setelah kenaikan, halaman ini memperkirakan tambahan pendapatan sebagai kamar yang terjual setelah perubahan dikali selisihnya. Halaman itu menyatakan dengan jelas apa yang tidak bisa diketahui estimasi tersebut, seperti apakah kamar itu tetap akan terjual. Anggap sebagai panduan, bukan bukti.

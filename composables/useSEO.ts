@@ -52,6 +52,11 @@ export const useSEO = () => {
     ogType: 'website' | 'article'
     /** Extra details for the generated share card */
     og: { eyebrow?: string, status?: string, statusKind?: 'stable' | 'beta' | 'alpha' | 'soon', accent?: string }
+    /** Share card component (components/OgImage) and its extra props; Feature by default */
+    ogComponent: 'Feature' | 'Article'
+    ogProps: Record<string, string | number>
+    /** Person who wrote the page; the brand otherwise */
+    author: string
   }>) => {
     const siteName = t('seo.site.name')
     const siteDescription = t('seo.site.description')
@@ -98,25 +103,31 @@ export const useSEO = () => {
       ogSiteName: siteName,
       ogLocale: ogLocaleOf(),
       ...(customData?.ogImage ? { ogImage: customData.ogImage } : {}),
-      
+      ogImageAlt: ogTitle,
+      // The same page in the other languages it exists in
+      ogLocaleAlternate: localeCodes.filter(code => code !== locale.value).map(code => ogLocaleOf(code)),
+
       // Twitter
       twitterCard: 'summary_large_image',
       twitterTitle: ogTitle,
       twitterDescription: ogDescription,
       ...(customData?.ogImage ? { twitterImage: customData.ogImage } : {}),
-      
-      // Robots
-      robots: customData?.noindex ? 'noindex,nofollow' : 'index,follow',
-      
+      twitterImageAlt: ogTitle,
+
+      // Robots: large image previews and full snippets let Google Discover and AI answers use the page
+      robots: customData?.noindex ? 'noindex,nofollow' : 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1',
+
       // Additional meta
-      author: 'Hotelier Tools',
+      author: customData?.author ?? 'Hotelier Tools',
+      applicationName: siteName,
+      themeColor: '#2563eb',
       copyright: `© ${new Date().getFullYear()} Hotelier Tools`,
       language: languageOf()
     })
 
     // Share card generated for this page at build time (components/OgImage/Feature.vue)
     if (!customData?.ogImage) {
-      defineOgImageComponent('Feature', {
+      defineOgImageComponent(customData?.ogComponent ?? 'Feature', {
         title: ogTitle,
         description: ogDescription,
         eyebrow: customData?.og?.eyebrow ?? '',
@@ -124,7 +135,9 @@ export const useSEO = () => {
         statusKind: customData?.og?.statusKind ?? '',
         accent: customData?.og?.accent ?? '#60a5fa',
         footer: t('pricing.title', { date: new Intl.DateTimeFormat(locale.value, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC', calendar: 'gregory' }).format(new Date(Date.UTC(2027, 0, 10))) }),
-        site: baseUrl.replace(/^https?:\/\//, '')
+        site: baseUrl.replace(/^https?:\/\//, ''),
+        // Card-specific props (Article: author, reading time, cover…) and any override of the above
+        ...customData?.ogProps
       })
     }
 

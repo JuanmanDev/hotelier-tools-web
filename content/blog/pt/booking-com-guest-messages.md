@@ -3,6 +3,7 @@ title: "Mensagens automáticas do Booking.com: como gerir as mensagens dos hósp
 seoTitle: "Mensagens do Booking.com: gerir sem viver na extranet"
 description: "Pulse, modelos, mensagens agendadas e respostas automáticas, como identificar mensagens falsas do Booking.com e uma caixa de entrada com WhatsApp e e-mail."
 date: 2026-10-03
+updated: 2026-11-05
 category: guests
 tags: [booking.com, guest messages, inbox, templates, little hotelier]
 keywords: [mensagens automáticas booking, onde ver mensagens booking, mensagens pré reserva booking, mensagens fraudulentas booking, modelos de mensagens booking, mensagens booking não funcionam, perguntas e respostas hóspedes booking]
@@ -116,6 +117,8 @@ Proteja também os seus hóspedes:
 - **Saiba onde estão os telefones.** Desde 28 de setembro de 2026, o Booking.com deixou de enviar os telefones dos hóspedes aos channel managers ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Use **Show phone number** na Extranet ou no Pulse.
 - **Diga aos hóspedes como lhes vai pedir dinheiro**, como na última linha do modelo acima.
 
+Os e-mails falsos das OTA são só um dos truques. Reembolsos de pagamentos em excesso, "hóspedes" que enviam documentos ou cartões por link e faturas de fornecedores com novos dados bancários estão em [como os hotéis identificam e travam mensagens fraudulentas](/blog/hotel-scam-messages).
+
 ## A forma mais rápida: Booking.com, WhatsApp e e-mail numa só caixa de entrada
 
 A **Inbox** do Hotelier Tools (`/messaging`, alpha) junta as mensagens e o Guest Q&A do Booking.com ao seu WhatsApp e e-mail, com a reserva ao lado de cada conversa e uma resposta redigida pela IA para você rever.
@@ -125,12 +128,14 @@ A **Inbox** do Hotelier Tools (`/messaging`, alpha) junta as mensagens e o Guest
 3. Abra a **Inbox** e filtre por **Booking.com**. Uma conversa do Booking.com fica associada automaticamente à sua reserva.
 4. Leia o rascunho e o plano da IA, edite-o ou peça ao assistente privado, à direita, que consulte algo no Little Hotelier.
 
+As conversas da Expedia podem juntar-se à mesma lista (beta): depois de conectar o Partner Central, carregue em **Switch on Expedia messages** em **Channels**. A caixa de entrada mostra o hóspede e a última mensagem de cada conversa, e as respostas continuam a ser escritas no Partner Central. Desde a versão 1.71 (novembro de 2026) essa leitura funciona e as conversas da Expedia chegam; se a Expedia voltar a mudar o seu pedido, a página da conexão indica-o. Veja [como gerir as mensagens dos hóspedes da Expedia](/blog/expedia-guest-messages).
+
 ::screenshot{src="/images/blog/demo/en/guest-inbox-ai-plan-late-arrival.webp" alt="Caixa de entrada de hóspedes com uma conversa de WhatsApp aberta: a mensagem do hóspede sobre uma chegada tardia, em espanhol, a reserva associada marcada como identity verified e paid, o plano da IA em rascunho com o motivo e uma resposta editável, e o painel Assistant privado à direita" caption="Cada conversa mostra a reserva, um rascunho da IA à sua espera e um assistente privado que o hóspede nunca vê." path="/messaging"}
 ::
 
 Dois limites honestos:
 
-- **No Booking.com, a IA nunca envia nada sozinha.** E enviar a sua resposta de volta ao Booking.com a partir da caixa de entrada ainda não é algo que prometamos: copie o rascunho aprovado para a Extranet ou para o Pulse.
+- **No Booking.com, a IA nunca envia nada sozinha.** Quando uma pessoa carrega em **Send**, a resposta é publicada na conversa do Booking.com através da sua própria sessão da extranet. Se o Booking.com recusar o envio (por exemplo, depois de lhe pedir que volte a verificar), a caixa de entrada avisa e guarda o seu rascunho para o colar na Extranet ou no Pulse.
 - **Usa a sua própria sessão da extranet.** O Hotelier Tools entra como você, porque a API de mensagens do Booking.com só está aberta a parceiros de conectividade. O próprio dashboard refere que os termos de parceiro do Booking.com restringem o acesso automatizado à extranet e que a Connectivity API continua a ser a via suportada onde a tiver.
 
 As duas mensagens fixas de pedido de fatura / nota fiscal do Booking.com são reconhecidas sem qualquer IA: a caixa de entrada propõe inscrever a estadia para a sua fatura no check-out (veja [enviar a fatura automaticamente no check-out](/blog/send-invoice-to-guest-at-checkout)).

@@ -104,6 +104,8 @@ Cosa sapere:
 
 In alta stagione controlla più spesso di una volta a notte: con un controllo notturno, una camera liberata alle 9:00 aspetta fino alle 01:00 per essere offerta e potrebbe essere già sparita.
 
+Non tutte le richieste riguardano una notte esaurita. Un ospite può chiedere date per cui non hai ancora fissato i prezzi, o un'agenzia può volere più camere di quante ne hai. La stessa coda gestisce entrambi i casi: le notti chiuse contano come non prenotabili finché non le apri, e una corrispondenza parziale arriva solo a te. Vedi [come tenere una coda delle richieste di disponibilità](/blog/hotel-availability-requests-queue).
+
 ### Come la lista d'attesa influisce sui tuoi prezzi
 
 Ogni gruppo in attesa per una notte alza del 3% il prezzo consigliato per quella notte, fino al 12% a notte, nei prezzi dinamici di Hotelier Tools (alpha). Una lista d'attesa piena è un segnale di domanda e il prezzo consigliato ne tiene conto ([prezzi dinamici per piccoli hotel](/blog/dynamic-pricing-little-hotelier)).

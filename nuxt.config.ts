@@ -254,6 +254,9 @@ export default defineNuxtConfig({
     id: 'e366eb58-491e-4829-8eb7-98765c84cdb4',
     host: 'https://umami.hotelier.tools/',
     autoTrack: true,
+    // Only the production site counts: previews and local builds stay out of the numbers
+    domains: ['hotelier.tools', 'www.hotelier.tools'],
+    ignoreLocalhost: true,
     useDirective: false,
     logErrors: process.env.NODE_ENV === 'development'
   },

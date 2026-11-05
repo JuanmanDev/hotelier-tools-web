@@ -139,6 +139,10 @@ It writes minimum stays only if you separately allow it, and it **never** change
 ::screenshot{src="/images/blog/demo/en/pricing-settings-autopilot.webp" alt="Autopilot page marked Off: the Autopilot runs task not configured yet with a Run every 3 hours button, Unattended price writes with the Let the autopilot write prices to Little Hotelier switch off, and guardrails of 20% max change per night, never write below 0 and look ahead 14 days" caption="The autopilot is off until you switch on unattended price writes and schedule its runs." path="/pricing/settings/autopilot"}
 ::
 
+### Promo codes on your website
+
+Discount codes on your own booking engine change what direct guests pay, so they belong in the same picture. **Promo codes** (`/pricing/promo-codes`) explains each code in one sentence and warns when a code takes a night under your minimum price or stacks with the discount you already apply. See [Little Hotelier promo codes](/blog/little-hotelier-promo-codes).
+
 ### The pricing log: what each change did
 
 **History & outcomes** (`/pricing-log`) lists every rate written to Little Hotelier, by you, the autopilot or the assistant, with the rooms left then and now. After an increase it estimates extra revenue as rooms sold after the change times the difference. The page says plainly what that estimate cannot know, such as whether those rooms would have sold anyway. Treat it as a guide, not proof.

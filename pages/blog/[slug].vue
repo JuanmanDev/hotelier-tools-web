@@ -65,7 +65,7 @@
             <summary class="cursor-pointer font-semibold text-gray-900 dark:text-white">{{ t('blog.toc') }}</summary>
             <ol class="mt-3 space-y-2 text-sm">
               <li v-for="l in toc" :key="l.id">
-                <a :href="`#${l.id}`" class="text-gray-700 dark:text-gray-300 hover:underline underline-offset-4">{{ l.text }}</a>
+                <a :href="`#${l.id}`" class="text-gray-700 dark:text-gray-300 hover:underline underline-offset-4" :data-umami-click="umami('blog_toc', l.id)">{{ l.text }}</a>
               </li>
             </ol>
           </details>
@@ -78,7 +78,7 @@
           <section v-if="meta.faq?.length" class="max-w-3xl mt-14" aria-labelledby="faq-title">
             <h2 id="faq-title" class="font-display text-2xl lg:text-3xl font-semibold tracking-tight text-gray-900 dark:text-white mb-6">{{ t('blog.faq_title') }}</h2>
             <div class="divide-y divide-gray-200 dark:divide-gray-800 rounded-2xl ring-1 ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-900">
-              <details v-for="(f, i) in meta.faq" :key="i" class="group p-5" :open="i === 0">
+              <details v-for="(f, i) in meta.faq" :key="i" class="group p-5" :open="i === 0" @toggle="onFaqToggle($event, i)">
                 <summary class="flex cursor-pointer list-none items-start justify-between gap-4 font-semibold text-gray-900 dark:text-white">
                   <h3 class="text-base sm:text-lg">{{ f.q }}</h3>
                   <UIcon name="i-heroicons-chevron-down" class="w-5 h-5 shrink-0 mt-1 transition-transform group-open:rotate-180" />
@@ -88,13 +88,13 @@
             </div>
           </section>
 
-          <!-- Share -->
-          <div class="max-w-3xl mt-12 flex flex-wrap items-center gap-3 border-t border-gray-200 dark:border-gray-800 pt-6">
+          <!-- Share; reaching it counts as having read the guide -->
+          <div ref="endOfArticle" class="max-w-3xl mt-12 flex flex-wrap items-center gap-3 border-t border-gray-200 dark:border-gray-800 pt-6">
             <span class="text-sm font-medium text-gray-700 dark:text-gray-300 mr-1">{{ t('blog.share') }}</span>
-            <UButton :to="`https://wa.me/?text=${encodeURIComponent(doc.title + ' ' + pageUrl)}`" target="_blank" size="sm" color="neutral" variant="soft" icon="i-simple-icons-whatsapp" aria-label="WhatsApp" />
-            <UButton :to="`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`" target="_blank" size="sm" color="neutral" variant="soft" icon="i-simple-icons-linkedin" aria-label="LinkedIn" />
-            <UButton :to="`https://x.com/intent/post?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(doc.title)}`" target="_blank" size="sm" color="neutral" variant="soft" icon="i-simple-icons-x" aria-label="X" />
-            <UButton size="sm" color="neutral" variant="soft" :icon="linkCopied ? 'i-heroicons-check' : 'i-heroicons-link'" @click="copyLink">
+            <UButton :to="`https://wa.me/?text=${encodeURIComponent(doc.title + ' ' + pageUrl)}`" target="_blank" size="sm" color="neutral" variant="soft" icon="i-simple-icons-whatsapp" aria-label="WhatsApp" :data-umami-click="umami('blog_share', 'whatsapp')" />
+            <UButton :to="`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`" target="_blank" size="sm" color="neutral" variant="soft" icon="i-simple-icons-linkedin" aria-label="LinkedIn" :data-umami-click="umami('blog_share', 'linkedin')" />
+            <UButton :to="`https://x.com/intent/post?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(doc.title)}`" target="_blank" size="sm" color="neutral" variant="soft" icon="i-simple-icons-x" aria-label="X" :data-umami-click="umami('blog_share', 'x')" />
+            <UButton size="sm" color="neutral" variant="soft" :icon="linkCopied ? 'i-heroicons-check' : 'i-heroicons-link'" :data-umami-click="umami('blog_share', 'copy')" @click="copyLink">
               {{ linkCopied ? t('blog.copied') : t('blog.copy_link') }}
             </UButton>
           </div>
@@ -103,7 +103,7 @@
           <div v-if="otherLocales.length" class="max-w-3xl mt-6 text-sm text-gray-600 dark:text-gray-400">
             <span class="mr-2">{{ t('blog.other_languages') }}</span>
             <template v-for="(l, i) in otherLocales" :key="l.code">
-              <NuxtLink :to="switchLocalePath(l.code)" :hreflang="languageOf(l.code)" class="underline underline-offset-4 hover:text-gray-900 dark:hover:text-white">{{ l.name }}</NuxtLink><span v-if="i < otherLocales.length - 1">, </span>
+              <NuxtLink :to="switchLocalePath(l.code)" :hreflang="languageOf(l.code)" :data-umami-click="umami('blog_language', l.code)" class="underline underline-offset-4 hover:text-gray-900 dark:hover:text-white">{{ l.name }}</NuxtLink><span v-if="i < otherLocales.length - 1">, </span>
             </template>
           </div>
         </article>
@@ -117,6 +117,7 @@
                 <li v-for="l in toc" :key="l.id">
                   <a
                     :href="`#${l.id}`"
+                    :data-umami-click="umami('blog_toc', l.id)"
                     class="block leading-snug hover:text-gray-900 dark:hover:text-white"
                     :class="activeId === l.id ? 'font-semibold text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-400'"
                   >{{ l.text }}</a>
@@ -124,7 +125,7 @@
               </ol>
             </nav>
 
-            <div v-if="feature" class="rounded-2xl p-5 text-white shadow-lg" :style="{ background: 'linear-gradient(135deg, var(--accent), #1e3a8a)' }">
+            <div v-if="feature" data-umami-section="blog-sidebar" class="rounded-2xl p-5 text-white shadow-lg" :style="{ background: 'linear-gradient(135deg, var(--accent), #1e3a8a)' }">
               <UIcon :name="feature.icon" class="w-7 h-7 mb-3" />
               <p class="font-display text-lg font-semibold leading-snug mb-2">{{ t(`platform.slides.${feature.id}.title`) }}</p>
               <p class="text-sm text-white/85 mb-4">{{ t('blog.sidebar_text') }}</p>
@@ -163,6 +164,7 @@
 
 <script setup lang="ts">
 import { categoryById, readingMinutes, blogSlug, BLOG_MISSING_LOCALES, AUTHOR_NAME, type BlogMeta } from '~/data/blog'
+import { OG_COVERS } from '~/data/og-covers'
 import { featureBySlug, accentVars, ACCENTS, DEMO_URL } from '~/data/platform'
 import HeroSection from '~/components/HeroSection.vue'
 import BlogCard from '~/components/blog/BlogCard.vue'
@@ -230,6 +232,13 @@ const dateFormatter = computed(() => new Intl.DateTimeFormat(locale.value, { day
 const formatDate = (d?: string) => d ? dateFormatter.value.format(new Date(`${String(d).slice(0, 10)}T00:00:00Z`)) : ''
 
 const baseUrl = runtimeConfig.public.baseUrl || 'https://hotelier.tools'
+const isoDate = (d?: string) => d ? String(d).slice(0, 10) : undefined
+// JPEG twin of the cover for the share card (satori can't read WebP); none when it hasn't been made.
+// A path under public/, which nuxt-og-image reads from disk at build time.
+const ogCover = computed(() => {
+  const jpg = meta.value.cover?.replace(/^\/images\/blog\/demo\/([^/]+)\/(.+)\.webp$/, '/images/blog/og/$1/$2.jpg')
+  return jpg && jpg !== meta.value.cover && OG_COVERS.has(jpg) ? jpg : ''
+})
 const pageUrl = computed(() => `${baseUrl}${localePath(`/blog/${slug}`)}`)
 
 setSEO('blog', {
@@ -240,20 +249,38 @@ setSEO('blog', {
   keywords: meta.value.keywords?.join(', '),
   alternates: translations.value ?? [locale.value],
   ogType: 'article',
+  author: AUTHOR_NAME,
   og: {
     eyebrow: t(`blog.categories.${category.value.id}.name`),
     accent: ACCENTS[category.value.accent]?.[1]
+  },
+  // Share card with the guide's own screenshot (a JPEG twin of the cover, made by scripts/og-covers.py)
+  ogComponent: 'Article',
+  ogProps: {
+    // The shorter headline fits the card better
+    title: meta.value.seoTitle ?? doc.value.title,
+    kind: t('blog.kind'),
+    author: AUTHOR_NAME,
+    minutes: t('blog.reading_time', { n: minutes.value }),
+    date: formatDate(meta.value.updated ?? meta.value.date),
+    cover: ogCover.value,
+    coverLabel: `demo.hotelier.tools${meta.value.demoPath ?? ''}`
   }
 })
 
 useSeoMeta({
-  articlePublishedTime: meta.value.date,
-  articleModifiedTime: meta.value.updated ?? meta.value.date,
+  articlePublishedTime: isoDate(meta.value.date),
+  articleModifiedTime: isoDate(meta.value.updated ?? meta.value.date),
   articleSection: t(`blog.categories.${category.value.id}.name`),
-  articleTag: meta.value.tags
+  articleTag: meta.value.tags,
+  articleAuthor: [`${baseUrl}${localePath('/about')}`],
+  // Slack, Discord and others show these two pairs under the link preview
+  twitterLabel1: t('blog.written_by'),
+  twitterData1: AUTHOR_NAME,
+  twitterLabel2: t('blog.reading_time_label'),
+  twitterData2: t('blog.reading_time', { n: minutes.value })
 })
 
-const isoDate = (d?: string) => d ? String(d).slice(0, 10) : undefined
 useSchemaOrg([defineArticle({
   '@type': 'BlogPosting',
   headline: doc.value.title,
@@ -288,6 +315,27 @@ onMounted(() => {
   headings.forEach(h => observer!.observe(h))
 })
 onBeforeUnmount(() => observer?.disconnect())
+
+// Analytics: which sections, questions and languages people use, and who reads to the end
+const umami = (name: string, target: string) => JSON.stringify({ name, target, slug, category: meta.value.category ?? '' })
+const onFaqToggle = (event: Event, index: number) => {
+  if ((event.target as HTMLDetailsElement).open && index > 0) trackEvent('blog_faq_open', { slug, locale: locale.value, question: index + 1 })
+}
+const endOfArticle = ref<HTMLElement>()
+let readObserver: IntersectionObserver | undefined
+onMounted(() => {
+  const started = Date.now()
+  if (!endOfArticle.value) return
+  readObserver = new IntersectionObserver((entries) => {
+    if (!entries.some(e => e.isIntersecting)) return
+    const seconds = Math.round((Date.now() - started) / 1000)
+    // Scrolling straight to the bottom in a few seconds is skimming, not reading
+    trackEvent(seconds >= minutes.value * 20 ? 'blog_read_complete' : 'blog_reached_end', { slug, locale: locale.value, category: meta.value.category ?? '', minutes: minutes.value, seconds })
+    readObserver?.disconnect()
+  })
+  readObserver.observe(endOfArticle.value)
+})
+onBeforeUnmount(() => readObserver?.disconnect())
 
 const linkCopied = ref(false)
 async function copyLink() {

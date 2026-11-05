@@ -90,6 +90,8 @@ Deux points à vérifier :
 - **La liste des expéditeurs autorisés de Booking.com.** Booking.com bloque les e-mails et les liens provenant de systèmes que vous n'avez pas approuvés. Ajoutez les domaines de Little Hotelier sous **Property > Messaging preferences > Security settings** dans l'Extranet, sinon la demande n'atteint jamais le client ([comment faire](https://helpcentre.littlehotelier.com/en/articles/12046627-add-little-hotelier-to-your-booking-com-e-mail-allowlist)).
 - **Le numéro de téléphone.** Depuis le 28 septembre 2026, Booking.com n'envoie plus les numéros de téléphone des clients aux channel managers : les nouvelles réservations Booking.com arrivent donc dans Little Hotelier sans numéro ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Copiez-le depuis l'Extranet avec **Show phone number** dans les détails de la réservation.
 
+Pour envoyer ce lien sans ouvrir Little Hotelier, ou pour relancer automatiquement les clients qui n'ont pas payé les jours que vous choisissez, voir [les liens de paiement et relances Little Hotelier](/blog/little-hotelier-payment-links).
+
 Le script gratuit [Update Payment Link Button](/tools/ui/update-payment-link-button) donne un libellé plus clair au bouton de demande de paiement et ajoute à la demande le numéro de téléphone de la réservation :
 
 ::screenshot{src="/images/scripts/update-payment-link-button/to.png" alt="Récapitulatif d'une réservation Little Hotelier (interface en espagnol) où le bouton de demande de paiement affiche désormais Cobrar con tarjeta por correo electronico (Email)" caption="Le script Update Payment Link Button renomme le bouton de demande de paiement (Generate Payment Link en anglais) et transmet le numéro de téléphone du client." width="618" height="484"}
@@ -108,6 +110,8 @@ Une carte de crédit virtuelle est une Mastercard numérique temporaire que Book
 | Blocage de sécurité | Trop de tentatives échouées. Réessayez dans 24 à 48 heures. |
 
 Ne préautorisez jamais une carte virtuelle. Si vous l'avez fait, finalisez l'encaissement avec le code d'autorisation, ou annulez la préautorisation et débitez de nouveau. Toujours refusée ? Interrogez votre prestataire de paiement sur le code de refus, puis écrivez à Booking.com depuis la messagerie de l'Extranet.
+
+Expedia fonctionne autrement. Avec Expedia Collect, le client paie d'avance Expedia, et vous n'êtes payé que si vous débitez la carte virtuelle d'Expedia ou envoyez une demande de paiement dans Partner Central dans les 365 jours qui suivent le départ. Passé ce délai, l'argent reste chez Expedia. Voir [comment se faire payer les réservations Expedia Collect](/blog/expedia-collect-payment-requests).
 
 ## Comment déclarer un no-show et facturer (ou non) les frais
 

@@ -105,7 +105,7 @@ Réglez-la une fois pour toutes dans **Settings > Invoices** (`/settings/invoice
 
 **Après son émission :** modifiez les informations dans Little Hotelier, puis utilisez **Invoice is outdated** pour générer une facture corrigée. Si vous l'aviez déjà marquée comme définitive, cliquez sur **Cancel invoice**, puis de nouveau sur **Generate invoice** ([centre d'aide](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). En Espagne avec VeriFactu, une facture définitive se modifie par **Rectify invoice** ([centre d'aide](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)).
 
-Un lien privé où les clients saisissent eux-mêmes les informations de leur entreprise est en cours de développement et pas encore disponible.
+Les clients peuvent aussi saisir eux-mêmes les informations de leur entreprise : les liens de facture de Hotelier Tools donnent à chaque client une page privée où ajouter l'entreprise, le numéro d'identification fiscale et l'adresse, et demander la facture au départ. Voir [comment facturer une entreprise plutôt que le client](/blog/invoice-in-company-name).
 
 Si les demandes de facture vous parviennent par les messages Booking.com, lisez [comment gérer les messages clients Booking.com](/blog/booking-com-guest-messages).
 

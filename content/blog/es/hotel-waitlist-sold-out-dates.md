@@ -104,6 +104,8 @@ Qué debes saber:
 
 En temporada alta, revisa más a menudo que una vez por noche: con una revisión nocturna, una habitación liberada a las 9:00 espera hasta la 01:00 para ofrecerse, y puede que para entonces ya no esté.
 
+No todas las solicitudes son de noches agotadas. Un huésped puede pedir fechas a las que aún no has puesto precio, o una agencia puede querer más habitaciones de las que tienes. La misma cola sirve para los dos casos: las noches cerradas cuentan como no reservables hasta que las abras, y una coincidencia parcial solo te llega a ti. Consulta [cómo llevar una cola de solicitudes de disponibilidad](/blog/hotel-availability-requests-queue).
+
 ### Cómo influye la lista de espera en tus precios
 
 Cada grupo que espera una noche sube un 3 % la recomendación de precio de esa noche, hasta un 12 % por noche, en los precios dinámicos de Hotelier Tools (alfa). Una lista de espera llena es una señal de demanda, y la recomendación la refleja ([precios dinámicos para hoteles pequeños](/blog/dynamic-pricing-little-hotelier)).

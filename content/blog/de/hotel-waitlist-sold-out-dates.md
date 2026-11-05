@@ -104,6 +104,8 @@ Was Sie wissen sollten:
 
 Prüfen Sie in der Hochsaison häufiger als einmal pro Nacht: Bei einer nächtlichen Prüfung wartet ein um 9:00 Uhr frei gewordenes Zimmer bis 01:00 Uhr auf sein Angebot und ist dann vielleicht schon weg.
 
+Nicht jede Anfrage betrifft eine ausgebuchte Nacht. Ein Gast fragt vielleicht nach Terminen, für die Sie noch keine Preise haben, oder eine Agentur will mehr Zimmer, als Sie haben. Dieselbe Warteschlange erledigt beides: Geschlossene Nächte gelten als nicht buchbar, bis Sie sie öffnen, und ein Teiltreffer geht nur an Sie. Siehe [wie Sie eine Warteschlange für Verfügbarkeitsanfragen führen](/blog/hotel-availability-requests-queue).
+
 ### Wie die Warteliste Ihre Preise beeinflusst
 
 Jeder Wartelisten-Eintrag für eine Nacht hebt die Preisempfehlung dieser Nacht in der dynamischen Preisgestaltung von Hotelier Tools (Alpha) um 3 % an, höchstens um 12 % pro Nacht. Eine volle Warteliste ist ein Nachfragesignal, und die Empfehlung spiegelt das wider ([dynamische Preise für kleine Hotels](/blog/dynamic-pricing-little-hotelier)).

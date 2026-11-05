@@ -3,6 +3,7 @@ title: "How to manage Booking.com guest messages without living in the extranet"
 seoTitle: "Manage Booking.com guest messages without the extranet"
 description: "Pulse, templates, scheduled messages and auto-replies, how to spot fake Booking.com messages, and one inbox for Booking.com, WhatsApp and email."
 date: 2026-10-03
+updated: 2026-11-05
 category: guests
 tags: [booking.com, guest messages, inbox, templates, little hotelier]
 keywords: [booking.com messages, booking.com messages not working, booking com scheduled messages, booking com email template, booking.com automatic replies, booking.com phishing messages, booking.com guest q&a]
@@ -116,6 +117,8 @@ Protect your guests as well:
 - **Know where phone numbers are.** Since 28 September 2026, Booking.com no longer sends guest phone numbers to channel managers ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Use **Show phone number** in the Extranet or Pulse.
 - **Tell guests how you'll ask for money**, like the last line of the template above.
 
+Fake OTA emails are only one of the tricks. Overpayment refunds, "guests" who send documents or cards by link, and supplier invoices with new bank details are covered in [how hotels spot and stop scam messages](/blog/hotel-scam-messages).
+
 ## The faster way: Booking.com, WhatsApp and email in one inbox
 
 The Hotelier Tools **Inbox** (`/messaging`, alpha) puts Booking.com messages and Guest Q&A next to your WhatsApp and email, with the reservation beside each conversation and a reply drafted by AI for you to check.
@@ -125,12 +128,14 @@ The Hotelier Tools **Inbox** (`/messaging`, alpha) puts Booking.com messages and
 3. Open **Inbox** and filter by **Booking.com**. A Booking.com thread is linked to its reservation automatically.
 4. Read the AI's draft and plan, edit it, or ask the private assistant on the right to look something up in Little Hotelier.
 
+Expedia conversations can join the same list (beta): after connecting Partner Central, press **Switch on Expedia messages** on **Channels**. The inbox shows each conversation's guest and latest message, and replies are still written in Partner Central. Since release 1.71 (November 2026) that read works and Expedia threads arrive; if Expedia changes its request again, the connection page says so. See [how to manage Expedia guest messages](/blog/expedia-guest-messages).
+
 ::screenshot{src="/images/blog/demo/en/guest-inbox-ai-plan-late-arrival.webp" alt="Guest inbox with a WhatsApp conversation open: the guest's message about a late arrival in Spanish, the matched booking marked identity verified and paid, the AI plan in draft with the reason and an editable reply, and the private Assistant panel on the right" caption="Each conversation shows the booking, an AI draft waiting for you, and a private assistant the guest never sees." path="/messaging"}
 ::
 
 Two honest limits:
 
-- **For Booking.com, the AI never sends anything on its own.** And sending your reply back to Booking.com from the inbox isn't something we promise yet: copy the approved draft into the Extranet or Pulse.
+- **For Booking.com, the AI never sends anything on its own.** When a person presses **Send**, the reply is posted to the Booking.com conversation through your own extranet session. If Booking.com refuses the write (for example after asking you to verify again), the inbox says so and keeps your draft to paste into the Extranet or Pulse.
 - **It uses your own extranet session.** Hotelier Tools signs in as you, because Booking.com's messaging API is only open to connectivity partners. The dashboard itself notes that Booking.com's partner terms restrict automated extranet access, and that the Connectivity API remains the supported route where you have it.
 
 Booking.com's two fixed invoice-request messages are recognised without any AI: the inbox offers to enrol the stay for its invoice at checkout (see [sending the invoice automatically at checkout](/blog/send-invoice-to-guest-at-checkout)).

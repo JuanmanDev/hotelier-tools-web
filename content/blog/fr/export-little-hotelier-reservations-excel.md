@@ -86,6 +86,8 @@ Sources : [Getting started with Reports](https://help-platform.littlehotelier.c
 
 Astuce : l'export de revenus **Summary** comporte une colonne « Rate per night », une ligne par nuit. C'est le moyen le plus rapide de voir à quel prix chaque nuit d'un long séjour a été vendue.
 
+Besoin d'une feuille imprimée pour ce matin plutôt que d'un tableur ? Les rapports **Check-in** et **Housekeeping** s'impriment directement, et [les listes à imprimer des arrivées, des départs et du ménage](/blog/little-hotelier-daily-lists) montre ce que doit contenir une bonne liste du matin et comment imprimer les quatre en un clic.
+
 ## Comment ouvrir le CSV dans Excel sans accents cassés
 
 Si des noms comme « José » deviennent « JosÃ© », Excel a deviné le mauvais encodage. Importez le fichier au lieu de double-cliquer dessus :

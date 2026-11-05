@@ -3,6 +3,7 @@ title: "Integrasi Little Hotelier terbaik 2026: akuntansi, check-in, harga, pesa
 seoTitle: "Integrasi Little Hotelier Terbaik di 2026"
 description: "Apa saja yang terhubung ke Little Hotelier di 2026: ekspor Xero dan QuickBooks, check-in Chekin dan Duve, tool harga, pesan tamu, AI, dan add-on gratis."
 date: 2026-10-03
+updated: 2026-11-05
 category: api
 tags: [integrations, app store, xero, chekin, little hotelier]
 keywords: [integrasi little hotelier, little hotelier integrations, little hotelier xero integration, little hotelier app store, little hotelier booking widget, little hotelier chekin, little hotelier zapier]
@@ -95,6 +96,8 @@ Booking.com memblokir email dan tautan dari sistem yang tidak dikenalnya. Little
 ::
 
 Hotelier Tools juga punya inbox tamu (alpha): WhatsApp, Gmail, Outlook atau akun email IMAP mana pun, dan pesan Booking.com dalam satu daftar, dengan balasan yang disusun AI dan disetujui oleh manusia. Koneksi WhatsApp-nya memakai sesi WhatsApp Web (WAHA), bukan Business API resmi. Bandingkan opsinya di [WhatsApp dengan Little Hotelier](/blog/whatsapp-little-hotelier).
+
+Untuk Expedia, Hotelier Tools terhubung ke login Partner Central Anda sendiri (beta). Layanan ini bisa meminta pembayaran Expedia Collect yang menjadi utang Expedia kepada Anda setelah check-out, secara manual atau terjadwal. Sejak rilis 1.71 (November 2026) inbox juga menampilkan percakapan Expedia (beta), dan balasan selalu tetap di Partner Central. Lihat [payment request Expedia Collect](/blog/expedia-collect-payment-requests) dan [pesan tamu Expedia](/blog/expedia-guest-messages).
 
 ## Integrasi AI dan API
 

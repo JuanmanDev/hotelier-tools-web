@@ -151,6 +151,8 @@ Hotelier Tools es un panel independiente que funciona junto a Little Hotelier, c
 
 Las **comprobaciones automáticas** leen las próximas reservas y marcan lo que de otro modo descubrirías en recepción: sin habitación asignada, documento de identidad o dirección que faltan, un saldo pendiente o un huésped de tu lista «no volver a alojar». Los problemas aparecen en una sola página de incidencias, y cada ejecución envía un correo de informe. Mira [el checklist diario de recepción](/blog/hotel-front-desk-checklist-automation).
 
+Otras dos páginas ahorran tiempo cada mañana. Los **Listados del día** imprimen con un clic las llegadas, las salidas, los huéspedes alojados y el listado de limpieza del día ([listados del día para imprimir](/blog/little-hotelier-daily-lists)). El **Calendario** muestra la tarifa más baja de cada tipo de habitación encima de sus habitaciones, y **Nueva reserva** mete directamente en Little Hotelier una estancia con su precio ([un calendario de reservas más rápido](/blog/little-hotelier-reservation-calendar)).
+
 ::demo-cta{path="/automated-checks/issues"}
 ::
 

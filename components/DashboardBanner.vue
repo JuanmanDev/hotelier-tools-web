@@ -1,6 +1,7 @@
 <template>
   <section
     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-12"
+    data-umami-section="dashboard-banner"
     data-umami-view="{&quot;name&quot;:&quot;view_component&quot;,&quot;file&quot;:&quot;DashboardBanner&quot;,&quot;path&quot;:&quot;components/DashboardBanner.vue&quot;}"
   >
     <div class="relative overflow-hidden rounded-3xl p-6 sm:p-8 lg:p-10 bg-gradient-to-br from-blue-600 to-indigo-700 text-white shadow-xl">

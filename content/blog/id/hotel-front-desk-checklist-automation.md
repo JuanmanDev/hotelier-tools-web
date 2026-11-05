@@ -117,6 +117,8 @@ Setiap kali berjalan, tugas mengirim **satu email laporan**, dalam bahasa yang A
 - **Berhenti dengan aman.** Jika kata sandi Little Hotelier Anda kedaluwarsa, tugas terjadwal menjeda dirinya sendiri alih-alih mencoba ulang, yang melindungi akun Anda dari penguncian. Dashboard menampilkan "Automated jobs are paused" sampai Anda menyimpan kata sandi baru di **Credentials** atau menekan **Check now & resume**.
 - **Tiga pengecekan tetap manual.** Kartu, jumlah tamu, dan jam kedatangan tidak diperiksa otomatis, jadi tetap masukkan dalam daftar pagi Anda.
 
+Dua masalah berada di luar daftar delapan poin ini karena dimulai sebelum reservasi sampai ke Anda. Reservasi Booking.com atau Expedia yang tidak pernah masuk ke Little Hotelier membuat kamarnya tetap dijual: lihat [apa yang harus dilakukan saat reservasi OTA hilang](/blog/ota-bookings-missing-little-hotelier). Dan untuk saldo yang belum dibayar, tautan pembayaran dengan pengingat terjadwal menghemat panggilan telepon: lihat [tautan pembayaran dan pengingat Little Hotelier](/blog/little-hotelier-payment-links).
+
 Setiap tugas terdaftar di **Cron Jobs** (`/cron`) dan setiap eksekusinya di **Run History** (`/cron-logs`). Fitur ini dalam beta. Selengkapnya tentang penjadwalan di [halaman Automations](/tools/bot/automations), dan fitur lengkapnya di [Automated checks](/tools/bot/automated-checks).
 
 Panduan terkait: [panduan Little Hotelier](/blog/little-hotelier-tips), [asisten AI untuk resepsionis](/blog/ai-assistant-hotel-front-desk), [daftar tunggu untuk tanggal penuh](/blog/hotel-waitlist-sold-out-dates).

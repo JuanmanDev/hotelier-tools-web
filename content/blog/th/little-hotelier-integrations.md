@@ -3,6 +3,7 @@ title: "Little Hotelier เชื่อมต่อกับอะไรได�
 seoTitle: "การเชื่อมต่อ Little Hotelier ที่ดีที่สุด ปี 2026"
 description: "Little Hotelier เชื่อมต่ออะไรได้บ้างในปี 2026: ส่งออกไป Xero และ QuickBooks เช็คอินด้วย Chekin และ Duve เครื่องมือตั้งราคา ข้อความถึงแขก AI และสคริปต์ฟรี"
 date: 2026-10-03
+updated: 2026-11-05
 category: api
 tags: [integrations, app store, xero, chekin, little hotelier]
 keywords: [little hotelier เชื่อมต่อ, little hotelier integrations, little hotelier xero integration, little hotelier app store, little hotelier booking widget, little hotelier chekin, little hotelier zapier]
@@ -95,6 +96,8 @@ Booking.com บล็อกอีเมลและลิงก์จากร�
 ::
 
 Hotelier Tools ก็มีกล่องข้อความแขกเช่นกัน (alpha): WhatsApp, Gmail, Outlook หรือกล่องจดหมาย IMAP ใดก็ได้ และข้อความจาก Booking.com ในรายการเดียว พร้อมคำตอบที่ AI ร่างให้และคนเป็นผู้อนุมัติ การเชื่อมต่อ WhatsApp ใช้เซสชัน WhatsApp Web (WAHA) ไม่ใช่ Business API อย่างเป็นทางการ เปรียบเทียบตัวเลือกใน [WhatsApp กับ Little Hotelier](/blog/whatsapp-little-hotelier)
+
+สำหรับ Expedia นั้น Hotelier Tools เชื่อมต่อด้วยล็อกอิน Partner Central ของคุณเอง (beta) ขอเงิน Expedia Collect ที่ Expedia ติดคุณอยู่หลังเช็คเอาท์ได้ ทั้งแบบกดเองหรือตามเวลาที่ตั้งไว้ ตั้งแต่รุ่น 1.71 (พฤศจิกายน 2026) กล่องข้อความแสดงบทสนทนา Expedia ได้ด้วย (beta) และคำตอบต้องส่งจาก Partner Central เสมอ ดู[คำขอชำระเงิน Expedia Collect](/blog/expedia-collect-payment-requests) และ[ข้อความแขกจาก Expedia](/blog/expedia-guest-messages)
 
 ## AI และการเชื่อมต่อผ่าน API
 

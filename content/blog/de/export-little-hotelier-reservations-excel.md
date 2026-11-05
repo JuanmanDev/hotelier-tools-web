@@ -86,6 +86,8 @@ Quellen: [Getting started with Reports](https://help-platform.littlehotelier.com
 
 Tipp: Der Umsatzexport **Summary** hat eine Spalte „Rate per night“ mit einer Zeile pro Nacht. So sehen Sie am schnellsten, zu welchem Preis jede Nacht eines langen Aufenthalts verkauft wurde.
 
+Brauchen Sie für heute Morgen eher ein ausgedrucktes Blatt als eine Tabelle? Die Berichte **Check-in** und **Housekeeping** lassen sich direkt drucken, und [druckbare Anreise-, Abreise- und Housekeeping-Listen](/blog/little-hotelier-daily-lists) zeigt, was auf eine gute Morgenliste gehört, und wie Sie alle vier mit einem Klick drucken.
+
 ## So öffnen Sie die CSV in Excel ohne kaputte Umlaute
 
 Wird aus „Müller“ plötzlich „MÃ¼ller“, hat Excel die falsche Kodierung erraten. Importieren Sie die Datei, statt sie doppelt anzuklicken:

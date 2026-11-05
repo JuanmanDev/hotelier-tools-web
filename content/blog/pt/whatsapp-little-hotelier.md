@@ -115,6 +115,8 @@ Se precisa da API oficial, o Messaging hub é a escolha certa. Se responde sobre
 ::screenshot{src="/images/blog/demo/en/guest-inbox.webp" alt="Caixa de entrada de hóspedes do Hotelier Tools com os filtros All, WhatsApp, Email e Booking.com, quatro conversas de WhatsApp e e-mail cada uma marcada como rascunho, e um aviso amarelo de que o WhatsApp chega por webhook e o URL gerado tem de ser colado na sessão WAHA para o evento message" caption="WhatsApp, e-mail e Booking.com numa só lista, cada um com um rascunho de IA. Se nada chegar, verifique o URL do webhook na sua sessão WAHA." path="/messaging"}
 ::
 
+O painel **WhatsApp session** (sessão do WhatsApp), na mesma página de credenciais, mostra o código QR de emparelhamento (leia-o no telemóvel / celular do hotel em **Definições > Dispositivos ligados**), configura o webhook por você com **Connect webhook** e pode importar o histórico de conversas antigas com **Import history**, até ao último ano, como contexto: nada do que é importado é analisado nem respondido. As fotografias, as notas de voz e os documentos aparecem na conversa, as suas respostas podem levar ficheiros / arquivos e notas de voz, e cada assinatura com nome em **Signatures** (`/messaging/signatures`) tem a sua própria versão para WhatsApp. Como a IA constrói cada resposta está explicado em [responder às mensagens dos hóspedes com IA](/blog/ai-replies-guest-messages).
+
 ### O que a IA pode fazer no WhatsApp
 
 - **Só vê uma reserva quando o remetente está verificado.** No WhatsApp, o número tem de coincidir com o telefone da reserva, pelo menos nos últimos 8 dígitos. Se dois hóspedes coincidirem, não vê nenhum. Para hóspedes do Booking.com, acrescente o telefone à reserva do Little Hotelier para que a conversa possa ser associada.

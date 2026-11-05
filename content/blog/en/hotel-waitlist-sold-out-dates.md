@@ -104,6 +104,8 @@ What to know:
 
 In busy season, check more often than once a night: with a nightly check, a room freed at 9:00 waits until 01:00 to be offered, and may be gone by then.
 
+Not every request is for a sold-out night. A guest may ask for dates you haven't priced yet, or an agency may want more rooms than you have. The same queue handles both: closed nights count as not bookable until you open them, and a partial match reaches only you. See [how to keep a queue of availability requests](/blog/hotel-availability-requests-queue).
+
 ### How the waitlist affects your prices
 
 Each party waiting for a night raises that night's price recommendation by 3%, up to 12% per night, in Hotelier Tools' dynamic pricing (alpha). A full waitlist is a demand signal, and the recommendation shows it ([dynamic pricing for small hotels](/blog/dynamic-pricing-little-hotelier)).

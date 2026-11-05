@@ -115,6 +115,8 @@ Jika Anda membutuhkan API resmi, Messaging hub adalah pilihan yang tepat. Jika A
 ::screenshot{src="/images/blog/demo/en/guest-inbox.webp" alt="Inbox tamu Hotelier Tools dengan filter All, WhatsApp, Email, dan Booking.com, empat percakapan WhatsApp dan email yang masing-masing bertanda draft, dan pemberitahuan kuning bahwa WhatsApp masuk lewat webhook dan URL yang dihasilkan harus ditempel ke sesi WAHA untuk event message" caption="WhatsApp, email, dan Booking.com dalam satu daftar, masing-masing dengan draf AI. Jika tidak ada yang masuk, periksa URL webhook di sesi WAHA Anda." path="/messaging"}
 ::
 
+Panel **WhatsApp session** di halaman kredensial yang sama menampilkan kode QR untuk menautkan (pindai dari **Setelan > Perangkat tertaut** di ponsel hotel), mengatur webhook untuk Anda lewat **Connect webhook**, dan bisa melakukan **Import history** chat lama, hingga setahun terakhir, sebagai konteks: tidak ada yang diimpor yang dianalisis atau dijawab. Foto, pesan suara, dan dokumen tampil di thread, balasan Anda bisa membawa file dan pesan suara, dan setiap tanda tangan bernama dari **Signatures** (`/messaging/signatures`) punya versi WhatsApp-nya sendiri. Cara AI menyusun setiap balasan dijelaskan di [membalas pesan tamu dengan AI](/blog/ai-replies-guest-messages).
+
 ### Apa yang boleh dilakukan AI di WhatsApp
 
 - **Ia hanya melihat reservasi jika pengirimnya terverifikasi.** Di WhatsApp, nomor harus cocok dengan telepon di reservasi setidaknya pada 8 digit terakhirnya. Jika dua tamu cocok, ia tidak melihat keduanya. Untuk tamu Booking.com, tambahkan telepon ke reservasi Little Hotelier agar chat bisa dicocokkan.

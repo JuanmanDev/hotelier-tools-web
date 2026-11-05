@@ -33,6 +33,7 @@ async function copy() {
   try {
     await navigator.clipboard.writeText(props.code)
     copied.value = true
+    trackEvent('blog_code_copy', { lang: props.language ?? '', file: props.filename ?? '', page: pageContext(window.location.pathname).campaign })
     setTimeout(() => { copied.value = false }, 1600)
   } catch {
     // Clipboard blocked by the browser: the reader can still select the text

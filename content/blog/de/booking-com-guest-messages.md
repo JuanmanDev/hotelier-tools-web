@@ -3,6 +3,7 @@ title: "Booking.com-Nachrichten verwalten, ohne ständig im Extranet zu sein"
 seoTitle: "Booking.com-Nachrichten verwalten ohne Extranet"
 description: "Pulse, Vorlagen, geplante Nachrichten, automatische Antworten, gefälschte Nachrichten erkennen und ein Posteingang für Booking.com, WhatsApp und E-Mail."
 date: 2026-10-03
+updated: 2026-11-05
 category: guests
 tags: [booking.com, guest messages, inbox, templates, little hotelier]
 keywords: [booking.com nachrichten, booking nachrichten werden nicht angezeigt, booking.com nachrichten laden nicht, booking.com nachrichten übersetzen, booking.com nachrichten abrufen, booking.com phishing nachrichten, booking.com automatische antworten]
@@ -116,6 +117,8 @@ Schützen Sie auch Ihre Gäste:
 - **Wo Sie Telefonnummern finden.** Seit dem 28. September 2026 sendet Booking.com keine Telefonnummern der Gäste mehr an Channel-Manager ([Booking.com for developers](https://developers.booking.com/connectivity/docs/migration-guides/migrating-to-new-versions)). Nutzen Sie **Show phone number** im Extranet oder in Pulse.
 - **Sagen Sie Gästen, wie Sie Geld anfordern**, wie in der letzten Zeile der Vorlage oben.
 
+Gefälschte OTA-E-Mails sind nur eine der Maschen. Rückerstattungen nach Überzahlung, „Gäste“, die Dokumente oder Karten per Link schicken, und Lieferantenrechnungen mit neuer Bankverbindung behandelt der Artikel [wie Hotels Betrugsnachrichten erkennen und stoppen](/blog/hotel-scam-messages).
+
 ## Der schnellere Weg: Booking.com, WhatsApp und E-Mail in einem Posteingang
 
 Die **Inbox** (Posteingang) von Hotelier Tools (`/messaging`, Alpha) stellt Booking.com-Nachrichten und Guest Q&A neben Ihre WhatsApp- und E-Mail-Nachrichten, mit der Reservierung neben jeder Unterhaltung und einer von der KI entworfenen Antwort, die Sie prüfen.
@@ -125,12 +128,14 @@ Die **Inbox** (Posteingang) von Hotelier Tools (`/messaging`, Alpha) stellt Book
 3. Öffnen Sie **Inbox** und filtern Sie nach **Booking.com**. Ein Booking.com-Verlauf wird automatisch mit seiner Reservierung verknüpft.
 4. Lesen Sie Entwurf und Plan der KI, bearbeiten Sie ihn oder bitten Sie den privaten Assistenten rechts, etwas in Little Hotelier nachzuschlagen.
 
+Expedia-Unterhaltungen können in dieselbe Liste kommen (Beta): Drücken Sie nach der Verbindung mit Partner Central unter **Channels** auf **Switch on Expedia messages**. Der Posteingang zeigt zu jeder Unterhaltung den Gast und die letzte Nachricht, und Antworten schreiben Sie weiterhin in Partner Central. Seit Version 1.71 (November 2026) funktioniert dieses Auslesen, und Expedia-Verläufe kommen an; ändert Expedia seine Anfrage erneut, weist die Verbindungsseite darauf hin. Siehe [Expedia-Gästenachrichten verwalten](/blog/expedia-guest-messages).
+
 ::screenshot{src="/images/blog/demo/en/guest-inbox-ai-plan-late-arrival.webp" alt="Gäste-Posteingang mit geöffneter WhatsApp-Unterhaltung: die Nachricht des Gastes zu einer späten Anreise auf Spanisch, die zugeordnete Buchung mit den Markierungen Identität verifiziert und bezahlt, der KI-Plan als Entwurf mit Begründung und bearbeitbarer Antwort und rechts das private Assistant-Panel" caption="Jede Unterhaltung zeigt die Buchung, einen KI-Entwurf, der auf Sie wartet, und einen privaten Assistenten, den der Gast nie sieht." path="/messaging"}
 ::
 
 Zwei ehrliche Grenzen:
 
-- **Bei Booking.com sendet die KI nie etwas von selbst.** Und Ihre Antwort aus dem Posteingang zurück an Booking.com zu senden, versprechen wir noch nicht: Kopieren Sie den freigegebenen Entwurf ins Extranet oder in Pulse.
+- **Bei Booking.com sendet die KI nie etwas von selbst.** Wenn eine Person auf **Send** drückt, wird die Antwort über Ihre eigene Extranet-Sitzung in die Booking.com-Unterhaltung gesendet. Lehnt Booking.com das Senden ab (zum Beispiel, nachdem es Sie gebeten hat, sich erneut zu verifizieren), meldet der Posteingang das und behält Ihren Entwurf, damit Sie ihn ins Extranet oder in Pulse einfügen können.
 - **Hotelier Tools nutzt Ihre eigene Extranet-Sitzung.** Hotelier Tools meldet sich als Sie an, weil die Messaging-API von Booking.com nur Connectivity-Partnern offensteht. Das Dashboard selbst weist darauf hin, dass die Partnerbedingungen von Booking.com automatisierten Extranet-Zugriff einschränken und dass die Connectivity API dort, wo Sie sie haben, der unterstützte Weg bleibt.
 
 Die beiden festen Rechnungsanfragen von Booking.com werden ganz ohne KI erkannt: Der Posteingang bietet an, den Aufenthalt für die Rechnung beim Check-out vorzumerken (siehe [Rechnung automatisch beim Check-out senden](/blog/send-invoice-to-guest-at-checkout)).

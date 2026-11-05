@@ -104,6 +104,8 @@ L'**Availability Queue** de Hotelier Tools (`/availability-watch`, bêta) tient 
 
 En haute saison, contrôlez plus souvent qu'une fois par nuit : avec un contrôle nocturne, une chambre libérée à 9 h attend 1 h du matin pour être proposée, et risque d'être déjà vendue d'ici là.
 
+Toutes les demandes ne portent pas sur une nuit complète. Un client peut demander des dates que vous n'avez pas encore tarifées, ou une agence vouloir plus de chambres que vous n'en avez. La même file gère les deux cas : les nuits fermées comptent comme non réservables tant que vous ne les ouvrez pas, et une correspondance partielle n'est envoyée qu'à vous. Voir [comment tenir une file de demandes de disponibilité](/blog/hotel-availability-requests-queue).
+
 ### Comment la liste d'attente influe sur vos prix
 
 Chaque groupe qui attend une nuit augmente de 3 % la recommandation de prix de cette nuit, jusqu'à 12 % par nuit, dans la tarification dynamique de Hotelier Tools (alpha). Une liste d'attente pleine est un signal de demande, et la recommandation le reflète ([tarification dynamique pour petits hôtels](/blog/dynamic-pricing-little-hotelier)).

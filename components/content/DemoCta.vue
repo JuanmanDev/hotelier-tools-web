@@ -1,5 +1,5 @@
 <template>
-  <div class="ht-demo-cta not-prose my-8 rounded-2xl p-5 sm:p-6 bg-gradient-to-br from-blue-600 to-indigo-700 text-white shadow-lg">
+  <div data-umami-section="blog-demo-cta" class="ht-demo-cta not-prose my-8 rounded-2xl p-5 sm:p-6 bg-gradient-to-br from-blue-600 to-indigo-700 text-white shadow-lg">
     <p class="font-display text-xl font-semibold tracking-tight mb-1">{{ title || t('blog.cta.title') }}</p>
     <p class="text-blue-100 mb-4 text-[0.95rem]">{{ text || t('blog.cta.text') }}</p>
     <div class="flex flex-wrap gap-3">

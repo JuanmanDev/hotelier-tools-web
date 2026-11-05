@@ -1420,6 +1420,18 @@
           "language": {
             "name": "Lingua delle fatture",
             "text": "Le fatture seguono il paese dell’ospite o usano sempre la lingua che scegli."
+          },
+          "received": {
+            "name": "Fatture dei fornitori",
+            "text": "Fatture da email, caricamenti ed e-fatture: lette, controllate contro duplicati e cambi di IBAN, esportate per trimestre."
+          },
+          "issuers": {
+            "name": "Fattura a un altro nome",
+            "text": "Intesta la fattura di un soggiorno a un’azienda o a un’agenzia invece che all’ospite."
+          },
+          "guest_links": {
+            "name": "Link fattura per gli ospiti",
+            "text": "Ogni ospite riceve un link per chiedere la fattura con i propri dati di fatturazione."
           }
         }
       },
@@ -1443,6 +1455,18 @@
           "emails": {
             "name": "Report via email",
             "text": "Un riepilogo chiaro nella tua casella di posta, facile da leggere da qualsiasi telefono."
+          },
+          "expedia_collect": {
+            "name": "Pagamenti Expedia Collect",
+            "text": "Lo stato di pagamento di ogni soggiorno e richieste di pagamento automatiche a Expedia a orari programmati."
+          },
+          "ota_gaps": {
+            "name": "Prenotazioni OTA mancanti",
+            "text": "Un avviso quando una prenotazione Booking.com o Expedia non è mai arrivata in Little Hotelier."
+          },
+          "payments": {
+            "name": "Link e promemoria di pagamento",
+            "text": "Link SiteMinder Pay e promemoria, saltati per i soggiorni già incassati dal canale."
           }
         }
       },
@@ -1474,6 +1498,10 @@
           "stop_sell": {
             "name": "Stop vendita in SiteMinder",
             "text": "Apri o chiudi le camere per notte dalla stessa schermata."
+          },
+          "promo_codes": {
+            "name": "Codici promozionali",
+            "text": "Crea e modifica i codici promo del tuo motore di prenotazione dalla dashboard, dall’API o dal tuo assistente IA."
           }
         }
       },
@@ -1509,6 +1537,14 @@
           "safety": {
             "name": "Sicuro per natura",
             "text": "L’assistente parla solo della prenotazione dell’ospite verificato e non cambia mai nulla senza di te."
+          },
+          "expedia": {
+            "name": "Messaggi Expedia",
+            "text": "Le conversazioni di Expedia Partner Central accanto a WhatsApp, email e Booking.com, collegate alla prenotazione."
+          },
+          "signatures": {
+            "name": "Firme e memoria",
+            "text": "Firme con nome per canale e risposte che imparano da ciò che il tuo team ha davvero inviato."
           }
         }
       },
@@ -1635,6 +1671,18 @@
           "secure": {
             "name": "Accesso sicuro",
             "text": "Accedi con una passkey e le tue password sono salvate cifrate."
+          },
+          "daily_lists": {
+            "name": "Liste del giorno",
+            "text": "Arrivi, partenze, ospiti in casa e pulizie, pronti da stampare ogni mattina."
+          },
+          "reservations": {
+            "name": "Calendario e nuove prenotazioni",
+            "text": "Un planning veloce e un modulo di prenotazione che confronta i tuoi prezzi web, promo e Booking.com."
+          },
+          "hotel_mail": {
+            "name": "Indirizzi email dell’hotel",
+            "text": "Indirizzi di sola ricezione per il tuo hotel: le fatture dei fornitori arrivano senza condividere la password di una casella."
           }
         }
       }
@@ -1852,7 +1900,7 @@
       },
       "guests": {
         "name": "Messaggi degli ospiti",
-        "description": "WhatsApp, email e Booking.com in un unico posto, con risposte pronte da inviare."
+        "description": "WhatsApp, email, Booking.com ed Expedia in un unico posto, con risposte pronte da inviare."
       },
       "compliance": {
         "name": "Report e adempimenti",
@@ -1862,7 +1910,10 @@
         "name": "Trucchi e consigli",
         "description": "Piccole modifiche che rendono Little Hotelier più veloce ogni giorno."
       }
-    }
+    },
+    "kind": "Guida",
+    "written_by": "Scritto da",
+    "reading_time_label": "Tempo di lettura"
   },
   "instructions": {
     "hero": {

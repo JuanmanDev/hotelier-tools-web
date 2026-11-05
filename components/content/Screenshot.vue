@@ -1,6 +1,6 @@
 <template>
   <figure class="ht-shot not-prose my-8" :class="mobile ? 'max-w-xs mx-auto' : ''">
-    <a :href="src" target="_blank" rel="noopener" class="block overflow-hidden ring-1 ring-gray-200 dark:ring-gray-800 shadow-lg bg-white dark:bg-gray-900" :class="mobile ? 'rounded-[2rem] p-2 bg-gray-900 dark:bg-gray-800' : 'rounded-xl'">
+    <a :href="src" target="_blank" rel="noopener" :data-umami-click="JSON.stringify({ name: 'blog_screenshot_open', target: src.split('/').pop() })" class="block overflow-hidden ring-1 ring-gray-200 dark:ring-gray-800 shadow-lg bg-white dark:bg-gray-900" :class="mobile ? 'rounded-[2rem] p-2 bg-gray-900 dark:bg-gray-800' : 'rounded-xl'">
       <div v-if="!mobile" class="flex items-center gap-1.5 px-3 py-2 bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700" aria-hidden="true">
         <span class="w-2.5 h-2.5 rounded-full bg-rose-400" />
         <span class="w-2.5 h-2.5 rounded-full bg-amber-400" />

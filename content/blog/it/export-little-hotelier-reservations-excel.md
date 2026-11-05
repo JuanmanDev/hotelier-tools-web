@@ -86,6 +86,8 @@ Fonti: [Getting started with Reports](https://help-platform.littlehotelier.com/e
 
 Un consiglio: l'esportazione **Summary** del report Revenue ha una colonna "Rate per night", una riga per notte. È il modo più rapido per vedere a che prezzo è stata venduta ogni notte di un soggiorno lungo.
 
+Ti serve un foglio stampato per stamattina più che un foglio di calcolo? I report **Check-in** e **Housekeeping** si stampano direttamente, e [liste stampabili di arrivi, partenze e pulizie](/blog/little-hotelier-daily-lists) spiega cosa contiene una buona lista del mattino e come stamparle tutte e quattro con un clic.
+
 ## Come aprire il CSV in Excel senza problemi con gli accenti
 
 Se nomi come "José" diventano "JosÃ©", Excel ha scelto la codifica sbagliata. Importa il file invece di fare doppio clic:

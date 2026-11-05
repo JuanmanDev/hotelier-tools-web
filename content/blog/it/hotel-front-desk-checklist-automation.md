@@ -117,6 +117,8 @@ Ogni esecuzione invia **un'email di report per attività**, nella lingua che imp
 - **Si mettono in pausa in sicurezza.** Se la password di Little Hotelier scade, le attività programmate si mettono in pausa da sole invece di riprovare, il che protegge il tuo account da un blocco. La dashboard mostra "Automated jobs are paused" finché non salvi la nuova password in **Credentials** o premi **Check now & resume**.
 - **Tre controlli restano manuali.** Carte, numero di ospiti e orari di arrivo non vengono controllati in automatico, quindi tienili nella tua lista del mattino.
 
+Due problemi restano fuori dalla lista degli otto punti perché nascono prima che la prenotazione arrivi a te. Una prenotazione Booking.com o Expedia che non è mai arrivata in Little Hotelier lascia la camera in vendita: vedi [cosa fare quando manca una prenotazione OTA](/blog/ota-bookings-missing-little-hotelier). E per un saldo non pagato, un link di pagamento con promemoria programmati ti risparmia la telefonata: vedi [link di pagamento e promemoria in Little Hotelier](/blog/little-hotelier-payment-links).
+
 Ogni attività è elencata in **Cron Jobs** (`/cron`) e ogni esecuzione in **Run History** (`/cron-logs`). La funzione è in beta. Maggiori informazioni sulla pianificazione nella [pagina Automations](/tools/bot/automations) e sull'intera funzione in [Automated checks](/tools/bot/automated-checks).
 
 Guide correlate: [la guida a Little Hotelier](/blog/little-hotelier-tips), [l'assistente IA per la reception](/blog/ai-assistant-hotel-front-desk), [una lista d'attesa per le date esaurite](/blog/hotel-waitlist-sold-out-dates).

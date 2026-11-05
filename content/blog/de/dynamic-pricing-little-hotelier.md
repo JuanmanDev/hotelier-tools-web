@@ -139,6 +139,10 @@ Mindestaufenthalte setzt er nur, wenn Sie das gesondert erlauben, und den Stop-S
 ::screenshot{src="/images/blog/demo/en/pricing-settings-autopilot.webp" alt="Seite Autopilot mit der Markierung Off: die noch nicht eingerichtete Aufgabe Autopilot runs mit einer Schaltfläche Run every 3 hours, Unattended price writes mit ausgeschaltetem Schalter Let the autopilot write prices to Little Hotelier und Leitplanken von 20 % maximaler Änderung pro Nacht, nie unter 0 schreiben und 14 Tage vorausschauen" caption="Der Autopilot bleibt aus, bis Sie das unbeaufsichtigte Schreiben von Preisen einschalten und seine Läufe planen." path="/pricing/settings/autopilot"}
 ::
 
+### Promo-Codes auf Ihrer Website
+
+Rabattcodes in Ihrer eigenen Buchungsmaschine ändern, was Direktgäste zahlen, und gehören deshalb ins selbe Bild. **Promo codes** (`/pricing/promo-codes`) erklärt jeden Code in einem Satz und warnt, wenn ein Code eine Nacht unter Ihren Mindestpreis drückt oder sich mit dem Rabatt addiert, den Sie bereits gewähren. Siehe [Promo-Codes in Little Hotelier](/blog/little-hotelier-promo-codes).
+
 ### Das Preisprotokoll: Was jede Änderung bewirkt hat
 
 **History & outcomes** (`/pricing-log`) listet jeden Preis auf, der in Little Hotelier geschrieben wurde, ob von Ihnen, dem Autopiloten oder dem Assistenten, jeweils mit den damals und heute freien Zimmern. Nach einer Preiserhöhung schätzt die Seite den Mehrumsatz: nach der Änderung verkaufte Zimmer mal Preisdifferenz. Die Seite sagt offen, was diese Schätzung nicht wissen kann, etwa ob diese Zimmer ohnehin verkauft worden wären. Sehen Sie sie als Richtwert, nicht als Beweis.

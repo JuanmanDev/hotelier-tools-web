@@ -105,7 +105,7 @@ Impostala una volta sola in **Settings > Invoices** (`/settings/invoices`): **Fr
 
 **Dopo l'emissione:** modifica i dati in Little Hotelier, poi usa **Invoice is outdated** per generare una fattura corretta. Se l'avevi già segnata come definitiva, clicca **Cancel invoice**, poi di nuovo **Generate invoice** ([centro assistenza](https://helpcentre.littlehotelier.com/en/articles/8672961-mark-reservation-invoices-as-final)). In Spagna con VeriFactu, una fattura definitiva si modifica con **Rectify invoice** ([centro assistenza](https://helpcentre.littlehotelier.com/en/articles/15220249-mark-an-invoice-as-final-spain-with-verifactu)).
 
-Un link privato in cui gli ospiti compilano da soli i dati della propria azienda è in sviluppo e non ancora disponibile.
+Gli ospiti possono anche inserire da soli i dati della propria azienda: i link fattura per gli ospiti di Hotelier Tools danno a ogni ospite una pagina privata in cui aggiungere ragione sociale, partita IVA o codice fiscale e indirizzo, e chiedere la fattura al check-out. Vedi [come intestare la fattura a un'azienda invece che all'ospite](/blog/invoice-in-company-name).
 
 Se le richieste di fattura ti arrivano tramite i messaggi di Booking.com, leggi [come gestire i messaggi degli ospiti di Booking.com](/blog/booking-com-guest-messages).
 

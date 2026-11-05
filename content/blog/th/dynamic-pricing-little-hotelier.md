@@ -139,6 +139,10 @@ Hotelier Tools เพิ่มระบบคำนวณราคาไว้�
 ::screenshot{src="/images/blog/demo/en/pricing-settings-autopilot.webp" alt="หน้า Autopilot สถานะ Off: งาน Autopilot runs ที่ยังไม่ได้ตั้งค่าพร้อมปุ่ม Run every 3 hours, Unattended price writes ที่สวิตช์ Let the autopilot write prices to Little Hotelier ปิดอยู่ และแนวป้องกัน 20% max change per night, never write below 0 และ look ahead 14 days" caption="Autopilot จะปิดอยู่จนกว่าคุณจะเปิดการเขียนราคาอัตโนมัติ (unattended price writes) และตั้งรอบเวลาให้ทำงาน" path="/pricing/settings/autopilot"}
 ::
 
+### โค้ดส่วนลดบนเว็บไซต์ของคุณ
+
+โค้ดส่วนลดบนระบบจองของคุณเองเปลี่ยนราคาที่แขกจองตรงจ่าย จึงควรอยู่ในภาพเดียวกัน **Promo codes** (โค้ดส่วนลด, `/pricing/promo-codes`) อธิบายแต่ละโค้ดในหนึ่งประโยค และเตือนเมื่อโค้ดทำให้บางคืนต่ำกว่าราคาขั้นต่ำของคุณ หรือซ้อนกับส่วนลดที่คุณใช้อยู่แล้ว ดู[โค้ดส่วนลด Little Hotelier](/blog/little-hotelier-promo-codes)
+
 ### บันทึกราคา: การเปลี่ยนแต่ละครั้งให้ผลอย่างไร
 
 **History & outcomes** (ประวัติและผลลัพธ์, `/pricing-log`) แสดงทุกราคาที่เขียนลง Little Hotelier ไม่ว่าจะโดยคุณ autopilot หรือผู้ช่วย AI พร้อมจำนวนห้องที่เหลือในตอนนั้นและตอนนี้ หลังขึ้นราคา ระบบจะประเมินรายได้ที่เพิ่มขึ้นจากจำนวนห้องที่ขายได้หลังเปลี่ยนราคาคูณด้วยส่วนต่าง หน้านี้บอกตรงๆ ว่าตัวเลขนี้มีสิ่งที่รู้ไม่ได้ เช่น ห้องเหล่านั้นจะขายได้อยู่แล้วหรือเปล่า ให้ใช้เป็นแนวทาง ไม่ใช่หลักฐาน
